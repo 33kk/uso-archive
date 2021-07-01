@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           GooGle - Multi-Columns Dark and Gray v.45
+@name           GooGle - Multi-Columns Dark and Gray v.46
 @namespace      USO Archive
 @author         decembre
 @description    `Less scrolling with a multi columns interface.....Firefox OKChrome : OKNot working together with a "working" GooglemonkeyR:But all forks of it, at 2019.07, seems broken and need to be updated.When they work, use my userstyle:<a href="https://userstyles.org/styles/121836/">Google - GM - Google MonkeyR Companion</a>`
-@version        20210629.21.7
+@version        20210630.12.14
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -30,7 +30,7 @@ https://cse.google.fr/cse?cx=partner-pub-8110924381468607:6449306375&ie=ISO-8859
 regexp("https?://(www|news|play|host-b)\\.google(\\.com?)?(\\.[a-z][a-z])?/(|webhp|search|news|play|ig|service-a).*"), url-prefix("https://cse.google") {
 
 
-/* ==== Google - Multi-Columns Dark and Gray v.45 (new45) ==== */
+/* ==== Google - Multi-Columns Dark and Gray v.46 (new46) ==== */
 
 /* PB but work touch too GOOGLE PLAY STORE -
 https://play.google.com/store
@@ -358,7 +358,26 @@ div#searchform.jhp.big {
     text-align: center !important;
 }
 
-/* (new30A) - GM "Google Search Extra Buttons" - ===*/
+/* (new46) - GM "Google Search Extra Buttons" - ===*/
+
+/* (new46) SEARCH TOP FIXED - HOVER - GM "Google Search Extra Buttons" */
+.srp #searchform.jsrp.minidiv .sfbg + form#tsf:hover .lsbb .siteList ,
+.srp #searchform.jsrp.minidiv .sfbg + form#tsf:hover .lsbb > .xButt {
+    top: 33px !important;
+}
+
+#searchform.big.minidiv[style^="position: fixed;"]  .Tg7LZd + .xButt.lsb ,
+#searchform.big.minidiv[style^="position: fixed;"]  .siteList + .xButt.lsb ,
+#searchform.big.minidiv[style^="position: fixed;"]  .siteList {
+    top: 33px !important;
+}
+#searchform.big.minidiv[style^="position: fixed;"]  .Tg7LZd + .xButt.lsb ,
+#searchform.big.minidiv[style^="position: fixed;"]  .siteList.fade + .xButt.lsb ,
+#searchform.big.minidiv[style^="position: fixed;"]  .siteList.fade {
+    top: 28px !important;
+    transition: none !important;
+}
+
 /* MENUS OPEN */
 .siteList ,
 .siteList > div ,
@@ -411,13 +430,61 @@ A8SBwf .logo +.RNNXgb .Tg7LZd   {
     transition: none !important;
     opacity: 0 !important;
 }
-.siteList > div +  .list:hover ,
+.lsbb > .siteList:hover ,
+.lsbb > .siteList + .xButt.lsb:hover {
+/*     width: auto !important; */
+    height: auto;
+    padding: 1px 0 2px;
+}
+.siteList:hover {
+    width: 40px !important;
+}
+.siteList.siteList:hover>div:first-of-type + .list {
+display: inline-block !important;
+width: 100% !important;
+    min-width: 70px !important;
+    max-width: 70px !important;
+background: #111 !important;
+}
+.siteList.siteList[date="site:"]:hover>div:first-of-type + .list ,
+.siteList.siteList[date="filetype:PDF"]:hover>div:first-of-type + .list {
+    min-width: 250px !important;
+    max-width: 250px !important;
+border: 1px solid red !important;
+background: #111 !important;
+}
+.siteList:hover > div +  .list ,
 .siteList > div:hover +  .list {
+/* position: absolute !important; */
     display: inline-block !important;
     height: auto;
+    margin-top: -14px !important;
+    padding: 20px 2px 14px 20px !important;
+
+    border-radius: 0 5px 5px 5px !important;
+    text-align: center;
+    transition: none !important;
+    opacity: 1 !important;
+border: 1px solid red !important;
+    border-bottom: 4px red solid !important;
+}
+.siteList.fade:hover {
+position: absolute !important;
+    display: inline-block !important;
+    height: 20px !important;
+    top: 28px !important;
+border-radius: 5px 5px 0 0 !important;
+    z-index: 500000 !important;
+border: 1px solid yellow !important;
+}
+.siteList.fade:hover > div +  .list ,
+.siteList.fade > div:hover +  .list {
+    display: inline-block !important;
+    height: auto;
+
     margin-top: 0px !important;
-    padding: 2px 2px 14px 20px !important;
-    border-bottom: 4px blue solid;
+    padding: 5px 2px 14px 20px !important;
+    border-bottom: 4px red solid;
     border-radius: 0 5px 5px 5px !important;
     text-align: center;
     transition: none !important;
@@ -425,35 +492,41 @@ A8SBwf .logo +.RNNXgb .Tg7LZd   {
     opacity: 1 !important;
 }
 
+/* BUTTON - MORE */
+
+
 /* BUTTONS - SETTINGS */
 .xButt.lsb.more  {
-    position: relative !important;
+    position: absolute !important;
     min-width: 98px !important;
     height: 30px !important;
     line-height: 24px !important;
-    margin: 0px 0 20px -73px !important;
+    margin: 0px !important;
+left: 100px !important;
+top:100px !important;
     padding: 0 2px 0 1px;
     font-weight: normal;
-    text-align: left;
+    text-align: center !important;
     white-space: nowrap;
     opacity: 1 !important;
-background: green!important;
+background: gold!important;
 }
 .xButt.lsb.moreShow {
-    min-width: 198px !important;
+    min-width: 215px !important;
     margin: 2px 0 -1px 5px !important;
     border-radius: 5px 5px 0 0 !important;
-background: tomato !important;
+background: gold !important;
 }
 .xButt.lsb.moreShow:after   {
-    content: "." !important;
+content: "." !important;
     position: absolute !important;
     display: inline-block !important;
-    min-width: 198px !important;
+    min-width: 215px !important;
     height: 170px !important;
     margin: 2px 0 -1px 5px !important;
     left: -7px !important;
     top: 15px !important;
+color: transparent !important;
 border-left: 2px red solid !important;
 background: black !important;
 }
@@ -3180,14 +3253,22 @@ background-image: none !important;
     width: 100%;
 background: #111 !important;
 }
-
-
+/* (new46) */
+#searchform #gb > .gb_Wd .gb_Se ,
+#searchform #gb > .gb_Wd ,
+.gb_Se ,
+.gb_Zd .gb_Wd {
+background: #111 !important;
+}
+header.gb_pa {
+background: #333 !important;
+}
 #searchform.big.minidiv {
     position: fixed;
     top: -7px !important;
     padding-bottom: 20px !important;
 border-bottom: 1px solid gray !important;
-background: black !important;
+background: #111 !important;
 }
 .srp #searchform.jsrp.big.minidiv .sfbg.nojsv {
 background: black !important;
@@ -3308,11 +3389,7 @@ input.gLFyf {
     height: 25px !important;
 }
 
-/* SEARCH TOP FIXED - HOVER - GM "Google Search Extra Buttons" */
-.srp #searchform.jsrp.minidiv .sfbg + form#tsf:hover .lsbb .siteList ,
-.srp #searchform.jsrp.minidiv .sfbg + form#tsf:hover .lsbb > .xButt {
-    top: 33px !important;
-}
+
 
 /* ===== RESULTS SPECIAUX ===== */
 
@@ -5176,11 +5253,13 @@ background: black!important;
 /* ======================= */
 /* (newGOGLE) COLORS - WITHOUT POSITION CHANGES */
 /* ======================= */
-/* (new43) COLORS - TEST with ELIAN color from :
+/* (new46) COLORS - TEST with ELIAN color from :
 https://userstyles.org/styles/89702/elian-google-search-modern-dark
 === */
 /* (new137) COLOR - LINKS / TEXTES - GRAY */
-
+.checkbox-label, 
+.jfk-radiobutton-label ,
+.URIeEf ,
 .yDYNvb.lyLwlc ,
 .Ss2Faf ,
 .u9sbk.W2lMue ,

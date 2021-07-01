@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           Telerama WideScreen - New design v.21
+@name           Telerama WideScreen - New design v.22
 @namespace      USO Archive
 @author         decembre
 @description    `Pour un grand écran (1920x1080)! , un programme en grand !Prend en compte la dernière modification des pages fiches film / programme.Et nouveau:- (2021) Notations Telerama (les fameux "TTT") visibles pour les non inscrits:- (2020) Pour chaque émission, une icône "Oeil" qui, sur un hover, affiche les infos du programme...`
-@version        20210628.16.54
+@version        20210630.21.23
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -11,7 +11,7 @@
 
 @-moz-document domain("telerama.fr"), domain("ultimedia.com"), domain("spoxy-shard2.spot.im") {
 
-/* ==== 0-TELERAMA - New Design v.21 (new21)  - SUPP PUBS ==== */
+/* ==== 0-TELERAMA - New Design v.22 (new22)  - SUPP PUBS ==== */
 
 
 
@@ -209,7 +209,7 @@ li.channel--program span.tv-grid--genre   {
 }
 
 /* (new18) PROGRAMME INFOS */
-
+/* .channel--program span.tv-grid--hidden , */
 .channel--program:not(.short) span.tv-grid--hidden {
     position: absolute !important;
     display: inline-block !important;
@@ -351,13 +351,19 @@ li.channel--program[data-genre="5"]:not(.short) span.tv-grid--hidden:before ,
 li.channel--program[data-genre="5"]:not(.short) span.tv-grid--hidden .tv-grid--popup_excerpt:not(:empty):before {
 background: tomato !important;
 }
+
+li.channel--program[data-genre="11"] span.tv-grid--hidden:before ,
 li.channel--program.lock[data-genre="11"] span.tv-grid--hidden:before ,
 li.channel--program.lock[data-genre="10"] span.tv-grid--hidden:before ,
+li.channel--program[data-genre="8"] span.tv-grid--hidden:before ,
 li.channel--program.lock[data-genre="8"] span.tv-grid--hidden:before ,
 li.channel--program.lock[data-genre="1"] span.tv-grid--hidden:before ,
 li.channel--program.lock[data-genre="0"] span.tv-grid--hidden:before ,
+li.channel--program[data-genre=""] span.tv-grid--hidden:before ,
 li.channel--program.lock[data-genre=""] span.tv-grid--hidden:before ,
-li.channel--program.lock[data-genre="5"]:not(.short) span.tv-grid--hidden:before  {
+li.channel--program[data-genre="5"] span.tv-grid--hidden:before ,
+li.channel--program.lock[data-genre="5"]:not(.short) span.tv-grid--hidden:before ,
+li.channel--program[data-genre="1"] span.tv-grid--hidden:before  {
     content: "👁";
     display: inline-block;
     font-size: 13px;
@@ -371,6 +377,23 @@ li.channel--program.lock[data-genre="5"]:not(.short) span.tv-grid--hidden:before
     width: 15px !important;
 color: gold !important;
 background: blue !important;
+}
+
+/*(new22)  "👁" SERIE - " " - TINY */
+li.channel--program.short.tiny span.tv-grid--hidden:not(:empty) {
+    display: inline-block;
+    position: absolute;
+    visibility: hidden;
+}
+li.channel--program.short.tiny span.tv-grid--hidden:not(:empty):before  {
+    display: inline-block;
+    line-height: 3px !important;
+    height: 7px !important;
+    width: 8px !important;
+    left: -5px !important;
+    top: -100px !important;
+    font-size: 10px !important;
+background: pink !important;
 }
 /* "👁" SERIE - 7 */
 li.channel--program[data-genre="7"]:not(.short) span.tv-grid--hidden .tv-grid--popup_excerpt:not(:empty):before {

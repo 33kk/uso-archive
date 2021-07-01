@@ -3,11 +3,11 @@
 @namespace      USO Archive
 @author         Livewire
 @description    `A sharper, more concise Google Classroom`
-@version        20210624.22.27
+@version        20210630.21.18
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
-@-moz-document url-prefix("https://classroom.google.com/u") {
+@-moz-document url-prefix("https://classroom.google.com/u"), url-prefix("https://classroom.google.com/h") {
 ol[jsname='bN97Pc'] {
     padding: 0px;
 }

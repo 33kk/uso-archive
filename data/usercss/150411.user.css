@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         DaedalusIcarusHelios
 @description    `Theme for making Keeper Vault (https://keepersecurity.com/vault) use the gradient theme throughout (not just the left menu panel), with dark transparencies.Since Keeper's new UI broke the old theme, this has been a total overhaul and is still a work in progress.`
-@version        20191014.8.57
+@version        20210630.17.27
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -36,7 +36,7 @@ body.phoenix {background-image: radial-gradient(ellipse at center bottom, rgb(25
 /* Company Logo [Option B]- inverted, for transparency */
 #xcompany_logo {max-height: 54px !important; filter: invert(100%) hue-rotate(180deg) brightness(150%) drop-shadow(0px 0px 10px rgba(0,0,0,.75)) drop-shadow(0px 0px 2px black);}
 /* */
-body {color: #fff !important;}
+body, .title-text {color: #fff !important;}
 .folder-details .permissions_header {background: rgba(0,0,0,.25)}
 
 .right-pane, .details-shown .details, #main .control-bar {background: rgba(0,0,0,.35)}
@@ -129,7 +129,7 @@ svg.logo{filter: drop-shadow(0 0 1em #fff)  !important}
 #popup-menu-overlay .create-new-popup .menuItem:hover {background: rgba(60,60,60,.5)}
 .secureAddOns svg {fill: #fff !important}
 
-.record-details.read-only .formGroup .display-text {box-shadow: none !important; background-color: rgba(0,0,0,.25); margin-top: 5px; padding-left: 5px !important; border-radius: 4px}
+.record-details.read-only .inputLabelGroup .display-text {box-shadow: none !important; background-color: rgba(0,0,0,.25); margin-top: 5px; padding-left: 5px !important; border-radius: 4px}
 .mask-wrap .masked-content {word-break: keep-all !important; }
 
 .token {color: #fff !important}
@@ -141,7 +141,7 @@ svg.logo{filter: drop-shadow(0 0 1em #fff)  !important}
 .set-profile-pic img, .personal-info-details .profile-pic {width: auto !important; height: auto!important; max-width: 200px!important; max-height: 200px!important;;}
 .set-profile-pic img {margin-bottom: 40px; }
 .personal-info-details .manage-image {margin-bottom: 0px}
-.listHeader, .header {background-color: transparent !important}
+.listHeader, .header, #header-main {background-color: transparent !important}
 .phone-input .number {padding: 0px 12px 0 12px}
 
 .personal-info-details .formGroup, .payment-card-details .formGroup {border-bottom-width: 0px !important; padding-bottom: 4px; padding-top: 4px;}

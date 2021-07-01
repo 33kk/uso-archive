@@ -2,8 +2,8 @@
 @name           JMOCD V3 (Pokemon Showdown)
 @namespace      USO Archive
 @author         FireFern
-@description    `The latest and greatest of the stylesheets I've made for PS.Other Info:Background: https://www.deviantart.com/ishmam/art/Shiny-Mega-Rayquaza-Dragon-Pulse-578899492Some Battle Stuff Adapted From: https://33kk.github.io/uso-archive/?style=186996 (the swsh backgrounds are also from it)Weathers From: https://play.pokemonshowdown.com/fx/ and http://freestyler.ws/style/122539/pok-mon-showdown-oras-theme-bidoofscrazyvideos and https://33kk.github.io/uso-archive/?style=186996The "Grey Grid" background is from http://freestyler.ws/style/98094/dundealstylish-smoking-blackThe SPL  background is from http://play.pokemonshowdown.com/fx/The "Forest Lane" and SPL backgrounds look better when the top margin is set to -25px; go in and edit the CSS`
-@version        20210629.19.43
+@description    `The latest and greatest of the stylesheets I've made for PS.Other Info:Background: https://www.deviantart.com/ishmam/art/Shiny-Mega-Rayquaza-Dragon-Pulse-578899492Some Battle Stuff Adapted From: https://33kk.github.io/uso-archive/?style=186996 (the swsh backgrounds are also from it)Weathers From: https://play.pokemonshowdown.com/fx/ (the gifs themselves are from some other styles though and I would mention them if I remembered them) and http://freestyler.ws/style/122539/pok-mon-showdown-oras-theme-bidoofscrazyvideos and https://33kk.github.io/uso-archive/?style=186996The "Grey Grid" background is from http://freestyler.ws/style/98094/dundealstylish-smoking-blackThe SPL  background is from http://play.pokemonshowdown.com/fx/The "Forest Lane" and SPL backgrounds look better when the top margin is set to -25px; go in and edit the CSS`
+@version        20210630.20.28
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 @advanced color mainkey "Main Color" #FF0000
@@ -3372,7 +3372,7 @@ https://i.imgur.com/eTwc7Fs.jpg?3
     color: #737373;
 }
 
-/*i got these gifs are from https://play.pokemonshowdown.com/fx/*/
+/*the weathers are from https://play.pokemonshowdown.com/fx/ and i got the image links themselves from some other styles*/
 
 .rainweather, .raindanceweather{
     background: url(https://i.imgur.com/Ikqq8Jg.gif) no-repeat;

@@ -1,64 +1,74 @@
 /* ==UserStyle==
-@name           miscellaneous
+@name           杂
 @namespace      USO Archive
 @author         NJUer
 @description    `将<a href='http://t.qq.com'>腾讯微博</a>和<a href='http://user.qzone.qq.com'>QQ空间</a>首页改为宽版, 隐藏某些网站的一些烦人的信息，还有其他一些自用的东西仅为自用！！！`
-@version        20200406.4.43
+@version        20210630.13.18
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 /************** AMP **************/
 @-moz-document url-prefix("http") {
     [amp-access-hide] {
-        display: block!important;
+        display: unset !important;
+    }
+}
+
+@-moz-document domain("www.quora.com") {
+    .spacing_log_question_page_ad {
+        display: none;
     }
 }
 
 @-moz-document domain('www.rjno1.com') {
     div[style="display: block; border-left: 5px solid;"] {
-		visibility: collapse;
+        visibility: collapse;
     }
 }
 
 @-moz-document domain('www.pdawiki.com') {
-	[id^='postmessage'] {
-		display: unset !important;
+    [id^="postmessage"] {
+        display: unset !important;
     }
 }
 @-moz-document domain('ip.cn') {
-    img#tp {width: 101px !important;}
+    img#tp {
+        width: 101px !important;
+    }
 }
 
 @-moz-document domain('facebook.com') {
-    #u_0_1l {display: none;}
+    #u_0_1l {
+        display: none;
+    }
 }
 
 @-moz-document domain('manhuaren.com') {
-	.toolBar {
-		bottom: 0 !important;
-		opacity: 0.2 !important;
+    .toolBar {
+        bottom: 0 !important;
+        opacity: 0.2 !important;
     }
 }
 
 @-moz-document domain('yande.re') {
-	a.directlink > span.directlink-res {
-		display: unset;
+    a.directlink > span.directlink-res {
+        display: unset;
     }
 }
 @-moz-document domain('feedly.com') {
-     .promo > .is-fading.is-inline.modal-overlay {
+    .promo > .is-fading.is-inline.modal-overlay {
         display: none;
     }
 }
 @-moz-document domain('pinterest.com') {
-     *[data-test-id='giftWrap'],
+    *[data-test-id="giftWrap"],
     div[data-test-giftwrap="true"],
     div[style="background-color: rgba(0, 0, 0, 0.6); opacity: 1; position: fixed; top: 0px; bottom: 0px; left: 0px; right: 0px; z-index: 1000;"] {
         display: none;
     }
 }
 @-moz-document domain('blog.sina.com.cn') {
-    [id$='_panel'] {
+    [id$="_panel"] {
         display: none !important;
     }
 }
@@ -108,8 +118,7 @@
     #show_tip_bg,
     .login_tip.out,
     #m_r_panelbox,
-    .timeAD/*时间广告*/
-    {
+    .timeAD/*时间广告*/ {
         display: none !important;
     }
 }
@@ -135,8 +144,7 @@
     /*右侧分享*/
     #announcement,
     /*公告*/
-    .wgt-footer-main/*底部*/
-    {
+    .wgt-footer-main/*底部*/ {
         display: none;
     }
 }
@@ -169,8 +177,7 @@ domain('yun.baidu.com') {
     /*'百度云新功能'框*/
     .banner-active,
     /*个人网盘右上角*/
-    .dialog-extra/*删除文件时的提示升级VIP横条*/
-    {
+    .dialog-extra/*删除文件时的提示升级VIP横条*/ {
         display: none;
     }
     .find-light-icon,
@@ -194,10 +201,10 @@ domain('yun.baidu.com') {
     }
 }
 
-@-moz-document url-prefix('https://pan.baidu.com/disk/home') {
+@-moz-document url-prefix('https://pan.baidu.com/disk/home')
+{
     #passport-accRealName-pop,
-    #TANGRAM__PSP_3__/* 验证手机 */
-    {
+    #TANGRAM__PSP_3__/* 验证手机 */ {
         display: none;
     }
 }
@@ -209,7 +216,7 @@ domain('yun.baidu.com') {
 }
 
 @-moz-document domain('plus.google.com') {
-    div[aria-hidden='true'] {
+    div[aria-hidden="true"] {
         display: none;
     }
 }
@@ -222,29 +229,30 @@ domain('yun.baidu.com') {
 
 @-moz-document domain('mail.126.com'),
 domain('mail.163.com') {
-    li[id$='dvClub'],
-    li[id$='dvHealth'],
-    li[id$='dvLofter'],
-    li[title='一元夺宝'],
-    li[title='网易海购'],
-    li[title='网易秀品'],
+    li[id$="dvClub"],
+    li[id$="dvHealth"],
+    li[id$="dvLofter"],
+    li[title="一元夺宝"],
+    li[title="网易海购"],
+    li[title="网易秀品"],
     .gWel-bottom,
     .gWel-weather-promote,
-    [id^='_mail_popup'] {
+    [id^="_mail_popup"] {
         display: none;
     }
 }
 
 @-moz-document domain('mangabee.co') {
     .manga-page {
-        display: inline!important
+        display: inline !important;
     }
-    div>p>strong {
-        display: none!important;
+    div > p > strong {
+        display: none !important;
     }
 }
 
-@-moz-document url-prefix('https://translate.google.com') {
+@-moz-document url-prefix('https://translate.google.com')
+{
     #gt-bbar {
         display: none;
     }
@@ -252,23 +260,23 @@ domain('mail.163.com') {
 
 @-moz-document domain('bbs.kafan.cn') {
     .bm_c.cl.pbn,
-    img[src='hiphotos.baidu.com/%CB%D5%C7%40/pic/item/54d0b6d2b31c8701afe7c85b277f9e2f0608ff67.jpg'],
-    img[src='i2.tietuku.com/bc6ef48ab2b8b3b5.jpg'],
-    img[src='b.ikafan.com/000/73/86/26_avatar_middle.jpg'] {
+    img[src="hiphotos.baidu.com/%CB%D5%C7%40/pic/item/54d0b6d2b31c8701afe7c85b277f9e2f0608ff67.jpg"],
+    img[src="i2.tietuku.com/bc6ef48ab2b8b3b5.jpg"],
+    img[src="b.ikafan.com/000/73/86/26_avatar_middle.jpg"] {
         display: none;
     }
 }
 
 @-moz-document domain('youku.com') {
     #sideTool {
-        display: none!important;
+        display: none !important;
     }
 }
 
 @-moz-document domain('qzs.qq.com') {
     #openVipButton,
     #openVipButton *,
-    img[alt='qboss_ad_image'],
+    img[alt="qboss_ad_image"],
     #pop_apps_sponsors,
     .split_line.bor2,
     .word_spread.side_panel,
@@ -333,7 +341,8 @@ domain('mail.163.com') {
     }
 }
 
-@-moz-document url-prefix('http://t.qq.com') {
+@-moz-document url-prefix('http://t.qq.com')
+{
     #erweima,
     .aboutInfo.c_tx5,
     #app_video,
@@ -351,7 +360,7 @@ domain('mail.163.com') {
     li[tv='1'] {
         display: none;
     }
-    [boss='btnExposeNavHomeBar'] {
+    [boss="btnExposeNavHomeBar"] {
         display: none !important;
     }
 }
@@ -360,19 +369,19 @@ domain('mail.163.com') {
     div[data-source-id][data-id],
     #mergeModule,
     #huatiBox,
-    .a-feed>.appendix,
+    .a-feed > .appendix,
     #toolBackTo,
     #recommendArea,
     .vip-skinBtn,
     .hd-account-action.hd-account-action-vip,
     .app-nav-cont.recent-app-cont {
-        display: none!important;
+        display: none !important;
     }
-    li[data-tip='应用中心'],
-    li[data-tip='我的应用'],
-    li[data-tip='人人分期'],
-    li[data-tip='热门'],
-    li[data-tip='社团人'] {
+    li[data-tip="应用中心"],
+    li[data-tip="我的应用"],
+    li[data-tip="人人分期"],
+    li[data-tip="热门"],
+    li[data-tip="社团人"] {
         display: none;
     }
 }
@@ -387,23 +396,23 @@ domain('mail.163.com') {
 
 @-moz-document domain('tieba.baidu.com') {
     .post_bubble_middle {
-		background: unset !important;
+        background: unset !important;
     }
     /* for phone */
     .father-cut-daoliu-normal-box,
     .father-cut-recommend-normal-box,
-    .j_pb_footer{
-		display: none;
+    .j_pb_footer {
+        display: none;
     }
     .class_hide_flag {
         display: unset;
     }
     .father-cut-pager-class-no-page > #list_pager {
-		visibility: visible !important;
-		height: unset;
+        visibility: visible !important;
+        height: unset;
     }
     .p_author_face.j_frame_guide {
-		background: none !important;
+        background: none !important;
     }
     .p_forbidden_tip + div {
         display: inline !important;
@@ -413,8 +422,9 @@ domain('mail.163.com') {
     }
     .threadlist_bright .threadlist_author .sign_highlight,
     .threadlist_bright .threadlist_author .sign_highlight:hover {
-		color: unset;
+        color: unset;
     }
+    .j-wrap-word-repost-btn,
     #celebrity,
     .d_icons,
     .sign_tip_container,
@@ -443,19 +453,19 @@ domain('mail.163.com') {
     .card_head {
         padding: 0 !important;
         margin: 0 !important;
-        margin-bottom: 4px!important;
-        height: 89px!important;
-        width: 89px!important;
+        margin-bottom: 4px !important;
+        height: 89px !important;
+        width: 89px !important;
     }
     .card_head img {
         width: 100% !important;
         height: 100% !important;
     }
     .icon-member-top,
-    [id='pagelet_encourage-celebrity/pagelet/celebrity'],
-    [id='pagelet_frs-aside/pagelet/search_back'],
-    [id='pagelet_frs-aside/pagelet/hottopic'],
-    [class*='app_download'],
+    [id="pagelet_encourage-celebrity/pagelet/celebrity"],
+    [id="pagelet_frs-aside/pagelet/search_back"],
+    [id="pagelet_frs-aside/pagelet/hottopic"],
+    [class*="app_download"],
     .u_member,
     .icon_wrap,
     .user_score,
@@ -471,7 +481,7 @@ domain('mail.163.com') {
     }
     .d_post_content_main {
         width: 829px;
-        border-right: solid 0.633333px rgb(229, 229, 229) ;
+        border-right: solid 0.633333px rgb(229, 229, 229);
     }
 
     .j_lzl_container {
@@ -486,34 +496,39 @@ domain('mail.163.com') {
     }
 }
 
-@-moz-document url-prefix('http://tieba.baidu.com/f'), url-prefix('https://tieba.baidu.com/f') {
-    .icon_tbworld, .icon-vip3-16 {
-        background-image: url('https://tb2.bdstatic.com/tb/img/thread_list_z_eca48fe.png');
+@-moz-document url-prefix('http://tieba.baidu.com/f'), url-prefix('https://tieba.baidu.com/f')
+{
+    .icon_tbworld,
+    .icon-vip3-16 {
+        background-image: url("https://tb2.bdstatic.com/tb/img/thread_list_z_eca48fe.png");
         background-position: -30px -60px;
     }
     .member_thread_title_frs a {
-		color: rgb(45, 100, 179) !important;
+        color: rgb(45, 100, 179) !important;
     }
-    .vip_red, .vip_red:hover {
-		color: unset !important;
+    .vip_red,
+    .vip_red:hover {
+        color: unset !important;
     }
     /* 以下一小部分是为了吧头像旁的空白作修正 */
     .card_head {
         height: 89px !important;
         width: 89px !important;
     }
-    .card_top>*:not([class='card_head']):not([class='card_info']) {
+    .card_top > *:not([class="card_head"]):not([class="card_info"]) {
         margin-left: -100px;
     }
 }
 
-@-moz-document url-prefix('http://tieba.baidu.com/p'), url-prefix('https://tieba.baidu.com/p') {
+@-moz-document url-prefix('http://tieba.baidu.com/p'), url-prefix('https://tieba.baidu.com/p')
+{
     .icon-vip3-16,
     .icon_tbworld {
-		display: none;
+        display: none;
     }
-    .vip_red, .vip_red:hover {
-		color: rgb(45, 100, 179) !important;
+    .vip_red,
+    .vip_red:hover {
+        color: rgb(45, 100, 179) !important;
     }
 }
 
@@ -524,7 +539,8 @@ domain('mail.163.com') {
 }
 
 /* Google Image Search Original Source */
-@-moz-document regexp('^https://www.google.com/.*&tbm=isch.*') {
+@-moz-document regexp('^https://www.google.com/.*&tbm=isch.*')
+{
     .x_source_link {
         color: white !important;
     }
@@ -534,14 +550,18 @@ domain('mail.163.com') {
 }
 
 /* Google搜索关键词高亮 */
-@-moz-document regexp("^https://www\\.google\\.com/search\\?.+") {
+@-moz-document regexp("^https://www\\.google\\.com/search\\?.+")
+{
     em {
         color: #dd4b39 !important;
     }
-    /* hide favicons */
-    #search div[data-hveid]>div:first-child>div:first-child>a>div>img {display: none;}
 }
-
+@-moz-document regexp("^https://scholar\\.google\\.com/scholar\\?.+")
+{
+    .gs_rs b {
+        color: #dd4b39;
+    }
+}
 
 @-moz-document domain("docs.google.com") {
     .modal-dialog.active-account-dialog {
