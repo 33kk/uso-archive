@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         apmPlus
 @description    `究極護眼`
-@version        20210608.14.7
+@version        20210701.2.37
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -123,6 +123,8 @@
   #app{width:100%!important;max-width:initial!important;overflow-y:hidden!important;}
   
   /*thread BG loading*/
+  #leftPanel{}
+  #leftPanel::before{left:120px!important;}
   #leftPanel>div>div>div{background:transparent!important;}
   /*thread*/
   #leftPanel .wQ4Ran7ySbKd8PdMeHZZR              {width:1000px!important;margin:auto!important;left:-53px!important;min-height:64.71px!important;}
@@ -509,7 +511,7 @@
   /*bottom*/._349Ptw9omkqXsld1ftflT_{font-size:50px!important;background:rgba(0,0,0,.8)!important;padding:0px!important;opacity:0.1!important;}
   /*bottom*/._349Ptw9omkqXsld1ftflT_:hover{opacity:1!important;}
   
-  /*thread sort fix*/body:not([data-app-tv]):not([data-app-sm]) .C_300Fi04lLpFu_ZznJqq{display:initial!important;}
+  /*thread sort fix*/body:not([data-app-tv]):not([data-app-sm]) .C_300Fi04lLpFu_ZznJqq{display:initial!important;overflow-x:hidden!important;}
   /*thread sort*/ #leftPanel>._20ESiZXbmijY8ypNeIoOm_  {width:1000px!important;margin:auto!important;left:-53px!important;position:relative!important;}
   /*thread sort*/ #leftPanel>._20ESiZXbmijY8ypNeIoOm_ a{background:#222!important;font-size:32px!important;line-height:120%!important;padding:5px 0px 0px 0px!important;}
   /*thread sort*/ #leftPanel>._20ESiZXbmijY8ypNeIoOm_ ._36MywmoDUXjg0XNpoKMYEL a{background:#000!important;color:#a11!important;}

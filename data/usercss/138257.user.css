@@ -1,16 +1,21 @@
 /* ==UserStyle==
-@name           The Pirate Bay 2019 | Material Design - Update v6
+@name           The Pirate Bay 2022 | Material Design - Update v7
 @namespace      USO Archive
 @author         Alec Ames
-@description    `• contains a few simple animations. • based off of Google's aesthetics. • removed the 'p*rn' checkbox. no thank u. • i made this @ 3am oops. check the changelog in the 'additional info' 2 see whats updated n shit.`
-@version        20190408.5.4
+@description    `Added a few simple animations, Material Design inspired by Google. removed the 'porn' checkbox`
+@version        20210701.6.24
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
-@-moz-document domain("thepiratebay.org"), domain("thepiratebay3.org"), domain("tpbclean.com") {
-/* i did this at 3am the code is probably rly messy n shitty <33
+@-moz-document domain("thepiratebay.org"), domain("thepiratebay3.org"), domain("tpbclean.com"), domain("piratebay.party"), domain("pirateproxy.ink"), domain("pirateproxy.surf"), domain("piratebay.uno"), domain("pirateproxy.wtf"), domain("www1.thepiratebay3.to") {
+/* alec*/
 
--alec*/
+
+/* remove lock and yellow on search box*/
+
+.https_form {
+    background: none;
+}
 
 /* selection thingie*/
 ::selection {

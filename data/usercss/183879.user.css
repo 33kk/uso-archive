@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Lonty
 @description    `Dark theme for AniDUB website.`
-@version        20210629.10.21
+@version        20210701.8.23
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -464,7 +464,7 @@ input[type=password], input[type=text], select, textarea {
 .buySystem table tbody tr.small {
     color: #f5665d !important;
 }
-.fx-start, #dle-content{
+#dle-content{
     justify-content: space-between;  
 }
 .mbody{

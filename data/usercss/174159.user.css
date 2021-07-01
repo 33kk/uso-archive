@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Daz Kuffs
 @description    `I find the calendar entries in Sonarr 3 to not be very visible.This style makes them more like the ones in Sonarr 2`
-@version        20210629.10.56
+@version        20210701.11.22
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -73,8 +73,8 @@ div.CalendarEvent-onAir-1YTlC.colorImpaired {
 	background: repeating-linear-gradient(90deg, #ffbac7, #fff 10px);
 }
 
-.LegendIconItem-icon-1g-A5 {
-	color: #ff002e;
+.Icon-info-3mlj_ {
+    color: #f05050;
 }
 
 }
