@@ -2,12 +2,22 @@
 @name           Lichess Pieces: Classic (Habsburg)
 @namespace      USO Archive
 @author         DenWalker
-@description    `New update: works for analysis board, puzzle storm, puzzle racer, etc.Boards:1) Fritz Blue https://userstyles.org/styles/138579/lichess-board-fritz-blue2) Chess.com Ocean https://userstyles.org/styles/135458/lichess-board-ocean`
-@version        20210618.12.38
+@description    `Boards:1) Fritz Blue https://userstyles.org/styles/138579/lichess-board-fritz-blue2) Chess.com Ocean https://userstyles.org/styles/135458/lichess-board-ocean`
+@version        20210702.6.45
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("lichess.org") {
+
+.crisp-edges {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
+
+.auto {
+  image-rendering: auto;
+}
+
 .is2d .pawn.black
   {
     background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADIBAMAAABfdrOtAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAnUExURUxpcQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAK/XnHYAAAAMdFJOUwAP0ue29ieXRF4He/2gs9gAAAPwSURBVHja7ZpBTxNBFMe7iSlluSgx2upNRWnoyTSWhD2oCQaSnioHDXtAbQKBC4ZA0HBAKMZ4wioHOGFiSAkXbEGN8dR2w4H3oWxiNGy3u7Pv7ZsRyPy/wC/z3rw3/3kzsZiWlpaWlpaWlpaWlpbWf5V55d3m5ttnchlT3x/evHvrlVRK8qDPBnCyP6blMT5X4Y8aixelBasEf+V8lQVJWf8gcCRpKfFDOKGRbSmQSeskpLksg2HUTjLAeSQD0p13QWBoQgKkaLkhzXUJEHe05MTLGG6DQJofkrDaITl+SI/dDinw1+MFD6TBXym94IHwb68XHogzyw5ZVQFZ80Lun02IknB1SPy+gi0sAaKkGLs8kDr/gaKkQSpp9Z5Dq/HgrB6/uyqMhFF2R2tBgbkbey/Fbidd8UpPS2EcuFZSWJRASbXXiTPAnvndjKdBQo7ZrlSGvQxw0qyUeNXuAOG91ZklCzoq+4ExWHOdGeCMsiXf/OSzkNZG/sZ2lAyDr9hyX7T9IY0tpmgFLARgkAeyF8RgukCYa4EQeM1yjuSDIU84pgYpOxjSZIiXWQxmgMNQ9cZHAQQYzuHEkgjSHz0p3RkR5Gn0pFy3RJCj6E1yUsTgcHlFIaQeHbIihDSizyPLQojzUgEEzg2EIVxKEl8SQ36ejToJUfHR7/N7wt51HL13JfIiyGD0Lhz/JYIwzIdN4R7mMN0zorxzeO6K4Ggc53B3xqH0lLSS8jy4c/E47t1Adze2zQKJzQdBbjPdTy4H3U+4ZoRG0E1L0ujGVSRbbJB4zW9rMb42mjM+XXKIcx4Vr3ZeyALnRGLKB8L5MJ/0mxYwDr12qr6FUuAa4ZgrQcW4wLO/gq0Ez0giJXASTYa0VOZFLjUd+Wg0yrbQQY5ETkif2NVnt6KWui2GNEa3JfVfV7VEWopRC8NoNWOZwxsO72VsQEhF8EVJKyyE/iHHWIHQIo+KuvPhIePUrJTs8BDq7TReC88Ap59oTxHRAshNSI9W6w5MGhkYc4ASKV4JCwfJUbrkFxsHIX1j2cAxwCE8OBsZJATGCRsYy4A6vn/1oiH426O5gYYAOinGEh5yD7uJKxYecoxNSgrPwB/CRQLEeYPM+yoBAsiXTfGUi2FwkMhTIMiXlD2LAkFOI6/aFAhyrkrZXK3uhWssJRIEZ1nMMgkCqFuqUaNBRjDbKz5Pg6B+MySWaJCBZem1CHAHA+kmQrIYx9KToUHG9hVAChhIl0WDPJ5VAGloiIZIg9RnT1sxUiHZfQUNMrd+2lr9DvHQQg1WlRy/SoxEjGaJkL8liOYO95Fh5gZFqM3VspCXKLrG94ympaWlpaV1jvUbshLe083JQsUAAAAASUVORK5CYII=")!important;

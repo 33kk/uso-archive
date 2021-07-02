@@ -3,11 +3,11 @@
 @namespace      USO Archive
 @author         BamaBraves
 @description    `Dark`
-@version        20210622.9.3
+@version        20210702.5.19
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
-@-moz-document domain("amazon.com"), domain("amazonforum.com"), domain("worker.mturk.com"), domain("match.amazonbrowserapp.com"), domain(".amazon.ca"), domain("amazonbrowserapp.com"), domain("aboutamazon.com") {
+@-moz-document domain("amazon.com") {
 /* Scrollbar Settings */
 
  ::-webkit-scrollbar {
@@ -68,7 +68,7 @@
 
 }
 
-@-moz-document domain("amazon.com"), domain("amazonforum.com"), domain("worker.mturk.com"), domain("match.amazonbrowserapp.com"), domain("amazonbrowserapp.com"), domain("aboutamazon.com") {
+@-moz-document domain("amazon.com") {
 /* Site Settings */
 
 * {
@@ -80,112 +80,85 @@ selector
 	text-transform: capitalize!important;
 }
 
-#ewc .ewc-item-inner,
-#nav-search .nav-search-facade .nav-icon,#navbar.layout2.bold-focus-hover #nav-xshop-container #nav-xshop .nav-a:hover,#navbar.nav-bluebeacon #nav-search .nav-search-scope,#navbar.nav-bluebeacon .nav-icon.nav-arrow,#navbar.nav-flex.layout3.layout2.bold-focus-hover.nav-packard-glow #nav-global-location-slot .a-declarative .nav-a.nav-a-2.a-popover-trigger.a-declarative:active,#navbar.nav-flex.layout3.layout2.bold-focus-hover.nav-packard-glow #nav-global-location-slot .a-declarative .nav-a.nav-a-2.a-popover-trigger.a-declarative:hover,#navbar.nav-flex.layout3.nav-bluebeacon #nav-belt #nav-logo .nav-logo-link:active,#navbar.nav-flex.layout3.nav-bluebeacon #nav-belt #nav-logo .nav-logo-link:hover,#navbar.nav-flex.layout3.nav-fixed.layout2.bold-focus-hover.nav-packard-glow #nav-global-location-slot .a-declarative .nav-a.nav-a-2.a-popover-trigger.a-declarative:active,#navbar.nav-flex.layout3.nav-fixed.layout2.bold-focus-hover.nav-packard-glow #nav-global-location-slot .a-declarative .nav-a.nav-a-2.a-popover-trigger.a-declarative:hover,#navbar.nav-flex.layout3.nav-fixed.nav-bluebeacon #nav-belt #nav-logo .nav-logo-link:active,#navbar.nav-flex.layout3.nav-fixed.nav-bluebeacon #nav-belt #nav-logo .nav-logo-link:hover,
-#pba-lob-carousel-head,
-#rhf .rhf-border,
+._multi-brand-video-desktop_style_videoProductContainer__2Gm7Y,
 #twister .swatches li,
-.a-box,.a-button-inner,
-.a-dropdown-common .a-dropdown-link.a-active,
-.a2s-utterance-box,.a2s-utterance-box.a2s-bubble:before,
-.nav-bluebeacon #ewc #ewc-checkout .ewc-checkout-inner,.nav-flyout .nav-arrow-inner,
-.s-main-slot>.s-widget:not(.s-border-bottom-none):not(:last-child):after,
+#navbar.layout2.bold-focus-hover #nav-xshop-container #nav-xshop .nav-a:hover,
+.amzn-ss-wrap-alt.amzn-ss-wrap,
+.amzn-ss-wrap-alt .amzn-ss-wrap-content,
+#navbar.nav-bluebeacon #nav-search .nav-search-scope,
+#rhf .rhf-border,
+.a-alert-warning,
+.a-button .a-button-inner,
+.a-button,
+.a-input-text-addon,
+.cr-lighthouse-term,
 .vse-video-content,
-:focus,
-[class*='ShovelerPagination-module__navigation_'],
-ul.a-pagination li a,ul.a-pagination li.a-selected a,ul.a-pagination li.a-selected,
-ul.a-tabs .a-tab-heading a:hover,ul.a-tabs .a-tab-heading.a-active a,ul.a-tabs li a:hover,ul.a-tabs li.a-active a,ul.a-tabs
+:focus
 {
 	border: none!important;
 	box-shadow: none!important;
 	outline: none!important;
 }
 
-.octopus-pc-card-list,
-.a-carousel-center {
-    overflow: visible!important;
-}
-
-td.a-span3, th.a-span3 {
-    text-align: right;
+table {
+    border-collapse: separate;
 }
 
 /*___ Fonts ________________________________________________________________________*/
 
-#priceblock_ourprice_row .a-size-medium,
-.a-price[data-a-size=m]
+#AUI_A9AdsMiddleBoxTop h2,
+#customerReviewsHeader,
+#detailpage-click2call-header,
+#hmdFormDiv h2,
+#need-help-deciding .secHeader,
+#pf-fitment-wrapper h2,
+#revMHLContainer h2,
+#reviewBucketHeader,
+#rhfMainHeading,
+#sponsored-products-dp_feature_div h2,
+.bucket h2,
+.cdInlineAskBoxTitle,
+.cdQuestionAnswerHeader,
+.pa_componentTitleTest h2,
+h2.amtcmp,
+h2.featureHeading
 {
-	font-size: 28px!important;
+	font-size: 25px!important;
 }
 
-#nav-timeline-recent-products .nav-text,
-#nav-AssociateStripe .amzn-ss-link-container-label,
-.a-size-small,
+.mega-menu h3,
+#a-page div.unified_widget.rcmBody,
 body
-{
-	font-size: 22px!important;
-}
-
-.a-popover-modal .a-popover-header .a-popover-header-content,
-.octopus-pc-asin-title span,
-.vse-video-title-prefix-text,
-.vse-video-title-text
 {
 	font-size: 21px!important;
 }
 
-#productOverview_feature_div td.a-span9 span,
-#productOverview_feature_div th.a-span9 span,
-.a-expander-partial-collapse-container span,
-.a-expander-partial-collapse-content span,
-.a-size-base-plus,
+#all-offers-display,
+.a-size-base,
 .aplus-v2 .aplus-standard .a-size-base,
-.customTitle--2jvEg,
-.octopus-pc-dotd-title span,
-.title--X01QH
+.cr-lighthouse-term,
+.mega-menu
 {
 	font-size: 19px!important;
 }
 
-.featuringText--CaAc1,
-#navFooter .navFooterDescItem
+.a-size-small
 {
 	font-size: 17px!important;
 }
 
-.a-profile-name,
-.a-size-mini,
-.navFooterDescText
-{
-	font-size: 15px!important;
-}
-
-.a-size-base,
 .a-size-small,
-.small-line-height,
+.mega-menu,
+.mega-menu h3,
+.a-size-base,
 body
 {
-	line-height: 32px!important;
-}
-
-#s-refinements .a-size-base {
-    line-height: 30px!important;
-}
-
-.customTitle--2jvEg,
-.title--X01QH {
-    line-height: 25px!important;
-}
-
-.a-fixed-right-grid-col .a-box-group {
-    position: relative!important;
-    top: 0!important;
+	line-height: 25px!important;
 }
 
 /*___ Remove Items _________________________________________________________________*/
 
-.nav-flyout .nav-arrow,
-[id*='ape_Detail_ad-']
+x.a-expander-partial-collapse-header
 {
 	left: -9999px!important;
 	position: absolute!important;
@@ -194,78 +167,28 @@ body
 
 /*___ Left/Right/Top/Bottom ________________________________________________________*/
 
-.centerColAlign {
-    margin-left: 42%;
-}
-
-.askWidgetQuestions .a-fixed-left-grid-col.a-col-left
- {
-    margin-left: 14px!important;
-}
-
-.a-fixed-left-grid-col.a-col-left
- {
-    margin-left: -16px;
-}
-
-.a-fixed-left-grid-col.a-col-left
- {
-    width: 300px;
-    margin-left: 0!important;
-}
-
-.apb-browse-two-col-center-pad {
-    padding-left: 230px;
-}
-
-.centerColAlign {
-    margin-right: 21%;
+selector
+{
+    top: 10px!important;
 }
 
 /*___ Margins ______________________________________________________________________*/
 
-#anonCarousel1 .a-carousel-card,
-#dp,
-#rhf .celwidget,#rhf .rhf-footer,
-.CarouselWithSelector,
-.GridPresets-module__gridDesktopPresetsSection_2vR1QJzhw-o6rR-aPam5HQ,
-.a-fixed-right-grid .a-col-left,
-.a-fixed-right-grid-col,
-.a-section.bucket,
-.a2s-dp-features,
-.apb-browse-two-col-center-pad,
-.gw-card-layout[data-flow-dir="h"]>.gw-col,
-.octopus-pc-item,
-[class*='DealItem-module__dealItem_'],
-[class*='GridContainer-module__gridMainContainer_'],
-[class*='Shoveler-module__shovelerWrapper_'],
-[class*='ShovelerList-module__deals_']
+.review
 {
 	margin: 12px!important;
 }
 
-#ewc .ewc-item-cover .ewc-item-cover-back,
-.nav-bluebeacon #ewc #ewc-checkout.ewc-untabbed-checkout
+selector
 {
 	margin: 3px 6px!important;
 }
 
 /*___ Paddings _____________________________________________________________________*/
 
-#anonCarousel1 .a-carousel-card,
-#rhf .rhf-footer,#rhf .celwidget,
-.a-section.review.aok-relative,
-.a-fixed-left-grid-col,.a-fixed-right-grid-col,.a-fixed-right-grid .a-col-left,.a-fixed-right-grid-col,
-.a-section.bucket,
-.a2s-dp-features,
-.masrw-relative
+#dp
 {
 	padding: 12px!important;
-}
-
-#navbar.nav-flex.layout3 #nav-main.nav-sprite .nav-fill #nav-xshop-container #nav-xshop .nav-a:active,#navbar.nav-flex.layout3 #nav-main.nav-sprite .nav-fill #nav-xshop-container #nav-xshop .nav-a:hover,#navbar.nav-flex.layout3.nav-fixed #nav-main.nav-sprite .nav-fill #nav-xshop-container #nav-xshop .nav-a:active,#navbar.nav-flex.layout3.nav-fixed #nav-main.nav-sprite .nav-fill #nav-xshop-container #nav-xshop .nav-a:hover
-{
-    padding: 8px 12px;
 }
 
 selector
@@ -273,155 +196,82 @@ selector
 	padding: 3px 6px!important;
 }
 
-.a-fixed-left-grid-inner,
-.a-fixed-right-grid-inner
-{
-    padding: 0!important;
-}
-
 /*___ Heights ______________________________________________________________________*/
 
-.customTitle--2jvEg,
-.doubleLinesTitle--ATRHO,
-.vse-related-videos-container .vse-video-title
+selector
 {
 	max-height: none!important;
 }
 
-.a-row
+x.a-expander-partial-collapse-container
+{
+	max-height: 100%!important;
+}
+
+x.a-expander-partial-collapse-content
 {
 	height: auto!important;
 }
 
-[class*='ShovelerList-module__deals_'],
-[class*='DealCard-module__card_'],
-[class*='GridContainer-module__gridMainContainer_'] {
-    height: 36rem;
-}
-
-.octopus-pc-card-height-v3,
-.octopus-pc-card-height-v3-with-prime-badge
-{
-    height: 30rem!important;
-}
-
-#rhf .rvi-container-v2,
 .a-carousel-viewport
 {
-    height: 14rem!important;
-}
-
-.DesktopFlexBannerLayout-module__flex_2iph_nl4TjUqTTucHH2znX {
-    height: 26rem;
-}
-
-.vse-related-videos-container .vse-video-title
-{
-    height: 7rem!important;
+	height: 27rem!important;
 }
 
 /*___ Widths _______________________________________________________________________*/
 
-[class*='DealItem-module__dealItemContent_'],
+#gw-card-layout,
+#desktop-banner,
+.mega-menu .mm-column,
+.vse-lightbox-wrapper.vse-vertical-lightbox.vse-responsive-lightbox.vse-lb-show-related-products,
+.aplus-v2 .aplus-standard img,
 #dp,
-.a-carousel-card,
-.a2s-responsive-container,
-.askWidgetQuestions,
-.cm_cr_grid_center_right,
-.page-container,
 .review,
-.s-desktop-width-max,
-.sg-col-16-of-20,.sg-col-4-of-20
+.cm_cr_grid_center_right,
+.askWidgetQuestions
 {
 	max-width: none!important;
 }
 
-#aa-xcomp #aa-xcomp-content,
-.a-fixed-right-grid-col
+.aplus-v2 .aplus-standard .apm-lefttwothirdswrap,
+.a-row .a-span3, .a-ws .a-row .a-ws-span3
 {
 	width: auto!important;
 }
 
-#aa-xcomp #aa-xcomp-container,
-#navbar,
-.a-fixed-right-grid-col,
-.amzn-ss-wrap,
-.cr-lighthut-boundary,
-.sg-row,
-header.nav-flex
+.aplus-v2 .aplus-standard .apm-eventhirdcol,
+.aplus-v2 .aplus-standard .apm-fixed-width,
+.cr-lighthut-boundary
 {
-	width: 100%!important;
+	width: 98%!important;
 }
 
-.aplus-v2 .aplus-standard table.apm-tablemodule-table,
-.aplus-v2 .aplus-standard .apm-tablemodule,
-.aplus-v2 .aplus-standard .apm-fixed-width
-{
-    width: 97%!important;
+.mega-menu .mm-merch-panel img {
+    width: 70%;
 }
 
-.askInlineWidget .vote {
-    width: 93%!important;
+.aplus-v2 .aplus-standard.aplus-module.module-9 th.apm-center {
+    padding: 0!important;
+    width: 33%!important;
 }
 
-.a-fixed-left-grid .a-col-right {
-    width: 81%;
-}
-
-.a-fixed-right-grid .a-col-left
-{
-    width: 80%!important;
-}
-
-.a-fixed-left-grid-col.a-col-left
+.vse-lightbox-wrapper.vse-vertical-lightbox.vse-responsive-lightbox.vse-lb-show-related-products
  {
-    width: 56px;
+    margin: 2% 0;
+    left: 11%;
 }
 
-#leftCol {
-    width: 41%;
-}
 
-.largeDevice .DealItem-module__dealItem_1ALQj-8DFdBjwNoMaYwM4P {
-    width: 23%;
-}
 
-#anonCarousel1 .a-carousel-card,
-#rightCol {
-    width: 21%!important;
-}
 
-.a-carousel-card {
-    width: 18%!important;
-}
 
-#anonCarousel1 .a-carousel-card {
-    width: 4%!important;
-}
-
-[id*="PComp-"]
- {
-    width: 37rem!important;
-}
-
-.askWidgetQuestions .a-fixed-left-grid-col.a-col-left {
-    width: 9rem!important;
-}
-
-#rightCol {
-    width: 270px;
-    margin-left: 0;
-}
 
 }
 
-@-moz-document domain("amazon.com"), domain("amazonforum.com"), domain("worker.mturk.com"), domain("match.amazonbrowserapp.com"), domain("amazonbrowserapp.com"), domain("aboutamazon.com") {
+@-moz-document domain("amazon.com") {
 /* Font Settings */
 
-.link--dMwSA,
-.sbx_mbd .sb_3GxDSLVn,
-a[href],
-td span
+a[href]
 {
 	color: #0ff!important;
 	text-shadow: 1px 1px #000!important;
@@ -435,11 +285,11 @@ a[href]:visited
 
 /*__________________________________________________________________________________*/
 
-.a-profile-name,
-.featuringText--CaAc1,
-.link--dMwSA:hover,
-.navFooterDescText:hover,
-.sbx_mbd .sb_3GxDSLVn:hover,
+#iv-tab-view-container ul.iv-tab-views .iv-tab-heading.iv-active a,
+#iv-tab-view-container ul.iv-tab-views li.iv-active a,
+.a-color-link:hover,
+.count,
+.cr-lighthouse-term:hover,
 a[href]:hover,
 h1,
 input[type="checkbox"]:checked+label,
@@ -450,25 +300,30 @@ input[type="radio"]:checked+label
 
 /*__________________________________________________________________________________*/
 
+#all-offers-display,
 #nav-search .nav-search-facade .nav-search-label,
 #prodDetails #SalesRank ul li span.zg_hrsr_ladder,
 #prodDetails #SalesRank ul li span.zg_hrsr_rank,
 #prodDetails .wrapper,
 #prodDetails td,
+#rhf .rhf-sign-in-button,
+#rhf .rvi-container #ybh-link,
+#rhf .rvi-container #ybh-text-off,
+#rhf .rvi-container #ybh-text-on,
+#rhf .rvi-container .you-viewed,
+.a-button-text,
+.a-color-base,
 .a-ordered-list .a-list-item,
 .a-unordered-list .a-list-item,
 .amzn-ss-promo-slot span,
-.nav-bluebeacon #ewc #ewc-checkout.ewc-untabbed-checkout,
-.s-alert-background-color-success,
-.sbx_mbd .sb_VVblLH_V,
-.sponsored-products-deal-discount-text,
-.text--46i4W,
-.textAnchor--1QvCo,
+.cr-lighthouse-term,
+.vse-lightbox-wrapper.vse-vertical-lightbox .vse-lb-video-metadata .vse-table.vse-video-title .video-title-container-left .video-title-ellipsis-wrapper .vse-content-title-prefix,
+.vse-video-vendorname,
 body,
-div.bucket,
 li,
 ol .a-list-item,
 p,
+table.a-keyvalue th,
 ul .a-list-item
  {
 	color: #fff!important;
@@ -476,37 +331,28 @@ ul .a-list-item
 
 /*___ Khaki ________________________________________________________________________*/
 
-#navFooter .navFooterDescItem a,
-.a-popover-modal .a-popover-header .a-popover-header-content,
-.a-size-base.a-color-base.a-text-bold,
-.a-size-mini b,
-.aplus-v2 .aplus-standard th.apm-tablemodule-keyhead,
-.customTitle--2jvEg,
-.fresh-shoveler .as-title-block .a-color-base,
-.title--X01QH,
+.vse-lb-v2 .vse-product-item .vse-product-col-right .vse-product-title,
+.vse-lightbox-wrapper.vse-vertical-lightbox .vse-lb-video-metadata .vse-table.vse-video-title,
 .vse-related-videos-container .vse-video-title,
 h1,
-h2 .a-size-base-plus,
-h2,
-table.a-keyvalue th
+h2
  {
 	color: #F0E890!important;
 }
 
 /*___ Burlywood ____________________________________________________________________*/
 
-.vse-video-vendorname,
-h3
+.a-text-bold,
+h3,
+h4
  {
 	color: #e0b880!important;
 }
 
 /*___ Sandy Brown __________________________________________________________________*/
 
-#productOverview_feature_div td.a-span3 span,
-#productOverview_feature_div th.a-span3 span,
-.price-tracker .price-labels b,
-.price-tracker .price-bubble-container .today-price-bubble,
+.a-color-secondary, .a-color-tertiary,
+.a-span3 .a-size-base,
 h5,
 h6,
 label
@@ -516,7 +362,6 @@ label
 
 /*___ Blue _________________________________________________________________________*/
 
-.nav-timeline-date,
 time
  {
 	color: #07beff!important;
@@ -524,27 +369,20 @@ time
 
 /*___ Green ________________________________________________________________________*/
 
-.a-price span,
-.a-section:last-child .a-spacing-top-mini .a-color-base,
-.a-size-small.todayPriceOnly.a-text-bold,
-.a-text-right,
-.price--1eqs3,
-.price-tracker .price-labels
+selector
  {
 	color: #07ff24!important;
 }
 
 /*___ Red __________________________________________________________________________*/
 
-.listPrice--vhN5A,
-[aria-label="This video is currently unavailable"]
+selector
  {
 	color: #ff0707!important;
 }
 
 /*__________________________________________________________________________________*/
 
-.a-button-group .a-button,
 input,
 input[type=email],
 input[type=number],
@@ -555,10 +393,9 @@ input[type=text],
 select,
 textarea
 {
-	background-color: #3d1313!important;
+	background-color: #411414!important;
 	border-radius: 22px!important;
 	color: #fff!important;
-	padding-left: 6px!important;
 }
 
 /*__________________________________________________________________________________*/
@@ -583,41 +420,20 @@ pre ::selection
 
 /*___ Misc _________________________________________________________________________*/
 
-.a-color-price,
-.ewc-style .ewc-color-price
-{
-    color: #00ff37!important;
+.vse-related-product-container .vse-product-item .vse-product-col-right .vse-product-price,
+.vse-related-product-container .vse-product-item .vse-product-col-right .vse-product-price-prime .vse-product-price-currency,
+.vse-related-product-container .vse-product-item .vse-product-col-right .vse-product-price-prime .vse-product-price-fraction,
+.a-color-price {
+    color: #2aff03!important;
 }
 
-.a-button .a-button-text,
-.a-color-base,
-.a-color-link,
-.displayAddressDiv .displayAddressUL li,
-.maple-banner .maple-banner__image,
-.maple-banner .maple-banner__text,
-.nav-timeline-asin-title
-{
-    color: #d4ebff!important;
+.a-color-link {
+    color: #12dbff!important;
 }
 
-#nav-timeline-recent-products .nav-text,
-.a-color-secondary,
-.a-color-tertiary
-{
-    color: #e1fefe!important;
-}
 
-#search a:not(.s-no-hover):hover .a-color-base, #search a:not(.s-no-hover):hover .a-color-secondary, #search a:not(.s-no-hover):hover .a-color-tertiary {
-    color: #f6e3d4!important;
-}
 
-.a-color-success {
-    color: #eaff39!important;
-}
 
-.a-price-dash[data-a-color=price] {
-    color: #f8dfd8;
-}
 
 
 
@@ -634,7 +450,7 @@ pre ::selection
 
 }
 
-@-moz-document domain("amazon.com"), domain("amazonforum.com"), domain("worker.mturk.com"), domain("match.amazonbrowserapp.com"), domain("amazonbrowserapp.com"), domain("aboutamazon.com") {
+@-moz-document domain("amazon.com") {
 /* Background Settings */
 
 body,
@@ -643,88 +459,75 @@ html {
 	background-attachment: fixed!important;
 }
 
-.banner-border,
-.nav-sprite-v1 .nav-sprite, .nav-sprite-v1 .nav-icon
+.amzn-ss-wrap-alt.amzn-ss-wrap
 {
 	background-image: none;
 }
 
 /*___ Background Gray ______________________________________________________________*/
 
-#navFooter.navLeftFooter,
-#aa-xcomp #aa-xcomp-header,
-.amzn-ss-wrap-alt.amzn-ss-wrap,
-.banner-border
+#pageContent,
+#nav-AssociateStripe .amzn-ss-link-container,
+#dp,
+#navFooter.navLeftFooter .navFooterDescLine,
+.a-popover-wrapper,
+.vse-lightbox-wrapper.vse-vertical-lightbox.vse-ns-lightbox.vse-lb-v2 .vse-lb-right
 {
 	background-color: #060505!important;
 }
 
-#aa-xcomp #aa-xcomp-content,
 #nav-subnav,
-.s-desktop-toolbar
+#navFooter.navLeftFooter
 {
     background-color: #1a1a1a!important;
 }
 
 /*___ Background 0000 ______________________________________________________________*/
 
-#aa-xcomp #aa-xcomp-container,
+#all-offers-display #aod-footer,
+#all-offers-display #aod-offer-list,
+#all-offers-display .aod-filter-block-container,
+#all-offers-display .aod-pinned-offer,
+#all-offers-display .aod-sticky-pinned-offer,
+#all-offers-display #all-offers-display-scroller,
 #nav-search .nav-search-field,
-#pageContent,
-#pet_your_prime .pet_your_prime_footer,
-.a-box .a-divider.a-divider-section .a-divider-inner,.a-box .a-divider.a-divider-section .a-divider-inner:after,.a-box.a-color-alternate-background,.a-box.a-color-offset-background,
-.a-button .a-button-inner,.a-button-group .a-button .a-button-inner,
-.a-button-group-splitdropdown .a-button,
-.a-color-base-background .a-divider.a-divider-section .a-divider-inner, .a-divider.a-divider-section .a-divider-inner,.a-color-base-background .a-divider.a-divider-section .a-divider-inner:after,
-.a-divider.a-divider-section .a-divider-inner:after,
-.a-dropdown-container .a-button-dropdown,
-.a-popover-header,
-.a-popover-inner,
-.amzn-ss-wrap,
-.gw-card-layout .a-cardui,.gw-card-layout .desktop-row>div,
+.a-button .a-button-inner,
+.a-button,
+.a-expander-content-fade,
+.a-expander-partial-collapse-header,
 .maple-banner--background,
-[class*='ShovelerPagination-module__navigation_'],
-[class*='Shoveler-module__shoveler_'],
-ul.a-pagination li a
+.mom-nudge-card-item
 {
 	background: rgba(0, 0, 0, 0)!important;
 }
 
 /*___ Background-color 0000 ________________________________________________________*/
 
-#ewc .ewc-items,
-#navbar #nav-flyout-ewc .nav-flyout-body,#navbar.nav-bluebeacon #nav-search .nav-search-submit,
+.vse-related-videos-container.vse-vertical-scroll .vse-vc-header[class*=segment-title-].first-item,
+#navbar.nav-bluebeacon #nav-search .nav-search-scope,
+#navbar.nav-bluebeacon #nav-search .nav-search-submit,
+#twister .swatches li.swatchHover .a-button-text,
+#twister .swatches li.swatchUnavailableHover .a-button-text,
 .a-accordion .a-accordion-active .a-accordion-inner,
 .a-accordion .a-accordion-active .a-accordion-row,
-.a-accordion .a-accordion-row,
-.a-box,
+.a-alert-error .a-alert-container, .a-alert-info .a-alert-container, .a-alert-success .a-alert-container, .a-alert-warning .a-alert-container,
 .a-cardui,
-.a-color-alternate-background,
-.a-expander-partial-collapse-header,
-.a2s-image-block-container .a2s-product-image,
-.aplus-v2 .aplus-standard .apm-tablemodule-image,.aplus-v2 .aplus-standard th.apm-tablemodule-keyhead,
-.flex-container,
-.masrw-main-image-inner,
-.nav-ewc-persistent-click #ewc #ewc-active-cart .ewc-scroll-area,.nav-ewc-persistent-hover #ewc #ewc-active-cart .ewc-scroll-area,
-.nav-timeline-item,
-.octopus-pc-asin-info-section,
-.octopus-pc-card,
-.octopus-pc-category-card-v2,
-.octopus-pc-category-card-v2-item-block,
-.octopus-pc-dotd-info-section,
-.octopus-pc-item-image-section,
-table.a-bordered tr:nth-child(even),table.a-keyvalue th,
-ul.a-tabs,
-ul.a-pagination li a,
-ul.a-pagination li,
-ul.a-pagination li.a-selected a
+.a-input-text-addon,
+.a-popover-inner,
+.aplus-v2 .aplus-standard .apm-tablemodule-image,
+.aplus-v2 .aplus-standard th.apm-tablemodule-keyhead,
+.cr-lighthouse-term,
+.vse-lb-v2 .vse-video-action-strip,
+.vse-related-product-container.a-carousel-display-vse-rp .a-carousel-left .a-carousel-goto-prevpage, .vse-related-product-container.a-carousel-display-vse-rp .a-carousel-right .a-carousel-goto-nextpage,
+table.a-bordered tr:nth-child(even),
+table.a-keyvalue th
 {
 	background-color: rgba(0, 0, 0, 0)!important;
 }
 
 /*__ Blue __________________________________________________________________________*/
 
-.a-button,.a-button-text
+.a-button:not(.a-carousel-goto-prevpage):not(.a-carousel-goto-nextpage)
 {
 	background-image: linear-gradient(to bottom right, #043dda, #000)!important;
 	border-radius: 22px!important;
@@ -733,16 +536,13 @@ ul.a-pagination li.a-selected a
 	color: #fff!important;
 }
 
-.a-button-primary:hover .a-button-inner,
-.a-button-text:hover,
-.a-button:hover
+x.a-button:hover
 {
 	background-image: linear-gradient(to bottom right, #154eeb, #000)!important;
 	color: #ff0!important;
 }
 
-.a-button:active,
-.a-button-text:active
+x.a-button:active
 {
 	box-shadow: inset 2px 2px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
 }
@@ -771,8 +571,7 @@ selector:active
 
 /*__ Orange ________________________________________________________________________*/
 
-.cr-lighthouse-term,
-[data-action="a-dropdown-button"]
+selector
 {
 	background-image: linear-gradient(to bottom right, #da3a04, #000)!important;
 	border-radius: 22px!important;
@@ -781,15 +580,13 @@ selector:active
 	color: #fff!important;
 }
 
-.cr-lighthouse-term:hover,
-[data-action="a-dropdown-button"]:hover
+selector:hover
 {
 	background-image: linear-gradient(to bottom right, #eb4b15, #000)!important;
 	color: #ff0!important;
 }
 
-.cr-lighthouse-term:active,
-[data-action="a-dropdown-button"]:active
+selector:active
 {
 	box-shadow: inset 2px 2px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
 }
@@ -818,99 +615,49 @@ selector:active
 
 /*___ Plain Black __________________________________________________________________*/
 
-#dp,
-#gw-card-layout>.gw-col,
-#nav-timeline.nav-timeline-asin-title-enabled .nav-timeline-img-holder,
-#navbar #nav-flyout-ewc,
-#rhf .rhf-footer,#rhf .celwidget,
-.CarouselWithSelector,
-.GridPresets-module__gridDesktopPresetsSection_2vR1QJzhw-o6rR-aPam5HQ,
-.a-section.bucket,
-.a2s-dp-features,
-.apb-browse-two-col-center-pad,
-.gw-card-layout[data-flow-dir="h"]>.gw-col,
-.masrw-relative,
-.s-desktop-content,
-[class*='GridContainer-module__gridMainContainer_'],
-[class*='Shoveler-module__shovelerWrapper_'],
-[style*="background-color:#eff7fe"]
+#rhf
 {
-	
-	background: #000!important;
 	background-color: #000!important;
 	border-radius: 22px!important;
 	border: 1px solid rgba(0, 0, 0, .25)!important;
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0, 10px 10px 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
 
-#dp:hover,
-#gw-card-layout>.gw-col:hover,
-#navbar #nav-flyout-ewc:hover,
-#rhf .rhf-footer:hover,#rhf .celwidget:hover,
-.CarouselWithSelector:hover,
-.GridPresets-module__gridDesktopPresetsSection_2vR1QJzhw-o6rR-aPam5HQ:hover,
-.a-fixed-right-grid .a-col-left:hover,
-.a-section.bucket:hover,
-.a2s-dp-features:hover,
-.apb-browse-two-col-center-pad:hover,
-.gw-card-layout[data-flow-dir="h"]>.gw-col:hover,
-.masrw-relative:hover,
-.s-desktop-content:hover,
-[class*='GridContainer-module__gridMainContainer_']:hover,
-[class*='Shoveler-module__shovelerWrapper_']:hover,
-[style*="background-color:#eff7fe"]:hover
+#rhf:hover
 {
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0, 10px 10px 5px rgba(10, 10, 10, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
 
 /*___ Plain ________________________________________________________________________*/
 
-#anonCarousel1 .a-carousel-card,
-#ewc .ewc-item-cover .ewc-item-cover-back,
-#nav-flyout-prime,
-.ZDZkND,
-.a-popover-wrapper,
-.a-section.review.aok-relative,
-.a2s-action-box,
-.askWidgetQuestions .a-fixed-left-grid.a-spacing-base,
-.masrw-box,
-.nav-bluebeacon #ewc #ewc-checkout.ewc-untabbed-checkout,.nav-flyout,
-.octopus-pc-item-block,
-.sbx_mbd .sb_ZcnsR4zE,
-.tile--t5OMY,
-.vse-video-card,
-[class*='DealCard-module__card_'],
-[class*='DealItem-module__dealItem_']
+#iv-tab-view-container .iv-box,
+#desktop_buybox,
+#all-offers-display,
+.nav-flyout,
+.a-box,
+.a-popover-inner,
+.vse-related-product-container .vse-product-item
 {
-	background-color: #2d2d2d!important;
+	background-color: #1c1c1c!important;
 	border-radius: 22px!important;
 	border: 1px solid rgba(0, 0, 0, .25)!important;
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0, 10px 10px 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
 
-#anonCarousel1 .a-carousel-card:hover,
-#ewc .ewc-item-cover .ewc-item-cover-back:hover,
-#nav-flyout-prime:hover,
-.ZDZkND:hover,
-.a-popover-wrapper:hover,
-.a-section.review.aok-relative:hover,
-.a2s-action-box:hover,
-.askWidgetQuestions .a-fixed-left-grid.a-spacing-base:first-of-type:hover,
-.masrw-box:hover,
-.nav-bluebeacon #ewc #ewc-checkout.ewc-untabbed-checkout:hover,.nav-flyout:hover,
-.octopus-pc-item-block:hover,
-.sbx_mbd .sb_ZcnsR4zE:hover,
-.tile--t5OMY:hover,
-.vse-video-card:hover,
-[class*='DealCard-module__card_']:hover,
-[class*='DealItem-module__dealItem_']:hover
+#iv-tab-view-container .iv-box:hover,
+#desktop_buybox:hover,
+#all-offers-display:hover,
+.nav-flyout:hover,
+.a-box:hover,
+.a-popover-inner:hover,
+.vse-related-product-container .vse-product-item:hover
 {
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0, 10px 10px 5px rgba(10, 10, 10, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
 
 /*___ Red Gradient _________________________________________________________________*/
 
-selector
+.a-alert-warning
 {
 	background: linear-gradient(to bottom, #300202 0%, #590505 100%)!important;
 	border-bottom: 1px solid #000!important;
@@ -928,7 +675,7 @@ selector
 
 /*__ Green Gradient ________________________________________________________________*/
 
-.s-alert-background-color-success
+selector
 {
 	background: linear-gradient(to bottom, #15534d 0%, #000 100%)!important;
 	border-bottom: 1px solid #000!important;
@@ -948,1722 +695,250 @@ selector
 
 /*__ Orange Gradient _______________________________________________________________*/
 
-#navbar.nav-bluebeacon #nav-search .nav-search-scope
+selector
 {
 	background: linear-gradient(to bottom, #da3a04 0%, #000 100%)!important;
+	border-bottom: 1px solid #000!important;
+	border-radius: 22px!important;
 	text-shadow: 1px 1px #555!important;
 }
 
 /*__ Code ___________________________________________________________________________*/
 
-.a2s-utterance-box
+pre
 {
 	background: #111!important;
 	background: url(https://image.ibb.co/e8fWZk/red_carbon_pattern_by_mystica_264_d4ceu9m.png) #111!important;
 	background: url(https://image.ibb.co/msdy5U/Red_Fabric.jpg) #111!important;
 }
 
-.a2s-utterance-box.a2s-bubble:after {
-    bottom: -12px;
-    border-width: 0 0 12px 25px;
-    border-color: transparent #7e020f;
-}
-
 /*___ Highlight Background _________________________________________________________*/
 
-.a-dropdown-common .a-dropdown-link.a-active,
-.a-dropdown-common .a-dropdown-item:hover .a-dropdown-link,
-#comparison_custormer_rating_row:hover,#comparison_price_row:hover,#comparison_sold_by_row:hover,
-.apm-tablemodule-keyvalue:hover,
-table.a-keyvalue tr:hover
+.aplus-v2 .aplus-standard .aplus-tech-spec-table tr:hover
 {
 	background: linear-gradient(to right, #383838, #0000)!important;
 	border-left-color: #434343!important;
 }
 
-/*__ Orange Gradient _______________________________________________________________*/
-
-.comparison_baseitem_column,.comparison_table tr:nth-child(even) td.comparison_baseitem_column,
-.aplus-v2 .aplus-standard .apm-tablemodule-valuecell.selected
-{
-	background: linear-gradient(to bottom, #da3a04 0%, #000 100%)!important;
-}
 
 /*___ Radial Background _________________________________________________________*/
 
-.nav-item-status
+#iv-tab-view-container ul.iv-tab-views .iv-tab-heading.iv-active a,
+#iv-tab-view-container ul.iv-tab-views li.iv-active a
 {
-	background: radial-gradient(ellipse at center, rgb(8, 254, 8) 0%,rgba(14,14,14,1) 70%)!important;
+	background: radial-gradient(ellipse at center, #03f303 0%,#0000 70%)!important;
 }
 
-ul.a-tabs .a-tab-heading.a-active a,
-ul.a-tabs li.a-active a:hover,
-ul.a-pagination li.a-selected
+selector
 {
-	background: radial-gradient(ellipse at center, #65be03 0%,#0e0e0e00 70%)!important;
+	background: radial-gradient(ellipse at center, #00809d 0%,rgba(14,14,14,1) 70%)!important;
 }
 
-table[bgcolor="#ffffff"]
+selector
 {
 	background: radial-gradient(ellipse at center, #00809d 0%,rgba(14, 14, 14, 0) 70%)!important;
 }
 
 }
 
-@-moz-document domain("amazon.com"), domain("amazonforum.com"), domain("worker.mturk.com"), domain("amazonbrowserapp.com"), domain("aboutamazon.com") {
+@-moz-document domain("amazon.com") {
 /* Image Settings */
 
-
-[class*='DealItem-module__dealItem_'],
-#anonCarousel1 .a-carousel-card,
-#all-offers-display #aod-offer-list,
-#attach-desktop-sideSheet .attach-accessory-display-row,
-#comparison_custormer_rating_row,#comparison_price_row,#comparison_sold_by_row,
-#discover-list-page .grid-item,#dragonflyView .playlistDetailsHeader .headerActions .button.iconOnlyButton,
-#ewc .ewc-item,
-#feature-bullets li,
-#g-items > .g-item-sortable,
-#iv-tab-view-container .ivThumb,
-#main-container #cl-category-result .cr-item,
-#ordersContainer .a-fixed-right-grid .a-col-left .a-fixed-left-grid,
-#prodDetails .prodDetTable tr,#productDescription p,
-#sitbReaderSB .book,
-#tracking-events-container div.a-row:not(:nth-child(3)),
-#zg .zg_homeWidgetItem,#zg-center-div .zg-item-immersion,#zg-other-container,
-.GB-M-COMMON.GB-PC-FACEOUT .tile,.GB-SUPPLE .tallCellView,
-.Hub4-list-items-item,.HubListCarousel-items-item,
-.PromoCard,
-._1FuiMq,
-._20kb6N._20kb6N .UaW15H,._249xJW ._3JL40y,
-._multi-brand-creative-desktop_style_container__3aZDQ,._multi-card-creative-desktop_DesktopGridColumn_gridColumn__36SB1,
-._tetris-creative-desktop_ItemContainer_container__gT4ua,
-.a-box.a-box-normal.a-text-center.ped_cg_content_box,.a-carousel-button,.a-carousel-card,.a-section.review.aok-relative,.a-spacing-medium.p13n-sc-list-item,.a-touch-link,.a-unordered-list li,.a20m .box-shadow,.amazonlive-desktop .amazonlive-widget-shopping,.aplus-v2 .aplus-module,.apm-hovermodule-opacitymodon.apm-hovermodule-opacitymodon,.askTeaserQuestions .a-fixed-left-grid-inner,.av-s-filters-dropdown .av-s-refine-drop-section,
-.apm-tablemodule-keyvalue,
-.askWidgetQuestions .a-fixed-left-grid.a-spacing-base,
-.best-of-prime-card,.book-roundup-item,.bxc-grid__column,.bxc-grid__column.bxc-grid__column--3-of-12,
-.desktop .ai-item,.desktop .ir-item,.desktop .thumbnail-element,.djlz .sky .desktopSparkle__asinContainer,
-.feed-carousel .feed-carousel-control,.four-asin-images-row img,.fresh-shoveler .feed-carousel-card,
-.glimpse-fiona-navigation-item,.glimpse-page-fixed .glimpse-grid-item,.glimpse-page-fixed .glimpse-idealist-compact-product-image,.grid-rails .genericTile,.grid-rails .topHitTile,.gw-card-layout .a-cardui,
-.help-content p,.horizontalTile,.huc-position-rel,.hud-profile-category-box,
-.jxBPRE li,
-.kaiWNV,
-.mega-menu .mm-merch-panel,.megamenu-sl-custom .megamenu-sl-cat-link,
-.nav-ewc-persistent-hover.a-js .s-result-list > .sg-col,.nav-timeline-item,.nav-tpl-itemList .nav-link,.nowPlayingView .nowPlayingViewContainer .nowPlayingViewBody .nowPlayingLyricsContainer .lyricsLine,
-.octopus-pc-category-card-v2-item,.octopus-pc-item-block,.order,
-.playlistDetailsListItem,
-.quickAddToPlaylistButton,
-.row--2myrF,
-.s-result-item,.s-result-list > .sg-col,.s-suggestion,.sbl-filter-top-section,.sc-bxivhb.imIAGR,.sc-iwsKbI.iCqprj.celwidget,.sc-list .sc-list-item-border,.self-service-rich-card,.shoveler li,.sims-lpo-grid-column,.slick-slide,.songTracks tr,.style__itemOuter__2dxew a,.style__mini__3bDjI.style__variableHeight__1_p9C,.style__small__3Atts.style__variableHeight__1_p9C,
-.style__mini__3bDjI.style__grouped__WPoUF,
-.teaser-suggestion-box,.three-image-b-tall img,
-.tile--12tpu,
-.view-switcher,.vxd-music-bs-row .vxd-music-bs-col-content,
-.wl-grid-item,.ws-panel-subsection,.wrapper > .sntra-post li,
-.ya-card-cell,
-.zviBc .sc-kpOJdX,
-[class*='DealCard-module__card_'],
-[class*="quadrant-container-"],[data-creative-type=MultiBrandCreativeDesktop] .sb_37u_8SFq,
-a.amzn-brand-stores-anchor,
-body.body-forum .single-column #content .p-forum-a .p-comment-container,
-div#dp:not(.burj-body) div.shopbylook-btf-item-box,
-table.a-keyvalue tr,table.mturk-table tbody tr
-{
+#twister .swatches li,
+.a-carousel-card,
+.a-unordered-list .a-list-item,
+.askTopQandA .a-spacing-base,
+.reviews-customer-images .review-image-tile,
+.vse-video-card,
+[value="Vote Down"],
+[value="Vote Up"],
+tbody tr
+ {
 	filter: brightness(75%)!important;
 }
 
 /*__________________________________________________________________________________*/
 
-[class*='DealCard-module__card_']:hover,
-[class*='DealItem-module__dealItem_']:hover,
-#anonCarousel1 .a-carousel-card:hover,
-.a-button-toggle.a-button-selected .a-button-text img,
-#all-offers-display #aod-offer-list:hover,#attach-desktop-sideSheet .attach-accessory-display-row:hover,
-#comparison_custormer_rating_row:hover,#comparison_price_row:hover,#comparison_sold_by_row:hover,
-#discover-list-page .grid-item:hover,#dragonflyView .playlistDetailsHeader .headerActions .button.iconOnlyButton:hover,
-#ewc .ewc-item:hover,
-#feature-bullets li:hover,
-#g-items > .g-item-sortable:hover,
-#iv-tab-view-container .ivThumb.selected,#iv-tab-view-container .ivThumb:hover,
-#main-container #cl-category-result .cr-item:hover,
-#ordersContainer .a-fixed-right-grid .a-col-left .a-fixed-left-grid:hover,
-#prodDetails .prodDetTable tr:hover,#productDescription p:hover,
-#sitbReaderSB .book:hover,
-#tracking-events-container div.a-row:hover,#tracking-events-container div.a-row:nth-child(3) .a-spacing-large.a-spacing-top-medium,#tracking-events-container div.a-row:nth-child(3) .tracking-event-date-header,#tracking-events-container div.a-row:nth-child(3),
+#twister .swatches li:hover,
 #twister .swatches li.swatchSelect,
-#zg .zg_homeWidgetItem:hover,#zg-center-div .zg-item-immersion:hover,#zg-other-container:hover,
-.GB-M-COMMON.GB-PC-FACEOUT .tile:hover,.GB-SUPPLE .tallCellView:hover,
-.Hub4-list-items-item:hover,.HubListCarousel-items-item:hover,
-.PromoCard:hover,
-._1FuiMq:hover,
-._20kb6N._20kb6N .UaW15H:hover,._249xJW ._3JL40y:hover,
-._multi-brand-creative-desktop_style_container__3aZDQ:hover,._multi-card-creative-desktop_DesktopGridColumn_gridColumn__36SB1:hover,
-._tetris-creative-desktop_ItemContainer_container__gT4ua:hover,
-.a-box.a-box-normal.a-text-center.ped_cg_content_box:hover,.a-carousel-button:hover,.a-carousel-card:hover,.a-row.a-grid-vertical-align.a-grid-center.amazonlive-shopping-carousel-product.amazonlive-shopping-carousel-card-highlighted,.a-section.review.aok-relative:hover,.a-spacing-medium.p13n-sc-list-item:hover,.a-touch-link:hover,.a-unordered-list li:hover,.a20m .box-shadow:hover,
-.active--1uLFW,.amazonlive-desktop .amazonlive-widget-shopping .amazonlive-shopping-carousel-card-highlighted,.amazonlive-desktop .amazonlive-widget-shopping:hover,.aplus-v2 .aplus-module:hover,.aplus-v2 .apm-hovermodule-smallimage:not(.apm-hovermodule-opacitymodon),.apm-hovermodule-opacitymodon.apm-hovermodule-opacitymodon:hover,.askInlineWidget:hover,.askTeaserQuestions .a-fixed-left-grid-inner:hover,.av-s-filters-dropdown .av-s-refine-drop-section:hover,
-.apm-tablemodule-keyvalue:hover,
-.askWidgetQuestions .a-fixed-left-grid.a-spacing-base:hover div,.askWidgetQuestions .a-fixed-left-grid.a-spacing-base:hover,
-.best-of-prime-card:hover,.book-roundup-item:hover,.bxc-grid__column.bxc-grid__column--3-of-12:hover,.bxc-grid__column:hover,
-.desktop .ai-item:hover,.desktop .ir-item:hover,.desktop .thumbnail-element:hover,.djlz .sky .desktopSparkle__asinContainer:hover,
-.feed-carousel .feed-carousel-control:hover,.four-asin-images-row img:hover,.fresh-shoveler .feed-carousel-card:hover,
-.glimpse-fiona-navigation-item-active,.glimpse-fiona-navigation-item:hover,.glimpse-page-fixed .glimpse-grid-item:hover,.glimpse-page-fixed .glimpse-idealist-compact-product-image:hover,.grid-rails .genericTile:hover,.grid-rails .topHitTile:hover,.gw-card-layout .a-cardui:hover,
-.help-content p:hover,.horizontalTile:hover,.huc-position-rel:hover,.hud-profile-category-box:hover,
-.jxBPRE li:hover,
-.kaiWNV:hover,
-.mega-menu .mm-merch-panel:hover,.megamenu-sl-custom .megamenu-sl-cat-link:hover,
-.nav-ewc-persistent-hover.a-js .s-result-list > .sg-col:hover,.nav-timeline-item:hover,.nav-tpl-itemList .nav-link:hover,
-.nowPlayingView .nowPlayingViewContainer .nowPlayingViewBody .nowPlayingLyricsContainer .lyricsLine.highlighted,
-.octopus-pc-category-card-v2-item:hover,.octopus-pc-item-block:hover,.order:hover,
-.playlistDetailsListItem:hover,
-.quickAddToPlaylistButton:hover,
-.row--2myrF:hover,
-.s-result-item:hover,.s-result-list > .sg-col:hover,.s-suggestion:hover,.sbl-filter-top-section:hover,.sc-bxivhb.imIAGR:hover,.sc-iwsKbI.iCqprj.celwidget:hover,.sc-list .sc-list-item-border:hover,.self-service-rich-card:hover,.shoveler li:hover,.sims-lpo-grid-column:hover,.slick-slide.slick-active.slick-current,.slick-slide:hover,.songList.selected,.songTracks tr:hover,.style__itemOuter__2dxew:hover a,.style__mini__3bDjI.style__variableHeight__1_p9C:hover,.style__small__3Atts.style__variableHeight__1_p9C:hover,
-.style__mini__3bDjI.style__grouped__WPoUF:hover,
-.teaser-suggestion-box:hover,.three-image-b-tall img:hover,.tile--12tpu:hover,
-.view-switcher-active,.view-switcher:hover,
-.vxd-music-bs-row .vxd-music-bs-col-content:hover,
-.w-asin-info img,.wl-grid-item:hover,.ws-panel-subsection:hover,.wrapper > .sntra-post li:hover,
-.ya-card-cell:hover,
-.zviBc .sc-kpOJdX:hover,
-[class*="quadrant-container-"]:hover,[data-creative-type=MultiBrandCreativeDesktop] .sb_37u_8SFq:hover,
-a.amzn-brand-stores-anchor:hover,
-body.body-forum .single-column #content .p-forum-a .p-comment-container:hover,
-div#dp:not(.burj-body) div.shopbylook-btf-item-box:hover,
-table.a-keyvalue tr:hover,table.mturk-table tbody tr:hover
-{
+.a-carousel-card:hover,
+.a-unordered-list .a-list-item:hover,
+.askTopQandA .a-spacing-base:hover,
+.reviews-customer-images .review-image-tile:hover,
+.vse-video-card:hover,
+[value="Vote Down"]:hover,
+[value="Vote Up"]:hover,
+tbody tr:hover
+ {
 	filter: brightness(100%)!important;
 }
 
 /*__________________________________________________________________________________*/
 
-#cbcc_banner,
-
-pppimg:not(.svgBackground):not(._1GFTRr):not(._2U4y9H):not([src="https://m.media-amazon.com/images/G/01/digital/video/global/prime-logo-large-v4._CB509553088_.png"]):not([alt="Less like this"]):not([alt="More like this"]):not([alt="IMDb TV"])
-{
+img
+ {
 	border-radius: 22px!important;
-}
-
-.s-suggestion:first-child:hover
-{
-	border-top-left-radius: 22px;
-	border-top-right-radius: 22px;
-}
-
-.glimpse-page-fixed .glimpse-image-tag-fixed,
-
-.s-suggestion:last-child:hover
-{
-	border-bottom-left-radius: 22px;
-	border-bottom-right-radius: 22px;
 }
 
 /*__________________________________________________________________________________*/
 
 img
-{
+ {
 	-webkit-box-reflect: below 0 -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent), to(rgba(250, 250, 250, 0.1)));
 }
 
 /*__________________________________________________________________________________*/
 
-.aplus-v2 .apm-hovermodule-opacitymodon img,
-.horizontalTile:hover .listViewDurationContextButton:not(.contextMenuHidden) .listViewDuration,
-.playbackControlsView:hover:not(.scrubbing) .listViewDurationContextButton:not(.contextMenuHidden) .listViewDuration,.playlistDetailsListItem:hover .listViewDurationContextButton:not(.contextMenuHidden) .listViewDuration,.playlistDetailsListItem:hover .listViewTrackNumber .equalizer,.playlistDetailsListItem:hover .listViewTrackNumber .number,
-.rowItem:hover .listViewDurationContextButton:not(.contextMenuHidden) .listViewDuration .rowItem:hover .listViewTrackNumber .equalizer,.rowItem:hover .listViewTrackNumber .number
-{
+selector:hover
+ {
 	opacity: 1!important;
 }
 
-input[type="checkbox"]:disabled + i
-{
-	opacity: .18!important;
 }
 
-.a-expander-header
-{
-	opacity: 0!important;
-}
-
-}
-
-@-moz-document domain("amazon.com"), domain("amazonforum.com"), domain("worker.mturk.com"), domain("amazonbrowserapp.com"), domain("aboutamazon.com") {
+@-moz-document domain("amazon.com") {
 /* New Icons */
 
-.a-hires .a-icon,
-.a-hires .a-link-emphasis:after
-{
-	background-image: url(https://i.ibb.co/cN5SWgB/Amazon-UIIcon-sprite-2x-59b.png);
-}
-
-.a-icon,
-.a-link-emphasis:after
-{
-	background-size: 400px 910px!important;
-}
-
-#amznlv-live-overlay-frame .slick-prev:before,
-.amazonlive-common .slick-prev:before,
-.icon-check:before,
-.playerIconPlay:before,
-.playerIconDotMenuRing:before,
-.playerIconShareRing:before,
-.playerIconStationsRing:before,
-.playerIconPlayRing:before,
-.playerIconDotMenu:before
-{
-	content: "";
-}
-
-/* Add to Cart __________________________________________________________________*/
-
-.merchbarW .s_add2CartSm,
-.merchbarW .s_add2CartGLSm
-{
-	background: url(https://i.ibb.co/9bgzcy9/add-to-cart-light.png) no-repeat!important;
-	box-sizing: border-box!important;
-}
-
-.merchbarW .s_add2CartSm:hover,
-.merchbarW .s_add2CartGLSm:hover
-{
-	background: url(https://i.ibb.co/bKRPKgV/add-to-cart-dark.png) no-repeat!important;
-	box-sizing: border-box!important;
-}
-
-.merchbarW .s_add2CartSm:hover,
-.merchbarW .s_add2CartGLSm:hover,
-.merchbarW .s_add2CartSm,
-.merchbarW .s_add2CartGLSm
-{
-	background-size: 134px!important;
-	padding-left: 134px;
-}
-
-/* Add to List __________________________________________________________________*/
-
-.merchbarW .s_add2WishListSm
-{
-	background: url(https://i.ibb.co/BP3rhDp/add-to-list-light.png) no-repeat!important;
-	box-sizing: border-box!important;
-}
-
-.merchbarW .s_add2WishListSm:hover
-{
-	background: url(https://i.ibb.co/NYdSv96/add-to-list-dark.png) no-repeat!important;
-	box-sizing: border-box!important;
-}
-
-.merchbarW .s_add2WishListSm:hover,
-.merchbarW .s_add2WishListSm
-{
-	background-size: 134px!important;
-	padding-left: 134px;
-}
-
-/* Add to My Music __________________________________________________________________*/
-
-.playerIconAddRing:before
-{
-	content: "";
-}
-
-.amazon-favorite .pr-fb .pr-fb-inner .pr-fb-button .pr-fb-icon
-{
-	top: 5px;
-}
-
-.amazon-favorite .pr-fb.pr-fb-not-following .pr-fb-inner .pr-fb-button .pr-fb-icon,
-.amazon-follow .pr-fb.pr-fb-not-following .pr-fb-inner .pr-fb-button .pr-fb-icon,
-.playerIconAddRing:before
-{
-	background: url(https://i.ibb.co/JBXpLdp/Add-icon-32x32.png) no-repeat!important;
-	box-sizing: border-box!important;
-}
-
-.playerIconAddRing:before
-{
-	background-size: 38px!important;
-	padding-left: 39px;
-	font-size: 40px;
-}
-
-.amazon-favorite .pr-fb.pr-fb-not-following .pr-fb-inner .pr-fb-button .pr-fb-icon,
-.amazon-follow .pr-fb.pr-fb-not-following .pr-fb-inner .pr-fb-button .pr-fb-icon
-{
-	background-size: 19px!important;
-	height: 19px;
-	padding-left: 25px;
-}
 
 /* Arrows _______________________________________________________________________*/
 
-/* Default & Up ____________________*/
+/* Up _________________*/
 
-#nav-search .nav-search-facade .nav-icon,
-#nav-xshop .nav-a .nav-icon,
+.a-icon-popover,
+.a-icon-previous,
 .a-icon-next,
+[value="Vote Up"],
+[value="Vote Down"]
+{
+	background: url(https://i.ibb.co/bvZmSFj/red-up.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+/* Down _________________*/
+
+.a-icon-popover,
+[value="Vote Down"]
+{
+	transform: rotate(180deg)!important;
+}
+
+/* Left _________________*/
+
 .a-icon-previous
 {
-    background: url(https://i.ibb.co/bvZmSFj/red-up.png) no-repeat!important;
-}
-
-/* Down __________________*/
-
-#nav-search .nav-search-facade .nav-icon,
-#nav-xshop .nav-a .nav-icon
-{
-	transform: rotate(180deg);
-}
-
-/* Left __________________*/
-
-.a-icon-previous {
-	transform: rotate(-90deg);
+	transform: rotate(-90deg)!important;
 }
 
 /* Right _________________*/
 
-.a-icon-next {
-	transform: rotate(90deg);
+.a-icon-next
+{
+	transform: rotate(90deg)!important;
 }
-
-/* Size ____________________*/
 
 .a-icon-previous,
-.a-icon-next {
-    background-size: 31px!important;
-    height: 24px!important;
-    padding-left: 31px!important;
-    width: 1px!important;
-}
-
-/* Small Size ____________________*/
-
-#nav-xshop .nav-a .nav-icon
-{
-    background-size: 23px!important;
-    height: 24px!important;
-    padding-left: 24px!important;
-    width: 1px!important;
-}
-
-/* Xtra Small Size ____________________*/
-
-#nav-search .nav-search-facade .nav-icon {
-    background-size: 13px!important;
-    height: 13px!important;
-    padding-left: 14px!important;
-    width: 1px!important;
-}
-
-#nav-search .nav-search-facade .nav-icon {
-    right: 4px;
-}
-#nav-xshop .nav-a .nav-icon {
-    margin: -14px 0 2px 5px;
-}
-
-/* No Avatar _______________________________________________________________*/
-
-[src*="https://secure.gravatar.com/avatar/"],
-
-img[src*="amazon-avatars-global/default._CR0,0,1024,1024_SX48_.png"]
-{
-	background: url(https://i.ibb.co/g3wQg00/avatar-32x32.png) no-repeat!important;
-}
-
-img[src*="amazon-avatars-global/default._CR0,0,1024,1024_SX48_.png"]
-{
-	background-size: 34px!important;
-	height: 34px!important;
-	width: 34px!important;
-}
-
-[src*="https://secure.gravatar.com/avatar/"]
-{
-	background-size: 69px!important;
-	height: 77px!important;
-	padding-left: 77px;
-	width: 74px!important;
-}
-
-/* Logo _______________________________________________________________*/
-
-/* Alexa (All things Alexa) __________________________________________________________________*/
-
-[src="https://images-na.ssl-images-amazon.com/images/G/01/x-locale/cs/ya/images/alexa_logo_ya._CB466291315_.png"]
-{
-	background: url(https://i.ibb.co/Dw02Ghg/Alexa-Logo.png) no-repeat!important;
-	box-sizing: border-box!important;
-}
-
-[src="https://images-na.ssl-images-amazon.com/images/G/01/x-locale/cs/ya/images/alexa_logo_ya._CB466291315_.png"]
-{
-	background-size: 92px!important;
-	height: 90px!important;
-	margin-left: 5%;
-	padding-left: 121px!important;
-	width: 120px!important;
-}
-
-/* Amazon _________________________________________________________________________*/
-
-#aa-xcomp-logo,
-.Page-header-bar-logo img,
-.site-interactions-group-logo .logo,
-i.clickable-heading
-{
-	background: url(https://i.ibb.co/V9YsWHC/amazon-103x31.png) no-repeat!important;
-	box-sizing: border-box!important;
-}
-
-#aa-xcomp-logo,
-.Page-header-bar-logo img,
-i.clickable-heading
-{
-	background-size: 115px!important;
-	height: 34px!important;
-	padding-left: 115px!important;
-	width: 115px!important;
-}
-
-.site-interactions-group-logo .logo
-{
-	background-size: 107px!important;
-}
-
-/* Amazon A (Lightbox) _______________________________________________________________*/
-
-.vse-lightbox-wrapper.vse-vertical-lightbox.vse-ns-lightbox .vse-lightbox-tab:before,
-.vse-lightbox-wrapper.vse-vertical-lightbox.vse-rvs-v2 .vse-lightbox-tab:before
-{
-	background: url(https://i.ibb.co/6026dcc/vse-lb-icon-3x.png) no-repeat!important;
-}
-
-.vse-lightbox-wrapper.vse-vertical-lightbox.vse-ns-lightbox .vse-lightbox-tab:before,
-.vse-lightbox-wrapper.vse-vertical-lightbox.vse-rvs-v2 .vse-lightbox-tab:before
-{
-	background-size: 28px!important;
-	height: 32px!important;
-	padding-left: 24px!important;
-	width: 17px!important;
-}
-
-/* Amazon Business _______________________________________________________________*/
-
-[src="https://images-na.ssl-images-amazon.com/images/G/01/support_images/GUID-47993225-F8C2-4AA0-AA8B-BB1B5F71D79F_en-US.png"]
-{
-	background: url(https://i.ibb.co/5sKFrXb/business-tv.png) no-repeat!important;
-}
-
-[src="https://images-na.ssl-images-amazon.com/images/G/01/support_images/GUID-47993225-F8C2-4AA0-AA8B-BB1B5F71D79F_en-US.png"]
-{
-	background-size: 258px!important;
-	height: 225px!important;
-	padding-left: 274px!important;
-	width: 157px!important;
-}
-
-/* Amazon Headphones _______________________________________________________________*/
-
-[src="https://images-na.ssl-images-amazon.com/images/G/01/support_images/GUID-32636442-A52D-442D-B06D-1ED5905B5FD2_en-US.png"]
-{
-	background: url(https://i.ibb.co/pbvv2ZJ/EP2-coiled.png) no-repeat!important;
-}
-
-[src="https://images-na.ssl-images-amazon.com/images/G/01/support_images/GUID-32636442-A52D-442D-B06D-1ED5905B5FD2_en-US.png"]
-{
-	background-size: 195px!important;
-	height: 225px!important;
-	padding-left: 357px!important;
-	width: 157px!important;
-}
-
-/* Amazon Devices _______________________________________________________________*/
-
-[src="https://images-na.ssl-images-amazon.com/images/G/01/support_images/GUID-605677AD-BFFD-48B0-96DA-86D75265267B_en-US.png"]
-{
-	background: url(https://i.ibb.co/VmSBYy8/Devices.png) no-repeat!important;
-}
-
-[src="https://images-na.ssl-images-amazon.com/images/G/01/support_images/GUID-605677AD-BFFD-48B0-96DA-86D75265267B_en-US.png"]
-{
-	background-size: 258px!important;
-	height: 225px!important;
-	padding-left: 274px!important;
-	width: 157px!important;
-}
-
-/* Amazon Electronics _______________________________________________________________*/
-
-[src="https://images-na.ssl-images-amazon.com/images/G/01/support_images/GUID-88BDB20E-9A1C-4DBF-996F-C6F0CF1BE423_en-US.png"]
-{
-	background: url(https://i.ibb.co/XyMB99R/electronics.png) no-repeat!important;
-}
-
-[src="https://images-na.ssl-images-amazon.com/images/G/01/support_images/GUID-88BDB20E-9A1C-4DBF-996F-C6F0CF1BE423_en-US.png"]
-{
-	background-size: 347px!important;
-	height: 173px!important;
-	padding-left: 362px!important;
-	width: 157px!important;
-}
-
-/* Amazon Gift Card __________________________________________________________________*/
-
-[src="https://images-na.ssl-images-amazon.com/images/G/01/x-locale/cs/ya/images/blackgc2._CB529917462_.png"]
-{
-	background: url(https://i.ibb.co/thsXQZC/amazon-gift-card.png) no-repeat!important;
-	box-sizing: border-box!important;
-}
-
-[src="https://images-na.ssl-images-amazon.com/images/G/01/x-locale/cs/ya/images/blackgc2._CB529917462_.png"]
-{
-	background-size: 92px!important;
-	height: 90px!important;
-	margin-left: 5%;
-	padding-left: 121px!important;
-	width: 120px!important;
-}
-
-/* Amazon Fashion __________________________________________________________________*/
-
-[src="https://images-na.ssl-images-amazon.com/images/G/01/nav2/images/gui/amazon-fashion-store-new._CB520838675_.png"]
-{
-	background: url(https://i.ibb.co/zh3Rmcr/amazon-fashion-store-new.png) no-repeat!important;
-	box-sizing: border-box!important;
-}
-
-[src="https://images-na.ssl-images-amazon.com/images/G/01/nav2/images/gui/amazon-fashion-store-new._CB520838675_.png"]
-{
-	background-size: 215px!important;
-	height: 37px!important;
-	padding-left: 201px!important;
-	width: 186px!important;
-}
-
-/* Amazon Music __________________________________________________________________*/
-
-[src="https://images-na.ssl-images-amazon.com/images/G/01/digital/music/logos/amzn_music_logo_subnav._CB485945425_.png"]
-{
-	background: url(https://i.ibb.co/4m6S82H/amzn-music-logo.png) no-repeat!important;
-	box-sizing: border-box!important;
-}
-
-[src="https://images-na.ssl-images-amazon.com/images/G/01/digital/music/logos/amzn_music_logo_subnav._CB485945425_.png"]
-{
-	background-size: 144px!important;
-	height: 25px!important;
-	padding-left: 145px!important;
-	width: 123px!important;
-}
-
-/* Amazon Products _______________________________________________________________*/
-
-[src="https://images-na.ssl-images-amazon.com/images/G/01/support_images/GUID-BDD77CC5-2374-48F7-89F2-18E8D51194D4_en-US.png"]
-{
-	background: url(https://i.ibb.co/HnrqX6z/products2.png) no-repeat!important;
-}
-
-[src="https://images-na.ssl-images-amazon.com/images/G/01/support_images/GUID-BDD77CC5-2374-48F7-89F2-18E8D51194D4_en-US.png"]
-{
-	background-size: 274px!important;
-	height: 173px!important;
-	padding-left: 290px!important;
-	width: 157px!important;
-}
-
-/* Amazon Packages _______________________________________________________________*/
-
-[src="https://images-na.ssl-images-amazon.com/images/G/01/support_images/GUID-14B0880C-FE88-49DC-8E4A-800AC4CF5E90_en-US.png"]
-{
-	background: url(https://i.ibb.co/NFS1tVX/amazonboxes.png) no-repeat!important;
-}
-
-[src="https://images-na.ssl-images-amazon.com/images/G/01/support_images/GUID-14B0880C-FE88-49DC-8E4A-800AC4CF5E90_en-US.png"]
-{
-	background-size: 153px!important;
-	height: 147px!important;
-	padding-left: 165px!important;
-	width: 157px!important;
-}
-
-/* Amazon Pay __________________________________________________________________*/
-
-[src="https://images-na.ssl-images-amazon.com/images/G/01/EPSMarketingJRubyWebsite/2019/Holidaygiftguide/consumer/newmaplefinaldesk._CB449766744_.png"]
-{
-	background: url(https://i.ibb.co/F7QVZTc/amazon-pay.png) no-repeat!important;
-	box-sizing: border-box!important;
-}
-
-[src="https://images-na.ssl-images-amazon.com/images/G/01/EPSMarketingJRubyWebsite/2019/Holidaygiftguide/consumer/newmaplefinaldesk._CB449766744_.png"]
-{
-	background-size: 127px!important;
-	height: 90px!important;
-	margin-left: -59%;
-	padding-left: 133px!important;
-}
-
-/* Amazon Prime __________________________________________________________________*/
-
-#pet_your_prime .pet_your_prime_sprite,
-.nav-sprite.nav-logo-base
-{
-	background: url(https://i.ibb.co/nsTRxqy/amazon-prime.png) no-repeat!important;
-	box-sizing: border-box!important;
-}
-
-#pet_your_prime .pet_your_prime_sprite,
-.nav-sprite.nav-logo-base
-{
-	background-size: 115px!important;
-	height: 34px!important;
-	padding-left: 115px!important;
-	width: 115px!important;
-}
-
-/* Amazon Question _______________________________________________________________*/
-
-[src="https://images-na.ssl-images-amazon.com/images/G/01/support_images/GUID-E69201DE-CCF8-4E3D-9270-1C4EDD8D7791_en-US.png"]
-{
-	background: url(https://i.ibb.co/0Qzy8yd/question.png) no-repeat!important;
-}
-
-[src="https://images-na.ssl-images-amazon.com/images/G/01/support_images/GUID-E69201DE-CCF8-4E3D-9270-1C4EDD8D7791_en-US.png"]
-{
-	background-size: 258px!important;
-	height: 225px!important;
-	padding-left: 274px!important;
-	width: 157px!important;
-}
-
-/* Amazon Returns _______________________________________________________________*/
-
-[src="https://images-na.ssl-images-amazon.com/images/G/01/support_images/GUID-D2D25277-9C3E-44CD-9318-37A084D06D95_en-US.png"]
-{
-	background: url(https://i.ibb.co/hVh0HXy/retuns.png) no-repeat!important;
-}
-
-[src="https://images-na.ssl-images-amazon.com/images/G/01/support_images/GUID-D2D25277-9C3E-44CD-9318-37A084D06D95_en-US.png"]
-{
-	background-size: 258px!important;
-	height: 225px!important;
-	padding-left: 274px!important;
-	width: 157px!important;
-}
-
-/* Added to Playlist Button __________________________________________________________________*/
-
-.playerIconAddedRing:before
-{
-	background: url(https://i.ibb.co/ZMNmHwc/Mcrw-IRxnnrq.png) no-repeat!important;
-	box-sizing: border-box!important;
-}
-
-.playerIconAddedRing:before
-{
-	background-size: 34px!important;
-	padding-left: 36px;
-	font-size: 38px;
-}
-
-.playerIconAddedRing:before
-{
-	content: "";
-}
-
-/* Checkmark _______________________________________________________________*/
-
-.a-checkbox-fancy .a-icon-checkbox {
-    height: 24px;
-}
-
-#delivered-marker, [data-reached="reached"] .milestone-marker {
-    right: 13px;
-    top: -23px;
-}
-
-[data-reached="notReached"].milestone.notReached .milestone-marker:before {
-    right: -12px!important;
-    top: -23px!important;
-}
-
-/* Checked ________________________*/
-
-#delivered-marker:after, .milestone.reached .milestone-marker:after
-{
-	background: url(https://i.ibb.co/HgsTqFS/checkbox-checked.png) no-repeat!important;
-	box-sizing: border-box;
-}
-
-/* Unchecked ________________________*/
-
-.milestone.notReached .milestone-marker:before
-{
-	background: url(https://i.ibb.co/fM9ptv1/checkbox-empty.png) no-repeat!important;
-	box-sizing: border-box;
-}
-
-#delivered-marker:after, .milestone.reached .milestone-marker:after {
-    background-size: 42px!important;
-    height: 43px!important;
-    padding-left: 43px!important;
-    width: 18px!important;
-}
-
-.milestone.notReached .milestone-marker:before {
-    background-size: 42px!important;
-    height: 43px!important;
-    padding-left: 26px!important;
-}
-
-/* Close _______________________________________________________________*/
-
-#attach-desktop-sideSheet #attach-close_sideSheet-link,
-._3PfIMz ._1bS_Hq .MyaTi9 svg
-{
-	background: url(https://i.ibb.co/HYxTpy7/wrong.png) no-repeat!important;
-	box-sizing: border-box;
-}
-
-#attach-desktop-sideSheet #attach-close_sideSheet-link,
-._3PfIMz ._1bS_Hq .MyaTi9 svg
-{
-	background-size: 20px!important;
-	height: 26px!important;
-	padding-left: 22px!important;
-	width: 10px!important;
-}
-
-/* Comment _______________________________________________________________*/
-
-.Gpyvwj._3lV8u4:before
-{
-	background: url(https://i.ibb.co/b3zGHZH/comment-light-30x24.png) no-repeat!important;
-	box-sizing: border-box;
-}
-
-.Gpyvwj._3lV8u4:before
-{
-	background-size: 25px!important;
-	height: 26px!important;
-	padding-left: 27px!important;
-	width: 10px!important;
-}
-
-/* Delete from List __________________________________________________________________*/
-
-.playerIconDeleteRing:before
-{
-	content: "";
-}
-
-.playerIconDeleteRing:before
-{
-	background: url(https://i.ibb.co/HYxTpy7/wrong.png) no-repeat!important;
-	box-sizing: border-box!important;
-}
-
-.merchbarW .s_add2WishListSm:hover
-{
-	background: url(https://i.ibb.co/NYdSv96/add-to-list-dark.png) no-repeat!important;
-	box-sizing: border-box!important;
-}
-
-.playerIconDeleteRing:before
-{
-	background-size: 38px!important;
-	padding-left: 39px;
-	font-size: 40px;
-}
-
-/* Dots _______________________________________________________________*/
-
-/* Horizontal ______________*/
-
-[alt="More Options"] {
-	background: url(https://i.ibb.co/DMmm32h/more-28x8.png) no-repeat!important;
-	box-sizing: border-box;
-}
-
-[alt="More Options"] {
-    background-size: 22px!important;
-    height: 9px!important;
-    padding-left: 22px!important;
-    width: 10px!important;
-}
-
-/* Feedback _______________________________________________________________*/
-
-._3Clv_6:nth-child(3) ._3fyCs_ svg
-{
-	background: url(https://i.ibb.co/hD543B5/pencil-icon-28x28.png) no-repeat!important;
-	box-sizing: border-box;
-}
-
-._3Clv_6:nth-child(3) ._3fyCs_ svg
-{
-	background-size: 21px!important;
-	height: 20px!important;
-	padding-left: 22px!important;
-	width: 10px!important;
-}
-
-/* Heart __________________________________________________________________*/
-
-.playerIconUnfollowed:before,
-.glimpse-signal-heart-solid-gray .path1:before,
-.glimpse-signal-heart-solid-gray .path2:before,
-.glimpse-signal-heart-on-incircle .path1:before,
-.glimpse-signal-heart-on-incircle .path2:before,
-.glimpse-signal-heart-off-incircle .path1:before,
-.glimpse-signal-heart-off-incircle .path2:before
-{
-	color: #fff0!important;
-}
-
-/* Heart Off _____________________*/
-
-.playerIconUnfollowed:before,
-.glimpse-signal-heart-solid-gray .path2:before,
-.glimpse-signal-heart-off-incircle .path2:before
-{
-	background: url(https://i.ibb.co/cD452WP/healthy-hear-darkt-32x32.png) no-repeat!important;
-	box-sizing: border-box!important;
-}
-
-.glimpse-signal-heart-solid-gray .path2:before,
-.glimpse-signal-heart-off-incircle .path2:before
-{
-	background-size: 28px!important;
-	height: 31px!important;
-	width: 23px!important;
-}
-
-.playerIconUnfollowed:before
-{
-	background-size: 32px!important;
-	padding-left: 36px;
-}
-
-#dragonflyView .button.artistFollowButton .playerIconUnfollowed
-{
-	font-size: 28px!important;
-}
-
-/* Heart On _____________________*/
-
-.glimpse-signal-heart-solid-gray .path1:before,
-.glimpse-signal-heart-off-incircle .path1:hover:before,
-.glimpse-signal-heart-off-incircle .path2:hover:before,
-.glimpse-signal-heart-on-incircle .path2:before
-{
-	background: url(https://i.ibb.co/FB9kX4W/healthy-heart.png) no-repeat!important;
-	box-sizing: border-box!important;
-}
-
-.glimpse-signal-heart-solid-gray .path1:before,
-.glimpse-signal-heart-off-incircle .path1:hover:before,
-.glimpse-signal-heart-off-incircle .path2:hover:before,
-.glimpse-signal-heart-on-incircle .path2:before
-{
-	background-size: 28px!important;
-	height: 31px!important;
-	width: 23px!important;
-}
-
-/* Help _______________________________________________________________*/
-
-._3Clv_6:nth-child(4) ._3fyCs_ svg
-{
-	background: url(https://i.ibb.co/S66FRr2/help-147419-640.png) no-repeat!important;
-	box-sizing: border-box;
-}
-
-._3Clv_6:nth-child(4) ._3fyCs_ svg
-{
-	background-size: 21px!important;
-	height: 20px!important;
-	padding-left: 22px!important;
-	width: 10px!important;
-}
-
-/* Menu (Hamburger) _______________________________________________________________*/
-
-selector {
-	background: url(https://image.ibb.co/hVxuzR/search.png) no-repeat!important;
-	box-sizing: border-box;
-}
-
-selector {
-    background-size: 15px!important;
-    height: 26px!important;
-    padding-left: 22px!important;
-    width: 10px!important;
-}
-
-/* Pad Lock (Login & Security) __________________________________________________________________*/
-
-[alt="Website is secured with SSL"],
-[src="https://images-na.ssl-images-amazon.com/images/G/01/x-locale/checkout/truespc/secured-ssl._CB485936932_.png"],
-[src="https://images-na.ssl-images-amazon.com/images/G/01/x-locale/cs/ya/images/sign-in-lock._CB529917462_.png"]
-{
-	background: url(https://image.ibb.co/f2B10K/lock124x124.png) no-repeat!important;
-	box-sizing: border-box!important;
-}
-
-[alt="Website is secured with SSL"],
-[src="https://images-na.ssl-images-amazon.com/images/G/01/x-locale/cs/ya/images/sign-in-lock._CB529917462_.png"]
-{
-	background-size: 92px!important;
-	height: 90px!important;
-	margin-left: 5%;
-	padding-left: 121px!important;
-	width: 120px!important;
-}
-
-[src="https://images-na.ssl-images-amazon.com/images/G/01/x-locale/checkout/truespc/secured-ssl._CB485936932_.png"]
-{
-	background-size: 32px!important;
-	height: 35px!important;
-	padding-left: 31px!important;
+.a-icon-next
+{
+	background-size: 29px!important;
+	height: 33px!important;
+	padding-left: 39px!important;
 	width: 1px!important;
 }
 
-/* Player Dot Menu __________________________________________________________________*/
-
-.playerIconDotMenuRing:before,
-.playerIconDotMenu:before
+[value="Vote Down"],
+[value="Vote Up"]
 {
-	background: url(https://i.ibb.co/W6Hyht4/action.png) no-repeat!important;
-	box-sizing: border-box!important;
-}
-
-
-.playerIconDotMenu:before
-{
-	background-size: 5px!important;
-	padding-left: 6px!important;
-}
-
-.playerIconDotMenuRing:before
-{
-	background-size: 10px!important;
-	padding-left: 38px;
-	font-size: 49px;
-}
-
-/* Prime __________________________________________________________________*/
-
-._2U4y9H._2U4y9H._2U4y9H,
-
-.a-icon-premium,
-.a-icon-prime,
-.a-premium-logo,
-.a-prime-logo
-{
-	background: url(https://i.ibb.co/PFwK1b2/prime.png) no-repeat!important;
-	box-sizing: border-box!important;
-}
-
-._2U4y9H._2U4y9H._2U4y9H
-{
-	background-size: 87px!important;
-	height: 34px!important;
-	padding-left: 115px!important;
-	width: 115px!important;
-}
-.a-icon-premium,
-.a-icon-prime,
-.a-premium-logo,
-.a-prime-logo
-{
-	background-size: 48px!important;
-	height: 17px!important;
-	padding-left: 55px!important;
-	width: 15px!important;
-}
-
-/* Prime Pantry __________________________________________________________________*/
-
-.a-icon-prime-pantry
-{
-	background: url(https://i.ibb.co/7yP7t8p/prime-pantry.png) no-repeat!important;
-	box-sizing: border-box!important;
-}
-
-.a-icon-prime-pantry
-{
-	background-size: 105px!important;
-	height: 25px!important;
-	width: 123px!important;
-}
-
-/* Prime Wardrobe __________________________________________________________________*/
-
-[src="https://images-na.ssl-images-amazon.com/images/G/01/softlines/subnav/images/pwFlyout/icons/prime_wardrobe_logo._CB517615304_.png"]
-{
-	background: url(https://i.ibb.co/TKmk7xT/prime-wardrobe-logo.png) no-repeat!important;
-	box-sizing: border-box!important;
-}
-
-[src="https://images-na.ssl-images-amazon.com/images/G/01/softlines/subnav/images/pwFlyout/icons/prime_wardrobe_logo._CB517615304_.png"]
-{
-	background-size: 120px!important;
-	height: 37px!important;
-	padding-left: 125px!important;
-	width: 123px!important;
-}
-
-/* Menu (Hamburger) __________________________________________________________________*/
-
-a#nav-hamburger-menu .hm-icon
-{
-	background: url(https://i.ibb.co/1QGfKdb/Hamburger-icon.png) no-repeat!important;
-	box-sizing: border-box!important;
-}
-
-a#nav-hamburger-menu .hm-icon
-{
-	background-size: 24px!important;
-	height: 20px!important;
-	width: 27px!important;
-}
-
-/* Shopping Cart __________________________________________________________________*/
-
-.a-icon-cart,
-.nav-cart-icon.nav-sprite
-{
-	background: url(https://i.ibb.co/jv0hNb8/shopping-cart-empty-36x36.png) no-repeat!important;
-	box-sizing: border-box!important;
-}
-
-.nav-cart-icon.nav-sprite
-{
-	background-size: 33px!important;
+	background-size: 29px!important;
 	height: 33px!important;
-	width: 33px!important;
+	padding-left: 22px!important;
+	width: 1px!important;
 }
 
-.a-icon-cart
+.a-icon-popover
 {
-	background-size: 23px!important;
-	height: 33px!important;
-	width: 33px!important;
+	background-size: 29px!important;
+	height: 23px!important;
+	padding-left: 25px!important;
+	width: 1px!important;
 }
 
-/* Search _______________________________________________________________*/
+/* Calendar _________________________________________________________________________*/
 
-.playerIconSearch:before
+.a-icon-calendar
 {
-	content: "";
+	background: url(https://i.ibb.co/1T7xzYc/calendar.png) no-repeat!important;
+	box-sizing: border-box;
 }
 
-#navbar.nav-bluebeacon #nav-search #nav-search-submit-text.nav-sprite,
-.Page-header-search-submit svg,
-.a-icon-search,
-.playerIconSearch:before,
-.site-interactions .b-search-a input[type=submit]
+.a-icon-calendar {
+    background-size: 25px!important;
+    height: 26px!important;
+    padding-left: 26px!important;
+    width: 1px!important;
+}
+
+/* Lock ______________________________________________________________________________*/
+
+[src*="secured-ssl"]
+{
+	background: url(https://i.ibb.co/PDvx7bz/lock124x124.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+[src*="secured-ssl"]
+{
+    background-size: 22px!important;
+    height: 26px!important;
+    padding-left: 26px!important;
+    width: 1px!important;
+}
+
+/* Search ___________________________________________________________________________*/
+
+#navbar.nav-flex #nav-belt #nav-search .nav-searchbar .nav-search-submit #nav-search-submit-text.nav-sprite
 {
 	background: url(https://image.ibb.co/hVxuzR/search.png) no-repeat!important;
-}
-
-#navbar.nav-bluebeacon #nav-search #nav-search-submit-text.nav-sprite,
-.playerIconSearch:before
-{
-	background-size: 24px!important;
-	height: 50px!important;
-	padding-left: 55px!important;
-	width: 52px!important;
-}
-
-.site-interactions .b-search-a input[type=submit]
-{
-	background-size: 17px!important;
-	height: 25px!important;
-	padding-left: 7px!important;
-	width: 11px!important;
-}
-
-.Page-header-search-submit svg,
-.a-icon-search
-{
-	background-size: 17px!important;
-	height: 29px!important;
-	padding-left: 23px!important;
-	width: 11px!important;
-}
-
-.tradein-wrapper .tradein-header .search-input
-{
-	width: 94%;
-}
-
-/* Share _______________________________________________________________*/
-
-[alt="Send list to others"],
-._3Clv_6:nth-child(2) ._3fyCs_ svg
-{
-	background: url(https://i.ibb.co/27rmYdq/share-36x36.png) no-repeat!important;
 	box-sizing: border-box;
 }
 
-[alt="Send list to others"],
-._3Clv_6:nth-child(2) ._3fyCs_ svg
-{
-	background-size: 21px!important;
-	height: 20px!important;
-	padding-left: 22px!important;
-	width: 10px!important;
+#navbar.nav-flex #nav-belt #nav-search .nav-searchbar .nav-search-submit #nav-search-submit-text.nav-sprite {
+    background-size: 31px!important;
+    height: 32px!important;
+    padding-left: 32px!important;
+    width: 1px!important;
 }
 
-/* Stars _______________________________________________________________*/
 
-.a-icon-star-mini {
-    width: 60px;
-    height: 18px;
-    top: 3px;
-}
+/* Thumbs ______________________________________________________________________________________*/
 
-.a-star-mini-1,
-.a-star-small-1,
-.a-star-medium-1,
-.a-star-1
-{
-	background: url(https://i.ibb.co/g6YKTyQ/1-star.png) no-repeat!important;
-	box-sizing: border-box;
-}
+/* Up __________________*/
 
-.a-star-mini-2,
-.a-star-small-2,
-.a-star-medium-2,
-.a-star-2
-{
-	background: url(https://i.ibb.co/c3Nb3Q6/2-Stars.png) no-repeat!important;
-	box-sizing: border-box;
-}
-
-.a-star-mini-3,
-.a-star-small-3,
-.a-star-medium-3,
-.a-star-3
-{
-	background: url(https://i.ibb.co/bF0NKsM/3-Stars.png) no-repeat!important;
-	box-sizing: border-box;
-}
-
-.a-star-mini-3-5,
-.a-star-3-5,
-.a-star-small-3-5,
-body div .snwmxQ.snwmxQ.snwmxQ.bm0VoL.bm0VoL:before
-{
-	background: url(https://i.ibb.co/qC276YG/3-half-Stars.png) no-repeat!important;
-	box-sizing: border-box;
-}
-
-.a-star-mini-4,
-.a-star-small-4,
-.a-star-medium-4,
-.a-star-4
-{
-	background: url(https://i.ibb.co/JmvXsDV/4-Stars.png) no-repeat!important;
-	box-sizing: border-box;
-}
-
-.a-star-mini-4-5,
-.a-star-small-4-5,
-.a-star-4-5
-{
-	background: url(https://i.ibb.co/vsQtL7K/4-half-Stars.png) no-repeat!important;
-	box-sizing: border-box;
-}
-
-.a-star-small-5,
-.a-star-5
-{
-	background: url(https://i.ibb.co/r2j22V3/5-stars.png) no-repeat!important;
-	box-sizing: border-box;
-}
-
-.a-star-mini-1,
-.a-star-mini-1-5,
-.a-star-mini-2,
-.a-star-mini-2-5,
-.a-star-mini-3,
-.a-star-mini-3-5,
-.a-star-mini-4,
-.a-star-mini-4-5,
-.a-star-small-1,
-.a-star-small-1-5,
-.a-star-small-2,
-.a-star-small-2-5,
-.a-star-small-3,
-.a-star-small-3-5,
-.a-star-small-4,
-.a-star-small-4-5,
-.a-star-small-5
-{
-	background-size: 75px!important;
-	height: 26px!important;
-	padding-left: 72px!important;
-	width: 10px!important;
-}
-
-.a-star-1,
-.a-star-1-5,
-.a-star-2,
-.a-star-2-5,
-.a-star-3,
-.a-star-3-5,
-.a-star-4,
-.a-star-4-5,
-.a-star-5,
-.a-star-medium-1,
-.a-star-medium-2,
-.a-star-medium-3,
-.a-star-medium-4,
-body div .snwmxQ.snwmxQ.snwmxQ.bm0VoL.bm0VoL:before
-{
-	background-size: 80px!important;
-	height: 16px!important;
-	padding-left: 82px!important;
-	width: 10px!important;
-}
-
-/* Thumbs Up _______________________________________________________________*/
-
-.shopbylook-btf-desktop-left-section-b-right img,
-.shopbylook-btf-item-like img,
-[alt="like"]
+.vse-helpful-votes .vse-vote-positive-icon
 {
 	background: url(https://i.ibb.co/MpqLxDN/Thumbs-Up-Skin-Color.png) no-repeat!important;
 	box-sizing: border-box;
 }
 
-.shopbylook-btf-desktop-left-section-b-left img,
-.shopbylook-btf-item-dislike img,
-[alt="dislike"]
+/* Down __________________*/
+
+.vse-helpful-votes .vse-vote-negative-icon
 {
 	background: url(https://i.ibb.co/6XfG8VP/thumbs-dowm.png) no-repeat!important;
 	box-sizing: border-box;
 }
 
-.shopbylook-btf-desktop-left-section-b-left img,
-.shopbylook-btf-desktop-left-section-b-right img,
-.shopbylook-btf-item-like img,
-.shopbylook-btf-item-dislike img,
-[alt="like"],
-[alt="dislike"]
+.vse-helpful-votes .vse-vote-negative-icon,
+.vse-helpful-votes .vse-vote-positive-icon
 {
-	background-size: 20px!important;
-	height: 27px!important;
-	padding-left: 25px!important;
-	width: 15px;
-}
-
-/* Tools _______________________________________________________________*/
-
-[src="https://images-na.ssl-images-amazon.com/images/G/01/support_images/GUID-DC1B73E1-763B-4FD4-A83A-EAB1EF6AAFEC_en-US.png"]
-{
-	background: url(https://i.ibb.co/WWGQdjJ/ratchet-Star-Wrench-Set.png) no-repeat!important;
-}
-
-[src="https://images-na.ssl-images-amazon.com/images/G/01/support_images/GUID-DC1B73E1-763B-4FD4-A83A-EAB1EF6AAFEC_en-US.png"]
-{
-	background-size: 153px!important;
-	height: 147px!important;
-	padding-left: 165px!important;
-	width: 157px!important;
-}
-
-/* Sprites _______________________________________________________________*/
-
-.a-icon,
-.a-link-emphasis:after
-{
-	background-image: url(https://i.ibb.co/NFZM54g/Amazon-UIIcon-sprite-1x-e9434610f810a3a99b3f0e49c1b938c9d76628b8.png);
-	-webkit-background-size: 400px 900px;
-	background-size: 400px 900px;
-	background-repeat: no-repeat;
-	display: inline-block;
-	vertical-align: top;
-}
-
-/* Switch to grid view _______________________________________________________________*/
-
-[alt="Switch to grid view"]
-{
-	background: url(https://i.ibb.co/8dhjNMW/Grid-View-white.png) no-repeat!important;
-	box-sizing: border-box;
-}
-
-[alt="Switch to grid view"]
-{
-	background-size: 21px!important;
-	height: 20px!important;
+	background-size: 17px!important;
+	height: 26px!important;
 	padding-left: 22px!important;
-	width: 10px!important;
+	width: 1px!important;
 }
 
-/* Switch to list view _______________________________________________________________*/
 
-[alt="Switch to list view"]
-{
-	background: url(https://i.ibb.co/Mnf4spS/Line-View-white.png) no-repeat!important;
-	box-sizing: border-box;
 }
 
-[alt="Switch to list view"]
-{
-	background-size: 21px!important;
-	height: 20px!important;
-	padding-left: 22px!important;
-	width: 10px!important;
-}
-
-/* Watch Party _______________________________________________________________*/
-
-._3Clv_6:first-child ._3fyCs_ svg
-{
-	background: url(https://i.ibb.co/yqrhYDv/movies.png) no-repeat!important;
-	box-sizing: border-box;
-}
-
-._3Clv_6:first-child ._3fyCs_ svg
-{
-	background-size: 21px!important;
-	height: 20px!important;
-	padding-left: 22px!important;
-	width: 10px!important;
-}
-}
-
-@-moz-document domain("amazon.com"), domain("amazonforum.com"), domain("worker.mturk.com"), domain("amazonbrowserapp.com"), domain("aboutamazon.com") {
-/* New Media Player Icons */
-
-/* Pause Button __________________________________________________________________*/
-
-.playerIconPause:before,
-.playerIconPauseRing:before
-{
-	background: url(https://i.ibb.co/ZJcH5pq/pause.png) no-repeat!important;
-	box-sizing: border-box!important;
-}
-
-.playerIconPause:before,
-.playerIconPauseRing:before
-{
-	background-size: 38px!important;
-	font-size: 40px;
-	padding-left: 39px;
-}
-
-.playerIconPause:before,
-.playerIconPauseRing:before
-{
-	content: "";
-}
-
-/* Play Button __________________________________________________________________*/
-
-._25pjRt._329bNB:before,
-
-.av-icon--play-button-arrow.av-icon:before,
-
-html:not([dir=rtl]) ._35sXjm svg
-{
-	background: url(https://i.ibb.co/KmFjstg/play-button.png) no-repeat!important;
-	box-sizing: border-box!important;
-}
-
-._25pjRt._329bNB:before,
-
-.av-icon--play-button-arrow.av-icon:before
-{
-	background-size: 50px!important;
-	height: 53px!important;
-	width: 53px!important;
-}
-
-html:not([dir=rtl]) ._35sXjm svg
-{
-	background-size: 40px!important;
-	height: 36px!important;
-	width: 40px!important;
-}
-
-/* Watch Trailer _______________________*/
-.Gpyvwj._2FuT1j._2yYtnp._2kSk3O:before
-{
-	background: url(https://i.ibb.co/JHYNdnh/video-cha-30x30.png) no-repeat!important;
-	box-sizing: border-box!important;
-}
-
-.Gpyvwj._2FuT1j._2yYtnp._2kSk3O:before
-{
-	background-size: 29px!important;
-	height: 28px!important;
-	width: 30px!important;
-}
-
-/* Video Icons ________________________________________________________________________________________*/
-/* Play Button __________________________________________________________________*/
-.playerIconPlayRing:before,
-.playerIconPlay:before,
-
-[src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MCIgaGVpZ2h0PSI5MCIgdmlld0JveD0iMCAwIDkwIDkwIj48cGF0aCBmaWxsPSIjRkZGIiBkPSJNODguMTY0IDQyLjc2YzIuNDQ3IDEuMjM4IDIuNDQ3IDMuMjQyIDAgNC40OEw0LjQzNCA4OS41MTNDMS45ODQgOTAuNzUgMCA4OS41NDcgMCA4Ni44M1YzLjE3QzAgLjQ1IDEuOTg1LS43NSA0LjQzNC40ODVsODMuNzMgNDIuMjc1eiIvPjwvc3ZnPg=="]
-{
-	background: url(https://i.ibb.co/KmFjstg/play-button.png) no-repeat!important;
-	box-sizing: border-box!important;
-}
-
-[src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MCIgaGVpZ2h0PSI5MCIgdmlld0JveD0iMCAwIDkwIDkwIj48cGF0aCBmaWxsPSIjRkZGIiBkPSJNODguMTY0IDQyLjc2YzIuNDQ3IDEuMjM4IDIuNDQ3IDMuMjQyIDAgNC40OEw0LjQzNCA4OS41MTNDMS45ODQgOTAuNzUgMCA4OS41NDcgMCA4Ni44M1YzLjE3QzAgLjQ1IDEuOTg1LS43NSA0LjQzNC40ODVsODMuNzMgNDIuMjc1eiIvPjwvc3ZnPg=="]
-{
-	background-size: 73px!important;
-	height: 73px!important;
-	padding-left: 76px;
-	width: 9px!important;
-}
-
-.playerIconPlay:before,
-.playerIconPlayRing:before
-{
-	background-size: 38px!important;
-	font-size: 39px!important;
-	padding-left: 38px;
-}
-
-#dragonflyView .button.iconOnlyButton .playerIconWrapper
-{
-	height: 22px!important;
-}
-
-.playerIconPlay:before
-{
-	background-size: 38px!important;
-	padding-left: 38px;
-}
-
-.listViewTrackNumber .playButton:before
-{
-	margin-left: 11px;
-}
-
-/* Next 10 __________________________________________________________________*/
-[src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAiIGhlaWdodD0iODUiIHZpZXdCb3g9IjAgMCA4MCA4NSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+MTBzIGZvcndhcmQ8L3RpdGxlPjxwYXRoIGQ9Ik02NC4yNCAxNC40NzhsLTMuMjcgMS43NTNjOC45NzMgNi41NiAxNC44MDUgMTcuMTU3IDE0LjgwNSAyOS4xMjIgMCAxOS45MTMtMTYuMTQzIDM2LjA1Ni0zNi4wNTcgMzYuMDU2LTE5LjkxMyAwLTM2LjA1Ni0xNi4xNDMtMzYuMDU2LTM2LjA1NiAwLTE4LjI0IDEzLjU0Ny0zMy4zMDggMzEuMTI3LTM1LjcxM3Y0Ljg2N3MtLjAxLjk2OC4zMDQgMS4xMDNjLjQyNS4xODMgMS4wNC0uMjI0IDEuMDQtLjIyNEw0OC4wMSA5LjA1cy44MTctLjM4Ny44MTctLjc0YzAtLjQyMy0uODE3LS43OTgtLjgxNy0uNzk4TDM1LjgzNy44OThzLS4zNy0uMjY0LS43NzItLjA0OGMtLjI5LjE1NC0uMjc2LjgyMy0uMjc2LjgyM1Y2LjI0QzE1LjMzNiA4LjY2NS4yOCAyNS4yNDIuMjggNDUuMzVjMCAyMS43OCAxNy42NTYgMzkuNDM3IDM5LjQzNiAzOS40MzdTNzkuMTU1IDY3LjEzIDc5LjE1NSA0NS4zNWMwLTEyLjUxLTUuODMtMjMuNjUtMTQuOTE1LTMwLjg3NCIgZmlsbD0iI0ZGRiIgZmlsbC1ydWxlPSJldmVub2RkIi8+PC9zdmc+"]
-{
-	background: url(https://i.ibb.co/VBFcsD9/forward-10-19x19.png) no-repeat!important;
-	box-sizing: border-box!important;
-}
-
-[src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAiIGhlaWdodD0iODUiIHZpZXdCb3g9IjAgMCA4MCA4NSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+MTBzIGZvcndhcmQ8L3RpdGxlPjxwYXRoIGQ9Ik02NC4yNCAxNC40NzhsLTMuMjcgMS43NTNjOC45NzMgNi41NiAxNC44MDUgMTcuMTU3IDE0LjgwNSAyOS4xMjIgMCAxOS45MTMtMTYuMTQzIDM2LjA1Ni0zNi4wNTcgMzYuMDU2LTE5LjkxMyAwLTM2LjA1Ni0xNi4xNDMtMzYuMDU2LTM2LjA1NiAwLTE4LjI0IDEzLjU0Ny0zMy4zMDggMzEuMTI3LTM1LjcxM3Y0Ljg2N3MtLjAxLjk2OC4zMDQgMS4xMDNjLjQyNS4xODMgMS4wNC0uMjI0IDEuMDQtLjIyNEw0OC4wMSA5LjA1cy44MTctLjM4Ny44MTctLjc0YzAtLjQyMy0uODE3LS43OTgtLjgxNy0uNzk4TDM1LjgzNy44OThzLS4zNy0uMjY0LS43NzItLjA0OGMtLjI5LjE1NC0uMjc2LjgyMy0uMjc2LjgyM1Y2LjI0QzE1LjMzNiA4LjY2NS4yOCAyNS4yNDIuMjggNDUuMzVjMCAyMS43OCAxNy42NTYgMzkuNDM3IDM5LjQzNiAzOS40MzdTNzkuMTU1IDY3LjEzIDc5LjE1NSA0NS4zNWMwLTEyLjUxLTUuODMtMjMuNjUtMTQuOTE1LTMwLjg3NCIgZmlsbD0iI0ZGRiIgZmlsbC1ydWxlPSJldmVub2RkIi8+PC9zdmc+"]
-{
-	background-size: 73px!important;
-	height: 73px!important;
-	padding-left: 76px;
-	width: 8px!important;
-}
-
-/* Prev 10 __________________________________________________________________*/
-[src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAiIGhlaWdodD0iODUiIHZpZXdCb3g9IjAgMCA4MCA4NSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+MTBzIGJhY2s8L3RpdGxlPjxwYXRoIGQ9Ik0xNS4xOTcgMTQuNDc4bDMuMjY4IDEuNzUzQzkuNDk1IDIyLjc5IDMuNjYyIDMzLjM4OCAzLjY2MiA0NS4zNTNjMCAxOS45MTMgMTYuMTQzIDM2LjA1NiAzNi4wNTYgMzYuMDU2IDE5LjkxNCAwIDM2LjA1Ny0xNi4xNDMgMzYuMDU3LTM2LjA1NiAwLTE4LjI0LTEzLjU0Ny0zMy4zMDgtMzEuMTI3LTM1LjcxM3Y0Ljg2N3MuMDA4Ljk2OC0uMzA1IDEuMTAzYy0uNDI1LjE4My0xLjA0LS4yMjQtMS4wNC0uMjI0TDMxLjQyOCA5LjA1cy0uODE4LS4zODctLjgxOC0uNzRjMC0uNDIzLjgxNi0uNzk4LjgxNi0uNzk4TDQzLjYuODk4cy4zNjgtLjI2NC43NzItLjA0OGMuMjkuMTU0LjI3Ni44MjMuMjc2LjgyM1Y2LjI0YzE5LjQ1IDIuNDI2IDM0LjUwNyAxOS4wMDMgMzQuNTA3IDM5LjExMiAwIDIxLjc4LTE3LjY1NiAzOS40MzctMzkuNDM3IDM5LjQzN0MxNy45MzggODQuNzkuMjgyIDY3LjEzLjI4MiA0NS4zNWMwLTEyLjUxIDUuODMtMjMuNjUgMTQuOTE1LTMwLjg3NCIgZmlsbD0iI0ZGRiIgZmlsbC1ydWxlPSJldmVub2RkIi8+PC9zdmc+"]
-{
-	background: url(https://i.ibb.co/pLR3WpQ/back-10-19x19.png) no-repeat!important;
-	box-sizing: border-box!important;
-}
-
-[src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAiIGhlaWdodD0iODUiIHZpZXdCb3g9IjAgMCA4MCA4NSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+MTBzIGJhY2s8L3RpdGxlPjxwYXRoIGQ9Ik0xNS4xOTcgMTQuNDc4bDMuMjY4IDEuNzUzQzkuNDk1IDIyLjc5IDMuNjYyIDMzLjM4OCAzLjY2MiA0NS4zNTNjMCAxOS45MTMgMTYuMTQzIDM2LjA1NiAzNi4wNTYgMzYuMDU2IDE5LjkxNCAwIDM2LjA1Ny0xNi4xNDMgMzYuMDU3LTM2LjA1NiAwLTE4LjI0LTEzLjU0Ny0zMy4zMDgtMzEuMTI3LTM1LjcxM3Y0Ljg2N3MuMDA4Ljk2OC0uMzA1IDEuMTAzYy0uNDI1LjE4My0xLjA0LS4yMjQtMS4wNC0uMjI0TDMxLjQyOCA5LjA1cy0uODE4LS4zODctLjgxOC0uNzRjMC0uNDIzLjgxNi0uNzk4LjgxNi0uNzk4TDQzLjYuODk4cy4zNjgtLjI2NC43NzItLjA0OGMuMjkuMTU0LjI3Ni44MjMuMjc2LjgyM1Y2LjI0YzE5LjQ1IDIuNDI2IDM0LjUwNyAxOS4wMDMgMzQuNTA3IDM5LjExMiAwIDIxLjc4LTE3LjY1NiAzOS40MzctMzkuNDM3IDM5LjQzN0MxNy45MzggODQuNzkuMjgyIDY3LjEzLjI4MiA0NS4zNWMwLTEyLjUxIDUuODMtMjMuNjUgMTQuOTE1LTMwLjg3NCIgZmlsbD0iI0ZGRiIgZmlsbC1ydWxlPSJldmVub2RkIi8+PC9zdmc+"]
-{
-	background-size: 73px!important;
-	height: 73px!important;
-	padding-left: 76px;
-	width: 8px!important;
-}
-
-/* Setting __________________________________________________________________*/
-.av-retail-m-nav-container-with-profiles #av-retail-m-nav-toggle-menu-label:after,
-
-[src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjciIGhlaWdodD0iMjciIHZpZXdCb3g9IjAgMCAyNyAyNyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+R3JvdXAgNTwvdGl0bGU+PGcgZmlsbD0iI0ZGRiIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNMTMuNSAyNEMxOS4zIDI0IDI0IDE5LjMgMjQgMTMuNVMxOS4zIDMgMTMuNSAzIDMgNy43IDMgMTMuNSA3LjcgMjQgMTMuNSAyNHptMC0zYTcuNSA3LjUgMCAxIDAgMC0xNSA3LjUgNy41IDAgMCAwIDAgMTV6Ii8+PHBhdGggZD0iTTExLjg4IDBoMy4yNGwxLjA4IDQuMzJoLTUuNHpNMjcgMTEuODh2My4yNGwtNC4zMiAxLjA4di01LjR6TTAgMTEuODh2My4yNGw0LjMyIDEuMDh2LTUuNHpNNS41MTIgMi43MzRsLTIuMjUgMi4zMyAyLjM1NiAzLjc4IDMuNzUtMy44ODZ6TTIxLjQ4OCAyLjczNGwyLjI1IDIuMzMtMi4zNTYgMy43OC0zLjc1LTMuODg2ek01LjUxMiAyNC4yNjZsLTIuMjUtMi4zMyAyLjM1Ni0zLjc4IDMuNzUgMy44ODZ6TTIxLjQ4OCAyNC4yNjZsMi4yNS0yLjMzLTIuMzU2LTMuNzgtMy43NSAzLjg4NnpNMTEuODggMjdoMy4yNGwxLjA4LTQuMzJoLTUuNHoiLz48L2c+PC9zdmc+"]
-{
-	background: url(https://i.ibb.co/YtNHHpK/Setting-icon-32x32.png) no-repeat!important;
-	box-sizing: border-box!important;
-}
-
-.av-retail-m-nav-container-with-profiles #av-retail-m-nav-toggle-menu-label:after,
-
-[src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjciIGhlaWdodD0iMjciIHZpZXdCb3g9IjAgMCAyNyAyNyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+R3JvdXAgNTwvdGl0bGU+PGcgZmlsbD0iI0ZGRiIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNMTMuNSAyNEMxOS4zIDI0IDI0IDE5LjMgMjQgMTMuNVMxOS4zIDMgMTMuNSAzIDMgNy43IDMgMTMuNSA3LjcgMjQgMTMuNSAyNHptMC0zYTcuNSA3LjUgMCAxIDAgMC0xNSA3LjUgNy41IDAgMCAwIDAgMTV6Ii8+PHBhdGggZD0iTTExLjg4IDBoMy4yNGwxLjA4IDQuMzJoLTUuNHpNMjcgMTEuODh2My4yNGwtNC4zMiAxLjA4di01LjR6TTAgMTEuODh2My4yNGw0LjMyIDEuMDh2LTUuNHpNNS41MTIgMi43MzRsLTIuMjUgMi4zMyAyLjM1NiAzLjc4IDMuNzUtMy44ODZ6TTIxLjQ4OCAyLjczNGwyLjI1IDIuMzMtMi4zNTYgMy43OC0zLjc1LTMuODg2ek01LjUxMiAyNC4yNjZsLTIuMjUtMi4zMyAyLjM1Ni0zLjc4IDMuNzUgMy44ODZ6TTIxLjQ4OCAyNC4yNjZsMi4yNS0yLjMzLTIuMzU2LTMuNzgtMy43NSAzLjg4NnpNMTEuODggMjdoMy4yNGwxLjA4LTQuMzJoLTUuNHoiLz48L2c+PC9zdmc+"]
-{
-	background-size: 35px!important;
-	height: 35px!important;
-	padding-left: 35px;
-	width: 8px!important;
-}
-
-/* Share __________________________________________________________________*/
-.playerIconShareRing:before
-{
-	background: url(https://i.ibb.co/mt0KR8T/Share-36x36.png) no-repeat!important;
-	box-sizing: border-box!important;
-}
-
-.playerIconShareRing:before
-{
-	background-size: 34px!important;
-	font-size: 49px;
-	padding-left: 38px;
-}
-
-/* Shulle __________________________________________________________________*/
-.playerIconShuffleRing:before
-{
-	content: "";
-}
-
-.playerIconShuffleRing:before
-{
-	background: url(https://i.ibb.co/LdR77k6/shuffle-25x25.png) no-repeat!important;
-	box-sizing: border-box!important;
-}
-
-.playerIconShuffleRing:before
-{
-	background-size: 34px!important;
-	padding-left: 38px;
-	font-size: 49px;
-}
-
-/* Station __________________________________________________________________*/
-.playerIconStationsRing:before
-{
-	background: url(https://i.ibb.co/dQmd6tx/live.png) no-repeat!important;
-	box-sizing: border-box!important;
-}
-
-.playerIconStationsRing:before
-{
-	background-size: 38px!important;
-	padding-left: 38px;
-	font-size: 44px;
-}
-
-/* Volumn __________________________________________________________________*/
-#dragonflyTransport .rightControls .volume:before,
-
-[src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzQiIGhlaWdodD0iMjUiIHZpZXdCb3g9IjAgMCAzNCAyNSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+dm9sdW1lXzNiYXJzPC90aXRsZT48ZyBmaWxsPSIjRkZGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik02Ljg0OCA2LjMwNkgxLjcyQy4yMSA2LjMwNiAwIDYuNTEgMCA3Ljk3NnY5LjA0NmMwIDEuNDY2LjIxIDEuNjcyIDEuNzIgMS42NzJoNS4xM0wxNS41NSAyNC43Yy44LjU5MiAxLjQ0OC4yOCAxLjQ0OC0uNjk3Vi45OTdjMC0uOTc3LS42NS0xLjI5LTEuNDUtLjY5N0w2Ljg1IDYuMzA2ek0zMS42MjcgMTIuNGMwIDMuOTQtMS43MTggNy40NzctNC40NDYgOS45NTNsMS4wOTYuODQ2QzMxLjE3OCAyMC40ODQgMzMgMTYuNjU2IDMzIDEyLjRjMC00LjI1Ny0xLjgyMi04LjA4NS00LjcyNS0xMC44bC0xLjA5NS44NDhjMi43MjggMi40NzUgNC40NDcgNi4wMSA0LjQ0NyA5Ljk1MnpNMjMuMzg4IDEyLjRhOC4wMSA4LjAxIDAgMCAxLTIuMDg4IDUuMzlsMS4wOC44MzdhOS4zNTUgOS4zNTUgMCAwIDAgMi4zOC02LjIyOCA5LjM1IDkuMzUgMCAwIDAtMi4zOC02LjIzbC0xLjA4LjgzOGE4LjAyIDguMDIgMCAwIDEgMi4wODggNS4zOXoiLz48cGF0aCBkPSJNMjcuNTA4IDEyLjRjMCAzLjAwNC0xLjI0NCA1LjcyMy0zLjI1IDcuNjg1bDEuMDg0Ljg0YzIuMTg2LTIuMTk2IDMuNTM4LTUuMjA0IDMuNTM4LTguNTI1IDAtMy4zMi0xLjM1Mi02LjMzLTMuNTM4LTguNTI2bC0xLjA4My44NDJhMTAuNzE0IDEwLjcxNCAwIDAgMSAzLjI0OCA3LjY4NHoiLz48L2c+PC9zdmc+"]
-{
-	background: url(https://i.ibb.co/26GGj7b/volume-soft-medium-loud.png) no-repeat!important;
-	box-sizing: border-box!important;
-}
-
-[src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzQiIGhlaWdodD0iMjUiIHZpZXdCb3g9IjAgMCAzNCAyNSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+dm9sdW1lXzNiYXJzPC90aXRsZT48ZyBmaWxsPSIjRkZGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik02Ljg0OCA2LjMwNkgxLjcyQy4yMSA2LjMwNiAwIDYuNTEgMCA3Ljk3NnY5LjA0NmMwIDEuNDY2LjIxIDEuNjcyIDEuNzIgMS42NzJoNS4xM0wxNS41NSAyNC43Yy44LjU5MiAxLjQ0OC4yOCAxLjQ0OC0uNjk3Vi45OTdjMC0uOTc3LS42NS0xLjI5LTEuNDUtLjY5N0w2Ljg1IDYuMzA2ek0zMS42MjcgMTIuNGMwIDMuOTQtMS43MTggNy40NzctNC40NDYgOS45NTNsMS4wOTYuODQ2QzMxLjE3OCAyMC40ODQgMzMgMTYuNjU2IDMzIDEyLjRjMC00LjI1Ny0xLjgyMi04LjA4NS00LjcyNS0xMC44bC0xLjA5NS44NDhjMi43MjggMi40NzUgNC40NDcgNi4wMSA0LjQ0NyA5Ljk1MnpNMjMuMzg4IDEyLjRhOC4wMSA4LjAxIDAgMCAxLTIuMDg4IDUuMzlsMS4wOC44MzdhOS4zNTUgOS4zNTUgMCAwIDAgMi4zOC02LjIyOCA5LjM1IDkuMzUgMCAwIDAtMi4zOC02LjIzbC0xLjA4LjgzOGE4LjAyIDguMDIgMCAwIDEgMi4wODggNS4zOXoiLz48cGF0aCBkPSJNMjcuNTA4IDEyLjRjMCAzLjAwNC0xLjI0NCA1LjcyMy0zLjI1IDcuNjg1bDEuMDg0Ljg0YzIuMTg2LTIuMTk2IDMuNTM4LTUuMjA0IDMuNTM4LTguNTI1IDAtMy4zMi0xLjM1Mi02LjMzLTMuNTM4LTguNTI2bC0xLjA4My44NDJhMTAuNzE0IDEwLjcxNCAwIDAgMSAzLjI0OCA3LjY4NHoiLz48L2c+PC9zdmc+"]
-{
-	background-size: 55px!important;
-	height: 41px!important;
-	padding-left: 55px;
-}
-
-#dragonflyTransport .rightControls .volume:before
-{
-	background-size: 30px!important;
-	padding-left: 31px;
-}
-
-#dragonflyTransport .rightControls .volume:before
-{
-	line-height: 2.5rem;
-	font-size: 2.0625rem;
-}
-
-.playerIconVolume2:before
-{
-	content: "";
-}
-
-/* Fullscreen __________________________________________________________________*/
-[src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMjUiIHZpZXdCb3g9IjAgMCAyNSAyNSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+ZnVsbHNjcmVlbjwvdGl0bGU+PGcgZmlsbD0iI0ZGRiIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNMjQuOTcuMDAyVjBoLTN2LjAwMmwtNi0uMDAydjNoMy43NTNsLTUuODcgNS44NyAyLjEyIDIuMTIyIDUuOTk2LTUuOTk2VjloM1YuMDAyek05IDIySDUuMjQ2bDUuODctNS44Ny0yLjEyLTIuMTIyTDMgMjAuMDA0VjE2SDB2OWg5di0zeiIvPjwvZz48L3N2Zz4="]
-{
-	background: url(https://i.ibb.co/4tT9JKf/full-screen-54x43.png) no-repeat!important;
-	box-sizing: border-box!important;
-}
-
-[src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMjUiIHZpZXdCb3g9IjAgMCAyNSAyNSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+ZnVsbHNjcmVlbjwvdGl0bGU+PGcgZmlsbD0iI0ZGRiIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNMjQuOTcuMDAyVjBoLTN2LjAwMmwtNi0uMDAydjNoMy43NTNsLTUuODcgNS44NyAyLjEyIDIuMTIyIDUuOTk2LTUuOTk2VjloM1YuMDAyek05IDIySDUuMjQ2bDUuODctNS44Ny0yLjEyLTIuMTIyTDMgMjAuMDA0VjE2SDB2OWg5di0zeiIvPjwvZz48L3N2Zz4="]
-{
-	background-size: 32px!important;
-	height: 28px!important;
-	padding-left: 37px;
-}
-
-/* Close __________________________________________________________________*/
-.a-button-close,
-
-[src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMjUiIHZpZXdCb3g9IjAgMCAyNSAyNSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+Y2xvc2U8L3RpdGxlPjxwYXRoIGQ9Ik0yNC44MDUgMi4zMThMMjIuNjgyLjE5OCAxMi41IDEwLjM3NyAyLjMxOC4ybC0yLjEyIDIuMTJMMTAuMzc3IDEyLjUuMiAyMi42ODJsMi4xMiAyLjEyTDEyLjUgMTQuNjIzIDIyLjY4MiAyNC44bDIuMTItMi4xMkwxNC42MjMgMTIuNSAyNC44MDQgMi4zMTh6IiBmaWxsPSIjRkZGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4="]
-{
-	background: url(https://i.ibb.co/kxQCnBQ/close-48x48.png) no-repeat!important;
-	box-sizing: border-box!important;
-}
-
-[src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMjUiIHZpZXdCb3g9IjAgMCAyNSAyNSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+Y2xvc2U8L3RpdGxlPjxwYXRoIGQ9Ik0yNC44MDUgMi4zMThMMjIuNjgyLjE5OCAxMi41IDEwLjM3NyAyLjMxOC4ybC0yLjEyIDIuMTJMMTAuMzc3IDEyLjUuMiAyMi42ODJsMi4xMiAyLjEyTDEyLjUgMTQuNjIzIDIyLjY4MiAyNC44bDIuMTItMi4xMkwxNC42MjMgMTIuNSAyNC44MDQgMi4zMTh6IiBmaWxsPSIjRkZGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4="]
-{
-	background-size: 32px!important;
-	height: 28px!important;
-	padding-left: 37px;
-}
-
-.a-button-close
-{
-	background-size: 32px!important;
-	padding-left: 10px;
-}
-
-/* Pause __________________________________________________________________*/
-[src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3NSIgaGVpZ2h0PSI5NSIgdmlld0JveD0iMCAwIDc1IDk1Ij48cGF0aCBmaWxsPSIjRkZGIiBkPSJNMCAwaDI1djk1SDB6TTUwIDBoMjV2OTVINTB6Ii8+PC9zdmc+"]
-{
-	background: url(https://i.ibb.co/1ztZMSc/Pause-Button-54x54.png) no-repeat!important;
-	box-sizing: border-box!important;
-}
-
-[src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3NSIgaGVpZ2h0PSI5NSIgdmlld0JveD0iMCAwIDc1IDk1Ij48cGF0aCBmaWxsPSIjRkZGIiBkPSJNMCAwaDI1djk1SDB6TTUwIDBoMjV2OTVINTB6Ii8+PC9zdmc+"]
-{
-	background-size: 73px!important;
-	height: 73px!important;
-	padding-left: 76px;
-	width: 9px!important;
-}
-}
-
-@-moz-document domain("amazon.com"), domain("amazonforum.com"), domain("worker.mturk.com"), domain("amazonbrowserapp.com"), domain("aboutamazon.com") {
-
-/* Option Button _______________________________________________________________*/
-
-.a-accordion .a-accordion-row {
-    padding: 3px 0 10px 42px;
-}
-
-.a-accordion .a-accordion-row .a-icon-radio-active, .a-accordion .a-accordion-row .a-icon-radio-inactive {
-    top: 50%;
-    left: 4px;
-}
-
-/* On ________________________*/
-
-[role="radio"][aria-checked="true"] i:not([role="img"])
-{
-	background: url(https://i.ibb.co/0XBzN1G/green-light-off.png) no-repeat!important;
-	box-sizing: border-box;
-}
-
-/* Off ________________________*/
-
-[role="radio"][aria-checked="false"] i:not([role="img"])
-{
-	background: url(https://i.ibb.co/z5C1bGj/red-light-on.png) no-repeat!important;
-	box-sizing: border-box;
-}
-
-[role="radio"][aria-checked="false"] i:not([role="img"]), [role="radio"][aria-checked="true"] i:not([role="img"]) {
-    background-size: 31px!important;
-    height: 36px!important;
-    padding-left: 32px!important;
-    width: 1px!important;
-}
+@-moz-document domain("amazon.com") {
 
 }
