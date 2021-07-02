@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Lonty
 @description    `Dark theme for AniDUB website.`
-@version        20210701.8.23
+@version        20210701.23.39
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -20,8 +20,8 @@
     max-width: 160px;
 }
 .th-item {
-    width: var(--posterwidth);
-    padding: 0 15px 30px 15px;
+    width: var(--posterwidth) !important;
+    padding: 0 15px 30px 15px !important;
 }
 body {
     background: #0e0e0e !important;

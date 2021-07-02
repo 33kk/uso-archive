@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         FireFern
 @description    `A style for Discord. A bunch of stuff is customizable. If you want to go in the CSS itself and change it, the code has lots of comments that should make navigation incredibly easy. I would also recommend you download the style here if you aren't there already. https://33kk.github.io/uso-archive/?style=201433Installing the style there lets you customize the stuff by clicking on the extension while downloading it on the userstyles website will just link you to the download page on the userstyles website (at least in my experience). It also loads way faster than the userstyles website.Another thing is that light mode actually looks really good with this style! It always did but I just forgot to mention it.`
-@version        20210624.22.22
+@version        20210701.23.6
 @license        CC-BY-4.0
 @preprocessor   uso
 @advanced color mainkey "Main Color" #FF0000
@@ -1069,6 +1069,18 @@ div[style="color: hsl(139, calc(var(--saturation-factor, 1) * 47.3%), 43.9%);"] 
 .side-8zPYf6 .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ, .side-8zPYf6 .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ:hover, .side-8zPYf6 .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ:active {
     background: transparent;
     box-shadow: inset 0px 0px 30px var(--main), inset 0px 0px 5px var(--main)
+}
+
+/*Account Profile Card Thing*/
+
+.accountProfileCard-1XCH88 {
+    background: var(--bgother)
+}
+
+/*Member Popout Preview*/
+
+.profileBannerPreview-3_l0Wd {
+    background: var(--bgother)
 }
 
 /************/

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         D.D.D.
 @description    `Aims to make Fandom.com wikis cleaner on desktop.`
-@version        20210701.5.8
+@version        20210701.23.32
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -20,6 +20,9 @@ div.page.has-right-rail {display:grid!important;grid-template-areas:
 }
 main.page__main {display:block;width:100%!important;grid-area:main;box-sizing:border-box!important;font-size:90%;background-image: linear-gradient(to right, white , #ddeeff);border-bottom-style:solid;border-bottom-width:1px;border-bottom-color:#666666;border-left-style:solid;border-left-width:1px;border-left-color:#888888;border-top-style:solid;border-top-width:1px;border-top-color:#aaaaaa;}
 div#mw-content-text p, table, div {line-height:110%;}
+div#mw-content-text {color:black;}
+div.page-footer {color:black;}
+div.wikia-gallery div.lightbox-caption {color:#888888;}
 /* footer */
 aside.page__right-rail {display:block!important;position:static!important;grid-area:footer;width:100%!important;background-color:white;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:#666666;column-count:3;}
 aside.page__right-rail div.right-rail-wrapper {background-color:white;}
@@ -59,7 +62,7 @@ div.wiki-tools div.wds-dropdown__content {z-index:401!important;}
 div.fandom-sticky-header {display:none!important;}
 /* minor alterations */
 nav#articleCategories {border-style:solid;border-color:#444444;border-width:1px;border-radius:3px;padding-top:10px;padding-left:10px;background-color:#eeeeee}
-div.page-header {border-bottom-style:solid;border-bottom-width:1px;border-bottom-color:#666666;}
+div.page-header {border-bottom-style:solid;border-bottom-width:1px;border-bottom-color:#666666;color:#666666;}
 div#toc ul {background-color:#eeeeee;}
 div#toc div.toctitle {background-color:#ddeeff;}
 }
