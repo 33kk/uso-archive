@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         BamaBraves
 @description    `Dark and highlights`
-@version        20210607.12.10
+@version        20210703.3.39
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -65,7 +65,6 @@
  	border-radius: 22px!important;
  	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
  }
-
 }
 
 @-moz-document domain("ebay.com"), domain("vi.vipr.ebaydesc.com") {
@@ -81,11 +80,6 @@
 	text-transform: capitalize!important;
 }
 
-.vi-filmstp .lst.icon button.pic,
-.hero-image-arrows .prev-arr,
-.hero-image-arrows .next-arr,
-.puldwn .crtval,
-.merch-module.merch-module.merch-module .container_wrapper,
 #PicturePanel div.img,
 #ds_div table,
 #gh-bt,#gh-ug,
@@ -98,15 +92,20 @@
 .ebayui-pagination__li a[aria-current="page"],
 .fits-msg-wrapper.confirmation-border,.fits-msg-wrapper.info-border,.fits-msg-wrapper.success-border,
 .gh-sch-prom #gh-ac-box,.gh-sch-prom #gh-cat-box,.gh-ui-6-5 .gh-eb-li-a:hover,
+.hero-image-arrows .next-arr,
+.hero-image-arrows .prev-arr,
 .hl-cat-nav__active span,.hl-garage-carousel__link:hover,
 .img-holder,.itemAttr .section,
 .l-shad,.layoutborder,.lvpicinner,.lvpicinner:hover,
+.merch-module.merch-module.merch-module .container_wrapper,
 .mfe-lex .mfe-card.last,.mfe-lex .mfe-reco:focus,.mfe-lex .mfe-reco:hover,
 .my-container,
 .nav-tabs-m > .active > a,.nav-tabs-m > .active > a:hover,.nav-tabs-m > li > a,.nav-tabs-p > .active > a,.nav-tabs-p > .active > a:hover,.nav-tabs-p > li > a:hover,.new-ui.desktop.vi-quantity .vi-quantity__cntr,.nodestar-item-card-details__image-cell,.nume-vr140 .recos li:hover,
+.puldwn .crtval,
 .rct-c,.rct-hm,.review-btns button.review-signal,.review-item-critical,.review-item-favorite,.reviews-carsoul-thumbnails button.review-pic,.reviews-images button.review-pic,
 .s-answer-region-center-top .srp-controls,.s-item__image--prettify,.s-item.s-item--large .s-item__wrapper,.sh-hdr-section,.sh-logo-ng,.similar-items-panel .item-image-container,.srp-ds6 .s-page .fake-menu-button button.expand-btn--secondary,.srp-main--isLarge .fake-tabs.srp-format-tabs li,.srp-main--isLarge .srp-list .s-item__image,.srp-main--isLarge .srp-river,.srp-merch__items .s-item__image,.srp-merch__items .s-item__wrapper:hover,.srp-rail__right .s-browse-related .b-tile__imgwrap,
 .vi-filmstp .lst.icon a.pic,.vi-filmstp .sel,.vi-image-gallery.desktop,
+.vi-filmstp .lst.icon button.pic,
 .x-tray-pill,
 :focus,
 body.summary-ui .merch-placeholder,body.summary-ui .my-container.item-list .ajax-wrap
@@ -145,9 +144,9 @@ table
 
 /*___ Fonts ________________________________________________________________________*/
 
-.srp-list .s-item__title,
 .hl-item__displayPrice,
 .srp-ds6.srp-ds6-phase3 .srp-list .s-item__title,
+.srp-list .s-item__title,
 .vi-VR-cvipCntr1 span#prcIsum,
 body.vi-bb-flex.vi-white-spacing .vi-price #prcIsum
 {
@@ -163,6 +162,7 @@ body.vi-bb-flex.vi-white-spacing .vi-price #prcIsum
 .reviews .reviews--details .reviews--body .review--section .review--section--r .review--content,
 .srp-ds6.srp-ds6-phase3 .srp-list .s-item__details,.srp-multi-aspect-guidance .srp-carousel-list,
 .tab-content p,.tab-content ul li,.tab-content2 p,.tab-content2 ul li,
+.x-refine__body .srp-refine__category__list a, .x-refine__body .srp-refine__category__list span,.x-refine__body .x-refine__main__list--value,
 body ul#bc a span,
 button,
 html>body
@@ -184,36 +184,37 @@ ul#bc li
 #Body #si-fb,
 .bsi-cnt textarea,.bsi-cnt,
 .iti-eu-txt,
-.vi-wide-watch-btn #vi-atl-lnk a,.vi-wide-watch-btn #vi-atl-lnk a span,
 .pd-lnk, .vi-covRow a,
 .review-attr,.review-item-favorite,
 .sh-del-cbt,.sh-longTime,.srp-ds6.srp-ds6-phase3 .x-refine__body .x-refine__main__list--value .x-refine__multi-select-histogram,
 .vi-swc-message,
+.vi-wide-watch-btn #vi-atl-lnk a,.vi-wide-watch-btn #vi-atl-lnk a span,
 body ul#bc a
 {
 	font-size: 15px!important;
 }
 
 .b-deals .b-info__title, .topSold .b-info__title,
-.topSold .b-info__eek, .topSold .b-info__title,
 .b-title__sub,
 .hl-cat-nav li a,
 .review-item-content,
-.seller-details,.srp-ds6.srp-ds6-phase3 .srp-list .s-item__details .s-item__detail--primary,.srp-ds6.srp-ds6-phase3 .srp-list .s-item__details .s-item__detail--secondary
+.seller-details,.srp-ds6.srp-ds6-phase3 .srp-list .s-item__details .s-item__detail--primary,.srp-ds6.srp-ds6-phase3 .srp-list .s-item__details .s-item__detail--secondary,
+.topSold .b-info__eek, .topSold .b-info__title
 {
 	line-height: 29px!important;
 }
 
-.item-tile .item-info .item-info__title,
 .item-tile .item-info .group_1_slots,
 .item-tile .item-info .group_2_slots,
 .item-tile .item-info .group_3_slots,
-.item-tile .item-info .group_4_slots
+.item-tile .item-info .group_4_slots,
+.item-tile .item-info .item-info__title
 {
     line-height: 25px;
 }
 
-.itemAttr .section h3, .itemAttr .section span
+.itemAttr .section h3, .itemAttr .section span,
+button#gh-shop-a
 {
 	line-height: 21px!important;
 }
@@ -524,6 +525,9 @@ html > body .hl-module,html > body
 	width: 11%;
 }
 
+#gh-shop {
+    width: 8rem;
+}
 }
 
 @-moz-document domain("ebay.com"), domain("vi.vipr.ebaydesc.com") {
@@ -585,9 +589,6 @@ input[type="checkbox"]:checked + label,input[type="radio"]:checked + label
 
 /*__________________________________________________________________________________*/
 
-.b-title__sub,
-button.btn, button.expand-btn, a.fake-btn,
-.puldwn .crtval,
 #Body #si-fb,
 #StaySignedInContainer,
 #app-product-sticky-header .btn,
@@ -602,6 +603,7 @@ button.btn, button.expand-btn, a.fake-btn,
 .app-atc-layer-header-wrapper .vi-overlayTitleBar,.app-atc-layer__actionRow a.btn-scnd,
 .app-item-description__body--text,.app-theme-item-wrapper .btn,
 .b-breadcrumb__text,.b-feature-dial__feature-info,.b-info__reviewcount,.b-promobanner__info,
+.b-title__sub,
 .bsi-cnt textarea,.bsi-cnt,
 .btn-ter,
 .cc-text-spans--SECONDARY,.cc-value,
@@ -646,11 +648,12 @@ button.btn, button.expand-btn, a.fake-btn,
 .pnl,
 .prefpay,
 .prodDetailDesc td:nth-child(2),
+.puldwn .crtval,
 .rating--summary .reviews--count,
+.review-btns button.review-signal,
 .reviews .rating--details .write--review a.btn,.reviews--histogram ul .review--item .reviews--item--bar .reviews--item--bar--r > span,.reviews-aggregated-stars .reviews-aggregated-count,.reviews-histogram .ebay-review-list .ebay-review-item .ebay-reviews-item-href .ebay-review-item-r span,
 .rpReferCont,
 .rpTbl tr td,
-.review-btns button.review-signal,
 .s-item__info,.s-item__sme,.s-item__subtitle,
 .secondary-text,
 .select-vehicle-container > .select-vehicle-container-delete,.select-vehicle-subtext,
@@ -667,6 +670,7 @@ button.btn, button.expand-btn, a.fake-btn,
 a.btn-ter,a.btn-ter:visited,
 body #CenterPanel div.actPanel div.convPrice,body .cc-stdmargin__bottom--one-and-quart .cc-text-spans--BOLD,
 button#gh-ug,button.select-info-lbl,
+button.btn, button.expand-btn, a.fake-btn,
 div.gh-o-err,div.gh-o-l,div.sme-item-gallery > div.body-wrp > div.footer > div.condition-wrp > span.notice,div.sme-item-gallery > div.header,
 html body,
 li,
@@ -680,7 +684,6 @@ ul.gh-o-err,ul.gh-o-l
 
 /*___ Khaki ________________________________________________________________________*/
 
-.banner-card,
 #about div,
 #app-info .fit-header,#app-info div,
 #core-policy div,
@@ -697,14 +700,13 @@ ul.gh-o-err,ul.gh-o-l
 .alert.thin .alert-content .empty-message-third .empty-message-text,
 .b-info__title,
 .b-visualnav__title,
+.banner-card,
 .cc-section-icon-with-details__data-title,
 .desc_details td:first-child,
 .ebayui-ellipsis-3 span,
 .gboxout,
 .gf-bttl,.gf-bttl.thrd,
-.gh-notification-optin__header,
-.ghAC_hl:nth-child(2),
-.ghn_UI_5 .ghn-desc-t,
+.gh-notification-optin__header,.ghAC_hl:nth-child(2),.ghn_UI_5 .ghn-desc-t,
 .giant-text-2,
 .heading.ds6,
 .hl-cat-nav__flyout span,.hl-trending__details__ranking,
@@ -753,12 +755,12 @@ legend
 
 /*___ Sandy Brown __________________________________________________________________*/
 
-.credit-card-number .read-only,
 #gh-shop-a,
 #purchase-history .row-header .tracking-label,
 .attrLabels,
 .bsi-lbl,
 .cc-sub-price,
+.credit-card-number .read-only,
 .dne-itemtile-detail .dne-itemtile-more-options,
 .hl-cta__default,
 .is .lable,
@@ -787,7 +789,6 @@ label
 
 /*___ Blue _________________________________________________________________________*/
 
-.sh-secondary,
 #msgTable [id*="msg-recvd"] div,
 #purchase-history .orders .row-date,#purchase-history .row-header .delivery-date,
 .app-sellerpresence__feedbackpercentage,
@@ -806,6 +807,7 @@ label
 .review-item-date,.reviews .reviews--details .reviews--body .review--section .review--section--l .review--date,
 .s-item__dynamic.s-item__guaranteedDelivery .POSITIVE,.s-item__time-end,
 .sh-egd-time,
+.sh-secondary,
 .similar-items-panel .m-logistics,
 .timeMs,
 .vi-acc-del-range,.vi-desc-revHistory,.vi-vpo-percentage,
@@ -967,17 +969,13 @@ html
 }
 
 #gh-Alerts-i,
-#wrapper .error-header,
-#wrapper .error-header.status--5XX,
+#wrapper .error-header,#wrapper .error-header.status--5XX,
 .desc_details th,
 .font-marketsans body,
 .oly.old .bk,
-.srp-controls__control--legacy,
-.srp-main--isLarge .srp-ipp__control--legacy,
-a.fake-btn--primary:not([href]),
-a.fake-btn--primary[aria-disabled=true],
-button.btn--primary[aria-disabled=true],
-button.btn--primary[disabled]
+.srp-controls__control--legacy,.srp-main--isLarge .srp-ipp__control--legacy,
+a.fake-btn--primary:not([href]),a.fake-btn--primary[aria-disabled=true],
+button.btn--primary[aria-disabled=true],button.btn--primary[disabled]
 {
 	background-image: none!important;
 }
@@ -1021,9 +1019,6 @@ html > body #gh
 
 /*___ Background 0000 ______________________________________________________________*/
 
-.b-module,
-.merch-module.merch-module.merch-module .container_wrapper,
-.app-theme-item-wrapper .item-image-wrapper #primary-gallery .vi-image-gallery,
 #app-info .fit-header,
 #fTblFTr td,#fTblFTr td,#fTblFTr th,
 #gh-ac-box,#gh-cat-box,
@@ -1032,10 +1027,7 @@ html > body #gh
 #purchase-history .container-header,#purchase-history .item-list-all .sub-level-inner .row-header.state-delivered .row-header-inner,#purchase-history .merch-placeholder,
 #srchBar,
 .addons-container,
-.app-payment-method-selectable-render-summary,
-.app-render-summary,
-.app-selectable-render-summary,
-.app-shortcut-navbar,
+.app-payment-method-selectable-render-summary,.app-render-summary,.app-selectable-render-summary,.app-shortcut-navbar,.app-theme-item-wrapper .item-image-wrapper #primary-gallery .vi-image-gallery,
 .b-brand-banner .b-brand-banner__right-btn:hover,
 .b-guidance--text .b-guidancecard__link,
 .b-listing.srp-list .s-item__image,.b-listing.srp-list .s-item__link,
@@ -1056,6 +1048,7 @@ html > body #gh
 .l-shad,
 .m-pills .carousel-item .pill-action,
 .mcd_p,
+.merch-module.merch-module.merch-module .container_wrapper,
 .module,
 .msg-row th,.msg-row th:hover,
 .my-container,.my-container.item-list .container-options .list-bulk-actions,
@@ -1066,9 +1059,7 @@ html > body #gh
 .s-item,.s-item__link,
 .skin-large .dne-itemtile,
 .srp-carousel-list--text .srp-carousel-list__item,.srp-carousel-list--text .srp-carousel-list__item--large-items,
-.srp-controls,.srp-ds6 .s-page .srp-format-tabs.fake-tabs .fake-tabs__items,
-.srp-rail__right .s-browse-related .b-tile__imgwrap,
-.srp-river,
+.srp-controls,.srp-ds6 .s-page .srp-format-tabs.fake-tabs .fake-tabs__items,.srp-rail__right .s-browse-related .b-tile__imgwrap,.srp-river,
 .success--order-list-details,
 .templet_bg,
 .vi-center-panel,
@@ -1083,9 +1074,6 @@ body.summary-ui .my-container.item-list .ajax-wrap
 
 /*___ Background-color 0000 ________________________________________________________*/
 
-.credit-card-details .credit-card-container,
-.puldwn ul.select li.opd,
-.puldwn ul.select li.op,
 #LeftPanel,
 #PicturePanel div.img,
 #gh-eb-Alerts-o .ghn-li-itm:hover .ghn-pop-new,#gh-eb-Alerts-o .ghn-li-itm:hover,
@@ -1101,35 +1089,33 @@ body.summary-ui .my-container.item-list .ajax-wrap
 .card-item .image,
 .chnls,
 .cl-hdr,.cl-lcat,
+.credit-card-details .credit-card-container,
 .desktop .success--ebp,
 .dialog__body,
 .dropdown-menu .active > a,.dropdown-menu .active > a:focus,.dropdown-menu .active > a:hover,.dropdown-menu li > a:focus,.dropdown-menu li > a:hover,
 .ds6OrSeperator,
 .gboxout,
 .ghfe-ds6.ghfe-ds6.ghfe-ds6 .page-notice,
-.ghn-li-itm,
-.ghn-pop-wrap .ghn-li-itm:hover .ghn-pop-new,.ghn-pop-wrap .ghn-li-itm:hover,
+.ghn-li-itm,.ghn-pop-wrap .ghn-li-itm:hover .ghn-pop-new,.ghn-pop-wrap .ghn-li-itm:hover,
 .hl-cat-nav li:hover,.hl-cat-nav__js-show,.hl-trending__details,
 .imgt,
 .logistic,
 .mfe-lex .mfe-card,.mfe-lex .mfe-img-ct,
 .my-container .container-header,.my-row-r.checked,
-.nav-tabs-m > li > a,
-.navlist--wrap button,
+.nav-tabs-m > li > a,.navlist--wrap button,
 .new-ui.desktop.vi-quantity .vi-quantity__cntr,
 .nodestar-item-card-details__wrapper,
 .nume-vr140 .recos li:hover,
 .oly.old .hdr .inner,
-.page-notice,
-.page-notice--information .page-notice__status,
+.page-notice,.page-notice--information .page-notice__status,
 .pd-data-hdr,
 .policy_box,
 .product-buy-container,
+.puldwn ul.select li.op,.puldwn ul.select li.opd,
 .rpTbl tr th,
 .s-feedback,
 .select-vehicle,
-.sh-hdr,
-.sh-inner,
+.sh-hdr,.sh-inner,
 .shop_cat_b,
 .similar-items-panel .item-image-container,
 .slt-coln,
@@ -1140,8 +1126,7 @@ body.summary-ui .my-container.item-list .ajax-wrap
 .vi-filmstp .lst.icon a.pic,
 .w2b,
 .watchListCmp,
-.x-motors-finders--blue,.x-motors-finders--green,.x-overlay-footer,
-.x-overlay__container,
+.x-motors-finders--blue,.x-motors-finders--green,.x-overlay-footer,.x-overlay__container,
 [aria-selected="false"],
 [style*="background-color: rgb(255, 255, 255)"],[style="background-color: rgb(255, 255, 255); font-family: Arial, sans-serif; font-size: 14pt; font-weight: bold;"],[style="font-size: 14pt; background-color: rgb(255, 255, 255);"],[style="font-size: 14pt; font-family: Arial, sans-serif; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255);"],
 a.fake-btn,
@@ -1217,12 +1202,12 @@ button.btn--primary:active,button.expand-btn--primary:active
 
 /*__ Red __________________________________________________________________________*/
 
-[data-test-id="CANCEL"],
 #center-panel .app-theme-item-wrapper .btn[data-action-name="UNWATCH"],
 #w5-w0-deleteButton,
 .m-cta button.default[data-template="DELETE_ITEMS_TEMPLATE"],
 .select-vehicle-container > .select-vehicle-container-delete,
-.x-overlay-footer__cancel button[type].btn.btn--small
+.x-overlay-footer__cancel button[type].btn.btn--small,
+[data-test-id="CANCEL"]
 {
 	background-image: linear-gradient(to bottom right, #da0404, #000)!important;
 	border-radius: 22px!important;
@@ -1231,33 +1216,33 @@ button.btn--primary:active,button.expand-btn--primary:active
 	color: #fff;
 }
 
-[data-test-id="CANCEL"]:hover,
 #center-panel .app-theme-item-wrapper .btn[data-action-name="UNWATCH"]:hover,
 #w5-w0-deleteButton:hover,
 .m-cta button.default[data-template="DELETE_ITEMS_TEMPLATE"]:hover,
 .select-vehicle-container > .select-vehicle-container-delete:hover,
-.x-overlay-footer__cancel button[type].btn.btn--small:hover
+.x-overlay-footer__cancel button[type].btn.btn--small:hover,
+[data-test-id="CANCEL"]:hover
 {
 	background-image: linear-gradient(to bottom right, #eb1515, #000)!important;
 	color: #ff0!important;
 }
 
-[data-test-id="CANCEL"]:active,
 #center-panel .app-theme-item-wrapper .btn[data-action-name="UNWATCH"]:active,
 #w5-w0-deleteButton:active,
 .m-cta button.default[data-template="DELETE_ITEMS_TEMPLATE"]:active,
 .select-vehicle-container > .select-vehicle-container-delete:active,
-.x-overlay-footer__cancel button[type].btn.btn--small:active
+.x-overlay-footer__cancel button[type].btn.btn--small:active,
+[data-test-id="CANCEL"]:active
 {
 	box-shadow: inset 2px 2px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
 }
 
 /*__ Orange ________________________________________________________________________*/
 
-.motors-sv-btn.btn,
 .btn.btn-ter,
 .ghfe-ds6.ghfe-ds6.ghfe-ds6 button.btn--secondary,
 .m-cta a.default.secondary,
+.motors-sv-btn.btn,
 .vi-vpqp-pills,
 a.btn.btn-ter
 {
@@ -1267,20 +1252,21 @@ a.btn.btn-ter
 	box-shadow: 1px 1px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
 }
 
-.motors-sv-btn.btn:hover,
 .btn.btn-ter:hover,
 .ghfe-ds6.ghfe-ds6.ghfe-ds6 button.btn--secondary:hover,
 .m-cta a.default.secondary:hover,
+.motors-sv-btn.btn:hover,
 .vi-vpqp-pills:hover,
 a.btn.btn-ter:hover
 {
 	background-image: linear-gradient(to bottom right, #eb4b15, #000)!important;
 	color: #ff0!important;
 }
-.motors-sv-btn.btn:active,
+
 .btn.btn-ter:active,
 .ghfe-ds6.ghfe-ds6.ghfe-ds6 button.btn--secondary:active,
 .m-cta a.default.secondary:active,
+.motors-sv-btn.btn:active,
 .vi-vpqp-pills:active,
 a.btn.btn-ter:active
 {
@@ -1387,7 +1373,6 @@ button.btn--primary.sfk-btn--facebook:active
 
 /*___ Plain Black __________________________________________________________________*/
 
-body .merch-module,
 #CenterPanel,
 #Left,
 #about,
@@ -1422,7 +1407,8 @@ body .merch-module,
 .pagecontainer__center,.pagecontainer__leftnav,
 .pgCenter,
 .srp-main-content,.srp-rail__left,.srp-rail__right,
-.tab-content-m
+.tab-content-m,
+body .merch-module
 {
 	background-color: #000!important;
 	border-radius: 22px!important;
@@ -1430,7 +1416,6 @@ body .merch-module,
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0, 10px 10px 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
 
-body .merch-module:hover,
 #CenterPanel:hover,
 #Left:hover,
 #about:hover,
@@ -1461,7 +1446,8 @@ body .merch-module:hover,
 .pagecontainer__center:hover,.pagecontainer__leftnav:hover,
 .pgCenter:hover,
 .srp-main-content:hover,.srp-rail__left:hover,.srp-rail__right:hover,
-.tab-content-m:hover
+.tab-content-m:hover,
+body .merch-module:hover
 {
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0, 10px 10px 5px rgba(10, 10, 10, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
@@ -1668,13 +1654,13 @@ ul.l-adv li a.selected,ul.l-adv li a:hover
 
 /*___ Highlight Background _________________________________________________________*/
 
-.puldwn ul.select li.op:hover,
 .app-itemspecifics-mobile-wrapper .cc-stdmargin__top:hover,
 .css_accordion li:not(:first-child):hover,
 .desc_details tr:hover,
 .ebay-review-section:hover,
 .my-ebay .menu-body ul li:hover,.my-ebay .menu-head:hover,.my-ebay .menu-list .selected,
-.prodDetailDesc tr:not(:first-child):hover
+.prodDetailDesc tr:not(:first-child):hover,
+.puldwn ul.select li.op:hover
 {
 	background: linear-gradient(to right, #383838, #0000)!important;
 	border-left-color: #434343!important;

@@ -2,8 +2,8 @@
 @name           BBS.IO-TECH.fi Classic Dark Theme - Xenforo 2.1
 @namespace      USO Archive
 @author         johnnymadrid
-@description    `BBS.IO-TECH.fi Classic Dark Theme - Xenforo 2.1Install stylus extension: Chromium based: https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?hl=enFirefox: https://addons.mozilla.org/en-US/firefox/addon/styl-us/Classic gray theme for bbs.io-tech.fi Xenforo 2.1 update. Select classic dark as a selected theme on the site first (though it should work pretty similarly with both dark themes now).`
-@version        20210210.16.17
+@description    `BBS.IO-TECH.fi Classic Dark Theme - Xenforo 2.1Install stylus extension: Chromium based: https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?hl=enFirefox: https://addons.mozilla.org/en-US/firefox/addon/styl-us/Classic gray theme for bbs.io-tech.fi Xenforo 2.1 update. On the site select one of the dark themes as a base theme.`
+@version        20210703.11.17
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -698,10 +698,6 @@ article.message {
     bottom: -1px !important;
     z-index: 100 !important;
     width: 100% !important;
-    border-top: 2px solid var(--border-color-3) !important;
-    border-right: 1px solid var(--border-color-3) !important;
-    border-left: 1px solid var(--border-color-3) !important;
-    margin-top: 0 !important;
 }
 
 .pageNav a,

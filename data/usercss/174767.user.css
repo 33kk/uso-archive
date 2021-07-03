@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         KMVerum
 @description    `Black YouTube Theme by KMV.Text & Links customizable.Note: Custom CSS requires uninstall of old version before updating.Consider this theme "Clean".Most colours are B/W until hovered.Designed to be easy on the eyes - most distractions have been reduced to a minimum.Works straight out of the box - no "Enable YouTube Dark Theme" again.Note:I do not have an YT account, so there are likely elements within user account-pages not covered.Features custom cursors, -scrollbars, subtle opacities and gradients, hover transitions on Menus, Buttons, Logos and Popups.Dark Theme on reCAPTCHA & YouTube Login page included.All options in separate codes. Delete any of these to disable.Main Player is untouched to accommodate for the many custom interfaces available.Stylus recommended:https://add0n.com/stylus.htmlThe rest of my themes:https://userstyles.org/users/370722/Contact;https://old.reddit.com/r/KMV/`
-@version        20210415.20.30
+@version        20210703.9.35
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 @advanced color Links "Links" #93A1A1
@@ -34,16 +34,16 @@
 /*      Line:     Content:                                      */
 /*                                                              */
 /*        18      Text                                          */
-/*       294      Backgrounds                                   */
-/*       482      Channel (Tabs are here)                       */
-/*       592      Popups                                        */
-/*       699      Menus (Gradients here)                        */
-/*       929      Search                                        */
-/*      1092      Buttons                                       */
-/*      1491      Video Player                                  */
-/*      1742      Chat                                          */
-/*      1925      Misc (incl. B/W Logos)                        */
-/*      2373      Ads                                           */
+/*       295      Backgrounds                                   */
+/*       486      Channel (Tabs are here)                       */
+/*       596      Popups                                        */
+/*       718      Menus (Gradients here)                        */
+/*       948      Search                                        */
+/*      1111      Buttons                                       */
+/*      1508      Video Player                                  */
+/*      1759      Chat                                          */
+/*      1942      Misc (incl. B/W Logos)                        */
+/*      2390      Ads                                           */
 /*                                                              */
 /*                                                              */
 /*      Code #3 - Custom Cursors                                */
@@ -143,6 +143,7 @@ a,
 #title.ytd-shelf-renderer,
 #video-title,
 #video-title.ytd-video-renderer,
+[class*="-overlay"] [class*="-title"],
 a.yt-simple-endpoint.yt-formatted-string,
 h3.ytd-compact-station-renderer,
 paper-listbox.yt-dropdown-menu paper-item.yt-dropdown-menu,
@@ -224,10 +225,11 @@ yt-formatted-string.style-scope.ytd-search-filter-renderer,
 .yt-ui-ellipsis,
 .content-endpoint.ytd-info-panel-content-renderer .ytd-info-panel-content-renderer,
 .ytp-ce-link,
-.ytp-ce-video-title.ytp-webkit-ellipsis,
-.ytp-pause-overlay .ytp-expand,
-.ytp-pause-overlay .ytp-suggestion-author,
-.ytp-pause-overlay .ytp-suggestion-title,
+
+[class*="-overlay"] .ytp-expand,
+[class*="-overlay"] [class*="-author"],
+[class*="-overlay"] [class*="-title"],
+
 /*.ytp-title-link,*/
 .ytp-videowall-still-info-author,
 .ytp-videowall-still-info-title
@@ -294,14 +296,13 @@ ytd-toggle-button-renderer.style-text[is-icon-button]:hover #text.ytd-toggle-but
 .yt-simple-endpoint .style-scope .ytd-video-renderer:hover,
 .yt-ui-ellipsis:hover,
 .content-endpoint.ytd-info-panel-content-renderer:hover .ytd-info-panel-content-renderer,
+.ytp-ce-element:hover .ytp-ce-video-title,
 .ytp-ce-link:hover,
-.ytp-ce-video-title.ytp-webkit-ellipsis:hover,
-.ytp-pause-overlay .ytp-expand:hover,
-.ytp-pause-overlay .ytp-suggestion-author:hover,
-.ytp-pause-overlay .ytp-suggestion-title:hover,
-/*.ytp-title-link:hover,*/
-.ytp-videowall-still-info-author:hover,
-.ytp-videowall-still-info-title:hover
+[class*="-overlay"] [class*="-author"],
+[class*="-overlay"] .ytp-expand:hover,
+[class*="-overlay"]:hover [class*="-title"],
+[class*="-videowall-"]:hover [class*="-title"],
+[class*="-videowall-"] [class*="-author"]:hover
 {
     background-color: transparent !important;
     color: var(--YTCLinksHover) !important;
@@ -491,6 +492,7 @@ ytd-simple-menu-header-renderer,
     background: #000 !important;
 }
 
+
     /*Selected Lighter Backgrounds*/
 #bar,
 #collapse-controls-section.ytd-donation-shelf-renderer,
@@ -507,10 +509,12 @@ ytd-simple-menu-header-renderer,
 #merch-shelf.style-scope .ytd-watch-flexy,
 #chips-wrapper,#scroll-container,ytd-feed-filter-chip-bar-renderer,#left-arrow-button.ytd-feed-filter-chip-bar-renderer, #right-arrow-button.ytd-feed-filter-chip-bar-renderer,
 a.ytd-search-refinement-card-renderer,
+ytd-alert-with-button-renderer,
 ytd-info-panel-container-renderer,.ytd-info-panel-content-renderer,
 ytd-clarification-renderer,
 ytd-engagement-panel-title-header-renderer.style-scope,
 ytd-info-panel-content-renderer[has-menu],
+ytd-limited-state-message-renderer,
 ytd-post-renderer,
 ytd-playlist-panel-renderer[collapsible] .header.ytd-playlist-panel-renderer,
 ytd-transcript-footer-renderer.style-scope,
@@ -675,6 +679,14 @@ tp-yt-paper-tab:active,
     z-index: 9999 !important;
 }
 
+tp-yt-paper-toast
+{
+    background: #000;
+    box-shadow: 0px 0px 1px 1px #222;
+    filter: opacity(.75);
+    transition: .4s;
+}
+
 /*For Gradient - see MENUS below*/  
 paper-dialog:hover,
 tp-yt-paper-dialog:hover,
@@ -702,6 +714,7 @@ ytd-mealbar-promo-renderer,
 #dialog.ytd-consent-bump-lightbox:hover,
 paper-toast.yt-notification-action-renderer:hover,
 tp-yt-iron-dropdown:hover,
+tp-yt-paper-toast:hover,
 ytd-consent-bump-renderer:hover,
 ytd-mealbar-promo-renderer:hover,
 .ytd-popup-container:hover,
@@ -712,6 +725,12 @@ ytd-mealbar-promo-renderer:hover,
     transition: .4s !important;
     z-index: 9999;
 }
+
+tp-yt-paper-toast:hover
+{
+    filter: opacity(1);
+}
+
     /*Main Dropdown Menu Transition Fix*/
 iron-dropdown.style-scope.ytd-popup-container
 {
@@ -1177,8 +1196,7 @@ paper-ripple
 /*ROUND BUTTONS*/
 
     /*Transparent*/
-yt-icon-button,
-ytd-toggle-button-renderer #button.ytd-toggle-button-renderer
+yt-icon-button
 {
     background-color: #0000 !important;
     border-radius: 40px !important;
@@ -1350,6 +1368,7 @@ yt-icon-button#button.style-scope.ytd-button-renderer.style-default.size-default
 button,
 paper-button,
 ytd-button-renderer,
+ytd-toggle-button-renderer #button.ytd-toggle-button-renderer,
 /*Video Player Channel Popup*/.ytp-sb-subscribe,
 .ytd-toggle-button-renderer,
 .ytp-tooltip.ytp-tooltip-opaque.ytp-bottom,
@@ -1371,7 +1390,6 @@ a.ytp-sb-subscribe
 
 /*Buttons Blue Border Removal*/
 tp-yt-paper-button[aria-label="Sign in"],
-ytd-button-renderer.style-suggestive[is-paper-button] [href*="https://accounts.google.com/ServiceLogin?service=youtube"],
 #button.ytd-continuation-item-renderer
 {
     
@@ -1520,7 +1538,7 @@ paper-toggle-button[checked]:not([disabled]) .toggle-bar.paper-toggle-button
     background-color: #999;
 }
 
-/*Gradient Button under Main Topics in "Explore" section*/
+    /*Gradient Button under Main Topics in "Explore" section*/
 tp-yt-paper-button[animated]#show-more-button.ytd-destination-shelf-renderer[aria-label="SHOW MORE"]
 {
     background: linear-gradient(#0000, #000);
@@ -1532,7 +1550,7 @@ tp-yt-paper-button[animated]#show-more-button.ytd-destination-shelf-renderer[ari
     transition: .2s !important;
 }
 
-/*On-click*/
+    /*On-click*/
 tp-yt-paper-button[animated]#show-more-button.ytd-destination-shelf-renderer[aria-label="SHOW MORE"]:active,
 ytd-button-renderer #button.ytd-button-renderer:active,
 ytd-toggle-button-renderer #button.ytd-toggle-button-renderer:active
@@ -1540,7 +1558,6 @@ ytd-toggle-button-renderer #button.ytd-toggle-button-renderer:active
     filter: brightness(.6) !important;
     transition: 0s !important;
 }
-
 
 
 /*Override - Background Removal*/

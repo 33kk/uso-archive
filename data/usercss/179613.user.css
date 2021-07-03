@@ -2,8 +2,8 @@
 @name           Mail.ru Dark Transparent Theme
 @namespace      USO Archive
 @author         Delmor_S
-@description    `29.07.202 - Переместил изображение на другой хостинг, также сделал несколько небольших фиксов с менюбоксами коронавируса, а также сделал один из выпадающих списков в почте темным.22.03.2020 - Убрал некоторые зависимости от тем, теперь должно отображаться без ошибок.17.03.2020 - И еще несколько фиксов для разных разрешений.16.03.2020 - Обновил для совместимости с небольшими разрешениями экранов.Стиль, который делает список ваших писем темным и полупрозрачным, чтобы лучше сочетаться с картинкой/темой, которую вы выбрали в меню тем.`
-@version        20200729.6.22
+@description    `03.07.2021 - Полностью с нуля переделал стиль, поскольку с момента последнего обновления главная страница Mail.ru полностью изменилась. Теперь все должно быть красиво!Стиль, который делает список ваших писем темным и полупрозрачным, чтобы лучше сочетаться с картинкой/темой, которую вы выбрали в меню тем.`
+@version        20210703.11.50
 @license        CC-BY-NC-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -11,13 +11,18 @@
 :root {
     --generalBlueBackgroundColor: rgba(0, 0, 30, 0.72);
     --brightBlueBackgroundColor: rgba(0, 0, 30, 0.3);
-    --linkColor: #c6deff;
+    --linkColor: #a3cbff;
     --visitedLinkColor: #fff;
     --darkGreyColor: #111;
+    --greyTransparentColor: rgba(0, 0, 25, 0.5);
+    --greyerTransparentColor: rgba(0, 0, 25, 0.5);
 }
 
-
-
+/* Here you can put your own background for list of letters */
+body.page .application-mail {
+    --background-image: url(https://img.imgsmail.ru/themes/1.31.4/images/t2024/bg/2560x1600.jpg),url(https://img.imgsmail.ru/themes/1.31.4/images/t2024/bg/2560x1600.jpg);
+    --background-size: 2560px 1600px;
+}
 
 .llc__background {
     background-color: rgba(0, 0, 10, 0.7) !important; 
@@ -31,6 +36,7 @@
     color: #eee !important;
 }
 
+.list-letter-preview-action__message,
 .i-color-warm-grey,
 .nav__folder-name,
 .llc__subject_unread .ll-sj__normal {
@@ -62,8 +68,8 @@
     color: white !important;
 }
 
-.theme-t2024 .search-panel__wrapper,
-.theme-t2024 .portal-menu {
+.search-panel__wrapper,
+.portal-menu {
     background-color: rgba(0, 0, 60, 0.8) !important;
 }
 
@@ -80,9 +86,10 @@
     background-color: #ff9e00 !important;
 }
 
-.r-search-panel input {
+.r-search-panel input, .r-text {
     color: white !important;
 }
+
 
 
 /* NEW SERVICE - TASKS */
@@ -94,8 +101,8 @@
     color: white;
 }
 
-.list {
-    background-color:  #222 !important; 
+.r-search-suggest {
+    background-color: #222 !important; 
     color: white !important;
 }
 
@@ -109,147 +116,193 @@
 
 
 
-
 /* MAIN MAIL.RU PAGE */
-
-.grid {
+body {
     background-color: #001F50;
     background-image: url(https://i.ibb.co/8gyFp09/clouds.jpg) !important;   
     background-repeat: no-repeat !important;
+    background-attachment: fixed;
+}
+
+@media only screen and (max-width: 1200px) {
+  body {
     background-size: cover !important;
-    height: 100%;
-    position: absolute;
+  }
 }
 
-
-.grid_x-xl .grid__container,
-.grid_x-lg .grid__container,
-.grid_x-md .grid__container,
-.grid_x-sm .grid__container,
-.grid_x-xs .grid__container,
-.grid_x-xl .is-sticky .search__sticky-container, 
-.is-sticky.grid_x-xl .search__sticky-container
-{
-    background-color: var(--generalBlueBackgroundColor) !important;
+@media only screen and (min-width: 1201px) {
+  body {
+    background-size: 120% !important;
+  }
 }
 
-.grid_x-xl .is-sticky .search__sticky-container, 
-.is-sticky.grid_x-xl .search__sticky-container,
-.search__sample,
-.i-no-right-radius {
-    color: white;
+@keyframes newsHighlight {
+  to {background-color: rgba(0, 0, 25, 0.5);}
 }
 
-.tabs-content__item,
-.grid__main-col,
-.tabs,
-.grid__ccol {
-    background-color: transparent !important;
+.is-highlight {
+    -webkit-animation: 3s newsHighlight ease forwards .1s infinite !important;
+    -o-animation: 3s newsHighlight ease forwards .1s infinite !important;
+    animation: 3s newsHighlight ease forwards .1s infinite !important;
+    
 }
 
-
-.grid-middle {
-    min-height: 600px;
+.is-highlight:before {
+    content: none !important;
 }
 
-@media (min-height: 850px) {
-.grid-middle {
-    min-height: 800px;
-}
-}
-
-
-.search__background,
-.search__sample,
-.tabs__dropdown,
-.tabs__dropdown-nose:after,
-.mailbox__dropdown__container,
-.mailbox__addbox__container,
-.btn_white,
-.footer__dropdown,
-.footer__dropdown-nose:after {
-    background-color: var(--darkGreyColor) !important;
+.grid__container .grid__main-col,
+.mailbox-container {
+    background-color: transparent !important;   
 }
 
-.i-fade-white:after {
-    background: linear-gradient(to right,rgba(255,255,255,0) 0,var(--darkGreyColor) 60%);
-}
-
+.weather,
+.horoscope,
+.rates,
 .mailbox {
-    background-color: var(--brightBlueBackgroundColor) !important;
-}
-
-.mailbox__dropdown__button-account .mailbox__account-email:after, .mailbox__dropdown__button-account .mailbox__account-name:after {
-    background: linear-gradient(to right,rgba(255,255,255,0) var(--brightBlueBackgroundColor), var(--brightBlueBackgroundColor) 60%) !important;
-}
-
-.mailbox__dropdown__menu_media_item:hover {
-    background-color: #222 !important;
-}
-
-.mailbox__dropdown__menu_media_item:hover .mailbox__account-email:after, .mailbox__dropdown__menu_media_item:hover .mailbox__account-name_dropdown:after {
-    background-image: linear-gradient(to right, rgba(235, 235, 235, 0) 0px, transparent 60%);
-}
-
-.mailbox__icon_back, .mailbox__icon_calendar, .mailbox__icon_cloud {
-    color: #005ff9 !important;
-}
-
-
-
-@keyframes highlight {
-  60% {
-    background-color: var(--brightBlueBackgroundColor);
-  }
-  100% {
-    background-color: transparent;
-  }
-}
-
-.news-item:after, 
-.news-main:after {
-    box-shadow: inset -8px 0 16px transparent !important;
-}
-
-.tabs__dropdown-button,
-.horo-informer__title,
-.i-color-black,
-.mailbox__account-name,
-.news-main__desc {
-    color: white !important;
-}
-
-.news-item__label.svelte-1tc42cf {
-    color: white !important;
+    background-color: var(--greyTransparentColor) !important;
 }
 
 .rate__icon {
-    border-color: black !important;
     filter:invert(1);
 }
 
-.x-ph__menu__button .x-ph__menu__button__text,
-.grid a {
+.tabs__item.is-active,
+.head a,
+.horoscope .info .title,
+.rate__currency,
+.account__name,
+.unread-messages,
+.weather__city,
+.weather__block {
+    color: white !important;
+}
+
+.list__item:after,
+.account__email:after, 
+.account__name:after
+{
+    background: transparent !important;
+}
+
+.grid__ccol {
+    background-color: var(--greyerTransparentColor) !important;
+    padding-left: 25px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.tabs {
+    background-color: var(--greyerTransparentColor) !important;
+    padding-left: 25px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.search__top {
+    padding-top: 10px;
+    padding-left: 25px;
+    
+}
+
+a.search__category {
     color: var(--linkColor) !important;
 }
 
-.x-ph__menu__button:hover .x-ph__menu__button__text {
-    color: #ff9e00 !important;
+.searchContainer {
+    background-color: var(--greyerTransparentColor) !important;
+    border-radius: 0px 0px 10px 0px;
 }
 
-.news-item a:visited {
-    color: var(--visitedLinkColor) !important;
+.ph-avatar-icon {
+    background-color: black !important;
 }
 
-.m-bordered.m-animated-shadow.m-animated-borderless.notify.i-link-no-deco.i-absolute {
-    background-color: transparent !important;
+.ph-container svg {
+    fill: white !important;
 }
 
-.m-animated-border:before, .m-animated-border:hover:before, .m-animated-borderless:before, .m-bordered:before {
-    border-color: transparent;
+.ph-sidebar {
+ background-color: #222 !important;   
 }
 
-.notify__short-link {
-    color: white;
+.ph-container {
+    color: white !important;
 }
+
+.search__sample,
+.search__input {
+    background-color: var(--darkGreyColor) !important;
+    color: white !important;
+}
+
+.weather__more,
+.tabs__item:not(.is-active) {
+    color: var(--linkColor) !important;
+}
+
+.restore,
+.saveauth,
+.i-link-deco,
+.news-item a {
+    color: white !important;
+}
+
+.head__email, 
+.head__icon {
+    color: white !important;   
+}
+
+.head__email:after {
+    background: none !important;
+}
+
+.news-main__text-wrapper .i-link-deco {
+    font-weight: bold;
+}
+
+.news-main:not(.is-highlight):after,
+.news-item::after {
+    box-shadow: none !important;
+}
+
+.resplash-btn_secondary
+{
+    background-color: #222 !important;
+    color: var(--linkColor) !important;
+}
+
+.news-item .news-item__label {
+    color: var(--linkColor) !important;
+    padding-right: 20px;
+}
+
+.news-main__desc {
+    color: #bbb !important;
+}
+
+.ph-container:before {
+    background-color: #222 !important;
+}
+
+.ph-dropdown-icon {
+    filter:invert(1);    
+}
+
+.ph-project__all-projects,
+.ph-project__user-name,
+.ph-container a:link, 
+.ph-container a:visited {
+    color: white !important;
+}
+
+.news-item.is-highlight {
+    margin-right: 0px !important;
+}
+
+.news-item.is-highlight:after,
+.news-item.is-highlight:before
+{
+    animation: none !important;
+    -webkit-animation: none !important;
+}
+
 }

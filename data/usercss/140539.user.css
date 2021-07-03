@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         apmPlus
 @description    `究極護眼`
-@version        20210701.2.37
+@version        20210703.8.47
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -106,7 +106,15 @@
   /*nav action*/      nav ._3UWhC8w0s5w1-V4_sdp4Yd>span:not(._8_NT40G-QNQzcSSTrRXAD){padding:0px 0px!important;}
   /*nav action icon*/ nav ._3UWhC8w0s5w1-V4_sdp4Yd>span:hover{background:#560!important;}
   /*nav action icon*/ nav ._3UWhC8w0s5w1-V4_sdp4Yd>span>i{padding:0 0px!important;}
-  /*nav action F5*/   nav ._3UWhC8w0s5w1-V4_sdp4Yd>span[title="F5"]{padding:0px 20px 0px 20px!important;}
+  /*nav action thumb*/nav ._3UWhC8w0s5w1-V4_sdp4Yd>span[title*="分台"]{padding:0px 20px!important;}
+  /*nav action F5*/   nav ._3UWhC8w0s5w1-V4_sdp4Yd>span[title*="F5"]  {padding:0px 20px!important;}
+  /*nav action thumb*/nav ._3UWhC8w0s5w1-V4_sdp4Yd>span[title*="發表"]{padding:0px 20px!important;}
+  /*nav action thumb*/nav ._3UWhC8w0s5w1-V4_sdp4Yd>span[title*="留名"]{padding:0px  5px!important;}
+  /*nav action thumb*/nav ._3UWhC8w0s5w1-V4_sdp4Yd>span[title*="回覆"]{padding:0px  0px!important;}
+  /*nav action thumb*/nav ._3UWhC8w0s5w1-V4_sdp4Yd>span[title*="評"]  {padding:0px  5px!important;}
+  /*nav action thumb*/nav ._3UWhC8w0s5w1-V4_sdp4Yd>span[title*="媒體"]{padding:0px 20px!important;}
+  /*nav action thumb*/nav ._3UWhC8w0s5w1-V4_sdp4Yd>span[title*="排序"]{padding:0px  0px!important;}
+  /*nav action thumb*/nav ._3UWhC8w0s5w1-V4_sdp4Yd>span[title*="更多"]{padding:0px  0px!important;}
   /*nav action thumb*/nav ._3UWhC8w0s5w1-V4_sdp4Yd>span._8_NT40G-QNQzcSSTrRXAD{min-width:50px!important;padding:0px 5px!important;}
   /*nav action thumb*/nav ._3UWhC8w0s5w1-V4_sdp4Yd>span._8_NT40G-QNQzcSSTrRXAD::after{font:20px/20px arial!important;margin:0px!important;padding:0px 0px!important;}
   /*nav action thumb*/nav ._3UWhC8w0s5w1-V4_sdp4Yd>span._8_NT40G-QNQzcSSTrRXAD[title="正評"]::after{color:#0a0!important;}
@@ -150,8 +158,38 @@
   /*thread info*/  #leftPanel .wQ4Ran7ySbKd8PdMeHZZR .zBQrhafI5njrmUUaJqKA4 ._2QlX4bGICSftdn-ZfV0W2c._3Q8V-iQfUJ9CRz-PIEHQy3{font-size:22px!important;line-height:22px!important;}/*thumb down*/
   /*thread info*/  #leftPanel .wQ4Ran7ySbKd8PdMeHZZR .zBQrhafI5njrmUUaJqKA4 ._2QlX4bGICSftdn-ZfV0W2c._31Q8r_bj7UNNBULuACpF3w{color:#090!important;font-weight:800!important;}/*thumb up*/
   /*thread info*/  #leftPanel .wQ4Ran7ySbKd8PdMeHZZR .zBQrhafI5njrmUUaJqKA4 ._2QlX4bGICSftdn-ZfV0W2c._3Q8V-iQfUJ9CRz-PIEHQy3{color:#a11!important;font-weight:800!important;}/*thumb down*/
-  /*thread info category*/#leftPanel .wQ4Ran7ySbKd8PdMeHZZR a~._3VRxq3mC-jm2fhdX4exwPU      {font:20px/100% arial!important;color:#aaa!important;background:transparent!important;padding:0 0 0 10px!important;margin:0 auto -5px!important;width:0px!important;height:initial!important;position:absolute!important;top:15px!important;left:-40px!important;writing-mode:vertical-lr!important;text-align:center!important;white-space:nowrap!important;}
-  /*thread info category*/#leftPanel .wQ4Ran7ySbKd8PdMeHZZR:hover a~._3VRxq3mC-jm2fhdX4exwPU{color:#ff0!important;}
+  /*thread info category*/
+#leftPanel .wQ4Ran7ySbKd8PdMeHZZR a~._3VRxq3mC-jm2fhdX4exwPU      {font:20px/100% arial!important;color:#888!important;background:transparent!important;padding:3px 24px 3px 0px!important;margin:0 auto!important;width:20px!important;height:initial!important;top:-1px!important;left:-35px!important;position:absolute!important;writing-mode:vertical-lr!important;text-align:center!important;white-space:nowrap!important;z-index:0!important;border-radius:0px!important;}
+#leftPanel .wQ4Ran7ySbKd8PdMeHZZR:hover a~._3VRxq3mC-jm2fhdX4exwPU{transform:scale(1.6)!important;left:-40px!important;color:#fff!important;background:#000!important;padding:5px 28px 8px 4px!important;border-radius:20px!important;;z-index:1!important;}
+#leftPanel .wQ4Ran7ySbKd8PdMeHZZR a~._3VRxq3mC-jm2fhdX4exwPU[href="/category/1"] {color:#fff!important;}/* 吹水 */
+#leftPanel .wQ4Ran7ySbKd8PdMeHZZR a~._3VRxq3mC-jm2fhdX4exwPU[href="/category/31"]{color:#fff!important;}/* 創意 */
+#leftPanel .wQ4Ran7ySbKd8PdMeHZZR a~._3VRxq3mC-jm2fhdX4exwPU[href="/category/5"] {color:#ff1!important;}/* 時事 */
+#leftPanel .wQ4Ran7ySbKd8PdMeHZZR a~._3VRxq3mC-jm2fhdX4exwPU[href="/category/33"]{color:#ff1!important;}/* 政事 */
+#leftPanel .wQ4Ran7ySbKd8PdMeHZZR a~._3VRxq3mC-jm2fhdX4exwPU[href="/category/8"] {color:#0f0!important;}/* 動漫 */
+#leftPanel .wQ4Ran7ySbKd8PdMeHZZR a~._3VRxq3mC-jm2fhdX4exwPU[href="/category/10"]{color:#0a0!important;}/* 遊戲 */
+#leftPanel .wQ4Ran7ySbKd8PdMeHZZR a~._3VRxq3mC-jm2fhdX4exwPU[href="/category/11"]{color:#0c0!important;}/* 影視 */
+#leftPanel .wQ4Ran7ySbKd8PdMeHZZR a~._3VRxq3mC-jm2fhdX4exwPU[href="/category/21"]{color:#0c0!important;}/* 音樂 */
+#leftPanel .wQ4Ran7ySbKd8PdMeHZZR a~._3VRxq3mC-jm2fhdX4exwPU[href="/category/14"]{color:#0cf!important;}/* 上班 */
+#leftPanel .wQ4Ran7ySbKd8PdMeHZZR a~._3VRxq3mC-jm2fhdX4exwPU[href="/category/15"]{color:#0cf!important;}/* 財經 */
+#leftPanel .wQ4Ran7ySbKd8PdMeHZZR a~._3VRxq3mC-jm2fhdX4exwPU[href="/category/20"]{color:#0cf!important;}/* 汽車 */
+#leftPanel .wQ4Ran7ySbKd8PdMeHZZR a~._3VRxq3mC-jm2fhdX4exwPU[href="/category/37"]{color:#0cf!important;}/* 房屋 */
+#leftPanel .wQ4Ran7ySbKd8PdMeHZZR a~._3VRxq3mC-jm2fhdX4exwPU[href="/category/24"]{color:#940!important;}/* 玩具 */
+#leftPanel .wQ4Ran7ySbKd8PdMeHZZR a~._3VRxq3mC-jm2fhdX4exwPU[href="/category/25"]{color:#940!important;}/* 寵物*/
+#leftPanel .wQ4Ran7ySbKd8PdMeHZZR a~._3VRxq3mC-jm2fhdX4exwPU[href="/category/18"]{color:#fac!important;}/* 學術 */
+#leftPanel .wQ4Ran7ySbKd8PdMeHZZR a~._3VRxq3mC-jm2fhdX4exwPU[href="/category/19"]{color:#fac!important;}/* 校園 */
+#leftPanel .wQ4Ran7ySbKd8PdMeHZZR a~._3VRxq3mC-jm2fhdX4exwPU[href="/category/30"]{color:#fac!important;}/* 感情 */
+#leftPanel .wQ4Ran7ySbKd8PdMeHZZR a~._3VRxq3mC-jm2fhdX4exwPU[href="/category/38"]{color:#f4f!important;top:3px!important;}/* World */
+#leftPanel .wQ4Ran7ySbKd8PdMeHZZR a~._3VRxq3mC-jm2fhdX4exwPU[href*="/5/"]  {top:10px!important;}
+#leftPanel .wQ4Ran7ySbKd8PdMeHZZR a~._3VRxq3mC-jm2fhdX4exwPU[href*="/5/10"]{color:#ff1!important;}/* 時事 新聞 */
+#leftPanel .wQ4Ran7ySbKd8PdMeHZZR a~._3VRxq3mC-jm2fhdX4exwPU[href*="/5/11"]{color:#a11!important;}/* 時事 突發 */
+#leftPanel .wQ4Ran7ySbKd8PdMeHZZR a~._3VRxq3mC-jm2fhdX4exwPU[href*="/5/12"]{color:#0cf!important;}/* 時事 社評 */
+#leftPanel .wQ4Ran7ySbKd8PdMeHZZR a~._3VRxq3mC-jm2fhdX4exwPU[href*="/21/"] {top:10px!important;}
+#leftPanel .wQ4Ran7ySbKd8PdMeHZZR a~._3VRxq3mC-jm2fhdX4exwPU[href*="/21/1"]{color:#ff1!important;}/* 音樂 本地 */
+#leftPanel .wQ4Ran7ySbKd8PdMeHZZR a~._3VRxq3mC-jm2fhdX4exwPU[href*="/21/2"]{color:#fac!important;background:#333!important;}/* 音樂 華語 */
+#leftPanel .wQ4Ran7ySbKd8PdMeHZZR a~._3VRxq3mC-jm2fhdX4exwPU[href*="/21/3"]{color:#f44!important;}/* 音樂 日本 */
+#leftPanel .wQ4Ran7ySbKd8PdMeHZZR a~._3VRxq3mC-jm2fhdX4exwPU[href*="/21/4"]{color:#0af!important;}/* 音樂 韓國 */
+#leftPanel .wQ4Ran7ySbKd8PdMeHZZR a~._3VRxq3mC-jm2fhdX4exwPU[href*="/21/5"]{color:#0f0!important;}/* 音樂 歐美 */
+#leftPanel .wQ4Ran7ySbKd8PdMeHZZR a~._3VRxq3mC-jm2fhdX4exwPU[href*="/21/8"]{color:#fff!important;}/* 音樂 樂器 */
   
   /*thread title*/#leftPanel ._1KV65JcPoDUFZ4o3OEqn4R{min-height:34px!important;margin:0!important;}
   /*thread title*/#leftPanel .wQ4Ran7ySbKd8PdMeHZZR ._14BnVEj9rQ5VQKmrIqn9Qj{white-space:nowrap!important;overflow:visible!important;}
@@ -469,6 +507,9 @@
   /*user info*/ ._34dVbr5A8khk2N65H9Nl-j>._27su4Zj_qATokwVdWIbEWB>._27SmIe4FGDNnK7apcCB3W7>._3dbMg7zkkTIVJ5VZ3ygu4->._2IUy1jWM51ht5tTW6Wq0jB>._2N56PwACWaBvNbz7BVVRZx>ul>li>div>*:nth-child(2){}
   /*user info*/ ._34dVbr5A8khk2N65H9Nl-j>._27su4Zj_qATokwVdWIbEWB>._27SmIe4FGDNnK7apcCB3W7>._3dbMg7zkkTIVJ5VZ3ygu4->._2IUy1jWM51ht5tTW6Wq0jB>._2N56PwACWaBvNbz7BVVRZx>ul>li>div>*:nth-child(2)>span      {background:#333!important;font:20px/40px arial!important;color:#a11!important;height:40px!important;padding:0 5px!important;}
   /*user info*/ ._34dVbr5A8khk2N65H9Nl-j>._27su4Zj_qATokwVdWIbEWB>._27SmIe4FGDNnK7apcCB3W7>._3dbMg7zkkTIVJ5VZ3ygu4->._2IUy1jWM51ht5tTW6Wq0jB>._2N56PwACWaBvNbz7BVVRZx>ul>li>div>*:nth-child(2)>span:hover{background:#aa2!important;}
+  /*blocked list*/._2NVUL5Ow1xg006Qaf5T5u-{padding:0px!important;} 
+			            ._2SqBoIdr5sJFLnuXp8xsqy a{padding:0px!important;}
+  /*blocked list*/._2NVUL5Ow1xg006Qaf5T5u->*{font-size:20px!important;line-height:100%!important;}
   /*user info*/ ._34dVbr5A8khk2N65H9Nl-j>._27su4Zj_qATokwVdWIbEWB>._2c5AwJ_0ePFIYub8OFE97J{background:#333!important;}
   /*user info*/ ._34dVbr5A8khk2N65H9Nl-j>._27su4Zj_qATokwVdWIbEWB>._2c5AwJ_0ePFIYub8OFE97J>a{}
   /*user info*/ ._34dVbr5A8khk2N65H9Nl-j>._27su4Zj_qATokwVdWIbEWB>._2c5AwJ_0ePFIYub8OFE97J>a[href*="profile"]{}
@@ -536,17 +577,40 @@
   .ZTeFvPwYujtV3UWWWPRFL>div{width:98.5%!important;max-width:initial!important;}
   .ZTeFvPwYujtV3UWWWPRFL>div{}
   
-  @media screen and (max-width:1100px){
-    /*.O4s3-RmwMD9N5cXhKS_DB{display:none!important;}*/
-    /*#leftPanel .wQ4Ran7ySbKd8PdMeHZZR{left:-0px!important;width:98%!important;}*/
-    /*#rightPanel .PmcQfXhFNh-qv6-8HmYRx{width:98%!important;}*/
-    /*#rightPanel ._104Xz-AMZKOPR1qS6fu7Xn{padding:0px!important;}*/
-    /*thread resize*/#leftPanel .wQ4Ran7ySbKd8PdMeHZZR{width:100%!important;margin:auto!important;left:0px!important;min-height:0px!important;}
-    /*thread hot*/   #leftPanel .wQ4Ran7ySbKd8PdMeHZZR ._2qZQ2JokERWe5adVCUoOvU{margin:0px!important;left:0px!important;top:10px!important;padding:0px!important;}
-  }
-  @media screen and (max-width:790px){
-    /**/nav~._2JnkV7flhQCKN2EsmonRcN{height:auto!important;}
-  }
+  
+  
+  
+  
+  /*   custom   */
+  /*   custom   */
+  /*   custom   */
+  /*member tags*/
+  .eslltWt3HgKnG_miBwvfx>._2dc_Q{position:absolute!important;width:initial!important;}
+  .eslltWt3HgKnG_miBwvfx>._104Xz-AMZKOPR1qS6fu7Xn{height:initial!important;margin:0!important;}
+  ._34dVbr5A8khk2N65H9Nl-j>._27su4Zj_qATokwVdWIbEWB>._2c5AwJ_0ePFIYub8OFE97J>div{}
+  ._34dVbr5A8khk2N65H9Nl-j>._27su4Zj_qATokwVdWIbEWB>._2c5AwJ_0ePFIYub8OFE97J>div>a{font:40px/4rem arial!important;color:#ff5!important;}
+  ._2bokd4pLvU5_-Lc97NVqzn>*>small{white-space:nowrap!important;}
+  ._2bokd4pLvU5_-Lc97NVqzn>*>small>.UM_uefRXp7fgzd4Cl8y2A{font:0px/0px arial!important;margin:0!important;}
+  ._2bokd4pLvU5_-Lc97NVqzn>*>small>._2yooG     {font:20px/23px arial!important;margin:0!important;height:23.6px!important;}
+  ._2bokd4pLvU5_-Lc97NVqzn>*>small>._2yooG>ul  {margin:5px 0px 0px 0px!important;}
+  ._2bokd4pLvU5_-Lc97NVqzn>*>small>._2yooG>ul *{transition:none!important;}
+  ._2bokd4pLvU5_-Lc97NVqzn>*>small>._2yooG>ul>li              {font:20px/24px arial!important;color:#ff5!important;padding:5px 8px!important;margin:0!important;border-radius:25px!important;}
+  ._2bokd4pLvU5_-Lc97NVqzn>*>small>._2yooG>ul>li:nth-child(2n){}
+  ._2bokd4pLvU5_-Lc97NVqzn>*>small>._2yooG>ul>li:hover        {background:#434!important;}
+  ._2bokd4pLvU5_-Lc97NVqzn>*>small>._2yooG>ul>li>div{background:#246!important;padding:0!important;margin:0!important;}
+  ._2bokd4pLvU5_-Lc97NVqzn>*>small>._2yooG>ul>li>div>:nth-child(1){font:30px/100% arial!important;color:#a11!important;}
+  ._2bokd4pLvU5_-Lc97NVqzn>*>small>._2yooG>ul>li>div>.C0UVT{padding:5px 0 0!important;}
+  ._2bokd4pLvU5_-Lc97NVqzn>*>small>._2yooG>ul>li>div>.m5mZN{margin:0!important;}
+  ._2bokd4pLvU5_-Lc97NVqzn>*>small>._2yooG>ul>li>div>.m5mZN>*      {padding:5px!important;margin:0!important;}
+  ._2bokd4pLvU5_-Lc97NVqzn>*>small>._2yooG>ul>li>div>.m5mZN>*:hover{background:#000!important;}
+  ._2bokd4pLvU5_-Lc97NVqzn>*>small>._2yooG>ul>li>div>.m5mZN i{font-size:30px!important;}
+  ._2bokd4pLvU5_-Lc97NVqzn>*>small>._2yooG>ul>li>div>.m5mZN i.i-pencil        {color:#0a0!important;}
+  ._2bokd4pLvU5_-Lc97NVqzn>*>small>._2yooG>ul>li>div>.m5mZN i.i-link          {color:#c60!important;}
+  ._2bokd4pLvU5_-Lc97NVqzn>*>small>._2yooG>ul>li>div>.m5mZN i.i-delete-forever{color:#a11!important;}
+  ._2bokd4pLvU5_-Lc97NVqzn>*>small>._2yooG>button      {font-size: 0px!important;line-height:100%!important;color:#a11!important;padding:5px!important;border-radius:25px!important;}
+  ._2bokd4pLvU5_-Lc97NVqzn:hover>*>small>._2yooG>button{font-size:30px!important;}
+  ._2bokd4pLvU5_-Lc97NVqzn>*>small>._2yooG>button:hover{background:#434!important;}
+  ._2bokd4pLvU5_-Lc97NVqzn>*>small>._2yooG>button>i{}
 }
 
 

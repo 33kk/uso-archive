@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        const pageLoadedAt = new Date().getTime();
+        const debugMode = localStorage.getItem("debugMode");
+        const sendPerformance = debugMode || Math.random() < (1/5); // count time to 1 every 5 users
+        let userState = sessionStorage.getItem("userState");
+        userState =  userState ? 'old' : 'new';
+        sessionStorage.setItem('userState', userState);
+        window.msSincePageLoad = ()=>{
+            return new Date().getTime() - pageLoadedAt;
+        };
+        window.timingGA = (label, value) =>{
+            if (sendPerformance){
+                window.ga('send', 'event', 'timing_new', userState, label, value);
+            }
+        };
+    </script>
+  <script>
+      window.addEventListener("message", (event) => {
+          if (event.source == window &&
+              event.data.direction &&
+              event.data.direction === "from-content-script" && event.data.message === "StylishInstalled") {
+              window.isInstalled = true;
+          }
+      });
+  </script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    /*window env:*/
+    window.env = 'production';
+    //window.env = 'production';
+  </script>
+
+  <!--Can make below one liner?-->
+      <script> window.userId = null; </script>
+
+  <title>Website Themes &amp; Skins by Stylish | Userstyles.org</title>
+  <meta name='description' content='Style your favorite websites with themes &amp; skins created by the Stylish community. Hundreds of thousands of backgrounds, color schemes and more at Userstyles.org'>
+
+  <meta property='og:type' content='website'>
+
+  <meta property='og:title' content='Themes &amp; Skins for the World&#39;s Top Websites'>
+  <meta property='og:description' content='Stylish, the world’s largest website theme library, letting you personalize your favorite sites.'>
+  <meta property='og:image' content='https://userstyles.org/meta/og_site.jpg'>
+  <meta property='og:url' name="og:url" content='https://userstyles.org/style_screenshots/temp'>
+  <meta property='fb:app_id' content='1127502430725727'>
+
+  <meta name='twitter:title' content='Personalize any website in the world with Stylish&#39;s themes &amp; Skins'>
+  <meta name='twitter:description' content='Style your favorite websites with themes &amp; skins created by the Stylish community. Hundreds of thousands of backgrounds, color schemes and more at Userstyles.org'>
+  <meta name='twitter:image' content='https://userstyles.org/meta/styles_site.jpg'>
+  <meta name='twitter:site' content='@Stylish_Themes'>
+  <meta name='twitter:card' content='summary_large_image'>
+  <meta name='twitter:url' content='https://userstyles.org/style_screenshots/temp'>
+
+
+  <link rel="search" href="/opensearch.xml" type="application/opensearchdescription+xml" title="userstyles Search">
+  <link rel="icon" href="/ui/images/icons/favicon.png" type="image/png">
+  <link rel="shortcut icon" sizes="196x196" href="/ui/images/icons/app_icon.png">
+  <link rel="apple-touch-icon" href="/ui/images/icons/app_icon.png">
+  <link href=“https://fonts.googleapis.com/css?family=Roboto:300,400,500,700” rel=“stylesheet”>
+
+  <link rel="stylesheet" media="all" href="/assets/application-8b50c68bb91176d226c5fc55e38cd43eca82886d22f2d01547ed743704e38382.css" />
+
+  <script>
+      var eventTypesToRecord = ["styleAlreadyInstalled", "styleCanBeInstalled", "styleCanBeUpdated", "styleLoadCode"];
+      eventTypesToRecord.forEach(function (type) {
+          document.addEventListener(type, recordEvent, false);
+      });
+      var eventsHeard = [];
+      function recordEvent(e) {
+          console.log("Recording " + e.type + " for dispatching later.");
+          eventsHeard.push(e.type);
+      }
+      function stopRecordingEvents() {
+          //console.log("Stopping recording events, " + eventsHeard.length + " events will now be dispatched.");
+          eventTypesToRecord.forEach(function (type) {
+              document.removeEventListener(type, recordEvent, false);
+          });
+          eventsHeard.forEach(function (type) {
+              var stylishEvent = document.createEvent("Events");
+              stylishEvent.initEvent(type, false, false, document.defaultView, null);
+              document.dispatchEvent(stylishEvent);
+          });
+      }
+  </script>
+  <script src="/assets/application-28079b4ab36af86161a629b124ea5c02b0a596434ae8b8ad21765c6c8ecd04b5.js" defer="defer"></script>
+
+  
+  <script>
+      window.updateHost = 'update.userstyles.org';
+      window.topSitesByCountry = JSON.parse('["google", "facebook", "youtube", "yahoo", "amazon", "wikipedia", "twitter", "netflix", "ebay", "reddit"]');
+  </script>
+    <link rel="stylish-id-url" href="http://userstyles.org/styles/1">
+
+
+
+  <!--[if lt IE 9]>
+		<script src="/javascripts/html5.js"></script>
+		<![endif]-->
+
+  <!-- Google Analytics -->
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-8246384-11', 'auto');
+      ga('set', 'forceSSL', true);
+
+
+  </script>
+  <!-- End Google Analytics -->
+
+  <style>
+      .init_loader {
+          position: fixed;
+          left: 0;
+          right: 0;
+          top: 44px;
+          bottom: 0;
+          display: none;
+          justify-content: center;
+          align-items: center;
+      }
+  </style>
+
+  <script>
+      window.onBackClickedSearch = () => {
+          const event = new CustomEvent(appListenersEvents.BACK_BUTTON_CLICKED, {
+              detail: {
+                  feature: 'search'
+              }
+          });
+          document.dispatchEvent(event);
+      }
+  </script>
+
+</head>
+
+<body>
+
+<div class="init_loader">
+  <img src="/ui/images/pieLoader.gif"/>
+</div>
+
+<div class="PageContent">
+    <!--compile index.jsx (should be in react) into index.html.erb in views-->
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script async type="text/javascript" src="/ui/app.js"></script>
+
+<div id="root"></div>
+
+</div>
+<script>
+    window.timingGA('page end', new Date().getTime() - window.pageLoadedAt);
+</script>
+</body>
+</html>
