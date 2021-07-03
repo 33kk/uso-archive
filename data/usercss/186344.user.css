@@ -2,9 +2,9 @@
 @name           Hotmail Retro 2002
 @namespace      USO Archive
 @author         Mike366
-@description    `¿Te gustaría volver a utilizar Hotmail con el diseño del 2002?Esta es tu oportunidad para disfrutar nuevamente este diseño colorido y recordar buenos tiempos.Para usarlo solo tienes que instalar la extensión "Stylish" y luego hacer clic en "Instalar Estilo".Incluye diseño de Login y Bandeja de Entrada.----------------Would you like to use Hotmail again with the 2002 design?This is your chance to enjoy this colorful design again and remember good times.To use it you just have to install the "Stylish" extension and then click "Install Style".Includes Login and Inbox design.`
-@version        20210220.22.52
-@license        NO-REDISTRIBUTION
+@description    `Would you like to use Hotmail again with the 2002 design?This is your chance to enjoy this colorful design again and remember good times.To use it you just have to install the "Stylish" extension and then click "Install Style".Includes Login and Inbox design.----------------¿Te gustaría volver a utilizar Hotmail con el diseño del 2002?Esta es tu oportunidad para disfrutar nuevamente este diseño colorido y recordar buenos tiempos.Para usarlo solo tienes que instalar la extensión "Stylish" y luego hacer clic en "Instalar Estilo".Incluye diseño de Login y Bandeja de Entrada.`
+@version        20210702.23.48
+@license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document url-prefix("https://login.live.com/login.srf"), url-prefix("https://login.live.com/ppsecure/post.srf") {
@@ -79,12 +79,11 @@ input[type="password"]{margin-top: 30px; margin-bottom: 56px; }
     padding: 22px;
     max-width: 332px;
     min-height: 318px;
-    margin-left: 51%;
+    margin-left: 52%;
     margin-bottom: 320px !important;
 }
 
 .promoted-fed-cred-box{ display: none; }
-
 }
 
 @-moz-document url-prefix("https://outlook.live.com/mail") {
@@ -98,6 +97,8 @@ input[type="password"]{margin-top: 30px; margin-bottom: 56px; }
 .o365sx-appName{display: none;}
 
 /* Header */
+#headerButtonsRegionId{display:none;}
+
 #o365header{ height: 96px; background-color: #336799; } 
 .o365sx-navbar, .o365sx-search.o365sx-navbar {
     background: url(https://learngames.com.co/apps/hotmail/2002/inbox-header.jpg);
@@ -117,32 +118,33 @@ input[type="password"]{margin-top: 30px; margin-bottom: 56px; }
 
 /* Search */
 #Region_2{
-	margin-left: 260px;
+	margin-left: 220px;
 }
 .o365sx-search.o365sx-navbar .o365sx-button {
     background-color: transparent !important;
 }
 
-#searchScopeButtonId{ 
+#searchBoxColumnContainerId{ 
     font-family: tahoma,san-serif;
     height: 20px; 
-    margin-top: -43px; 
+    margin-top: -28px; 
 }
 
-._3w0I3IfXZt11NrlI4Rtops{
+._3Ck77YaE0v3RFIDXT_UrjG{
     height: 20px;
     margin-top: -65px;
 }
-._1IASxdr5glbGM5ZXvqT4EN{
+._2jeiDp6MiTTWz1KcFA-gWo{
     align-self: unset;
     background-color: #FFFFFF;
     font: 400 13.3333px Arial;
-    width: 265px;
+    width: 250px;
     border: 1px solid #7A7A7A;
 }
+#searchScopeButtonId-option{display:none;}
 
 /* Menu */
-.qtRcagoPZ5dw3xsr114ze, ._3gdNmT4jTLXmeDgn968BfI{
+._2nxYvsT9VmpG24V7lwcfcu{
 	background: linear-gradient(to bottom, rgba(218,240,253,1) 0%, rgba(127,183,225,1) 100%);
     height: 30px;
 }
@@ -159,37 +161,34 @@ input[type="password"]{margin-top: 30px; margin-bottom: 56px; }
 ._33rLSYbzxvhXjgYTwfjWQI {
     margin: 0px 3px 6px 0 !important;
 }
-.sDjQm2-pu3zdQ7E2MIynW {
+.uHWG8PYRNYDO2895_TmUG{
     font-weight: normal;
 }
-._33rLSYbzxvhXjgYTwfjWQI._1ojerECVeZlAkHtklkKOj5{ background: transparent !important; }
+.GJoz3Svb7GjPbATIMTlpL.lZNvAQjEfdlNWkGGuJb7d{ background: transparent !important; }
 
-._1waWmu4XtQsneHiFwpHx7b{
+._1waWmu4XtQsneHiFwpHx7b, .XayzgKk2Ga7sG02AhkQKJ{
     background: linear-gradient(to bottom, rgba(218,240,253,1) 0%, rgba(127,183,225,1) 100%);
     height: 30px;
 }
-.WbpJjWVi6dufpg4aptZk2 span i{ display: none; }
-.WbpJjWVi6dufpg4aptZk2{
+._1qPqjoFrRhZTOpwH-IJ2UP span i{ display: none; }
+._1qPqjoFrRhZTOpwH-IJ2UP{
  	background: url(https://learngames.com.co/apps/hotmail/2002/inbox-icons.png) !important;
     background-position: 0px 0px !important;
     width: 15px !important;
     height: 15px !important;
-    margin: 9px 0 0 35px !important;
-}
-._1ThK9dT4toWCphxfLMD8kj:not(._29VxQ7VLCQ6dh3W6DiyF5o){ 
-    margin: 0px 2px;
-}
-._1ThK9dT4toWCphxfLMD8kj{
-    margin: 0px 2px !important;
+    margin: 7px 0 0 30px;
 }
 
-._3oKObV8zI7k4ePSXxNGo4I {
-    height: 30px !important;
-}
-html[dir] ._2J0fCPyCNPDcpBOKeAH38A {
+html[dir=ltr] ._2W_XxC_p1PufyiP8wuAvwF {
     margin: 0 0px;
 }
-
+html[dir=ltr] ._3stAr-H41PuAiB34K4q9vt {
+    margin: 0 22px 0 0px;
+}
+html[dir] ._2s0A-A7NEhCVkip2jfI4KG {
+    border-radius: 2px;
+    margin: initial;
+}
 
 /* Lateral Derecho */
 html[dir] ._3_hHr3kfEhbNYRFM5YJxH9 {
@@ -248,25 +247,27 @@ html[dir] ._2qT5ADBP8BLM75uYgKPBGs{display:none;}
 
 
 /* Hide Promo */
-._3_hHr3kfEhbNYRFM5YJxH9{ background-color: #FFFFFF; }
-._23fxOotSm5HPNB1U_ZVw4i{ display: none; }
+._1fti_QgAzqGWPGlqh_FSvI{ background-color: #FFFFFF !important; }
+._3tjF5ZQ8Fk8ph0Daxu_xpZ{ display: none; }
 
 /* Side Menu */
 
+._1CeAIHzID37KPlA8YSGw_o{display:none;} /*Ocultar barra nueva*/
+
 ._2AZjn9RFetXcCNSCt0BqEI{ padding-left: 10px !important; }
 ._1XmKWz3L5NcheRkx38wxTL{ padding-left: 10px !important; }
-._21GIf9eXgdq_YZiQrKnLYC{ padding-left: 10px !important; }
+._2f5JzhIau1fYVnCdnF6jed{ padding-left: 10px !important; }
 
-._2uIW6I_1SKuzoss6jjAHdO{
+._1pt2s8kmwigdIS44ocdqXr{
     background-color: #DBEAF5 !important;
     font-family: tahoma,san-serif;
     font-size: 12px;
 }
 
-.yM6ioiXgtQ4G9DIFvnHHU{ 
+._1PkXPyxM3Hhk5H6YNvwMa1{ 
     display: none;
 }
-._1ci7WbFYZSInPwqVpr89mC:nth-child(2){
+._24FpkalvW30l66zFUdkI8G:nth-child(2){
     content: url(https://learngames.com.co/apps/hotmail/2002/inbox-folders.png);
     width: 180px;
     height: 100px;
@@ -301,9 +302,9 @@ html[dir] ._2qT5ADBP8BLM75uYgKPBGs{display:none;}
     display: none; 
 }
 
-.qDw7SZ9r6S7r0_qZS1aIG{ height: 22px !important; }
-._16aPYHYIOVxzNYTA4BGnwS{ color: #000099; }
-html[dir] .qDw7SZ9r6S7r0_qZS1aIG.NJVykX0WljoRws2qTYI5G {
+._2f5JzhIau1fYVnCdnF6jed{ height: 22px !important; }
+._3fLh9Wjn6GR68OwcUckdM0{ color: #000099 !important; }
+html[dir] ._2f5JzhIau1fYVnCdnF6jed._2e45YSYkafAibqL8u3c2wj {
     background-color: transparent !important;
 }
 
@@ -311,9 +312,19 @@ html[dir] .qDw7SZ9r6S7r0_qZS1aIG.NJVykX0WljoRws2qTYI5G {
     color: #000 !important;
 }
 
-/* Inbox */
+._28ithXDZzMqSN0YAG2rCVn{display: none;}
 
-html[dir=ltr] ._1E-ojjaYGhOxCgHp9Pe315.WHHpfJX04sHbd6jCFcPxS{
+/* Inbox */
+.w4T91TVJrRh9QNUdePUM0._12MmCBq8eIVBvUvCbNcVOu {
+    height: initial;
+}
+
+html[dir=ltr] ._1n2-cmjz7wai2ImcUAHRgH._1yeTnoNkSL8TQYVNlv8s43{
+	border-left-color: transparent;
+    background-color: #FFF7E5 !important;
+}
+
+html[dir] .XirTdELItKhIpkqfelgS0{
 	border-left-color: transparent;
     background-color: #FFF7E5 !important;
 }
@@ -332,10 +343,7 @@ html[dir=ltr] ._1E-ojjaYGhOxCgHp9Pe315.WHHpfJX04sHbd6jCFcPxS{
 }
 
 /* New Mail */
-html[dir] ._3CHzUb8E75dSDcMFHT_8Qx { background: #FFFFFF !important; }
-html[dir] .q_R7UyE8aDZSCU46ZZv05 .ms-BasePicker-text{ background-color: #FFFFFF !important; }
-html[dir=ltr] .fKHXfPIA2N0xN7UgaBvdE{ background-color: #FFFFFF !important; }
-._10KzFa-CjebpboLpMelGxn div{ background-color: #FFFFFF !important; }
+._2BtCA-8tMrrZE3xbgR50S_ div{ background-color: #FFFFFF !important; }
 .y8XIN4EAeheOqsn4BJB7R span{ color: #FFF !important;}
 .wide-content-host .ms-Persona-initials{
 	content: url(https://learngames.com.co/apps/hotmail/2002/inbox-user.jpg);

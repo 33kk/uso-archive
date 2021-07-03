@@ -1,14 +1,14 @@
 /* ==UserStyle==
-@name           CompactTube (White) v1.5.8+(17b)EVO
+@name           CompactTube (White) v1.5.8+(17с)EVO
 @namespace      USO Archive
 @author         jakill02
 @description    `<b>ENG)</b>  temporary Evolutionary version of the CompactTube (White) style numbered v1.5.8+(17<b>a</b>) (further update if required will be marked with letters <b>a-z</b>)<b>created for those users whose YouTube has not been updated yet.</b><b>the main updatable style branch is here:</b> https://userstyles.org/styles/186936____________________________<b>RU)</b>  временная Эволюционная версия стиля CompactTube (White) за номером v1.5.8+(17<b>a</b>) (дальнейшее обновление если оно потребуется будет отмечаться буквами <b>a-z</b>)<b>создано для тех пользователей чей Ютуб ещё не обновился.</b><b>основная обновляемая ветка стиля находится тут:</b> https://userstyles.org/styles/186936`
-@version        20210625.22.28
+@version        20210702.23.52
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
-/* CompactTube (White) v1.5.8+(17b)EVO */
+/* CompactTube (White) v1.5.8+(17c)EVO */
 
                 /* Main Style Page: https://userstyles.org/styles/186936/ */
                 /* 1.5.8+(17)EVO Style Page: https://userstyles.org/styles/206496/ */
@@ -1935,7 +1935,7 @@ ytd-multi-page-menu-renderer[menu-style=multi-page-menu-style-type-comments]
     background-color: transparent; border: none; box-shadow: none; color: inherit;
     -o-font-family: 'Roboto','Noto',sans-serif; font-size: 16px; font-weight: 400;
     line-height: 22px; /* 24px */ margin-left: 0px; /* 4px */ max-width: 100%;
-    outline: none; text-align: inherit; width: 100%; flex: 1; flex-basis: .000000001px;}
+    outline: none; text-align: inherit; width: 100%; flex: 1; flex-basis: .000000001px; padding-left: 0px;}
 /* исправление бага с полем Поиска ПОСЛЕ наведения Мыши */
 input#search.gsfi.ytd-searchbox {-o-background-color: #02ff35/*test*/; position: relative; top: 1px; left: 0px;}
 
@@ -4364,7 +4364,7 @@ h3.ytd-grid-video-renderer {margin: 2px 0 1px;}
 
 /* размер шрифта Названия Видео на главной странице Канала и позицианирование */
 ytd-grid-video-renderer #video-title.yt-simple-endpoint.ytd-grid-video-renderer 
-{font-size: 1.3rem; font-weight: 500; margin-top: -4px;/*-2px*/}
+{font-size: 1.3rem; font-weight: 500; margin-top: -5px;/*-2px*/}
 /* размер и параметры шрифта просмотров и времени публикации Видео на главной странице Канала и в меню Видео */
 #metadata-line.ytd-grid-video-renderer {line-height: 1.3em; color: #767676; max-width: 100%; max-height: 2.6rem; font-size: 1.1rem; font-weight: 500;
 -o-display: inline-block; -o-letter-spacing: 0px; margin-top: 0px; }
@@ -4385,6 +4385,7 @@ paper-tab.ytd-c4-tabbed-header-renderer {padding: 0 11px; vertical-align: middle
 tp-yt-paper-tabs.ytd-c4-tabbed-header-renderer {--paper-tabs-selection-bar-color: #f00;
 --paper-tabs-selection-bar_-_border-bottom-width: 3px; box-sizing: border-box;
 color: var(--yt-lightsource-secondary-title-color); height: 48px; padding-bottom: 1px; margin-left: 51px;}
+#tabsContent.tp-yt-paper-tabs > :not(#selectionBar) {height: 48px !important;}
 /*старое*/
 paper-tabs.ytd-c4-tabbed-header-renderer {--paper-tabs-selection-bar-color: #f00; /* Цвет подчёркивания */
 --paper-tabs-selection-bar_-_border-bottom-width: 3px; /* высота подчёркивания пункта меню*/

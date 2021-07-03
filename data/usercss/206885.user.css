@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         boozlepuzzle
 @description    `Modo oscuro para Mercado LibreCréditos a Lord Balliwns, yo tomé su estilo "Mercado Libre Modo Oscuro V7.1", le arreglé errores y cambié los colores, link al original: https://33kk.github.io/uso-archive/?style=195526`
-@version        20210627.2.59
+@version        20210702.23.25
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -23,7 +23,7 @@ img, icon, .nav-logo, svg, .payments-cho_badge, .ui-pdp-payment-sprites__icon-co
     .nav-header, .ui-item__content{
         background-color:#e3e3e3 !important
     }
-    .ui-pdp-container--pdp, .nav-footer, [for=nav-footer-access-switch], .andes-form-control__field, tr, td, .ui-pdp-specs__table tbody tr:nth-child(odd) .andes-table__column:first-child, .ui-pdp-specs__table tbody tr:nth-child(odd) .andes-table__header:first-child, .ui-pdp-specs__table tbody tr:nth-child(2n) .andes-table__column:first-child, .ui-pdp-specs__table tbody tr:nth-child(2n) .andes-table__header:first-child, .ui-pdp-specs__table tbody tr:nth-child(odd), .ui-pdp-specs__table tbody tr:nth-child(odd):hover, .nav-footer, .site-shopping-info, .nav-footer-access-content, .categories .category, .collection .main-item .ui-card, .discovery .advertising, .ui-card, .payment-data .payment-data-container, .carousel-container .next-button, .carousel-container .prev-button, .andes-card, .item__banner.banner__label .label, .filters_header_container.full-carousel, .promotion-item, .ui-navigation-header__lgpd__content, .hub__grid-item.item__card.card__secondary-discovery .item-description, .hub__grid-item.item__card.card__primary-discovery .item-description, input[type=text].nav-search-input, input[type=search].nav-search-input, button.nav-search-btn, button.nav-search-btn:focus, #nav-header-menu .user-menu, .modeless-box, .modeless-box-list, .modeless-box .modeless-box-scroll-bar, .ui-badge, #nav-header-menu .nav-icon-user:before, #root-app{
+    .ui-pdp-container--pdp, .nav-footer, [for=nav-footer-access-switch], .andes-form-control__field, tr, td, .ui-pdp-specs__table tbody tr:nth-child(odd) .andes-table__column:first-child, .ui-pdp-specs__table tbody tr:nth-child(odd) .andes-table__header:first-child, .ui-pdp-specs__table tbody tr:nth-child(2n) .andes-table__column:first-child, .ui-pdp-specs__table tbody tr:nth-child(2n) .andes-table__header:first-child, .ui-pdp-specs__table tbody tr:nth-child(odd), .ui-pdp-specs__table tbody tr:nth-child(odd):hover, .nav-footer, .site-shopping-info, .nav-footer-access-content, .categories .category, .collection .main-item .ui-card, .discovery .advertising, .ui-card, .payment-data .payment-data-container, .carousel-container .next-button, .carousel-container .prev-button, .andes-card, .item__banner.banner__label .label, .filters_header_container.full-carousel, .promotion-item, .ui-navigation-header__lgpd__content, .hub__grid-item.item__card.card__secondary-discovery .item-description, .hub__grid-item.item__card.card__primary-discovery .item-description, input[type=text].nav-search-input, input[type=search].nav-search-input, button.nav-search-btn, button.nav-search-btn:focus, #nav-header-menu .user-menu, .modeless-box, .modeless-box-list, .modeless-box .modeless-box-scroll-bar, .ui-badge, #nav-header-menu .nav-icon-user:before, #root-app, .nav-categs-overlay{
         background-color:#ededed !important
     }
 .ui-pdp-component-list{
@@ -40,8 +40,8 @@ img, icon, .nav-logo, svg, .payments-cho_badge, .ui-pdp-payment-sprites__icon-co
   }
 
 /*----*/
-.ui-pdp-color--GREEN, .ui-pdp-seller__status-title, .advertising-vip-right .advertising-vip-right__items .item-list .item-description .item__benefits .ui-item__installments--free, .ui-recommendations .ui-item__installments--free,.ui-recommendations .ui-item__discount-text, .ui-recommendations .ui-item__shipping-free, .ui-search-color--LIGHT_GREEN, .ui-search-layout--gallery .ui-search-result .ui-search-item__promise--next_day .ui-search-item__promise__text, .ui-search-layout--grid .ui-search-result .ui-search-item__promise--next_day .ui-search-item__promise__text, .ui-search-layout--gallery .ui-search-result .ui-search-price__discount, .ui-search-layout--grid .ui-search-result .ui-search-price__discount, .ui-search-layout--stack .ui-search-result .ui-search-item__promise--next_day .ui-search-item__promise__text, .ui-search-item__shipping--free, .ui-recommendations .ui-item__installments--free, .ui-recommendations .ui-item__installments--free .ui-item__installments-price-installment-price, .ui-item .ui-item__shipping-free, .ui-item__discount-text, .dynamic-carousel__item-container .dynamic-carousel__discount, .dynamic-carousel__item-container .dynamic-carousel__shipping-container, .promotion-item__container .promotion-item__installments, .promotion-item__container .promotion-item__discount, .promotion-item .promotion-item__container .promotion-item__shipping, .advertising-vip-right .advertising-vip-right__items .item-list .item-description .item__benefits {
-    
+.ui-pdp-color--GREEN, .ui-pdp-seller__status-title, .advertising-vip-right .advertising-vip-right__items .item-list .item-description .item__benefits .ui-item__installments--free, .ui-recommendations .ui-item__installments--free,.ui-recommendations .ui-item__discount-text, .ui-recommendations .ui-item__shipping-free, .ui-search-color--LIGHT_GREEN, .ui-search-layout--gallery .ui-search-result .ui-search-item__promise--next_day .ui-search-item__promise__text, .ui-search-layout--grid .ui-search-result .ui-search-item__promise--next_day .ui-search-item__promise__text, .ui-search-layout--gallery .ui-search-result .ui-search-price__discount, .ui-search-layout--grid .ui-search-result .ui-search-price__discount, .ui-search-layout--stack .ui-search-result .ui-search-item__promise--next_day .ui-search-item__promise__text, .ui-search-item__shipping--free, .ui-recommendations .ui-item__installments--free, .ui-recommendations .ui-item__installments--free .ui-item__installments-price-installment-price, .ui-item .ui-item__shipping-free, .ui-item__discount-text, .dynamic-carousel__item-container .dynamic-carousel__discount, .dynamic-carousel__item-container .dynamic-carousel__shipping-container, .promotion-item__container .promotion-item__installments, .promotion-item__container .promotion-item__discount, .promotion-item .promotion-item__container .promotion-item__shipping, .advertising-vip-right .advertising-vip-right__items .item-list .item-description .item__benefits, .ui-search-layout--stack .ui-search-result .ui-search-price__discount, .single-shipping-selection .price-free, .u-text--green
+{    
     color: #ff59af!important;
     }
     
@@ -52,8 +52,8 @@ img, icon, .nav-logo, svg, .payments-cho_badge, .ui-pdp-payment-sprites__icon-co
     *, .ui-item:after{
         box-shadow:none !important
     }
-.ui-pdp-background-color--ORANGE{
-    background-color:#0065FB
+.ui-pdp-background-color--ORANGE, .ui-search-item__highlight-label.ui-search-item__highlight-label--best_seller{
+    background:#0065FB !important
 }
 .sales-list__message-label, #root-app > div.app-wrapper.app-wrapper--menu-expanded.app-wrapper--menu-expanded-static > div.page-wrapper > div > div.purchases-list-container > div > div.purchases-container > div:nth-child(4) > div > div.myml-ui-item-row.u-myml-clearfix > span > a{
     color:#3483FA
@@ -66,7 +66,7 @@ img, icon, .nav-logo, svg, .payments-cho_badge, .ui-pdp-payment-sprites__icon-co
 .banner--success, .installments-list .status-tag--success, .andes-message--neutral {background-color: #ff59af;}
 .tracking-timeline__dot--green, .ui-thermometer[value="5"] .ui-thermometer__level--5, .dynamic-carousel__item-container .dynamic-carousel__pill-container--text-best-seller {background-color: #c64ab5;}
 .ui-thermometer[value="3"] .ui-thermometer__level--3 {background: #000fbb;}
-.advertising-vip-right .advertising-vip-right__title a, .ui-pdp-collapsable__action, .andes-tab--selected, .andes-tab--selected:hover, .ui-pdp-reviews__comments__button{
+.advertising-vip-right .advertising-vip-right__title a, .ui-pdp-collapsable__action, .andes-tab--selected, .andes-tab--selected:hover, .ui-pdp-reviews__comments__button, .section-header .ui-link, .section-header a, .payment-data .payment-data-subtitle .ui-link, .payment-data .payment-data-subtitle a, .site-shopping-info .info-slide a {
     color:#cb7c05 !important
 }
 .ui-search-animated-switch__switch-bar--on, .payment-data-section-leading:before, .carousel-container .next-button:after, .carousel-container .next-button:before, .carousel-container .prev-button:after, .carousel-container .prev-button:before {background: #cb7c05;}
