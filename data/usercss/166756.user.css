@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         AlexPS
 @description    `Ночная тема для Яндекс.Поиска, Картинок, Видео и Коллекций———————————————————————————————20.05.21 — Различные исправления———————————————————————————————10.12.20 — Исправлены некоторые баги———————————————————————————————26.08.19 — Тема была полностью переработана• Переработан дизайн• Добавлена поддержка Яндекс.Коллекции`
-@version        20210617.16.57
+@version        20210704.8.0
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -1596,6 +1596,7 @@ body, .b-page__body {background: #222; color: #eee; font-family: 'YS Text', Aria
 
 .serp-header {font-family: 'YS Text', Arial, Helvetica, sans-serif;}
 .serp-header__wrapper {background: #222;}
+.serp-header__wrapper, .serp-header .tabs-navigation {background: #222;}
 
 .serp-header .logo.logo_name_ys-ru-86x35, .logo_name_yslogo-ru-86x35 {background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="86" height="35" fill="none"><path fill="white" fill-rule="evenodd" d="M58.87 17.83v1.89h-8.54c.13 2.41 1.13 3.6 3.7 3.6 1.74 0 3.61-.56 4.69-1.28v2.89c-1 .68-2.7 1.18-4.97 1.18-4.53 0-7.1-2.5-7.1-7.63 0-4.5 2.07-7.78 6.39-7.78 3.54 0 5.83 1.95 5.83 7.13zm-5.91-4.32c-1.7 0-2.56 1.24-2.64 3.59h4.93v-.3c0-1.86-.53-3.29-2.3-3.29zM26.24 16.9v-5.93h3.57v14.99h-3.57v-6.27h-4.75v6.27h-3.54v-15h3.54v5.94h4.75zm47.83 9.06h-4.02l-5.25-7.36v7.36h-3.54v-15h3.54v6.93l5-6.92h3.59l-5 6.92 5.68 8.07zm10.48-.75c-.87.63-2.02.93-3.67.93-4.72 0-7.02-2.74-7.03-7.65 0-4.53 2.35-7.75 6.88-7.75 1.76 0 3.07.3 3.82.72v3a6.89 6.89 0 00-3.42-.92c-2.33 0-3.6 1.64-3.6 4.86 0 3.04 1.03 4.94 3.57 4.94 1.49 0 2.55-.4 3.45-1.02v2.9zM44.2 23.15h1.58v6.1H42.5v-3.32h-7.95v3.32h-3.28v-6.11h1.1c1.25-2.5 1.5-7.24 1.5-10.9v-1.28H44.2v12.19zm-8.54 0h5v-9.38h-3.75v.44c0 2.59-.26 6.68-1.25 8.94z" clip-rule="evenodd"/><path fill="white" d="M14.97 25.95V5.25H9.73c-5.28 0-8.04 2.7-8.04 6.7 0 3.17 1.51 5.07 4.22 7l-4.71 7h3.9l5.25-7.85-1.82-1.21c-2.2-1.5-3.29-2.65-3.29-5.16 0-2.2 1.55-3.69 4.5-3.69h1.61v17.9h3.62z"/></svg>');}
 .logo_name_ys-en-87x35, .logo_name_yslogo-en-87x35 {background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="87" height="35" fill="white"><path d="M23.87 27.005c-.558.868-1.636 1.578-2.714 1.578-1.596 0-2.355-1.5-2.355-3.788 0-2.564.838-4.26 4.7-4.26h.36v6.47zm3.074-.592v-9.35c0-4.814-1.956-6.313-5.508-6.313-2.036 0-3.872.828-4.8 1.578l.598 2.722c1.038-.907 2.395-1.736 3.992-1.736 1.757 0 2.635 1.105 2.635 3.7v1.183h-.44c-5.628 0-7.823 2.683-7.823 6.944 0 3.906 1.956 6.037 4.83 6.037 1.756 0 2.874-.75 3.752-1.855h.2a9.26 9.26 0 0 0 .28 1.578h2.634c-.16-.946-.36-2.603-.36-4.497zm6.986-10.93c.72-.986 1.836-1.973 3.153-1.973 1.198 0 1.877.513 1.877 2.013V30.9h3.153V15.247c0-3.037-1.397-4.497-4.032-4.497-1.876 0-3.393 1.223-3.95 1.972h-.2v-1.736h-3.114V30.9h3.114V15.484zM54.927 29.33h.2l.24 1.578h2.315V3.017h-3.114V11.5c-.598-.434-1.596-.75-2.554-.75-4.032 0-6.826 3.6-6.826 10.97 0 6.155 2.155 9.47 6.107 9.47 1.637 0 2.754-.75 3.633-1.855zm-.36-2.288c-.52.8-1.357 1.54-2.914 1.54-2.275 0-3.153-2.84-3.153-7.496 0-4.064 1.197-7.812 3.712-7.812 1.038 0 1.717.315 2.355.947v12.822zM72.33 29.57l-.72-2.367c-.798.552-2.075 1.34-3.832 1.34-2.475 0-3.752-2.367-3.752-6.865h8.383v-1.696c0-6.747-2.196-9.232-5.55-9.232-4.27 0-6.067 4.655-6.067 11.047 0 6.115 2.554 9.4 6.706 9.4 1.996 0 3.552-.632 4.83-1.618zm-5.47-16.294c1.796 0 2.355 2.485 2.355 5.878h-5.15c.2-3.55.88-5.878 2.795-5.878zm16.047-2.25l-2.754 7.22-2.595-7.22h-3.233l3.792 9.588-4.2 10.286H77l3.034-8.206 3.113 8.206h3.234L82.2 20.337l3.753-9.3H82.9zM10.22 30.9v-9.98L17.7-.01h-3.296l-5.7 16.68-4.9-13.663H.2L7.065 20.8v10.1z"/></svg>');}
@@ -1836,6 +1837,8 @@ a.user-account_hovered_yes {color: #e85253;}
 .Theme_color_yandex-default .Button2.Button2_view_raised[aria-disabled=true]:before {background-color: #383838; color: #666;}
 .FilterCustomSize-Button.Button2_view_raised:before {background-color: #444;}
 
+.Theme_color_yandex-default .Popup2_view_default .Popup2-Tail:after {background-image: linear-gradient(to top right,#333 50%,transparent 0);}
+
 /* ===== Search Page ===== */
 .notice {background: #383f48;}
 
@@ -1903,6 +1906,22 @@ a.user-account_hovered_yes {color: #e85253;}
 .Button2_theme_normal {color: #eee;}
 
 /* ===== Other Side ===== */
+.CbirPanel-FileControlsBackground {border-color: #555;}
+.CbirPanel-FileControlsTitle {color: #eee;}
+.CbirPanel-FileControlsSubtitle {color: #999;}
+.CbirPanel-UrlForm .CbirPanel-UrlFormInput.Textinput.Textinput_view_default .Textinput-Control {color: #eee;}
+.CbirPanel-UrlForm .CbirPanel-UrlFormInput.Textinput.Textinput_view_default .Textinput-Control::placeholder{color: #999;}
+.CbirPanel-UrlForm .CbirPanel-UrlFormInput.Textinput.Textinput_view_default .Textinput-Box {background: #333; border-color: #444;}
+.CbirPanel-UrlForm .CbirPanel-UrlFormInput.Textinput.Textinput_view_default.Textinput_hovered .Textinput-Box[class] {border-color: #555;}
+.CbirPanel-UrlForm .CbirPanel-UrlFormInput.Textinput.Textinput_view_default.Textinput_focused .Textinput-Box[class] {border-color: #666;}
+.CbirPanel-UrlForm .CbirPanel-UrlFormButton.Button2.Button2_view_default[aria-busy=true]:before, .CbirPanel-UrlForm .CbirPanel-UrlFormButton.Button2.Button2_view_default[aria-disabled=true]:before {background: #383838;}
+.CbirPanel-UrlForm .CbirPanel-UrlFormButton.Button2.Button2_view_default:before {background: #444;}
+.CbirPanel-UrlForm .CbirPanel-UrlFormButton.Button2.Button2_view_default .Button2-Text {color: #eee;}
+
+.CbirUploadErrorNotify {background: #333;}
+.Icon_type_error-filled.Icon_size_l.Icon_tone_red {background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zm-1.5-5.009c0-.867.659-1.491 1.491-1.491.85 0 1.509.624 1.509 1.491 0 .867-.659 1.509-1.509 1.509-.832 0-1.491-.642-1.491-1.509zM11.172 6a.5.5 0 00-.499.522l.306 7a.5.5 0 00.5.478h1.043a.5.5 0 00.5-.478l.305-7a.5.5 0 00-.5-.522h-1.655z" fill="%23ff4545"/></svg>');;}
+.CbirUploadErrorNotify-Message {color: #eee;}
+
 .cbir-intent {background: #222; border-right-color: rgba(255,255,255,.1);}
 .cbir-intent__close {filter: invert(1);}
 

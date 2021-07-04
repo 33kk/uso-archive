@@ -3,13 +3,13 @@
 @namespace      USO Archive
 @author         aqmx
 @description    `Dark theme for the V LIVE website.I've also made a script that <a href="https://greasyfork.org/en/scripts/379342-v-live-video-rotation">lets you rotate the video</a>.`
-@version        20210609.8.7
+@version        20210704.3.37
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("www.vlive.tv") {
 /*** General ***/
-
+ 
 :root {
 	--dark-theme-header-background: #232223;
 	--dark-theme-header-border-color: #1a1a1a;
@@ -88,7 +88,6 @@ body:not(.store_ticket) #wrap #header,
 /* Navigation */
 .gnb_top .navigation a span, .login_area .btn_login, .login_area .nick .name, .gnb_info .lang_area .btn_lang,
 #wrap .gnb .navigation a span, #wrap .gnb .gnbInfo .loginArea .btnLogin, #wrap .gnb .gnbInfo .loginArea .nickArea .nick .name, #wrap .gnb .gnbInfo .langArea .btnLang,
-[class*="notification_menu_wrap--"] [class^="title--"], /* Notifications */
 .layout_top [class^="button_wrap--"] [class*="text_button--"]:not([class*="is_active"]) /* Channel */ {
 	color: #fff;
 }
@@ -97,14 +96,10 @@ body:not(.store_ticket) #wrap #header,
 	border-bottom-color: #fff;
 }
 .gnb_top .navigation .beyond_v,
-.gnb_info .btn_search, .gnb_info .btn_notification:not(.is_active), .login_area .btn_more:not(.is_active), .gnb_info .icon_arr,
+.gnb_info .btn_search, .login_area .btn_more:not(.is_active), .gnb_info .icon_arr,
 #wrap .gnb .gnbInfo .searchArea .btnSearch, #wrap .gnb .gnbInfo .icon_arr,
-.layout_top [class*="notification_button--"], /* Notifications */
 .layout_top [class*="gnb_button--"]:not([class*="is_active"]), .layout_top [class*="text_button--"]:not([class*="is_active"]) [class^="selector_arrow--"] /* Channel */ {
 	filter: brightness(800%);
-}
-.layout_top [class*="notification_button--"] [class*="badge_alarm--"] { /* Notification badge */
-	filter: brightness(12.5%);
 }
 .gnb_info .search_area .search_txt,
 #wrap .gnb .gnbInfo .searchArea .searchBox .box .searchTxt {
@@ -238,7 +233,6 @@ body:not(.store_ticket) #wrap #header,
 #wrap .gnb .gnbInfo .loginArea .nickArea .lyr,
 .tag_select .select_layer, .tag_select .select_layer ul,
 .tag_select .select_list li,
-.notification_lyr, [class*="notification_menu_layer--"], [class*="notification_menu_wrap--"][class*="is_pc--"], [class*="empty_page--"], /* Notifications */
 [class^="option_list_inner"] /* Channel */ {
 	border-color: var(--dark-theme-box-border-color);
 	background-color: var(--dark-theme-background);
@@ -247,23 +241,20 @@ body:not(.store_ticket) #wrap #header,
 #wrap .gnb .gnbInfo .searchArea .searchWord li .innerLink,
 #wrap .gnb .gnbInfo .loginArea .nickArea .lyr .txt,
 .tag_select .select_list a,
-[class*="notification_menu_wrap--"] [class^="text--"], /* Notifications */
-[class^="option_list_inner"] button[class*="option_content--"], /* Channel */
-[class^="more_button--"] {
+[class^="option_list_inner"] button[class*="option_content--"] /* Channel */
+/*[class^="more_button--"]*/ {
 	color: var(--dark-theme-title-color);
 }
 .gnb_info .lyr a:hover,
 .gnb_info .btn_search:hover,
-.gnb_info .btn_notification:hover,
 .login_area .btn_login:hover, .login_area .btn_more:hover,
 .gnb_info .lang_area .btn_lang:hover,
-[class*="notification_button--"]:hover, /* Notifications */
 /* Channel */
 [class*="gnb_button--"]:hover, [class*="text_button--"]:hover,
 [class^="option_list_inner"] li button[class*="option_content--"]:hover,
 /* Post notice */
-[class^="notice_toggle_button--"]:hover,
-[class^="more_button--"]:hover {
+[class^="notice_toggle_button--"]:hover
+/*[class^="more_button--"]:hover*/ {
 	background-color: var(--dark-theme-button-background-hover);
 }
 
@@ -280,8 +271,8 @@ body:not(.store_ticket) #wrap #header,
 .login_area .lyr .txt::before, .login_area .lyr .btn_logout .inner::before,
 [class^="option_list_inner"] li button [class^="option_icon--"], /* Channel */
 /* Post notice */
-[class^="notice_toggle_button--"]::before,
-[class^="more_button--"]:before {
+[class^="notice_toggle_button--"]::before
+/*[class^="more_button--"]:before*/ {
 	filter: invert(87%);
 }
 .spot_main .btn_arr {
@@ -494,10 +485,11 @@ ul[class^="board_group_list--"] [class^="board_link--"]:hover,
 [class^="layout_content--"] [class*="message_wrap--"],
 [class^="layout_content--"] > [class^="component--"], /* Calendar */
 [class^="layout_content--"] [class*="component_inner--"],
-[class^="layout_content--"] [class*="post_wrap--"],
+[class^="layout_content--"] [class^="post_wrap--"],
 [class^="layout_content--"] [class*="new_post_wrap--"],
 [class^="layout_content--"] .swiper-container [class*="post_item--"],
-[class^="layout_content--"] [class*="post_list--"]:not(.swiper-container),
+[class^="layout_content--"] [class^="post_list_area--"],
+[class^="layout_content--"] [class*="post_list--"] [class*="post_inner--"],
 [class^="layout_content--"] [class^="lnb--"], /* Notice */
 [class^="layout_content--"] [class*="empty_page--"] /* Empty */ {
 	background-color: var(--dark-theme-background-card);
@@ -512,9 +504,15 @@ ul[class^="board_group_list--"] [class^="board_link--"]:hover,
 	background-color: var(--dark-theme-button-background-hover);
 }
 
+/* Remove title underline */
+[class^="layout_content--"] [class*="post_list--"] [class^="board--"]::before {
+	background: none;
+}
+
 [class^="layout_content--"] [class^="title_text--"],
 [class^="layout_content--"] [class^="notice_text--"],
 [class^="layout_content--"] [class^="post_title--"],
+[class^="layout_content--"] [class*="post_list--"] [class^="board--"] [class^="text--"],
 [class^="layout_content--"] [class^="writer--"],
 [class^="layout_content--"] [class^="write_name--"],
 [class^="layout_content--"] [class^="lnb--"],
@@ -557,18 +555,27 @@ ul[class^="board_group_list--"] [class^="board_link--"]:hover,
 	filter: brightness(240%);
 }
 
-[class^="layout_content--"] [class*="button_more_option--"]:hover {
+[class^="layout_content--"] [class^="post_more_button_area--"] [class^="more_button--"]::before {
+	background-color: var(--dark-theme-background-card);
+}
+[class^="layout_content--"] [class*="button_more_option--"]:hover,
+[class^="layout_content--"] [class^="post_more_button_area--"] [class^="more_button--"]:hover::before {
 	background-color: var(--dark-theme-button-background-hover);
 }
 [class^="layout_content--"] [class*="button_more_option--"] g {
 	fill: var(--dark-theme-text-color-dimmed);
 }
+[class^="layout_content--"] [class^="post_more_button_area--"] [class^="more_button--"]::after {
+	filter: invert(87%);
+}
+
 [class*="post_wrap--"] [class*="comment--"],
 [class*="post_ad_item--"]:empty + [class*="post_item--"],
 [class*="post_ad_item--"]:empty + [class*="post_item--"]::before,
 [class*="post_item--"] + [class*="post_item--"],
 [class*="post_item--"] + [class*="post_item--"]::before,
 [class*="post_item--"]::before,
+[class*="post_more_button_area--"]::before,
 [class*="notice_wrap--"],
 [class*="ad_area--"],
 [class*="ad_wrap--"] {
@@ -597,7 +604,8 @@ ul[class^="board_group_list--"] [class^="board_link--"]:hover,
 }
 
 /* Skeleton */
-[class*="skeleton_wrap--"] {
+[class*="skeleton_wrap--"],
+[class*="skeleton_item_wrap--"] [class*="inner--"] {
 	background-color: var(--dark-theme-background-card);
 }
 [class*="skeleton_item--"] {

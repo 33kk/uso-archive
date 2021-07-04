@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         FireFern
 @description    `A style for Discord. A bunch of stuff is customizable. If you want to go in the CSS itself and change it, the code has lots of comments that should make navigation incredibly easy. I would also recommend you download the style here if you aren't there already. https://33kk.github.io/uso-archive/?style=201433Installing the style there lets you customize the stuff by clicking on the extension while downloading it on the userstyles website will just link you to the download page on the userstyles website (at least in my experience). It also loads way faster than the userstyles website.Another thing is that light mode actually looks really good with this style! It always did but I just forgot to mention it.`
-@version        20210701.23.6
+@version        20210704.1.35
 @license        CC-BY-4.0
 @preprocessor   uso
 @advanced color mainkey "Main Color" #FF0000
@@ -763,26 +763,15 @@ div[style="color: hsl(139, calc(var(--saturation-factor, 1) * 47.3%), 43.9%);"] 
 /*bar on the left*/
 
 .replying-1x3H0T:before {
-    background: #7289da;
     width: 6px;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px
 }
 
-/*background*/
-
-.replying-1x3H0T {
-    background: #7289da0a
-}
-
-.replying-1x3H0T:hover {
-    background: #7289da21 !important
-}
-
 /*thing above the main textbox*/
 
-.container-2fRDfG {
-    background: #000000c9
+.replyBar-1YLQ2F, .threadSuggestionBar-2ufK2Z {
+    background: #2f3136d9
 }
 
 /*The Thing That Appears When You Type / Into The Textbox To Do Stuff With Bots*/
