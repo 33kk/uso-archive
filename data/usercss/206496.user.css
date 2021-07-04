@@ -1,14 +1,14 @@
 /* ==UserStyle==
-@name           CompactTube (White) v1.5.8+(17с)EVO
+@name           CompactTube (White) v1.5.8+(17d)EVO
 @namespace      USO Archive
 @author         jakill02
 @description    `<b>ENG)</b>  temporary Evolutionary version of the CompactTube (White) style numbered v1.5.8+(17<b>a</b>) (further update if required will be marked with letters <b>a-z</b>)<b>created for those users whose YouTube has not been updated yet.</b><b>the main updatable style branch is here:</b> https://userstyles.org/styles/186936____________________________<b>RU)</b>  временная Эволюционная версия стиля CompactTube (White) за номером v1.5.8+(17<b>a</b>) (дальнейшее обновление если оно потребуется будет отмечаться буквами <b>a-z</b>)<b>создано для тех пользователей чей Ютуб ещё не обновился.</b><b>основная обновляемая ветка стиля находится тут:</b> https://userstyles.org/styles/186936`
-@version        20210702.23.52
+@version        20210703.21.41
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
-/* CompactTube (White) v1.5.8+(17c)EVO */
+/* CompactTube (White) v1.5.8+(17d)EVO */
 
                 /* Main Style Page: https://userstyles.org/styles/186936/ */
                 /* 1.5.8+(17)EVO Style Page: https://userstyles.org/styles/206496/ */
@@ -439,7 +439,12 @@ display: flex; flex-direction: row; align-items: center; -o-margin-top: -3px;}
     margin-bottom: 4px;
     max-width: 120px;}
 /*центровка элементов внутри блока*/
-#root.ytd-destination-shelf-renderer {margin: 0 auto !important; position: relative;}
+#destination-buttons {padding: 3px 0 0 3px;}
+.grid-2-columns #destination-buttons {margin: 4px auto !important;}
+.grid-3-columns #destination-buttons {margin: 4px auto !important;}
+.grid-4-columns #destination-buttons {justify-content: center !important; margin: 4px auto !important;}
+.grid-5-columns #destination-buttons {justify-content: center !important; margin: 4px auto !important;}
+.grid-6-columns #destination-buttons {justify-content: center !important; margin: 4px auto !important;}
 /*размер шрифта элементов*/
 #destination-label.ytd-destination-button-renderer {font-size: 1.4rem;}
 
@@ -1722,10 +1727,6 @@ flex: var(--layout-flex-none_-_flex); width: 40px; height: 40px;}
 /* информация */
 #copyright:before {background-color: var(--yt-spec-brand-background-primary); display: block; position: 
 relative; top: 19px; font-size: 1.2rem; content: "Compact Tube (White) by Jakill02 based on style by Funny.";}
-
-/* БОРДЮР между блоками: - убрать все Нижние Бордюры */
-/*  -o-ytd-section-list-renderer:not([hide-bottom-separator]):not([page-subtype=history]):not([page-subtype=memberships-and-purchases]):not([page-subtype=ypc-offers]) #contents.ytd-section-list-renderer > *.ytd-section-list-renderer:not(:last-child):not(ytd-page-introduction-renderer):not([item-dismissed]).ytd-section-list-renderer {border-bottom:0px solid var(--yt-spec-10-percent-layer);} */
-
 
 /*раскрывающий элемент "Ещё" - на Каналах*/
 yt-formatted-string.ytd-expanded-shelf-contents-renderer 

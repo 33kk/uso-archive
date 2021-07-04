@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Rob 'n Roll
 @description    `Dark theme for the Dutch NOS website. Makes it easier to read at night.Donker thema voor de NOS website. Maakt het makkelijker om 's avonds te lezen.`
-@version        20210623.19.48
+@version        20210703.22.31
 @license        CC-BY-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -24,6 +24,8 @@
 /* GENERAL */
     --color: #aaa;
     --color-dark: #666;
+    --color-red: #E61E14;
+
     --link-color-hover: #E61E14;
     --background-color: #2a2a2a;
     --devider-line: #333;
@@ -288,7 +290,26 @@ header.nav-wrapper ol.dropDownMenu_u7yFgFKw.dropDownMenuLarge_CTCzib2a a:Hover d
      { background-color: var(--background-color); }
 
     /* Zijbalk / Aside */
+    /*Straks bij de NOS*/
+    div#__next #content aside.kkiBgT time.kjCltP
+    { color: var(--color-dark); }
+    div#__next #content aside.kkiBgT h3.hRFsgx
+     { color: var(--color); }
+    div#__next #content aside.kkiBgT p.iNFbbp
+    { color: var(--color-red); }
     /*Laatste nieuws*/
+    div#__next #content aside.kkiBgT a.QQntR div.jkSQRr time
+,   div#__next #content aside.kkiBgT a.QQntR div.jkSQRr span.kdWbDk
+,   div#__next #content aside.kkiBgT a.QQntR div.jkSQRr span.kdWbDk span.eJaZlX
+     { color: var(--color-dark); }
+    div#__next #content aside.kkiBgT a.QQntR
+     { color: var(--color); }
+    div#__next #content aside.kkiBgT a.QQntR:Hover
+     { color: var(--link-hover) !important; }
+    div#__next #content aside.kkiBgT a.QQntR:Hover div.jkSQRr time
+,   div#__next #content aside.kkiBgT a.QQntR:Hover div.jkSQRr span.kdWbDk
+,   div#__next #content aside.kkiBgT a.QQntR:Hover div.jkSQRr span.kdWbDk span.eJaZlX
+     { color: var(--color-dark); }
     /*shadow*/
     div#__next #content aside.kkiBgT div.gCeCPj
      { box-shadow: 0px 2px 8px 0px var(--box-shadow); }

@@ -1,15 +1,22 @@
 /* ==UserStyle==
-@name           Youtube WideScreen (New Design Polymer) v.15
+@name           Youtube WideScreen (New Design Polymer) v.16
 @namespace      USO Archive
 @author         decembre
 @description    `For a wide Screen and the YouTube new Design:Player stay fixed at the LEFT side.- Videos related and in queue on the RIGHT side- Infos, Comment on the RIGHT side ( visible on hover their tabs)- Progress Bar is always visibleSo, you can watch the video AND read infos / Comments, choose next video without problem.Its Usercript version (GeasyFork):<b><a href="https://greasyfork.org/fr/scripts/409893-youtube-widescreen-new-design-polymer">Youtube WideScreen (New Design Polymer)</a></b>`
-@version        20210417.18.17
+@version        20210703.20.17
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
 
-/* ==== 0- YouTube WideScreen (New Design Polymer) v.15 ==== */
+/* ==== 0- YouTube WideScreen (New Design Polymer) v16  (new16)  -  test  FIX CY Fung FIX  - OK FIX LAZY LOADING ==== */
+
+
+/*(test OK FIX LAZY LOADING for QUEUE) TEST FRESH:
+https://greasyfork.org/fr/scripts/28678-youtube-play-next-queue/discussions/82921
+#secondary #secondary-inner  #related ytd-item-section-renderer.youtube-play-next-queue.ytd-watch-flexy #contents:not(:empty) {
+DEL     position: fixed !important;
+=== */
 
 /* (new4) GM in USE (WORK WITH...):
 == NO DARK :
@@ -22,6 +29,28 @@ NEW (maybe solve related video loading but PB for comments):
 GM "https://greasyfork.org/en/scripts/381674-don-t-with-my-scroll"
 https://greasyfork.org/en/scripts/381674-don-t-with-my-scroll
 
+NEW in TEST:
+GM "Tabview Youtube":
+https://greasyfork.org/fr/scripts/428651-tabview-youtube
+Request about asupport "GM - Youtube Play Next Queue":
+https://greasyfork.org/fr/scripts/428651-tabview-youtube/discussions/91612
+
+
+GM "YouTube Time Remaining":
+https://greasyfork.org/fr/scripts/368389-youtube-time-remaining
+
+GM "Close YT Confirmations":
+Nedd Tweak YT MUSIC + INCLUDE
+https://greasyfork.org/fr/scripts/386987-close-yt-confirmations
+Alternative ,:
+GM "Remove Youtube Activity Check":
+https://greasyfork.org/fr/scripts/35157-remove-youtube-activity-check
+
+GM "Youtube Middle Click Search":
+https://greasyfork.org/fr/scripts/6031-youtube-middle-click-search
+
+
+=================================================
 
 GM "Automatic Material Dark-Mode for YouTube"
 https://greasyfork.org/fr/scripts/32954-automatic-material-dark-mode-for-youtube
@@ -124,6 +153,7 @@ ytd-consent-bump-lightbox#consent-bump ,
     display: none !important;
 }
 
+
 /* (new14) TEST - ADD INDICATOR FO BUTTON ADDED BY GM "Youtube Ad Cleaner*/
 .myButton:before {
     content: "Provided \A by Youtube \A Add Cleaner" !important;
@@ -155,7 +185,7 @@ background-color: red;
 .myButton {
     cursor: pointer !important;
 } 
-/* test QAUTUM VIDEO UNSTARTED */
+/* test QUANTUM VIDEO UNSTARTED */
 .html5-video-player.unstarted-mode {
 }
 .html5-video-player.unstarted-mode .ytp-cued-thumbnail-overlay{
@@ -188,6 +218,11 @@ width: 1142px !important;
 /* border: 1px solid green !important; */
 }
 
+
+
+
+
+
 /* (new13) TEST after update PLAY NEXT QUEUE v.3*/
 #secondary #secondary-inner  #related ytd-item-section-renderer.youtube-play-next-queue.ytd-watch-flexy {
     position: fixed !important;
@@ -209,7 +244,7 @@ background: rgba(17, 17, 17, 0.41) !important;
 }
 
 #secondary #secondary-inner  #related ytd-item-section-renderer.youtube-play-next-queue.ytd-watch-flexy #contents:not(:empty) {
-    position: fixed !important;
+/*     position: fixed !important; */
     display: inline-block !important;
 width: 748px !important;
 height: 115px !important;
@@ -804,7 +839,7 @@ ytd-watch-flexy[flexy][js-panel-height_] #panels.ytd-watch-flexy ytd-engagement-
 }
 
 
-/* (new8) SECONDARY - TEST LIVE CHAT :
+/* (new16) SECONDARY - TEST LIVE CHAT :
 CABVIEW: Live chat and Stream from the Bergen Line in Norway
 https://www.youtube.com/watch?v=ZHgXfhiDIIM
 === */
@@ -813,14 +848,18 @@ ytd-watch-flexy:not([theater]):not([fullscreen]) #secondary.ytd-watch-flexy {
     position: absolute;
     display: inline-block;
     height: 28px;
-    height: 98vh !important;
-    min-width: 67%;
-    right: -68% !important;
+    height: 92.3vh !important;
+    min-width: 40%;
+right: 0% !important;
     padding: 0;
 /* z-index: 500000000; */
-background: red !important;
+/* background: red !important; */
 }
-
+ytd-watch-flexy[flexy_] #secondary.ytd-watch-flexy:not(:hover) ,
+ytd-watch-flexy:not([theater]):not([fullscreen]) #secondary.ytd-watch-flexy:not(:hover) {
+    opacity: 0.1 !important;
+/* background: red !important; */
+}
 ytd-live-chat-frame {
     background: black none repeat scroll 0 0;
     display: inline-block;
@@ -1043,6 +1082,12 @@ ytd-app[scrolling_] {
 .ytp-big-mode .ytp-chrome-controls .ytp-fullerscreen-edu-button.ytp-button {
     width: 40% !important;
 }
+
+/* (new16) FULL SCREEN - NO ACTION - PROGRESS BAR ALWAYS VISIBLE */
+#movie_player.html5-video-player.ytp-fullscreen.ytp-big-mode.ytp-autohide .ytp-chrome-bottom{
+    bottom: -5vh !important;
+}
+
 
 /* (new5) For  GM "Youtube UI Fix (2020)"  + GM "Video Speed Buttons" */
 .vsb-container {
@@ -1292,6 +1337,19 @@ border-right: 5px solid #222;
 border-left: 5px solid #222;
 /* background-color: aqua  !important; */
 }
+
+
+/* (new16a) LEFT COLUMN - RELATED - RESULTS ITEMS - GENERAL */
+ytd-watch-flexy[flexy_] #secondary.ytd-watch-flexy #secondary.ytd-watch-flexy #channel-name.ytd-video-meta-block, 
+ytd-watch-flexy:not([theater]):not([fullscreen]) #secondary.ytd-watch-flexy #channel-name.ytd-video-meta-block {
+    position: absolute !important;
+    bottom: -3px;
+    left: 0 !important;
+    padding: 0 2px !important;
+    z-index: 300;
+color: peru !important;
+}
+
 
 
 /* (new13)RIGHT COLUMN - WITH NOQUEUE TOP (BLUE) - NO normal SEARCH INPUT / NO LECT AUTO + RESTRICTED :
@@ -1692,8 +1750,9 @@ span#video-title {
     display: inline-block;
     width: 100%;
     height: 100%;
-    max-height: 50px !important;
-    min-height: 50px !important;
+line-height: 14px !important;
+    max-height: 8vh !important;
+    min-height: 8vh !important;
 margin-bottom: -2px !important;
 overflow: hidden !important;
 overflow-y: auto !important;
@@ -1731,10 +1790,10 @@ border: 1px solid green !important;
 
 
 
-/* (new6) COMMENTS - FIXED - MOVE RIGHT */
-ytd-comments {
-    position: fixed;
-    display: inline-block;
+/* (new16) COMMENTS - FIXED - MOVE RIGHT */
+ytd-comments:not(:hover):not(hidden) {
+    position: fixed !important;
+    display: inline-block !important;
     min-width: 38.8% !important;
     max-width: 38.8% !important;
     height: 90vh;
@@ -1742,31 +1801,54 @@ ytd-comments {
     top: 85px ;
     padding: 0 10px ;
     overflow: hidden;
-    z-index: 50000;
-    visibility: hidden ;
+overflow-y: auto !important;
+    z-index: 500000 !important;
+/*     visibility: hidden ; */
 background: black ;
 }
+/* (new16) CY Fung FIX */
+html ytd-comments:not(:hover):not(hidden)  {
+visibility: collapse !important;
+}
+
+
 /* NO DARK */
 html:not([dark]):not(.style-scope) ytd-comments {
 background-color: white !important;
 }
-
-ytd-comments:hover {
-    visibility: visible ;
+/* COMMENTS - HOVER */
+html ytd-comments:hover:not([hidden]) {
+    position: fixed !important;
+    display: inline-block !important;
+    min-width: 38.8% !important;
+    max-width: 38.8% !important;
+    height: 90vh;
+    left: 60% !important;
+    top: 85px ;
+    padding: 0 10px ;
+    z-index: 500000 !important;
+/*     visibility: hidden ; */
+    visibility: visible !important;
+background: black ;
 border-bottom: 4px solid green !important;
 }
+
 /* NO DARK */
 html:not([dark]):not(.style-scope) ytd-comments:hover {
 background-color: white !important;
 }
 
+/* (new16) */
 ytd-comments  ytd-item-section-renderer {
    display: inline-block !important;
-    max-height: 745px;
+max-height: 745px;
 min-height: 745px;
+min-height: 100% !important;
     width: 100% !important;
     margin-top: -21px ;
-/* background: red !important; */
+/* overflow: hidden !important; */
+/* overflow-y: auto !important; */
+/* background: blue !important; */
 }
 ytd-comments  ytd-item-section-renderer ytd-comments-header-renderer {
     margin-bottom: 5px ;
@@ -1775,11 +1857,11 @@ ytd-comments  ytd-item-section-renderer ytd-comments-header-renderer {
 #title.ytd-comments-header-renderer {
     margin-bottom: 5px;
 }
-/* (new6) */
+/* (new16) */
 ytd-comments  #contents {
     display: inline-block !important;
 /*     min-height: 745px !important; */
-    max-height: 745px;
+/*     max-height: 745px; */
     width: 98% ;
     top: -35px ;
     padding: 5px 10px ;
@@ -1787,6 +1869,12 @@ ytd-comments  #contents {
     overflow-y: auto;
 background: #333 ;
 }
+/* (new16) CY Fung FIX */
+html ytd-comments #contents{
+height: 77vh !important;
+/* height: auto !important; */
+}
+
 /* NO DARK */
 html:not([dark]):not(.style-scope) ytd-comments  #contents {
 background-color: white !important;
