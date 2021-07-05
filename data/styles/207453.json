@@ -1,0 +1,92 @@
+{
+  "id": 207453,
+  "info": {
+    "name": "Nakama - Transparent",
+    "description": "Estilo con transparencias y con fondo personalizable.",
+    "additionalInfo": null,
+    "format": "uso",
+    "category": "nakama",
+    "createdAt": "2021-07-04T20:11:03.000Z",
+    "updatedAt": "2021-07-05T07:24:33.000Z",
+    "license": "NO-REDISTRIBUTION",
+    "author": {
+      "id": 267397,
+      "name": "-MG-"
+    }
+  },
+  "stats": {
+    "installs": {
+      "total": 3,
+      "weekly": 3
+    }
+  },
+  "screenshots": {
+    "main": {
+      "name": "207453_after.jpeg",
+      "archived": true
+    }
+  },
+  "discussions": {
+    "stats": {
+      "discussionsCount": 0,
+      "commentsCount": 0
+    },
+    "data": []
+  },
+  "style": {
+    "css": "@-moz-document domain(\"nakama.social\") {\r\n:root {\r\n    --fondo: url(\"/*[[wall]]*/\");\r\n    --transparencia: .6;\r\n    --ancho-pagina: 800px;\r\n}\r\n\r\nbody {\r\n  \tbackground-image: var(--fondo) !important;\r\n\tbackground-attachment: fixed !important;\r\n\tbackground-position:50% 0px !important;\r\n\tbackground-size: auto auto !important;\r\n  \tbackground-repeat: no-repeat !important;\r\n}\r\n\r\n.container {\r\n    max-width: var(--ancho-pagina) !important;\r\n}\r\n\r\n.container h1, .container > h2 {\r\n    text-shadow: 0px 0px 5px rgba(0,0,0,var(--transparencia));\r\n}\r\n\r\nheader, .post, input[type=email], input[type=search], input[type=text], .notifications, .notifications-controls, .post-form-controls, .post-form > textarea {\r\n    background-color: rgba(0,0,0,var(--transparencia));\r\n    color: #fff;\r\n    /*[[blur]]*/\r\n    box-shadow:0 0 3px rgba(0,0,0,calc(var(--transparencia)*0.6));\r\n}\r\n\r\n.notifications, .notifications-controls, .post-form-controls {\r\n    padding: 10px 10px;\r\n}\r\n\r\n/*[[brd]]*/\r\n}",
+    "settings": [
+      {
+        "key": "wall",
+        "label": "Fondo de pantalla",
+        "type": "image",
+        "options": [
+          {
+            "key": "wall1",
+            "label": "Ishtar",
+            "value": "https://i.imgur.com/RBo5Yvr.jpg",
+            "default": true
+          }
+        ]
+      },
+      {
+        "key": "blur",
+        "label": "Desenfoque",
+        "type": "dropdown",
+        "options": [
+          {
+            "key": "blur1",
+            "label": "Si",
+            "value": "backdrop-filter: blur(3px);",
+            "default": false
+          },
+          {
+            "key": "blur2",
+            "label": "No",
+            "value": "",
+            "default": true
+          }
+        ]
+      },
+      {
+        "key": "brd",
+        "label": "Bordes",
+        "type": "dropdown",
+        "options": [
+          {
+            "key": "brd1",
+            "label": "Redondeados",
+            "value": "",
+            "default": true
+          },
+          {
+            "key": "brd2",
+            "label": "Cuadrados",
+            "value": ".post, .btn, button, input, textarea, .post-warning, .media-scroller audio, .media-scroller iframe, .media-scroller img, .media-scroller video, .avatar {\r\n    border-radius: 0;\r\n}",
+            "default": false
+          }
+        ]
+      }
+    ]
+  }
+}

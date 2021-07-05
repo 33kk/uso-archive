@@ -1,0 +1,39 @@
+{
+  "id": 207488,
+  "info": {
+    "name": "Eldarya Music Event easier pop-ups",
+    "description": "All credits to @Linnana",
+    "additionalInfo": null,
+    "format": "uso",
+    "category": "eldarya",
+    "createdAt": "2021-07-05T11:42:15.000Z",
+    "updatedAt": "2021-07-05T11:42:15.000Z",
+    "license": "NO-REDISTRIBUTION",
+    "author": {
+      "id": 1203913,
+      "name": "윤화Yunhwa"
+    }
+  },
+  "stats": {
+    "installs": {
+      "total": 0,
+      "weekly": 0
+    }
+  },
+  "screenshots": {
+    "main": {
+      "name": "207488_after.jpeg",
+      "archived": true
+    }
+  },
+  "discussions": {
+    "stats": {
+      "discussionsCount": 0,
+      "commentsCount": 0
+    },
+    "data": []
+  },
+  "style": {
+    "css": "@-moz-document domain(\"eldarya.pl\"), domain(\"eldarya.com\"), domain(\"eldarya.fr\"), domain(\"eldarya.de\"), domain(\"eldarya.es\"), domain(\"eldarya.hu\"), domain(\"eldarya.it\"), domain(\"eldarya.ru\"), domain(\"eldarya.com.br\") {\r\n.music-hidden-voice {\r\n   border: solid;\r\n   border-color: red;\r\n   border-width: 20px;\r\n   position: fixed;\r\n   top: 40px!important;\r\n   left: 0px!important;\r\n}\r\n}"
+  }
+}

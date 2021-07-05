@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         VioneT
 @description    `Centered Typing Area, Placed the Real-time WPM and Accuracy on the Left and the WPM Graphs to the right, Dark Theme.`
-@version        20210704.4.48
+@version        20210705.4.11
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -366,6 +366,12 @@ div.new-post a {
     /* WPM Graph Position */
     position: absolute !important;
     margin-top: -130px !important;
+    margin-left: 175px !important;
+}
+.chart-quote{
+    /* WPM Quote Graph Position */
+    position: absolute !important;
+    margin-top: 125px !important;
     margin-left: 175px !important;
 }
 .dl-horizontal dd {

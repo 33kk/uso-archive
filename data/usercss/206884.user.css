@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           UserStyles.World (USw) - WideScreen v.2
+@name           UserStyles.World (USw) - WideScreen v.4
 @namespace      USO Archive
 @author         decembre
 @description    `For the best alternative to replace userstyle.org (which became unusable):<a href="https://userstyles.world/explore">UserStyles.world</a>Her my version of it, a Compact userstyle for a widescreen:Less scrolling !Note:With it, it is possible to have preview on hover Thumbnail userstyle preview if you use an addon like: <a href="https://addons.mozilla.org/en-US/firefox/addon/image-max-url/">Image Max URL by qsniyg</a>`
-@version        20210626.18.55
+@version        20210705.9.37
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -12,15 +12,19 @@
 
 @-moz-document domain("userstyles.world") {
 
-/* ==== 0- UserStyles.World (USw) - WideScreen v.2 - TEST FRESH ==== */
+/* ==== 0- UserStyles.World (USw) - WideScreen v.4 - TEST FRESH ==== */
 
 /* WIDESCREEN */
 
-/* ALL */
+/* (new4) ALL */
 html body > main {
     display: inline-block;
     min-height: calc(100vh - 130px);
     width: 100%;
+}
+.rwrap {
+    flex-flow: row wrap;
+overflow-x: hidden !important;
 }
 /* FOOTER */
 footer {
@@ -385,6 +389,7 @@ border: 1px solid aqua;
     max-width: 100%;
     padding-bottom: 2rem;
     padding-top: 2rem;
+/* overflow-x: hidden !important; */
 }
 
 .preview + .mt\:l {
@@ -483,9 +488,8 @@ height: 24px !important;
 
 
 /* DETAILS */
-.details h2 {
+.details > h2 {
 width: 48% !important;
-
 }
 .details>p {
 float: left !important;
@@ -528,6 +532,44 @@ overflow-y: auto !important;
 border-bottom: 1px dashed gray !important;
 }
 
+/* HISTORY */
+.details + .history:hover ,
+.details + .history:not(:hover) {
+    position: absolute !important;
+    width: 10% !important;
+min-height: 2.9vh !important;
+max-height: 2.9vh !important;
+    margin: 0 !important;
+    right: 19% !important;
+    top: 48.4vh !important;
+    padding: 0 10px !important;
+border-radius: 5px 5px 0 0 !important;
+    border: 1px solid red;
+}
+.details + .history:after {
+position: absolute !important;
+content: "▼" !important;
+top: 6px !important;
+margin-left: 120px !important;
+font-size: 10px !important;
+    text-decoration: none !important;
+background: red !important;
+}
+.details + .history:not(:hover) .chart {
+    display: none !important;
+border: 1px solid red;
+}
+.details + .history:hover .chart {
+    display: inline-block !important;
+    height: 408px;
+    width: 870px;
+    margin-left: -358px !important;
+border-radius: 0 0 5px 5px !important;
+margin-top: 0px !important;
+border: 1px solid red;
+}
+
+
 /* NOTES */
 .details .mt\:m:last-of-type {
 float: left ;
@@ -536,21 +578,44 @@ min-height: 49vh !important;
 max-height: 49vh !important;
 width: 100% !important;
     margin-top: 0;
-    padding: 1rem;
+    padding: 1rem 0 0 0;
 overflow: hidden !important;
 border: 1px solid #333 !important;
 }
+.details .mt\:m:last-of-type  h2 {
+width: 10% !important;
+    padding: 0 10px ;
+border-radius: 5px 5px 0 0 !important;
+border: 1px solid red !important;
+}
+
 .details .mt\:m:last-of-type .md {
     height: auto !important;
-min-height: 43vh !important;
-max-height: 43vh !important;
+min-height: 44.3vh !important;
+max-height: 44.3vh !important;
+margin-top: -5px !important;
     padding-left: 1rem;
 overflow: hidden !important;
 overflow-y: auto !important;
-border-left: 3px solid red !important;
+border-top: 3px solid gray !important;
+/* border-left: 3px solid red !important; */
+}
+/* NO NOTES */
+.details .mt\:m:last-of-type h2 + i {
+display: inline-block !important;
+width: 100% !important;
+min-width: 100% !important;
+    height: auto !important;
+min-height: 44.3vh !important;
+max-height: 44.3vh !important;
+margin-top: -5px !important;
+    padding-left: 1rem;
+overflow: hidden !important;
+overflow-y: auto !important;
+border-top: 3px solid gray !important;
+/* border-left: 3px solid red !important; */
 }
 .md>p>br {
-/* content: "A" !important; */
     display: block !important;
     margin-bottom: 0px !important;
 }
@@ -568,47 +633,117 @@ border-left: 3px solid red !important;
 Mozilla Addon Widescreen NEW desig
 https://userstyles.world/style/61
 === */
-.details + b .code.mt\:l:not(:hover) ,
-.details + .code.mt\:l:not(:hover) {
+
+/* NEW CODE */
+.history + .code.mt\:l:hover ,
+.history + .code.mt\:l:not(:hover)  {
 position: absolute !important;
 display: inline-block !important;
 /* float: right; */
     height: auto !important;
-min-height: 3vh !important;
-max-height: 3vh !important;
-width: 7% !important;
+min-height: 2.9vh !important;
+max-height: 2.9vh !important;
+width: 9% !important;
 /*     margin-top: 0; */
 /*     margin-right: -272px; */
-top: 47vh !important;
+top: 48.5vh !important;
 right: 36px !important;
     margin: 0px  !important;
-    padding: 1.7rem 0 0 0 !important;
+    padding: 0 10px !important;
+border-radius: 5px 5px 0 0 !important;
 overflow: hidden !important;
 /* overflow-y: hidden !important; */
 /* transition: all ease 0s !important; */
 /* visibility: hidden !important; */
 border: 1px solid red !important;
 }
-.details + b .code.mt\:l:hover ,
-.details + .code.mt\:l:hover {
+.history + .code.mt\:l:hover {
 position: absolute !important;
+display: inline-block !important;
+/* float: right; */
+    height: auto !important;
+min-height: 2.9vh !important;
+max-height: 2.9vh !important;
+width: 9% !important;
+/*     margin-top: 0; */
+/*     margin-right: -272px; */
+top: 48.5vh !important;
+right: 36px !important;
+    margin: 0px  !important;
+    padding: 0 10px !important;
+border-radius: 5px 5px 0 0 !important;
+overflow: visible !important;
+/* overflow-y: hidden !important; */
+/* transition: all ease 0s !important; */
+/* visibility: hidden !important; */
+border: 1px solid red !important;
+}
+.history + .code.mt\:l:before {
+position: absolute !important;
+content: "▼" !important;
+top: 5px !important;
+margin-left: 135px !important;
+font-size: 10px !important;
+    text-decoration: none !important;
+background: red !important;
+}
+
+
+.history + .code.mt\:l:not(:hover)  .td\:d {
+position: relative !important;
+display: inline-block !important;
+    font-size: 1.2em;
+/*     margin: 0 !important; */
+    text-decoration: underline;
+}
+
+/* NEW CODE - CODE - HOVER */
+.history + .code.mt\:l:hover textarea ,
+.history + .code.mt\:l:not(:hover) textarea{
+/* position: absolute !important; */
 display: inline-block !important;
 float: none !important;
     height: auto !important;
-min-height: 48vh !important;
-max-height: 48vh !important;
-min-width: 45% !important;
-max-width: 45% !important;
+min-height: 44vh !important;
+max-height: 44vh !important;
+width: 100% !important;
+min-width: 700px !important;
+max-width: 700px !important;
     margin: 0 !important;
-top: 47vh !important;
-right: 36px !important;
-    padding: 0.2rem 0 0 0 !important;
+top: 51.5vh !important;
+left: 234px !important;
+/*     padding: 0.2rem 0 0 0 !important; */
+padding: 5px 5px 5px 10px !important;
+border-radius: 0 0 5px 5px !important;
 overflow: hidden !important;
-/*     transform: translate(30px, -445px); */
-/* transition: all ease 0.1s !important; */
-/* visibility: visible !important; */
+overflow-y: auto !important;
+z-index: 5000 !important;
 background: #111 !important;
 border: 1px solid green !important;
+border-right: 10px solid tomato !important;
+}
+
+.history + .code.mt\:l:hover textarea {
+/* position: absolute !important; */
+display: inline-block !important;
+float: none !important;
+    height: auto !important;
+min-height: 44vh !important;
+max-height: 44vh !important;
+width: 100% !important;
+min-width: 869px !important;
+max-width: 869px !important;
+    margin: 0 !important;
+top: 51.5vh !important;
+margin-left: -705px !important;
+/*     padding: 0.2rem 0 0 0 !important; */
+padding: 5px 5px 5px 10px !important;
+border-radius: 0 0 5px 5px !important;
+overflow: hidden !important;
+overflow-y: auto !important;
+z-index: 5000 !important;
+background: #111 !important;
+border: 1px solid yellow !important;
 border-right: 10px solid tomato !important;
 }
 
@@ -636,6 +771,34 @@ display: inline-block !important;
     min-height: 400px !important;
     min-width: 100%;
     padding: 0.5rem;
+}
+
+/* (new4) CODE WARNING for:
+https://userstyles.world/style/3/dark-gitlab
+==== */
+.history + .code.mt\:l:hover  mark {
+position: absolute !important;
+display: inline-block !important;
+top: -9vh !important;
+line-height: 13px !important;
+padding: 3px !important;
+border-radius: 5px !important;
+font-size: 13px !important;
+opacity: 0.5 !important;
+    background-color: green !important;
+}
+.history + .code.mt\:l:hover  mark:after {
+content: "▼" ;
+position: absolute !important;
+display: inline-block !important;
+margin-left: 5px !important;
+bottom: -1.3vh !important;
+line-height: 13px !important;
+padding: 0px !important;
+border-radius: 0px !important;
+font-size: 15px !important;
+color: green ;
+    background-color: transparent !important;
 }
 
 /* (new2) COLOR - LIGHT */
@@ -788,7 +951,7 @@ background: tan !important;
 border: 1px solid red !important;
 }
 
-/* INFOS */
+/* (new4) INFOS */
 .wrapper.py\:l  section:first-of-type + section h2:first-of-type ,
 .wrapper.py\:l  section:first-of-type + section.settings > h2:first-of-type ~ p.updated ,
 .wrapper.py\:l  section:first-of-type + section.settings > h2:first-of-type ~p {
@@ -796,9 +959,10 @@ border: 1px solid red !important;
 /* display: inline-block !important; */
 /* float: left !important; */
 /* clear: both !important; */
-min-width: 20% !important;
-max-width: 20% !important;
+min-width: 30% !important;
+max-width: 30% !important;
     margin-top: 0;
+padding: 10px 20px !important;
 background: #222 !important;
 border: 1px solid gray !important;
 }
@@ -812,7 +976,7 @@ border: 1px solid gray !important;
     margin-top: -7px !important;
 }
 
-/* DISPLAY NAME */
+/* (new4) DISPLAY NAME */
 .wrapper.py\:l  section:first-of-type + section.settings > h2:first-of-type ~ p.updated + h2 + .md + form ,
 .wrapper.py\:l  section:first-of-type + section.settings > h2:first-of-type ~ p.updated + h2 + .md ,
 .wrapper.py\:l  section:first-of-type + section.settings > h2:first-of-type ~ p.updated + h2{
@@ -820,22 +984,22 @@ border: 1px solid gray !important;
 /* display: inline-block !important; */
 float: right !important;
 clear: both !important;
-min-width: 30% !important;
-max-width: 30% !important;
+min-width: 33% !important;
+max-width: 33% !important;
     margin: 0;
-/* margin-left: 30.5% !important; */
-margin-top: -248px !important;
+margin-right: 1% !important;
+margin-top: -384px !important;
 background: #222 !important;
 border: 1px solid gray !important;
 }
 .wrapper.py\:l  section:first-of-type + section.settings > h2:first-of-type ~ p.updated + h2 + .md + form {
     height: 253px !important;
     margin-bottom: -38px !important;
-margin-top: -218px !important;
+margin-top: -348px !important;
 }
 
 
-/* BIOGRAPHIE */
+/* (new4) BIOGRAPHIE */
 .wrapper.py\:l  section:first-of-type + section.settings > h2:first-of-type ~p.updated + h2 + .md + form + h2.sub-title + .md + form ,
 /* .wrapper.py\:l  section:first-of-type + section.settings > h2:first-of-type ~p.updated + h2 + .md + form + h2.sub-title + .md , */
 .wrapper.py\:l  section:first-of-type + section.settings > h2:first-of-type ~p.updated + h2 + .md + form + h2.sub-title {
@@ -844,16 +1008,16 @@ margin-top: -218px !important;
 /* display: inline-block !important; */
 float: left !important;
 clear: both !important;
-min-width: 30% !important;
-max-width: 30% !important;
+min-width: 33% !important;
+max-width: 33% !important;
     margin: 0;
-margin-left: 30.9% !important;
-margin-top: -248px !important;
+margin-left: 31.9% !important;
+    margin-top: -384px;
 background: #222 !important;
 border: 1px solid gray !important;
 }
 .wrapper.py\:l  section:first-of-type + section.settings > h2:first-of-type ~p.updated + h2 + .md + form + h2.sub-title + .md + form {
-margin-top: -218px !important;
+    margin-top: -348px;
 }
 
 .wrapper.py\:l  section:first-of-type + section.settings > h2:first-of-type ~p.updated + h2 + .md + form + h2.sub-title + .md + form textarea {
@@ -923,7 +1087,7 @@ border: 1px solid gray !important;
 }
 
 
-/* USER SETTINGS */
+/* (new4) USER SETTINGS */
 .wrapper.py\:l  section:first-of-type + section.settings > h2:first-of-type ~p.updated + h2 + .md + form + h2.sub-title + .md + form + h2.sub-title + p + form + h2+ p  + .form-wrapper ,
  .wrapper.py\:l  section:first-of-type + section.settings > h2:first-of-type ~p.updated + h2 + .md + form + h2.sub-title + .md + form + h2.sub-title + p + form + h2+ p ,
 .wrapper.py\:l  section:first-of-type + section.settings > h2:first-of-type ~p.updated + h2 + .md + form + h2.sub-title + .md + form + h2.sub-title + p + form + h2 {
@@ -948,6 +1112,7 @@ float: right !important;
 min-width: 80% !important;
 max-width: 80% !important;
 height: 28px !important;
+line-height: 5px !important;
     margin-top: -28px !important;
 border-top: 1px solid red !important;
 }
@@ -1112,18 +1277,19 @@ border: 1px solid gray !important;
     background: #111 !important;
 }
 .wrapper.py\:l .ta\:c + section.mt\:l {
-
+    position: sticky !important;
     display: inline-block !important;
+    width: 100%;
     margin-top: -0.5rem;
     min-width: 100%;
-    position: sticky !important;
     right: 42px;
-    text-align: center;
     top: 75px !important;
-    width: 100%;
+    text-align: center;
+/* overflow-x: hidden !important; */
     z-index: 500 !important;
     background: #222 !important;
 }
+
 .wrapper.py\:l .ta\:c + section > form {
     position: sticky !important;
     display: inline-block !important;
