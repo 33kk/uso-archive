@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         FireFern
 @description    `A style for Discord. A bunch of stuff is customizable. If you want to go in the CSS itself and change it, the code has lots of comments that should make navigation incredibly easy. I would also recommend you download the style here if you aren't there already. https://33kk.github.io/uso-archive/?style=201433Installing the style there lets you customize the stuff by clicking on the extension while downloading it on the userstyles website will just link you to the download page on the userstyles website (at least in my experience). It also loads way faster than the userstyles website.Another thing is that light mode actually looks really good with this style! It always did but I just forgot to mention it.`
-@version        20210704.1.35
+@version        20210705.23.52
 @license        CC-BY-4.0
 @preprocessor   uso
 @advanced color mainkey "Main Color" #FF0000
@@ -47,6 +47,79 @@ Darkness "Darkness" <<<EOT rgb(0, 0, 0) EOT;
 No "No" <<<EOT var(--bgextra) EOT;
 
 }
+@advanced dropdown buttonstylekey "Button Style" {
+	Inset-Shadows "Inset Shadows*" <<<EOT /*Grey Buttons*\/
+/*the edit buttons in account settings and maybe more*\/
+
+.theme-dark .lookFilled-1Gx00P.colorGrey-2DXtkV, .theme-dark .lookFilled-1Gx00P.colorGrey-2DXtkV:hover, .theme-dark .lookFilled-1Gx00P.colorGrey-2DXtkV:active, .theme-light .lookFilled-1Gx00P.colorGrey-2DXtkV, .theme-light .lookFilled-1Gx00P.colorGrey-2DXtkV:hover, .theme-light .lookFilled-1Gx00P.colorGrey-2DXtkV:active {
+    background: transparent;
+    box-shadow: inset 0px 0px 20px #747f8d, inset 0px 0px 20px #747f8d, inset 0px 0px 50px #747f8d
+}
+
+/*Green Buttons*\/
+/*in the emoji popout and maybe more*\/
+
+.lookFilled-1Gx00P.colorGreen-29iAKY, .lookFilled-1Gx00P.colorGreen-29iAKY:hover, .lookFilled-1Gx00P.colorGreen-29iAKY:active {
+    background: transparent;
+    box-shadow: inset 0px 0px 20px hsl(139, calc(var(--saturation-factor, 1)*47.3%), 43.9%), inset 0px 0px 20px hsl(139, calc(var(--saturation-factor, 1)*47.3%), 43.9%), inset 0px 0px 50px hsl(139, calc(var(--saturation-factor, 1)*47.3%), 43.9%);
+}
+
+/*Green Outlined Buttons*\/
+/*in the popup that appears when u invite someone to a channel and maybe more*\/
+
+.lookOutlined-3sRXeN.colorGreen-29iAKY, .lookOutlined-3sRXeN.colorGreen-29iAKY:hover, .lookOutlined-3sRXeN.colorGreen-29iAKY:active, .lookOutlined-3sRXeN.colorGreen-29iAKY:focus {
+    background: transparent;
+    color: hsl(139, calc(var(--saturation-factor, 1)*47.3%), 43.9%);
+    border: 1px solid hsl(139, calc(var(--saturation-factor, 1)*47.3%), 43.9%);
+    box-shadow: inset 0px 0px 3px hsl(139, calc(var(--saturation-factor, 1)*47.3%), 43.9%)
+}
+
+/*Blurple Buttons*\/
+/*in account settings and more*\/
+
+.lookFilled-1Gx00P.colorBrand-3pXr91, .lookFilled-1Gx00P.colorBrand-3pXr91:hover, .lookFilled-1Gx00P.colorBrand-3pXr91:active, .lookFilled-1Gx00P.colorBrand-3pXr91:disabled {
+    background: transparent;
+    box-shadow: inset 0px 0px 20px var(--brand-experiment), inset 0px 0px 20px var(--brand-experiment), inset 0px 0px 50px var(--brand-experiment)
+}
+
+/*Red Buttons*\/
+/*"Disable Account" button in account settings and maybe more*\/
+
+.lookFilled-1Gx00P.colorRed-1TFJan, .lookFilled-1Gx00P.colorRed-1TFJan:hover, .lookFilled-1Gx00P.colorRed-1TFJan:active {
+    background: transparent;
+    box-shadow: inset 0px 0px 20px hsl(359, calc(var(--saturation-factor, 1)*82.6%), 59.4%), inset 0px 0px 20px hsl(359, calc(var(--saturation-factor, 1)*82.6%), 59.4%), inset 0px 0px 50px hsl(359, calc(var(--saturation-factor, 1)*82.6%), 59.4%)
+}
+
+/*Red Outlined Buttons*\/
+/*"Delete Account" button in account settings and maybe more*\/
+
+.lookOutlined-3sRXeN.colorRed-1TFJan, .lookOutlined-3sRXeN.colorRed-1TFJan:hover, .lookOutlined-3sRXeN.colorRed-1TFJan:active {
+    background: transparent;
+    color: hsl(359, calc(var(--saturation-factor, 1)*82.6%), 59.4%);
+    border: 1px solid hsl(359, calc(var(--saturation-factor, 1)*82.6%), 59.4%);
+    box-shadow: inset 0px 0px 3px hsl(359, calc(var(--saturation-factor, 1)*82.6%), 59.4%)
+}
+
+/*Other Grey Buttons*\/
+/*"Block" and "Remove Friend" buttons in DM history and "Cancel" buttons in popups and maybe more*\/
+
+.lookFilled-1Gx00P.colorPrimary-3b3xI6, .lookFilled-1Gx00P.colorPrimary-3b3xI6:hover, .lookFilled-1Gx00P.colorPrimary-3b3xI6:active {
+    background: transparent !important;
+    box-shadow: inset 0px 0px 20px #4f545c, inset 0px 0px 20px #4f545c, inset 0px 0px 50px #4f545c
+}
+
+/*White Outlined Buttons*\/
+/*"Back" and join buttons that appear when previewing a server*\/
+
+.lookOutlined-3sRXeN.colorWhite-rEQuAQ, .lookOutlined-3sRXeN.colorWhite-rEQuAQ:hover,.lookOutlined-3sRXeN.colorWhite-rEQuAQ:active {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    box-shadow: inset 0px 0px 3px white
+} EOT;
+Original "Original" <<<EOT  EOT;
+
+}
 @advanced color bgfloatkey "Floating Background" #111111
 @advanced color linkkey "Links" #00B0F4
 
@@ -68,8 +141,6 @@ No "No" <<<EOT var(--bgextra) EOT;
     --background-accent: #4f545c42; /*this is shown in the emoji/gif selector when selecting an emoji*/
     /*************/
     --background-message-hover: #a8a8a812; /*the message hover*/
-    --background-mentioned: #faa61a17; /*background for mentioned messages*/
-    --background-mentioned-hover: #faa61a2b; /*background for mentioned message hover state*/
     /*************/
     --scrollbar-thin-thumb: var(--main); /*some scrollbar thumbs*/
     --scrollbar-thin-track: transparent; /*some scrollbar tracks*/
@@ -353,7 +424,7 @@ div[style="color: hsl(139, calc(var(--saturation-factor, 1) * 47.3%), 43.9%);"] 
 
 /*Background And Border*/
 
-.theme-dark .nowPlayingColumn-2sl4cE {
+.theme-dark .container-lRFx4q {
     background: var(--bgextra);
     border-left: 1px solid var(--bordercolor)
 }
@@ -524,7 +595,7 @@ div[style="color: hsl(139, calc(var(--saturation-factor, 1) * 47.3%), 43.9%);"] 
 
 /*Background And Border*/
 
-.theme-dark .membersWrap-2h-GB4.hiddenMembers-2dcs_q {
+.theme-dark .members-1998pB {
     background: var(--bgextra);
     border-left: 1px solid var(--bordercolor)
 }
@@ -648,32 +719,14 @@ div[style="color: hsl(139, calc(var(--saturation-factor, 1) * 47.3%), 43.9%);"] 
 
 /*Mentions And Channel Links*/
 
-.wrapper-3WhCwL {
-    background: black !important;
-    box-shadow: inset 0px 0px 10px var(--main);
-    color: var(--main) !important;
-    border-radius: 3px;
-    transition: 0.3s
+.theme-dark .wrapper-3WhCwL, .theme-light .wrapper-3WhCwL {
+    background: transparent;
+    box-shadow: inset 0px 0px 25px var(--main);
+    color: white
 }
 
-.wrapper-3WhCwL:hover, .wrapper-3WhCwL:active {
-    background: black;
-    box-shadow: inset 0px 0px 15px var(--main);
-    color: var(--main);
-    border-radius: 3px
-}
-
-.theme-dark .mentioned-xhSam7 .mention, .theme-light .mentioned-xhSam7 {
-    background: transparent !important;
-    box-shadow: none;
-    border-radius: 3px;
-    color: var(--main);
-}
-
-.theme-dark .mentioned-xhSam7 .mention:hover, .theme-light .mentioned-xhSam7:hover, .theme-dark .mentioned-xhSam7 .mention:active, .theme-light .mentioned-xhSam7:active {
-    text-decoration: underline !important;
-    color: var(--main) !important;
-    background: transparent !important;
+.interactive:hover {
+    box-shadow: inset 0px 0px 100px var(--main);
 }
 
 /*Emoji Popout*/
@@ -719,7 +772,6 @@ div[style="color: hsl(139, calc(var(--saturation-factor, 1) * 47.3%), 43.9%);"] 
 /*Mentioned Messages*/
 
 .mentioned-xhSam7:before {
-    background: #faa61a;
     width: 6px;
     border-top-right-radius: 7px;
     border-bottom-right-radius: 7px
@@ -1092,10 +1144,17 @@ div[style="color: hsl(139, calc(var(--saturation-factor, 1) * 47.3%), 43.9%);"] 
 
 /*Bottom Part (For Some)*/
 
-.root-1gCeng .footer-2gL1pp {
+.theme-dark .footer-2gL1pp, .theme-light .footer-2gL1pp {
     background: transparent;
     border-top: 1px solid var(--bordercolor);
     box-shadow: none
+}
+
+/*Top Separating Thing (For Some)*/
+
+.theme-dark .separator-2-RRj_, .theme-light .separator-2-RRj_ {
+    box-shadow: none;
+    border-bottom: 1px solid var(--main)
 }
 
 /*Keyboard Shortcuts Popup*/
@@ -1207,103 +1266,7 @@ div[style="color: hsl(139, calc(var(--saturation-factor, 1) * 47.3%), 43.9%);"] 
 /*MULTICOLORED BUTTONS*/
 /************/
 
-/*Grey Buttons*/
-/*the edit buttons in account settings and maybe more*/
-
-.lookFilled-1Gx00P.colorGrey-2DXtkV, .lookFilled-1Gx00P.colorGrey-2DXtkV:hover, .lookFilled-1Gx00P.colorGrey-2DXtkV:active {
-    background: transparent;
-    box-shadow: inset 0px 0px 20px #747f8d, inset 0px 0px 20px #747f8d, inset 0px 0px 20px #747f8d
-}
-
-/*Green Buttons*/
-/*in the emoji popout and maybe more*/
-
-.lookFilled-1Gx00P.colorGreen-29iAKY, .lookFilled-1Gx00P.colorGreen-29iAKY:hover, .lookFilled-1Gx00P.colorGreen-29iAKY:active {
-    background: transparent;
-    box-shadow: inset 0px 0px 20px #43b581, inset 0px 0px 40px #43b581;
-    color: white
-}
-
-/*Green Outlined Buttons*/
-/*in the popup that appears when u invite someone to a channel and maybe more*/
-
-.lookOutlined-3sRXeN.colorGreen-29iAKY, .lookOutlined-3sRXeN.colorGreen-29iAKY:hover, .lookOutlined-3sRXeN.colorGreen-29iAKY:active, .lookOutlined-3sRXeN.colorGreen-29iAKY:focus {
-    background: transparent;
-    color: #43b581;
-    border: 1px solid #43b581;
-    box-shadow: inset 0px 0px 5px #43b581
-}
-    
-/*Green Text White Background Buttons*/
-/*"Send Friend Request" button in the profile of someone listening to spotify and maybe more*/
-
-.lookInverted-2D7oAl.colorGreen-29iAKY, .lookInverted-2D7oAl.colorGreen-29iAKY:hover, .lookInverted-2D7oAl.colorGreen-29iAKY:active {
-    background: transparent;
-    color: #43b581;
-    box-shadow: inset 0px 0px 20px white, inset 0px 0px 40px white, inset 0px 0px 40px white, inset 0px 0px 40px white
-}
-
-/*Light Bluish Buttons*/
-/*in account settings and more*/
-
-.lookFilled-1Gx00P.colorBrand-3pXr91, .lookFilled-1Gx00P.colorBrand-3pXr91:hover, .lookFilled-1Gx00P.colorBrand-3pXr91:active, .lookFilled-1Gx00P.colorBrand-3pXr91:disabled {
-    background: transparent;
-    box-shadow: inset 0px 0px 50px #7289da, inset 0px 0px 20px #7289da, inset 0px 0px 20px #7289da
-}
-
-/*Light Bluish White Background Buttons*/
-/*"Send Friend Request" button in the profile of someone playing a game and maybe more*/
-
-.lookInverted-2D7oAl.colorBrand-3pXr91, .lookInverted-2D7oAl.colorBrand-3pXr91:hover, .lookInverted-2D7oAl.colorBrand-3pXr91:active {
-    background: transparent;
-    color: #7289da;
-    box-shadow: inset 0px 0px 20px white, inset 0px 0px 40px white, inset 0px 0px 40px white, inset 0px 0px 40px white
-}
-
-/*Red Buttons*/
-/*"Disable Account" button in account settings and maybe more*/
-
-.lookFilled-1Gx00P.colorRed-1TFJan, .lookFilled-1Gx00P.colorRed-1TFJan:hover, .lookFilled-1Gx00P.colorRed-1TFJan:active {
-    background: transparent;
-    box-shadow: inset 0px 0px 30px #f04747, inset 0px 0px 20px #f04747, inset 0px 0px 20px #f04747
-}
-
-/*Red Outlined Buttons*/
-/*"Delete Account" button in account settings and maybe more*/
-
-.lookOutlined-3sRXeN.colorRed-1TFJan, .lookOutlined-3sRXeN.colorRed-1TFJan:hover, .lookOutlined-3sRXeN.colorRed-1TFJan:active {
-    background: transparent;
-    color: #f04747;
-    border: 1px solid #f04747;
-    box-shadow: inset 0px 0px 5px #f04747
-}
-
-/*Other Grey Buttons*/
-/*"Block" and "Remove Friend" buttons in DM history*/
-
-.lookFilled-1Gx00P.colorPrimary-3b3xI6, .lookFilled-1Gx00P.colorPrimary-3b3xI6:hover, .lookFilled-1Gx00P.colorPrimary-3b3xI6:active {
-    background: transparent !important;
-    box-shadow: inset 0px 0px 20px #4f545c, inset 0px 0px 40px #4f545c
-}
-
-/*White Outlined Buttons*/
-/*"Watch" and "Connect" buttons in the member popout when someone is streaming or listening to spotify and maybe more*/
-
-.lookOutlined-3sRXeN.colorWhite-rEQuAQ, .lookOutlined-3sRXeN.colorWhite-rEQuAQ:hover, .lookOutlined-3sRXeN.colorWhite-rEQuAQ:active {
-    background: transparent;
-    color: white;
-    border: 1px solid white;
-    box-shadow: inset 0px 0px 5px white
-}
-
-/*Purple Text White Background Buttons*/
-/*"Send Friend Request" button in the profile of someone streaming on twitch*/
-
-.buttonInvertedPurple-WtBglX, .buttonInvertedPurple-WtBglX:hover, .buttonInvertedPurple-WtBglX:active {
-    background: transparent;
-    color: #593695;
-    box-shadow: inset 0px 0px 20px white, inset 0px 0px 40px white, inset 0px 0px 40px white, inset 0px 0px 40px white
-}
+/*[[buttonstylekey]]*/
 
 /************/
 /*INVITE PAGE*/
@@ -1355,7 +1318,7 @@ div[style="color: hsl(139, calc(var(--saturation-factor, 1) * 47.3%), 43.9%);"] 
     border-right: 1px solid var(--bordercolor)
 }
 
-.theme-light .membersWrap-2h-GB4.hiddenMembers-2dcs_q {
+.theme-light .members-1998pB {
     background: -webkit-linear-gradient(270deg, rgba(0, 0, 0, .85), rgba(0, 0, 0, .63)), url("https://media.tenor.com/images/22c4d8a6d1062e19d0ae9fbe88f816fe/tenor.gif");
 }
 
@@ -1374,7 +1337,7 @@ div[style="color: hsl(139, calc(var(--saturation-factor, 1) * 47.3%), 43.9%);"] 
     font-family: monospace;
 }
 
-.theme-light .nowPlayingColumn-2sl4cE {
+.theme-light .container-lRFx4q {
     border-left: 1px solid var(--main);
     background: -webkit-linear-gradient(270deg, rgba(0, 0, 0, .85), rgba(0, 0, 0, .63)), url("https://media.tenor.com/images/22c4d8a6d1062e19d0ae9fbe88f816fe/tenor.gif");
 }

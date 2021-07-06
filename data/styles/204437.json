@@ -7,7 +7,7 @@
     "format": "uso",
     "category": "atlassian",
     "createdAt": "2021-05-27T11:41:43.000Z",
-    "updatedAt": "2021-05-27T11:41:43.000Z",
+    "updatedAt": "2021-07-05T14:43:02.000Z",
     "license": "NO-REDISTRIBUTION",
     "author": {
       "id": 353205,
@@ -16,8 +16,8 @@
   },
   "stats": {
     "installs": {
-      "total": 0,
-      "weekly": 0
+      "total": 3,
+      "weekly": 1
     }
   },
   "screenshots": {
@@ -34,6 +34,6 @@
     "data": []
   },
   "style": {
-    "css": "@-moz-document domain('atlassian.net') {\r\n    .ghx-extra-fields .ghx-row {\r\n        max-height: none !important;   \r\n        white-space: normal !important;\r\n    }\r\n}\r\n"
+    "css": "@-moz-document domain('atlassian.net') {\r\n    .ghx-extra-fields .ghx-row {\r\n        max-height: none !important;   \r\n        white-space: pre-line !important;\r\n    }\r\n}\r\n"
   }
 }

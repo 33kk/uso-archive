@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         mortyobnoxious
 @description    `IMDb Night Mode- Works on Mobile, too. I guess.`
-@version        20201203.18.35
+@version        20210705.14.47
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -194,7 +194,7 @@ div.datepicker a { background-color: #1f1f1f; background-image: none; border-col
 .theaters-near-you ul li:nth-child(2n) { background-color: #121212; }
 .theaters-near-you ul li:hover { background-color: #121212; }
 .ticketing .header { background: none; background-color: #000; }
-.ticketing { color: #8798A5; }
+.ticketing, .ipc-media--baseAlt { color: #8798A5; }
 .ticketing hr { background-color: #000; }
 .ticketing-select hr { background-color: #000; }
 #cboxContent { background: #141414; }
@@ -390,7 +390,7 @@ a.a-link-section-expander:focus { color: #8798A5; background-color: #000; }
 .a-button { background: #1f1f1f; border-color: #000 #000 #000; }
 .a-button .a-button-text, .lister-widget .star-rating-text, .lister-widget .ratings-bar > div { color: #8798A5; }
 #copyright-input, .a-spacing-none .a-input-text { border: 1px solid #000; border-top-color: #000; box-shadow: 0 1px 0 rgba(0, 0, 0, 0.5), 0 1px 0 rgba(0, 0, 0, .07) inset; }
-.status-message {border-bottom: 1px solid #000;}
+.status-message, .answers-widget__see-more, .answers-widget__learn-more, .answers-widget__question {border-bottom: 1px solid #000;}
 .a-button-disabled .a-button-text { color: #8798A5 !important; }
 .a-button-disabled { background: #242425; border-color: #000 !important; }
 .a-button-disabled .a-button-inner { background-color: #202021 !important; }
@@ -400,11 +400,44 @@ a.a-link-section-expander:focus { color: #8798A5; background-color: #000; }
 .user-profile .widget.ratings .sharing.unshared {
 	background-color: #000;
 }
+.faceter > .faceter-working {
+	background-color: #000000a8;
+}
 }
 
 @-moz-document domain("imdb.com") {
 /* Things to Hide */
-#bottom_ad_wrapper, #nb20, .ab_twitter, .ab_zergnet, a[href^="https://pro.imdb.com"]:not(#meterRank), #full_cast_title_pro_link, #title_in_development_pro_link, #social-share-widget, .pro_logo_main_title, #name-pro-info { display: none !important; }
+.cornerstone_slot, #bottom_ad_wrapper, #nb20, .ab_twitter, .ab_zergnet, a[href^="https://pro.imdb.com"]:not(#meterRank), #full_cast_title_pro_link, #title_in_development_pro_link, #social-share-widget, .pro_logo_main_title, #name-pro-info { display: none !important; }
+
+}
+
+@-moz-document domain("imdb.com") {
+/* New Design */
+@media only screen and (max-width: 920px) {
+.bhTVMj.hero-title-block_ratingBar--hide,
+.SubNavTopicLinks__StyledTopicLinks-sc-5szx1d-0,
+.PrincipalCredits__PrincipalCreditsPanelWideScreen-hdn81t-0
+{display: block!important;}
+    
+.Media__ButtonContainer-sc-1x98dcb-3,
+.PrincipalCredits__ExpandablePrincipalCreditsPanelNarrowScreen-hdn81t-2, .hBqmiS.hero_ratingBar--hide { display: none!important; }
+}
+
+
+.ipc-list-card--base, .ipc-page-background--base, .ipc-poster-card--base, .ipc-media--base, .ipc-list-card--base.ipc-list-card--border-speech::after {background: #1f1f1f;}
+.ipc-page-section--base {background: #121212;}
+.ipc-overflowText.ipc-overflowText--base.ipc-overflowText--listCard .ipc-overflowText-overlay, .ipc-overflowText.ipc-overflowText--base.ipc-overflowText--listCard .ipc-overflowText-overlay__affordance {background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 30%, #121212 80%, #121212 100%);}
+.cMFFlc, .ipc-title.ipc-title--base .ipc-title__description, .ipc-title.ipc-title--base .ipc-title__subtext, .ipc-overflowText.ipc-overflowText--base .ipc-overflowText-overlay, .bA-dHai, .ipc-voting__label, .ipc-inline-list--inline .ipc-inline-list__item, .bZmQT, .ipc-chip--on-base, .ipc-chip--on-base:hover, .ipc-chip--on-base:active, .ipc-chip--on-base:focus, .ipc-rating-star--base .ipc-rating-star--maxRating, .ipc-rating-star--base .ipc-rating-star--voteCount {color: #8798A5;}
+.ipc-btn--theme-base:not(:disabled).ipc-btn--on-textSecondary, .ipc-btn--theme-base:not(:disabled).ipc-btn--on-textSecondary .ipc-split-button__btn, .ipc-btn--theme-base:not(:disabled).ipc-btn--on-textSecondary .ipc-split-button__iconBtn, .ipc-metadata-list--base .ipc-metadata-list-item__label--link, .ipc-metadata-list--base .ipc-metadata-list-item__icon-link:hover, .ipc-metadata-list--base .ipc-metadata-list-item__icon-link:active, .ipc-metadata-list--base .ipc-metadata-list-item--link:hover .ipc-metadata-list-item__icon-link, .ipc-rating-star--base, .ipc-icon-link--base, .ipc-icon-button--base, .ipc-rating-star--base.ipc-rating-star--placeholder .ipc-icon, .ipc-watchlist-ribbon--base, .jtMAVD, .fkUPNi, .ipc-inline-list__item, .BrowseEpisodes__Label-sc-1a626ql-1, .fswvJC.title-cast--with-eps .title-cast-item__char {color: #8798A5;}
+.ipc-metadata-list--baseAlt .ipc-metadata-list__item {border-color: #000000;}
+.ipc-chip--on-baseAlt, .ipc-chip--on-baseAlt:hover, .ipc-chip--on-baseAlt:active, .ipc-chip--on-baseAlt:focus {border-color: #000000;}
+.fswvJC .title-cast-item__char {color: #8798A5;}
+.lmNvbY {color: #8798A5;}
+.ipc-metadata-list--base .ipc-metadata-list-item__icon-link, .ipc-metadata-list--base .ipc-metadata-list-item__label--link:hover, .ipc-metadata-list--base .ipc-metadata-list-item__label--link:active, .ipc-metadata-list--base .ipc-metadata-list-item__list-content-item--subText, .ipc-metadata-list--base .ipc-metadata-list-item--link:hover .ipc-metadata-list-item__label--link {color: #fff;}
+.ipc-metadata-list--base .ipc-metadata-list-item__list-content-item--link, .ipc-metadata-list--baseAlt .ipc-metadata-list-item__list-content-item--link, a.ipc-link--baseAlt:link, .ipc-link--baseAlt, .ipc-link--baseAlt:hover, .ipc-link--baseAlt:focus, .ipc-link--baseAlt:visited, a.ipc-link--base:link, .ipc-link--base, .ipc-link--base:hover, .ipc-link--base:focus, .ipc-link--base:visited { color: #A9894F; }
+.eyqFnv:hover { color: #ff9b2b; }
+.ipc-chip--on-baseAlt {border-width: 1px;}
+#taboola_responsive_wrapper, .thTWG.banner--accent1 { display: none!important; }
 }
 
 @-moz-document url-prefix("https://m.imdb.com") {

@@ -11,11 +11,11 @@
     "about": null,
     "license": null
   },
-  "updated": "2021-07-05T07:24:33.000Z",
+  "updated": "2021-07-05T15:47:53.000Z",
   "weekly_install_count": 3,
   "total_install_count": 3,
   "rating": null,
-  "after_screenshot_name": "https://userstyles.org/style_screenshots/207453_after.jpeg?r=1625472234",
+  "after_screenshot_name": "https://userstyles.org/style_screenshots/207453_after.jpeg?r=1625500073",
   "obsoleting_style_id": null,
   "obsoleting_style_name": null,
   "obsolete": 0,
@@ -29,7 +29,7 @@
   "subcategory": "nakama",
   "additional_info": null,
   "style_tags": [],
-  "css": "@-moz-document domain(\"nakama.social\") {\r\n:root {\r\n    --fondo: url(\"/*[[wall]]*/\");\r\n    --transparencia: .6;\r\n    --ancho-pagina: 800px;\r\n}\r\n\r\nbody {\r\n  \tbackground-image: var(--fondo) !important;\r\n\tbackground-attachment: fixed !important;\r\n\tbackground-position:50% 0px !important;\r\n\tbackground-size: auto auto !important;\r\n  \tbackground-repeat: no-repeat !important;\r\n}\r\n\r\n.container {\r\n    max-width: var(--ancho-pagina) !important;\r\n}\r\n\r\n.container h1, .container > h2 {\r\n    text-shadow: 0px 0px 5px rgba(0,0,0,var(--transparencia));\r\n}\r\n\r\nheader, .post, input[type=email], input[type=search], input[type=text], .notifications, .notifications-controls, .post-form-controls, .post-form > textarea {\r\n    background-color: rgba(0,0,0,var(--transparencia));\r\n    color: #fff;\r\n    /*[[blur]]*/\r\n    box-shadow:0 0 3px rgba(0,0,0,calc(var(--transparencia)*0.6));\r\n}\r\n\r\n.notifications, .notifications-controls, .post-form-controls {\r\n    padding: 10px 10px;\r\n}\r\n\r\n/*[[brd]]*/\r\n}",
+  "css": "@-moz-document domain(\"nakama.social\") {\r\n:root {\r\n    --fondo: url(\"/*[[wall]]*/\");\r\n    --ancho-pagina: /*[[fw]]*/;\r\n    --transparencia: calc((100 - /*[[trns]]*/)/100);\r\n    --desenfoque: /*[[blur]]*/;\r\n}\r\n\r\nbody {\r\n  \tbackground-image: var(--fondo) !important;\r\n\tbackground-attachment: fixed !important;\r\n\tbackground-position:50% 0px !important;\r\n\tbackground-size: auto auto !important;\r\n  \tbackground-repeat: no-repeat !important;\r\n}\r\n\r\n.container {\r\n    max-width: var(--ancho-pagina) !important;\r\n}\r\n\r\n.container h1, .container > h2 {\r\n    text-shadow: 0px 0px 5px rgba(0,0,0,var(--transparencia));\r\n}\r\n\r\nheader, .post, input[type=email], input[type=search], input[type=text], .notifications, .notifications-controls, .post-form-controls, .post-form > textarea {\r\n    background-color: rgba(0,0,0,var(--transparencia));\r\n    color: #fff;\r\n    backdrop-filter: blur(var(--desenfoque));\r\n    box-shadow:0 0 3px rgba(0,0,0,calc(var(--transparencia)*0.6));\r\n}\r\n\r\n.notifications, .notifications-controls, .post-form-controls {\r\n    padding: 10px 10px;\r\n}\r\n\r\n/*[[brd]]*/\r\n}",
   "discussions": [],
   "discussionsCount": 0,
   "commentsCount": 0,
@@ -55,30 +55,59 @@
       ]
     },
     {
-      "id": 469962,
+      "id": 469969,
       "style_id": 207453,
-      "install_key": "blur",
-      "label": "Desenfoque",
+      "install_key": "fw",
+      "label": "Ancho de los feeds",
       "ordinal": 3,
-      "setting_type": "dropdown",
+      "setting_type": "text",
       "style_setting_options": [
         {
-          "id": 1666479,
-          "style_setting_id": 469962,
-          "label": "Si",
-          "value": "backdrop-filter: blur(3px);",
-          "default": false,
-          "ordinal": 0,
-          "install_key": "blur1"
-        },
-        {
-          "id": 1666480,
-          "style_setting_id": 469962,
-          "label": "No",
-          "value": "",
+          "id": 1666491,
+          "style_setting_id": 469969,
+          "label": "placeholder",
+          "value": "800px",
           "default": true,
-          "ordinal": 1,
-          "install_key": "blur2"
+          "ordinal": 0,
+          "install_key": "placeholder"
+        }
+      ]
+    },
+    {
+      "id": 469966,
+      "style_id": 207453,
+      "install_key": "trns",
+      "label": "Nivel de transparencia (de 0 a 100)",
+      "ordinal": 5,
+      "setting_type": "text",
+      "style_setting_options": [
+        {
+          "id": 1666488,
+          "style_setting_id": 469966,
+          "label": "placeholder",
+          "value": "40",
+          "default": true,
+          "ordinal": 0,
+          "install_key": "placeholder"
+        }
+      ]
+    },
+    {
+      "id": 469967,
+      "style_id": 207453,
+      "install_key": "blur",
+      "label": "Nivel de desenfoque)",
+      "ordinal": 6,
+      "setting_type": "text",
+      "style_setting_options": [
+        {
+          "id": 1666489,
+          "style_setting_id": 469967,
+          "label": "placeholder",
+          "value": "3px",
+          "default": true,
+          "ordinal": 0,
+          "install_key": "placeholder"
         }
       ]
     },
@@ -87,7 +116,7 @@
       "style_id": 207453,
       "install_key": "brd",
       "label": "Bordes",
-      "ordinal": 4,
+      "ordinal": 7,
       "setting_type": "dropdown",
       "style_setting_options": [
         {

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Yutenji
 @description    `This is the draft version of ErogameScape's dark theme.(エロゲー批評空間のダークテーマの草案です。一部粗があったりしますが、ざっくりダークテーマで閲覧したい方向けです)`
-@version        20210703.3.7
+@version        20210705.17.56
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -404,4 +404,12 @@ div[style^='background-color: #fff0c0;'] {
 	background-color: #534933 !important;
 }
 	
+}
+
+@-moz-document regexp("https?\:\/\/erogamescape\.(dyndns\.)?org\/~ap2\/ero\/toukei_kaiseki\/contents_game\.php.*") {
+/* contents_game用 */
+
+input[type='text']:focus, input[type='number']:focus {
+	background-color: #01264f !important;
+}
 }

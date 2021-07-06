@@ -2,8 +2,8 @@
 @name           JMOCD V3 (Pokemon Showdown)
 @namespace      USO Archive
 @author         FireFern
-@description    `The latest and greatest of the stylesheets I've made for PS.Other Info:Background: https://www.deviantart.com/ishmam/art/Shiny-Mega-Rayquaza-Dragon-Pulse-578899492Some Battle Stuff Adapted From: https://33kk.github.io/uso-archive/?style=186996 (the swsh backgrounds are also from it)Weathers From: https://play.pokemonshowdown.com/fx/ (the gifs themselves are from some other styles though and I would mention them if I remembered them) and http://freestyler.ws/style/122539/pok-mon-showdown-oras-theme-bidoofscrazyvideos and https://33kk.github.io/uso-archive/?style=186996The "Grey Grid" background is from http://freestyler.ws/style/98094/dundealstylish-smoking-blackThe SPL  background is from http://play.pokemonshowdown.com/fx/The "Forest Lane" and SPL backgrounds look better when the top margin is set to -25px; go in and edit the CSS`
-@version        20210702.20.4
+@description    `The latest and greatest of the stylesheets I've made for PS.Other Info:Background: https://www.deviantart.com/ishmam/art/Shiny-Mega-Rayquaza-Dragon-Pulse-578899492Some Battle Stuff Adapted From: https://33kk.github.io/uso-archive/?style=186996 (the swsh backgrounds are also from it)Weathers From: https://play.pokemonshowdown.com/fx/ (the gifs themselves are from some other styles though and I would mention them if I remembered them) and http://freestyler.ws/style/122539/pok-mon-showdown-oras-theme-bidoofscrazyvideos and https://33kk.github.io/uso-archive/?style=186996The "Grey Grid" background is from http://freestyler.ws/style/98094/dundealstylish-smoking-blackThe SPL  background is from http://play.pokemonshowdown.com/fx/The "Forest Lane" and SPL backgrounds look better when the top margin is set to -25px`
+@version        20210705.23.32
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 @advanced color mainkey "Main Color" #FF0000
@@ -48,12 +48,19 @@ Mega-Ray-Dragon-Puls "Mega Ray Dragon Pulse*" <<<EOT https://i.imgur.com/ZEejdnm
 	mainbgkey-custom-dropdown "Custom" <<<EOT /*[[mainbgkey-custom]]*\/ EOT;
 }
 @advanced text mainbgkey-custom "MAIN BACKGROUND (Custom)" "https://example.com/image.png"
-@advanced dropdown iconkey "NAME ICON (go into the css itself to change the dimensions or get the saturation back to normal)" {
+@advanced dropdown iconkey "NAME ICON IMAGE" {
 Mega-Rayquaza "Mega Rayquaza*" <<<EOT https://i.imgur.com/L4kLhfF.png EOT;
 
 	iconkey-custom-dropdown "Custom" <<<EOT /*[[iconkey-custom]]*\/ EOT;
 }
-@advanced text iconkey-custom "NAME ICON (go into the css itself to change the dimensions or get the saturation back to normal) (Custom)" "https://example.com/image.png"
+@advanced text iconkey-custom "NAME ICON IMAGE (Custom)" "https://example.com/image.png"
+@advanced text nameiconwidthkey "Name Icon Width" "48px"
+@advanced text nameiconheightkey "Name Icon Height" "48px"
+@advanced dropdown nameiconsatukey "Name Icon Extra Saturation" {
+	Yes "Yes*" <<<EOT filter: saturate(2) EOT;
+No "No" <<<EOT  EOT;
+
+}
 @advanced dropdown turnkey "TURN MARKER" {
 	Normal "Normal*" <<<EOT .turn {
     background: transparent;
@@ -99,6 +106,11 @@ SPL-PURPLE "SPL-PURPLE" <<<EOT https://i.imgur.com/C1XeD2V.jpg EOT;
 	battlebgkey-custom-dropdown "Custom" <<<EOT /*[[battlebgkey-custom]]*\/ EOT;
 }
 @advanced text battlebgkey-custom "BATTLE BACKGROUND (you should go into the css itself to get more backgrounds to fit) (Custom)" "https://example.com/image.png"
+@advanced text battlebgwidthkey "Battle Background Width" "700px"
+@advanced text battlebgheightkey "Battle Background Height" "500px"
+@advanced text batbgmargintopkey "Battle Background Top Margin" "0px"
+@advanced text batbgmarginleftkey "Battle Background Left Margin" "0px"
+@advanced text fontkey "FONT (for some of the stuff)" "Verdana"
 @advanced dropdown trainerpositionkey "TRAINER POSITION" {
 	Normal "Normal*" <<<EOT  EOT;
 Top-And-Side "Top And Side" <<<EOT .rightbar {
@@ -167,7 +179,6 @@ Top-And-Side "Top And Side" <<<EOT .rightbar {
 } EOT;
 
 }
-@advanced text fontkey "FONT (for some of the stuff)" "Verdana"
 
 ==/UserStyle== */
 @-moz-document domain("play.pokemonshowdown.com"), domain("psim.us") {
@@ -689,13 +700,13 @@ i.fa.fa-user::before {
     content: "";
     background: url("/*[[iconkey]]*/"); /*change this url for a different image*/
     background-size: cover;
-    width: 48px; /*tweak these dimensions to fit different stuff*/
-    height: 48px;
+    width: /*[[nameiconwidthkey]]*/; /*tweak these dimensions to fit different stuff*/
+    height: /*[[nameiconheightkey]]*/;
     float: left;
     position: relative;
     top: -9px;
     left: 5px;
-    filter: saturate(2); /*delete this line if you dont want the extra saturation*/
+    /*[[nameiconsatukey]]*/
 }
 
 /********/
@@ -3284,10 +3295,10 @@ h2.battle-history + .spacer.battle-history {
 .backdrop {
     background: url("/*[[battlebgkey]]*/") !important;
     background-size: cover !important;
-    width: 700px; /*adjust these dimensions and the margins below to fit more backgrounds*/
-    height: 500px;
-    margin-top: 0px;
-    margin-left: 0px;
+    width: /*[[battlebgwidthkey]]*/; /*adjust these dimensions and the margins below to fit more backgrounds*/
+    height: /*[[battlebgheightkey]]*/;
+    margin-top: /*[[batbgmargintopkey]]*/;
+    margin-left: /*[[batbgmarginleftkey]]*/;
     opacity: 1 !important;
 }
 
