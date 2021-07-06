@@ -7,7 +7,7 @@
     "format": "uso",
     "category": "pokemonshowdown",
     "createdAt": "2021-05-22T20:13:01.000Z",
-    "updatedAt": "2021-07-05T23:32:55.000Z",
+    "updatedAt": "2021-07-06T00:50:11.000Z",
     "license": "CC-BY-NC-4.0",
     "author": {
       "id": 1119552,
@@ -16,8 +16,8 @@
   },
   "stats": {
     "installs": {
-      "total": 138,
-      "weekly": 25
+      "total": 144,
+      "weekly": 28
     }
   },
   "screenshots": {
@@ -400,7 +400,7 @@
       },
       {
         "key": "battlebgkey",
-        "label": "BATTLE BACKGROUND (you should go into the css itself to get more backgrounds to fit)",
+        "label": "BATTLE BACKGROUND",
         "type": "image",
         "options": [
           {

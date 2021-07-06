@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         YAD
 @description    `🛈 <i>still on development</i>🛈 <i>Set to dark theme if your using a dark background</i>This style let you customized both dark and light youtube theme. <b>HOW TO INSTALL AND CUSTOMIZE THIS STYLE?? </b> <a href="https://drive.google.com/file/d/1W7NjsavnL97rmxvREzH-GG0yhgwI0jCx/view?usp=sharing" target="_blank"> 👉<b>Using Stylish</b></a><a href="https://drive.google.com/file/d/1dBttKOWODflHQYJoATp__zEDTVp5usjX/view?usp=sharing" target="_blank"> 👉<b>Using Stylus</b></a>Features:Custom Layout ColorCustom Background Image and ColorCustom Font (woff, woff2 font file)Change Videos Per RowYou can add custom name or text next to your avatar<a href="https://www.paypal.com/donate?hosted_button_id=LT8MPNTJU66HL" target="_blank"><b>Support my work via PayPal 😉</b></a>`
-@version        20210702.17.53
+@version        20210706.8.22
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown yadbg "Background Image" {
@@ -36,8 +36,8 @@
 
 }
 @advanced dropdown ampoge "Videos Per Row" {
-	1 "Default*" <<<EOT 4 EOT;
-2 "5" <<<EOT 5 EOT;
+	2 "5*" <<<EOT 5 EOT;
+1 "Default" <<<EOT 4 EOT;
 3 "6" <<<EOT 6 EOT;
 4 "7" <<<EOT 7 EOT;
 5 "8" <<<EOT 8 EOT;
@@ -64,7 +64,7 @@
 
 }
 @advanced text yadfont "Custom Font URL" "https://example.com/font.woff2"
-@advanced text myname "Your Name" ""
+@advanced text myname "Your Name" " "
 
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
@@ -72,7 +72,7 @@
 /*
 𝖄𝖔𝖚𝖙𝖚𝖇𝖊 𝕸𝖞 𝕿𝖍𝖊𝖒𝖊+
 𝖇𝖞 𝓨𝓪𝓭
-030721p
+070621p
 */	
 	
 	html {
@@ -82,6 +82,7 @@
 	
 	body {
 		caret-color: /*[[mylink]]*/!important;
+		color: /*[[maintext]]*/
 } 
 	
 	#buttons.ytd-masthead:after {
@@ -91,6 +92,18 @@
 	padding-top: 2px;
 	color: /*[[sectext]]*/
 }
+	
+	#buttons.ytd-masthead:after {
+	animation: slide-top 0.5s 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-top {
+  0% {transform: translateY(-100px);}
+  99.9% {text-shadow: 0px 0px 6px /*[[mylink]]*/}
+}
+
+	
+	
 	
 	ytd-active-account-header-renderer {
     background-color: #21212100;
@@ -174,7 +187,7 @@
 	filter: invert(1) brightness(1) saturate(1%)
 }
 	[d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"] {
-	fill: #fff!important
+	fill: var(--yadfc2)
 }
 	ytd-checkbox-survey-option-renderer.ytd-inline-survey-renderer {
     --paper-checkbox-unchecked-color: #fff;
@@ -189,7 +202,7 @@
 	
 	/*brrrrr*/
 	html:not(.style-scope) {
-       --yt-spec-static-brand-red: /*[[yadtheme]]*/;
+       --yt-spec-static-brand-red: /*[[mylink]]*/;
 }
 	
 	
@@ -304,13 +317,28 @@
 	background-blend-mode: overlay!important;
 	box-shadow: 0 0 0px 1px /*[[mylink]]*/!important;
 	filter: drop-shadow( 0px 0px 9px /*[[mylink]]*/);
-	border-radius: 5px
+	border-radius: 5px;
+	text-shadow:  0px 1px 2px /*[[textshadow]]*/
 }
+	
+	/*movie title*/
+	
+	#wide-clickable-area.ytd-movie-offer-module-renderer {
+    background: var(--yadbg2)!important;
+	box-shadow: 0 0 0px 1px /*[[mylink]]*/!important;
+	border-radius: 0px 0px 5px 5px
+}  
+	#header.ytd-movie-offer-module-renderer {
+    background: var(--yadbg2)!important;
+	box-shadow: 0 0 0px 1px /*[[mylink]]*/!important;
+	border-radius: 5px 5px 0px 0px
+}  
+	
 	/*yt-tooltip-renderer*/
 	
 	
 	ytd-menu-popup-renderer,
-	#tooltip,
+	#tooltip.tp-yt-paper-tooltip,
 	tp-yt-paper-toast,
 	.ytp-ad-skip-button {
 	background-image: linear-gradient(200deg, var(--yadbg2)  0%, /*[[yadtheme]]*/ 100%);
@@ -327,8 +355,7 @@
     box-shadow: inset 0 0px 0px
 }
 	ytd-searchbox[has-focus] #container.ytd-searchbox {
-	box-shadow: 0px 0px 0px 1px /*[[yadtheme]]*/!important;
-	filter: drop-shadow( 0px 0px 9px /*[[yadtheme]]*/);
+	box-shadow: 0px 0px 0px 1px /*[[mylink]]*/!important;
 	border: 0px solid #0000
 }
 	.sbpqs_a,
@@ -426,6 +453,15 @@
 	border: 0px solid;
 	font-family: /*[[myfont]]*/
 }
+
+	yt-button-renderer.style-suggestive[is-paper-button] tp-yt-paper-button.yt-button-renderer
+	 {
+	color: #fff!important;
+	background: #0b0b0b66!important;
+	border: 0px solid;
+	box-shadow: 0 0 0px 1px /*[[yadtheme]]*/!important;
+	
+}
 	/*like*/
 	ytd-toggle-button-renderer.style-default-active[is-icon-button] {
     color: /*[[mylink]]*/
@@ -485,14 +521,18 @@
 	.b3-legal-message-content, .b3-info-message-list.b3-buyflow-extra-messages .b3-info-message-component.b3-info-message-unknown, .b3-info-message-component.b3-info-message-unknown.b3-buyflow-extra-messages .b3-info-message-html,
 	.b3-expanding-form-selector-option-content,
 	.b3-input.populated .b3-input-label, .b3-input.invalid .b3-input-label, .b3-input.autofilled .b3-input-label,
-	.b3-new-instrument-selector-component.has-header-icon .b3-expanding-form-selector-caption-content
+	.b3-new-instrument-selector-component.has-header-icon .b3-expanding-form-selector-caption-content,
+	.b3-input input[type="tel"], .b3-input input[type="text"], .b3-input input[type="password"], .b3-input input[type="email"],
+	.b3-input-field>.b3-input-label, .b3-input-field>.b3-input-label.accessible,
+	.popup-mode .b3-page-header, .b3-line-item.b3-line-item-hero .b3-line-item-subvalue, .b3-line-item.b3-line-item-hero .b3-line-item-value, .b3-line-item.b3-line-item-hero .b3-line-item-name
 	{
-	color: #fff!important;
+	color: /*[[maintext]]*/!important;
 }
 	.b3-line-item-infomessage, .b3-line-item-subvalue,
 	.b3-line-item-value,
-	.b3-expanding-form-selector-option.unselectable .b3-existing-instrument-option-label-without-image, .b3-expanding-form-selector-option.unselectable .b3-existing-instrument-option-warning-message, .b3-expanding-form-selector-option.unselectable .b3-existing-instrument-option-status-message, .b3-expanding-form-selector-option.unselectable .b3-additional-instrument-option-label, .b3-expanding-form-selector-option.unselectable .b3-additional-instrument-option-warning-message, .b3-expanding-form-selector-option.unselectable .b3-additional-instrument-option-status-message, .b3-expanding-form-selector-option.unselectable .b3-existing-instrument-option-additional-label {
-	color: #ffffff7a	
+	.b3-expanding-form-selector-option.unselectable .b3-existing-instrument-option-label-without-image, .b3-expanding-form-selector-option.unselectable .b3-existing-instrument-option-warning-message, .b3-expanding-form-selector-option.unselectable .b3-existing-instrument-option-status-message, .b3-expanding-form-selector-option.unselectable .b3-additional-instrument-option-label, .b3-expanding-form-selector-option.unselectable .b3-additional-instrument-option-warning-message, .b3-expanding-form-selector-option.unselectable .b3-additional-instrument-option-status-message, .b3-expanding-form-selector-option.unselectable .b3-existing-instrument-option-additional-label, 
+	.b3-line-item.b3-line-item-hero .b3-line-item-infomessage {
+	color: /*[[maintext]]*/7a	
 }
 	div#background-image-layer[style*="background-color: rgb(145, 222, 242);background-image: url"],
 	div#background-image-layer[style*="background-color: rgb(145, 227, 242); background-image: url"],
@@ -513,6 +553,15 @@
 	.b3-expanding-form-selector-option {
     border-bottom: 1px #fff3 solid!important;
 }
+	.b3-collapsing-form.focused .b3-collapsing-form-icon {
+	fill: /*[[mylink]]*/;
+	color: /*[[mylink]]*/
+}
+	.b3-buy-flow .b3-section.card .b3-separator, .b3-buy-flow .b3-section.ordered-list .b3-separator {
+    border-top-color: var(--yadfc1);
+}
+	
+	
 	/*membership bubble*/
 	yt-bubble-hint-renderer[style_=BUBBLE_HINT_STYLE_BLUE_TOOLTIP] {
     background-color: /*[[yadtheme]]*/;
@@ -572,10 +621,20 @@
 	.ytp-panel-menu {
 	color: var(--vidop)
 	}
+	
+	/*title*/
+	.title.ytd-video-primary-info-renderer {
+    text-shadow: 0px 1px 2px /*[[textshadow]]*/!important;
+}
+	/*bottom info*/
+	ytd-clarification-renderer[background-style=info] {
+    background-color: var(--yadbg2)
+}
+	
 	/*autoplay*/
 	.ytp-autonav-toggle-button[aria-checked=true]:after {
-    background-color: #1a1a1ac9;
-    box-shadow: 0px 0px 6px 2px /*[[mylink]]*/;
+    box-shadow: 0px 0px 5px 2px /*[[mylink]]*/;
+    background: url(https://) #fff
 }
 	
 	.ytp-ad-skip-button {
@@ -600,10 +659,12 @@
 100%{background-color: #fff; box-shadow: 0 0 7px 3px #ff00d4;}
 }
 	
-	/*channel suggestions and avatar on video end
+	/*
+	channel suggestions and avatar on video end
 	.ytp-ce-element.ytp-ce-element-show {
 	opacity: 1	
-}*/
+}
+	*/
 	/*video quality*/
 	.ytp-settings-button.ytp-hd-quality-badge:after,
 	.ytp-settings-button.ytp-4k-quality-badge:after, .ytp-settings-button.ytp-5k-quality-badge:after, .ytp-settings-button.ytp-8k-quality-badge:after {
@@ -617,6 +678,9 @@
 	button.ytp-button.ytp-panel-title {
     color: var(--vidop)!important;   
 }
+	.ytp-menuitem-label-count {
+    color: /*[[sectext]]*/
+}
 	/*channel card*/
 
 	.yt-ui-ellipsis {
@@ -625,6 +689,23 @@
 	.ytp-ce-channel-metadata, .iv-card h2 {
     color: #fff
 }
+	[dir=ltr] .ytp-menuitem[aria-haspopup=true] .ytp-menuitem-content {
+    background: var(--Aright) right 9px center no-repeat;
+	background-size: 32px 32px
+}
+	.ytp-menuitem[role=menuitemradio][aria-checked=true] .ytp-menuitem-label {
+    background: var(--Acheck) left 10px center no-repeat;
+	background-size: 18px 18px
+}
+	[dir=ltr] .ytp-panel-title {
+    background: var(--Aleft) left 3px center no-repeat;
+}
+	
+	
+	[d="M0 194.555V.675h191.961v193.88z"] {
+		fill: #fff!important
+	}
+	
 	
 	/*comment input*/
 	#placeholder-area.ytd-comment-simplebox-renderer,
@@ -701,7 +782,7 @@
 	/*live chat*/
 	yt-live-chat-ticker-renderer
 {
-    background-color: #1a1a1ac9!important;
+    background-color:  var(--yadbg2)!important;
 	box-shadow:  0px 0px 9px 1px /*[[yadtheme]]*/!important;
 }
 	yt-live-chat-renderer,
@@ -725,7 +806,8 @@
 	box-shadow:  0px 0px 9px 1px /*[[yadtheme]]*/!important;
 	border-radius: 15px
 }
-	yt-live-chat-message-input-renderer {
+	yt-live-chat-message-input-renderer,
+	#endpoint.yt-live-chat-product-button-renderer:hover {
     color: #fff!important;
     background-color: /*[[yadtheme]]*/1f;
 }
@@ -740,6 +822,11 @@
 {
 	color: #fff
 }
+	#content.yt-live-chat-paid-message-renderer, #header.yt-live-chat-paid-message-renderer, yt-live-chat-message-input-renderer, #message.yt-live-chat-viewer-engagement-message-renderer {
+	color: /*[[maintext]]*/!important
+}
+	
+	
 	#label.yt-live-chat-text-input-field-renderer {
     color: var(--yt-live-chat-text-input-field-placeholder-color, var(--yt-deprecated-luna-black-opacity-lighten-2));
 }
@@ -791,7 +878,8 @@
 	[d="M612-117v420L192 92.998 611.99-117h.01z"] {
 	fill: #0000
 }
-	.ytp-live-badge[disabled]:before {
+	.ytp-live-badge[disabled]:before,
+	yt-icon.yt-live-chat-ticker-renderer {
     background-color: /*[[mylink]]*/
 }
 	
@@ -843,13 +931,16 @@
 	#title.yt-share-target-renderer,
 	#title.ytd-add-to-playlist-renderer,
 	#label.ytd-playlist-add-to-option-renderer {
-	color: #fff	
+	color: /*[[maintext]]*/	
 }
 	#condensed-repost-content-text.ytd-shared-post-renderer {
     color: /*[[yadtheme]]*/;
 }
 	ytd-browse[page-subtype=channels] {
     background: var(--yadbg3);
+}
+	#content-attachment.ytd-post-renderer ytd-video-renderer.ytd-post-renderer {
+    background-color: #0000;
 }
 	
 	/*hoy kopya pa haha!*/
@@ -877,7 +968,7 @@
 	
 	yt-chip-cloud-chip-renderer[chip-style=STYLE_DEFAULT][selected], yt-chip-cloud-chip-renderer[chip-style=STYLE_HOME_FILTER][selected] {
     background: var(--yadbg2);
-    color: /*[[maintext]]*/;
+    color: /*[[mylink]]*/;
 	box-shadow: 0px 0px 0px 1px /*[[yadtheme]]*/;
 }
 	yt-chip-cloud-chip-renderer[chip-style=STYLE_DEFAULT], yt-chip-cloud-chip-renderer[chip-style=STYLE_HOME_FILTER], yt-chip-cloud-chip-renderer[chip-style=STYLE_REFRESH_TO_NOVEL_CHIP] {
@@ -887,22 +978,28 @@
 	
 	/*nav small*/
 #left-arrow-button.yt-chip-cloud-renderer, #right-arrow-button.yt-chip-cloud-renderer {
-    background: /*[[yadtheme]]*/;
-    box-shadow: 0px 0px 0px 1px /*[[yadtheme]]*/;
+    background: /*[[yadtheme]]*/df;
+    box-shadow: 0px 0px 0px 0px /*[[yadtheme]]*/;
 }
 yt-chip-cloud-renderer {
-    background-color: var(--yadbg2);
+    background-color: var(--yadbg);
     border-radius: 50px;
-    box-shadow: 0px 0px 0px 2px /*[[yadtheme]]*/;
+    box-shadow: 0px 0px 0px 0.5px /*[[yadtheme]]*/;
+	mix-blend-mode: var(--blend);
+	opacity: 1
 }
-	#left-arrow.yt-chip-cloud-renderer:after {
-    background: linear-gradient(to right, /*[[yadtheme]]*/ 10%, rgba(249, 249, 249, 0) 90%);
+	#left-arrow.yt-chip-cloud-renderer:after,
+	yt-chip-cloud-renderer[is-dark-theme] #left-arrow.yt-chip-cloud-renderer:after {
+    background: linear-gradient(to right, /*[[yadtheme]]*/df 10%, rgba(249, 249, 249, 0) 90%);
 }
-	#right-arrow.yt-chip-cloud-renderer:before {
-    background: linear-gradient(to left, /*[[yadtheme]]*/ 10%, rgba(249, 249, 249, 0) 90%);
+	#right-arrow.yt-chip-cloud-renderer:before,
+	yt-chip-cloud-renderer[is-dark-theme] #right-arrow.yt-chip-cloud-renderer:before {
+    background: linear-gradient(to left, /*[[yadtheme]]*/df 10%, rgba(249, 249, 249, 0) 90%);
 }
 	ytd-button-renderer.yt-chip-cloud-renderer  {
-	--yt-button-color: #fff
+	--yt-button-color: #ffffff7a;
+	transform: scale(1.6);
+	mix-blend-mode: overlay
 }	
 	
 	
@@ -917,6 +1014,15 @@ yt-chip-cloud-renderer {
 }
 	
 
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 	
 /*links*/
@@ -974,7 +1080,7 @@ ytd-toggle-button-renderer.style-default-active[is-paper-button] {
 
 [d*="M19,4H5A2.15,2.15,0,0,0,3,6V18a2.15,2."],
 [d*="M23,12a11,11,0,0,1-3.22,7.78l-1.41-1.41a9,9,0,0,0,0-12.73l1.41-1.41A11,11,0,0,1,23,12ZM5.64,5.64,4.22,4.22a11,"] {
-    fill: #fff
+    fill: /*[[maintext]]*/
 }
 
 
@@ -1065,16 +1171,22 @@ ytd-c4-tabbed-header-renderer {
 }
 	button.yt-icon-button:hover {
 		transform: scale(1.2);
-		transition: ease-in-out 
+		transition: ease-in-out
 	}
 
-html:not(.style-scope)[dark] {
+	html:not(.style-scope)[dark] {
+	--Aleft: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTAwJSIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgMzIgMzIiIHdpZHRoPSIxMDAlIj48cGF0aCBkPSJNIDE5LjQxLDIwLjA5IDE0LjgzLDE1LjUgMTkuNDEsMTAuOTEgMTgsOS41IGwgLTYsNiA2LDYgeiIgZmlsbD0iI2ZmZiIgLz48L3N2Zz4=");
+	--Acheck: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTAwJSIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIxMDAlIj48cGF0aCBkPSJNOSAxNi4yTDQuOCAxMmwtMS40IDEuNEw5IDE5IDIxIDdsLTEuNC0xLjRMOSAxNi4yeiIgZmlsbD0iI2ZmZiIgLz48L3N2Zz4=");
+	--Aright: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTAwJSIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgMzIgMzIiIHdpZHRoPSIxMDAlIj48cGF0aCBkPSJtIDEyLjU5LDIwLjM0IDQuNTgsLTQuNTkgLTQuNTgsLTQuNTkgMS40MSwtMS40MSA2LDYgLTYsNiB6IiBmaWxsPSIjZmZmIiAvPjwvc3ZnPg==");
+	--dragon: darken;
+	--yt-spec-call-to-action: /*[[mylink]]*/;
+	--blend: luminosity;
     --yadbg1: #ffffff7a;
     --yadbg2: #0000006e;
     --yadbg3: #00000036;
     --yadbg: url(/*[[yadbg]]*/) center center/cover no-repeat fixed;
     --yadfc: #000;
-    --yadfc2: #fff;
+    --yadfc2: #ffffffc9;
     --vidop: #fff!important;
     --yt-spec-text-primary: /*[[maintext]]*/!important;
     --ytd-video-primary-info-renderer-title-color: /*[[maintext]]*/;
@@ -1088,7 +1200,13 @@ html:not(.style-scope)[dark] {
     --yt-spec-brand-icon-inactive: /*[[mylink]]*/7f;
 }
 
-html:not(.style-scope) {
+    html:not(.style-scope) {
+	--Aleft: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTAwJSIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgMzIgMzIiIHdpZHRoPSIxMDAlIj48cGF0aCBkPSJNIDE5LjQxLDIwLjA5IDE0LjgzLDE1LjUgMTkuNDEsMTAuOTEgMTgsOS41IGwgLTYsNiA2LDYgeiIgZmlsbD0iIzAwMCIgLz48L3N2Zz4=");
+	--Acheck: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTAwJSIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIxMDAlIj48cGF0aCBkPSJNOSAxNi4yTDQuOCAxMmwtMS40IDEuNEw5IDE5IDIxIDdsLTEuNC0xLjRMOSAxNi4yeiIgZmlsbD0iIzAwMCIgLz48L3N2Zz4=");
+	--Aright: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTAwJSIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgMzIgMzIiIHdpZHRoPSIxMDAlIj48cGF0aCBkPSJtIDEyLjU5LDIwLjM0IDQuNTgsLTQuNTkgLTQuNTgsLTQuNTkgMS40MSwtMS40MSA2LDYgLTYsNiB6IiBmaWxsPSIjMDAwIiAvPjwvc3ZnPg==");
+	--dragon: darken;
+	--yt-spec-call-to-action: /*[[mylink]]*/;
+	--blend: multdiply;
     --yadbg1: #1a1a1ac9;
     --yadbg2: #ffffff7d;
     --yadbg3: #ffffff14;
@@ -1128,7 +1246,7 @@ html:not(.style-scope) {
 
 @font-face {
     font-family: Citizen Dick;
-    src: url('https://fonts.cdnfonts.com/s/10061/CITID___.woff')
+    src: url(https://fonts.cdnfonts.com/s/10061/CITID___.woff)
 }	
   
 /*********************************/		

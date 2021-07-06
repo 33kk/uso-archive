@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           YouTube-Lazy Black Cat progress bar theme
+@name           YouTube-Cute Black Cat progress bar theme
 @namespace      USO Archive
 @author         Kino Chan
-@description    `Destroy evil with laziness....-<a href="https://userstyles.org/styles/189297/youtube-rainbow-pacman-progress-bar-theme" target="_blank">Pacman progress bar theme</a>Pease report bugs to the discussion section below.`
-@version        20200919.6.42
+@description    `isn't a black cat cuter than a white cat? well.. I'm just kiddingif you also like cats, just download itwish you happy!!-<a href="https://userstyles.org/styles/189297/youtube-rainbow-pacman-progress-bar-theme" target="_blank">Pacman progress bar theme</a>`
+@version        20210706.1.25
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -42,7 +42,10 @@
     height: 13px !important;
 }
 .ytp-load-progress {
-background:url('data:image/gif;base64,R0lGODlhDwAPAHAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQADAAAACwAAAAADwAPAIEAAABMAGb///8AAAACI4SPqct94aKcDiKBMbIm+6UBQjcmYRle3qesWsAdWgi3YwoUACH5BAAMAAAALAAAAAAPAA8AgQAAAEwAZv///wAAAAIjhI+pyx2BhJRt2kWBMDluzX2eNWHk9ihUZ2piA8cIJAN0UwAAIfkEAAwAAAAsAAAAAA8ADwCBAAAA////TABmAAAAAiKEH5nHpt9ccDIuMHEQgr3PNd8SitMVVWjKMl3rwvJM13IBACH5BAAMAAAALAAAAAAPAA8AgQAAAEwAZv///wAAAAIdhCOpGmHglnrUJHArvVl773ziSJZVWDbmuqrsWgAAOw==')!important;
+background:#006f64d4!important;
+        -webkit-background:#006f64d4!important;
+        -moz-background:#006f64d4!important;
+        -ms-background:#006f64d4!important;
     height:12px !important;padding:0px;
 }
 .ytp-scrubber-button {

@@ -2,8 +2,8 @@
 @name           CSDN BLOG PRETTIFY(CSDN博客页美化)
 @namespace      USO Archive
 @author         ousc
-@description    `去广告。固定半透明式标题，悬停显示菜单。文章内容占全屏，需要看相关信息悬停即可。7.19更新 修复bug8.9更新 修复页头跳动bug9.4更新 长博客自动展开、优化动画效果、去广告9.22解决bug，优化页面9.26更新优化样式，去除更多的广告，评论区自动展开2020.4.28 回来重写并优化了一下样式2020.9.28 优化样式和动画效果，去除广告，免登陆看文章和评论区内容`
-@version        20200928.9.58
+@description    `去广告。固定半透明式标题，悬停显示菜单。文章内容占全屏，需要看相关信息悬停即可。7.19更新 修复bug8.9更新 修复页头跳动bug9.4更新 长博客自动展开、优化动画效果、去广告9.22解决bug，优化页面9.26更新优化样式，去除更多的广告，评论区自动展开2020.4.28 回来重写并优化了一下样式2020.9.28 优化样式和动画效果，去除广告，免登陆看文章和评论区内容2021.07.06 优化样式`
+@version        20210706.6.10
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -24,7 +24,7 @@ body {
 #mainBox {
     padding: 0!important;
 }
-.jump_article {
+.jump_article,.toolbar-advert,.csdn-redpack-lottery-btn-box {
     display: none!important
 }
 .bdshare-button-style0-16 {
@@ -33,7 +33,7 @@ body {
 #article_content {
     height: auto!important
 }
-.hide-article-box {
+.hidearticle-box {
     display: none
 }
 #adContent {
@@ -86,8 +86,9 @@ aside:hover {
     display:block;
     position:fixed;
     opacity:1;    
-    width:550px!important;
-    height:500px!important;
+	min-width: 550px;
+    width:50vw!important;
+	height: calc(100vh - 100px)!important;
     left:40px;
     top:60px;
 }
@@ -119,11 +120,13 @@ td:hover{
 	cursor:pointer;
 	padding:20px!important;
 }
+.aside-box{
+	width: 100%!important;
+}
 .aside-box:hover,.aside-box:active,.aside-box:focus{
-	margin-left:2px;
-	width:100%;
-	padding-top:-1px;
-	padding-bottom:-1px;
+	width: calc(100% + 2px)!important;
+	margin-left: -1px;
+	border-radius: 4px;
     border:1px solid rgba(255,0,0,.5);
 }
 *{

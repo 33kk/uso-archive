@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         FireFern
 @description    `The latest and greatest of the stylesheets I've made for PS.Other Info:Background: https://www.deviantart.com/ishmam/art/Shiny-Mega-Rayquaza-Dragon-Pulse-578899492Some Battle Stuff Adapted From: https://33kk.github.io/uso-archive/?style=186996 (the swsh backgrounds are also from it)Weathers From: https://play.pokemonshowdown.com/fx/ (the gifs themselves are from some other styles though and I would mention them if I remembered them) and http://freestyler.ws/style/122539/pok-mon-showdown-oras-theme-bidoofscrazyvideos and https://33kk.github.io/uso-archive/?style=186996The "Grey Grid" background is from http://freestyler.ws/style/98094/dundealstylish-smoking-blackThe SPL  background is from http://play.pokemonshowdown.com/fx/The "Forest Lane" and SPL backgrounds look better when the top margin is set to -25px`
-@version        20210705.23.32
+@version        20210706.0.50
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 @advanced color mainkey "Main Color" #FF0000
@@ -91,7 +91,7 @@ VS "VS" <<<EOT .turn {
 } EOT;
 
 }
-@advanced dropdown battlebgkey "BATTLE BACKGROUND (you should go into the css itself to get more backgrounds to fit)" {
+@advanced dropdown battlebgkey "BATTLE BACKGROUND" {
 Swsh-Gym "Swsh Gym*" <<<EOT https://pkmn.pro/resources/bgs/swsh2/rotate.php EOT;
 Other-Swsh-BGs "Other Swsh BGs" <<<EOT https://pkmn.pro/resources/bgs/swsh/rotate.php EOT;
 Forest-Lane "Forest Lane (idk where this is from)" <<<EOT https://i.imgur.com/VQZQbew.png EOT;
@@ -105,7 +105,7 @@ SPL-PURPLE "SPL-PURPLE" <<<EOT https://i.imgur.com/C1XeD2V.jpg EOT;
 
 	battlebgkey-custom-dropdown "Custom" <<<EOT /*[[battlebgkey-custom]]*\/ EOT;
 }
-@advanced text battlebgkey-custom "BATTLE BACKGROUND (you should go into the css itself to get more backgrounds to fit) (Custom)" "https://example.com/image.png"
+@advanced text battlebgkey-custom "BATTLE BACKGROUND (Custom)" "https://example.com/image.png"
 @advanced text battlebgwidthkey "Battle Background Width" "700px"
 @advanced text battlebgheightkey "Battle Background Height" "500px"
 @advanced text batbgmargintopkey "Battle Background Top Margin" "0px"

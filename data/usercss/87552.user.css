@@ -3,11 +3,11 @@
 @namespace      USO Archive
 @author         deobuleo
 @description    `HanGyeoRe NewsPaper, korea,Black, Dark,한겨레 신문,어둡게 보기,광고 희미하게 보이기,`
-@version        20180419.13.9
+@version        20210706.1.28
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
-@-moz-document url-prefix("http://hani.co.kr"), url-prefix("http://www.hani.co.kr"), url-prefix("http://hani.com"), url-prefix("http://www.hani.com") {
+@-moz-document domain("hani.co.kr"), domain("hani.com") {
 
 * {
     background-color: #000 !important;
@@ -74,6 +74,84 @@ a:hover span {
     opacity: 0.2;
     filter: alpha(opacity=20);
     -moz-opacity: 0.20;
+}
+
+  
+  /*
+
+hani.co.kr - no back img
+
+2021-05-04 21:03:37
+
+*/
+
+#main-top ,
+#section-all .section-arae .section-article-area ,
+no_tag {
+/*     background: url(//img.hani.co.kr/section-image/15/hani/images/main/main_topcon_bg.gif) repeat-y top right; */
+/* background: url(//img.hani.co.kr/section-image/15/hani/images/main/main_section_bg.gif) repeat-y left top; */
+    background-image: none;
+}
+
+
+#contents-main .main-top .main-top-area {
+/*     background-image: url(https://img.hani.co.kr/section-image/15/hani/images/v2/bg_main_juyo.png); */
+/*     background-color: initial; */
+    background-image: initial;
+/*     background-color: #000; */
+}
+  
+
+/*
+dark 21 - scroll
+
+2021-05-04 20:30:39
+
+*/
+
+		/* width */
+::-webkit-scrollbar {
+			width: 16px;
+		}
+
+		/* Track */
+::-webkit-scrollbar-track {
+			background: #111;
+		}
+
+		/* Handle */
+::-webkit-scrollbar-thumb {
+/* 			background: #333; */
+			background: #484848 !important;
+		}
+
+		/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+/* 			background: #300; */
+			background: #500000 !important;
+		}
+
+::-webkit-resizer {
+    background-color: #666;
+}
+/* width */
+::-webkit-scrollbar {
+    /* width: 15px; */
+    background-color: red;
+  }
+  
+::-webkit-scrollbar-button {
+    background-color: #444;
+}
+
+::-webkit-scrollbar-corner {
+/*     background-color: #0FF; */
+    background-color: #000;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: #FF0;
+    background-color: #222;
 }
 
 }

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         YAD
 @description    `Actually this style will bring your TikTok not just to darkmode, but to any color mode you want, plus the feature to add a custom background image!<b>HOW TO INSTALL AND CUSTOMIZE THIS STYLE?? </b> <a href="https://drive.google.com/file/d/1wxWYovNKfu8GsMkudNcReyaxUWDMX0bU/view?usp=sharing" target="_blank">👉<b>Using Stylus Beta</b></a><a href="https://www.paypal.com/donate?hosted_button_id=LT8MPNTJU66HL" target="_blank"><b>DONATE VIA PAYPAL</b></a>`
-@version        20210627.18.42
+@version        20210706.4.4
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown yadbg "Background Image" {
@@ -433,9 +433,13 @@
     color: #ffffffb5!important;
   }
 	/*active live video page*/
-  .video-feed-tab > p
+  .video-feed-tab > p,
+  .coin-container
   {
     color: #ffffff80!important
+  }
+	.gift-item {
+    color: #fff!important
   }
 
   [d*="M9 9.31286V27.0626C9.98685 26.7378"]
@@ -2681,7 +2685,7 @@ div.live-player-bg {
 }
 	
 	
-/*022821a
+/*070621p
 
 ██╗░░░██╗░█████╗░██████╗░  ██████╗░░█████╗░██████╗░░░███╗░░
 ╚██╗░██╔╝██╔══██╗██╔══██╗  ╚════██╗██╔══██╗╚════██╗░████║░░
