@@ -3,15 +3,15 @@
 @namespace      USO Archive
 @author         A_Anthony_y
 @description    `Based off of the Roblox in 2016 style but I partially fixed the robux icon so it doesn't show the red "X" anymore.Check the GitHub Repo for fixes and more recent updates!https://github.com/anthony1x6000/ROBLOX2016stylusAlso just incase userstyles goes under.Create an issue on the GitHub page if there are any problems (e.g broken icons).Most and pretty much all code from Ologist`
-@version        20210626.2.31
+@version        20210707.0.30
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
 /* i really want this to be global */
 /* Hey! if you're seeing this check out the github repository for this! Just incase the userstyles goes under and to get early access because userstyles is really REALLY slow.
 https://github.com/anthony1x6000/ROBLOX2016stylus
-It'll be under "maintheme.css" or another .css file! But will 100% be under releases. 
-
+It'll be under "stylustheme.css" or another .css file! But will 100% be under releases. 
+Wayback ROBLOX games page: https://web.archive.org/web/20160916190637/https://www.roblox.com/games/?SortFilter=default&TimeFilter=0&GenreFilter=1
 Credit to Ologist for originally making this incredible userstyle theme!
 */
 
@@ -40,7 +40,8 @@ body
     background-color: #ffffff;
 }
 .light-theme .scroller.disabled {
-    background-color: #ffffff;
+    background-color: #f0f1f0;
+	opacity: 1;
 }
 
 /* at some point figure out how to do a custom font. 
@@ -48,9 +49,7 @@ Look here:
 https://web.archive.org/web/20160724012820cs_/https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,500,600,700
 */ 
 
-.light-theme .rbx-header .text-header, .light-theme .rbx-header .text-header:active, .light-theme .rbx-header .text-header:focus, .light-theme .rbx-header .text-header:hover, .light-theme .rbx-header .text-header:link, .light-theme .rbx-header .text-header:visited {
-    color: #ffffff;
-}
+
 .gotham-font.light-theme .refresh-link, .gotham-font.light-theme .refresh-link-icon, .gotham-font.light-theme .refresh-link-icon:active, .gotham-font.light-theme .refresh-link-icon:hover, .gotham-font.light-theme .refresh-link-icon:link, .gotham-font.light-theme .refresh-link-icon:visited, .gotham-font.light-theme .refresh-link:active, .gotham-font.light-theme .refresh-link:hover, .gotham-font.light-theme .refresh-link:link, .gotham-font.light-theme .refresh-link:visited, .gotham-font.light-theme .see-all-link, .gotham-font.light-theme .see-all-link-icon, .gotham-font.light-theme .see-all-link-icon:active, .gotham-font.light-theme .see-all-link-icon:hover, .gotham-font.light-theme .see-all-link-icon:link, .gotham-font.light-theme .see-all-link-icon:visited, .gotham-font.light-theme .see-all-link:active, .gotham-font.light-theme .see-all-link:hover, .gotham-font.light-theme .see-all-link:link, .gotham-font.light-theme .see-all-link:visited, .gotham-font.light-theme .touch .refresh-link, .gotham-font.light-theme .touch .refresh-link-icon, .gotham-font.light-theme .touch .refresh-link-icon:active, .gotham-font.light-theme .touch .refresh-link-icon:hover, .gotham-font.light-theme .touch .refresh-link-icon:link, .gotham-font.light-theme .touch .refresh-link-icon:visited, .gotham-font.light-theme .touch .refresh-link:active, .gotham-font.light-theme .touch .refresh-link:hover, .gotham-font.light-theme .touch .refresh-link:link, .gotham-font.light-theme .touch .refresh-link:visited, .gotham-font.light-theme .touch .see-all-link, .gotham-font.light-theme .touch .see-all-link-icon, .gotham-font.light-theme .touch .see-all-link-icon:active, .gotham-font.light-theme .touch .see-all-link-icon:hover, .gotham-font.light-theme .touch .see-all-link-icon:link, .gotham-font.light-theme .touch .see-all-link-icon:visited, .gotham-font.light-theme .touch .see-all-link:active, .gotham-font.light-theme .touch .see-all-link:hover, .gotham-font.light-theme .touch .see-all-link:link, .gotham-font.light-theme .touch .see-all-link:visited {
     color: #00a2ff;
     background-color: rgba(255, 0, 0, 0);
@@ -346,13 +345,6 @@ background-color: #3FC679;
     
 }
 
-
-
-
-
-
-
-
 /*Premium Medium (OBC)*/
 .profile-header .header-title h2, .profile-header .header-title span[class^="icon"] {
     float: right;
@@ -463,8 +455,8 @@ background-color: #3FC679;
 .gotham-font.light-theme .see-all-link-icon {
     padding: 1px 4px;
     font-size: 14px !important;
-    font-weight: thin !important;
-    width: 100px;
+    font-weight: normal !important;
+    min-width: 100px; 
 }
 
 .see-all-link-icon:hover, .touch .see-all-link-icon:hover {
@@ -686,12 +678,6 @@ padding: 4px 4px !important;
     border-color: #fff;
 }
 
-
-/* 
-.gotham-font.light-theme .refresh-link-icon {
-} */ 
-
-
 .light-theme .item-card-container .item-card-price {
     bottom: auto !important;
 }
@@ -759,7 +745,7 @@ a:hover {
 
 
 .light-theme .btn-secondary-md, .light-theme .btn-secondary-md:visited {
-    color: #ffffff !important;
+    color: #fff;
 }
 
 
@@ -889,8 +875,6 @@ color: #ffffff !important;
     border-bottom-color: #ffffff;
 }
 
-.light-theme .notification-stream-header {
-}
 
 
 .notification-action-container {
@@ -970,8 +954,6 @@ border-top: hidden;
 }
 
 /* Play button changes */
-/* The first time im creating any sort of new code */
-/* removed ramblings */
 
 .icon-common-play:after {
     visibility: visible;
@@ -1025,26 +1007,42 @@ I think this works
     background-color: rgba(25,25,25,0.3);
     border: 2px solid #fff;
     border-color: #fff;
-}
 
-.icon-carousel-left {    
-    background-position-x: 0px;
-    background-position-y: -857px;
     
 }
+
+
 
 .carousel-controls.carousel-controls-right.btn-primary-md.btn-min-width {
     background-color: rgba(25,25,25,0.3);
     border: 2px solid #fff;
     border-color: #fff;
+
 }
 
-.icon-carousel-right {    
+.icon-additem, .icon-arrow-right-blue, .icon-audio, .icon-back, .icon-bigplay, .icon-bigplay-fill, .icon-bigstop, .icon-bigstop-fill, .icon-brokenpage, .icon-carousel-left, .icon-carousel-right, .icon-chat-gray, .icon-check-selection, .icon-checkmark, .icon-checkmark-blue, .icon-checkmark-on, .icon-checkmark-white, .icon-checkmark-white-bold, .icon-clock, .icon-close, .icon-close-white, .icon-copy, .icon-default-generic, .icon-down, .icon-edit, .icon-female, .icon-female-white, .icon-first-gray, .icon-first-page, .icon-games-carousel-left, .icon-games-carousel-left.hover, .icon-games-carousel-right, .icon-games-carousel-right.hover, .icon-globe, .icon-grid, .icon-home, .icon-inactive, .icon-last-gray, .icon-last-page, .icon-left, .icon-left-gray, .icon-locked, .icon-logo-apple, .icon-logo-win, .icon-male, .icon-male-white, .icon-menu, .icon-menu-black, .icon-minus, .icon-more, .icon-more-gray-vertical, .icon-moreinfo, .icon-next, .icon-notifications, .icon-page, .icon-password-hide, .icon-password-hide-white, .icon-password-show, .icon-password-show-white, .icon-pastname, .icon-pause, .icon-pause-fill, .icon-play, .icon-playgame, .icon-plus, .icon-regenerate, .icon-right, .icon-right-gray, .icon-sandglass, .icon-search, .icon-settings, .icon-slideshow, .icon-sorting, .icon-trash-bin, .icon-unlocked, .icon-up, .icon-viewdetails {
+    background-size: auto;
+}
+
+
+
+/* .icon-carousel-right {    
     background-position-x: 0px;
     background-position-y: -831px;
     
 }
+.icon-carousel-left {    
+    background-position-x: 0px;
+    background-position-y: -857px;
+    
+} */
 
+.icon-carousel-right {
+    background-position: 0 -896px;
+}
+.icon-carousel-left {
+    background-position: 0 -924px;
+}
 
 .carousel-controls.carousel-controls-right.btn-primary-md.btn-min-width {
     background-color: rgba(25,25,25,0.3);
@@ -1091,7 +1089,7 @@ text-decoration: none !important;
 padding: 4px 4px !important;
 }
 
-/* .light-theme .btn-primary-md:focus, .light-theme .btn-primary-md:hover, .light-theme .btn-primary-md[disabled] */ 
+
     
 
 
@@ -1104,7 +1102,7 @@ padding: 4px 4px !important;
 } */ 
 
 
-/* this would freak a lot more people out if this wasnt open source... probably */ 
+/* random thing I did to the ad */
 .ad {
     background-image: url("https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/images/eseg.jpg?raw=true");
     background-repeat: repeat;
@@ -1172,9 +1170,8 @@ ul.nav:nth-child(2) > li:nth-child(4) > a:nth-child(1)
 /* making the gray highlight thing smaller */
 
 .light-theme .rbx-header .text-header, .light-theme .rbx-header .text-header:active, .light-theme .rbx-header .text-header:focus, .light-theme .rbx-header .text-header:hover, .light-theme .rbx-header .text-header:link, .light-theme .rbx-header .text-header:visited {
-    height: 85%;
-    
-    
+    height: 90%;
+    color: #ffffff;
 }
 
 
@@ -1448,10 +1445,8 @@ background-color: #44b4f8;
 
 
 .game-card-link {
-    position: relative;
-    height: 240px !important;
-    border-radius: 3px;
-    
+    height: 100%;
+    border-radius: 3px; 
 }
 
 /* fixing the game tiles to be the old ones | GAME PAGE CARD FIX */
@@ -1476,16 +1471,22 @@ background-color: #44b4f8;
     box-shadow: 0 1px 6px 0 rgb(25 25 25 / 0.75);
 }
 .dark-theme .game-card-container, .light-theme .game-card-container {
-    box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.30);
+    box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.60);
 }
-
+.dark-theme .game-card-container, .light-theme .game-card-container:hover {
+    box-shadow: 0 1px 6px 0 rgb(25 25 25 / 0.75);
+}
 .hover-game-tile .featured-game-container .featured-game-icon-container .brief-game-icon {
     height: 150px;
     width: 150px;
-    border-radius: 8px;
-    transition: all .05s cubic-bezier(0,0,0,1);
+    border-top-left-radius: 3px !important;
+    border-top-right-radius: 3px !important;
+    transition: all .0s cubic-bezier(0,0,0,1) !important;
 }
-
+.hover-game-tile .featured-game-container{transition: all 0s cubic-bezier(0,0,0,1) !important;}
+.game-card-container {
+    margin-left: 11px;
+}
 .light-theme .game-card-container .game-card-name {
     padding: 0 6px;
     margin: 6px 0;
@@ -1516,6 +1517,9 @@ background-color: #44b4f8;
     margin-left: 0px !important;
     margin-right: 14px !important;
 }
+.list-item.hover-game-tile.first-tile.visible-tile {
+    margin-left: 11px !important;
+}
 .game-card-native-ad {
     position: relative; 
     overflow: hidden;
@@ -1535,6 +1539,8 @@ background-color: #44b4f8;
     
 }
 
+
+
 /* point of 100% removing the new game cards */
 .list-item.hover-game-tile.visible-tile {
     width: 150px;
@@ -1553,30 +1559,71 @@ background-color: #44b4f8;
     margin-left: 0px !important;
     
 }
-/* END OF GAME CARD FIXING STUFF */
 
+/* Stuff for my browser that hopefully won't mess something up */ 
+
+.grid-item-container.game-card-container {
+    width: 150px;
+} /* cant seem to close the gap between the game cards 
+https://i.ibb.co/NVQQkd6/image.png
+Got any ideas? (I tried margin-... w/ !important and it didnt work)
+*/
+.game-grid {
+    margin-right: 78px;
+} /* This did fix it (vertically) but I don't know if breaks anything */ 
+
+/* END OF GAME CARD FIXING STUFF */
 
 /* changing the game slidey thing arrow things */ 
 .arrow, .scroller.prev.disabled, .scroller.next, .scroller.next.disabled, .scroller.prev {
     height: 242px;   
+
 }
+
 
 /* game cover thing fixing gaps */ 
 .horizontal-scroller .scroller.next .spacer {
     left: 29px;
-    height: 110%;
+    height: 115%;
     bottom: -5px;
     background-color: #e3e3e3;
 }
+
 .horizontal-scroller .scroller.prev .spacer {
     right: 29px;
-    height: 110%;
+    height: 115%;
     background-color: #e3e3e3;
     top: -10px;
 }
 
-
-
+.spacer {
+    z-index: 0 !important;
+}
+.scroller.prev, .scroller.next {
+    height: 91% !important;
+    top: -3px;
+}
+.icon-games-carousel-right {
+    margin-right: 3px;
+}
+.scroller.next .arrow {
+    z-index: 2 !important;
+    left: 1px;
+    box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.30);
+}
+.scroller.prev .arrow {
+    z-index: 2 !important;
+    left: 1px;
+    box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.30);
+}
+.arrow:hover {
+    z-index: 5;
+    cursor: pointer;
+    box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.6) !important;
+}
+.light-theme .scroller .icon-games-carousel-right {
+    margin-left: -7px;
+}
 
 .col-xs-12.home-header .avatar.avatar-headshot-lg .avatar-card-image, .col-xs-12.home-header .avatar.avatar-headshot-lg .avatar-card-image:hover {
 box-shadow: none !important;
@@ -1991,7 +2038,7 @@ position: absolute;
 {
     background-color: #fff;
     border: 1px solid #B8B8B8;
-    color: #fff;
+    color: rgba(0,0,0,.6);
     border-radius: 3px
 }
 .light-theme .btn-control-xs:hover {
@@ -2275,7 +2322,7 @@ background-color: #fff;
 {
     background-color: #3fc679;
     border: 1px solid #3fc679;
-    box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.30)
+    box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.30);
 }
 
 .light-theme .dialogs .dialog-container.active .dialog-header
@@ -2591,15 +2638,11 @@ div[style="col-sm-6 slide-item-container-left"]
     top: 2.5px;
 }
 
-.scroller.next:hover, .scroller.prev:hover {
-    cursor: pointer;
-    box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.3)
-        
-}
+
 
 
 .game-card-container {
-    height: 99%;
+    height: 240px;
 }
 
 /* this doesnt really work (outside of the games page and the home page)
@@ -2609,9 +2652,8 @@ div[style="col-sm-6 slide-item-container-left"]
 } */
 
 .game-tile:hover .game-card-container {
-    height: 99%;
+    height: 240px;
     box-shadow: 0 1px 6px 0 rgb(25 25 25 / 0.9);
-    
 }
 
 /* 
@@ -2836,10 +2878,8 @@ https://i.ibb.co/VtZQ0KP/image.png    */
     
 }
 
-/* Catalog bottom items recommended */ 
-.light-theme .item-card {
-    height: 235px;
-}
+
+
 
 /* notification top */ 
 
@@ -2876,3 +2916,57 @@ https://i.ibb.co/VtZQ0KP/image.png    */
 
 /* roblox powering imagination chat & party */ 
 .light-theme .icon-default-logo-tagline, .light-theme .icon-logo-tagline {visibility: hidden;}
+
+/* Buy premium page */ 
+.premium-landing-page .premium-title-section .get-premium-button {
+    color: #fff;    
+}
+.premium-landing-page .premium-title-section .get-premium-button:hover {
+    background-color: #00bf5a;
+    border-color: #00bf5a;
+}
+
+div.icon-robux-medium-desktop {
+    background-image: url("https://raw.githubusercontent.com/anthony1x6000/ROBLOX2016stylus/dbaa476c9543275afa24e1ebe97a5d05984b8663/images/4302021_archive/757f696cbfd2d8fcde61d219cead6a2c-branded_04182018.svg");
+    background-size: 330px;
+    background-position: 0px -665px;
+}
+.robux-package-name, .font-header-2.text-disabled{
+    position: relative;
+    top: 30px;
+}
+
+.icon-premium-120x120{
+    background-image: url("https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/images/oldbchardhat.png?raw=true");
+    background-size: 110%;
+}
+
+/* catalog changes  */ 
+
+.list-item.item-card.ng-scope {
+    margin-bottom: 5px;
+    width: auto;
+}
+.container-main .catalog-full-screen .catalog-results .item-cards-stackable .item-card, .container-main .splash.catalog-full-screen .catalog-results .item-cards-stackable .item-card {
+    width: auto;
+}
+
+button.btn-control-md.view-all{
+    width: 95%;
+}
+.catalog-container .search-container .input-group .search-input {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    left: 1px;
+}
+.icon-search{
+    position: relative;
+    left: 2px;
+}
+/* recommended catalog */ 
+.list-item.item-card.recommended-item.ng-scope{
+    height: 250px;
+}
+recommendations > div > div > div > div > ul > li > div > a > div.item-card-name.recommended-name > span.ng-binding, div > div > div > recommendations.ng-isolate-scope > div > div > div > div > ul > li > div > div {
+    margin-left: 6px;
+}

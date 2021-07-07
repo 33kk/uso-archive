@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         grr
 @description    `This is an add-on for <a href="https://userstyles.org/styles/150521">Simple Dark Theme for Flight Rising</a>. It mainly focuses on workarounds for FireFox, minor bug fixes, and includes optional changes such as even darker dragon cards, scenes compatibility, larger buttons for modals, etc. <a href="https://imgur.com/a/9GfxkpL" target="_blank">Screenshot album</a>. <b>Note: If you want to be able to view scenes, you will have to remove some code from the main style (see additional info).</b>`
-@version        20210629.21.7
+@version        20210707.7.46
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown bugged "bugged dropdown lol" {
@@ -350,12 +350,12 @@ hoardvault1 "Enable" <<<EOT /* less bright selected items *\/
     border-color: #00f1ff;
 }
 /* less bright favorite items *\/
-.hoard-result-item-box[data-favorite="1"] {
+.hoard-result-item-box[data-favorite="1"], .game-database-item-result[data-favorite="true"] {
     background: linear-gradient(to bottom, #86d2cb 0%, #b75db7 100%);
     border-color: #5a489b;
 }
 /* darker bg for hoard/vault items & settings *\/
-.hoard-result-item-box, .settings-hub-category {
+.hoard-result-item-box, .settings-hub-category, .game-database-item-result, .game-database-monster-result {
     background: #364650;
     background: linear-gradient(to bottom, #3a4450 0%, #17222d 100%);
     border: 2px solid #546d86;
@@ -967,8 +967,23 @@ div#dialog.ui-dialog-content.ui-widget-content div[style*="background-color:#ded
 }
 }
 
-@-moz-document url-prefix("https://www1.flightrising.com/hoard"), url-prefix("https://www1.flightrising.com/vault") {
-/*hoard/vault stuff*/
+@-moz-document url-prefix("https://www1.flightrising.com/hoard"), url-prefix("https://www1.flightrising.com/vault"), url-prefix("https://www1.flightrising.com/game-database") {
+/*hoard/vault/gamedb stuff*/
+
+/*game db favorite item fix*/   
+.game-database-item-result[data-favorite="true"]::before {
+    background: url(https://i.imgur.com/3ULJWj2.png);
+    background-size: cover;
+    bottom: 0px;
+    right: 0px;
+}
+.game-database-item-result[data-favorite="true"] {
+    background: linear-gradient(to bottom, #73fbeb 0%, #d15de3 100%);
+    border-color: #fff;
+}
+.game-database-item-result[data-favorite="true"] .game-database-item-result-name {
+    color: #000 !important;
+}
 
 /*[[hoardvault]]*/
 

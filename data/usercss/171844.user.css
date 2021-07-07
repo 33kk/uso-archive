@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         D.D.D.
 @description    `Aims to make Fandom.com wikis cleaner on desktop.`
-@version        20210701.23.32
+@version        20210707.7.22
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -65,4 +65,5 @@ nav#articleCategories {border-style:solid;border-color:#444444;border-width:1px;
 div.page-header {border-bottom-style:solid;border-bottom-width:1px;border-bottom-color:#666666;color:#666666;}
 div#toc ul {background-color:#eeeeee;}
 div#toc div.toctitle {background-color:#ddeeff;}
+div.wds-tabber div.wds-is-current > div[style] {margin-bottom:0em!important;}
 }
