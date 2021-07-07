@@ -1,0 +1,39 @@
+{
+  "id": 207577,
+  "info": {
+    "name": "Ganyu & keqing roblox",
+    "description": "yaaa",
+    "additionalInfo": null,
+    "format": "uso",
+    "category": "roblox",
+    "createdAt": "2021-07-06T14:12:41.000Z",
+    "updatedAt": "2021-07-06T14:12:41.000Z",
+    "license": "NO-REDISTRIBUTION",
+    "author": {
+      "id": 1204133,
+      "name": "Lidia Ozga"
+    }
+  },
+  "stats": {
+    "installs": {
+      "total": 0,
+      "weekly": 0
+    }
+  },
+  "screenshots": {
+    "main": {
+      "name": "207577_after.jpeg",
+      "archived": true
+    }
+  },
+  "discussions": {
+    "stats": {
+      "discussionsCount": 0,
+      "commentsCount": 0
+    },
+    "data": []
+  },
+  "style": {
+    "css": "@-moz-document url(https://web.roblox.com/) {\r\n\tbody {\r\n\t\tbackground-color: black !important;\r\n\t}\r\n}\r\n"
+  }
+}

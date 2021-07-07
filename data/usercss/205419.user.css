@@ -3,12 +3,11 @@
 @namespace      USO Archive
 @author         Tech How
 @description    `Google is ditching the well-loved classic design of its Meet product. But I wasn't just going to sit there and watch it go by. I gathered some tools, hopped on Userstyles.org, and started designing a skin to bring back the classic style of Google Meet. It's currently very early in development, and constantly being worked on. Try it out and let me know what you think!`
-@version        20210611.17.39
+@version        20210706.20.27
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
-@-moz-document domain("meet.google.com")
-{
+@-moz-document domain("meet.google.com") {
 .oW3, .SSPGKf.p2ZbV.DNu0ud, .MON6Vd.P9KVBf, .xsj2Ff.Zf0RDc.GskdZ.AwnI1b.MSqqjf, .xsj2Ff.Zf0RDc.PoIECb.GskdZ.AwnI1b.vLRPrf, .GN4RFc, .KieQAe, .QkY02, .gAGjv, .xsj2Ff.Zf0RDc.GskdZ.AwnI1b.vLRPrf, .xsj2Ff.Zf0RDc.GskdZ.AwnI1b, .AwTKuc.STgNKd, .E2KThb, .zWfAib.Z319Jd.PvRhvb.nrxduf.a1pVef, .crqnQb, .xsj2Ff.Zf0RDc.PoIECb.GskdZ.AwnI1b.MSqqjf.vLRPrf, .eglG8b, .dQO5xd.AkYcJb, .Pujlue {
     background: #121212;
 }
@@ -72,8 +71,17 @@
     background: #202124;
 }
 .ncMv2e .QSW55 {
-    border-top-color: #202124;
+    border-color: #202124;
 }
+
+.Cs0vCd {
+    color: #00786A;
+}
+
+.VfPpkd-GCYh9b .VfPpkd-gBXA9-bMcfAe:enabled:checked+.VfPpkd-RsCWK .VfPpkd-wVo5xe-LkdAo, .VfPpkd-GCYh9b .VfPpkd-gBXA9-bMcfAe:enabled+.VfPpkd-RsCWK .VfPpkd-Z5TpLc-LkdAo {
+    border-color: #00786A !important;
+}
+
 .xsj2Ff.Zf0RDc.GskdZ.AwnI1b {
     background: #121212;
 }
@@ -207,20 +215,20 @@
 .P9KVBf .YzyJNd {
     background-color: #202124;
 }
-.epqixc.YUGmGb, .epqixc, .McXdrf, .VfPpkd-vQzf8d {
-    font-family:'Roboto', arial, sans-serif;
-    font-weight: 400;
-    font-size: 14px;
+.epqixc.YUGmGb, .epqixc, .McXdrf, .VfPpkd-vQzf8d, .xsj2Ff.vLRPrf .adnwBd, .ADivge.vLRPrf .adnwBd, .H5Sn2e {
+    font-family:'Roboto', arial, sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 14px !important;
 }
 .rZQFfc.bGuvKd, .rZQFfc.Cti7Qe, .z1gyye.bGuvKd {
-    font-size: 16px;
-    font-family:'Roboto', arial, sans-serif;
-    font-weight: 400;
+    font-size: 16px !important;
+    font-family:'Roboto', arial, sans-serif !important;
+    font-weight: 400 !important;
 }
 .Jyj1Td.CkXZgc {
-    font-size: 18px;
-    font-family:'Roboto', arial, sans-serif;
-    font-weight: 400;
+    font-size: 18px !important;
+    font-family:'Roboto', arial, sans-serif !important;
+    font-weight: 400 !important;
 }
 .nCP5yc:not(:disabled) {
     background-color: #00786A;

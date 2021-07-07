@@ -3,6 +3,15 @@
 @namespace      USO Archive
 @author         Igor Gadzinowski
 @description    `Dark theme for Joemonster.org site.Bazowany na domyślnym motywie.`
+@version        20210706.18.52
+@license        NO-REDISTRIBUTION
+@preprocessor   uso
+==/UserStyle== */
+/* ==UserStyle==
+@name           JoeMonster.org Dark Style v6.2 (2021)
+@namespace      USO Archive
+@author         Igor Gadzinowski
+@description    `Dark theme for Joemonster.org site.Bazowany na domyślnym motywie.`
 @version        20210114.12.2
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
@@ -14,8 +23,14 @@
     overflow: hidden;
     border-bottom: 1px solid #303030 !important;
   }
+    
+    #menuJM2 LI.menuJMSelected A.men,
+.iehover A.men,
+.menuJMSelected A.men {
+    text-shadow:0px 0px #fff
+    }
 
-  #menuJM2
+  #menuJM2 A.men
   {
     width: 99%;
     height: 47px;
@@ -25,14 +40,24 @@
     position: relative;
 	/*overflow: hidden;*/;
   }
+    
+    #menuJM2 LI {
+	background: none;
+}
 
-  #menuJM2 ul ul li a
+      #menuJM2 
+  {
+	border-top: 2px solid #ffb428;
+  }
+    
+  #menuJM2 UL UL LI A
   {
     background: #303030 !important;
     font-size: 12px;
     color: #999;
     font-weight: bold !important;
     padding: 4px 9px 0 4px !important;
+    text-shadow: 0px 0px #fff
   }
 
   #menuJM2 UL UL

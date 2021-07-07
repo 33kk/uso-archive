@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Blyad
 @description    `As really no one knows that they can delete JS end of divs to prevent style from changing back from dark to white colours, I decided to make my own version.Zgwałcony pan TikTak (:`
-@version        20210622.12.49
+@version        20210706.14.50
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -27,13 +27,14 @@ html[pc="yes"] *::-webkit-scrollbar-thumb {
     background-color: rgba(255, 255, 255, .15);
 }
 
+
 .video-card-big {
 	background: #111 !important;
 }
 .profile-tip-content {
     background: #111 !important;
 }
-.user-info, .logout-container .sign-up, .user-info, .tiktok-web-login-2P7wd, .social-container-NE2xk .channel-item-wrapper-2gBWB .channel-name-2qzLW, .footer-wrapper-xil5O .to-login-1hkoq, .nav-item .nav-name, .user-item-inner .fake-info .user-title, .user-item-inner .user-infos .user-title, .user-item-inner .fake-info .user-desc, .user-item-inner .user-infos .user-desc, .video-feed-container .recommend-feed-title, .share-pc-card .share-item-wrapper .plat-text, .inbox-empty h4, .promotion-download .promotion-title, .promotion-download .qr-title, .download-sms .download-tips.modal-download-style a, .area-list-container .area-list-title, .area-list-container .list-item, .button, .container .user-info .name, .modal-title, .stage-2-text, .info-wrapper .sub-title strong, .info-wrapper .sub-title > span, .info-wrapper .desc, ._card_header_content, .count-infos .number strong, .row-layout-nav .row-layout-nav-item span, .setting-option, .modal.confirm .btns .modal-btn-confirm {
+.user-info, .logout-container .sign-up, .user-info, .tiktok-web-login-2P7wd, .social-container-NE2xk .channel-item-wrapper-2gBWB .channel-name-2qzLW, .footer-wrapper-xil5O .to-login-1hkoq, .nav-item .nav-name, .user-item-inner .fake-info .user-title, .user-item-inner .user-infos .user-title, .user-item-inner .fake-info .user-desc, .user-item-inner .user-infos .user-desc, .video-feed-container .recommend-feed-title, .share-pc-card .share-item-wrapper .plat-text, .inbox-empty h4, .promotion-download .promotion-title, .promotion-download .qr-title, .download-sms .download-tips.modal-download-style a, .area-list-container .area-list-title, .area-list-container .list-item, .button, .container .user-info .name, .modal-title, .stage-2-text, .info-wrapper .sub-title strong, .info-wrapper .sub-title > span, .info-wrapper .desc, ._card_header_content, .count-infos .number strong, .row-layout-nav .row-layout-nav-item span, .setting-option, .modal.confirm .btns .modal-btn-confirm, .keyboard-shortcut-container .keyboard-shortcut-title {
     color: #d8d3e8 !important;
 }
 svg.icon-expand {
@@ -1575,6 +1576,13 @@ a.option.feedback {
 }
 .discover-list-skeleton .skeleton-item .linear-gradient {
     background: linear-gradient(90deg, rgba(22,24,35,0) 0%,rgba(216, 211, 232, .06) 50.52%,rgba(22,24,35,0) 100%) !important;
+}
+.keyboard-shortcut-container {
+	background: #111 !important;
+	border-color: rgba(216, 211, 232, .12) !important;
+}
+.keyboard-shortcut-container .keyboard-shortcut-content .keyboard-shortcut-content-item {
+	color: #fff !important;
 }
 }
 

@@ -3,11 +3,11 @@
 @namespace      USO Archive
 @author         sr51463
 @description    `A pixelated green neon style.`
-@version        20200425.0.47
+@version        20210706.23.3
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
-@-moz-document url-prefix("https://www.google.com/recaptcha/"), domain("4chan.org"), domain("4channel.org") {
+@-moz-document domain("4chan.org"), domain("4channel.org") {
 body[bgcolor] {
 background-color: #000 !important;
 background-image: none !important; 
@@ -118,7 +118,7 @@ div#logo {background: url(http://i.imgur.com/AGnbhrP.png) !important; background
 
 body, #content, #settingsMenu, td.postblock, tr, div.extPanel, strong, span.button, div#theme.panel {color: #00bb00!important; background-color: #000 !important; background-image: none !important;}
 
-div.post, div.post-body, div.post.reply, .dd-menu li { background-color: #131313 !important; }
+div.post, div.post-body, div.post.reply, .dd-menu li { background-color: #000 !important; border: #000;}
 
 #arc-list .quotelink:hover, div.post div.postInfo span.postNum a:hover, .posteruid .hand:hover, .boardnav .pageJump a, .mFileInfo, div.postLink span.info, a:hover, a.replylink:not(:hover),  div.post div.postInfo span.postNum a:hover, .tu-error, s:hover a, #qrError a, #qrError a:hover,  .yotsuba_b_new .backlink a:hover {color: #00ff00 !important; }
 
@@ -179,12 +179,8 @@ span.pln {color: #fff !important}
 #arc-list .quotelink, div.post div.postInfoM span.postNum a, div.postInfo span.postNum a , div.post div.postInfoM span.dateTime, .burichan_new .backlink a, .yotsuba_b_new .backlink a, span.summary, span.name, span.subject, span.postertrip, a, div, td, dt, span.abbr, a.quotelink, span.deadlink, .posteruid, .hand:hover, div.post div.postInfo span.nameBlock span.name, input, div.post div.postInfo span.nameBlock span.postertrip {color: #00bb00 !important;}
 
 
-.recaptchatable #recaptcha_response_field:focus, input[type="text"]:focus, textarea:focus { border-color: #00bb00 !important }
 
-td, div, li, H3, html, hr, span.abbr  {background: transparent !important;}
-
- .recaptchatable #recaptcha_response_field {border-color: #000 !important}
- div.postLink a, div.postLink a:hover, .button, div#boardNavMobile select, .recaptchatable, #recaptcha_area tr, #recaptcha_area td, #recaptcha_area th, input, textarea, input[type="submit"], input[type="button"], input[type="file"], input[type="checkbox"], input[type="password"]:focus, #postFile {color: #00bb00 !important; background-color: #000 !important; border: 1px solid #131313 !important;;}
+ 
 
 input[type="submit"], input[type="button"], input[type="file"], td {font-size: 8pt}
 
@@ -256,44 +252,7 @@ hr {
     border-color: #131313 !important;
 }
   
-.rc-anchor-light {
 
-    background: #000;
-    color: #00ff00;
-    border: 1px solid #00ff00;
-        border-top-color: #00ff00!important;
-        border-right-color: transparent;
-        border-bottom-color: #00ff00!important;
-        border-left-color: transparent;
-}
-
-.recaptcha-checkbox-border {
-    background-color: #333333!important;
-    border: 2px solid #333333!important;
-}
-
-.recaptcha-checkbox-spinnerAnimation {
-
-    background-color: #00ff00!important;
-    box-shadow: 0 0 3px #00ff00, 0 0 8px #00ff00!important;
-    
-
-}
-
-
-#rc-imageselect {
-
-    min-width: 240px;
-    font-family: Roboto,helvetica,arial,sans-serif;
-    background-color: #333333!important;
-
-}
-
-.rc-imageselect-instructions strong {
-
-    background-color:#333333!important;
-
-}
 
 #file-n-submit > input, #qr-draw-button {
 
@@ -314,16 +273,6 @@ hr {
 
 }
 
-.captcha-img, .field {
-
-    background-color: #333333;
-    border: 1px solid #00ff00;
-        border-top-color: transparent;
-        border-right-color: transparent;
-        border-bottom-color: transparent;
-        border-left-color: transparent;
-
-}
 
 #qr {
 
@@ -371,13 +320,7 @@ input[type="text"]:focus, input[type="password"]:focus, input:not([type]):focus,
 }
 
 
-#qr.has-captcha textarea.field {
 
-    color: #00ff00 !important;
-    font-family: pixelated;
-    text-shadow: 0 0 3px #00ff00, 0 0 8px #00ff00;
-
-}
 
 input.field {
     color:#00ff00!important;
@@ -659,6 +602,116 @@ input#qr-filename {
 
 .top-box {
     text-shadow: 0 0 0px #00ff00, 0 0 8px #00ff00;
+}
+
+.field
+{
+    font-family: pixelated !important;
+}
+
+table.postForm > tbody > tr > td:first-child
+{
+    background-color:#333333;
+}
+
+table.postForm > tbody > tr > td > input[type="text"]
+{
+    background-color:black;
+    font-family: pixelated;
+     border-color: #00bb00 !important;
+    box-shadow: 0 0 3px #00bb00, 0 0 8px #00bb00 !important;
+}
+#postForm textarea
+{
+    background-color:black;
+    color:#00ff00;;
+    text-shadow: 0px 0px 8px;
+    font-family: pixelated;
+    border-color: #00bb00 !important;
+    box-shadow: 0 0 3px #00bb00, 0 0 8px #00bb00 !important;
+}
+
+input[type="text"], input[type="password"], table.postForm > tbody textarea, #recaptcha_response_field
+{
+    background-color:black;
+    color:#00ff00;;
+    text-shadow: 0px 0px 8px!important;
+    font-family: pixelated!important;
+    border-color: #00bb00 !important;
+    box-shadow: 0 0 3px #00bb00, 0 0 8px #00bb00 !important;
+}
+
+#t-root
+{
+    background:#333333;
+}
+
+#qr textarea.field
+{
+   background:black; 
+    color:#00ff00;;
+    text-shadow: 0 0 3px #00ff00, 0 0 8px #00ff00;
+    border-color: black !important;
+}
+
+input.field
+{
+    border-color: #00bb00 !important;
+    background:black!important; 
+}
+
+#qr-filename-container
+{
+    background:black;
+    border-color: black !important;
+}
+
+.notification.info {
+    background-color: hsla(200, 0%, 0%, .8);
+}
+
+input[type="submit"], input[type="button"], input[type="file"], td 
+{
+    background-color:black;
+    font-family: pixelated!important;
+    border-color: #00bb00 !important;
+}
+
+:root.yotsuba-b .suboption-list > div:last-of-type {
+    background-color: black;
+}
+
+
+.watch-thread-link {
+    background-color:#00bb00 !important;
+    border-color: #00bb00 !important;
+    box-shadow: 0 0 3px #00bb00, 0 0 8px #00bb00 !important;
+}
+
+.notification.warning {
+    background-color: hsla(36, 0%, 0%, .9);
+}
+
+.message
+{
+    background-color: black;
+}
+
+.captcha-container button#t-load
+{
+    
+   background-color:black;
+    color:#00ff00;
+    font-family: pixelated!important;
+    border-color: #00bb00 !important;
+}
+
+.captcha-container button#t-help
+{
+    background-color:black;
+    color:#00ff00;
+    font-family: pixelated!important;
+    border-color: #00bb00 !important;
 }
 
   @font-face {
