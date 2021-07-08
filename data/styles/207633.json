@@ -1,0 +1,39 @@
+{
+  "id": 207633,
+  "info": {
+    "name": "Iprima dark",
+    "description": "Tmavý režim pro web Iprima",
+    "additionalInfo": null,
+    "format": "uso",
+    "category": "iprima",
+    "createdAt": "2021-07-07T12:49:55.000Z",
+    "updatedAt": "2021-07-08T10:37:20.000Z",
+    "license": "CC0-1.0",
+    "author": {
+      "id": 1204957,
+      "name": "DjDevs.eu"
+    }
+  },
+  "stats": {
+    "installs": {
+      "total": 1,
+      "weekly": 1
+    }
+  },
+  "screenshots": {
+    "main": {
+      "name": "207633_after.jpeg",
+      "archived": true
+    }
+  },
+  "discussions": {
+    "stats": {
+      "discussionsCount": 0,
+      "commentsCount": 0
+    },
+    "data": []
+  },
+  "style": {
+    "css": "@-moz-document domain(iprima.cz) {\r\n/*By DjDevs.eu*/\r\nbody, section,.template--video-detail-template--related_area,.footer-template--sections,.slider-section,.component--scope--broadcast,.organism--player--live-broadcast-player--list,.organism--user-zone--user-zone-header,.organism--header--main-header,.SearchModal  {\r\n  background-color:black!important;\r\n}\r\nbody h1,h2,h3,h4,h5,a,p,span{\r\n  color:white!important;\r\n}\r\nbody div,.component--cinematography-vue--details--episode-name,.component--scope--broadcast,.component--scope--episode-watching--details--episode{\r\n  color: #d1d1d1;\r\n}\r\n.component--scope--episode-latest--details--title,.component--cinematography-vue--details--title,.component--scope--related--details--title,.component--scope--episode-watching--details--title,.molecule--button--search-button{\r\n  color:white!important;\r\n}\r\n\r\n#ucss-code-wrapper span{\r\n  color:black!important;\r\n}\r\n\r\n.vjs-progress-control{\r\n  background-color:#00000098;\r\n}\r\n\r\n.SectionButton a,.molecule--button--base-button,.component--scope--related--link,.submit,.input {\r\n  background-color: #3b3b3b !important;\r\n}\r\n}"
+  }
+}

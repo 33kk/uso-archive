@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         VioneT
 @description    `Centered Typing Area, Placed the Real-time WPM and Accuracy on the Left and the WPM Graphs to the right, Dark Theme.`
-@version        20210705.4.11
+@version        20210708.1.34
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -305,6 +305,34 @@
     src: local('Roboto Mono Medium'), local('RobotoMono-Medium'), url(https://fonts.gstatic.com/s/robotomono/v7/L0xkDF4xlVMF-BfR8bXMIjC4iGqxf78.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+/* Lato */
+/* lato-regular - latin */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''), url('../fonts/lato-v17-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/lato-v17-latin-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* lato-700 - latin */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''), url('../fonts/lato-v17-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/lato-v17-latin-700.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* encode-sans-regular - latin */
+@font-face {
+    font-family: 'Encode Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''), url('../fonts/encode-sans-v8-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/encode-sans-v8-latin-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 }
 
 @-moz-document domain("www.keyhero.com") {
@@ -312,7 +340,7 @@
 /* Color of the Page*/
 body {
     background-color: #2c2c2c !important;
-    color: #fff;
+    color: white;
 }
 .description-block {
     background-color: #2C2C2C !important;
@@ -326,7 +354,6 @@ div.new-post a {
     background-color: #2C2C2C !important;
     color: white !important;
 }
-
 /* Position and BG Color of Quote Box*/
 .quote {
     position: static !important;
@@ -335,28 +362,27 @@ div.new-post a {
     height: auto !important;
     letter-spacing: normal !important;
     /* Change letter spacing */
-    word-spacing: 2px !important;
+    word-spacing: 10px !important;
     /* Change word spacing */
     line-height: normal !important;
     /* Change line height */
-    font-size: 16px !important;
+    font-size: 20px !important;
     /* Change font size here */
     text-align: left;
     /* Change text alingment here */
     text-decoration: none;
     /* Option for 'underline' for the current text*/
-    font-family: "Roboto Mono" !important;
+    font-family: "Lato" !important;
     /* Change font family here */
-    color: #FFF;
+    color: #fff;
 }
-
 /* Position and BG Color of User Input Box*/
 .user-input-text {
     background-color: #0000 !important;
     position: static !important;
     margin-left: 225px !important;
     width: 700px !important;
-    font-family: "Roboto Mono" !important;
+    font-family: "Encode Sans" !important;
     /* Change font family here */
     font-size: 16px !important;
     /* Change font size here */
@@ -368,7 +394,7 @@ div.new-post a {
     margin-top: -130px !important;
     margin-left: 175px !important;
 }
-.chart-quote{
+.chart-quote {
     /* WPM Quote Graph Position */
     position: absolute !important;
     margin-top: 125px !important;
@@ -386,19 +412,84 @@ div.new-post a {
     color: #cdcdcda8 !important;
     /* Real-time WPM and Accuracy Font Color */
 }
+
 /* Highlight Color of the Current Word*/
+/* Uncomment below to have highlight */
+
+/* .quote-current {
+    background: #008000 !important;
+} */
+
+
+/* No Highlight Color of the Current Word 
+but with Underline*/
+/* Comment below to have highlight */
 .quote-current {
-    background: #0ba206 !important;
-    text-decoration: none;
-    /* Option for 'underline' for the current text*/
+    background: #0000 !important;
+    /* Keep the background transparent */
+    text-decoration: underline;
+    /* Underline of the Text */
+    text-decoration-color: #ffffffab;
+    /* Color of the Underline */
+    text-decoration-style: solid;
+    /* Style of the Underline */
+    text-decoration-thickness: 0.25px;
+    /* Thickness of the Underline */
+    text-underline-position: under;
+    /* Put Underline below Text 
+     to don't have overlap in tails in text
+     e.g. (g , y, p,) */
 }
-/* Color of the Typed Word*/
+
+/* Color of the Typed Word */
+/* .quote-left {
+    background-color: #FFF;
+} */
+
+/* Rainbow Animated Color of the Typed Word */
 .quote-left {
-    color: #1ec118 !important;
+    -webkit-animation: linear rainbow 7.5s infinite;
 }
+/* Rainbow Animation */
+@-webkit-keyframes rainbow {
+    0% {
+        color: red;
+    }
+    10% {
+        color: orange;
+    }
+    20% {
+        color: yellow;
+    }
+    30% {
+        color: yellowgreen;
+    }
+    40% {
+        color: #22ff3f;
+    }
+    50% {
+        color: #00ffa2;
+    }
+    60% {
+        color: cyan;
+    }
+    70% {
+        color: #006eff;
+    }
+    80% {
+        color: #7e00db;
+    }
+    90% {
+        color: #d700d7;
+    }
+    100% {
+        color: red;
+    }
+}
+
 /* Highlight Color of the Wrong Word*/
 .quote-error {
-    background-color: rgb(204, 0, 0) !important;
+    background-color: rgba(204, 0, 0, .8) !important;
     text-decoration: none;
     /* Option for 'underline' for the error text*/;
     color: rgb(255, 255, 255) !important;
@@ -407,7 +498,6 @@ div.new-post a {
 .quote-bg-error {
     background-color: #710c0c59 !important;
 }
-
 /* Color of the Navigation Bar*/
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
@@ -431,7 +521,6 @@ footer {
     font-weight: bold;
     background-color: #2c2c2c !important;
 }
-
 /* Correction and Error Colors */
 .correction {
     margin: 15px 0;

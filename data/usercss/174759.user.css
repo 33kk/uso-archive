@@ -2,8 +2,8 @@
 @name           Google Docs Dracula
 @namespace      USO Archive
 @author         Tony Stroemsnaes
-@description    `A smooth, stylish, beautiful dark skin for Google docs. Using some colors from the Dracula theme. Contact the saviour via https://tonystr.net`
-@version        20190827.17.37
+@description    `A smooth, stylish, beautiful dark skin for Google docs. Using some colors from the Dracula theme. Contact the creator via https://tonystr.net`
+@version        20210708.9.1
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -16,10 +16,122 @@
   ltgray: #6272a4
 */
 
+* {
+	scrollbar-color: #1d202a transparent;
+	scrollbar-width: thin;
+}
+
+#docs-instant-bubble {
+	display: none;	
+}
+
+.companion-app-switcher-separator, .companion-app-switcher-add-on-container::before,
+.docs-gm .docs-omnibox-input.jfk-textinput {
+	background-color: #282a36 !important;
+	border-color: #191A21;
+}
+
+.docs-navigation-tab-button:not(.outline-refresh) {
+	background-color: transparent;
+	border-color: transparent;
+	box-shadow: none;
+}
+
+.kix-appview-editor,
+.docs-companion-app-switcher-container, .companion-app-switcher-container {
+	background-color: #282a36 !important;
+	border-color: transparent;
+}
+
+#titlebar-mode-indicator-container > .docs-material-menu-button-flat-primary, .titlebar-request-access-button.docs-material-button, .titlebar-request-access-button.docs-material-button.docs-material-button-focused.docs-material-button-no-focus-border, .kix-titlebar-approvals-button.docs-material-button, .kix-titlebar-approvals-button.docs-material-button.docs-material-button-focused.docs-material-button-no-focus-border,
+.kix-document-top-shadow.read-mode-titlebar-border,
+.apps-hoverable-menu-separator-container .apps-hoverable-menu-separator-bottom,
+.goog-menuitem.docs-submenuitem,
+.docs-gm .docs-submenuitem.goog-menuitem-highlight,
+.goog-toolbar[role="toolbar"] .docs-font-size-inc-dec-action-button.goog-toolbar-button,
+#fontSizeSelect.docs-font-size-inc-dec-combobox {
+	border-color: #191A21 !important;
+}
+
+#docs-toolbar-mode-switcher.suggest-mode,
+#titlebar-mode-indicator-container > .docs-material-menu-button-flat-primary-hover,
+#docs-toolbar-mode-switcher.edit-mode {
+	background-color: #22232b;
+}
+
+.docs-gm .modal-dialog-title-text, .docs-gm .docs-offline-optinpromo-title-text,
+.docs-gm .goog-menuitem .goog-menuitem-label[style*="color: rgb(0, 0, 0)"],
+.docs-gm .goog-menuitem {
+	color: #ffffff !important;	
+}
+
+.docs-gm .goog-menuitem .goog-menuitem-label[style*="color: rgb(102, 102, 102)"] {
+	color: #6272a4 !important;
+}
+
+.docs-gm .goog-menuitem .goog-menuitem-label[style*="color: rgb(67, 67, 67)"] {
+	color: #ff79c6 !important;
+}
+
+.docs-navigation-tab-button:not(.outline-refresh):hover {
+	border-color: #f3206a;
+}
+
+#docs-instant-button-bubble {
+	background-color: #282a36 !important;
+	border-color: transparent;
+	box-shadow: 0 1px 14px 1px #191A21;
+}
+
+.docs-bubble-link, .docs-bubble a,
+span.kix-wordhtmlgenerator-word-node[style*="color:#1155cc;"] {
+	color: #ddc239 !important;
+}
+
+.kix-lineview-decorations div[style*="border-top:"][style*=" solid #1155cc;"] {
+	border-color: #ddc239 !important;
+}
+
+.kix-cursor-caret[style*="border-color: rgb(17, 85, 204)"] {
+	
+	border-color: #ddc239 !important;
+}
+
+#docs-instant-button-bubble .docos-icon-img-hdpi::before {
+	filter: invert(90%)	
+}
+
+.docs-gm .docs-linkbubble-bubble, .docs-gm .docs-multi-linkbubble-bubble {
+	background-color: #191a22 !important;
+	box-shadow: 0 2px 11px rgba(0, 0, 0, .3);
+}
+
+.kix-tablerenderer-td[style*="background-color: rgb(231, 230, 230)"] {
+	background-color: #21222c !important;
+}
+
+.docs-material.docs-presence-plus-widget-overflow-menu .docs-presence-plus-collab-widget-name {
+	color: #ffffff;
+}
+
 .docs-homescreen-grid-item-thumbnail {
 	filter: invert(77%) contrast(142%) hue-rotate(180deg) !important;	
 }
 
+#docs-new-changes-container>div {
+	background-color: #21222c !important;
+	color: #6272a4 !important
+}
+
+#docs-new-changes-container:hover>div {
+	background-color: #1c1d25 !important;
+}
+
+.docs-border-selection-outer, .docs-border-selection-inner, .docs-border-selection-inner-horizontal, .docs-border-selection-inner-vertical, .docs-border-selection-top, .docs-border-selection-bottom, .docs-border-selection-left, .docs-border-selection-right, .docs-border-selection-all, .docs-border-selection-button-pressed, .docs-border-selection-button-normal {
+	filter: invert();
+}
+
+.jfk-checkbox-checked,
 .jfk-activityIndicator-circle[style*="background-color: rgb(255, 255, 255)"] {
 	background-color: #282a36 !important;
 }
@@ -27,6 +139,77 @@
 #docs-equationtoolbar {
 	background-color: #282a36 !important;
 	border-color: #282a36 !important;
+}
+
+.jfk-checkbox-checked .jfk-checkbox-checkmark,
+.rs-icon-edit {
+	filter: invert()
+}
+
+.apps-share-chips-input {
+	color: #ffffff;
+}
+
+.suggested-recipients,
+.ac-renderer {
+	background-color: #191a21;
+	border-color: #191a21;
+	color: #ffffff;
+}
+
+.simple-sharing-note-text-area {
+	background-color: transparent;
+	color: #ffffff;
+	border-color: #000000;
+	border-radius: .5rem;
+}
+
+.goog-modalpopup-bg, .modal-dialog-bg {
+	background-color: #000000;
+}
+
+.jfk-button-standard.simple-sharing-cancel-button{
+	background: #fa344b;
+}
+
+.ac-active {
+	background-color: #2b2d3b;
+}
+
+.suggested-recipients-suggestion,
+.ac-highlighted {
+	color: #f08b48;
+}
+
+.goog-flat-menu-button,
+.docs-homescreen-fab, .docs-homescreen-material-bar-enabled .docs-homescreen-editorbar-actionbutton.goog-menu-button-hover::before, .docs-homescreen-material-bar-enabled .docs-homescreen-editorbar-actionbutton.jfk-button-hover::before, .apps-share-chips-chip-warning, .inviter-recipient-area, .docs-docos-activitybox, .docs-gm .docs-material #docs-docos-commentsbutton.jfk-button.jfk-button-active, .docs-gm .docs-material #docs-docos-commentsbutton.jfk-button.jfk-button-checked, .goog-menu {
+	border-radius: .5rem;
+}
+
+.apps-share-chips-chip {
+	background-color: #282a36 !important;
+	border-color: #282a36 !important;
+	color: #6272a4 !important;
+}
+
+.apps-share-chips-icon-sprite-email {
+	filter: invert();
+}
+
+.goog-flat-menu-button.goog-flat-menu-button-hover {
+	background: none;
+	background-color:#191a21;
+	border-color: #191a21;
+	box-shadow: 0 1px 8px rgba(0,0,0,.36);
+	cursor: pointer;
+	border-color: #4b8cf7;
+}
+
+.goog-flat-menu-button {
+	background: none;
+	background-color:#191a21;
+	border-color: #191a21;
+	box-shadow: 0 1px 8px rgba(0,0,0,.36);
 }
 
 .docs-homescreen-grid-item {
@@ -143,6 +326,10 @@
 .docs-title-input-label-inner,
 .goog-inline-block.kix-lineview-text-block {
     color: #6272a4 !important;
+}
+
+.kix-lineview-background>div[style*="background-color:#ffff00"] {
+	background-color:#5f5432 !important
 }
 
 .docs-gm-dialogs div.goog-modalpopup-bg, .docs-gm-dialogs div.modal-dialog-bg {
