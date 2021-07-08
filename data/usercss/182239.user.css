@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         sr51463
 @description    `A pixelated green neon style.`
-@version        20210706.23.3
+@version        20210707.18.2
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -712,6 +712,10 @@ input[type="submit"], input[type="button"], input[type="file"], td
     color:#00ff00;
     font-family: pixelated!important;
     border-color: #00bb00 !important;
+}
+
+:root.sw-yotsuba .opContainer, :root.sw-yotsuba .op {
+    background-color:black;
 }
 
   @font-face {

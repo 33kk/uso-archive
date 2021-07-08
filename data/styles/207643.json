@@ -1,0 +1,40 @@
+{
+  "id": 207643,
+  "info": {
+    "name": "Dummy usercss 2",
+    "description": "Dummy usercss",
+    "additionalInfo": null,
+    "format": "uso",
+    "category": "procyon-b",
+    "createdAt": "2021-07-07T17:38:49.000Z",
+    "updatedAt": "2021-07-07T17:38:49.000Z",
+    "license": "NO-REDISTRIBUTION",
+    "author": {
+      "id": 757613,
+      "name": "Achernar",
+      "homepage": "https://procyon-b.github.io/programming/"
+    }
+  },
+  "stats": {
+    "installs": {
+      "total": 0,
+      "weekly": 0
+    }
+  },
+  "screenshots": {
+    "main": {
+      "name": "207643_after.gif",
+      "archived": true
+    }
+  },
+  "discussions": {
+    "stats": {
+      "discussionsCount": 0,
+      "commentsCount": 0
+    },
+    "data": []
+  },
+  "style": {
+    "css": "/* ==UserStyle==\r\n@name           Dummy usercss\r\n@namespace      https://github.com/Procyon-b\r\n@version        1.0.0\r\n@description    dummy userstyle\r\n@author         Achernar\r\n@updateURL      https://greasyfork.org/scripts/428852-dummy-usercss/code/Dummy%20usercss.user.css\r\n==/UserStyle== */\r\n\r\n@-moz-document domain(\"procyon-b.github.io\") {\r\n    /* Insert code here... */\r\n#nothing {\r\n  border: none;\r\n}\r\n}"
+  }
+}

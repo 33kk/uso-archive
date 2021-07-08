@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           UserStyles.World (USw) - WideScreen v.4
+@name           UserStyles.World (USw) - WideScreen v.5
 @namespace      USO Archive
 @author         decembre
-@description    `For the best alternative to replace userstyle.org (which became unusable):<a href="https://userstyles.world/explore">UserStyles.world</a>Her my version of it, a Compact userstyle for a widescreen:Less scrolling !Note:With it, it is possible to have preview on hover Thumbnail userstyle preview if you use an addon like: <a href="https://addons.mozilla.org/en-US/firefox/addon/image-max-url/">Image Max URL by qsniyg</a>`
-@version        20210705.9.37
+@description    `For the best alternative to replace userstyle.org (which became unusable):<b><a href="https://userstyles.world/explore">UserStyles.world</a></b>Her my version of it, a Compact userstyle for a widescreen:Less scrolling !<b>Note:</b>With it, it is possible to have preview on hover Thumbnail userstyle preview if you use an addon like: <a href="https://addons.mozilla.org/en-US/firefox/addon/image-max-url/">Image Max URL by qsniyg</a><b>userstyles.world</b> became better and better , but if you have a request or idea or an issue, go here:<a href="https://github.com/userstyles-world/userstyles.world">userstyles.world</a>Their devs take care a lot of our need.`
+@version        20210707.18.10
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -12,7 +12,7 @@
 
 @-moz-document domain("userstyles.world") {
 
-/* ==== 0- UserStyles.World (USw) - WideScreen v.4 - TEST FRESH ==== */
+/* ==== 0- UserStyles.World (USw) - WideScreen v.5 - TEST FRESH ==== */
 
 /* WIDESCREEN */
 
@@ -117,6 +117,69 @@ background: #111 !important;
     padding-top: 0;
     margin-top: -12px;
 }
+
+/* (new5) EXPLORE ORDER LABEL - OPACITY */
+#sort>option[value]:before {
+opacity: 0.3;
+}
+#sort>option[value]:hover:before {
+opacity: 1;
+}
+/* (new5) EXPLORE ORDER LABEL - RECENT NEWEST " ▼ " */
+#sort>option[value="recentlyupdated"]:before ,
+#sort>option[value="newest"]:before {
+content: "▼" ;
+display: inline-block !important;
+width: 17px ;
+height: 15px ;
+line-height: 14px ;
+margin-right: 10px ;
+/* border-radius: 50% ; */
+text-align: center ;
+background: green !important;
+}
+
+/* (new5) EXPLORE ORDER LABEL - RECENT LEAST " ▲ " */
+#sort>option[value="leastupdated"]:before ,
+#sort>option[value="oldest"]:before {
+content: "▲" ;
+display: inline-block !important;
+width: 17px ;
+height: 15px ;
+line-height: 14px ;
+margin-right: 10px ;
+/* border-radius: 50% ; */
+text-align: center ;
+background: red !important;
+}
+/* (new5) EXPLORE ORDER LABEL - LEAST " - 📉 " */
+#sort>option[value="leastinstalls"]:before ,
+#sort>option[value="leastviews"]:before {
+content: "📉" ;
+display: inline-block !important;
+width: 17px ;
+height: 15px ;
+line-height: 14px ;
+margin-right: 10px ;
+font-size: 13px !important;
+/* border-radius: 50% ; */
+text-align: center ;
+background: red !important;
+}
+/* (new5) EXPLORE ORDER LABEL - MOST " 💹+ " */
+#sort>option[value="mostinstalls"]:before ,
+#sort>option[value="mostviews"]:before {
+content: "💹" ;
+display: inline-block !important;
+width: 17px ;
+height: 15px ;
+line-height: 14px ;
+margin-right: 10px ;
+font-size: 13px !important;
+text-align: center ;
+background: green !important;
+}
+
 
 /* EXPLORE THUMBNAILS */
 
@@ -567,6 +630,27 @@ border: 1px solid red;
 border-radius: 0 0 5px 5px !important;
 margin-top: 0px !important;
 border: 1px solid red;
+}
+
+/* (new5) NO HISTORY */
+.details + .history:not(:hover) > p {
+    display: none !important;
+border: 1px solid red;
+}
+.details + .history:hover > p {
+    display: inline-block  !important;
+width: 100% !important;
+min-width: 230px !important;
+margin-left: -18% !important;
+padding: 50px 20px !important;
+font-size: 20px !important;
+text-align: center !important;
+border: 1px solid red;
+background: #111 !important;
+}
+/* NO DARK */
+html[data-color-scheme="light"] .details + .history:hover > p {
+background: white !important;
 }
 
 

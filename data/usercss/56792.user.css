@@ -1,16 +1,16 @@
 /* ==UserStyle==
-@name           Userstyles / Greasy Fork Enhancer Dark-Grey v.196
+@name           Userstyles / Greasy Fork Enhancer Dark-Grey v.197
 @namespace      USO Archive
 @author         decembre
 @description    `▶ It's (or just better) FOR  A WIDESCREEN : (1920x1080)! ▶ Adaptation for (the always working):<a href="https://greasyfork.org/fr/scripts/4336-ts-citrus-gfork"><b>[TS] Citrus GFork</b></a>Broken since 2020.12., but there is a fix, read:<b><a href="https://greasyfork.org/en/scripts/4336-ts-citrus-gfork/discussions/69927">Fix and Workaround about it and User CSS JS (a New Functionality of GreasyFork).</a></b>▶ You can test too my Userscript:<a href="https://uso-archive.surge.sh/?author=decembre&sort=updated&style=56792">USERSTYLES - TABLES Sorter SIMPLE</a>"Sort Userstyles Table on Profile page:click on the top header of each column..."`
-@version        20210521.0.39
+@version        20210707.18.26
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document url-prefix("https://greasyfork.org/forum/"), url-prefix("https://74.86.192.75/"), domain("userstyles.org"), domain("greasyfork.org"), domain("sleazyfork.org") {
 
 
-/* ==== Userstyles / Greasy Fork Enhancer Dark-Grey  196 (new196) -  TEST FRESH - with FIX by Konf - Without EDIT COMMENT  - TEST NEW FORUM GREASYFORK ==== */
+/* ==== Userstyles / Greasy Fork Enhancer Dark-Grey  197 (new197) -  TEST FRESH - with FIX by Konf - Without EDIT COMMENT  - TEST NEW FORUM GREASYFORK ==== */
 /* CITRUS FIX by Konf(2020.12.09) :
 https://greasyfork.org/en/discussions/requests/69803-help-to-fix-ts-citrus-gfork#comment-173029
 =================== */
@@ -289,9 +289,28 @@ background: gold ;
 .DiscussionAboutShowDiscussion > a[href^="/discussions/preview-"]:hover:before {
     content: "New Forum: ";
 }
-/* IMAGES - === */
-.user-content > p > img{
-    max-width: 773px ;
+/* (new197) IMAGES - === */
+.user-content>p {
+    position: relative !important;
+    display: inline-block !important;
+/*     float: left !important; */
+margin: auto !important;
+    min-width: 920px ;
+    max-width: 920px ;
+text-align: left !important; 
+
+/* border: 1px dashed red ; */
+}
+
+.user-content > p > img {
+/*     position: relative !important; */
+/* display: inline-block !important; */
+/*     float: left !important; */
+margin-top: 20px !important;
+margin-bottom: 20px !important;
+    max-width: 920px ;
+/*     object-fit: contain !important; */
+/*     object-position: left !important; */
 border: 1px solid red ;
 }
 
@@ -1659,7 +1678,7 @@ visibility: visible !important;
 :hover > .filter-switches a ,
 .filter-switches  a ,
 #main-header  .width-constraint + .filter-status ~  .filter-switches a ,
-#Frame #Head.Head .filter-switches a
+#Frame #Head.Head .filter-switches a ,
 #script-content .filter-switches  a {
     display: inline-block  !important;
     width: 160px !important;
@@ -2607,7 +2626,7 @@ color: red ;
     margin-top: 28px ;
     border: none ;
 }
-/* (new187) */
+/* (new197) NEED COR MARGIN -  */
 #user-discussions:hover .discussion-list-item ,
 body[pagetype="PersonalProfile"] #user-discussions:hover .discussion-list-item ,
 #user-discussions:hover ul ,
@@ -3477,10 +3496,9 @@ float: left !important;
 border-bottom: 1px solid gray!important;
 border-left: 3px solid red !important;
 }
-/* CIT */
-body[pagetype="UserProfile"] 
-#user-script-list>li>article .description ,
-#browse-script-list>li>article .description {
+/* (new197) NEED COR - CIT */
+body[pagetype="UserProfile"] #user-script-list>li>article .description ,
+body[pagetype="UserProfile"] #browse-script-list>li>article .description {
     display: inline-block!important;
     width: 100% !important;
     min-width: 710px !important;
@@ -4053,7 +4071,7 @@ background-repeat: no-repeat!important;
 visibility: visible !important;
 opacity: 1 !important;
 }
-/* (new192) NOTES TXT in LIST / SCRIPT IFOS HEADER*/
+/* (new197) NEEDD COR overflow-wrap: - NOTES TXT in LIST / SCRIPT IFOS HEADER*/
 .note-obj-gf-note-tag,
 .note-obj-gf-ts-note-tag {
 /* position: absolute !important; */
@@ -4068,7 +4086,7 @@ max-height: 20px !important;
     border-radius: 3px;
     font-size: 13px;
 white-space: nowrap !important;
-    word-wrap: nowrap !important;
+/*    word-wrap: nowrap !important;*/
 overflow: hidden !important;
 text-overflow: ellipsis !important;
 /*     overflow-wrap: anywhere !important; */
@@ -5022,9 +5040,10 @@ background: rgba(191, 191, 190, 0.33) ;
     margin-top: 30px ;
     margin-bottom: 5px ;
 }
+/* (new197) CONTRIB - https://greasyfork.org/fr/scripts/23332-betty/feedback */
 .width-constraint #script-info ul#script-links + header + #script-content > p#contribution {
-    margin-top: 50px ;
-    margin-bottom: -25px ;
+    margin-top: 10px ;
+    margin-bottom: 0px ;
 }
 .width-constraint #script-info > #script-content p + form[action$="/diff"] {
     margin-top: -21px !important;
@@ -6053,7 +6072,7 @@ background: green ;
     transition: width ease 0s, margin ease 0.7s ;
 color: black ;
 }
-/* DIFF CODE - === */
+/* (new197) DIFF CODE - === */
 .width-constraint #script-info > #script-content >form + p + .diff ul {
     display: table ;
     max-width: 945px ;
@@ -6068,13 +6087,27 @@ background: #fff ;
     display: inline-block ;
     max-width: 945px ;
     min-width: 945px ;
+    height: auto !important;
+    margin: 0 ;
+    padding: 0 ;
+    white-space: pre-wrap !important;
+    word-wrap: break-word !important;
+    text-align: left ;
+}
+.width-constraint #script-info > #script-content >form + p + .diff ul  li del ,
+.width-constraint #script-info > #script-content >form + p + .diff ul  li ins ,
+.width-constraint #script-info > #script-content >form + p + .diff ul  li span{
+    display: inline-block ;
+    max-width: 945px ;
+/*     min-width: 945px ; */
     height: 1em ;
     margin: 0 ;
     padding: 0 ;
-    word-wrap: break-word ;
-    white-space: pre-wrap ;
+    white-space: pre-wrap !important;
+    word-wrap: break-word !important;
     text-align: left ;
 }
+
 .diff li.diff-block-info {
     display: table-row ;
     height: 1.4em ;
@@ -10074,7 +10107,7 @@ background: linear-gradient(to bottom, rgba(19, 19, 19, 1) 0%, rgba(51, 51, 51, 
 
 /* ==== EDIT PAGE ==== */
 
-/* USERST - INFOS - Textarea Input === */
+/* (new197) USERST - INFOS - Textarea Input === */
 .PageContent  form[action="/styles/update"] {
     min-width: 940px !important;
     max-width: 940px !important;
@@ -10085,6 +10118,7 @@ background: #222 !important;
     min-width: 840px !important;
     max-width: 940px !important;
     margin-left: 0% !important;
+    margin-bottom: 8px !important;
     padding-left: 5px !important;
 }
 .PageContent  form[action="/styles/update"] .form-controls>div>a ,
@@ -12205,9 +12239,6 @@ border: 1px solid gray !important;
     display: none !important;
 }
 }
-
-
-
 
 @-moz-document url-prefix("https://forum.userstyles.org") {
 /* START ==== (new119) URL-PREF - USERSTYLES FORUM (FORUM DISCUSSION - GREASYFORK different than USERSTYLES) ==== */
