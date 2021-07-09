@@ -3,8 +3,8 @@
 @namespace      USO Archive
 @author         Coordinates
 @description    `A green-accented dark mode for the SubsPlease website. Some variables such as colors and border radius are tweakable at the top of the stylesheet.<strike>For best results flip their dark mode switch to change the discord embed dark.</strike>No longer necessary.`
-@version        20210702.2.25
-@license        NO-REDISTRIBUTION
+@version        20210708.13.32
+@license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("subsplease.org") {
@@ -379,8 +379,12 @@ div.footer .default:hover {
 	--accent-color: #11BB66;
 	--border-radius: 5px;
 }
-body.dark {
-	color: var(--primary-text-color);
+* {
+	outline: 0 !important;
+}
+body.dark,
+.dark .nav-tab > a {
+	color: var(--primary-text-color) !important;
 }
 .dark .comment-policy,
 .dark .highlighted > .post-content {
@@ -395,6 +399,105 @@ body.dark {
 }
 .post:last-of-type .post-content {
 	margin-bottom: 0px;
+}
+.post:last-of-type .children {
+	margin-top: 24px;
+}
+.load-more {
+	margin: 0;
+}
+.load-more__button {
+	background-color: var(--accent-color) !important;
+	color: var(--primary-bg-color) !important;
+	transition: opacity 0.2s;
+}
+.load-more__button:hover {
+	filter: brightness(1.1);
+	transition: opacity 0.2s;
+}
+.load-more__button:focus {
+	outline: none;
+	opacity: 0;
+	transition: opacity 0.2s;
+}
+.textarea-outer-wrapper .textarea-wrapper,
+.textarea,
+.dark .input--text,
+.dropdown-menu {
+	background: var(--secondary-bg-color);
+	border-color: var(--quaternary-bg-color);
+	color: var(--primary-text-color);
+	border-width: 1px;
+	transition: filter 0.2s;
+}
+.dark .input--text:focus {
+	filter: brightness(1.2);
+}
+.dropdown-menu a {
+	color: var(--secondary-text-color);
+}
+.dropdown-menu .active > a,
+.dropdown-menu .active > a:focus,
+.dropdown-menu .active > a:hover,
+.dropdown-menu li > a:focus,
+.dropdown-menu li > a:hover {
+	background-color: var(--accent-color);
+	color: #FFF;
+}
+.dark .textarea,
+.post-actions {
+	border-color: var(--quaternary-bg-color);
+	border-width: 1px;
+}
+.textarea-outer-wrapper .textarea-wrapper:focus-within,
+.textarea-outer-wrapper .textarea-wrapper:focus-within .post-actions {
+	filter: brightness(1.2);
+	transition: filter 0.2s;
+}
+.placeholder {
+	color: var(--secondary-text-color);
+	opacity: 0.5;
+}
+.wysiwyg__item {
+	filter: hue-rotate(-90deg) brightness(1.7);
+}
+.tooltip {
+	background: var(--secondary-bg-color);
+}
+.voters-outer::before,
+.voters-outer::after {
+	display: none;
+}
+.tooltip-point::after, .tooltip-point::before {
+	background-color: var(--secondary-bg-color);
+}
+.voters-outer .voters .user .username,
+.voters-outer .voters .user .username:hover {
+	color: var(--primary-text-color);
+}
+.post-content .post-menu .dropdown-toggle {
+	border-color: var(--quaternary-bg-color);
+}
+.dark .proceed__button,
+.dark .proceed__button:hover {
+	background: var(--tertiary-bg-color);
+	color: var(--secondary-text-color);
+	box-shadow: none;
+}
+.dark .proceed__button:hover {
+	filter: brightness(1.2);
+}
+.post-menu-item a span {
+	line-height: 1.4;
+}
+.dropdown-toggle,
+.dark .post-content .post-menu .collapse a, .dark .post-content .post-menu .expand a {
+	color: var(--tertiary-text-color) !important;
+	opacity: 1;
+}
+.dropdown-toggle:hover,
+.post-content .post-menu .collapse a:hover, .post-content .post-menu .expand a:hover {
+	color: var(--accent-color) !important;
 }
 #footer {
 	display: none; 

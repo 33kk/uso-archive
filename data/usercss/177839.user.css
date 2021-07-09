@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         mortyobnoxious
 @description    `IMDb Night Mode- Works on Mobile, too. I guess.`
-@version        20210705.14.47
+@version        20210708.18.42
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -414,24 +414,25 @@ a.a-link-section-expander:focus { color: #8798A5; background-color: #000; }
 @-moz-document domain("imdb.com") {
 /* New Design */
 @media only screen and (max-width: 920px) {
-.bhTVMj.hero-title-block_ratingBar--hide,
+div[class*="TitleBlock__HideableRatingBar"],
 .SubNavTopicLinks__StyledTopicLinks-sc-5szx1d-0,
-.PrincipalCredits__PrincipalCreditsPanelWideScreen-hdn81t-0
+div[class*="PrincipalCredits__PrincipalCreditsPanelWideScreen"]
 {display: block!important;}
     
-.Media__ButtonContainer-sc-1x98dcb-3,
-.PrincipalCredits__ExpandablePrincipalCreditsPanelNarrowScreen-hdn81t-2, .hBqmiS.hero_ratingBar--hide { display: none!important; }
+div[class*="Media__ButtonContainer"],
+div[class*="PrincipalCredits__ExpandablePrincipalCreditsPanelNarrowScreen"],
+div[class*="Hero__HideableRatingBar"] { display: none!important; }
 }
 
 
 .ipc-list-card--base, .ipc-page-background--base, .ipc-poster-card--base, .ipc-media--base, .ipc-list-card--base.ipc-list-card--border-speech::after {background: #1f1f1f;}
 .ipc-page-section--base {background: #121212;}
 .ipc-overflowText.ipc-overflowText--base.ipc-overflowText--listCard .ipc-overflowText-overlay, .ipc-overflowText.ipc-overflowText--base.ipc-overflowText--listCard .ipc-overflowText-overlay__affordance {background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 30%, #121212 80%, #121212 100%);}
-.cMFFlc, .ipc-title.ipc-title--base .ipc-title__description, .ipc-title.ipc-title--base .ipc-title__subtext, .ipc-overflowText.ipc-overflowText--base .ipc-overflowText-overlay, .bA-dHai, .ipc-voting__label, .ipc-inline-list--inline .ipc-inline-list__item, .bZmQT, .ipc-chip--on-base, .ipc-chip--on-base:hover, .ipc-chip--on-base:active, .ipc-chip--on-base:focus, .ipc-rating-star--base .ipc-rating-star--maxRating, .ipc-rating-star--base .ipc-rating-star--voteCount {color: #8798A5;}
+.cMFFlc, .ipc-title.ipc-title--base .ipc-title__description, .ipc-title.ipc-title--base .ipc-title__subtext, .ipc-overflowText.ipc-overflowText--base .ipc-overflowText-overlay, .bA-dHai, .ipc-voting__label, .ipc-inline-list--inline .ipc-inline-list__item, .bZmQT, .ipc-chip--on-base, .ipc-chip--on-base:hover, .ipc-chip--on-base:active, .ipc-chip--on-base:focus, .ipc-rating-star--base .ipc-rating-star--maxRating, .ipc-rating-star--base .ipc-rating-star--voteCount, .fswvJC .title-cast-item__eps-toggle {color: #8798A5;}
 .ipc-btn--theme-base:not(:disabled).ipc-btn--on-textSecondary, .ipc-btn--theme-base:not(:disabled).ipc-btn--on-textSecondary .ipc-split-button__btn, .ipc-btn--theme-base:not(:disabled).ipc-btn--on-textSecondary .ipc-split-button__iconBtn, .ipc-metadata-list--base .ipc-metadata-list-item__label--link, .ipc-metadata-list--base .ipc-metadata-list-item__icon-link:hover, .ipc-metadata-list--base .ipc-metadata-list-item__icon-link:active, .ipc-metadata-list--base .ipc-metadata-list-item--link:hover .ipc-metadata-list-item__icon-link, .ipc-rating-star--base, .ipc-icon-link--base, .ipc-icon-button--base, .ipc-rating-star--base.ipc-rating-star--placeholder .ipc-icon, .ipc-watchlist-ribbon--base, .jtMAVD, .fkUPNi, .ipc-inline-list__item, .BrowseEpisodes__Label-sc-1a626ql-1, .fswvJC.title-cast--with-eps .title-cast-item__char {color: #8798A5;}
 .ipc-metadata-list--baseAlt .ipc-metadata-list__item {border-color: #000000;}
 .ipc-chip--on-baseAlt, .ipc-chip--on-baseAlt:hover, .ipc-chip--on-baseAlt:active, .ipc-chip--on-baseAlt:focus {border-color: #000000;}
-.fswvJC .title-cast-item__char {color: #8798A5;}
+.fswvJC .title-cast-item__char, .ipc-page-section--base, .ipc-icon-link--base:hover, .ipc-icon-link--base:visited, .ipc-icon-button--base:hover, .ipc-icon-button--base:visited {color: #8798A5;}
 .lmNvbY {color: #8798A5;}
 .ipc-metadata-list--base .ipc-metadata-list-item__icon-link, .ipc-metadata-list--base .ipc-metadata-list-item__label--link:hover, .ipc-metadata-list--base .ipc-metadata-list-item__label--link:active, .ipc-metadata-list--base .ipc-metadata-list-item__list-content-item--subText, .ipc-metadata-list--base .ipc-metadata-list-item--link:hover .ipc-metadata-list-item__label--link {color: #fff;}
 .ipc-metadata-list--base .ipc-metadata-list-item__list-content-item--link, .ipc-metadata-list--baseAlt .ipc-metadata-list-item__list-content-item--link, a.ipc-link--baseAlt:link, .ipc-link--baseAlt, .ipc-link--baseAlt:hover, .ipc-link--baseAlt:focus, .ipc-link--baseAlt:visited, a.ipc-link--base:link, .ipc-link--base, .ipc-link--base:hover, .ipc-link--base:focus, .ipc-link--base:visited { color: #A9894F; }

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         radiochild577
 @description    `The most complete and updated night (dark or black) theme for Yahoo Fantasy as of Fall 2018. Should work for all Fantasy sports on Yahoo.com, but only tested for Football, Basketball and Baseball. I used <a href="https://userstyles.org/styles/119567/yahoo-fantasy-football-dark-full-width"> theo shu's theme</a> as a template but made a lot of modifications/updates. Designed for Firefox, but can be imported to Chrome to work with that browser - just copy the CSS and "import" to Chrome in the style settings of that browser.NOTE - this has only been tested in Firefox using the Stylus CSS add-on.`
-@version        20210330.21.59
+@version        20210708.21.7
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -1106,6 +1106,72 @@ td.Alt.Ta-end.Nowrap.Bdrend {
 
 .Alt.Bdr.Ta-c.Fw-b.Fz-lg.Bg-shade {
     color:#FFF !important;
+}
+
+.Va\(m\).Ta\(start\).Px\(5px\).Bdend\(table-border\) {
+    background: #000000
+}
+
+.Bgc\(\$c-fuji-grey-c\).Cur\(p\).YahooSans-Medium.Bdrs\(18px\), .Bdrs\(8px\).Py\(2px\).Bgc\(\$c-fuji-grey-c\).Px\(8px\), .YahooSans-Bold.C\(\$c-fuji-grey-m\).Fz\(10px\) {
+    color: #000!important;
+}
+
+.Atomic .Bgc\(color-light-green\), .Atomic .Bgc\(green-highlight\) {
+    background-color: rgb(26, 197, 103);
+}
+
+.Atomic .Bgc\(color-light-red-invalid\) {
+    background-color: rgb(235, 15, 41);
+}
+
+.Ta\(c\).YahooSans-Medium.C\(\$c-fuji-grey-m\).Fz\(12px\).Px\(26px\).Py\(16px\) {
+    background: #2b2b2c;
+}
+
+.Atomic .Bgc\(\$c-fuji-grey-c\), .Atomic .Bgc\(bar-bg\), .Atomic .Bgc\(page-bg\) {
+    background-color: #bcbcbc;
+}
+
+.Atomic .C\(\$c-fuji-blue-1-a\), .Atomic .C\(\$c-fuji-blue-1-a\):hover {
+    color: #ADD4FF!important;
+}
+
+.Atomic .C\(\$c-fuji-blue-1-a\):hover {
+    color: #ADD4FF!important;
+    text-decoration: underline;
+}
+
+#glossary:hover {
+    text-decoration: underline;
+    background: #000!important;
+}
+
+.Table-interactive tr:hover > td a:not(.Btn) {
+    color: #ADD4FF !important;
+}
+
+.Table-interactive tr:hover > td a:not(.Btn-primary) {
+    color: #ADD4FF !important;
+}
+
+.Table-interactive tr:hover > td a:not(.ysf-game-status) {
+    color: #ADD4FF !important;
+}
+
+.Table-interactive tr:hover > td a:not(#Stencil) {
+    color: #ADD4FF !important;
+}
+
+.Table-interactive tr:hover > td a:not(.Btn) {
+    color: #EEE !important;
+}
+
+.Table-interactive tr:hover > td a:not(.Btn-primary) {
+    color: #EEE !important;
+}
+
+.Table-interactive tr:hover > td a:not(.ysf-game-status) {
+    color: #EEE !important;
 }
 
 }

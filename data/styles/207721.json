@@ -1,0 +1,39 @@
+{
+  "id": 207721,
+  "info": {
+    "name": "coso para mi y unicamente para mi",
+    "description": "INCREIBLE AWESOMEANTO",
+    "additionalInfo": null,
+    "format": "uso",
+    "category": "example",
+    "createdAt": "2021-07-08T22:17:51.000Z",
+    "updatedAt": "2021-07-08T22:17:51.000Z",
+    "license": "NO-REDISTRIBUTION",
+    "author": {
+      "id": 1205650,
+      "name": "AleV_789"
+    }
+  },
+  "stats": {
+    "installs": {
+      "total": 0,
+      "weekly": 0
+    }
+  },
+  "screenshots": {
+    "main": {
+      "name": "207721_after.png",
+      "archived": true
+    }
+  },
+  "discussions": {
+    "stats": {
+      "discussionsCount": 0,
+      "commentsCount": 0
+    },
+    "data": []
+  },
+  "style": {
+    "css": "@-moz-document url(http://www.example.com/test.html) {\r\n\tbody {\r\n\t\tbackground-color: black !important;\r\n\t}\r\n}\r\n"
+  }
+}

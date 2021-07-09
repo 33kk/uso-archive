@@ -1,0 +1,737 @@
+/* ==UserStyle==
+@name           foxhound.cc
+@namespace      USO Archive
+@author         1pt43dnm
+@description    `Тёмная тема с исправлениями интерфейса для foxhound.cc`
+@version        20210708.22.28
+@license        CC0-1.0
+@preprocessor   uso
+==/UserStyle== */
+/* ==UserStyle==
+@name           foxhound.cc 
+@namespace      USO Archive
+@description    dark_foxuar
+@version        20210709.3.24
+@license        CC0-1.0
+@preprocessor   uso
+==/UserStyle== */
+@-moz-document domain("foxhound.cc"),
+domain("www.foxhound.cc"),
+domain("6k5boa4nveidv7cdpjminvak6y4dklvhbpsiuhndnzuxbfyraxtlftad.onion"),
+url-prefix("https://foxhound") {
+	/*@import url("https://files.catbox.moe/d2di1i.css");
+
+
+	/* скрытие досок: вписываете доски которые хотите скрыть,
+	или наоборот удалите строку чтобы показать */
+	a[href$="/trains"],
+	a[href$="/n"],
+	a[href$="/lovesis"],
+	a[href$="/mc"],
+	a[href$="/ma"],
+	a[href$="/u"],
+	a[href$="/1chan"],
+	a[href$="/a"],
+	a[href$="/vn"] {
+		display: none !important;
+	}
+
+	/* измененные цвета: если используете Stylus,
+	можете просто визуально поменять значения цветов
+	этого блока чтобы изменить стиль всего сайта,
+	или ввести коды цветов вручную */
+	* {
+		--color-posts: #2E343E;
+		--color-back: #242630;
+		--color-back-dark: #0a0a0d;
+		--color-like-sidebar: #2c333d;
+
+		--color-text: #BCBCBC;
+		--color-text-green: #57be57;
+		--color-text-ban: #cd5ca0;
+		--color-text-white: #DEDEDE;
+		--color-hover: #3F424F;
+
+		--color-green: #fd8b00e8;
+		--color-green-dark: #8b3417d6;
+		--color-green-dark-dark: #4e2c16;
+		--color-cyan: #81F8E0;
+	}
+
+	/* Вкорачивание svg логотипа заместо png */
+	/* скрываем старый */
+	#sidebar > div.sidebar-logo > a > div > img,
+	.sidebar-logo > a > img {
+		display: none !important;
+	}
+	/* только для ПК и планшетов */
+	@media (min-width: 768px) {
+		/* чтобы svg не масштабировалось во всю ширину*/
+		.sidebar-logo {
+			max-inline-size: 64px;
+			margin-left: 35%;
+			max-height: 80px;
+		}
+		/* подсовываем svg, указываем несколько источников,
+		если один отлетит, браузер берет последний указанный */
+		.sidebar-logo > a:before {
+			content: url("https://dl.uploadgram.me/60e24d51e2d55g?raw");
+			content: url("https://dl.uploadgram.me/60e24d5ab9f3eh?raw");
+			content: url("https://files.catbox.moe/2qni9p.svg");
+		}
+	}
+	/* тоже самое, только для никчёмных маленьких экранов */
+	@media (max-width: 767px) {
+		#sidebar > div.sidebar-logo > a:before {
+			content: url("https://dl.uploadgram.me/60e354a5e4a45h?raw");
+			content: url("https://dl.uploadgram.me/60e35e6dcfe86g?raw");
+			content: url("https://files.catbox.moe/0pd6b1.svg");
+		}
+		/* подгонка размера */
+		.sidebar-logo {
+			max-inline-size: 130px;
+			margin-left: 35%;
+			padding-top: 2%
+		}
+	}
+	img.post-embed-play-btn {
+		display: none!important;
+	}
+	/* svg-логотип Ютюпа*/
+	.post-embed-overlay,
+	.post-embed-overlay:after {
+		content: url("https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg");
+		zoom: .4;
+		padding-left: 80%!important;
+		padding-top: 60%!important;
+		filter: drop-shadow(0px 0px 10px #000);
+	}
+
+	/* привязка всего зеленого к одному цвету */
+	a {
+		color: var(--color-green) !important;
+	}
+
+	a:hover {
+		color: var(--color-green-dark) !important;
+	}
+
+	.post-button i {
+		color: var(--color-green) !important;
+	}
+
+	.post-button i:hover {
+		color: var(--color-green-dark) !important;
+	}
+
+	.btn,
+	.nav-item a {
+		background: var(--color-green-dark) !important;
+		color: var(--color-text-white) !important;
+		border: unset !important;
+		border-radius: unset !important;
+	}
+
+	.nav-item {
+		margin-left: unset !important;
+	}
+
+	.btn:hover,
+	.nav-item:hover a {
+		background: var(--color-green-dark-dark) !important;
+		color: var(--color-text) !important;
+	}
+
+	.nav-item.active a {
+		background: var(--color-green-dark-dark) !important;
+		color: var(--color-text) !important;
+		border: 1px solid var(--color-green) !important;
+		margin-top: -1px;
+		/* граница */
+	}
+	address,
+	.im-address {
+		color: var(--color-green) !important;
+		border-color: var(--color-green-dark);
+	}
+
+	::selection {
+		background: var(--color-back-dark);
+		color: var(--color-green);
+	}
+
+	*:focus {
+		outline-color: var(--color-green-dark-dark) !important;
+	}
+	.form-control:focus {
+		border-color: var(--color-green-dark-dark) !important;
+		box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px var(--color-green-dark) !important;
+	}
+
+	html,
+	body {
+		-webkit-tap-highlight-color: var(--color-green-dark-dark) !important;
+		-tap-highlight-color: var(--color-green-dark-dark) !important;
+	}
+	/* полоска загрузки */
+	.__cov-progress {
+		background: linear-gradient(to right, var(--color-green), var(--color-green-dark), var(--color-green-dark-dark));
+	}
+
+	/*Скрываемая панель с тредами*/
+	#content > div > div.threads-scroll-spy.hidden-md.hidden-sm.hidden-xs > ul {
+		background: var(--color-back-dark)!important;
+	}
+
+	#content > div > div.threads-scroll-spy.hidden-md.hidden-sm.hidden-xs > ul > li > a:hover {
+		color: var(--color-text-white)!important;
+	}
+	.threads-scroll-spy ul li:hover,
+	.threads-scroll-spy ul li.active {
+		border-color: var(--color-green);
+	}
+
+	/* убираем скроллбар у списка досок */
+	.sidebar::-webkit-scrollbar,
+	#sidebar::-webkit-scrollbar,
+	.sidemenu-boards::-webkit-scrollbar,
+	.sidemenu-boards-list-box::-webkit-scrollbar,
+	.sidemenu-boards-list::-webkit-scrollbar {
+		width: 0px!important;
+		background: transparent!important;
+	}
+
+	/* фон */
+	body {
+		background: var(--color-back) !important;
+	}
+
+	div#content {
+		background: transparent !important;
+	}
+
+	.sidebar {
+		background: var(--color-like-sidebar);
+		box-shadow: -27px 0px 18px -19px #0006 inset;
+	}
+
+	span.sidemenu-board-title {
+		display: none;
+	}
+	span.sidemenu-board-dir:before {
+		line-height: 1em;
+		color: var(--color-text-white);
+		font-size: 13px;
+	}
+
+	a[href$="/b"] > span.sidemenu-board-dir:before {
+		content: "Барак ";
+	}
+
+	a[href$="/it"] > span.sidemenu-board-dir:before {
+		content: "Программисты-анальники ";
+	}
+	a[href$="/lovesis"] > span.sidemenu-board-dir:before {
+		content: "Педо-инцест ";
+	}
+	a[href$="/ma"] > span.sidemenu-board-dir:before {
+		content: "Пиздоглазые комиксы ";
+	}
+	a[href$="/mod"] > span.sidemenu-board-dir:before {
+		content: "Обсуждение мочи ";
+	}
+
+	a[href$="/trains"] > span.sidemenu-board-dir:before {
+		content: "Пёзда ";
+	}
+
+	a[href$="/n"] > span.sidemenu-board-dir:before {
+		content: "Бомжевание ";
+	}
+	a[href$="/fiz"] > span.sidemenu-board-dir:before {
+		content: "Гачимучи ";
+	}
+	a[href$="/pol"] > span.sidemenu-board-dir:before {
+		content: "Пораша ";
+	}
+	a[href$="/mc"] > span.sidemenu-board-dir:before {
+		content: "MeinKampf ";
+	}
+	a[href$="/a"] > span.sidemenu-board-dir:before {
+		content: "Мультики для даунов ";
+	}
+	a[href$="/vn"] > span.sidemenu-board-dir:before {
+		content: "Пиздоглазые игры  ";
+	}
+	a[href$="/vg"] > span.sidemenu-board-dir:before {
+		content: "Гойминг  ";
+	}
+
+	a[href$="/crypt"] > span.sidemenu-board-dir:before {
+		content: "Криптошизики  ";
+	}
+	a[href$="/1chan"] > span.sidemenu-board-dir:before {
+		content: "Опущенки  ";
+	}
+	a[href$="/u"] > span.sidemenu-board-dir:before {
+		content: "Утюги фото скачать ";
+	}
+	a[href$="/dreams"] > span.sidemenu-board-dir:before {
+		content: "Ночные поллюции ";
+	}
+	a[href$="/tv"] > span.sidemenu-board-dir:before {
+		content: "Семейный просмотр ";
+	}
+
+	/* оформление поста, формы с новым постом */
+	.block.post,
+	.reply-form {
+		background-color: var(--color-posts) !important;
+		border: unset !important;
+		box-shadow: 0 1px 4px #111111 !important;
+	}
+
+	.reply-form-message {
+		color: var(--color-text);
+		background-color: var(--color-back) !important;
+		border: 1px solid var(--color-green-dark-dark) !important;
+		box-shadow: 0 !important;
+	}
+
+	/* скролл для длинных постов */
+	.block.post::-webkit-scrollbar,
+	.post-body-message::-webkit-scrollbar-thumb,
+	.post-body-message::-webkit-scrollbar-track-piece,
+	.post-body-message::-webkit-scrollbar-track,
+	.post-body-message::-webkit-scrollbar-button {
+		border-radius: 10px;
+		background: var(--color-posts) !important;
+	}
+	.post-body-message::-webkit-scrollbar-thumb,
+	.post-body-message::-webkit-scrollbar-corner {
+		background: var(--color-text)!important;
+	}
+
+	/* Выпадающий список Личности */
+	select {
+		border-color: var(--color-green-dark);
+		appearance: none;
+		background: var(--color-posts);
+		padding: 1px 5px 0px 5px;
+		color: var(--color-text-white);
+	}
+	/* информация о вложении */
+	.post-img figcaption {
+		font-size: 80%;
+		background: #000;
+		padding: 0.2em 0.4em;
+	}
+	/* удалить и скрыть пикчу*/
+	.post-img .post-img-buttons {
+		position: absolute;
+		top: 0;
+		right: 0;
+		margin-top: -18px;
+		line-height: 18px;
+		transition: margin-top 0.2s, opacity 0.2s;
+		background: #000;
+		z-index: 1;
+	}
+
+	/* модальное окно */
+	.modals-content {
+		color: var(--color-text);
+		background-color: var(--color-back-dark) !important;
+		border: 1px solid var(--color-green-dark-dark) !important;
+		box-shadow: unset !important;
+	}
+
+	/* выпадающее меню */
+	.dropdown-menu {
+		background-color: var(--color-back-dark) !important;
+		border: none;
+		box-shadow: 0 6px 12px var(--color-green-dark-dark);
+	}
+	.dropdown-header {
+		color: var(--color-text-white) !important;
+	}
+	div.headmenu-buttons.headmenu-buttons-right > div > div > ul > li > a:hover {
+		background-color: var(--color-back) !important;
+		color: var(--color-text) !important;
+	}
+
+	/* текстовое поле */
+	textarea {
+		color: var(--color-text);
+		background-color: var(--color-back);
+	}
+
+	/* разделитель тредов */
+	div.separator {
+		border-color: var(--color-hover);
+	}
+
+	/* ОП-пост*/
+	div.block.post-op {
+		border: 1px solid var(--color-green-dark-dark) !important;
+	}
+
+	/* текст постов (включая ОП) */
+	div.post-body {
+		color: var(--color-text) !important;
+	}
+
+	/* название треда в ОП-посте */
+	span.post-id {
+		color: var(--color-text);
+	}
+
+	.post .post-header .post-date,
+	.panel-heading,
+	.fa:before {
+		color: var(--color-text-white) !important;
+	}
+
+	/* футер поста (кнопки скрыть, ответить) */
+	div.post-footer {
+		border: unset !important;
+	}
+
+	/* плашка с названием доски вверху страницы */
+	div.headmenu {
+		background-color: var(--color-back);
+		border-bottom: none;
+	}
+
+	div.headmenu-title > span,
+	div.headmenu-title > span * {
+		color: var(--color-text) !important;
+	}
+
+	/* кнопочки */
+	button.btn.btn-xs {
+		color: var(--color-text);
+		background-color: var(--color-green-dark);
+		border-color: var(--color-green-dark);
+	}
+
+	.btn,
+	.nav-item a,
+	.pagination li {
+		text-shadow: 1px 1px 1px black;
+	}
+
+	/* спойлер */
+	mark,
+	.spoiler {
+		color: var(--color-text);
+		background: none;
+		filter: blur(1.5px);
+		transition: 0.5s !important;
+	}
+
+	mark:hover,
+	.spoiler:hover {
+		color: var(--color-text);
+		background: none;
+		filter: blur(0px);
+	}
+
+	mark a,
+	.spoiler a {
+		color: var(--color-text) !important;
+	}
+
+	mark:hover a,
+	.spoiler:hover a {
+		color: var(--color-green) !important;
+	}
+
+	/* блок цитирования */
+	pre {
+		background-color: var(--color-text);
+		color: var(--color-back);
+	}
+
+	/* кода */
+	code {
+		background-color: #222222;
+		color: #08f;
+		font: 0.9em "DejaVu Sans Mono", monospace !important;
+		white-space: pre-wrap !important;
+		padding: 0.4em;
+		line-height: 1.2em;
+	}
+
+	/* NSFW */
+	.post-img .post-img-nsfw-label {
+		font-size: 1em;
+		color: var(--color-cyan);
+		border: 1px solid var(--color-cyan);
+	}
+
+	/* флажки прикрепленных и закрытых тредов */
+	span.post-thread-options i.active {
+		color: var(--color-green) !important;
+	}
+
+	/* ветка ОП-поста в древовидном режиме */
+	.threads > div > div > .thread-tree > .thread-reply-chain:first-of-type {
+		border: unset;
+	}
+
+	/* "Пропущено N постов" */
+	.thread > div > div:nth-child(2) span {
+		color: var(--color-text);
+	}
+
+	/* скрываемая панель тредов справа */
+	.threads-scroll-toggler {
+		background: var(--color-green) !important;
+		width: 15px;
+	}
+
+	.threads-scroll-toggler > i {
+		font-size: 22px;
+		opacity: 1 !important;
+	}
+
+	/* окошко капчи */
+	.captcha-form-wrapper {
+		background: rgba(10, 30, 40, 0.6) !important;
+	}
+
+	.captcha-form {
+		color: var(--color-text);
+		background: var(--color-posts);
+		width: 220px;
+		height: 160px;
+	}
+
+	.captcha-form .captcha-close-btn {
+		margin-right: 5px;
+	}
+
+	.captcha-form .separator {
+		border-top: 1px solid var(--color-back);
+		border-bottom: 1px solid var(--color-back);
+	}
+
+	.captcha-form form > input {
+		margin: 0 0 10px 10px !important;
+	}
+
+	.captcha-form form > button {
+		margin: 0 10px 10px 0 !important;
+	}
+
+	/* полноразмерная картинка не должна вылизить за рамки поста!!! */
+	.post-img-full {
+		min-width: 400px !important;
+		max-width: 100% !important;
+	}
+
+	.post-embed-overlay {
+		cursor: pointer;
+	}
+
+	.post-img .post-img-labels .post-img-gif-label {
+		color: var(--color-green);
+		border: 1px solid var(--color-green);
+		background: var(--color-back)
+	}
+	/* иконка ютуп */
+	.post-img .post-embed .post-embed-play-btn {
+		margin: 0 10px 8px 0;
+		width: 30px;
+	}
+
+	/* скроллбар во фрейме */
+	.sidemenu-boards-list {
+		direction: rtl;
+		right: -8px !important;
+	}
+
+	.sidemenu-boards-list * {
+		direction: ltr;
+	}
+
+
+	/* гринтекст */
+	blockquote {
+		color: var(--color-text-green) !important;
+	}
+
+	/* бан */
+	.user-was-banned {
+		color: var(--color-text-ban) !important;
+	}
+
+	/* ссылки на разделы на панели слева */
+	.sidemenu-menu-top a:before,
+	.sidemenu-menu-btm a ::before,
+	.sidemenu-menu-top span,
+	.sidemenu-menu-btm span {
+		color: var(--color-green) !important;
+	}
+
+	.sidemenu-menu-top a:hover:before,
+	.sidemenu-menu-btm a:hover ::before,
+	.sidemenu-menu-top span:hover,
+	.sidemenu-menu-btm span:hover {
+		color: var(--color-green-dark) !important;
+	}
+
+	/* скроллбар всего сайта глобально */
+	::-webkit-scrollbar,
+	::-webkit-scrollbar-thumb,
+	::-webkit-scrollbar-track {
+		width: 5px!important;
+		background: var(--color-green-dark) !important;
+		border-radius: 10px;
+	}
+	::-webkit-scrollbar-button,
+	::-webkit-scrollbar-corner,
+	::-webkit-scrollbar-track-piece {
+		background: var(--color-green-dark-dark)!important;
+		height: 5px!important;
+		border-radius: 10px;
+	}
+
+
+	/* ОТМЕЧЕННЫЕ ТРЕДЫ */
+	/* белая тень шрифта - минус*/
+	.empty-page {
+		text-shadow: unset !important;
+	}
+
+	/* СООБЩЕНИЯ */
+	.btn-default {
+		color: var(--color-text)!important;
+		background-color: #00000024 !important;
+		border: none;
+	}
+
+	.form-control {
+		background: var(--color-back) !important;
+		color: var(--color-text) !important;
+		border: 1px solid var(--color-posts);
+	}
+
+
+	.im-box .list-group-item {
+		background: var(--color-posts) !important;
+		color: var(--color-text) !important;
+		border: 1px solid var(--color-back);
+	}
+
+	.dialog-footer,
+	.dialog-header,
+	.dialog.panel.panel-default {
+		background: var(--color-posts) !important;
+		color: var(--color-text) !important;
+		border: unset !important;
+	}
+
+	.dialog-body,
+	.im-message {
+		color: var(--color-text) !important;
+		background: var(--color-back) !important;
+	}
+	.im-box .dialog-view {
+		background: unset !important;
+	}
+
+	.im-separator {
+		border-top: 1px solid var(--color-posts) !important;
+	}
+	.im-box .list-group-item:hover {
+		background: var(--color-hover) !important;
+	}
+
+	/* УПРАВЛЕНИЕ И МОДЕРАЦИЯ */
+	.panel.panel-default {
+		background: var(--color-back) !important;
+		color: var(--color-text) !important;
+		border: 1px solid var(--color-posts) !important;
+	}
+	.panel-footer {
+		background: var(--color-posts) !important;
+		color: var(--color-text) !important;
+		border-top: 1px solid var(--color-posts) !important;
+	}
+
+	.panel-heading {
+		background: var(--color-posts) !important;
+		border-bottom: unset !important;
+	}
+
+	ul.pagination li a {
+		background: var(--color-green-dark) !important;
+		color: var(--color-text-white) !important;
+		border: unset !important;
+	}
+
+	ul.pagination li.active a {
+		background: var(--color-green-dark-dark) !important;
+		border: 1px solid var(--color-green) !important;
+		margin-top: -1px;
+		/* граница */
+	}
+
+	/* запрет изменения ширины textarea в настройках чтобы верстка не ехала */
+	#content > div > div:nth-child(2) > div > div:nth-child(4) > form > div > div.panel-body > div > textarea {
+		max-width: 494px
+	}
+
+	/* ВХОД*/
+	input {
+		background: var(--color-back) !important;
+		border: 1px solid var(--color-posts) !important;
+		color: var(--color-text) !important;
+	}
+
+	input:hover {
+		border: 1px solid #3F424F !important;
+	}
+
+	input:focus {
+		border: 1px solid var(--color-green) !important;
+	}
+
+	/* Экспериментальная опция */
+	/*
+	#content > div > div:nth-child(4):before {
+		content: url(https://files.catbox.moe/ml4kza.svg) "заходи на доску /gay/";
+		text-align: center;
+		font-size: 6.5vw;
+		color: #fff;
+		font-weight: 700;
+		text-transform: uppercase;
+		animation: light .75s ease-out infinite;
+		text-shadow: 0 0 5px #fff, 0 0 7px #fff
+	}
+	@keyframes light {
+		from {
+			text-shadow: 0 0 10px #fff,
+			0 0 10px #fff,
+			0 0 25px #fff,
+			0 0 25px #fff,
+			0 0 25px #fff,
+			0 0 25px #fff,
+			0 0 25px #1ec1b5,
+			0 0 25px #fff,
+			0 0 50px #18669f,
+			0 0 50px #fff,
+			0 0 50px #7b96b8,
+			0 0 150px #7b96b8,
+			0 10px 100px #7b96b8,
+			0 10px 100px #7b96b8,
+			0 10px 100px #7b96b8,
+			0 10px 100px #7b96b8,
+			0 -10px 100px #7b96b8,
+			0 -10px 100px #ff00e9;
+		}
+	}
+	*/
+}

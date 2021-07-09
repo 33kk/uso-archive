@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         duogals
 @description    `Gives Twitch.tv a future funk theme.Recommended with Dark Mode turned on.Also works with BetterTTV!Author: duogals/ShadderYou can download this UserCSS here:https://github.com/duogals/Twitch-Future-Funk`
-@version        20210615.16.9
+@version        20210708.22.11
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -11,7 +11,7 @@
     /* ==UserStyle==
      @name			Twitch Future Funk
      @namespace		duogals
-     @version		     1.0.10
+     @version		     1.1.0
      @description	     A future funk themed style for Twitch.tv.
      @author			duogals/Shadder
      @license		     CC0 - Public Domain
@@ -19,7 +19,7 @@
      @supportURL		https://github.com/duogals/Twitch-Future-Funk/issues
      @updateURL		https://raw.githubusercontent.com/duogals/Twitch-Future-Funk/main/TwitchFutureFunk.user.css
      @Creation-Date      2020-09-18
-     @Last-Updated       2021-06-15
+     @Last-Updated       2021-07-09
     ==/UserStyle== */
     
     /* BODY COLOR */
@@ -394,6 +394,9 @@
     .cbThWs {
          color: #f66bff !important;
     }
+    .cheVcL {
+          background-color: #6100bd !important;
+    }
     
     /*Followed Channels, and Online Friends usernames*/
     .eAXpco {
@@ -566,6 +569,10 @@
           background-color: #0c0026  !important;
     } .hvsHAA {
          background-color: #0c0026 !important;
+    } .eVRxkm {
+         color: #00daff !important;
+    } .bttv-moderator-card-messages {
+          background-color: #06000b!important;
     }
 
     /*==SCHEDULE==*/
@@ -715,4 +722,64 @@
     .hBhqbb {
          background-color: #0c0026 !important;
     }
+
+    /*Gift to community wrapper*/
+    .eXMndr {
+         background-color: #0f004d !important;
+    }
+    /*Buttons within Gift to community wrapper*/
+    .fWCiFE {
+         background-color: #7003ff;
+    }
+    /*Gift to community wraper text color*/
+    .ljmcNG {
+     color: #00daff !important;
+    } .eXTUzl {
+         color: #00daff !important;
+    } .jQSAXF {
+          color: #00daff !important;
+    } .fpkNHz {
+          color: #00daff !important;
+    } .VUIXE {
+          color: #00daff !important;
+    } .dVmHJR {
+          color: #00daff !important;
+    } .epwTZM {
+          color: #00daff !important;
+    } .chZay {
+          color: #00daff !important;
+    } 
+    /*Gift to Community Tier 2 and Tier 2 Example message color*/
+    .kLsjsF {
+         background-color: #110169 !important;
+    } .fAskUL {
+         background-color: #3302f5 !important;
+    }
+
+    /*Sub Gifter progression bar within Gift to community wrapper*/
+    .jyhETi {
+          background: #013e4233 !important;
+    }
+
+
+    /*7TV*/
+    /*7tv background color and text color*/
+    .seventv-emote-menu .seventv-emote-menu-scrollable {
+          background-color: #110046 !important;
+          color: #00daff !important;
+    } .MuiButtonBase-root {
+          background-color: #11016a !important;
+    } .dXWCyY.selected {
+         border-bottom: #00daff;
+    }
+
+    /*Chat Identity*/
+    /*Identity preview*/
+    .hjDQDp {
+         background-color: #06000b !important;
+    } .kZAhUe {
+         color: #00daff !important;
+         background-color: #110035 !important;
+    }
+
     }
