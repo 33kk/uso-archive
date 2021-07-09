@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         kevin pan
 @description    `After the update of Facebook, I feel it much cleaner. However, the navigations at left/right always annoy me - I want to focus on the news feed flow. Also, some pages (such as Pokes) can but don't use the full width. So I create this to make myself happy. By hovering on the navigations, your cursor can expand them.`
-@version        20210624.1.26
+@version        20210709.10.32
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -31,12 +31,11 @@
   opacity: 0.00;
 }
 
-/*HOME right sidebar sponsored (hidden)*/
-[data-pagelet="RightRail"]>div:first-child{
-    height: 0;
+/*HOME right sidebar sponsored (hidden) - Experimental*/
+[data-pagelet="RightRail"] > div:first-child > span:last-child{
+    display: none;
     overflow: hidden;
 }
-
 
 /*HOME post creating section*/
 .o0xt3n8b{

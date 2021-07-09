@@ -2,11 +2,11 @@
 @name           Pink Visited Links for some sites
 @namespace      USO Archive
 @author         aomiep
-@description    `Pink Visited Links for piratebay.org, 1377x.to, rarbgmirror.com, yggtorrent.se, oxtorrent.com, kitty-kats.net, onlyfullsets.com`
-@version        20210226.21.14
+@description    `Pink Visited Links for sites I use that don't distinguish visited links from normal links.That's a dirty hack, but it does the job for me and I'm lazy.Affected websites: 1377x.to, bedetheque.com, kitty-kats.net, nagy-dudak.blog.hu, onlyfullsets.com, oxtorrent, piratebay, pornleech.is, rarbgmirror, tvtropes.org, twitter.com, xhamster, yggtorrent.`
+@version        20210709.11.10
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
-@-moz-document domain("thepiratebay.org"), domain("kitty-kats.net"), domain("oxtorrent.ws"), domain("yggtorrent.li"), domain("onlyfullsets.com"), domain("rarbgmirror.com"), domain("1377x.to"), domain("pornleech.is"), domain("yggtorrent.ch"), domain("nagy-dudak.blog.hu") {
+@-moz-document domain("1377x.to"), domain("bedetheque.com"), domain("kitty-kats.net"), domain("nagy-dudak.blog.hu"), domain("onlyfullsets.com"), domain("oxtorrent.pe"), domain("pornleech.is"), domain("rarbgmirror.com"), domain("thepiratebay.org"), domain("tvtropes.org"), domain("twitter.com"), domain("xhamster.com"), domain("yggtorrent.li") {
 a:visited { color: violet !important }
 }

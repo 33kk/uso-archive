@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         KMVerum
 @description    `Reddit Custom Theme - International Version.Compatibility:RES - (https://redditenhancementsuite.com/)all *.reddit.com domains found to date(many main-) custom Subreddit themessnew.notabug.iowww.removeddit.comwww.reveddit.com4chan.org8kun.topphuks.co (rough edit - tweaking to come)poal.cosaidit.netvoat.co - (RIP 20201225)communities.win + subdomainsconspiracies.wingreatawakening.winpatriots.winthedonald.winarchive.fo/is/md/vnGoogle reCAPTCHAGoogle WebcacheWaybackMachine (web.archive.org)Includes custom black cursor + pointers based on;https://userstyles.org/styles/175086/Recommended add-on: Custom Browser Scrollbars:https://userstyles.org/styles/182441/Tested on Brave, Chrome, Chromium, Firefox, Firefox Nightly, Tor & Waterfox.PS; Waterfox is a little wonky on custom wallpapers.If problems occur, choose "none".Stylus recommended:https://add0n.com/stylus.htmlContact:https://old.reddit.com/r/KMV/`
-@version        20210703.9.29
+@version        20210709.8.43
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown RCWallpaper "Wallpaper" {
@@ -6206,11 +6206,11 @@ blockquote,
     background-color:#222;
 }
 /*poal.co*/
-a[href="#spoiler"]
+body.day blockquote
 {
     color:#222!important;
     border-left:solid 4px#444!important;
-    background-color:#222!important;
+    background:#222!important;
     border-radius:2px!important;
 }
 [id*="content-"].content p em a
@@ -7989,6 +7989,7 @@ ytp-bottom:hover,
 .TquXA:hover,
 .ui-datepicker-next,.ui-datepicker-prev,
 .upvote,
+.viewer__click,
 .yt-dropdown-menu:hover,
 .yt-simple-endpoint:hover,
 .ytd-menu-service-item-renderer:hover,
@@ -8286,6 +8287,7 @@ ytp-bottom:active,
 .TquXA:active,
 .ui-datepicker-next:active,.ui-datepicker-prev:active,
 .upvote:active,
+.viewer__click:active,
 .yt-dropdown-menu:active,
 .yt-simple-endpoint:active,
 .ytd-menu-service-item-renderer:active,
