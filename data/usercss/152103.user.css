@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         radiochild577
 @description    `The most complete and updated night (dark or black) theme for Yahoo Fantasy as of Fall 2018. Should work for all Fantasy sports on Yahoo.com, but only tested for Football, Basketball and Baseball. I used <a href="https://userstyles.org/styles/119567/yahoo-fantasy-football-dark-full-width"> theo shu's theme</a> as a template but made a lot of modifications/updates. Designed for Firefox, but can be imported to Chrome to work with that browser - just copy the CSS and "import" to Chrome in the style settings of that browser.NOTE - this has only been tested in Firefox using the Stylus CSS add-on.`
-@version        20210708.21.7
+@version        20210709.18.5
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -678,14 +678,25 @@ a
   background-color: #161719;
 }
 
-.Thm-inherit .ysf-rosterswapper.swapping tr.swaptarget:not(.💩)
+.Thm-inherit .ysf-rosterswapper.swapping tr.swaptarget:not(._poop_), .editable.swaptarget
 {
   background: #494c5c;
 }
 
-.Desktop .ysf-rosterswapper.swapping tbody tr.swaptarget:hover td:not(.💩), .Desktop .ysf-rosterswapper.swapping tbody tr.swaptarget:focus td:not(.💩)
+.Desktop .ysf-rosterswapper.swapping tbody tr.swaptarget:hover td:not(._TEST_), .Desktop .ysf-rosterswapper.swapping tbody tr.swaptarget:focus td:not(._poop_)
 {
   background: #6D728A;
+}
+
+.Thm-inherit .highlight {
+    -webkit-animation: highlight-glass 0s ease-out;
+    -moz-animation: highlight-glass 0s ease-out;
+    animation: highlight-glass 0s ease-out;
+}
+
+.Desktop .ysf-rosterswapper.swapping tr.swaptarget:hover, .Desktop .ysf-rosterswapper.swapping tr.swaptarget:focus {
+    opacity: 1;
+    cursor: pointer;
 }
 
 .Desktop .ysf-rosterswapper.swapping tbody tr.swaptarget:hover td, .Desktop .ysf-rosterswapper.swapping tbody tr.swaptarget:focus td

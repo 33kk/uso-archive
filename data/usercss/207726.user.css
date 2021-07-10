@@ -2,21 +2,11 @@
 @name           eksisozluk Daracula Theme (Ad-Free)
 @namespace      USO Archive
 @author         boranb
-@description    `Dracula Theme renkleri kullanılarak yeniden tasarlandı.Hata, istek ve öneriler için iletişime geçin.github.com/boranb`
-@version        20210709.11.38
+@description    `A new dracula theme for eksisozluk.com that more readable and eye friendly. Please let me know if you have any feedback. Dracula Theme renkleri kullanılarak yeniden tasarlandı. Hata, istek ve öneriler için iletişime geçin. github.com/boranb`
+@version        20210709.19.19
 @license        CC-BY-NC-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
-/* ==UserStyle==
-@name           eksisozluk Daracula Theme (Ad-Free)
-@namespace      USO Archive
-@author         Berkay Boran https://github.com/boranb
-@description    `A new dracula theme for eksisozluk.com that more readable and eye friendly. Please let me know if you have any feedback.`
-@version        20210709.11.11
-@license        CC-BY-NC-SA-4.0
-@preprocessor   uso
-==/UserStyle== */
-
 @-moz-document url-prefix("https://eksisozluk.com") {
     ::selection {
         background: #888;
@@ -312,8 +302,49 @@
     #channel-follow-list li {
         border-radius: 4px;
     }
+    #user-badges a {
+        display: inline-block;
+        padding: 2px 10px;
+        background-color: #44475a;
+        color: #bd93f9 !important;
+        border-radius: 3px;
+        border: 1px outset #bd93f9;
+    }
+    #user-badges a:hover {
+        display: inline-block;
+        padding: 2px 10px;
+        background-color: #282a36;
+        color: #bd93f9 !important;
+        border-radius: 3px;
+        border: 1px outset #bd93f9;
+    }
+    .profile-stats-sections h1,
+    .profile-stats-sections h2,
+    .profile-stats-sections h3 {
+        color: #ff79c6;
+    }
+    #entry-item-list footer .permalink,
+    #matter-index-item-list footer .permalink,
+    #matter-content footer .permalink,
+    #pinned-entry footer .permalink,
+    #matter-answer-index-item-list footer .permalink,
+    #matter-answer-list footer .permalink {
+        color: #8be9fd !important;
+        font-size: 12px;
+    }
+    #entry-item-list a,
+    #matter-index-item-list a,
+    #matter-content a,
+    #draft-content a,
+    #disambiguations a,
+    #pinned-entry a {
+        color: #bd93f9 !important;
+    }
     html.no-touch #channel-follow-list li:hover {
         background-color: #44475a;
+    }
+    .topic-list .seperator {
+        color: #ff79c6;
     }
     #logo a {
         background-image: url(https://svgshare.com/i/YuU.svg) !important;
@@ -411,12 +442,36 @@
         fill: #f8f8f2;
         padding-bottom: 0.5px;
     }
+    #top-bar > #advanced-search-form {
+        background-color: #282a36;
+        border: 1px solid #44475a;
+        color: #f8f8f2;
+    }
     input,
     select,
     textarea,
     #search-form #search-textbox {
-        color: #ddd;
+        color: #ff79c6 !important;
         background-color: #44475a;
+    }
+    #search-form button[type=submit] {
+        height: 32px;
+        line-height: 32px;
+        background-color: #f8f8f2;
+    }
+    #search-form button[type=submit] .eksico {
+        fill: #282a36 !important;
+    }    
+    .ui-autocomplete {
+        border: 1px solid #44475a;
+        color: #ff79c6;        
+        background-color: #44475a;
+    }
+    .ui-autocomplete:after {
+        border-bottom: 6px solid #ff79c6;
+    }
+    #a3-toggle:after {
+    border-top: 4px solid #f8f8f2;
     }
     #partial-index .pager select,
     #partial-index .pager a {

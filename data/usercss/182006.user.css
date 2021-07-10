@@ -2,8 +2,8 @@
 @name           Dark Minimal WhatsApp Web
 @namespace      USO Archive
 @author         Giorgio Adamo
-@description    `<b>Sick of light? Join the darkness!</b>You can easily <b>change the accent/theme color</b> according to your preference by clicking the button <b>CUSTOMIZE SETTINGS</b> right below the preview picture.Constantly updating as the newest WhatsApp web update release comes online (last update: November 20th 2020). It may take a couple of days to fix the skin after a new release comes out, but don't worry... I will be on the case ;)Consider supporting me by donating on <a href="paypal.me/giorgioadamo"><b>Paypal</b></a>Stay safe and have a productive day!UPDATED FEB 2021`
-@version        20210310.20.59
+@description    `<b>Sick of light? Join the darkness!</b>You can easily <b>change the accent/theme color</b> according to your preference by clicking the button <b>CUSTOMIZE SETTINGS</b> right below the preview picture.Constantly updating as the newest WhatsApp web update release comes online (last update: July 2021). It may take a couple of days to fix the skin after a new release comes out, but don't worry... I will be on the case ;)Consider supporting me by donating on <a href="paypal.me/giorgioadamo"><b>Paypal</b></a>Stay safe and have a productive day!UPDATED JULY 2021`
+@version        20210709.22.34
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 @advanced color mainColor "Accent color" #FD4747
@@ -23,7 +23,6 @@
   --darkerGray: #1c1c1c;
   --darkGray: #222222;
   --blackRgb: 0,0,0;
-  --mainColor: #fd5154;
   --mainColor: /*[[mainColor]]*/;
   --whitish: #d5d5d5;
   /* --alertMessage: "IMPORTANT: whatsapp released a new version of whatsapp web on 19.11.2020 breaking all the custom skins out there. I will release fixes in the next days to make it work again. Keep manually updating!!!"; */
@@ -33,6 +32,16 @@
   --audio-progress-played-outgoing: var(--mainColor) !important;
   --audio-progress-incoming: var(--mainColor) !important;
   --audio-progress-outgoing: var(--mainColor) !important;
+  --menu-tabs-list-active: var(--mainColor) !important;
+  --intro-background: var(--darkerGray) !important;
+  --button-primary-background: var(--mainColor) !important;
+  --active-tab-marker: var(--mainColor) !important;
+  --audio-track-outgoing: var(--superLightGray) !important;
+  --audio-track-outgoing: var(--superLightGray) !important;
+  --panel-background: var(--darkGray) !important;
+  --panel-background-colored: var(--darkGray) !important;
+  --dropdown-background-hover: var(--darkGray) !important;
+  --background-default: var(--darkGray) !important;
   --video-primary: var(--mainColor) !important;
   --cl-1: var(--mainColor) !important;
   --cl-2: var(--mainColor) !important;
@@ -65,7 +74,8 @@
 }
 
 
-*::-webkit-scrollbar-track {
+*::-webkit-scrollbar-track,
+*::-webkit-slider-runnable-track {
   background: var(--lightGray) !important;
 }
 
@@ -84,7 +94,8 @@ body {
 ._NAbm.N7Dyd,
 .kA6WR.N7Dyd,
 ._1lcup,
-._39Lm1 {
+._39Lm1,
+._1UyGr._18oGY {
   background: linear-gradient(15deg,rgba(var(--lightGray),0),rgba(var(--lightGray),0) 45%,rgba(var(--lightGray),.12) 70%,rgba(var(--lightGray),.33)) !important;
 }
 [data-asset-intro-image-light],
@@ -276,7 +287,8 @@ div[aria-selected]:hover, div[aria-selected="true"] {
 }
 
 ._20WGU,
-._15CAo._3EQsG {
+._15CAo._3EQsG,
+._1UyGr ._18oGY {
   background: linear-gradient(
     15deg,
     transparent,
@@ -358,8 +370,8 @@ div[aria-selected]:hover, div[aria-selected="true"] {
 ._3Pwfx,
 ._22PcK,
 ._2O84H,
-.message-in ._2XJpe,
-.message-out ._2XJpe,
+.message-in .Nm1g1,
+.message-out .Nm1g1,
 .wPm43,
 .tnocY,
 .KpuSa,
@@ -411,7 +423,12 @@ div[aria-selected]:hover, div[aria-selected="true"] {
 ._1npKH,
 .VMhw8,
 ._3_5OP,
-._1814Z._3Ku9S {
+._1814Z._3Ku9S,
+._2nY6U,
+.nBIOd,
+.p3_M1,
+._2B4d4._1QH2G,
+.message-in ._2JUrU ._3OC33, .message-in ._2JUrU ._3Lby7 {
   background-color: var(--darkGray) !important;
 }
 
@@ -524,7 +541,20 @@ div[aria-selected]:hover, div[aria-selected="true"] {
 ._3ob6-,
 .B3rjP,
 .TbtXF,
-._2GAT7 {
+._2GAT7,
+._2P1rL,
+._2QzJd,
+._2nY6U,
+._1U_13,
+.message-out ._3o5fT,
+.message-in ._3o5fT,
+._2BU3P,
+._3yKRR._3tcao,
+._20c87,
+._3yWey.XKmj6,
+._1HzbD,
+._3J6wB,
+._1fqrG {
   border: none !important;
   background: var(--darkerGray) !important;
   color: var(--superLightGray) !important;
@@ -568,7 +598,9 @@ html[dir="ltr"] ._1F9Ap,
 ._24wtQ,
 ._1DB2K,
 ._1JAUF._2x4bz ._2_1wd,
-._222Ot{
+._222Ot,
+.cvjcv,
+._2nY6U._2_TVt ._37FrU {
     /* fill: #828689 !important; */
   color: var(--superLightGray) !important;
 }
@@ -727,7 +759,15 @@ html[dir="ltr"] ._1F9Ap,
 ._2OcmB,
 ._2oimd,
 ._2kxXx,
-._2EcSg {
+._2EcSg,
+._2mQtw,
+._23P3O,
+._1G3Wr,
+.uwk68,
+.o--vV,
+.EtBAv,
+.YGe90,
+._2t-e4 {
   background-color: var(--darkerGray) !important;
   color: var(--mainColor) !important;
 }
@@ -824,7 +864,14 @@ a,
 ._24DMK,
 span[data-mention-jid],
 .matched-mention,
-.-TvKO {
+.-TvKO,
+._2MNpf,
+.dJxPU,
+.zoWT4,
+._23sAs._2ijNh,
+._21nHd,
+._1zOyO,
+._1i_wG {
   color: var(--mainColor) !important;
 }
 
@@ -905,7 +952,9 @@ input[type="radio"]:checked,
 ._3OPbH,
 ._1io3J,
 ._38M1B,
-._1xOYT:before {
+._1xOYT:before,
+.UF5Li,
+.zaKsw:after {
   background-color: var(--mainColor) !important;
   border-color: var(--mainColor) !important;
   color: var(--whitish) !important;
@@ -920,7 +969,8 @@ input[type="range"]::-webkit-slider-runnable-track {
   border-color: var(--whitish) !important;
 }
 
-._1hDF {
+._1hDF,
+._2IweK {
   border-color: var(--whitish) !important;
 }
 
@@ -935,7 +985,12 @@ input[type="range"]::-webkit-slider-runnable-track {
 .eJ0yJ:hover,
 .n-CQr:hover,
 ._2S4cq,
-.H774S._3UHfW {
+.H774S._3UHfW,
+._9-YHG,
+._18oo2._19zgN
+.pXnLN,
+._3K-bg,
+._165_h {
   background-color: var(--darkGray) !important;
 }
 
@@ -982,7 +1037,8 @@ span[data-icon="tail-out"] {
 .DuUXI, 
 ._2Evw0,
 .TbtXF,
-._2A8P4 {
+._2A8P4,
+._3OvU8 {
   border-color: transparent !important;
 }
 
@@ -993,7 +1049,8 @@ span[data-icon="tail-out"] {
 ._2a1zO,
 ._2_g1_,
 ._2zkCi:after,
-._2Gqfb .UQ0S6 {
+._2Gqfb .UQ0S6,
+._2fOd_ ._3mpG7 {
   border-color: var(--mainColor) !important;
 }
 

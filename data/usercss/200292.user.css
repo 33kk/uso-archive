@@ -1,19 +1,20 @@
 /* ==UserStyle==
 @name           DeepdreamGenerator Bigger Preview Images
 @namespace      USO Archive
-@author         Kirill Zhulin
+@author         KillJoy505
 @description    `Preview Images width: 70pxheight: 60px`
-@version        20210328.3.58
+@version        20210709.12.59
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document url-prefix("https://deepdreamgenerator.com")
  {
-.notifications.notification.dream img {
-    width: 70px;
-    height: 60px;
+.notifications .notification .dream img {
+    width: 120px;
+    height: 90px;
     margin: 5px;
     padding: 2px;
+
 }
    }
    
