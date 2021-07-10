@@ -3,31 +3,35 @@
 @namespace      USO Archive
 @author         kevin pan
 @description    `After the update of Facebook, I feel it much cleaner. However, the navigations at left/right always annoy me - I want to focus on the news feed flow. Also, some pages (such as Pokes) can but don't use the full width. So I create this to make myself happy. By hovering on the navigations, your cursor can expand them.`
-@version        20210709.10.32
+@version        20210710.8.56
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document regexp(".*://www.facebook.com.*") {
-/*--[Universal]--*/
+/*--[Home Page & Universal]--*/
 
 /*Home sidebar*/
-.fer614ym{
+#ssrb_left_rail_start+[role=navigation], 
+#ssrb_left_rail_end~[role=complementary]{
   transition: flex-basis .25s;
   max-width: unset;
   min-width: unset;
 }
 
-.fer614ym:not(:hover){
+#ssrb_left_rail_start+[role=navigation]:not(:hover), 
+#ssrb_left_rail_end~[role=complementary]:not(:hover){
   flex-basis: 60px;
 }
 
-.fer614ym span{
+#ssrb_left_rail_start+[role=navigation] span, 
+#ssrb_left_rail_end~[role=complementary] span{
   white-space: nowrap;
   transition: opacity .25s .25s;
   opacity: 1;
 }
 
-.fer614ym:not(:hover) span{
+#ssrb_left_rail_start+[role=navigation]:not(:hover) span, 
+#ssrb_left_rail_end~[role=complementary]:not(:hover) span{
   opacity: 0.00;
 }
 
@@ -50,17 +54,18 @@
 }
 
 /*Shortcut Navigation ([Home][Watch][Marketplace][Groups][Gaming])*/
+/*2021-07-10 updated: ([Home][Friends][Watch][Marketplace][Groups][Bookmarks])*/
 /*
-.jrc8bbd0.jrc8bbd0{
-    flex-grow: unset;
-    min-width: unset;
-    width: 0;
+[aria-label=Facebook][role=navigation]>ul>li:first-child +* +*,
+[aria-label=Facebook][role=navigation]>ul>li:first-child +* +* +*
+{
+    display:none    
 }
-.jrc8bbd0.jrc8bbd0 a{
-    
-}
-[aria-label="Watch"]{
-    display: none;
+
+[aria-label=Facebook][role=navigation]>ul>li:first-child +* +* +* +*,
+[aria-label=Facebook][role=navigation]>ul>li:first-child +* +* +* +* +*
+{
+    display: block
 }
 */
 }

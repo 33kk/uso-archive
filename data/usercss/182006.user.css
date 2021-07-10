@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Giorgio Adamo
 @description    `<b>Sick of light? Join the darkness!</b>You can easily <b>change the accent/theme color</b> according to your preference by clicking the button <b>CUSTOMIZE SETTINGS</b> right below the preview picture.Constantly updating as the newest WhatsApp web update release comes online (last update: July 2021). It may take a couple of days to fix the skin after a new release comes out, but don't worry... I will be on the case ;)Consider supporting me by donating on <a href="paypal.me/giorgioadamo"><b>Paypal</b></a>Stay safe and have a productive day!UPDATED JULY 2021`
-@version        20210709.22.34
+@version        20210710.10.12
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 @advanced color mainColor "Accent color" #FD4747
@@ -28,20 +28,21 @@
   /* --alertMessage: "IMPORTANT: whatsapp released a new version of whatsapp web on 19.11.2020 breaking all the custom skins out there. I will release fixes in the next days to make it work again. Keep manually updating!!!"; */
   --alertMessage: "IMPORTANT: I fixed an important issue where the color customisation wouldn't work. Please UNISTALL the skin, then go to the skin URL, select a color of your choice and REINSTALL the skin! ";
   --alertMessageSize: 17x;
+  --active-tab-marker: var(--mainColor) !important;
   --audio-progress-played-incoming: var(--mainColor) !important;
   --audio-progress-played-outgoing: var(--mainColor) !important;
   --audio-progress-incoming: var(--mainColor) !important;
   --audio-progress-outgoing: var(--mainColor) !important;
-  --menu-tabs-list-active: var(--mainColor) !important;
-  --intro-background: var(--darkerGray) !important;
+  --background-default: var(--darkGray) !important;
   --button-primary-background: var(--mainColor) !important;
-  --active-tab-marker: var(--mainColor) !important;
+  --intro-background: var(--darkerGray) !important;
+  --menu-tabs-list-active: var(--mainColor) !important;
   --audio-track-outgoing: var(--superLightGray) !important;
   --audio-track-outgoing: var(--superLightGray) !important;
   --panel-background: var(--darkGray) !important;
   --panel-background-colored: var(--darkGray) !important;
   --dropdown-background-hover: var(--darkGray) !important;
-  --background-default: var(--darkGray) !important;
+  --unread-marker-background: var(--mainColor) !important;
   --video-primary: var(--mainColor) !important;
   --cl-1: var(--mainColor) !important;
   --cl-2: var(--mainColor) !important;
@@ -428,7 +429,9 @@ div[aria-selected]:hover, div[aria-selected="true"] {
 .nBIOd,
 .p3_M1,
 ._2B4d4._1QH2G,
-.message-in ._2JUrU ._3OC33, .message-in ._2JUrU ._3Lby7 {
+.message-in ._2JUrU ._3OC33, .message-in ._2JUrU ._3Lby7,
+.a-HbF,
+._3IBSU {
   background-color: var(--darkGray) !important;
 }
 
@@ -554,7 +557,8 @@ div[aria-selected]:hover, div[aria-selected="true"] {
 ._3yWey.XKmj6,
 ._1HzbD,
 ._3J6wB,
-._1fqrG {
+._1fqrG,
+._1w-Ol {
   border: none !important;
   background: var(--darkerGray) !important;
   color: var(--superLightGray) !important;
@@ -767,7 +771,10 @@ html[dir="ltr"] ._1F9Ap,
 .o--vV,
 .EtBAv,
 .YGe90,
-._2t-e4 {
+._2t-e4,
+._3cOAM,
+._1IN0t,
+._2gZCX._3tcao {
   background-color: var(--darkerGray) !important;
   color: var(--mainColor) !important;
 }
@@ -871,7 +878,9 @@ span[data-mention-jid],
 ._23sAs._2ijNh,
 ._21nHd,
 ._1zOyO,
-._1i_wG {
+._1i_wG,
+.DNiBl,
+._1C3Ha {
   color: var(--mainColor) !important;
 }
 
@@ -954,7 +963,8 @@ input[type="radio"]:checked,
 ._38M1B,
 ._1xOYT:before,
 .UF5Li,
-.zaKsw:after {
+.zaKsw:after,
+._23LrM{
   background-color: var(--mainColor) !important;
   border-color: var(--mainColor) !important;
   color: var(--whitish) !important;
@@ -1050,7 +1060,8 @@ span[data-icon="tail-out"] {
 ._2_g1_,
 ._2zkCi:after,
 ._2Gqfb .UQ0S6,
-._2fOd_ ._3mpG7 {
+._2fOd_ ._3mpG7,
+._2359L ._1paHP {
   border-color: var(--mainColor) !important;
 }
 
@@ -1210,6 +1221,18 @@ div[data-animate-modal-body] ._3xWLK .-TvKO {
 
 .piNo6, ._2KNOi, input[type="range"] {
   cursor: pointer;
+}
+.a-HbF {
+  padding: 0 !important
+}
+
+._1u3M2:before {
+    content: "■ ■ ■" !important;
+    margin-right: 8px !important;
+}
+
+._1IN0t {
+  margin: 3px 0 3px 66px !important;
 }
 
 @keyframes pulse {

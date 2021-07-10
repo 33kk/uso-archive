@@ -1,0 +1,543 @@
+/* ==UserStyle==
+@name           shiftyy MyAnimeList Dark+
+@namespace      USO Archive
+@author         shiftyy
+@description    `(Works only on *PROFILE* page).A simple dark color theme + some other design changes (positions, buttons, etc).Please give me feedback or report any bug/inconsistency in the comments`
+@version        20210710.11.41
+@license        NO-REDISTRIBUTION
+@preprocessor   uso
+@advanced color colorBG "Background Color (Must be really dark colors for visibility)" #000000
+@advanced text fontS "Font Size" "12"
+
+==/UserStyle== */
+@-moz-document url-prefix("https://myanimelist.net/profile/") {
+body:not(.ownlist) {
+    background-color: /*[[colorBG]]*/;
+    font-family: Segoe UI, Arial;
+    font-size:  /*[[fontS]]*/px;
+    overflow-x: hidden;
+}
+
+.content-container {
+    background-color: #0000;
+}
+.page-common #menu {
+    background-color: #0000;
+    height: 30px;
+}
+
+/* NAV */
+.page-common #headerSmall .banner-header-anime-straming {
+    display: block;
+    height: 36px;
+    opacity: 1;
+    position: absolute;
+    right: 440px;
+    text-indent: 0;
+    top: -50px;
+}
+.js-truncate-outer .btn-truncate {
+    background-image: url(https://i.postimg.cc/rwR2vMGT/icon-pulldown2.png), url(https://i.postimg.cc/26CXK7Gs/bg-readmore.png);
+    filter: brightness(1);
+}
+.page-common #menu {
+    top: 4.3px;
+}
+
+.page-common #menu_left {
+    padding-left: 60px;
+}
+
+.page-common #menu_right {
+    top: 47px;
+}
+
+.page-common #nav li a {
+    color: #464646;
+    font-size: 11px;
+    font-weight: 700;
+    height: 24px;
+    padding: 10px 5px 0;
+    text-align: left;
+    text-decoration: none;
+}
+
+.page-common .header-list-button .fa {
+    color: #8e8e8e63;
+}
+.page-common .header-message-button .fa {
+    color: #8e8e8e63;
+}
+.page-common .header-notification-button .fa {
+    color: #8e8e8e63;
+}
+.page-common .header-list .header-list-dropdown ul li a {
+    background-color: #000;
+    border-bottom: #4d4d4d30 1px solid;
+}
+.page-common .header-list .header-list-dropdown {
+    background-color: #fff0;
+    border: #2e51a200 2px solid;
+}
+
+.page-common .header-profile-link {
+    color: #e6e6e6;
+    background-color: #0000;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: right;
+    text-decoration: none;
+}
+.page-common .header-profile.link-bg {
+    background-color: #20202000;
+}
+.page-common .header-profile.link-bg.on:hover {
+    background-color: #0000;
+}
+.page-common .header-profile-button {
+    background-color: #80879800;
+    box-shadow: #09090900 0 0 0 1px inset;
+}
+
+.page-common #header-menu .header-menu-login .btn-mal-service {
+    background-color: #f0f0f066;
+    border-color: #eb610000;
+    color: #fff0;
+    opacity: 0;
+    cursor: default;
+    height: 0px;
+    width: 0px;
+}
+
+.page-common #searchBar.searchBar #topSearchValue {
+    background-color: #0000;
+    border-radius: 0;
+    border-color: #fff0;
+    color: #fff;
+    font-size: 13px;
+}
+
+.profile .user-statistics .stats-graph {
+    background-color: #131313b3;
+    border-radius: 50px;
+    display: block;
+}
+
+#menu {
+    position: absolute;
+}
+.page-common .header-right {
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0px;
+}
+
+.page-common #searchBar.searchBar #topSearchText {
+    border-bottom: 0;
+    border-left: #d9d9d900 1px solid;
+    background: #0000001c;
+    border-right: 0;
+    border-top: 0;
+    display: inline-block;
+    font-family: Avenir, lucida grande, tahoma, verdana, arial, sans-serif;
+    height: 16px;
+    padding-left: 2px;
+    text-indent: 4px;
+    width: 286px;
+}
+.page-common #topSearchText {
+    color: #e3e3e3;
+    width: 180px;
+}
+.page-common #searchBar.searchBar #topSearchButon {
+    background-color: #e1e7f500;
+    border: #fff0 0 solid;
+    border-left: #e1e7f500 1px solid;
+    border-radius: 0 4px 4px 0;
+    color: #9f9f9f;
+    width: 26px;
+}
+.page-common .incrementalSearchResultList .list.list-bottom.focus a {
+    color: #3e3e3e;
+}
+.page-common .incrementalSearchResultList .list.list-bottom a {
+    color: #e3e3e3;
+    padding: 8px 4px;
+}
+.page-common .incrementalSearchResultList .list:focus,
+.page-common .incrementalSearchResultList .list:active,
+.page-common .incrementalSearchResultList .list:hover {
+    background-color: #111;
+}
+.page-common .incrementalSearchResultList .list .off .info.anime .name,
+.page-common .incrementalSearchResultList .list .off .info.manga .name,
+.page-common .incrementalSearchResultList .list .off .info.news .name,
+.page-common .incrementalSearchResultList .list .off .info.featured .name,
+.page-common .incrementalSearchResultList .list .off .info.forum .name {
+    color: #e3e3e3;
+}
+.page-common .incrementalSearchResultList .list {
+    background-color: #000;
+    border-bottom: #6f6f6f00 1px solid;
+}
+.page-common .incrementalSearchResultList .list .image {
+    border: #ebebeb00 1px solid;
+}
+.page-common .incrementalSearchResultList .list:last-of-type {
+    border-bottom: #000 0 solid;
+    border-radius: 0 0 4px 4px;
+}
+.page-common .incrementalSearchResultList {
+    background-color: #d54d4d00;
+    border: #73434300 1px solid;
+}
+.page-common .incrementalSearchResultList .list.separator {
+    background-color: #131313;
+    color: #646464;
+    font-weight: 700;
+    height: 16px;
+    line-height: 16px;
+    padding: 0 0 0 4px;
+    text-transform: capitalize;
+}
+.page-common .incrementalSearchResultList .list {
+    background-color: #000;
+    border-bottom: #6f6f6f63 1px solid;
+    cursor: pointer;
+    padding: 2px;
+    position: relative;
+    text-align: left;
+}
+
+.page-common #searchBar.searchBar #topSearchButon.notActive {
+    background-color: #767e9000;
+    border-left: #f6f6f600 1px solid;
+    color: #bbb;
+}
+
+.page-common .header-profile .header-profile-dropdown {
+    background-color: #19191900;
+    border: #00000000 2px solid;
+    -webkit-box-shadow: 1px 1px 5px rgb(0 0 0 / 20%);
+    box-shadow: 1px 1px 5px rgb(0 0 0 / 20%);
+}
+
+
+/* BORDERS */
+.border {
+    opacity: 0;
+}
+.page-common .content-container .container-left {
+    border-right: #5c3b3b00 1px solid;
+}
+.page-common .content-container .container-right h2 {
+    border-color: #f0f0f000;
+    color: #313131;
+}
+.page-common .content-container .container-right h5 {
+    border-bottom: #f0f0f000 1px solid;
+}
+.profile .statistics-updates .image {
+    border: #f0f0f000 1px solid;
+    height: 60px;
+    width: 40px;
+}
+.user-profile .user-status.border-top {
+    border-top: #f0f0f000 1px solid;
+}
+
+.user-profile h4 {
+    border-bottom: #f0f0f000 1px solid;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    padding-bottom: 2px;
+}
+
+.page-common .header-profile.link-bg:hover {
+    background-color: #000;
+}
+.page-common .header-profile.link-bg.on:active {
+    background-color: #000;
+}
+
+.page-common .header-profile .header-profile-dropdown ul li a {
+    background-color: #000;
+    border-bottom: #0f0f0fb5 1px solid;
+    padding: 13px 25px;
+}
+.page-common .header-profile .header-profile-dropdown {
+    background-color: #19191900;
+    border: #00000000 2px solid;
+    -webkit-box-shadow: 1px 1px 5px rgb(0 0 0 / 20%);
+    box-shadow: 1px 1px 5px rgb(0 0 0 / 20%);
+    width: 200px;
+    left: -80px;
+}
+
+
+
+
+.profile .user-statistics .user-statistics-stats .updates {
+    display: table-cell;
+    padding-left: 3px;
+    height: 244px;
+    width: 50%;
+}
+
+.page-common.profile #content {
+    padding: 0px;
+}
+
+/*[[removeAbout]]*/
+
+
+
+/* ACTIONS */
+.user-profile .user-function .icon-user-function.icon-comment,
+.user-profile .user-function .icon-user-function.icon-request,
+.user-profile .user-function .icon-user-function.icon-message {
+    background-color: #4040401c;
+    border: #cacaca21 2px solid;
+}
+
+.user-profile .user-function .icon-user-function.icon-comment:hover,
+.user-profile .user-function .icon-user-function.icon-request:hover,
+.user-profile .user-function .icon-user-function.icon-message:hover {
+    background-color: #b3b3b33b;
+    border: #cacaca61 2px solid;
+}
+
+.user-profile .user-function .icon-user-function.icon-comment.disabled,
+.user-profile .user-function .icon-user-function.icon-request.disabled,
+.user-profile .user-function .icon-user-function.icon-message.disabled {
+    background-color: #0000;
+    border: #cacaca14 2px solid;
+}
+
+.user-profile .user-function .icon-user-function.icon-comment.disabled:hover,
+.user-profile .user-function .icon-user-function.icon-request.disabled:hover,
+.user-profile .user-function .icon-user-function.icon-message.disabled:hover {
+    background-color: #0000001c;
+    border: #cacaca14 2px solid;
+    cursor: pointer;
+}
+
+.user-profile .user-function .icon-user-function {
+    background-image: none;
+    border-radius: 50px;
+    height: 30px;
+    width: 67px;
+    margin: 0 2px;
+}
+
+.profile .user-function .icon-user-function .text {
+    top: 6px;
+    left: 3.6px;
+    color: #acacac !important;
+}
+.page-common .user-image {
+    margin-bottom: 5px!important;
+}
+.user-profile .user-function {
+    width: 225px;
+    background-color: #0000;
+}
+
+.user-profile h4.icon-rss {
+    position: absolute;
+    opacity: 0;
+}
+.user-profile-sns {
+    opacity: 0;
+}
+.page-common .fw-b {
+    color: #464646 !important;
+}
+
+.page-common #content {
+    background-color: #06060600;
+    border-color: #0000;
+    color: #9b9b9b00;
+}
+.user-profile .user-button .btn-profile-submit {
+    background-color: #0f0f0f61;
+    border: solid 2px;
+    border-color: #fff3;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 8px 0;
+    width: 105px;
+}
+.user-profile .user-button .btn-profile-submit:hover,
+.user-profile .user-button .btn-profile-submit:active {
+    background-color: #60606061;
+}
+.user-profile .user-friends .icon-friend {
+    box-shadow: #fff0 0 0 2px, #d8d8d805 0 0 0 1px;
+}
+.profile .user-comments .comment .image img {
+    border: #f0f0f000 1px solid;
+}
+
+
+/* LAST UPDATES */
+.profile .statistics-updates .data .graph .graph-inner.completed {
+    background-color: #4c63d070;
+}
+.profile .statistics-updates .data .graph .graph-inner.watching {
+    background-color: #5be65070;
+}
+.profile .statistics-updates .data .text.watching,
+.profile .statistics-updates .data .text.re-watching,
+.profile .statistics-updates .data .text.reading,
+.profile .statistics-updates .data .text.re-reading {
+    color: #4e8040;
+}
+
+.profile .statistics-updates .data .text.completed {
+    color: #bdbdbdc7;
+}
+.profile .statistics-updates .data .graph .graph-inner {
+    border-radius: 0px;
+    height: 10px;
+}
+.profile .statistics-updates .data .graph {
+    background-color: #26262654;
+    border: #f0f0f000 1px solid;
+    border-radius: 2px;
+    display: block;
+    height: 10px;
+    padding: 1px;
+    width: 190px;
+}
+
+
+
+
+.page-common .textarea {
+    border-color: #d8d8d800;
+    font-size: 14px;
+    color: #777;
+    background-color: #00000038;
+    padding: 2px;
+}
+
+
+
+
+/* FAVORITES  AND COMMENTS*/
+.profile .user-favorites .favorites-list .list .image {
+    border: #f0f0f000 0px solid;
+}
+
+.user-profile .user-compatability-graph .bar-outer {
+    background-color: #151515ab;
+    border: #f0f0f000 1px solid;
+    border-radius: 50px;
+    display: table;
+    padding: 1px;
+    width: 212px;
+}
+.profile .user-comments .comment {
+    background-color: #0000002b;
+}
+.profile .user-comments .comment:nth-of-type(odd) {
+    background-color: #00000057;
+}
+
+
+
+/* GENERAL FONT CNFG */
+.page-common #content {
+    background-color: #06060600;
+    border-color: #0000;
+    color: #7d7d7db3;
+}
+.page-common a,
+.page-common a:visited {
+    color: #ffffffd4;
+    text-decoration: none;
+}
+#statistics h2 {
+    color: #ffffffd9;
+    font-size: 20px;
+}
+.page-common .h1 {
+    background-color: #0000;
+    border-bottom-color: #0000;
+    border-left-color: #ebebeb00;
+    border-right-color: #ebebeb00;
+    border-top-color: #ebebeb00;
+    color: #cacaca;
+    font-size: 20px;
+    padding: 5px 0px;
+    height: 60px;
+    text-align: left;
+    top: -30px;
+    position: absolute;
+}
+.page-common .header-right {
+    font-size: 12px;
+    font-weight: 400;
+    margin: 10px;
+    color: #424242 !important;
+}
+#contentWrapper {
+    top: 30px;
+}
+
+
+
+/* COLOR CONVERT */
+.page-common #headerSmall {
+    background-color: #0000;
+    background-image: url(https://i.postimg.cc/5y9j4ZPg/mal-logo-xsmall.png);
+    height: 30px;
+    z-index: 5;
+}
+
+.user-profile .user-status li {
+    background-color: #06060600;
+    padding: 5px;
+    width: 216px;
+}
+.user-profile .user-status li:nth-of-type(even) {
+    background-color: #06060600;
+}
+
+.user-profile .user-function .icon-user-function.icon-message.disabled {
+    background-color: #28282800;
+    background-position: -28px -48px;
+}
+
+.page-common #contentWrapper {
+    background-color: #0000;
+}
+.page-common #footer-block {
+    background-color: #0000;
+    color: #fff;
+    padding: 0px 0px 0px;
+}
+.page-common #footer-block .footer-link-block {
+    padding-bottom: 0px;
+    padding-top: 11px;
+}
+.page-common #footer-block .footer-link a {
+    color: #6f6f6f7d;
+    font-size: 12px;
+    margin-right: 18px;
+}
+/* REMOVE MAL APPS FOOTER */
+.page-common #footer-block .footer-link-icon-block {
+    display: block;
+    padding-left: 444000px;
+    position: relative;
+    width: 0px;
+    height: 0px;
+}
+}

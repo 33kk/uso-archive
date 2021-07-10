@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         YAD
 @description    `GAMER THEMED FACEBOOK STYLE<b>HOW TO INSTALL AND CUSTOMIZED THIS STYLE?? </b> <a href="https://fb.watch/4K65JAWDAR/" target="_blank"> 👉<b>Using Stylus</b></a><i>NOTE:</i><b>TURN ON DARK MODE</b><a href="https://www.paypal.com/donate?hosted_button_id=LT8MPNTJU66HL" target="_blank"><b>DONATE VIA PAYPAL</b></a>`
-@version        20210709.5.32
+@version        20210710.9.20
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown yadbg "Background Image" {
@@ -44,8 +44,9 @@
  /*Facebook Cyber Hud+ by YAD*/
 /********************************/
 
-body {  text-shadow: 0px 1px 9px #000;
-        color: #ffffff!important;
+	
+body {  text-shadow: 0px 1px 9px #0000;
+    color: #ffffff!important;
     background: 
 	url(/*[[yadbg]]*/),
 	url(https://i.ibb.co/gMCVggK/yadright.gif),
@@ -109,9 +110,66 @@ path[d="M25 23l.8-5H21v-3.5c0-1.4.5-2.5 2.7-2.5H26V7.4c-1.3-.2-2.7-.4-4-.4-4.1 0
     background-color: #ffffff21;
     box-shadow: 0px 0px 0px 1px /*[[yadtheme]]*/4a;
 }
-._4-u8 {
-    background-color: #ffffff21;
+._4-u8, ._2yix, ._18su ._18c4 {
+    background-color: #00000085;
 }
+._1xy2,._1a8t {
+    background: linear-gradient(#0000, #0000)
+}
+	._4-u2>._4-u3 {
+    border-top: 1px solid #2620204d;
+}
+	._4-u2 {
+    border: 1px solid /*[[yadtheme]]*/;
+    border-radius: 3px;
+}
+/*game page*/
+._8bb_ .img {
+    -webkit-filter: invert(0) hue-rotate(0deg)
+}
+	._2yiu, ._5aeq, ._5aeq, ._5aeq a, ._5aeq a {
+	color: #fff!important
+}
+	._18c4 ._5aeq:hover, ._5pk3 li:hover {
+    background-color: /*[[yadtheme]]*/3f;
+}
+._53ij {
+    background: var(--yadbg, #262c35)!important;
+    position: relative;
+}
+	html ._55r1 {
+    border: 1px solid /*[[yadtheme]]*/;
+    color: #fefeff;
+    border-radius: 18px
+}
+	[class="_55r1 _58ak"],[class="_55r1 _58ak _3ct8"] {
+	background: #18191a!important;	
+}
+	[class="_6luy _55r1 _1kbt _9nyh"] {
+    background: #18191a00;
+    border: 1px solid /*[[yadtheme]]*/;
+    color: #fefeff;
+    border-radius: 18px
+}
+	
+	
+	input, select, textarea {
+    color: #fefeff!important;
+	background: #0000
+}
+._3yv8._5aer ._5aeo {
+    background-blend-mode: overlay;
+}	
+._ab4 ._3yv8._5aer ._5aeo {
+    background-color: /*[[yadtheme]]*/;
+}	
+._5pk3 a li {
+    border-bottom: 1px solid /*[[yadtheme]]*/;
+}	
+._5aeq:hover {
+    background-color: /*[[yadtheme]]*/3f
+}	
+	
 ._4-u5 {/*find your account*/
     background-color: #e9ebee00;
 }
@@ -146,7 +204,7 @@ path[d="M25 23l.8-5H21v-3.5c0-1.4.5-2.5 2.7-2.5H26V7.4c-1.3-.2-2.7-.4-4-.4-4.1 0
 	background-blend-mode: screen;
 }
 
-.fer614ym {/*columns*/
+.fer614ym, .uiBoxWhite {/*columns*/
     background: linear-gradient(
 -2deg
 , #1a2637ad 25%, /*[[yadtheme]]*/4a 80%);
@@ -196,6 +254,14 @@ path[d="M25 23l.8-5H21v-3.5c0-1.4.5-2.5 2.7-2.5H26V7.4c-1.3-.2-2.7-.4-4-.4-4.1 0
 .cwj9ozl2 {
     background: #0000
 }
+	
+[class="cwj9ozl2 ue3kfks5 pw54ja7n uo3d90p7 l82x9zwi o55z2nyb rq0escxv j83agx80 cbu4d94t buofh1pr rs0gx3tq k4urcfbm"] {
+    background: var(--yadbg)  /*[[yadtheme]]*/;
+	background-blend-mode: multiply;
+	box-shadow: 0px 0px 0px 1px /*[[yadtheme]]*/
+}	
+	
+	
 .b3i9ofy5 {/*comment and search*/
     background-color: #0000002e;
 	box-shadow:inset 0px 0px 0px 1px /*[[yadtheme]]*/4a;
@@ -206,12 +272,20 @@ path[d="M25 23l.8-5H21v-3.5c0-1.4.5-2.5 2.7-2.5H26V7.4c-1.3-.2-2.7-.4-4-.4-4.1 0
     background-color:  #161617c9
 }
 /*search panel*/	.scb9dxdr.dflh9lhu.sj5x9vvc.buofh1pr.cbu4d94t.j83agx80.rq0escxv.l82x9zwi.uo3d90p7.cwj9ozl2 {
-	background: var(--yadbg), linear-gradient(
+	background: url(/*[[yadbg]]*/) center center/cover no-repeat, linear-gradient(
 -2deg
 , #1a2637 40%, /*[[yadtheme]]*/ 90%)!important;
 	background-blend-mode: color-dodge;
 	box-shadow: inset 0px 0px 0px 1px /*[[yadtheme]]*/
 }	
+[class="cwj9ozl2 ue3kfks5 pw54ja7n uo3d90p7 l82x9zwi mvk8q8v6 rq0escxv j83agx80 cbu4d94t buofh1pr rs0gx3tq k4urcfbm mw5ich9q"] 	{
+	background: url(/*[[yadbg]]*/) center center/cover no-repeat, linear-gradient(
+-2deg
+, #1a2637 40%, /*[[yadtheme]]*/ 90%)!important;
+	background-blend-mode: color-dodge;
+	
+}
+	
 /*borders*/
 	.s1tcr66n {
     border-bottom: 1px solid var(--divider);
@@ -234,7 +308,7 @@ path[d="M25 23l.8-5H21v-3.5c0-1.4.5-2.5 2.7-2.5H26V7.4c-1.3-.2-2.7-.4-4-.4-4.1 0
     background-color: #1a2637ad;
 	backdrop-filter: blur(2px)
 }
-.oo9gr5id {
+.oo9gr5id, .uiHeader h2 {
     color: #fff;
 }
 	[class="sfj4j7ms pvbba8z0 rqr5e5pd dy7m38rt j7igg4fr"] {
@@ -280,7 +354,7 @@ path[d="M25 23l.8-5H21v-3.5c0-1.4.5-2.5 2.7-2.5H26V7.4c-1.3-.2-2.7-.4-4-.4-4.1 0
 , #1a2637ad 25%, /*[[yadtheme]]*/4a 80%);
 	box-shadow:inset 0 0 0 1px /*[[yadtheme]]*/3d;
 	border-radius: 10px;
-	backdrop-filter: blur(2px)
+	backdrop-filter: blur(0px)
 }
 
 .gky8063y {/*notif*/
@@ -303,6 +377,13 @@ div.j83agx80.oo9gr5id.buofh1pr.ni8dbmo4.stjgntxs.cxgpxx05.dflh9lhu.sj5x9vvc.scb9
 @keyframes yadonline {
 	0% {stroke-width: 20;}
 }
+/*info badge*/
+[class="ciadx1gn taijpn5t mudddibn j83agx80 r15kkdkt c8oo3d72 p7f4f6cj cmek9o9a aypy0576 s1tcr66n maa8sdkg l6v480f0 cwj9ozl2 bp9cbjyn"],
+[class="rq0escxv l9j0dhe7 du4w35lb j83agx80 pfnyh3mw i1fnvgqd bp9cbjyn owycx6da btwxx1t3 hv4rvrfc dati1w0a ihqw7lf3 discj3wi b5q2rw42 lq239pai mysgfdmx hddg9phg"],
+[class="rq0escxv l9j0dhe7 du4w35lb lzcic4wl pwoa4pd7 qu0x051f esr5mh6w e9989ue4 r7d6kgcz lit7pgxp o3c63hce hqlzco19 lsl2245n q9uorilb rgmg9uty pedkr2u6 ni8dbmo4 stjgntxs jb3vyjys rz4wbd8a qt6c0cv9 a8nywdso f0ai4nzy art1omkt b4alr923 eim337gk kvgmc6g5 cxmmr5t8 enqfppq2 hcukyx3x"]	{
+	background: #1a2637!important
+}
+	
 
 /*loading skeleton*/
 .g6srhlxm {
@@ -342,6 +423,11 @@ div.j83agx80.oo9gr5id.buofh1pr.ni8dbmo4.stjgntxs.cxgpxx05.dflh9lhu.sj5x9vvc.scb9
 .nfl8ryma {/*icon bg*/
     background-color: #1a263775;
 }
+	[class="ue3kfks5 pw54ja7n uo3d90p7 l82x9zwi j83agx80 qzj7cv8z nfl8ryma"]  {
+    background-color: var(--base-blue);
+}
+	
+	
 .is6700om {/*notif dot*/
     background-color: /*[[yadtheme]]*/ad;
 }
@@ -526,10 +612,16 @@ img[src="https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/3F9PVdA5J7i.png"] {
 }
 img[src="https://static.xx.fbcdn.net/rsrc.php/v3/yC/r/DOal__ng_AH.png"] {
     content: url(https://img.icons8.com/glyph-neue/64/ffffff/news.png)
-}	
+}
+
 [src*="https://static.xx.fbcdn.net/rsrc.php/v3/y"] {
-	opacity: 0.5
-}	[src="https://static.xx.fbcdn.net/rsrc.php/v3/yF/r/qEUhBn_j7A2.png"] {
+	opacity: 0.7
+}	[src="https://static.xx.fbcdn.net/rsrc.php/v3/yF/r/qEUhBn_j7A2.png"],
+	[class="hu5pjgll eb18blue"][style*="background-image"],
+	[src="https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/33EToHSZ94f.png"],
+	[src="https://static.xx.fbcdn.net/rsrc.php/v3/yA/r/gmRaVnWydOi.png"],
+	[class="hu5pjgll lzf7d6o1"][style*="background-image"],
+	[src="https://static.xx.fbcdn.net/rsrc.php/v3/yI/r/YIxFfN5ecJG.png"]{
 	filter: invert(1)	
 }
 	
@@ -596,6 +688,12 @@ __fb-dark-mode:root, .__fb-dark-mode {
 :root, .__fb-light-mode {
 	--negative: #fff
 		
+}
+/*notif*/	
+[class="jbcpqwzg jq4qci2q cbu4d94t j83agx80 rq0escxv bi1v6m2q l82x9zwi uo3d90p7 pw54ja7n ue3kfks5"]	{
+	background:var(--yadbg) /*[[yadtheme]]*/4f!important;
+	background-blend-mode: exclusion;
+	box-shadow:inset 0px 0px 0px 1px /*[[yadtheme]]*/		
 }	
 	
 /*mini video*/	
@@ -605,8 +703,10 @@ __fb-dark-mode:root, .__fb-dark-mode {
 	box-shadow: 0 0px 9px 0 /*[[yadtheme]]*/, 0 0px 1px 0 #fff;
 }
 	[class="cwj9ozl2 i09qtzwb n7fi1qx3 lpgh02oy j9ispegn"] {
-	background: /*[[yadtheme]]*/!important;
-	border-radius: 18px 18px 0 0
+	background:var(--yadbg) /*[[yadtheme]]*/4f!important;
+	border-radius: 18px 18px 0 0;
+	background-blend-mode: exclusion;
+	box-shadow:inset 0px 0px 0px 1px /*[[yadtheme]]*/		
 }	
 	
 	/*menu dropdown*/
@@ -642,8 +742,14 @@ __fb-dark-mode:root, .__fb-dark-mode {
 ) brightness(107%) contrast(101%);
 }
 	.iwcwj0ba {
-    background-color: #fff
+    background-color: #fff;
 }
+	[class="rq0escxv pmk7jnqg du4w35lb q2y6ezfg lit7pgxp o3c63hce hqlzco19 lsl2245n dsne8k7f jnigpg78 hzruof5a tkxwya3v bk00n993 s00z5mgp flx89l3n eloblzlw odw8uiq3 kwf64sci"] {
+    background-color: /*[[yadtheme]]*/
+}
+	
+	
+	
 	/*live*/
 	.l44iypv3 {
     background-color: /*[[yadtheme]]*/
@@ -663,17 +769,77 @@ __fb-dark-mode:root, .__fb-dark-mode {
 	color: /*[[yadtheme]]*/!important;
 	filter: brightness(2) saturate(22)
 }
+	.pop_content .dialog_content {
+    background: #7d7d7d;
+    border: 1px solid #555;
+    border-top-width: 0;
+    filter: invert(0)!important;
+    color: black;
+}
 	
 	
 	
+._8bb_,.uiBoxGray {
+    background: none;
+    background-color: /*[[yadtheme]]*/6f !important;
+}	
+
+.fbSettingsList a.fbSettingsListLink:hover {
+    background: /*[[yadtheme]]*/6f;
+}
+	.fbSettingsList .fbSettingsListItemSaved, .fbSettingsList .fbSettingsListItemEdit,
+	.fcg,
+.fbSettingsList .fbSettingsListItemLabel {
+	color: /*[[yadtheme]]*/;
+	filter: brightness(2)
+}
 	
 	
+.esnais5j {
+    -webkit-filter: invert(0) hue-rotate(0)
+}
+[id="contentCol"][class="clearfix"],
+._8bb_.CometSettingsPage.CometSettingsPageHosted, ._6mzv:hover {
+    background-color: #18191a78!important
+}
+.CometSettingsPage #contentCol .fbSettingsList h3, .CometSettingsPage #contentCol .fbSettingsEditor .fbSettingsEditorLabel, .fcb,
+	[style="font-family: Arial, sans-serif; font-size: 14px; line-height: 18px; letter-spacing: normal; overflow-wrap: normal; text-align: left; color: rgb(28, 30, 33);"], .CometSettingsPage #contentCol .uiHeader h2.uiHeaderTitle, .CometSettingsPage #contentCol h3, .fbSettingsList .fbSettingsListItemLabelWithSubtitle, .bq6qj4t2, .eitm9ape{
+    color: #fff!important
+}
+._iw3 {
+    background: #18191a78;
+    border-bottom: 1px solid /*[[yadtheme]]*/;
+    border-top: 1px solid /*[[yadtheme]]*/
+}	
+.uiTypeahead, .lnqo2vjd, ._cue, .generic_dialog_modal, .generic_dialog_fixed_overflow {
+    background: #262c35;
+    border: solid /*[[yadtheme]]*/;
+    border-width: 1px 0;
+}
+._2e49 	{
+    background: #6f6f6f
+}
+.pop_content .dialog_buttons, .uiButton:hover, .uiButton 	{
+    background: #18191ad1
+}	
 	
-	
-	
-	
-	
-	
+/*push notif*/
+._6opw, ._6mzy {
+    background-color: #1a2637ad;
+    border: 1px solid /*[[yadtheme]]*/;
+
+}
+._6mzv+._6mzv {
+    border-top: 1px solid #1c2f49;
+}
+._k7g, ._57d8, ._4p8x {
+    background: #18191ad1;
+    color: #fff
+}
+	._8bb_ .uiButtonConfirm, ._8bb_ ._4jy1, ._8bb_ .openToggler > ._5vto, ._8bb_ ._558b ._54ne ._54nc {
+    filter: invert(0) hue-rotate(0deg
+);
+}
 	
 	__fb-dark-mode:root, .__fb-dark-mode {
 	--yadbg: url(/*[[yadbg]]*/) center center/cover no-repeat fixed;
@@ -700,7 +866,8 @@ __fb-dark-mode:root, .__fb-dark-mode {
     --dataviz-supplementary-2: rgb(241,168,23);
     --dataviz-supplementary-3: rgb(49,162,76);
     --dataviz-supplementary-4: rgb(228,230,235);
-	--divider: /*[[yadtheme]]*/
+	--divider: /*[[yadtheme]]*/;
+	--filter-always-white:invert(0)
 }
 	
 	
@@ -730,7 +897,7 @@ __fb-dark-mode:root, .__fb-dark-mode {
 	
 	
 	
-/*************070921*************/
+/*************071021*************/
  /*Facebook Cyber Hud+ by YAD*/
 /********************************/
 }

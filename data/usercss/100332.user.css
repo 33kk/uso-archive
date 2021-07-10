@@ -3,11 +3,13 @@
 @namespace      USO Archive
 @author         BamaBraves
 @description    `Darkened and highlights`
-@version        20200415.7.50
+@version        20210710.6.50
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("w3schools.com") {
+/* Scrollbar Settings */
+
  ::-webkit-scrollbar {
  	/* Width */
  	width: 1.2em!important;
@@ -49,10 +51,25 @@
  	border-radius: 22px!important;
  	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
  }
+
+ /* Color of the bottom corner of the scrollable element, where two scrollbar meet. ______________*/
+
+::-webkit-scrollbar-corner
+ {
+ 	background: #530205!important;
+ 	box-shadow: inset 0 12px 13px rgba(0, 0, 0, 0.6), rgba(55, 55, 55, 1) 0 1px 0!important;
+ }
+
+::-webkit-scrollbar-corner:hover
+ {
+ 	border-radius: 22px!important;
+ 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
+ }
+
 }
 
 @-moz-document domain("w3schools.com") {
-/*__________________________________________________________________________________*/
+/* Site Settings */
 
 * {
 	text-decoration: none!important;
@@ -86,12 +103,12 @@ pre[class*="language-"]
 .w3-codespan,
 p
 {
-	font-size: 18px;
+	font-size: 21px;
 }
 
 html,
 body {
-	font-size: 17px!important;
+	font-size: 19px!important;
 }
 
 html,
@@ -130,7 +147,7 @@ body {
 }
 
 .trytopnav {
-	top: 0px;
+	top: 0;
 }
 
 /*___ Margins ______________________________________________________________________*/
@@ -141,13 +158,12 @@ body {
 .w3-light-grey,
 .w3-note,
 .w3-padding-48,
-.w3-row,
-.w3-sidebar.w3-collapse {
+.w3-row {
 	margin: 12px!important;
 }
 
 #right {
-	margin: 0 12px!important;
+    margin: -22px 12px!important;
 }
 
 /*___ Paddings _____________________________________________________________________*/
@@ -204,6 +220,8 @@ selector {
 }
 
 @-moz-document domain("w3schools.com") {
+/* Font Settings */
+
 a[href],
 td span {
 	color: #0ff!important;
@@ -437,9 +455,9 @@ div.visible,
 }
 
 @-moz-document domain("w3schools.com") {
-/*__________________________________________________________________________________*/
+/* Background Settings */
 
-html[style="height: 100%;"],
+html,
 table[style="width:100%;height:100%;background-color:#f1f1f1;position:absolute;overflow:auto;min-height:650px;"],
 body[style="position: relative; min-height: 100%; top: 0px;"] {
 	background: url(https://image.ibb.co/hVmiOe/wallpaper_with_black_background_45_free_wallpaper.jpg)!important;
@@ -457,6 +475,8 @@ body[style="position: relative; min-height: 100%; top: 0px;"] {
 
 /*___ Background Gray ______________________________________________________________*/
 
+#right,
+.w3-sidebar.w3-collapse,
 #footer,
 .top,
 .w3-container.w3-dark-grey.w3-center.w3-padding-32 {
@@ -595,13 +615,11 @@ pre {
 /*___ Plain Black __________________________________________________________________*/
 
 #main,
-#right,
 #topTD div:nth-child(4),
 .exercisemenu,
 .playit,
 .w3-padding-48,
-.w3-row.w3-dark-grey.w3-padding-32,
-.w3-sidebar.w3-collapse {
+.w3-row.w3-dark-grey.w3-padding-32 {
 	background-color: #000!important;
 	border-radius: 22px!important;
 	border: 1px solid rgba(0, 0, 0, .25)!important;
@@ -609,12 +627,10 @@ pre {
 }
 
 #main:hover,
-#right:hover,
 .exercisemenu:hover,
 .playit:hover,
 .w3-padding-48:hover,
-.w3-row.w3-dark-grey.w3-padding-32:hover,
-.w3-sidebar.w3-collapse:hover {
+.w3-row.w3-dark-grey.w3-padding-32:hover {
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0, 10px 10px 5px rgba(10, 10, 10, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
 
@@ -686,7 +702,7 @@ div.exmenulinks a.active {
 
 .w3-note {
 	background: linear-gradient(to bottom, #004a4a 0%, #000 100%)!important;
-	box-shadow: 0px 30px 40px rgba(200, 200, 0, .1);
+	box-shadow: 0 30px 40px rgba(200, 200, 0, .1);
 	border-radius: 22px!important;
 }
 
@@ -710,7 +726,7 @@ div.exmenulinks a.active {
 }
 
 @-moz-document domain("w3schools.com") {
-/*__________________________________________________________________________________*/
+/* Image Settings */
 
 .w3-center,
 .w3-third a,
@@ -959,6 +975,8 @@ selector:hover {
 }
 
 @-moz-document domain("w3schools.com") {
+/* New Icons */
+
 .fa {
 	font-size: 30px!important;
 }

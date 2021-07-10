@@ -3,12 +3,12 @@
 @namespace      USO Archive
 @author         boozlepuzzle
 @description    `Modo oscuro para Mercado LibreCréditos a Lord Balliwns, yo tomé su estilo "Mercado Libre Modo Oscuro V7.1", le arreglé errores y cambié los colores, link al original: https://33kk.github.io/uso-archive/?style=195526`
-@version        20210702.23.25
+@version        20210710.4.7
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document regexp("^(https:\\/\\/www\\.mercadolibre\\.com|https:\\/\\/mercadolibre\\.com|https:\\/\\/\\S+\\.mercadolibre\\.com|https:\\/\\/mercadolivre\\.com|https:\\/\\/www\\.mercadolivre\\.com |https:\\/\\/\\S+\\.mercadolivre\\.com)\\S*") {
-html {filter: invert(1); background: #000;}
+html {filter: invert(1); }
 * {font-weight: bold;}
 img, icon, .nav-logo, svg, .payments-cho_badge, .ui-pdp-payment-sprites__icon-container, .ui-search-header--exhibitor, .ui-search-filter-dd.ui-search-filter-dd-color, .andes-badge--small.andes-badge--notification {filter: invert(1)}
 /*----*/
@@ -60,6 +60,13 @@ img, icon, .nav-logo, svg, .payments-cho_badge, .ui-pdp-payment-sprites__icon-co
 }
 .ui-item__discount-price.price-tag, .ui-item__title{
     opacity:1 !important
+}
+.ml{
+    filter:invert(1) !important;
+    background-color:#0019FF
+}
+.enrollment-greeting__header, .center-card__header{
+     background-color:#0019FF
 }
 .tracking-timeline__description--green, .advertising-vip-right .advertising-vip-right__items .item-list .item-description .item-discount {color: #c64ab5;}
 .ui-search-layout--gallery .ui-search-result .ui-search-item__promise--next_day .ui-search-item__promise__text, .ui-search-layout--grid .ui-search-result .ui-search-item__promise--next_day .ui-search-item__promise__text, .ui-search-layout--stack .ui-search-result .ui-search-item__promise--next_day .ui-search-item__promise__text {background-color: #ddd}
