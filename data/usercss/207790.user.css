@@ -2,32 +2,77 @@
 @name           shiftyy's MyAnimeList Dark+
 @namespace      USO Archive
 @author         shiftyy
-@description    `(Works only on MAL *PROFILE* page).A simple dark recolor of mal profile page + some other design changes.Features:-Remove Ads-Smaller "MAL" logo-Customizable Background Color-New Buttons Shape and Colors-More Minimal menu postitions-Remove RSS Feeds-Hide "About Me" Section (Optional)Feel free to give me feedback or report any bug/inconsistency in the comments!`
-@version        20210710.16.54
+@description    `(Works only on MAL *PROFILE* page).A simple dark recolor of mal profile page + some other design changes.Main Features:-Customizable Background Color-Customizable Background Image-Customizable Font Color-Customizable Progress Graphs Color-Hide "About Me" Section (Optional)-Hide "Favorites" Section (Optional)-Smaller "MAL" logo-Remove RSS Feeds-Remove AdsFeel free to give me feedback or report any bug/inconsistency!`
+@version        20210711.11.52
 @license        CC-BY-NC-SA-4.0
 @preprocessor   uso
-@advanced color colorBG "Background Color" #000000
 @advanced text fontS "Font Size" "12"
+@advanced dropdown background "Background Type" {
+	bgC "Color*" <<<EOT background: /*[[colorBG]]*\/; EOT;
+bgI "Image" <<<EOT background:
+        linear-gradient(
+          rgba(0, 0, 0, /*[[bgOpacity]]*\/), 
+          rgba(0, 0, 0, /*[[bgOpacity]]*\/)
+        ),
+        url(/*[[bgImage]]*\/) no-repeat center center fixed; EOT;
+
+}
+@advanced color colorBG "Background Color" #000000
+@advanced dropdown bgImage "Background Image" {
+bgA "Animated*" <<<EOT https://iae.news/wp-content/uploads/2021/04/04b69fc9c44f23b430c8171ea422d44b.gif EOT;
+bg2 "Road" <<<EOT https://cdnb.artstation.com/p/assets/images/images/007/286/185/large/van-setia-putra-switz.jpg?1505067446 EOT;
+bg1 "Mountain" <<<EOT https://i.pinimg.com/originals/dc/20/2f/dc202fff4a6bdf40f68cf853a41e54a1.jpg EOT;
+
+	bgImage-custom-dropdown "Custom" <<<EOT /*[[bgImage-custom]]*\/ EOT;
+}
+@advanced text bgImage-custom "Background Image (Custom)" "https://example.com/image.png"
+@advanced dropdown blur "Background Image Blur" {
+	blur3 "Light*" <<<EOT backdrop-filter: blur(5px); EOT;
+blur5 "Disabled" <<<EOT backdrop-filter: blur(0px); EOT;
+blur4 "Very Light" <<<EOT backdrop-filter: blur(2px); EOT;
+blur2 "Heavy" <<<EOT backdrop-filter: blur(10px); EOT;
+blur1 "Very Heavy" <<<EOT backdrop-filter: blur(50px); EOT;
+
+}
+@advanced dropdown bgOpacity "Background Image Darkness" {
+	bgO0 "85% Dark*" <<<EOT 0.85 EOT;
+bgO1 "50% Dark" <<<EOT 0.5 EOT;
+bgO3 "0% Dark (Not Recommended)" <<<EOT 0 EOT;
+
+}
 @advanced dropdown about "Hide \"About Me\" Section" {
 	aboutYes "Yes*" <<<EOT display: none; EOT;
 aboutNo "No" <<<EOT display: block; EOT;
 
 }
+@advanced dropdown favorites "Hide \"Favorites\" Section" {
+	favoritesNo "No*" <<<EOT display: block; EOT;
+favoritesYes "Yes" <<<EOT display: none; EOT;
+
+}
 @advanced color pFont "Primary Font Color" #DBD9D9
 @advanced color hFont "Secondary Font Color" #636363
-@advanced color wColor "Watching Color" #5BE650
-@advanced color cColor "Completed Color" #4C63D0
+@advanced color wColor "Watching/Reading Color" #4DC243
+@advanced color cColor "Completed Color" #3D50A8
 
 ==/UserStyle== */
 @-moz-document url-prefix("https://myanimelist.net/profile/") {
 body:not(.ownlist) {
-    background-color: /*[[colorBG]]*/;
+    /*[[background]]*/;
     font-family: Segoe UI, Arial;
     font-size:  /*[[fontS]]*/px;
     overflow-x: hidden;
+    background-size: cover;
+    /*[[blur]]*/
 }
 .profile .user-profile-about{
     /*[[about]]*/
+}
+.profile .user-favorites-outer {
+    /*[[favorites]]*/
+}
+.page-common .content-container .container-right h2 {
+     /*[[favorites]]*/
 }
 
 .content-container {
@@ -49,7 +94,7 @@ body:not(.ownlist) {
     top: -50px;
 }
 .js-truncate-outer .btn-truncate {
-    background-image: url(https://i.postimg.cc/rwR2vMGT/icon-pulldown2.png), url(https://i.postimg.cc/26CXK7Gs/bg-readmore.png);
+    background-image: url(https://i.postimg.cc/rwR2vMGT/icon-pulldown2.png);
     filter: brightness(1);
 }
 .page-common #menu {
@@ -392,16 +437,32 @@ body:not(.ownlist) {
 
 /* LAST UPDATES */
 .profile .statistics-updates .data .graph .graph-inner.completed {
-    background-color: /*[[cColor]]*/70;
+    background-color: /*[[cColor]]*/;
 }
 .profile .statistics-updates .data .graph .graph-inner.watching {
-    background-color: /*[[wColor]]*/70;
+    background-color: /*[[wColor]]*/;
 }
+
+/* completed main */ 
+.profile .user-statistics .stats-graph .graph.completed {
+    background-color: /*[[cColor]]*/;
+}
+.profile .user-statistics .stats-status .circle.completed:after {
+    background-color: /*[[cColor]]*/;
+}
+/* watching-main */ 
+.profile .user-statistics .stats-graph .graph.watching, .profile .user-statistics .stats-graph .graph.reading {
+    background-color: /*[[wColor]]*/;
+}
+.profile .user-statistics .stats-status .circle.watching:after, .profile .user-statistics .stats-status .circle.reading:after {
+   background-color: /*[[wColor]]*/;
+}
+
 .profile .statistics-updates .data .text.watching,
 .profile .statistics-updates .data .text.re-watching,
 .profile .statistics-updates .data .text.reading,
 .profile .statistics-updates .data .text.re-reading {
-    color: #4e8040;
+    color: /*[[wColor]]*/;
 }
 
 .profile .statistics-updates .data .text.completed {
@@ -477,6 +538,7 @@ body:not(.ownlist) {
 #statistics h2 {
     color: /*[[pFont]]*/ !important;
     font-size: 20px;
+    display: block !important;
 }
   .page-common .fw-b {
     color: /*[[hFont]]*/;

@@ -3,11 +3,11 @@
 @namespace      USO Archive
 @author         vanderfondi
 @description    `Tema oscuro para Popmundo, basado en The Great Heist Dark`
-@version        20180627.22.34
+@version        20210711.3.41
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
-@-moz-document domain("86.popmundo.com"), domain("85.popmundo.com"), domain("83.popmundo.com"), domain("84.popmundo.com"), domain("www.popmundo.com"), domain("www88.popmundo.com") {
+@-moz-document domain("75.popmundo.com") {
 a {
     color: #d4d5d5 !important;
 }

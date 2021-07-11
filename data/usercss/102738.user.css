@@ -1,15 +1,15 @@
 /* ==UserStyle==
-@name           DuckDuckGo - Multi-Columns v.28
+@name           DuckDuckGo - Multi-Columns v.29
 @namespace      USO Archive
 @author         decembre
 @description    `Firefox and Chrome tested.Less scrolling with a multi columns interface.....<mark>Auto-load more Results work now ! </mark><mark>▶ Please Comment and give Feedback if you like this Style :-)</mark>`
-@version        20210609.15.22
+@version        20210711.0.33
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("duckduckgo.com") {
 
-/* ==== 0- DUCKDUCKGO - Multi-Columns v.28 (new28) ==== */
+/* ==== 0- DUCKDUCKGO - Multi-Columns v.29 (new29) ==== */
 
 /* (new24) SUPP PUBS - PB for TOP INFO === */
 /* .js-sidebar-ads .module-slot ,
@@ -376,11 +376,11 @@ border: 1px solid red !important;
     margin-bottom: 5px;
 }
 
-
+/* (new29) */
 #links.results.js-results #r1-0 .result__body.links_main.links_deep {
     height: auto !important;
-    margin-top: -10px;
-padding: 5px 10px !important;
+    margin-top: -10px !important;
+padding: 0px 10px !important;
 }
 #r1-0.result.results_links_deep.highlight_d  .result__snippet  {
     height: auto !important;

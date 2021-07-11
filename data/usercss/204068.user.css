@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         FireFern
 @description    `The latest and greatest of the stylesheets I've made for PS.Other Info:Background: https://www.deviantart.com/ishmam/art/Shiny-Mega-Rayquaza-Dragon-Pulse-578899492Some Battle Stuff Adapted From: https://33kk.github.io/uso-archive/?style=186996 (the swsh backgrounds are also from it)Weathers From: https://play.pokemonshowdown.com/fx/ (the gifs themselves are from some other styles though and I would mention them if I remembered them) and http://freestyler.ws/style/122539/pok-mon-showdown-oras-theme-bidoofscrazyvideos and https://33kk.github.io/uso-archive/?style=186996The "Grey Grid" background is from http://freestyler.ws/style/98094/dundealstylish-smoking-blackThe SPL  background is from http://play.pokemonshowdown.com/fx/The "Forest Lane" and SPL backgrounds look better when the top margin is set to -25px`
-@version        20210708.16.30
+@version        20210711.1.40
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 @advanced color mainkey "Main Color" #FF0000
@@ -3618,27 +3618,22 @@ https://i.imgur.com/eTwc7Fs.jpg?3
 /*"Resume" Button*/
 /********/
 
-.dark button[name="play"] {
+.dark .playbutton button {
     background: var(--darkbg2);
+    box-shadow: none;
+    border: 2px solid var(--main);
     color: var(--darktext);
-    box-shadow: inset 0px 0px 20px var(--main);
-    border: 1px solid var(--main) !important;
-    transition: 0.3s
+    text-shadow: none;
+    transition: 0.3s;
+    border-radius: 10px
 }
 
-.dark button[name="play"]:hover {
-    background: var(--darkbg2);
-    color: var(--darktext);
-    box-shadow: inset 0px 0px 35px var(--main);
-    top: 0px;
+.dark .playbutton button:hover {
+    box-shadow: 0px 0px 8px var(--main)
 }
 
-.dark button[name="play"]:active, .dark button[name="play"]:focus {
-    background: var(--darkbg2);
-    color: var(--darktext);
-    box-shadow: inset 0px 0px 35px var(--main), 0px 0px 5px var(--main2);
-    top: 0px;
-    transition: 0.1s
+.dark .playbutton button::before, .dark .playbutton button::after {
+    display: none
 }
 }
 
@@ -5723,29 +5718,48 @@ h2.battle-history {
 /*"Resume" Button*/
 /********/
 
-button[name="play"] {
+.playbutton button {
     background: var(--lightbg2);
-    box-shadow: 0px 2px var(--main);
-    border: 1px solid var(--main);
+    box-shadow: none;
+    border: none;
     color: var(--lighttext);
     text-shadow: none;
+    position: relative
 }
 
-button[name="play"]:hover {
-    background: var(--lightbg2);
-    box-shadow: 0px 1px var(--main);
-    border: 1px solid var(--main);
-    color: var(--lighttext);
-    position: relative;
-    top: 1px;
+.playbutton button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -2.5%;
+    width: 105%;
+    height: 8%;
+    background: var(--main);
+    transform: scaleX(0);
+    transition: 0.4s ease-in;
+    transform-origin: left
 }
 
-button[name="play"]:active, button[name="play"]:focus {
-    background: var(--lightbg2);
-    box-shadow: inset 0px 2px 4px #000000b0;
-    border: 1px solid var(--main);
-    color: var(--lighttext);
-    position: relative;
-    top: 2px;
+.playbutton button:hover::before {
+    background: var(--main);
+    transform: scaleX(1)
+}
+
+.playbutton button::after {
+    content: "";
+    position: absolute;
+    top: 92%;
+    left: -2.5%;
+    width: 105%;
+    height: 8%;
+    background: var(--main);
+    transform: scaleX(0);
+    transition: 0.4s ease-in;
+    transform-origin: left
+}
+
+.playbutton button:hover::after {
+    background: var(--main);
+    transform: scaleX(1)
 }
 }

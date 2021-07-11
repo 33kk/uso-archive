@@ -2,12 +2,12 @@
   "id": 207790,
   "info": {
     "name": "shiftyy's MyAnimeList Dark+",
-    "description": "(Works only on MAL *PROFILE* page).\r\n\r\nA simple dark recolor of mal profile page + some other design changes.\r\n\r\nFeatures:\r\n-Remove Ads\r\n-Smaller \"MAL\" logo\r\n-Customizable Background Color\r\n-New Buttons Shape and Colors\r\n-More Minimal menu postitions\r\n-Remove RSS Feeds\r\n-Hide \"About Me\" Section (Optional)\r\n\r\nFeel free to give me feedback or report any bug/inconsistency in the comments!",
+    "description": "(Works only on MAL *PROFILE* page).\r\n\r\nA simple dark recolor of mal profile page + some other design changes.\r\n\r\nMain Features:\r\n-Customizable Background Color\r\n-Customizable Background Image\r\n-Customizable Font Color\r\n-Customizable Progress Graphs Color\r\n-Hide \"About Me\" Section (Optional)\r\n-Hide \"Favorites\" Section (Optional)\r\n-Smaller \"MAL\" logo\r\n-Remove RSS Feeds\r\n-Remove Ads\r\n\r\nFeel free to give me feedback or report any bug/inconsistency!",
     "additionalInfo": null,
     "format": "uso",
     "category": "myanimelist",
     "createdAt": "2021-07-10T11:29:52.000Z",
-    "updatedAt": "2021-07-10T16:54:16.000Z",
+    "updatedAt": "2021-07-11T11:52:31.000Z",
     "license": "CC-BY-NC-SA-4.0",
     "author": {
       "id": 1205906,
@@ -16,13 +16,13 @@
   },
   "stats": {
     "installs": {
-      "total": 0,
-      "weekly": 0
+      "total": 2,
+      "weekly": 2
     }
   },
   "screenshots": {
     "main": {
-      "name": "207790_after.jpeg",
+      "name": "207790_after.gif",
       "archived": true
     },
     "additional": [
@@ -44,8 +44,40 @@
     "data": []
   },
   "style": {
-    "css": "@-moz-document url-prefix(\"https://myanimelist.net/profile/\") {\r\nbody:not(.ownlist) {\r\n    background-color: /*[[colorBG]]*/;\r\n    font-family: Segoe UI, Arial;\r\n    font-size:  /*[[fontS]]*/px;\r\n    overflow-x: hidden;\r\n}\r\n.profile .user-profile-about{\r\n    /*[[about]]*/\r\n}\r\n\r\n.content-container {\r\n    background-color: #0000;\r\n}\r\n.page-common #menu {\r\n    background-color: #0000;\r\n    height: 30px;\r\n}\r\n\r\n/* NAV */\r\n.page-common #headerSmall .banner-header-anime-straming {\r\n    display: block;\r\n    height: 36px;\r\n    opacity: 1;\r\n    position: absolute;\r\n    right: 440px;\r\n    text-indent: 0;\r\n    top: -50px;\r\n}\r\n.js-truncate-outer .btn-truncate {\r\n    background-image: url(https://i.postimg.cc/rwR2vMGT/icon-pulldown2.png), url(https://i.postimg.cc/26CXK7Gs/bg-readmore.png);\r\n    filter: brightness(1);\r\n}\r\n.page-common #menu {\r\n    top: 4.3px;\r\n}\r\n\r\n.page-common #menu_left {\r\n    padding-left: 60px;\r\n}\r\n\r\n.page-common #menu_right {\r\n    top: 47px;\r\n}\r\n\r\n.page-common #nav li a {\r\n    color: #464646;\r\n    font-size: 11px;\r\n    font-weight: 700;\r\n    height: 24px;\r\n    padding: 10px 5px 0;\r\n    text-align: left;\r\n    text-decoration: none;\r\n}\r\n\r\n.page-common .header-list-button .fa {\r\n    color: #8e8e8e63;\r\n}\r\n.page-common .header-message-button .fa {\r\n    color: #8e8e8e63;\r\n}\r\n.page-common .header-notification-button .fa {\r\n    color: #8e8e8e63;\r\n}\r\n.page-common .header-list .header-list-dropdown ul li a {\r\n    background-color: #000;\r\n    border-bottom: #4d4d4d30 1px solid;\r\n}\r\n.page-common .header-list .header-list-dropdown {\r\n    background-color: #fff0;\r\n    border: #2e51a200 2px solid;\r\n}\r\n\r\n.page-common .header-profile-link {\r\n    color: #e6e6e6;\r\n    background-color: #0000;\r\n    cursor: pointer;\r\n    display: inline-block;\r\n    font-size: 14px;\r\n    font-weight: 700;\r\n    text-align: right;\r\n    text-decoration: none;\r\n}\r\n.page-common .header-profile.link-bg {\r\n    background-color: #20202000;\r\n}\r\n.page-common .header-profile.link-bg.on:hover {\r\n    background-color: #0000;\r\n}\r\n.page-common .header-profile-button {\r\n    background-color: #80879800;\r\n    box-shadow: #09090900 0 0 0 1px inset;\r\n}\r\n\r\n.page-common #header-menu .header-menu-login .btn-mal-service {\r\n    background-color: #f0f0f066;\r\n    border-color: #eb610000;\r\n    color: #fff0;\r\n    opacity: 0;\r\n    cursor: default;\r\n    height: 0px;\r\n    width: 0px;\r\n}\r\n\r\n.page-common #searchBar.searchBar #topSearchValue {\r\n    background-color: #0000;\r\n    border-radius: 0;\r\n    border-color: #fff0;\r\n    color: #fff;\r\n    font-size: 13px;\r\n}\r\n\r\n.profile .user-statistics .stats-graph {\r\n    background-color: #131313b3;\r\n    border-radius: 50px;\r\n    display: block;\r\n}\r\n\r\n#menu {\r\n    position: absolute;\r\n}\r\n.page-common .header-right {\r\n    font-size: 12px;\r\n    font-weight: 400;\r\n    margin: 0px;\r\n}\r\n\r\n.page-common #searchBar.searchBar #topSearchText {\r\n    border-bottom: 0;\r\n    border-left: #d9d9d900 1px solid;\r\n    background: #0000001c;\r\n    border-right: 0;\r\n    border-top: 0;\r\n    display: inline-block;\r\n    font-family: Avenir, lucida grande, tahoma, verdana, arial, sans-serif;\r\n    height: 16px;\r\n    padding-left: 2px;\r\n    text-indent: 4px;\r\n    width: 286px;\r\n}\r\n.page-common #topSearchText {\r\n    color: #e3e3e3;\r\n    width: 180px;\r\n}\r\n.page-common #searchBar.searchBar #topSearchButon {\r\n    background-color: #e1e7f500;\r\n    border: #fff0 0 solid;\r\n    border-left: #e1e7f500 1px solid;\r\n    border-radius: 0 4px 4px 0;\r\n    color: #9f9f9f;\r\n    width: 26px;\r\n}\r\n.page-common .incrementalSearchResultList .list.list-bottom.focus a {\r\n    color: #3e3e3e;\r\n}\r\n.page-common .incrementalSearchResultList .list.list-bottom a {\r\n    color: #e3e3e3;\r\n    padding: 8px 4px;\r\n}\r\n.page-common .incrementalSearchResultList .list:focus,\r\n.page-common .incrementalSearchResultList .list:active,\r\n.page-common .incrementalSearchResultList .list:hover {\r\n    background-color: #111;\r\n}\r\n.page-common .incrementalSearchResultList .list .off .info.anime .name,\r\n.page-common .incrementalSearchResultList .list .off .info.manga .name,\r\n.page-common .incrementalSearchResultList .list .off .info.news .name,\r\n.page-common .incrementalSearchResultList .list .off .info.featured .name,\r\n.page-common .incrementalSearchResultList .list .off .info.forum .name {\r\n    color: #e3e3e3;\r\n}\r\n.page-common .incrementalSearchResultList .list {\r\n    background-color: #000;\r\n    border-bottom: #6f6f6f00 1px solid;\r\n}\r\n.page-common .incrementalSearchResultList .list .image {\r\n    border: #ebebeb00 1px solid;\r\n}\r\n.page-common .incrementalSearchResultList .list:last-of-type {\r\n    border-bottom: #000 0 solid;\r\n    border-radius: 0 0 4px 4px;\r\n}\r\n.page-common .incrementalSearchResultList {\r\n    background-color: #d54d4d00;\r\n    border: #73434300 1px solid;\r\n}\r\n.page-common .incrementalSearchResultList .list.separator {\r\n    background-color: #131313;\r\n    color: #646464;\r\n    font-weight: 700;\r\n    height: 16px;\r\n    line-height: 16px;\r\n    padding: 0 0 0 4px;\r\n    text-transform: capitalize;\r\n}\r\n.page-common .incrementalSearchResultList .list {\r\n    background-color: #000;\r\n    border-bottom: #6f6f6f63 1px solid;\r\n    cursor: pointer;\r\n    padding: 2px;\r\n    position: relative;\r\n    text-align: left;\r\n}\r\n\r\n.page-common #searchBar.searchBar #topSearchButon.notActive {\r\n    background-color: #767e9000;\r\n    border-left: #f6f6f600 1px solid;\r\n    color: #bbb;\r\n}\r\n\r\n.page-common .header-profile .header-profile-dropdown {\r\n    background-color: #19191900;\r\n    border: #00000000 2px solid;\r\n    -webkit-box-shadow: 1px 1px 5px rgb(0 0 0 / 20%);\r\n    box-shadow: 1px 1px 5px rgb(0 0 0 / 20%);\r\n}\r\n\r\n\r\n/* BORDERS */\r\n.border {\r\n    opacity: 0;\r\n}\r\n.page-common .content-container .container-left {\r\n    border-right: #5c3b3b00 1px solid;\r\n}\r\n.page-common .content-container .container-right h5 {\r\n    border-bottom: #f0f0f000 1px solid;\r\n}\r\n.profile .statistics-updates .image {\r\n    border: #f0f0f000 1px solid;\r\n    height: 60px;\r\n    width: 40px;\r\n}\r\n.user-profile .user-status.border-top {\r\n    border-top: #f0f0f000 1px solid;\r\n}\r\n\r\n.user-profile h4 {\r\n    border-bottom: #f0f0f000 1px solid;\r\n    font-size: 14px;\r\n    font-weight: 700;\r\n    margin-bottom: 4px;\r\n    padding-bottom: 2px;\r\n}\r\n\r\n.page-common .header-profile.link-bg:hover {\r\n    background-color: #000;\r\n}\r\n.page-common .header-profile.link-bg.on:active {\r\n    background-color: #000;\r\n}\r\n\r\n.page-common .header-profile .header-profile-dropdown ul li a {\r\n    background-color: #000;\r\n    border-bottom: #0f0f0fb5 1px solid;\r\n    padding: 13px 25px;\r\n}\r\n.page-common .header-profile .header-profile-dropdown {\r\n    background-color: #19191900;\r\n    border: #00000000 2px solid;\r\n    -webkit-box-shadow: 1px 1px 5px rgb(0 0 0 / 20%);\r\n    box-shadow: 1px 1px 5px rgb(0 0 0 / 20%);\r\n    width: 200px;\r\n    left: -80px;\r\n}\r\n\r\n\r\n\r\n\r\n.profile .user-statistics .user-statistics-stats .updates {\r\n    display: table-cell;\r\n    padding-left: 3px;\r\n    height: 244px;\r\n    width: 50%;\r\n}\r\n\r\n.page-common.profile #content {\r\n    padding: 0px;\r\n}\r\n\r\n\r\n\r\n\r\n/* ACTIONS */\r\n.user-profile .user-function .icon-user-function.icon-comment,\r\n.user-profile .user-function .icon-user-function.icon-request,\r\n.user-profile .user-function .icon-user-function.icon-message {\r\n    background-color: #4040401c;\r\n    border: #cacaca21 2px solid;\r\n}\r\n\r\n.user-profile .user-function .icon-user-function.icon-comment:hover,\r\n.user-profile .user-function .icon-user-function.icon-request:hover,\r\n.user-profile .user-function .icon-user-function.icon-message:hover {\r\n    background-color: #b3b3b33b;\r\n    border: #cacaca61 2px solid;\r\n}\r\n\r\n.user-profile .user-function .icon-user-function.icon-comment.disabled,\r\n.user-profile .user-function .icon-user-function.icon-request.disabled,\r\n.user-profile .user-function .icon-user-function.icon-message.disabled {\r\n    background-color: #0000;\r\n    border: #cacaca14 2px solid;\r\n}\r\n\r\n.user-profile .user-function .icon-user-function.icon-comment.disabled:hover,\r\n.user-profile .user-function .icon-user-function.icon-request.disabled:hover,\r\n.user-profile .user-function .icon-user-function.icon-message.disabled:hover {\r\n    background-color: #0000001c;\r\n    border: #cacaca14 2px solid;\r\n    cursor: pointer;\r\n}\r\n\r\n.user-profile .user-function .icon-user-function {\r\n    background-image: none;\r\n    border-radius: 50px;\r\n    height: 30px;\r\n    width: 67px;\r\n    margin: 0 2px;\r\n}\r\n\r\n.profile .user-function .icon-user-function .text {\r\n    top: 6px;\r\n    left: 3.6px;\r\n    color: #acacac !important;\r\n  \tfont-size: 12px !important;\r\n}\r\n.page-common .user-image {\r\n    margin-bottom: 5px!important;\r\n}\r\n.user-profile .user-function {\r\n    width: 225px;\r\n    background-color: #0000;\r\n}\r\n\r\n.user-profile h4.icon-rss {\r\n    position: absolute;\r\n    opacity: 0;\r\n}\r\n.user-profile-sns {\r\n    opacity: 0;\r\n}\r\n\r\n.page-common #content {\r\n    background-color: #06060600;\r\n    border-color: #0000;\r\n    color: #9b9b9b00;\r\n}\r\n.user-profile .user-button .btn-profile-submit {\r\n    background-color: #0f0f0f61;\r\n    border: solid 2px;\r\n    border-color: #fff3;\r\n    border-radius: 50px;\r\n    color: #fff;\r\n    font-size: 15px;\r\n    font-weight: 600;\r\n    padding: 8px 0;\r\n    width: 105px;\r\n}\r\n.user-profile .user-button .btn-profile-submit:hover,\r\n.user-profile .user-button .btn-profile-submit:active {\r\n    background-color: #60606061;\r\n}\r\n.user-profile .user-friends .icon-friend {\r\n    box-shadow: #fff0 0 0 2px, #d8d8d805 0 0 0 1px;\r\n}\r\n.profile .user-comments .comment .image img {\r\n    border: #f0f0f000 1px solid;\r\n}\r\n\r\n\r\n/* LAST UPDATES */\r\n.profile .statistics-updates .data .graph .graph-inner.completed {\r\n    background-color: /*[[cColor]]*/70;\r\n}\r\n.profile .statistics-updates .data .graph .graph-inner.watching {\r\n    background-color: /*[[wColor]]*/70;\r\n}\r\n.profile .statistics-updates .data .text.watching,\r\n.profile .statistics-updates .data .text.re-watching,\r\n.profile .statistics-updates .data .text.reading,\r\n.profile .statistics-updates .data .text.re-reading {\r\n    color: #4e8040;\r\n}\r\n\r\n.profile .statistics-updates .data .text.completed {\r\n    color: #bdbdbdc7;\r\n}\r\n.profile .statistics-updates .data .graph .graph-inner {\r\n    border-radius: 0px;\r\n    height: 10px;\r\n}\r\n.profile .statistics-updates .data .graph {\r\n    background-color: #26262654;\r\n    border: #f0f0f000 1px solid;\r\n    border-radius: 2px;\r\n    display: block;\r\n    height: 10px;\r\n    padding: 1px;\r\n    width: 190px;\r\n}\r\n\r\n\r\n\r\n\r\n.page-common .textarea {\r\n    border-color: #d8d8d800;\r\n    font-size: 14px;\r\n    color: #777;\r\n    background-color: #00000038;\r\n    padding: 2px;\r\n}\r\n\r\n\r\n\r\n\r\n/* FAVORITES  AND COMMENTS*/\r\n.profile .user-favorites .favorites-list .list .image {\r\n    border: #f0f0f000 0px solid;\r\n}\r\n\r\n.user-profile .user-compatability-graph .bar-outer {\r\n    background-color: #151515ab;\r\n    border: #f0f0f000 1px solid;\r\n    border-radius: 50px;\r\n    display: table;\r\n    padding: 1px;\r\n    width: 212px;\r\n}\r\n.profile .user-comments .comment {\r\n    background-color:  #00000030;\r\n}\r\n.profile .user-comments .comment:nth-of-type(odd) {\r\n    background-color: #00000090;\r\n}\r\n\r\n\r\n\r\n/* GENERAL FONT CNFG */\r\n.page-common #content {\r\n    background-color: #06060600;\r\n    border-color: #0000;\r\n    color: /*[[hFont]]*/b3;\r\n}\r\n.page-common .mb12, \r\n.page-common h5{\r\n    background-color: #06060600;\r\n    border-color: #0000;\r\n    color: /*[[hFont]]*/b3;\r\n}\r\n.page-common a,\r\n.page-common a:visited {\r\n    color: /*[[pFont]]*/d4;\r\n    text-decoration: none;\r\n}\r\n#statistics h2 {\r\n    color: /*[[pFont]]*/ !important;\r\n    font-size: 20px;\r\n}\r\n  .page-common .fw-b {\r\n    color: /*[[hFont]]*/;\r\n}\r\n.page-common .data {\r\n    color: /*[[hFont]]*/;\r\n}\r\n.page-common .h1 {\r\n    background-color: #0000;\r\n    border-bottom-color: #0000;\r\n    border-left-color: #ebebeb00;\r\n    border-right-color: #ebebeb00;\r\n    border-top-color: #ebebeb00;\r\n    color: /*[[pFont]]*/;\r\n    font-size: 20px;\r\n    padding: 5px 0px;\r\n    height: 60px;\r\n    text-align: left;\r\n    top: -30px;\r\n    position: absolute;\r\n}\r\n.page-common .content-container .container-right h2 {\r\n    border-color: #f0f0f000;\r\n    color: /*[[hFont]]*/ !important;\r\n}\r\n.page-common .header-right {\r\n    font-size: 12px;\r\n    font-weight: 400;\r\n    margin: 10px;\r\n    color: #424242 !important;\r\n}\r\n#contentWrapper {\r\n    top: 30px;\r\n}\r\n\r\n\r\n\r\n/* COLOR CONVERT */\r\n.page-common #headerSmall {\r\n    background-color: #0000;\r\n    background-image: url(https://i.postimg.cc/5y9j4ZPg/mal-logo-xsmall.png);\r\n    height: 30px;\r\n    z-index: 5;\r\n}\r\n\r\n.user-profile .user-status li {\r\n    background-color: #06060600;\r\n    padding: 5px;\r\n    width: 216px;\r\n}\r\n.user-profile .user-status li:nth-of-type(even) {\r\n    background-color: #06060600;\r\n}\r\n\r\n.user-profile .user-function .icon-user-function.icon-message.disabled {\r\n    background-color: #28282800;\r\n    background-position: -28px -48px;\r\n}\r\n\r\n.page-common #contentWrapper {\r\n    background-color: #0000;\r\n}\r\n.page-common #footer-block {\r\n    background-color: #0000;\r\n    color: #fff;\r\n    padding: 0px 0px 0px;\r\n}\r\n.page-common #footer-block .footer-link-block {\r\n    padding-bottom: 0px;\r\n    padding-top: 11px;\r\n}\r\n.page-common #footer-block .footer-link a {\r\n    color: #6f6f6f7d;\r\n    font-size: 12px;\r\n    margin-right: 18px;\r\n}\r\n/* REMOVE MAL APPS FOOTER */\r\n.page-common #footer-block .footer-link-icon-block {\r\n    display: block;\r\n    padding-left: 444000px;\r\n    position: relative;\r\n    width: 0px;\r\n    height: 0px;\r\n}\r\n}",
+    "css": "@-moz-document url-prefix(\"https://myanimelist.net/profile/\") {\r\nbody:not(.ownlist) {\r\n    /*[[background]]*/;\r\n    font-family: Segoe UI, Arial;\r\n    font-size:  /*[[fontS]]*/px;\r\n    overflow-x: hidden;\r\n    background-size: cover;\r\n    /*[[blur]]*/\r\n}\r\n.profile .user-profile-about{\r\n    /*[[about]]*/\r\n}\r\n.profile .user-favorites-outer {\r\n    /*[[favorites]]*/\r\n}\r\n.page-common .content-container .container-right h2 {\r\n     /*[[favorites]]*/\r\n}\r\n\r\n.content-container {\r\n    background-color: #0000;\r\n}\r\n.page-common #menu {\r\n    background-color: #0000;\r\n    height: 30px;\r\n}\r\n\r\n/* NAV */\r\n.page-common #headerSmall .banner-header-anime-straming {\r\n    display: block;\r\n    height: 36px;\r\n    opacity: 1;\r\n    position: absolute;\r\n    right: 440px;\r\n    text-indent: 0;\r\n    top: -50px;\r\n}\r\n.js-truncate-outer .btn-truncate {\r\n    background-image: url(https://i.postimg.cc/rwR2vMGT/icon-pulldown2.png);\r\n    filter: brightness(1);\r\n}\r\n.page-common #menu {\r\n    top: 4.3px;\r\n}\r\n\r\n.page-common #menu_left {\r\n    padding-left: 60px;\r\n}\r\n\r\n.page-common #menu_right {\r\n    top: 47px;\r\n}\r\n\r\n.page-common #nav li a {\r\n    color: #464646;\r\n    font-size: 11px;\r\n    font-weight: 700;\r\n    height: 24px;\r\n    padding: 10px 5px 0;\r\n    text-align: left;\r\n    text-decoration: none;\r\n}\r\n\r\n.page-common .header-list-button .fa {\r\n    color: #8e8e8e63;\r\n}\r\n.page-common .header-message-button .fa {\r\n    color: #8e8e8e63;\r\n}\r\n.page-common .header-notification-button .fa {\r\n    color: #8e8e8e63;\r\n}\r\n.page-common .header-list .header-list-dropdown ul li a {\r\n    background-color: #000;\r\n    border-bottom: #4d4d4d30 1px solid;\r\n}\r\n.page-common .header-list .header-list-dropdown {\r\n    background-color: #fff0;\r\n    border: #2e51a200 2px solid;\r\n}\r\n\r\n.page-common .header-profile-link {\r\n    color: #e6e6e6;\r\n    background-color: #0000;\r\n    cursor: pointer;\r\n    display: inline-block;\r\n    font-size: 14px;\r\n    font-weight: 700;\r\n    text-align: right;\r\n    text-decoration: none;\r\n}\r\n.page-common .header-profile.link-bg {\r\n    background-color: #20202000;\r\n}\r\n.page-common .header-profile.link-bg.on:hover {\r\n    background-color: #0000;\r\n}\r\n.page-common .header-profile-button {\r\n    background-color: #80879800;\r\n    box-shadow: #09090900 0 0 0 1px inset;\r\n}\r\n\r\n.page-common #header-menu .header-menu-login .btn-mal-service {\r\n    background-color: #f0f0f066;\r\n    border-color: #eb610000;\r\n    color: #fff0;\r\n    opacity: 0;\r\n    cursor: default;\r\n    height: 0px;\r\n    width: 0px;\r\n}\r\n\r\n.page-common #searchBar.searchBar #topSearchValue {\r\n    background-color: #0000;\r\n    border-radius: 0;\r\n    border-color: #fff0;\r\n    color: #fff;\r\n    font-size: 13px;\r\n}\r\n\r\n.profile .user-statistics .stats-graph {\r\n    background-color: #131313b3;\r\n    border-radius: 50px;\r\n    display: block;\r\n}\r\n\r\n#menu {\r\n    position: absolute;\r\n}\r\n.page-common .header-right {\r\n    font-size: 12px;\r\n    font-weight: 400;\r\n    margin: 0px;\r\n}\r\n\r\n.page-common #searchBar.searchBar #topSearchText {\r\n    border-bottom: 0;\r\n    border-left: #d9d9d900 1px solid;\r\n    background: #0000001c;\r\n    border-right: 0;\r\n    border-top: 0;\r\n    display: inline-block;\r\n    font-family: Avenir, lucida grande, tahoma, verdana, arial, sans-serif;\r\n    height: 16px;\r\n    padding-left: 2px;\r\n    text-indent: 4px;\r\n    width: 286px;\r\n}\r\n.page-common #topSearchText {\r\n    color: #e3e3e3;\r\n    width: 180px;\r\n}\r\n.page-common #searchBar.searchBar #topSearchButon {\r\n    background-color: #e1e7f500;\r\n    border: #fff0 0 solid;\r\n    border-left: #e1e7f500 1px solid;\r\n    border-radius: 0 4px 4px 0;\r\n    color: #9f9f9f;\r\n    width: 26px;\r\n}\r\n.page-common .incrementalSearchResultList .list.list-bottom.focus a {\r\n    color: #3e3e3e;\r\n}\r\n.page-common .incrementalSearchResultList .list.list-bottom a {\r\n    color: #e3e3e3;\r\n    padding: 8px 4px;\r\n}\r\n.page-common .incrementalSearchResultList .list:focus,\r\n.page-common .incrementalSearchResultList .list:active,\r\n.page-common .incrementalSearchResultList .list:hover {\r\n    background-color: #111;\r\n}\r\n.page-common .incrementalSearchResultList .list .off .info.anime .name,\r\n.page-common .incrementalSearchResultList .list .off .info.manga .name,\r\n.page-common .incrementalSearchResultList .list .off .info.news .name,\r\n.page-common .incrementalSearchResultList .list .off .info.featured .name,\r\n.page-common .incrementalSearchResultList .list .off .info.forum .name {\r\n    color: #e3e3e3;\r\n}\r\n.page-common .incrementalSearchResultList .list {\r\n    background-color: #000;\r\n    border-bottom: #6f6f6f00 1px solid;\r\n}\r\n.page-common .incrementalSearchResultList .list .image {\r\n    border: #ebebeb00 1px solid;\r\n}\r\n.page-common .incrementalSearchResultList .list:last-of-type {\r\n    border-bottom: #000 0 solid;\r\n    border-radius: 0 0 4px 4px;\r\n}\r\n.page-common .incrementalSearchResultList {\r\n    background-color: #d54d4d00;\r\n    border: #73434300 1px solid;\r\n}\r\n.page-common .incrementalSearchResultList .list.separator {\r\n    background-color: #131313;\r\n    color: #646464;\r\n    font-weight: 700;\r\n    height: 16px;\r\n    line-height: 16px;\r\n    padding: 0 0 0 4px;\r\n    text-transform: capitalize;\r\n}\r\n.page-common .incrementalSearchResultList .list {\r\n    background-color: #000;\r\n    border-bottom: #6f6f6f63 1px solid;\r\n    cursor: pointer;\r\n    padding: 2px;\r\n    position: relative;\r\n    text-align: left;\r\n}\r\n\r\n.page-common #searchBar.searchBar #topSearchButon.notActive {\r\n    background-color: #767e9000;\r\n    border-left: #f6f6f600 1px solid;\r\n    color: #bbb;\r\n}\r\n\r\n.page-common .header-profile .header-profile-dropdown {\r\n    background-color: #19191900;\r\n    border: #00000000 2px solid;\r\n    -webkit-box-shadow: 1px 1px 5px rgb(0 0 0 / 20%);\r\n    box-shadow: 1px 1px 5px rgb(0 0 0 / 20%);\r\n}\r\n\r\n\r\n/* BORDERS */\r\n.border {\r\n    opacity: 0;\r\n}\r\n.page-common .content-container .container-left {\r\n    border-right: #5c3b3b00 1px solid;\r\n}\r\n.page-common .content-container .container-right h5 {\r\n    border-bottom: #f0f0f000 1px solid;\r\n}\r\n.profile .statistics-updates .image {\r\n    border: #f0f0f000 1px solid;\r\n    height: 60px;\r\n    width: 40px;\r\n}\r\n.user-profile .user-status.border-top {\r\n    border-top: #f0f0f000 1px solid;\r\n}\r\n\r\n.user-profile h4 {\r\n    border-bottom: #f0f0f000 1px solid;\r\n    font-size: 14px;\r\n    font-weight: 700;\r\n    margin-bottom: 4px;\r\n    padding-bottom: 2px;\r\n}\r\n\r\n.page-common .header-profile.link-bg:hover {\r\n    background-color: #000;\r\n}\r\n.page-common .header-profile.link-bg.on:active {\r\n    background-color: #000;\r\n}\r\n\r\n.page-common .header-profile .header-profile-dropdown ul li a {\r\n    background-color: #000;\r\n    border-bottom: #0f0f0fb5 1px solid;\r\n    padding: 13px 25px;\r\n}\r\n.page-common .header-profile .header-profile-dropdown {\r\n    background-color: #19191900;\r\n    border: #00000000 2px solid;\r\n    -webkit-box-shadow: 1px 1px 5px rgb(0 0 0 / 20%);\r\n    box-shadow: 1px 1px 5px rgb(0 0 0 / 20%);\r\n    width: 200px;\r\n    left: -80px;\r\n}\r\n\r\n\r\n\r\n\r\n.profile .user-statistics .user-statistics-stats .updates {\r\n    display: table-cell;\r\n    padding-left: 3px;\r\n    height: 244px;\r\n    width: 50%;\r\n}\r\n\r\n.page-common.profile #content {\r\n    padding: 0px;\r\n}\r\n\r\n\r\n\r\n\r\n/* ACTIONS */\r\n.user-profile .user-function .icon-user-function.icon-comment,\r\n.user-profile .user-function .icon-user-function.icon-request,\r\n.user-profile .user-function .icon-user-function.icon-message {\r\n    background-color: #4040401c;\r\n    border: #cacaca21 2px solid;\r\n}\r\n\r\n.user-profile .user-function .icon-user-function.icon-comment:hover,\r\n.user-profile .user-function .icon-user-function.icon-request:hover,\r\n.user-profile .user-function .icon-user-function.icon-message:hover {\r\n    background-color: #b3b3b33b;\r\n    border: #cacaca61 2px solid;\r\n}\r\n\r\n.user-profile .user-function .icon-user-function.icon-comment.disabled,\r\n.user-profile .user-function .icon-user-function.icon-request.disabled,\r\n.user-profile .user-function .icon-user-function.icon-message.disabled {\r\n    background-color: #0000;\r\n    border: #cacaca14 2px solid;\r\n}\r\n\r\n.user-profile .user-function .icon-user-function.icon-comment.disabled:hover,\r\n.user-profile .user-function .icon-user-function.icon-request.disabled:hover,\r\n.user-profile .user-function .icon-user-function.icon-message.disabled:hover {\r\n    background-color: #0000001c;\r\n    border: #cacaca14 2px solid;\r\n    cursor: pointer;\r\n}\r\n\r\n.user-profile .user-function .icon-user-function {\r\n    background-image: none;\r\n    border-radius: 50px;\r\n    height: 30px;\r\n    width: 67px;\r\n    margin: 0 2px;\r\n}\r\n\r\n.profile .user-function .icon-user-function .text {\r\n    top: 6px;\r\n    left: 3.6px;\r\n    color: #acacac !important;\r\n  \tfont-size: 12px !important;\r\n}\r\n.page-common .user-image {\r\n    margin-bottom: 5px!important;\r\n}\r\n.user-profile .user-function {\r\n    width: 225px;\r\n    background-color: #0000;\r\n}\r\n\r\n.user-profile h4.icon-rss {\r\n    position: absolute;\r\n    opacity: 0;\r\n}\r\n.user-profile-sns {\r\n    opacity: 0;\r\n}\r\n\r\n.page-common #content {\r\n    background-color: #06060600;\r\n    border-color: #0000;\r\n    color: #9b9b9b00;\r\n}\r\n.user-profile .user-button .btn-profile-submit {\r\n    background-color: #0f0f0f61;\r\n    border: solid 2px;\r\n    border-color: #fff3;\r\n    border-radius: 50px;\r\n    color: #fff;\r\n    font-size: 15px;\r\n    font-weight: 600;\r\n    padding: 8px 0;\r\n    width: 105px;\r\n}\r\n.user-profile .user-button .btn-profile-submit:hover,\r\n.user-profile .user-button .btn-profile-submit:active {\r\n    background-color: #60606061;\r\n}\r\n.user-profile .user-friends .icon-friend {\r\n    box-shadow: #fff0 0 0 2px, #d8d8d805 0 0 0 1px;\r\n}\r\n.profile .user-comments .comment .image img {\r\n    border: #f0f0f000 1px solid;\r\n}\r\n\r\n\r\n/* LAST UPDATES */\r\n.profile .statistics-updates .data .graph .graph-inner.completed {\r\n    background-color: /*[[cColor]]*/;\r\n}\r\n.profile .statistics-updates .data .graph .graph-inner.watching {\r\n    background-color: /*[[wColor]]*/;\r\n}\r\n\r\n/* completed main */ \r\n.profile .user-statistics .stats-graph .graph.completed {\r\n    background-color: /*[[cColor]]*/;\r\n}\r\n.profile .user-statistics .stats-status .circle.completed:after {\r\n    background-color: /*[[cColor]]*/;\r\n}\r\n/* watching-main */ \r\n.profile .user-statistics .stats-graph .graph.watching, .profile .user-statistics .stats-graph .graph.reading {\r\n    background-color: /*[[wColor]]*/;\r\n}\r\n.profile .user-statistics .stats-status .circle.watching:after, .profile .user-statistics .stats-status .circle.reading:after {\r\n   background-color: /*[[wColor]]*/;\r\n}\r\n\r\n.profile .statistics-updates .data .text.watching,\r\n.profile .statistics-updates .data .text.re-watching,\r\n.profile .statistics-updates .data .text.reading,\r\n.profile .statistics-updates .data .text.re-reading {\r\n    color: /*[[wColor]]*/;\r\n}\r\n\r\n.profile .statistics-updates .data .text.completed {\r\n    color: #bdbdbdc7;\r\n}\r\n.profile .statistics-updates .data .graph .graph-inner {\r\n    border-radius: 0px;\r\n    height: 10px;\r\n}\r\n.profile .statistics-updates .data .graph {\r\n    background-color: #26262654;\r\n    border: #f0f0f000 1px solid;\r\n    border-radius: 2px;\r\n    display: block;\r\n    height: 10px;\r\n    padding: 1px;\r\n    width: 190px;\r\n}\r\n\r\n\r\n\r\n\r\n.page-common .textarea {\r\n    border-color: #d8d8d800;\r\n    font-size: 14px;\r\n    color: #777;\r\n    background-color: #00000038;\r\n    padding: 2px;\r\n}\r\n\r\n\r\n\r\n\r\n/* FAVORITES  AND COMMENTS*/\r\n.profile .user-favorites .favorites-list .list .image {\r\n    border: #f0f0f000 0px solid;\r\n}\r\n\r\n.user-profile .user-compatability-graph .bar-outer {\r\n    background-color: #151515ab;\r\n    border: #f0f0f000 1px solid;\r\n    border-radius: 50px;\r\n    display: table;\r\n    padding: 1px;\r\n    width: 212px;\r\n}\r\n.profile .user-comments .comment {\r\n    background-color:  #00000030;\r\n}\r\n.profile .user-comments .comment:nth-of-type(odd) {\r\n    background-color: #00000090;\r\n}\r\n\r\n\r\n\r\n/* GENERAL FONT CNFG */\r\n.page-common #content {\r\n    background-color: #06060600;\r\n    border-color: #0000;\r\n    color: /*[[hFont]]*/b3;\r\n}\r\n.page-common .mb12, \r\n.page-common h5{\r\n    background-color: #06060600;\r\n    border-color: #0000;\r\n    color: /*[[hFont]]*/b3;\r\n}\r\n.page-common a,\r\n.page-common a:visited {\r\n    color: /*[[pFont]]*/d4;\r\n    text-decoration: none;\r\n}\r\n#statistics h2 {\r\n    color: /*[[pFont]]*/ !important;\r\n    font-size: 20px;\r\n    display: block !important;\r\n}\r\n  .page-common .fw-b {\r\n    color: /*[[hFont]]*/;\r\n}\r\n.page-common .data {\r\n    color: /*[[hFont]]*/;\r\n}\r\n.page-common .h1 {\r\n    background-color: #0000;\r\n    border-bottom-color: #0000;\r\n    border-left-color: #ebebeb00;\r\n    border-right-color: #ebebeb00;\r\n    border-top-color: #ebebeb00;\r\n    color: /*[[pFont]]*/;\r\n    font-size: 20px;\r\n    padding: 5px 0px;\r\n    height: 60px;\r\n    text-align: left;\r\n    top: -30px;\r\n    position: absolute;\r\n}\r\n.page-common .content-container .container-right h2 {\r\n    border-color: #f0f0f000;\r\n    color: /*[[hFont]]*/ !important;\r\n}\r\n.page-common .header-right {\r\n    font-size: 12px;\r\n    font-weight: 400;\r\n    margin: 10px;\r\n    color: #424242 !important;\r\n}\r\n#contentWrapper {\r\n    top: 30px;\r\n}\r\n\r\n\r\n\r\n/* COLOR CONVERT */\r\n.page-common #headerSmall {\r\n    background-color: #0000;\r\n    background-image: url(https://i.postimg.cc/5y9j4ZPg/mal-logo-xsmall.png);\r\n    height: 30px;\r\n    z-index: 5;\r\n}\r\n\r\n.user-profile .user-status li {\r\n    background-color: #06060600;\r\n    padding: 5px;\r\n    width: 216px;\r\n}\r\n.user-profile .user-status li:nth-of-type(even) {\r\n    background-color: #06060600;\r\n}\r\n\r\n.user-profile .user-function .icon-user-function.icon-message.disabled {\r\n    background-color: #28282800;\r\n    background-position: -28px -48px;\r\n}\r\n\r\n.page-common #contentWrapper {\r\n    background-color: #0000;\r\n}\r\n.page-common #footer-block {\r\n    background-color: #0000;\r\n    color: #fff;\r\n    padding: 0px 0px 0px;\r\n}\r\n.page-common #footer-block .footer-link-block {\r\n    padding-bottom: 0px;\r\n    padding-top: 11px;\r\n}\r\n.page-common #footer-block .footer-link a {\r\n    color: #6f6f6f7d;\r\n    font-size: 12px;\r\n    margin-right: 18px;\r\n}\r\n/* REMOVE MAL APPS FOOTER */\r\n.page-common #footer-block .footer-link-icon-block {\r\n    display: block;\r\n    padding-left: 444000px;\r\n    position: relative;\r\n    width: 0px;\r\n    height: 0px;\r\n}\r\n}",
     "settings": [
+      {
+        "key": "fontS",
+        "label": "Font Size",
+        "type": "text",
+        "options": [
+          {
+            "key": "placeholder",
+            "label": "placeholder",
+            "value": "12",
+            "default": true
+          }
+        ]
+      },
+      {
+        "key": "background",
+        "label": "Background Type",
+        "type": "dropdown",
+        "options": [
+          {
+            "key": "bgC",
+            "label": "Color",
+            "value": "background: /*[[colorBG]]*/;",
+            "default": true
+          },
+          {
+            "key": "bgI",
+            "label": "Image",
+            "value": "background:\r\n        linear-gradient(\r\n          rgba(0, 0, 0, /*[[bgOpacity]]*/), \r\n          rgba(0, 0, 0, /*[[bgOpacity]]*/)\r\n        ),\r\n        url(/*[[bgImage]]*/) no-repeat center center fixed;",
+            "default": false
+          }
+        ]
+      },
       {
         "key": "colorBG",
         "label": "Background Color",
@@ -60,15 +92,89 @@
         ]
       },
       {
-        "key": "fontS",
-        "label": "Font Size",
-        "type": "text",
+        "key": "bgImage",
+        "label": "Background Image",
+        "type": "image",
         "options": [
           {
-            "key": "placeholder",
-            "label": "placeholder",
-            "value": "12",
+            "key": "bgA",
+            "label": "Animated",
+            "value": "https://iae.news/wp-content/uploads/2021/04/04b69fc9c44f23b430c8171ea422d44b.gif",
             "default": true
+          },
+          {
+            "key": "bg2",
+            "label": "Road",
+            "value": "https://cdnb.artstation.com/p/assets/images/images/007/286/185/large/van-setia-putra-switz.jpg?1505067446",
+            "default": false
+          },
+          {
+            "key": "bg1",
+            "label": "Mountain",
+            "value": "https://i.pinimg.com/originals/dc/20/2f/dc202fff4a6bdf40f68cf853a41e54a1.jpg",
+            "default": false
+          }
+        ]
+      },
+      {
+        "key": "blur",
+        "label": "Background Image Blur",
+        "type": "dropdown",
+        "options": [
+          {
+            "key": "blur5",
+            "label": "Disabled",
+            "value": "backdrop-filter: blur(0px);",
+            "default": false
+          },
+          {
+            "key": "blur4",
+            "label": "Very Light",
+            "value": "backdrop-filter: blur(2px);",
+            "default": false
+          },
+          {
+            "key": "blur3",
+            "label": "Light",
+            "value": "backdrop-filter: blur(5px);",
+            "default": true
+          },
+          {
+            "key": "blur2",
+            "label": "Heavy",
+            "value": "backdrop-filter: blur(10px);",
+            "default": false
+          },
+          {
+            "key": "blur1",
+            "label": "Very Heavy",
+            "value": "backdrop-filter: blur(50px);",
+            "default": false
+          }
+        ]
+      },
+      {
+        "key": "bgOpacity",
+        "label": "Background Image Darkness",
+        "type": "dropdown",
+        "options": [
+          {
+            "key": "bgO0",
+            "label": "85% Dark",
+            "value": "0.85",
+            "default": true
+          },
+          {
+            "key": "bgO1",
+            "label": "50% Dark",
+            "value": "0.5",
+            "default": false
+          },
+          {
+            "key": "bgO3",
+            "label": "0% Dark (Not Recommended)",
+            "value": "0",
+            "default": false
           }
         ]
       },
@@ -88,6 +194,25 @@
             "label": "No",
             "value": "display: block;",
             "default": false
+          }
+        ]
+      },
+      {
+        "key": "favorites",
+        "label": "Hide \"Favorites\" Section",
+        "type": "dropdown",
+        "options": [
+          {
+            "key": "favoritesYes",
+            "label": "Yes",
+            "value": "display: none;",
+            "default": false
+          },
+          {
+            "key": "favoritesNo",
+            "label": "No",
+            "value": "display: block;",
+            "default": true
           }
         ]
       },
@@ -119,13 +244,13 @@
       },
       {
         "key": "wColor",
-        "label": "Watching Color",
+        "label": "Watching/Reading Color",
         "type": "color",
         "options": [
           {
             "key": "placeholder",
             "label": "placeholder",
-            "value": "#5BE650",
+            "value": "#4DC243",
             "default": true
           }
         ]
@@ -138,7 +263,7 @@
           {
             "key": "placeholder",
             "label": "placeholder",
-            "value": "#4C63D0",
+            "value": "#3D50A8",
             "default": true
           }
         ]
