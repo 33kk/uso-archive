@@ -1,16 +1,16 @@
 /* ==UserStyle==
-@name           Compact Tube (White) v1.5.8+(25)
+@name           Compact Tube (White) v1.5.8+(26)
 @namespace      USO Archive
 @author         jakill02
 @description    `RU) - пытается имитировать старый (классический) дизайн Ютуба.     Предупреждение: Этот стиль написан для использования на Компьютерах и не предназначен для Телефонов и Планшетов..---------ENG) - trying to imitate the old (classic) Youtube layout.     Warning: This style is written for use on Computers and is not intended for Phones and Tablets..RU) (Стиль в классических цветах и привычных формах.)данный Стиль является модицикацией основанной на стиле от (Funny 😂) который был взять с сайта: "YouTube OldOnNew" https://sites.google.com/view/compacttube/home все права на оригинальный стиль принадлежат его создателю, я не на что не претендую.-----------------------ENG) (Style in classic colors and familiar shapes.)This Style is a modification based on the Style by (Funny 😂) which was taken from the site: "YouTube OldOnNew" https://sites.google.com/view/compacttube/homeAll rights to original style belong to its original creator, I do not pretend to anything.`
-@version        20210703.21.40
+@version        20210710.22.35
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
-/* CompactTube (White) v1.5.8+(25) */
+/* CompactTube (White) v1.5.8+(26) */
 
-                /* Main Style Page: https://userstyles.org/styles/186936/ */
+                /* Style Page: https://userstyles.org/styles/186936/ */
 
 /*    ENG: here you can install a helper script to automatically hide the Left Menu(Guide Menu)
       RU: тут вы можете установить вспомогательный скрипт автоматически скрывающий Левое Меню(Гид Меню)
@@ -176,6 +176,11 @@ ytd-live-chat-frame {display: flow;}
 @-moz-document domain("youtube.com") {
 /* TEST */
 
+/*подстветка ЕЩЁ под видео*/
+.expand-button.ytd-watch-metadata:hover {background: rgba(165, 165, 165, .19);
+    box-shadow: inset 0 3px 0 0 var(--yt-spec-brand-background-primary), 
+        inset 0 -3px 0 0 var(--yt-spec-brand-background-primary);}
+
 /*фикс назв.Каналов Иероглифами*/
 #byline-container {font-size: 1.199rem !important;}
 
@@ -270,10 +275,15 @@ ytd-c4-tabbed-header-renderer {margin-top: 2px !important;}
 /*сетка на 6 миниатюр Главной страницы - modern Chrome*/
 [style] * {
     
-    --ytd-rich-grid-items-per-row: 6 !important; /*6;*/ /* Количество Видео в ряд на главной странице.*/
+    --ytd-rich-grid-items-per-row: 6; /*6;*/ /* Количество Видео в ряд на главной странице.*/
     --ytd-rich-grid-posts-per-row: 4; /*4;*/
     --ytd-rich-grid-movies-per-row: 8; /*8;*/
 }
+-o-[mini-guide-visible_] ytd-rich-grid-renderer #contents.ytd-rich-grid-renderer {
+    --ytd-rich-grid-items-per-row: 3.6 !important; /*6;*/ /* Количество Видео в ряд на главной странице.*/
+    --ytd-rich-grid-posts-per-row: 4; /*4;*/
+    --ytd-rich-grid-movies-per-row: 8; /*8;*/
+    min-width: 76.850%;}
 
 /**************************************************************************************/
 /* размер Миниатюр Видео на главной страницы - дефолт 89%  */
@@ -1579,6 +1589,7 @@ ytd-thumbnail-overlay-resume-playback-renderer:hover:after {
 /*  v1  url(https://i114.fastpic.ru/big/2020/1217/84/1706b50a545778f90a56296079637784.png) 
     v2  url(https://i114.fastpic.ru/big/2020/1229/f6/adc9217d94819e25855a2f9484fc6af6.png)  
                                                                                             */
+
 /* Пометка "Следующее Видео" (Next —>) */
     /* arrow-right-f09f949-!!! */
 /* Зона RU */
@@ -1595,6 +1606,7 @@ ytd-compact-video-renderer.ytd-watch-next-secondary-results-renderer:not(:nth-ch
     padding: 0px 0px 7px 0px !important;
     height: 26px;
     width: auto;}
+
 
 /* Доп Настройка зона РУ-ЕНГ  */
 .ytd-watch-next-secondary-results-renderer:first-child
@@ -1662,7 +1674,13 @@ ytd-item-section-renderer.ytd-watch-next-secondary-results-renderer:before
 
 /* Название Канала (Ник Автора) под Видео на вкладке с Видео (позицианирование) */
 ytd-channel-name#channel-name.ytd-video-owner-renderer {margin-top: -10px;/*-16px*/ 
-    font-size: 1.399rem /*test*/;}
+        font-size: 1.399rem !important/*test*/;}
+
+/*Размер аватара Автора Канала*/
+.no-transition.ytd-video-owner-renderer {width:48px !important; height:48px !important;}
+
+/*отступ для Авы автора канала*/
+.yt-simple-endpoint.ytd-video-owner-renderer {margin-left: 0px !important;}
 
 /* толщина шрифта названия каналов */
 #container.ytd-channel-name {display: var(--ytd-channel-name-container-display, inline-block); overflow: hidden; font-weight: bold;}
@@ -1671,14 +1689,6 @@ ytd-channel-name#channel-name.ytd-video-owner-renderer {margin-top: -10px;/*-16p
 -o-[page-subtype=home] #text .yt-formatted-string.yt-simple-endpoint {font-size: 13px;} /*на главной*/
 -o-[page-subtype=home] [mini-mode] #text .yt-formatted-string.yt-simple-endpoint {font-size: 12px;} /*на главной МИНИ мод*/
 
-/* толщина шрифта счётчика просмотров + размер*/
-span.ytd-video-view-count-renderer {color: rgb(102, 102, 102); font-weight: bold !important ; font-size: 1.2rem;}
-
-/* размер Шрифта - даты публикации ролика */
-#date.ytd-video-primary-info-renderer { font-size: 1.2rem; color: var(--yt-spec-text-secondary); 
-    font-weight: var(--ytd-user-comment_-_font-weight); line-height: var(--ytd-user-comment_-_line-height); 
-    letter-spacing: var(--ytd-user-comment_-_letter-spacing);}
-
 /* Квадратная иконка Количества видео по оповещениям на Колокольчике и Цвет иконки */
 #notification-count.ytd-notification-topbar-button-renderer {position: absolute; top: 3px; right: 0;
 color: rgb(255, 255, 255); background-color: rgb(255, 0, 0); width: 16px;/*18px*/ height: 16px;/*18px*/ 
@@ -1686,6 +1696,9 @@ border-radius: 5%; line-height: 16px/*18px*/; font-size: 11px/*10px*/; text-alig
 
 /*квадратные аватары в комментах*/
 #author-thumbnail.ytd-comment-renderer yt-img-shadow.ytd-comment-renderer {border-radius: 0% !important;}
+
+/*квадратная ава топ коммента*/
+.avatar.ytd-comments-entry-point-header-renderer {border-radius: 2px;}
 
 /*квадратные аватары Автора'ов*/
 #author-thumbnail {border-radius: 0% !important;}
@@ -1727,50 +1740,39 @@ flex: var(--layout-flex-none_-_flex); width: 40px; height: 40px;}
 #copyright:before {background-color: var(--yt-spec-brand-background-primary); display: block; position: 
 relative; top: 19px; font-size: 1.2rem; content: "Compact Tube (White) by Jakill02 based on style by Funny.";}
 
-/*раскрывающий элемент "Ещё" - на Каналах*/
-yt-formatted-string.ytd-expanded-shelf-contents-renderer 
-{display: block; margin-top: 10px; margin-bottom: -10px; margin-left: 45%; margin-right: auto; 
-font-size: 1.3rem; font-weight: 500; letter-spacing: 0.007px; text-transform: capitalize;}
-/*раскрывающий элемент "ЕЩЁ" - под Видео - (Old ver.) */
--o-.more-button.ytd-video-secondary-info-renderer, -o-.less-button.ytd-video-secondary-info-renderer 
-{display: inline-block; margin-top: 5px; position: relative; top: 11px; margin-left: 160px; width: 17.2em /*100%*/; font-size: 1.1rem;
-font-weight: 500; letter-spacing: 0.007px; text-transform: uppercase; 
-border-top: 1px solid var(--ytd-searchbox-legacy-button-border-color); color: var(--yt-spec-text-secondary) !important;}
-
-/* Общие настройки раскрывающего элемент "ЕЩЁ" - под Видео (New ver.) - [раскрыть][свернуть] */
-.more-button.ytd-video-secondary-info-renderer, .less-button.ytd-video-secondary-info-renderer
-{font-size: 1.1rem; font-weight: 500; letter-spacing: 0.007px; text-transform: uppercase;
-position: relative; top: 17px; margin-top: 0px !important;
-        text-align: center !important;
-    word-break: keep-all;
-    box-shadow: inset 0 1px 0 0 var(--yt-spec-10-percent-layer);
-    /*-o-margin-left: var(--ytd-expander-button-margin, -14.3em); */
-    /*-o-width: 29.2em;*/
-    width: 99.8%;
-    height: 21px;
-    display: inline-block;
-    padding: 4px 0em 4px 0em; /*4px 2em 4px 0em;*/
-align-self: flex-start; color: var(--yt-spec-text-secondary) !important;}
+/*раскрывающий элемент "ЕЩЁ" - под Видео v. 2021 июнь*/
+.expand-button.ytd-watch-metadata {
+    margin: 0  7px -6px 0;  /* ! */
+    padding: 4px 0 4px 0;
+    margin-top: 14px;
+    color: var(--yt-spec-text-secondary);
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: var(--yt-link-line-height, 1.6rem);
+    letter-spacing: 0.007px !important;
+    text-transform: uppercase;
+    border-top: 1px solid var(--ytd-searchbox-legacy-button-border-color);
+    border-bottom: 1px dashed var(--ytd-searchbox-legacy-button-border-color);}
 
 /* additional customization options for "more/less" button by "YouTube Redux" author("the_omnipotent")
-        https://www.reddit.com/user/_the_omnipotent_/    :  - my respect bro. */
-#meta.ytd-watch-flexy tp-yt-paper-button#more, #meta.ytd-watch-flexy tp-yt-paper-button#less 
-{width: 100% !important;}
-
-/* Позицианирование раскрывающего элемент "ЕЩЁ" - под Видео (New ver.) */
--o-ytd-expander.ytd-video-secondary-info-renderer {
-    -o-box-shadow: inset 0 -1px 0 0 var(--yt-spec-10-percent-layer);
-    -o-border-bottom: 1px solid var(--yt-spec-10-percent-layer); 
-margin-left: 10px !important; -o-margin-right: 10px !important;
-    margin-bottom: 0px;} /*11px*/
+        https://www.reddit.com/user/_the_omnipotent_/    :  - my respect bro.*/
+#description .ytd-watch-metadata tp-yt-paper-button.ytd-expander#more,
+#description .ytd-watch-metadata tp-yt-paper-button.ytd-expander#less {width: 100% ;}
 
 /* Отступ слева до середины Панель для раскрывающего элемент "ЕЩЁ" - под Видео (New ver.) */
 -o-tp-yt-paper-button.ytd-expander {
+    border-top: 1px solid var(--ytd-searchbox-legacy-button-border-color);
     margin: var(--ytd-expander-button-margin, 0);
     margin-left: var(--ytd-expander-button-margin, 45.6%); /*35%*/
     text-align: center !important;
     padding: 0;
     align-self: flex-start;}
+
+/*раскрывающий элемент "Ещё" - на Каналах*/
+yt-formatted-string.ytd-expanded-shelf-contents-renderer 
+{display: block; margin-top: 10px; margin-bottom: -10px; margin-left: 45%; margin-right: auto; 
+font-size: 1.3rem; font-weight: 500; letter-spacing: 0.007px; text-transform: capitalize;}
+
 
 /* Центровка надписи "ПОДРОБНЕЕ..." под превью видео на канале в виде Гостя: - v2 */
 -o-.ytd-channel-video-player-renderer.more-button > -o-.yt-formatted-string.yt-simple-endpoint
@@ -2376,24 +2378,6 @@ ytd-thumbnail.ytd-compact-promoted-video-renderer {box-shadow: 0px 0px 1px 0px r
     -o-border-right: 1px solid var(--yt-spec-10-percent-layer);
     -o-border-left: 1px solid var(--yt-spec-10-percent-layer);}
 
-/*Блок расположения Аватара канала (на странице Каналов) - левая добавочная часть*/
-#channel-header.ytd-c4-tabbed-header-renderer:before {
-    overflow: hidden;
-    color: red;
-    position: absolute; left: -50%; top: 0;
-    content: "" !important;
-    display: inline-block;
-    height: 88%;
-    width: 200%;
-    padding: 10px 107px 4px;
-    -o-position: relative;
-    z-index: -1 !important;
-    min-width: 0;
-    -o-opacity: .5;
-    background: #fff; /* var(--yt-spec-brand-background-primary) */
-    -o-box-shadow: 0px 0px 0px 1px rgb(200, 0, 255);}
-[dark] #channel-header.ytd-c4-tabbed-header-renderer:before {background: #202020; /* var(--yt-spec-brand-background-primary) */}
-
     
 /*блок верхнего меню канала (на странице Каналов)*/
 /* цвет блока, затенение(рамка), Бордюр, позиционирование */
@@ -2406,23 +2390,6 @@ ytd-thumbnail.ytd-compact-promoted-video-renderer {box-shadow: 0px 0px 1px 0px r
 -o-box-shadow: 0px 0.8px 0.6px -0.6px var(--ytd-searchbox-legacy-button-border-color);  /* использовал */
     -o-box-shadow: 0px 0px 1px 0px var(--ytd-searchbox-legacy-button-border-color) /*old ver.*/;}
 /*блок верхнего меню канала (на странице Каналов) - левая добавочная часть*/
-#tabs-inner-container.ytd-c4-tabbed-header-renderer:before {
-    overflow: hidden;
-    color: red;
-    position: absolute; left: -50%; top: -14px;
-    content: "" !important;
-    display: inline-block;
-    height: 100%; /*71%*/
-    width: 200%;
-    padding: 10px 107px 4px;
-    z-index: -1 !important;
-    min-width: 0;
-    -o-opacity: .5;
-    background: #fff; /* var(--yt-spec-brand-background-primary) */
-        border-bottom: 1px solid var(--yt-spec-10-percent-layer);
-        box-shadow: 0px 0.8px 0.6px -0.6px var(--ytd-searchbox-legacy-button-border-color);
-    -o-box-shadow: 0px 0px 0px 1px rgb(200, 0, 255);}
-[dark] #tabs-inner-container.ytd-c4-tabbed-header-renderer:before {background: #202020 !important;}
 
 
 /*центровка блока с Аватарками избранных каналов (на странице Каналов)*/
@@ -2537,24 +2504,6 @@ ytd-search-sub-menu-renderer {
     display: block; 
         margin-top: -8px;
         position: relative; top: 8px;}
-
-
-
-/* !!!!!!!!  -  ТЕСТ - вспомогательное (хрень) */
-/*    -o-#contents ytd-shelf-renderer {
-    -o-margin-top: 7px; 
-        -o-margin-bottom: -7px;
-    -o-position: relative; top: -16px;} */
-
-/* что-то тестировал взамен (ytd-shelf-renderer) - НЕ НУЖНО */
-/* -o-#contents.ytd-item-section-renderer > ytd-shelf-renderer.ytd-item-section-renderer:last-child {
-    border-bottom: none; 
-    background: rgb(255, 255, 255); 
-    box-shadow: 0px 0px 1px 1px rgb(226, 226, 226); 
-    -o-margin-top:6px; margin-bottom: -6px;
-    position: relative; top: 6px;
-} */
-
 
 
 
@@ -2861,40 +2810,20 @@ color: rgba(118, 118, 118, .5);} /*rgb(178, 178, 178)*/
         box-shadow: 0px 0px 1px 1px var(--ytd-searchbox-legacy-button-border-color);
         margin-top: -14px; /*31px,v2 -14px*/ margin-left: 0px; /*80px*/ margin-right: -0px; /*-12px ,v2: -9px*/}
 
-/* Блок с Описанием Видео [не включать position: relative: появляются доп. Скроллбары] ($)*/
-[flexy][is-two-columns_] .style-scope ytd-video-secondary-info-renderer {
-    -o-overflow-x: hidden; /* test : нужен (а может и нет), решает проблему заступов */
+
+/* Блок с Названием и Описанием Видео*/
+[flexy][is-two-columns_] ytd-watch-metadata {
+    box-shadow: 0px 0px 1px 1px var(--ytd-searchbox-legacy-button-border-color);
     background: var(--yt-spec-brand-background-primary);
+    margin-left: 80px;
+    margin-top: 11px; /*var(--ytd-margin-4x)*/
+    margin-bottom: var(--ytd-margin-4x); /*var(--ytd-margin-6x)*/}
+    [flexy] ytd-watch-metadata {
     box-shadow: 0px 0px 1px 1px var(--ytd-searchbox-legacy-button-border-color);
-    -o-border-bottom: solid 1px rgba(128, 128, 128, .14);
-    -o-position: relative; -o-top: 21px; -o-left: 0px;
-    margin-top: 21px;
-    margin-left: 80px; margin-right: -0px; /*-12px ,v2: -9px*/}
-/* Блок с Описанием Видео [не включать position: relative: появляются доп. Скроллбары]  - "Одна колонка" ($)*/
-        [flexy] .style-scope ytd-video-secondary-info-renderer {
-        -o-overflow-x: hidden; /* test : нужен (а может и нет), решает проблему заступов */
-        background: var(--yt-spec-brand-background-primary);
-        box-shadow: 0px 0px 1px 1px var(--ytd-searchbox-legacy-button-border-color);
-        -o-border-bottom: solid 1px rgba(128, 128, 128, .14);
-        -o-position: relative; -o-top: 21px; -o-left: 0px;
-        margin-top: 21px;
-        margin-left: 0px; margin-right: -0px; /*-12px ,v2: -9px*/}
-
-
-/* Блок с Названием Видео*/
-[flexy][is-two-columns_] ytd-video-primary-info-renderer {background: var(--yt-spec-brand-background-primary);
-    -o-overflow: hidden; /* test : НЕ нужен, вредит меню для скачивания видео */
-    box-shadow: 0px 0px 1px 1px var(--ytd-searchbox-legacy-button-border-color);
-    -o-border-bottom: solid 1px rgba(128, 128, 128, .14);
-    position: relative; top: 11px; left: 0px; -o-margin-top: 4px;
-    margin-left: 80px; margin-right: -0px; /*-12px ,v2: -9px*/}
-    /* Блок с Названием Видео - "Одна колонка" */
-        [flexy] ytd-video-primary-info-renderer {background: var(--yt-spec-brand-background-primary);
-        box-shadow: 0px 0px 1px 1px var(--ytd-searchbox-legacy-button-border-color);
-        -o-border-bottom: solid 1px rgba(128, 128, 128, .14);
-        position: relative; top: 11px; left: 0px; -o-margin-top: 4px;
-        margin-left: 0px; margin-right: -0px; /*-12px ,v2: -9px*/}
-
+    background: var(--yt-spec-brand-background-primary);
+    margin-left: 0px;
+    margin-top: 11px; /*var(--ytd-margin-4x)*/
+    margin-bottom: var(--ytd-margin-6x); /*var(--ytd-margin-6x)*/}
 
 /* Блок с Видео справа */
 ytd-watch-flexy[theater] #secondary.ytd-watch-flexy, ytd-watch-flexy[fullscreen] #secondary.ytd-watch-flexy {
@@ -2953,32 +2882,138 @@ ytd-watch-flexy:not([theater]):not([fullscreen]) #secondary.ytd-watch-flexy {
     top: 0px;
     left: 10px;}
 
-/* позиционирование текста в Блоках на странице с Видео Справа */
-/* элемент: СЛЕДУБЩЕЕ :позиция и размер текста*/
-#upnext.ytd-compact-autoplay-renderer {font-size: 1.3rem; margin-left: 10px; 
-    position: relative; top: 3px; /*test*/}
+/*Название Ролика - позиционирование и размер */
+ytd-watch-metadata:not([roboto-title]):not([smaller-yt-sans-title]) h1.ytd-watch-metadata {
+    padding-top: 17px;
+    margin-left: 10px;
+    padding-right: 10px;
+    -o-font-family: "YouTube Sans", "Roboto", sans-serif;
+    font-size: 1.8rem;
+    line-height: 2.9rem;
+    font-weight: 500;
+    max-height: 6.4rem !important;
+    text-overflow: ellipsis;
+    white-space: normal;
+    overflow: hidden;}
 
-/* элемент: АВТОВОСПРОИЗВЕДЕНИЕ :позиция и размер текста*/
-#autoplay.ytd-compact-autoplay-renderer {font-size: 1.3rem; font-weight: 500; letter-spacing: 0.007px; text-transform: capitalize; 
-    margin-top: 5px; /*test*/}
 
-/* элемент: АВТОВОСПРОИЗВЕДЕНИЕ :отступ Снизу от Видео под элементом */
-ytd-compact-autoplay-renderer {display: block; padding-bottom: 7px; 
-border-bottom: 1px solid var(--yt-spec-10-percent-layer); margin-bottom: 8px;}
+/*Действия под Видео:    (Лайк,Дизлайк,Поделиться, Сохранить, ...) V */
 
-/*Название Ролика - позиционирование*/
-.title.ytd-video-primary-info-renderer {margin-left: 10px /* 12px */; padding-right: 10px;}
+        /*Доп настройки*/
+    ytd-menu-renderer.ytd-watch-metadata {
+            width: 100%;
+        -o-margin-top: auto;
+        margin: -10px 0px -10px 0;  /* ! */
+        flex: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;}
+
+        /* Смещение вправо [flexy-large-window_] [flexy-small-window_] [flexy] V*/
+    #actions.ytd-watch-metadata {flex: auto !important; 
+                /* полная ширина - дописал */ -o-width: 100%;}
+
+        /* меню Лайк/Дизлайк... - выше V*/
+    ytd-watch-metadata:not([top-aligned-video-actions]) #actions.ytd-watch-metadata {
+    align-self: flex-start !important /*def flex-end*/;}
+
+
+
+        /* Отступы */
+    .item.ytd-watch-metadata {
+        box-sizing: border-box;
+        min-width: 400px;
+        margin-right: 4px;/*12px*/
+        margin-top: 12px;}
 
 /* Счётчик Просмотров и Дата публикации - позицианирования */
-#info-text.ytd-video-primary-info-renderer {margin-left: 11px;} /* 12px */
+#description-content span.bold.yt-formatted-string {color: #666; font-size:1.2rem; width:100%; height:auto;}
+[dark] #description-content span.bold.yt-formatted-string {color: #a0a0a0;}
+#description-content span.bold.yt-formatted-string:nth-of-type(3){font-weight: 500;}
+#description-content span.bold.yt-formatted-string:nth-of-type(4){padding-right: 100% !important;}
+#description-content span.bold.yt-formatted-string:nth-of-type(4):after
+{display: inline-block !important; content:""!important; background: #f00; width: 100%; height: 0px;}
+
+
+/*Экспандер - колонка с Инфо под видео + количество строк V */
+ytd-expander.ytd-watch-metadata {
+    margin-left: 11px;
+    --ytd-expander-max-lines: 5 !important;} /*def 2*/
+
+/*блок Аватара Автора и Топ коммента*/
+#owner-and-teaser.ytd-watch-metadata:before {
+    position: relative; top: -19px; content: ""; width: 100%; height: 8px; background: transparent; 
+    box-shadow: 2px 0 0 0 var(--yt-spec-general-background-b), -2px 0 0 0 var(--yt-spec-general-background-b);
+    margin-bottom: -8px}
+
+#owner-and-teaser.ytd-watch-metadata {
+    box-shadow: 0px -1px 0 0 var(--ytd-searchbox-legacy-button-border-color),
+        0px -9px 0 0 var(--yt-spec-general-background-b),
+        0px -10px 0 0 var(--ytd-searchbox-legacy-button-border-color);
+        border-top: 10px solid transparent !important;
+    margin-top: 15px; /* ! */
+    padding-bottom: 4px !important;
+    margin-right: 0px;
+    -margin-left: 9px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/*блок Аватара Автора*/
+#owner.ytd-watch-metadata {
+    border: 0px solid var(--yt-spec-10-percent-layer);
+    margin-top: -5px;
+        height: 62px;
+    border-radius: 0px;
+    padding: 0px 4px 0 11px;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+/*не показывать Топ коммент*/
+[flexy][is-two-columns_] #comment-teaser.ytd-watch-metadata {display: none;}
+    [flexy] #comment-teaser.ytd-watch-metadata {display: block;}
+
+[flexy][is-two-columns_]  #header.ytd-comments-entry-point-header-renderer 
+    {border-right: 1px solid var(--yt-spec-10-percent-layer);}
+        [flexy] #header.ytd-comments-entry-point-header-renderer {
+                border-right: 0px solid var(--yt-spec-10-percent-layer);}
+
+[flexy][is-two-columns_] #teaser.ytd-comments-entry-point-header-renderer {display: inherit;}
+    [flexy] #teaser.ytd-comments-entry-point-header-renderer {display: none;}
+
+
+/*Топ коммент*/
+[flexy] ytd-comments-entry-point-header-renderer {
+    -o-background: rgb(255, 0, 0);
+    height: auto; max-height: 48px;
+    margin-left: 4px;
+    margin-top: -5px;
+    border-left: 0.7px solid var(--ytd-searchbox-legacy-button-border-color) !important;
+    border: 0px solid;
+    border-radius: 0px;
+    padding: 0px 3px 0px 7px;}
+    [flexy][is-two-columns_] ytd-comments-entry-point-header-renderer {
+        height: auto; max-height: 48px;
+        margin-left: 4px;
+        margin-top: -5px;
+        border-left: 0.7px solid var(--ytd-searchbox-legacy-button-border-color) !important;
+        border: 0px solid;
+        border-radius: 0px;
+        padding: 0px 3px 0px 7px;}
+/*подстветка Меню топ коммента*/
+[flexy] ytd-comments-entry-point-header-renderer:hover {background: rgba(165, 165, 165, .19);}
+
 
 /* элемент ТЕГИ: под названием Видео - позиционирование*/
-.super-title.ytd-video-primary-info-renderer {
+#super-title.ytd-watch-metadata {
     font-size: 1.2rem;
     font-weight: 400;
     line-height: 1.5rem;
     position: relative; /*test*/
-    top: -4px;  /*test*/
+    top: 16px;
     margin-left: 11px;} /* 13px */
 
 /* элемент ГЕОЛОКАЦИЯ: под названием видео - позицианирование */
@@ -2990,37 +3025,30 @@ border-bottom: 1px solid var(--yt-spec-10-percent-layer); margin-bottom: 8px;}
     margin-left: 8px;
     margin-right: -6px;
     vertical-align: bottom;}
+/* элемент ГЕОЛОКАЦИЯ: Иконка */
+#super-title-icon.ytd-watch-metadata {
+    color: var(--yt-spec-call-to-action);
+    height: 16px;
+    width: 16px;
+    margin-left: 8px;
+    margin-right: -6px;
+    vertical-align: bottom;
+    position: relative; /*test*/
+    top: 16px;}
 
 /* Вспомогательный Бэйдж [доступ по ссылке] и тд. под видео (позицианирование) */
 ytd-badge-supported-renderer.ytd-video-primary-info-renderer {margin: 2px 0px 0px 12px;}
 
 /*Аплоадер (никнейм) видео и количество подписчиков - позиционирование*/
 #upload-info.ytd-video-owner-renderer {
-      margin-left: -6px;
-    border-bottom: 1px solid var(--yt-spec-10-percent-layer);
+      margin-left: -2px;
+    -o-border-bottom: 1px solid var(--yt-spec-10-percent-layer);
     flex: 1;
-    flex-basis: 1e-9px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-/* Описание под Роликом - позиционирование */
-ytd-expander.ytd-video-secondary-info-renderer {
-      margin-left: 10px; /*def: 54px*/
-        margin-right: 10px !important;
-    font-size: var(--ytd-user-comment_-_font-size);
-    font-weight: var(--ytd-user-comment_-_font-weight);
-    line-height: var(--ytd-user-comment_-_line-height);
-    letter-spacing: var(--ytd-user-comment_-_letter-spacing);
-}
-/* Аватар аплоадер - позиционирование */
-.yt-simple-endpoint.ytd-video-owner-renderer {
-      margin-left: 11px;
-    display: inline-block;
-    cursor: pointer;
-    text-decoration: none;
-    color: var(--yt-endpoint-color, var(--yt-spec-text-primary));
-}
+
 /* ВАШ Аватар в поле (Оставить комментарий) [написание комментария] - позиционирование */
 #author-thumbnail.ytd-commentbox, ytd-commentbox[is-reply][is-backstage-comment] #author-thumbnail.ytd-commentbox {
       margin-left: 10px;
@@ -3085,26 +3113,24 @@ ytd-expander.ytd-video-secondary-info-renderer {
 ytd-button-renderer.force-icon-button {
     font-size: 1.2rem;
       margin-left: -5px;
-      margin-right: -12px;
+      margin-right: -11px;
     letter-spacing: var(--ytd-caption_-_letter-spacing);
     text-transform: var(--ytd-caption_-_text-transform);}
-
-/*элемент ПОДЕЛИТЬСЯ и СОХРАНИТЬ + Множитель отступа и расстояние между элементом "СОХРАНИТЬ" и "..."*/
-ytd-button-renderer.force-icon-button a.ytd-button-renderer {
-    padding-right: var(--yt-button-icon-padding, var(--ytd-margin-2x))/*def: --ytd-margin-2x*/;}
 
 /* элемент ПОДЕЛИТЬСЯ и СОХРАНИТЬ + расстояние между элементами */
 ytd-menu-renderer:not([condensed]) .ytd-menu-renderer[button-renderer] + .ytd-menu-renderer[button-renderer] 
 {margin-left: 6px;} /*def: 8px*/
 
+/* Размер Иконки : "Голосовой поиск" */
+#voice-search-button yt-icon-button.ytd-button-renderer {padding: 8px!important;}
 /* Размер Иконок : "Поделиться" и "Сохранить" */
-yt-icon-button.ytd-button-renderer {
+yt-icon-button.ytd-button-renderer  {
     line-height: 1;
     padding: 8px!important; /*var(--yt-button-icon-padding, 8px)*/
     width: var(--yt-button-icon-size, var(--yt-icon-width, 40px));
     height: var(--yt-button-icon-size, var(--yt-icon-height, 40px));}
         /* Размер Иконок : "Поделиться" и "Сохранить" (v2) */
-        yt-icon-button#button.ytd-button-renderer.style-default.size-default {line-height: 1; padding: 8px!important;}
+        -o-yt-icon-button#button.ytd-button-renderer.style-default.size-default {line-height: 1; padding: 8px!important;}
 
 /* элемент "Ответить" в комментариях под Видео - настройка */
 ytd-comment-action-buttons-renderer:not([use-comment-icon]) #reply-button-end.ytd-comment-action-buttons-renderer 
@@ -3113,18 +3139,11 @@ ytd-button-renderer.ytd-comment-action-buttons-renderer:not([is-icon-button]).yt
 font-weight: 500; letter-spacing: 0.007px; text-transform: none;}
 
 /* Размер Иконок : "Лайк" и "Дизлайк" */
-yt-icon-button#button.ytd-toggle-button-renderer {padding: 8px !important;} /*v3*/
-    -o-ytd-toggle-button-renderer #button.ytd-toggle-button-renderer { /*v1*/
-        color: var(--yt-button-color, inherit);
-        background-color: transparent;
-        text-transform: inherit;
-        padding: 4px 8px 4px 8px !important;}
-        /* Размер Иконок : "Лайк" и "Дизлайк" (v2) */
-        -o-yt-icon-button#button.ytd-toggle-button-renderer.style-default-active {padding: 8px !important;}
-        -o-yt-icon-button#button.ytd-toggle-button-renderer {padding: 8px !important;} /*v3*/
+ytd-toggle-button-renderer[is-icon-button][style-action-button] {
+    --yt-button-icon-padding: 8px;}
 
 /* Кнопки - Лайк, Дизлайк - Позицианирование*/
-ytd-toggle-button-renderer.force-icon-button a.ytd-toggle-button-renderer {margin-right: -5px;}
+ytd-toggle-button-renderer.force-icon-button a.ytd-toggle-button-renderer {margin-right: -9px;}
 -o-ytd-toggle-button-renderer {margin-right: -5px;} /*old. ver.*/
 
 /* Размер Шрифта у Лайков, Дизлайков (Нравится не Нравится)*/
@@ -3145,6 +3164,7 @@ ytd-toggle-button-renderer.force-icon-button a.ytd-toggle-button-renderer {paddi
 margin-top: 8px; margin-bottom: 8px; margin-left: 0px/*0px*/; margin-right: 10px/*10px*/;
 max-height: 80px; width: 90px; max-width: 400px; box-shadow: 0px 0px 1px 1px var(--ytd-searchbox-legacy-button-border-color); 
 border-radius: 5px !important;}
+#contents.ytd-rich-metadata-row-renderer {padding-left: 11px;}
 
 /* блок с инормацией о контенте под Видео (игры, фильмы и тд)*/
 /* Отступ от правого края - позволяет сворачивать блоки в вертикальное положение при уменьшении размера окна */
@@ -3193,14 +3213,14 @@ ytd-metadata-row-header-renderer.ytd-metadata-row-container-renderer *
 
     /* Интервалы между строками информационного поля */
 ytd-metadata-row-renderer.ytd-metadata-row-container-renderer 
-{padding: 0px 0px 0px 0px; margin: -2px 0px -2px 0px;}
+{padding: 0px 0px 0px 10px; margin: -2px 0px -2px 0px;}
 
     /* Интервалы между полями прочих заголовков */
 ytd-metadata-row-header-renderer.ytd-metadata-row-container-renderer
 {padding: 0px 0px 0px 0px;}
 
     /* Интервал Верхнего поля заголовка "предложено" */
-ytd-metadata-row-renderer.ytd-metadata-row-container-renderer:first-child {padding-top: 11px;}
+ytd-metadata-row-renderer.ytd-metadata-row-container-renderer:first-child {padding-top: 4px;/*11*/}
     /* Интервал Нижнего поля заголовка */
 ytd-metadata-row-renderer.ytd-metadata-row-container-renderer:last-child {padding-bottom: 2px;}
 
@@ -3210,18 +3230,10 @@ ytd-metadata-row-header-renderer[has-divider-line] {
     margin-top: 16px; padding-top: 11px;
     border-top: 1px solid var(--yt-spec-10-percent-layer);}
 
-     /* доп Инфо перед первым полем заголовка */
-/* -o-ytd-metadata-row-header-renderer.ytd-metadata-row-container-renderer:first-child:before
-{content: "License information © : "; font: 1.1rem Tahoma, sans-serif; color: var(--yt-spec-text-secondary);
-margin-top: -2px;} */
-    /* Интервал первого поля заголовка(не нужно) */
-/* -o-ytd-metadata-row-header-renderer.ytd-metadata-row-container-renderer:first-child
-{padding: 10px 0px 0px 0px;}*/
-
 /*°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•*/
 
 /* кнопка [ПОДПИСАТЬСЯ],[ВЫ ПОДПИСАНЫ] под Видео - Позицианирование */
-#subscribe-button.ytd-video-secondary-info-renderer {margin-right: 5px;}
+tp-yt-paper-button.ytd-subscribe-button-renderer {margin-right: 5px;}
 
 /* Лайв Чат - под Видео (подгонка размера окошка под рамку с Видео) - в Две колонки */
 /*  для теста использую: https://www.youtube.com/watch?v=-bxrv9j8D1Y     */
@@ -3842,7 +3854,7 @@ a.yt-simple-endpoint.ytd-notification-renderer {
 /* Отступы в Заголовках (Недавние Комментарии) и ( Другие Уведомления) в  Меню Колокольчика */
 h2.yt-multi-page-menu-section-renderer {
     padding-bottom: 4px; /* test */
-    color: var(--yt-primary-text-color);
+    color: var(--yt-spec-text-primary);
     margin: var(--ytd-margin-2x) 0px var(--ytd-margin-base) var(--ytd-margin-4x); 
     /* Def: margin: var(--ytd-margin-4x) 0px var(--ytd-margin-base) var(--ytd-margin-4x)*/
     font-weight: 400;
@@ -4350,6 +4362,9 @@ ytd-masthead {
     box-shadow: 0 0 2px 0 var(--ytd-searchbox-legacy-button-border-color);}
 [flexy] .yt-ppbuttonBlack {position: relative; top: 16px; left: -1px !important;    /* Тёмные Кнопки */
     box-shadow: inset 0 0 5px 1px #191919, 0 0 2px 0 var(--ytd-searchbox-legacy-button-border-color);}
+
+-o-#info-contents > a {text-decoration: none;} /*привязка деф*/
+-o-#description-content  > a {text-decoration: none;} /*привязка нов*/
 }
 
 @-moz-document domain("youtube.com") {
@@ -4393,10 +4408,10 @@ color: var(--yt-lightsource-secondary-title-color);  /* Цвет НЕ выдел
 
 
 /*Скрытие элементов прокрутки МЕНЮ КАНАЛА*/
-paper-icon-button.tp-yt-paper-tabs {-o-visibility: hidden; opacity: 0;} /* новое 2021 */
+tp-yt-paper-icon-button.tp-yt-paper-tabs {-o-visibility: hidden; opacity: 0;} /* новое 2021 */
 paper-tabs.ytd-c4-tabbed-header-renderer paper-icon-button.paper-tabs {-o-visibility: hidden; opacity: 0;}
 /*Скрытие элементов прокрутки МЕНЮ КАНАЛА - отображать скрытые (если они есть) при наведении курсора */
-paper-icon-button.tp-yt-paper-tabs:hover {-o-visibility: hidden; opacity: 0.8;} /* новое 2021 */
+tp-yt-paper-icon-button.tp-yt-paper-tabs:hover {-o-visibility: hidden; opacity: 0.8;} /* новое 2021 */
 paper-tabs.ytd-c4-tabbed-header-renderer paper-icon-button.paper-tabs:hover {-o-visibility: hidden; opacity: 0.5;}
 
 

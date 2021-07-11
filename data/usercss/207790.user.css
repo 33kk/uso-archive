@@ -1,13 +1,22 @@
 /* ==UserStyle==
-@name           shiftyy MyAnimeList Dark+
+@name           shiftyy's MyAnimeList Dark+
 @namespace      USO Archive
 @author         shiftyy
-@description    `(Works only on *PROFILE* page).A simple dark color theme + some other design changes (positions, buttons, etc).Please give me feedback or report any bug/inconsistency in the comments`
-@version        20210710.11.41
-@license        NO-REDISTRIBUTION
+@description    `(Works only on MAL *PROFILE* page).A simple dark recolor of mal profile page + some other design changes.Features:-Remove Ads-Smaller "MAL" logo-Customizable Background Color-New Buttons Shape and Colors-More Minimal menu postitions-Remove RSS Feeds-Hide "About Me" Section (Optional)Feel free to give me feedback or report any bug/inconsistency in the comments!`
+@version        20210710.16.54
+@license        CC-BY-NC-SA-4.0
 @preprocessor   uso
-@advanced color colorBG "Background Color (Must be really dark colors for visibility)" #000000
+@advanced color colorBG "Background Color" #000000
 @advanced text fontS "Font Size" "12"
+@advanced dropdown about "Hide \"About Me\" Section" {
+	aboutYes "Yes*" <<<EOT display: none; EOT;
+aboutNo "No" <<<EOT display: block; EOT;
+
+}
+@advanced color pFont "Primary Font Color" #DBD9D9
+@advanced color hFont "Secondary Font Color" #636363
+@advanced color wColor "Watching Color" #5BE650
+@advanced color cColor "Completed Color" #4C63D0
 
 ==/UserStyle== */
 @-moz-document url-prefix("https://myanimelist.net/profile/") {
@@ -16,6 +25,9 @@ body:not(.ownlist) {
     font-family: Segoe UI, Arial;
     font-size:  /*[[fontS]]*/px;
     overflow-x: hidden;
+}
+.profile .user-profile-about{
+    /*[[about]]*/
 }
 
 .content-container {
@@ -232,10 +244,6 @@ body:not(.ownlist) {
 .page-common .content-container .container-left {
     border-right: #5c3b3b00 1px solid;
 }
-.page-common .content-container .container-right h2 {
-    border-color: #f0f0f000;
-    color: #313131;
-}
 .page-common .content-container .container-right h5 {
     border-bottom: #f0f0f000 1px solid;
 }
@@ -291,7 +299,6 @@ body:not(.ownlist) {
     padding: 0px;
 }
 
-/*[[removeAbout]]*/
 
 
 
@@ -337,6 +344,7 @@ body:not(.ownlist) {
     top: 6px;
     left: 3.6px;
     color: #acacac !important;
+  	font-size: 12px !important;
 }
 .page-common .user-image {
     margin-bottom: 5px!important;
@@ -352,9 +360,6 @@ body:not(.ownlist) {
 }
 .user-profile-sns {
     opacity: 0;
-}
-.page-common .fw-b {
-    color: #464646 !important;
 }
 
 .page-common #content {
@@ -387,10 +392,10 @@ body:not(.ownlist) {
 
 /* LAST UPDATES */
 .profile .statistics-updates .data .graph .graph-inner.completed {
-    background-color: #4c63d070;
+    background-color: /*[[cColor]]*/70;
 }
 .profile .statistics-updates .data .graph .graph-inner.watching {
-    background-color: #5be65070;
+    background-color: /*[[wColor]]*/70;
 }
 .profile .statistics-updates .data .text.watching,
 .profile .statistics-updates .data .text.re-watching,
@@ -444,10 +449,10 @@ body:not(.ownlist) {
     width: 212px;
 }
 .profile .user-comments .comment {
-    background-color: #0000002b;
+    background-color:  #00000030;
 }
 .profile .user-comments .comment:nth-of-type(odd) {
-    background-color: #00000057;
+    background-color: #00000090;
 }
 
 
@@ -456,16 +461,28 @@ body:not(.ownlist) {
 .page-common #content {
     background-color: #06060600;
     border-color: #0000;
-    color: #7d7d7db3;
+    color: /*[[hFont]]*/b3;
+}
+.page-common .mb12, 
+.page-common h5{
+    background-color: #06060600;
+    border-color: #0000;
+    color: /*[[hFont]]*/b3;
 }
 .page-common a,
 .page-common a:visited {
-    color: #ffffffd4;
+    color: /*[[pFont]]*/d4;
     text-decoration: none;
 }
 #statistics h2 {
-    color: #ffffffd9;
+    color: /*[[pFont]]*/ !important;
     font-size: 20px;
+}
+  .page-common .fw-b {
+    color: /*[[hFont]]*/;
+}
+.page-common .data {
+    color: /*[[hFont]]*/;
 }
 .page-common .h1 {
     background-color: #0000;
@@ -473,13 +490,17 @@ body:not(.ownlist) {
     border-left-color: #ebebeb00;
     border-right-color: #ebebeb00;
     border-top-color: #ebebeb00;
-    color: #cacaca;
+    color: /*[[pFont]]*/;
     font-size: 20px;
     padding: 5px 0px;
     height: 60px;
     text-align: left;
     top: -30px;
     position: absolute;
+}
+.page-common .content-container .container-right h2 {
+    border-color: #f0f0f000;
+    color: /*[[hFont]]*/ !important;
 }
 .page-common .header-right {
     font-size: 12px;

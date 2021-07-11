@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           UserStyles.World (USw) - WideScreen v.5
+@name           UserStyles.World (USw) - WideScreen v.8
 @namespace      USO Archive
 @author         decembre
 @description    `For the best alternative to replace userstyle.org (which became unusable):<b><a href="https://userstyles.world/explore">UserStyles.world</a></b>Her my version of it, a Compact userstyle for a widescreen:Less scrolling !<b>Note:</b>With it, it is possible to have preview on hover Thumbnail userstyle preview if you use an addon like: <a href="https://addons.mozilla.org/en-US/firefox/addon/image-max-url/">Image Max URL by qsniyg</a><b>userstyles.world</b> became better and better , but if you have a request or idea or an issue, go here:<a href="https://github.com/userstyles-world/userstyles.world">userstyles.world</a>Their devs take care a lot of our need.`
-@version        20210707.18.10
+@version        20210711.0.5
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -12,7 +12,7 @@
 
 @-moz-document domain("userstyles.world") {
 
-/* ==== 0- UserStyles.World (USw) - WideScreen v.5 - TEST FRESH ==== */
+/* ==== 0- UserStyles.World (USw) - WideScreen v.9.05 - TEST FRESH ==== */
 
 /* WIDESCREEN */
 
@@ -22,8 +22,10 @@ html body > main {
     min-height: calc(100vh - 130px);
     width: 100%;
 }
+/* (new6) */
 .rwrap {
     flex-flow: row wrap;
+    margin-top: 0 !important;
 overflow-x: hidden !important;
 }
 /* FOOTER */
@@ -65,15 +67,16 @@ main .wrapper {
 background: #111 !important;
 }
 
-/* SEARCH */
+/* (new9) SEARCH */
 .wrapper.py\:l .ta\:c + section.mt\:l  {
     position: sticky;
     display: inline-block;
     width: 100%;
-    min-width: 100%;
-    top: 55px !important;
+    min-width: 100% !important;
+    top: 3.7vh !important;
     right: 42px;
-    margin-top: -0.5rem;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
     text-align: center;
     z-index: 5000;
 background: #111 !important;
@@ -180,6 +183,19 @@ text-align: center ;
 background: green !important;
 }
 
+#sort {
+    -moz-appearance: none !important;
+/* display: inline-block !important;
+color: red !important;
+background: green !important; */
+}
+
+#sort>option:checked {
+    -moz-appearance: none !important;
+display: inline-block !important;
+color: red !important;
+background: green !important;
+}
 
 /* EXPLORE THUMBNAILS */
 
@@ -595,7 +611,9 @@ overflow-y: auto !important;
 border-bottom: 1px dashed gray !important;
 }
 
-/* HISTORY */
+/* (new8) HISTORY */
+.history:hover ,
+.history:not(:hover) ,
 .details + .history:hover ,
 .details + .history:not(:hover) {
     position: absolute !important;
@@ -609,6 +627,7 @@ max-height: 2.9vh !important;
 border-radius: 5px 5px 0 0 !important;
     border: 1px solid red;
 }
+.history:after ,
 .details + .history:after {
 position: absolute !important;
 content: "▼" !important;
@@ -618,11 +637,12 @@ font-size: 10px !important;
     text-decoration: none !important;
 background: red !important;
 }
+.history:not(:hover) .chart ,
 .details + .history:not(:hover) .chart {
     display: none !important;
 border: 1px solid red;
 }
-.details + .history:hover .chart {
+.history:hover .chart {
     display: inline-block !important;
     height: 408px;
     width: 870px;
@@ -632,11 +652,13 @@ margin-top: 0px !important;
 border: 1px solid red;
 }
 
-/* (new5) NO HISTORY */
+/* (new8) NO HISTORY */
+.history:not(:hover) > p ,
 .details + .history:not(:hover) > p {
     display: none !important;
 border: 1px solid red;
 }
+.history:hover > p ,
 .details + .history:hover > p {
     display: inline-block  !important;
 width: 100% !important;
@@ -649,12 +671,13 @@ border: 1px solid red;
 background: #111 !important;
 }
 /* NO DARK */
+html[data-color-scheme="light"] .history:hover > p ,
 html[data-color-scheme="light"] .details + .history:hover > p {
 background: white !important;
 }
 
 
-/* NOTES */
+/* (new7)NOTES  / CHANGELOG */
 .details .mt\:m:last-of-type {
 float: left ;
     height: auto !important;
@@ -666,7 +689,7 @@ width: 100% !important;
 overflow: hidden !important;
 border: 1px solid #333 !important;
 }
-.details .mt\:m:last-of-type  h2 {
+.details .mt\:m:last-of-type > h2 {
 width: 10% !important;
     padding: 0 10px ;
 border-radius: 5px 5px 0 0 !important;
@@ -713,12 +736,22 @@ border-top: 3px solid gray !important;
     font-size: 1rem;
 }
 
-/* CODE - For too strange page:
-Mozilla Addon Widescreen NEW desig
-https://userstyles.world/style/61
-=== */
+/* (new8) NOTES - COMPACT */
+.md>ul>li>p>br + br{
+    display: none !important;
+}
+.details .mt\:m:last-of-type .md>ul>li>p {
+    margin-bottom: 0.2rem;
+}
+.details .mt\:m:last-of-type .md h2 {
+    font-size: 1.6rem;
+    margin-top: 0.5rem !important;
+}
 
-/* NEW CODE */
+/* ======================= */
+
+
+/* (new8) NEW CODE - NORMAL - CONTAINER  */
 .history + .code.mt\:l:hover ,
 .history + .code.mt\:l:not(:hover)  {
 position: absolute !important;
@@ -741,6 +774,7 @@ overflow: hidden !important;
 /* visibility: hidden !important; */
 border: 1px solid red !important;
 }
+/* (new8) NEW CODE - NORMAL - CONTAINER - HOVER */
 .history + .code.mt\:l:hover {
 position: absolute !important;
 display: inline-block !important;
@@ -762,6 +796,8 @@ overflow: visible !important;
 /* visibility: hidden !important; */
 border: 1px solid red !important;
 }
+
+/* (new8) NEW CODE - NORMAL - ARROW  */
 .history + .code.mt\:l:before {
 position: absolute !important;
 content: "▼" !important;
@@ -772,7 +808,6 @@ font-size: 10px !important;
 background: red !important;
 }
 
-
 .history + .code.mt\:l:not(:hover)  .td\:d {
 position: relative !important;
 display: inline-block !important;
@@ -781,34 +816,10 @@ display: inline-block !important;
     text-decoration: underline;
 }
 
-/* NEW CODE - CODE - HOVER */
-.history + .code.mt\:l:hover textarea ,
-.history + .code.mt\:l:not(:hover) textarea{
-/* position: absolute !important; */
-display: inline-block !important;
-float: none !important;
-    height: auto !important;
-min-height: 44vh !important;
-max-height: 44vh !important;
-width: 100% !important;
-min-width: 700px !important;
-max-width: 700px !important;
-    margin: 0 !important;
-top: 51.5vh !important;
-left: 234px !important;
-/*     padding: 0.2rem 0 0 0 !important; */
-padding: 5px 5px 5px 10px !important;
-border-radius: 0 0 5px 5px !important;
-overflow: hidden !important;
-overflow-y: auto !important;
-z-index: 5000 !important;
-background: #111 !important;
-border: 1px solid green !important;
-border-right: 10px solid tomato !important;
-}
-
-.history + .code.mt\:l:hover textarea {
-/* position: absolute !important; */
+/* CODE NORMAL - HOVER (BLUE) */
+.code.mt\:l:hover  textarea {
+position: absolute !important;
+/* position: relative !important; */
 display: inline-block !important;
 float: none !important;
     height: auto !important;
@@ -818,20 +829,97 @@ width: 100% !important;
 min-width: 869px !important;
 max-width: 869px !important;
     margin: 0 !important;
-top: 51.5vh !important;
-margin-left: -705px !important;
+    margin-top: 3vh !important;
+top: 0vh !important;
+left: -36.5vw !important;
+/* margin-left: -705px !important; */
 /*     padding: 0.2rem 0 0 0 !important; */
 padding: 5px 5px 5px 10px !important;
 border-radius: 0 0 5px 5px !important;
 overflow: hidden !important;
 overflow-y: auto !important;
 z-index: 5000 !important;
-background: #111 !important;
 border: 1px solid yellow !important;
 border-right: 10px solid tomato !important;
+/* background: blue !important; */
+background: #111 !important;
+cursor: default !important;
 }
 
-.details + b .code.mt\:l h2 ,
+/* =============================== */
+/* CODE + MARK -  WITHOUT B - HOVER (RED)
+Flickr WideScreen - BigONE
+https://userstyles.world/style/248
+==== */
+.details + .history + .code.mt\:l:hover mark +  textarea {
+position: absolute !important;
+/* position: relative !important; */
+display: inline-block !important;
+float: none !important;
+    height: auto !important;
+min-height: 44vh !important;
+max-height: 44vh !important;
+width: 100% !important;
+min-width: 869px !important;
+max-width: 869px !important;
+    margin: 0 !important;
+    margin-top: 3vh !important;
+top: 0vh !important;
+left: -36.5vw !important;
+/* margin-left: -705px !important; */
+/*     padding: 0.2rem 0 0 0 !important; */
+padding: 5px 5px 5px 10px !important;
+border-radius: 0 0 5px 5px !important;
+overflow: hidden !important;
+overflow-y: auto !important;
+z-index: 5000 !important;
+border: 1px solid yellow !important;
+border-right: 10px solid tomato !important;
+background: #111 !important;
+/* background: red !important; */
+}
+
+
+/* ================================= */
+/* OK - CODE MARK - STRANGE  WITH B (GREEN)
+Mozilla Addon Widescreen NEW design
+https://userstyles.world/style/61
+.details + b .history + .code.mt\:l mark +  textarea
+==== */
+
+.details + b .history + .code.mt\:l:hover mark +  textarea {
+position: absolute !important;
+/* position: relative !important; */
+display: inline-block !important;
+float: none !important;
+    height: auto !important;
+min-height: 44vh !important;
+max-height: 44vh !important;
+width: 100% !important;
+min-width: 869px !important;
+max-width: 869px !important;
+    margin: 0 !important;
+    margin-top: 3vh !important;
+top: 0vh !important;
+left: -36.5vw !important;
+/* margin-left: -705px !important; */
+/*     padding: 0.2rem 0 0 0 !important; */
+padding: 5px 5px 5px 10px !important;
+border-radius: 0 0 5px 5px !important;
+overflow: hidden !important;
+overflow-y: auto !important;
+z-index: 5000 !important;
+border: 1px solid yellow !important;
+border-right: 10px solid tomato !important;
+/* background: green !important; */
+background: #111 !important;
+}
+
+/* ================ */
+
+
+/* CODE TEXTAERA H2 */
+.details + b .code .mt\:l h2 ,
 .details + .code.mt\:l h2 {
 display: inline-block !important;
 /*     transform: rotate(90deg); */
@@ -840,10 +928,7 @@ display: inline-block !important;
     top: 0px !important;
 /* visibility: visible !important; */
 }
-.details + b .code.mt\:l  mark {
-    display: inline-block !important;
- font-size: 13px !important;
-}
+
 .details + .code.mt\:l textarea  ,
 .details + b .code.mt\:l textarea {
     border: 1px solid var(--bg-4);
@@ -855,6 +940,12 @@ display: inline-block !important;
     min-height: 400px !important;
     min-width: 100%;
     padding: 0.5rem;
+}
+
+/* (new4) CODE WARNING */
+.details + b .code.mt\:l  mark {
+    display: inline-block !important;
+ font-size: 13px !important;
 }
 
 /* (new4) CODE WARNING for:
@@ -1230,15 +1321,27 @@ text-align: center !important;
 border: 1px solid red !important;
 }
 
-/* USERSTYLES LIST */
+/* (new6) USERSTYLES LIST - ACCOUNT */
 .styles.mt\:l {
- float: left !important;
-clear: none !important;
+    float: left !important;
+    clear: none !important;
     min-width: 100% !important;
     max-width: 100% !important;
 /*     margin-top: -242px; */
-    padding: 20px 0.5rem;
+    padding: 5px 5px 5px !important;
 border: 1px solid #333 !important;
+}
+.styles.mt\:l > h2  {
+    left: 34%;
+    position: absolute;
+    top: 7vh;
+/*     z-index: 500; */
+}
+.styles.mt\:l > h2.sub-title + .description  {
+    left: 44%;
+    position: absolute;
+    top: 8vh;
+/*     z-index: 500; */
 }
 .card.col.gap.animate {
     border-radius: 5px;
@@ -1369,39 +1472,36 @@ border: 1px solid gray !important;
     right: 42px;
     top: 75px !important;
     text-align: center;
-/* overflow-x: hidden !important; */
     z-index: 500 !important;
     background: #222 !important;
 }
-
-.wrapper.py\:l .ta\:c + section > form {
-    position: sticky !important;
+/* (new9) EXPLORE - TOP ORDEr - FORM 
+.form-wrapper.plain.advanced.flex .section.flex
+===  */
+.wrapper.py\:l .ta\:c + section > form  {
+position: sticky !important;
     display: inline-block !important;
     min-width: 100%;
     margin-top: -2rem;
     top: 0px;
-    margin: 1rem auto;
-
-    padding: 0.3rem;
+    margin: 0.3rem auto;
+    padding: 0  !important;
     z-index: 5000000 !important;
 border: 1px solid gray !important;
 }
 .wrapper.py\:l .ta\:c + section > form .section.flex{
-/*     position: sticky !important; */
 display: inline-block !important;
-/*     float: left !important; */
     min-width: 18%;
     max-width: 18%;
-/*     margin-top: -2rem; */
-/*     top: 0px; */
-/*     margin: 1rem auto; */
-
 padding: 0rem;
-border: 1px solid tomato !important;
+border: 1px solid red !important;
+}
+.form-wrapper.advanced.plain .sort {
+    margin: 0 0 0.5rem 0rem;
 }
 .wrapper.py\:l .ta\:c + section > form > .btn.primary {
 display: inline-block !important;
-    margin-top: 15px;
+    margin-top: 25px;
 margin-right: 42% !important;
 margin-left: -34% !important;
     padding-bottom: 0;
@@ -1485,7 +1585,7 @@ border: 1px solid gray !important;
     padding-top: 0;
 }
 
-/* SEARCH ORDER */
+/* (new9) SEARCH ORDER - STICKY */
 
 .wrapper.py\:l .ta\:c {
     display: inline-block;
@@ -1499,44 +1599,92 @@ border: 1px solid gray !important;
     z-index: 50!important;
     background: #111 !important;
 }
-/* .wrapper.py\:l .ta\:c + section.mt\:l {
+.wrapper.py\:l .ta\:c p ,
+.wrapper.py\:l .ta\:c h1 {
+    float: left !important;
+    width: 50%;
+padding: 0 20px !important;
+}
+.wrapper.py\:l .ta\:c h1 {
+    text-align: right;
+}
+.wrapper.py\:l .ta\:c p {
+    height: 36px !important;
+    line-height: 36px !important;
+    text-align: left;
+}
 
-    display: inline-block !important;
-    margin-top: -0.5rem;
-    min-width: 100%;
-    position: sticky !important;
-    right: 42px;
-    text-align: center;
-    top: 75px !important;
-    width: 100%;
-    z-index: 500 !important;
-    background: blue !important;
-} */
+/* (new9) SEARCH - FORMS */
+
+
+/* SEARCH - TOP FORMS CONTAINER - ALL 
+.form-wrapper.advanced .section
+==== */ 
 .wrapper.py\:l .ta\:c + section > form {
-    position: sticky !important;
+/*     position: sticky !important; */
     display: inline-block !important;
+    vertical-align: top !important;
     min-width: 100%;
     margin-top: -2rem;
     top: 0px;
-    margin: 1rem auto;
-
+    margin: -0.5rem auto 0.5rem auto;
     padding: 0.3rem;
-    z-index: 5000000 !important;
+/*     z-index: 5000000 !important; */
 border: 1px solid gray !important;
 }
+
+.wrapper.py\:l .ta\:c + section > form .section +  .section input {
+    display: flex;
+    margin: 0.5rem 0 1.5rem;
+    width: 100%;
+}
+/* KEYWORD  / SORT FORMs v */
 .wrapper.py\:l .ta\:c + section > form .section {
-/*     position: sticky !important; */
 display: inline-block !important;
-/*     float: left !important; */
     min-width: 20%;
     max-width: 20%;
-/*     margin-top: -2rem; */
-/*     top: 0px; */
-/*     margin: 1rem auto; */
-
-/*     padding: 1rem; */
+height: 8vh !important;
 border: 1px solid tomato !important;
 }
+/* KEYWORD  LABEL */
+.wrapper.py\:l .ta\:c + section > form label {
+display: inline-block !important;
+    float: none !important;
+    margin-top: 0px !important;
+    min-width: 250px !important;
+    max-width: 250px;
+}
+.wrapper.py\:l .ta\:c + section > form .section > input {
+    display: flex;
+    margin: 0px 0px 0px 2px !important;
+    width: 99% !important;
+}
+
+/* SORT FORM */
+.wrapper.py\:l .ta\:c + section > form .section +  .section {
+    position: relative !important;
+display: inline-block !important;
+    min-width: 20%;
+    max-width: 20%;
+top: -0.2vh !important;
+border: 1px solid red !important;
+}
+
+.form-wrapper.advanced .sort {
+    position: relative !important;
+/* display: inline-block !important; */
+    margin: 0vh 0px 0px 2px !important;
+    width: 99% !important;
+}
+.form-wrapper.advanced .sort #sort {
+    width: 99%;
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+
+}
+
+
+/* SEARCH BUTTON */
 .wrapper.py\:l .ta\:c + section > form > .btn.primary {
 display: inline-block !important;
     margin-top: 30px;
@@ -1545,20 +1693,9 @@ margin-left: -40% !important;
     padding-bottom: 0;
     padding-top: 0;
 }
-form input, form textarea, form select, 
-.form-wrapper input, .form-wrapper textarea, 
-.form-wrapper select {
-display: inline-block !important;
-    min-width: 100%;
-    max-width: 100%;
-}
-.wrapper.py\:l .ta\:c + section > form label {
-display: inline-block !important;
-    float: none !important;
-    margin-top: 0px;
-    min-width: 250px !important;
-    max-width: 250px;
-}
+
+
+
 
 /* END - URL PREF - SEARCH === */
 }

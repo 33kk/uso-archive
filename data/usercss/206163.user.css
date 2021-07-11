@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         pawelos076232
 @description    `Change the default orange color on SoundCloud!`
-@version        20210619.10.21
+@version        20210710.22.20
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown scqcc "Color" {
@@ -57,7 +57,8 @@ scqcc-green "Green" <<<EOT --scqcc-green EOT;
 .userStatsLegend__item1,
 .statsOverview__chartWrapper, 
 .sc-status-label,
-.sc-status-icon-activity
+.sc-status-icon-activity,
+.tileGallery__sliderButton.tileGallery__slideForwardButton.sc-button.sc-button-small.sc-button-icon:after
 {
     filter: var(/*[[scqcc]]*/);
 }

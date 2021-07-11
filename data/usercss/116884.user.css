@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           GooGle - Multi-Columns Dark and Gray v.46
+@name           GooGle - Multi-Columns Dark and Gray v.47
 @namespace      USO Archive
 @author         decembre
 @description    `Less scrolling with a multi columns interface.....Firefox OKChrome : OKNot working together with a "working" GooglemonkeyR:But all forks of it, at 2019.07, seems broken and need to be updated.When they work, use my userstyle:<a href="https://userstyles.org/styles/121836/">Google - GM - Google MonkeyR Companion</a>`
-@version        20210630.12.14
+@version        20210711.0.10
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -5253,10 +5253,12 @@ background: black!important;
 /* ======================= */
 /* (newGOGLE) COLORS - WITHOUT POSITION CHANGES */
 /* ======================= */
-/* (new46) COLORS - TEST with ELIAN color from :
+/* (new467) COLORS - TEST with ELIAN color from :
 https://userstyles.org/styles/89702/elian-google-search-modern-dark
 === */
-/* (new137) COLOR - LINKS / TEXTES - GRAY */
+/* COLOR - LINKS / TEXTES - GRAY */
+
+.wM6W7d>span ,
 .checkbox-label, 
 .jfk-radiobutton-label ,
 .URIeEf ,

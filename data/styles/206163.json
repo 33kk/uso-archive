@@ -7,7 +7,7 @@
     "format": "uso",
     "category": "soundcloud",
     "createdAt": "2021-06-19T10:14:59.000Z",
-    "updatedAt": "2021-06-19T10:21:59.000Z",
+    "updatedAt": "2021-07-10T22:20:29.000Z",
     "license": "NO-REDISTRIBUTION",
     "author": {
       "id": 302757,
@@ -17,8 +17,8 @@
   },
   "stats": {
     "installs": {
-      "total": 0,
-      "weekly": 0
+      "total": 50,
+      "weekly": 19
     }
   },
   "screenshots": {
@@ -35,7 +35,7 @@
     "data": []
   },
   "style": {
-    "css": "@-moz-document domain(\"soundcloud.com\"), domain(\"soundcloud.app.goo.gl\") {\r\n:root {\r\n  --scqcc-pink: hue-rotate(300deg);\r\n  --scqcc-purple: hue-rotate(240deg);\r\n  --scqcc-blue: hue-rotate(180deg);\r\n  --scqcc-mint: hue-rotate(148deg);\r\n  --scqcc-green: hue-rotate(100deg);\r\n}\r\n.sceneLayer:not(.waveformCommentsNode),\r\n.sc-button-play,\r\n.playbackTimeline,\r\n.g-tabs-item,\r\n.header__logo,\r\n.playControls__repeat,\r\n.notificationIcon,\r\n.compactTrackListItem.active, .compactTrackListItem.active .compactTrackListItem__content, .compactTrackListItem.active .compactTrackListItem__trackTitle, .compactTrackListItem.active .compactTrackListItem__user,\r\n.volume__sliderProgress, .volume__sliderHandle,\r\n.commentPopover__username, a.commentPopover__username:hover, a.commentPopover__username:visited,\r\n.sc-label.sc-label-private,\r\n.error .gritter-top,\r\n.searchOptions__navigationItem.active,\r\n.sc-button-cta, .sc-button-cta:hover, .sc-button-cta:focus, .sc-button-cta:visited, .sc-button.sc-button-white:hover, .sc-button.sc-button-white:focus,\r\n.sc-button-selected.sc-button-medium,\r\n.soundBadge.active .soundTitle__title,\r\n.sc-orange,\r\n.premiumContent__uploadImagePro, .premiumContent__uploadImageProUnlimited,\r\n.premiumModalPlansContent__checked,\r\n.sc-button-dropdown:after,\r\n.sc-button-active, .sc-button-selected,\r\n.playbackSoundBadge__showQueue,\r\n.sc-toggle:before,\r\n.shuffleControl,\r\n.notificationIcon.newItems__some,\r\n.progressBar__bar,\r\n.sc-text-orange,\r\n.sc-background-orange,\r\n.topStatsItem.m-soundcloud-app div[style*=\"svg\"],\r\n.statsSummary__icon.g-stats-icon.g-stats-icon-play.g-stats-icon-orange,\r\n.userStatsLegend__item1,\r\n.statsOverview__chartWrapper, \r\n.sc-status-label,\r\n.sc-status-icon-activity\r\n{\r\n    filter: var(/*[[scqcc]]*/);\r\n}\r\n}",
+    "css": "@-moz-document domain(\"soundcloud.com\"), domain(\"soundcloud.app.goo.gl\") {\r\n:root {\r\n  --scqcc-pink: hue-rotate(300deg);\r\n  --scqcc-purple: hue-rotate(240deg);\r\n  --scqcc-blue: hue-rotate(180deg);\r\n  --scqcc-mint: hue-rotate(148deg);\r\n  --scqcc-green: hue-rotate(100deg);\r\n}\r\n.sceneLayer:not(.waveformCommentsNode),\r\n.sc-button-play,\r\n.playbackTimeline,\r\n.g-tabs-item,\r\n.header__logo,\r\n.playControls__repeat,\r\n.notificationIcon,\r\n.compactTrackListItem.active, .compactTrackListItem.active .compactTrackListItem__content, .compactTrackListItem.active .compactTrackListItem__trackTitle, .compactTrackListItem.active .compactTrackListItem__user,\r\n.volume__sliderProgress, .volume__sliderHandle,\r\n.commentPopover__username, a.commentPopover__username:hover, a.commentPopover__username:visited,\r\n.sc-label.sc-label-private,\r\n.error .gritter-top,\r\n.searchOptions__navigationItem.active,\r\n.sc-button-cta, .sc-button-cta:hover, .sc-button-cta:focus, .sc-button-cta:visited, .sc-button.sc-button-white:hover, .sc-button.sc-button-white:focus,\r\n.sc-button-selected.sc-button-medium,\r\n.soundBadge.active .soundTitle__title,\r\n.sc-orange,\r\n.premiumContent__uploadImagePro, .premiumContent__uploadImageProUnlimited,\r\n.premiumModalPlansContent__checked,\r\n.sc-button-dropdown:after,\r\n.sc-button-active, .sc-button-selected,\r\n.playbackSoundBadge__showQueue,\r\n.sc-toggle:before,\r\n.shuffleControl,\r\n.notificationIcon.newItems__some,\r\n.progressBar__bar,\r\n.sc-text-orange,\r\n.sc-background-orange,\r\n.topStatsItem.m-soundcloud-app div[style*=\"svg\"],\r\n.statsSummary__icon.g-stats-icon.g-stats-icon-play.g-stats-icon-orange,\r\n.userStatsLegend__item1,\r\n.statsOverview__chartWrapper, \r\n.sc-status-label,\r\n.sc-status-icon-activity,\r\n.tileGallery__sliderButton.tileGallery__slideForwardButton.sc-button.sc-button-small.sc-button-icon:after\r\n{\r\n    filter: var(/*[[scqcc]]*/);\r\n}\r\n}",
     "settings": [
       {
         "key": "scqcc",
