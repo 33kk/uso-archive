@@ -1,14 +1,14 @@
 /* ==UserStyle==
-@name           CompactTube (White) v1.5.8+(17d)EVO
+@name           CompactTube (White) v1.5.8+(17e)EVO
 @namespace      USO Archive
 @author         jakill02
 @description    `<b>ENG)</b>  temporary Evolutionary version of the CompactTube (White) style numbered v1.5.8+(17<b>a</b>) (further update if required will be marked with letters <b>a-z</b>)<b>created for those users whose YouTube has not been updated yet.</b><b>the main updatable style branch is here:</b> https://userstyles.org/styles/186936____________________________<b>RU)</b>  временная Эволюционная версия стиля CompactTube (White) за номером v1.5.8+(17<b>a</b>) (дальнейшее обновление если оно потребуется будет отмечаться буквами <b>a-z</b>)<b>создано для тех пользователей чей Ютуб ещё не обновился.</b><b>основная обновляемая ветка стиля находится тут:</b> https://userstyles.org/styles/186936`
-@version        20210703.21.41
+@version        20210712.8.59
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
-/* CompactTube (White) v1.5.8+(17d)EVO */
+/* CompactTube (White) v1.5.8+(17e)EVO */
 
                 /* Main Style Page: https://userstyles.org/styles/186936/ */
                 /* 1.5.8+(17)EVO Style Page: https://userstyles.org/styles/206496/ */
@@ -111,7 +111,8 @@ ytd-checkbox-survey-renderer[dialog][dialog][dialog] {display: none;}
 /* RU:  убрать бесконечную подгрузку предлагаемых видео на вкладке "c Видео": - "none" - убрать: "flow"- показать */
 /* ENG: remove endless loading of offered videos on the "Video" tab: - "none" - remove: "flow" - show */
 ytd-continuation-item-renderer.ytd-watch-next-secondary-results-renderer {display: none;} /* RU: zone */
-ytd-continuation-item-renderer.ytd-item-section-renderer {display: none;}                 /* ENG: zone */
+#secondary ytd-continuation-item-renderer.ytd-item-section-renderer:not(#comments), 
+#related ytd-continuation-item-renderer.ytd-item-section-renderer:not(#comments) {display: none;}/* ENG: zone */
 yt-next-continuation.ytd-watch-next-secondary-results-renderer {display: none;}           /* Old ver. */
 
 /* RU:  убрать ярлык "прокрутите экран вниз" в полноэкранном режиме Видео: - "none" - убрать: "flow"- показать */
@@ -1188,9 +1189,6 @@ yt-offer-item-renderer {margin-left: 6px; /*test*/
 @-moz-document domain("youtube.com") {
 /*   изменение ЦВЕТА   */
 
-/* Контур логотипа YouTube для ШАПКИ в Тёмной Теме */
--o-.ytd-topbar-logo-renderer:nth-last-child(n+2) 
-{filter: drop-shadow(0px 0px 0.55px rgba(255, 255, 255, .4)) drop-shadow(0px 0px 0.55px rgba(255, 255, 255, .4));}
 
 /* цвет шапки */
 /* -o-#container.ytd-masthead {background-color: #fff ; -o-border-right: 1px solid var(--yt-spec-10-percent-layer);} */
@@ -1269,13 +1267,7 @@ yt-icon-button#back-button .ytd-masthead {fill: #989898 !important;}
 
 
 
-/* ======= Старый цвет логотипа YouTube (Тёмный) ==================== */
-/* цвет логотипа Ютуба - заливка */
--o-ytd-topbar-logo-renderer * {fill: #424242 !important; }
-/* цвет логотипа Ютуба - контур */
--o-#logo-icon-container {stroke: #ececec !important;}
-
-/* ======= Новый (обычный) цвет логотипа YouTube ==================== */
+/* ======= цвет логотипа YouTube ==================== */
 /*YouTube logo - Красное*/
 #logo-icon-container > svg > g > g:nth-child(1) > path {fill: #f00 !important;}
 
@@ -1727,6 +1719,10 @@ flex: var(--layout-flex-none_-_flex); width: 40px; height: 40px;}
 /* информация */
 #copyright:before {background-color: var(--yt-spec-brand-background-primary); display: block; position: 
 relative; top: 19px; font-size: 1.2rem; content: "Compact Tube (White) by Jakill02 based on style by Funny.";}
+
+/* БОРДЮР между блоками: - убрать все Нижние Бордюры */
+/*  -o-ytd-section-list-renderer:not([hide-bottom-separator]):not([page-subtype=history]):not([page-subtype=memberships-and-purchases]):not([page-subtype=ypc-offers]) #contents.ytd-section-list-renderer > *.ytd-section-list-renderer:not(:last-child):not(ytd-page-introduction-renderer):not([item-dismissed]).ytd-section-list-renderer {border-bottom:0px solid var(--yt-spec-10-percent-layer);} */
+
 
 /*раскрывающий элемент "Ещё" - на Каналах*/
 yt-formatted-string.ytd-expanded-shelf-contents-renderer 
@@ -4861,8 +4857,4 @@ ytd-inline-form-renderer[style=INLINE_FORM_STYLE_TITLE] #text-displayed.ytd-inli
 #center.ytd-masthead {
     margin-right: auto; /*margin-right: auto*/
     margin-left: -5px;} /*margin-left: -5px*/
-}
-
-@-moz-document domain("youtube.com") {
-/*|      Альтернативный способ затенения заголовка видео в полном экране и функциональных клавиш плеера,              |*/
 }

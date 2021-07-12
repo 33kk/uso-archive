@@ -1,14 +1,14 @@
 /* ==UserStyle==
-@name           Compact Tube (White) v1.5.8+(26)
+@name           Compact Tube (White) v1.5.8+(27)
 @namespace      USO Archive
 @author         jakill02
 @description    `RU) - пытается имитировать старый (классический) дизайн Ютуба.     Предупреждение: Этот стиль написан для использования на Компьютерах и не предназначен для Телефонов и Планшетов..---------ENG) - trying to imitate the old (classic) Youtube layout.     Warning: This style is written for use on Computers and is not intended for Phones and Tablets..RU) (Стиль в классических цветах и привычных формах.)данный Стиль является модицикацией основанной на стиле от (Funny 😂) который был взять с сайта: "YouTube OldOnNew" https://sites.google.com/view/compacttube/home все права на оригинальный стиль принадлежат его создателю, я не на что не претендую.-----------------------ENG) (Style in classic colors and familiar shapes.)This Style is a modification based on the Style by (Funny 😂) which was taken from the site: "YouTube OldOnNew" https://sites.google.com/view/compacttube/homeAll rights to original style belong to its original creator, I do not pretend to anything.`
-@version        20210710.22.35
+@version        20210712.8.49
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
-/* CompactTube (White) v1.5.8+(26) */
+/* CompactTube (White) v1.5.8+(27) */
 
                 /* Style Page: https://userstyles.org/styles/186936/ */
 
@@ -110,7 +110,8 @@ ytd-checkbox-survey-renderer[dialog][dialog][dialog] {display: none;}
 /* RU:  убрать бесконечную подгрузку предлагаемых видео на вкладке "c Видео": - "none" - убрать: "flow"- показать */
 /* ENG: remove endless loading of offered videos on the "Video" tab: - "none" - remove: "flow" - show */
 ytd-continuation-item-renderer.ytd-watch-next-secondary-results-renderer {display: none;} /* RU: zone */
-ytd-continuation-item-renderer.ytd-item-section-renderer {display: none;}                 /* ENG: zone */
+#secondary ytd-continuation-item-renderer.ytd-item-section-renderer:not(#comments), 
+#related ytd-continuation-item-renderer.ytd-item-section-renderer:not(#comments) {display: none;}/* ENG: zone */
 yt-next-continuation.ytd-watch-next-secondary-results-renderer {display: none;}           /* Old ver. */
 
 /* RU:  убрать ярлык "прокрутите экран вниз" в полноэкранном режиме Видео: - "none" - убрать: "flow"- показать */

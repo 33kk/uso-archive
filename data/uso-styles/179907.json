@@ -1,7 +1,7 @@
 {
   "id": 179907,
-  "name": "Blue google meets",
-  "description": "Makes the google meets background sky blue.",
+  "name": "Google meets - Custom Colour Background.",
+  "description": "Makes the google meets background a colour of your choice (default is sky blue). Choose a color by clicking the \"customise settings\" button under the thumbnail.",
   "user": {
     "id": 443356,
     "name": "Chad ROSSOUW",
@@ -11,11 +11,11 @@
     "about": null,
     "license": "ccbyncsa"
   },
-  "updated": "2020-02-06T07:06:45.000Z",
-  "weekly_install_count": 235,
-  "total_install_count": 3221,
+  "updated": "2021-07-12T06:45:02.000Z",
+  "weekly_install_count": 67,
+  "total_install_count": 6843,
   "rating": 3,
-  "after_screenshot_name": "https://userstyles.org/style_screenshots/179907_after.png?r=1602144809",
+  "after_screenshot_name": "https://userstyles.org/style_screenshots/179907_after.png?r=1626077146",
   "obsoleting_style_id": null,
   "obsoleting_style_name": null,
   "obsolete": 0,
@@ -29,7 +29,7 @@
   "subcategory": "google",
   "additional_info": null,
   "style_tags": [],
-  "css": "@-moz-document domain(\"meet.google.com\") {\r\n.zWfAib {\r\n \tbackground-color: #88CAE1!important;\t   \r\n}\r\n}",
+  "css": "@-moz-document domain(\"meet.google.com\") {\r\n  :root {\r\n      --mainColor: /*[[mainColor]]*/;\r\n  }\r\n  .zWfAib {\r\n      background-color: var(--mainColor)!important;\t   \r\n  }\r\n}",
   "discussions": [
     {
       "id": 87970,
@@ -78,10 +78,38 @@
       "created": "2020-09-23T03:49:02.000Z",
       "author_name": "afreen s",
       "author_id": 1033883
+    },
+    {
+      "id": 90295,
+      "name": "Good style",
+      "rating": 3,
+      "created": "2021-01-28T10:51:01.000Z",
+      "author_name": "Lucas Lourenço",
+      "author_id": 873071
     }
   ],
-  "discussionsCount": 6,
-  "commentsCount": 0,
-  "userjs_url": "/styles/userjs/179907/blue-google-meets.user.js",
-  "style_settings": []
+  "discussionsCount": 7,
+  "commentsCount": 1,
+  "userjs_url": "/styles/userjs/179907/google-meets-custom-colour-background.user.js",
+  "style_settings": [
+    {
+      "id": 470053,
+      "style_id": 179907,
+      "install_key": "mainColor",
+      "label": "Background Color",
+      "ordinal": 0,
+      "setting_type": "color",
+      "style_setting_options": [
+        {
+          "id": 1666584,
+          "style_setting_id": 470053,
+          "label": "placeholder",
+          "value": "#88CAE1",
+          "default": true,
+          "ordinal": 0,
+          "install_key": "placeholder"
+        }
+      ]
+    }
+  ]
 }

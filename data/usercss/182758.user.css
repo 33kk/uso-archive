@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Isi-Daddy
 @description    `Eclipse Redesign shall not only bring back the feeling of the old deviantart, but also help your orientation by making the general appearance smaller and add more colours as separators.`
-@version        20210619.17.58
+@version        20210712.1.14
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -982,12 +982,12 @@ padding: 10px 5px;
 bottom: 8px;}
 
 /*heart and diamond button*/
-.EJjLe.uePGg button._1qPjE._2JGTR._19pON{
+.EJjLe.uePGg button._1qPjE._2JGTR{
 	position: absolute !important; 
     left: -105px;
     bottom: 8px;
 }
-.EJjLe.uePGg button._1qPjE._1TLT6._19pON{
+.EJjLe.uePGg button._1qPjE._1TLT6{
 	position: absolute !important; 
     left: -105px;
     bottom: 28px;

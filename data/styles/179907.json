@@ -1,13 +1,13 @@
 {
   "id": 179907,
   "info": {
-    "name": "Blue google meets",
-    "description": "Makes the google meets background sky blue.",
+    "name": "Google meets - Custom Colour Background.",
+    "description": "Makes the google meets background a colour of your choice (default is sky blue). Choose a color by clicking the \"customise settings\" button under the thumbnail.",
     "additionalInfo": null,
     "format": "uso",
     "category": "google",
     "createdAt": "2020-02-06T07:06:45.000Z",
-    "updatedAt": "2020-02-06T07:06:45.000Z",
+    "updatedAt": "2021-07-12T06:45:02.000Z",
     "license": "NO-REDISTRIBUTION",
     "author": {
       "id": 443356,
@@ -16,8 +16,8 @@
   },
   "stats": {
     "installs": {
-      "total": 3221,
-      "weekly": 235
+      "total": 6843,
+      "weekly": 67
     },
     "rating": 3
   },
@@ -29,8 +29,8 @@
   },
   "discussions": {
     "stats": {
-      "discussionsCount": 6,
-      "commentsCount": 0
+      "discussionsCount": 7,
+      "commentsCount": 1
     },
     "data": [
       {
@@ -86,10 +86,34 @@
           "id": 1033883,
           "name": "afreen s"
         }
+      },
+      {
+        "id": 90295,
+        "title": "Good style",
+        "createdAt": "2021-01-28T10:51:01.000Z",
+        "author": {
+          "id": 873071,
+          "name": "Lucas Lourenço"
+        }
       }
     ]
   },
   "style": {
-    "css": "@-moz-document domain(\"meet.google.com\") {\r\n.zWfAib {\r\n \tbackground-color: #88CAE1!important;\t   \r\n}\r\n}"
+    "css": "@-moz-document domain(\"meet.google.com\") {\r\n  :root {\r\n      --mainColor: /*[[mainColor]]*/;\r\n  }\r\n  .zWfAib {\r\n      background-color: var(--mainColor)!important;\t   \r\n  }\r\n}",
+    "settings": [
+      {
+        "key": "mainColor",
+        "label": "Background Color",
+        "type": "color",
+        "options": [
+          {
+            "key": "placeholder",
+            "label": "placeholder",
+            "value": "#88CAE1",
+            "default": true
+          }
+        ]
+      }
+    ]
   }
 }

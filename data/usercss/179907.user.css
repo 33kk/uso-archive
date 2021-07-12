@@ -1,14 +1,19 @@
 /* ==UserStyle==
-@name           Blue google meets
+@name           Google meets - Custom Colour Background.
 @namespace      USO Archive
 @author         Chad ROSSOUW
-@description    `Makes the google meets background sky blue.`
-@version        20200206.9.6
+@description    `Makes the google meets background a colour of your choice (default is sky blue). Choose a color by clicking the "customise settings" button under the thumbnail.`
+@version        20210712.6.45
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
+@advanced color mainColor "Background Color" #88CAE1
+
 ==/UserStyle== */
 @-moz-document domain("meet.google.com") {
-.zWfAib {
- 	background-color: #88CAE1!important;	   
-}
+  :root {
+      --mainColor: /*[[mainColor]]*/;
+  }
+  .zWfAib {
+      background-color: var(--mainColor)!important;	   
+  }
 }
