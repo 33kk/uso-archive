@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         shiftyy
 @description    `(Works only on MAL *PROFILE* page).A simple dark recolor of mal profile page + some other design changes.Main Features:-Customizable Background Color-Customizable Background Image-Customizable Font Color-Customizable Progress Graphs Color-Hide "About Me" Section (Optional)-Hide "Favorites" Section (Optional)-Smaller "MAL" logo-Remove RSS Feeds-Remove AdsFeel free to give me feedback or report any bug/inconsistency!`
-@version        20210711.11.52
+@version        20210711.14.23
 @license        CC-BY-NC-SA-4.0
 @preprocessor   uso
 @advanced text fontS "Font Size" "12"
@@ -19,7 +19,7 @@ bgI "Image" <<<EOT background:
 }
 @advanced color colorBG "Background Color" #000000
 @advanced dropdown bgImage "Background Image" {
-bgA "Animated*" <<<EOT https://iae.news/wp-content/uploads/2021/04/04b69fc9c44f23b430c8171ea422d44b.gif EOT;
+bgA "Animated Example*" <<<EOT https://iae.news/wp-content/uploads/2021/04/04b69fc9c44f23b430c8171ea422d44b.gif EOT;
 bg2 "Road" <<<EOT https://cdnb.artstation.com/p/assets/images/images/007/286/185/large/van-setia-putra-switz.jpg?1505067446 EOT;
 bg1 "Mountain" <<<EOT https://i.pinimg.com/originals/dc/20/2f/dc202fff4a6bdf40f68cf853a41e54a1.jpg EOT;
 
@@ -118,7 +118,12 @@ body:not(.ownlist) {
     text-align: left;
     text-decoration: none;
 }
-
+.page-common .header-profile.link-bg.on {
+    background-color: #07070700;
+}
+option {
+    background: #020202;
+}
 .page-common .header-list-button .fa {
     color: #8e8e8e63;
 }
@@ -272,6 +277,9 @@ body:not(.ownlist) {
     background-color: #767e9000;
     border-left: #f6f6f600 1px solid;
     color: #bbb;
+}
+.page-common .incrementalSearchResultList .list.focus {
+    background-color: #111111;
 }
 
 .page-common .header-profile .header-profile-dropdown {
@@ -494,6 +502,27 @@ body:not(.ownlist) {
 }
 
 
+  
+/* NOTIFICATIONS*/
+.page-common .header-notification-dropdown-inner {
+    background-color: black;
+}
+  .page-common .header-notification-dropdown .arrow_box {
+    background: #000;
+    border: 2px solid #000000;
+}
+.page-common .header-notification-view-all a {
+    background-color: #000000;
+    border-top: solid 1px #111111;
+}
+.page-common .header-notification-item {
+    border-bottom: 1px solid #151515;
+    color: #ececec;
+}
+.page-common .header-notification-item:hover {
+    background-color: #1c1c1c;
+}
+  
 
 
 /* FAVORITES  AND COMMENTS*/
@@ -518,7 +547,7 @@ body:not(.ownlist) {
 
 
 
-/* GENERAL FONT CNFG */
+/* GENERAL FONT CNFG */  
 .page-common #content {
     background-color: #06060600;
     border-color: #0000;

@@ -1,0 +1,49 @@
+{
+  "id": 207845,
+  "info": {
+    "name": "Youtube Same Background",
+    "description": "Changes the different  background collers from youtube all to the same dark-gray. \r\nONLY IN DARK-MODE",
+    "additionalInfo": null,
+    "format": "uso",
+    "category": "youtube",
+    "createdAt": "2021-07-11T22:49:54.000Z",
+    "updatedAt": "2021-07-11T22:49:54.000Z",
+    "license": "CC-BY-4.0",
+    "author": {
+      "id": 988238,
+      "name": "Jannek"
+    }
+  },
+  "stats": {
+    "installs": {
+      "total": 0,
+      "weekly": 0
+    }
+  },
+  "screenshots": {
+    "main": {
+      "name": "207845_additional_38271.jpeg",
+      "archived": true
+    },
+    "additional": [
+      {
+        "name": "207845_additional_38271.jpeg",
+        "archived": true
+      },
+      {
+        "name": "207845_additional_38272.jpeg",
+        "archived": true
+      }
+    ]
+  },
+  "discussions": {
+    "stats": {
+      "discussionsCount": 0,
+      "commentsCount": 0
+    },
+    "data": []
+  },
+  "style": {
+    "css": "@-moz-document domain(\"youtube.com\") {\r\n#right-arrow.ytd-feed-filter-chip-bar-renderer::before,\r\n#left-arrow-button.ytd-feed-filter-chip-bar-renderer,\r\n#right-arrow-button.ytd-feed-filter-chip-bar-renderer,\r\n.ytd-feed-filter-chip-bar-renderer,\r\n.html5-video-player.ytp-autonav-endscreen-cancelled-state,\r\n#container.ytd-masthead,\r\nytd-app[standardized-themed-scrollbar] #guide-inner-content.ytd-app,\r\n.ytd-feed-filter-chip-bar-renderer,\r\n.html5-video-player.ytp-autonav-endscreen-cancelled-state,\r\n#container.ytd-masthead,\r\nytd-app[standardized-themed-scrollbar] #guide-inner-content.ytd-app,\r\n#chips-wrapper.ytd-feed-filter-chip-bar-renderer {\r\n    background-color: #181818;\r\n}\r\n}"
+  }
+}

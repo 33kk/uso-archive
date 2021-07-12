@@ -2,13 +2,13 @@
 @name           Yandex.Disk Dark MOD
 @namespace      USO Archive
 @author         QZMTCH
-@description    `Update FIX black fonts FIX черных шрифтовFIX белых полос и белых бэкграундов на страницахFIX white stripes and white backgrounds on pages`
-@version        20210512.17.26
+@description    `Update 11.07.2021 (fix)Update FIX black fonts FIX черных шрифтовFIX белых полос и белых бэкграундов на страницахFIX white stripes and white backgrounds on pages`
+@version        20210711.12.40
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("disk.yandex.ru"), domain("docviewer.yandex.ru"), domain("yadi.sk"), domain("disk.yandex.com"), domain("docviewer.yandex.com") {
-.header, .root, html, .header, .journal-filter, .publish-resource-tumbler, .sidebar_fixed, .listing-item_selected, .folder-content__header
+.header, .root, html, .header, .journal-filter, .publish-resource-tumbler, .sidebar_fixed, .listing-item_selected, .folder-content__header, .PSHeader, .PSHeader_theme_light
 {
     background:#111!important;
 }
@@ -58,7 +58,7 @@ box-shadow: 0 0 0 0 rgba(0,0,0,.1);
 {
     background-color: #f8f8f86b;
 }
-.listing-item, p, .icons-services-menu__service-link, .dialog-fast-scroll__group, .dialog__title, .b-import-social__other, .user2__add-account.user-account, .user2__menu .menu__item_type_link, .journal-group__container, .journal-filter__before, .b-tree__name, .menu_theme_normal .menu__item, .b-select-folder .b-select-folder__title_inner, .button2_size_m .button2__icon_side_left~.button2__text, .b-space, .footer__link:not(:hover), .create-resource-button__text, .relative-date, .gnc-settings__setting-name, .journal-group-item__name, .client-confirmation-dialog__title, .client-confirmation-dialog__content
+.listing-item, p, .icons-services-menu__service-link, .dialog-fast-scroll__group, .dialog__title, .b-import-social__other, .user2__add-account.user-account, .user2__menu .menu__item_type_link, .journal-group__container, .journal-filter__before, .b-tree__name, .menu_theme_normal .menu__item, .b-select-folder .b-select-folder__title_inner, .button2_size_m .button2__icon_side_left~.button2__text, .b-space, .footer__link:not(:hover), .create-resource-button__text, .relative-date, .gnc-settings__setting-name, .journal-group-item__name, .client-confirmation-dialog__title, .client-confirmation-dialog__content, .Button2
 {
     color: #989898!important;
 }
@@ -74,6 +74,10 @@ box-shadow: 0 0 0 0 rgba(0,0,0,.1);
 ::-moz-placeholder          {color:#989898!important;}/* Firefox 19+ */
 :-moz-placeholder           {color:#989898!important;}/* Firefox 18- */
 :-ms-input-placeholder      {color:#989898!important;}
+
+.crumbs2__fade {
+    background-image: linear-gradient(90deg,#222,hsla(0,0%,100%,0));
+}
 
 .tabs__item_current:after
 {
