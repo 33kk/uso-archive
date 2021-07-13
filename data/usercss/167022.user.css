@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         boozlepuzzle
 @description    `This style looks better on the MinervaNeue wikipedia style, you can activate it by going to Preferences - Appereance - MinervaNeue (you need to be logged on)Enjoy!🇺🇾🇺🇾🇺🇾`
-@version        20210629.11.12
+@version        20210713.7.21
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -20,11 +20,11 @@ a {
     color: #427dd7 !important
 }
 /*background color*/
-body, #mw-head, .vectorTabs, .search-overlay li.page-summary, .search-overlay .search-content.overlay-header, .language-overlay .overlay-content, #main-menu-input:checked ~ #mw-mf-page-left, .toggle-list__checkbox:checked ~ .toggle-list__list, .oo-ui-popupWidget-popup, .vectorTabs li, .vectorTabs, .vectorTabs a, #mw-head .vectorMenu h3 {
-               background-color: #1e1e1e !important;
+body, #mw-head, .vectorTabs, .search-overlay li.page-summary, .search-overlay .search-content.overlay-header, .language-overlay .overlay-content, #main-menu-input:checked ~ #mw-mf-page-left, .toggle-list__checkbox:checked ~ .toggle-list__list, .oo-ui-popupWidget-popup, .vectorTabs li, .vectorTabs, .vectorTabs a, #mw-head .vectorMenu h3, #mw-createaccount-join, #mw-page-base, .oo-ui-popupToolGroup-tools, .oo-ui-windowManager-modal.oo-ui-windowManager-floating > .oo-ui-dialog > .oo-ui-window-frame, #editpage-copywarn > div:nth-child(1) {
+               background: #1e1e1e !important;
 }
 .header-container.header-chrome, .header > div, #mw-mf-main-menu-button, body > div.overlay.language-overlay.view-border-box.visible > div.overlay-header-container.header-container.position-fixed > div > ul, body > div.mw-overlays-container > div > div.overlay-header-container.header-container.position-fixed > div, .drawer.references-drawer, .rt-tooltip, .frb-nag, .frb-fixed, #mw-mf-diffview #mw-mf-userinfo {
-             background-color: #101010 !important  
+             background: #101010 !important  
 }
 /*logo*/
 div.branding-box {

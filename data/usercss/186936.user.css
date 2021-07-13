@@ -1,14 +1,14 @@
 /* ==UserStyle==
-@name           Compact Tube (White) v1.5.8+(27)
+@name           Compact Tube (White) v1.5.8+(28)
 @namespace      USO Archive
 @author         jakill02
 @description    `RU) - пытается имитировать старый (классический) дизайн Ютуба.     Предупреждение: Этот стиль написан для использования на Компьютерах и не предназначен для Телефонов и Планшетов..---------ENG) - trying to imitate the old (classic) Youtube layout.     Warning: This style is written for use on Computers and is not intended for Phones and Tablets..RU) (Стиль в классических цветах и привычных формах.)данный Стиль является модицикацией основанной на стиле от (Funny 😂) который был взять с сайта: "YouTube OldOnNew" https://sites.google.com/view/compacttube/home все права на оригинальный стиль принадлежат его создателю, я не на что не претендую.-----------------------ENG) (Style in classic colors and familiar shapes.)This Style is a modification based on the Style by (Funny 😂) which was taken from the site: "YouTube OldOnNew" https://sites.google.com/view/compacttube/homeAll rights to original style belong to its original creator, I do not pretend to anything.`
-@version        20210712.8.49
+@version        20210713.11.6
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
-/* CompactTube (White) v1.5.8+(27) */
+/* CompactTube (White) v1.5.8+(28) */
 
                 /* Style Page: https://userstyles.org/styles/186936/ */
 
@@ -2884,18 +2884,18 @@ ytd-watch-flexy:not([theater]):not([fullscreen]) #secondary.ytd-watch-flexy {
     left: 10px;}
 
 /*Название Ролика - позиционирование и размер */
-ytd-watch-metadata:not([roboto-title]):not([smaller-yt-sans-title]) h1.ytd-watch-metadata {
+ytd-watch-metadata h1.ytd-watch-metadata {
     padding-top: 17px;
     margin-left: 10px;
     padding-right: 10px;
     -o-font-family: "YouTube Sans", "Roboto", sans-serif;
-    font-size: 1.8rem;
-    line-height: 2.9rem;
-    font-weight: 500;
-    max-height: 6.4rem !important;
+    font-size: 1.8rem !important;
+    line-height: 2.9rem !important;
+    font-weight: 500 !important;
+    max-height: 6.4rem !important/*6.4rem*/;
     text-overflow: ellipsis;
     white-space: normal;
-    overflow: hidden;}
+    overflow: hidden !important;}
 
 
 /*Действия под Видео:    (Лайк,Дизлайк,Поделиться, Сохранить, ...) V */
@@ -3038,7 +3038,9 @@ ytd-expander.ytd-watch-metadata {
     top: 16px;}
 
 /* Вспомогательный Бэйдж [доступ по ссылке] и тд. под видео (позицианирование) */
-ytd-badge-supported-renderer.ytd-video-primary-info-renderer {margin: 2px 0px 0px 12px;}
+/*Бэйдж  [UNLISTED / ДОСТУП ПО ССЫЛКЕ]*/
+ytd-watch-metadata .ytd-badge-supported-renderer.badge-style-type-simple.badge
+{margin-left: 11px; margin-top: 1px; margin-bottom: -3px;}
 
 /*Аплоадер (никнейм) видео и количество подписчиков - позиционирование*/
 #upload-info.ytd-video-owner-renderer {

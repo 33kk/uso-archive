@@ -1,0 +1,42 @@
+{
+  "id": 207945,
+  "name": "新龙空精简UI_1.1.1",
+  "description": "龙空第五纪元UI空间浪费过多，如页首大段空白、内容区间隔过多，本样式表用于对此进行优化。\r\n主要修改了首页、论坛页、帖子页面及新贴页面。",
+  "user": {
+    "id": 847272,
+    "name": "ybbpgfjtey",
+    "email": "redacted",
+    "paypal_email": null,
+    "homepage": null,
+    "about": null,
+    "license": "publicdomain"
+  },
+  "updated": "2021-07-13T11:11:04.000Z",
+  "weekly_install_count": 3,
+  "total_install_count": 3,
+  "rating": null,
+  "after_screenshot_name": "https://userstyles.org/style_screenshots/207945_after.jpeg?r=1626174664",
+  "obsoleting_style_id": null,
+  "obsoleting_style_name": null,
+  "obsolete": 0,
+  "admin_delete_reason_id": null,
+  "obsoletion_message": null,
+  "screenshots": [
+    "https://userstyles.org/style_screenshots/207945_additional_38276.jpeg?r=1626174664",
+    "https://userstyles.org/style_screenshots/207945_additional_38277.jpeg?r=1626174664",
+    "https://userstyles.org/style_screenshots/207945_additional_38278.jpeg?r=1626174664"
+  ],
+  "license": "publicdomain",
+  "created": "2021-07-13T06:47:15.000Z",
+  "category": "site",
+  "raw_subcategory": "lkong",
+  "subcategory": "lkong",
+  "additional_info": "1.1.1\r\n1. bugfix: 子论坛页主内容区域左右边距错误设置为160px；\r\n2. 发布新贴页主内容区域重新设置边距。\r\n------------------------------------------\r\n\r\n1.1.0\r\n1. 精确设置主区域左右边距：80px；\r\n2. 精确设置发表新贴位置。\r\n------------------------------------------\r\n\r\n1.0.1\r\n1. 帖子页面副标题行右对齐取消边距。\r\n------------------------------------------\r\n主要修改：\r\n1. 首页版块改为两栏；\r\n2. 首页、子论坛页今日热门提前、列表标记对齐；\r\n3. 子论坛页标题移至页尾，发表新贴按钮提到页顶固定位置；\r\n4. 绝大部分元素大幅缩小边距。",
+  "style_tags": [],
+  "css": "@-moz-document domain(\"lkong.com\") {\r\n/** 全局 */\r\n\r\n/* 广告 */\r\n.lkong-ads {\r\n  display: none;\r\n}\r\n\r\n/* 缩减页眉尺寸 */\r\n.css-hls02m,\r\n.css-7o8ir {\r\n\theight: 40px;\r\n}\r\n\r\n.css-i97t1s,\r\n.badge-wrap{\r\n\tline-height: unset;\r\n}\r\n\r\n\r\n/* 主区域边距精确化 */\r\n.css-7o8ir,\r\n.css-83qgcm{\r\n\twidth: unset;\r\n\tpadding: 0 80px;\r\n\tmargin: unset;\r\n}\r\n\r\n/* 优化列表项 */\r\nh4~div ul {\r\n\tlist-style: disc !important;\r\n}\r\nh4~div  li::before {\r\n\tdisplay: none !important;\r\n}\r\n\r\n/* 页码去掉圆圈 */\r\n.ant-pagination-item {\r\n\tborder: none;\r\n}\r\n}\r\n\r\n@-moz-document url(\"https://www.lkong.com/\"), url(\"https://www.lkong.com/feeds\") {\r\n/** 首页 */\r\n\r\n/* 论坛名两列显示 */\r\n.css-1cw8ku2~div {\r\n\twidth: 700px;\r\n  display: flex;\r\n  flex-flow: wrap;\r\n}\r\n\r\n.css-1fii08f {\r\n\twidth: 350px;\r\n}\r\n\r\n/* 热门置于ID前 */\r\n.css-x4oy6m{\r\n\tdisplay: flex;\r\n\tflex-direction: column-reverse;\r\n\tjustify-content: flex-end;\r\n}\r\n}\r\n\r\n@-moz-document url-prefix(\"https://www.lkong.com/forum/\") {\r\n/** 子论坛页 */\r\n\r\n/* 论坛名放到页尾 */\r\n\r\n.css-xdvosn {\r\n  display: flex;\r\n\tflex-direction: column-reverse;\r\n}\r\n\r\n/* 发表帖子按钮置于页面顶端 */\r\n.right .ant-btn-primary {\r\n\tposition: fixed;\r\n\ttop: 5px;\r\n\tleft: 350px;\r\n\tz-index: 10;\r\n\twidth: 120px;\r\n\theight: 30px !important;\r\n\tpadding: 0;\r\n}\r\n\r\n.css-1xrb416{\r\n\tdisplay:none;\r\n}\r\n\r\n.css-b7o9sn {\r\n\tpadding: 0;\r\n}\r\n\r\n/* 热门置于ID前 */\r\n.css-1oa56wn{\r\n\tdisplay: flex;\r\n\tflex-direction: column-reverse;\r\n\tjustify-content: flex-end;\r\n}\r\n}\r\n\r\n@-moz-document url-prefix(\"https://www.lkong.com/thread/\") {\r\n/** 帖子页 */\r\n\r\n/* 标题栏*/\r\n\r\n.css-wd6gb6 {\r\n\tpadding: 8px 0;\r\n\tdisplay: flex;\r\n\tflex-flow: row wrap;\r\n\tjustify-content: flex-end;\r\n\talign-items: center;\r\n\twidth: unset;\r\n\tmargin: 0 80px;\r\n}\r\n.thread-title {\r\n\tmargin-bottom: 0;\r\n  width: 100%;\r\n}\r\n\r\n.thread-title~div:last-child {\r\n\tmargin-right: 0;\r\n}\r\n\r\n.css-116wftn{\r\n  margin-bottom: 2px;\r\n}\r\n\r\n/* 左边头像栏 */\r\n.css-1v7uwc5,\r\n.css-iz0yxa {\r\n\tmargin-right: 2px;\r\n  min-height: unset;\r\n  padding: 10px;\r\n}\r\n\r\n/* 头像 */\r\n.css-s98rak,\r\n.avatar-wrapper {\r\n  height: 162px !important;\r\n  width: 162px !important;\r\n  border: none !important;\r\n  border-bottom: 1px solid rgb(238, 238, 238) !important;\r\n  border-radius: 0 !important;\r\n}\r\n.css-s98rak span,\r\n.avatar-wrapper span {\r\n  width: 100% !important;\r\n  height: 100% !important;\r\n}\r\n\r\n/* ID */\r\n.user-wrapper {\r\n  margin: 5px !important\r\n}\r\n\r\n\r\n/* 跟帖信息栏 */\r\n.css-dz4ra9 {\r\n\tpadding: 3px 0;\r\n}\r\n\r\n/* 发表时间 */\r\n.left-area {\r\n\tmargin-left: 10px !important;\r\n}\r\n\r\n/* 楼号 */\r\n.lou {\r\n  margin-right: 10px !important;\r\n}\r\n\r\n/* 帖子内容 */\r\n.main-block {\r\n\tpadding: 5px 10px !important; \r\n}\r\n.thread-content p {\r\n\tmargin: 0;\r\n}\r\n/* 引用 */\r\n.css-h0ave8 {\r\n\tpadding: 5px;\r\n}\r\n\r\n/* 评分 */\r\n.css-1arbysm {\r\n  margin: 40px 10px 10px;\r\n}\r\n.css-1arbysm table {\r\n\tmargin-top: 5px;\r\n}\r\n.css-1arbysm table td{\r\n\tpadding: 2px;\r\n}\r\n\r\n/* 回复/评分/收藏/举报栏*/\r\n.css-9ph873 {\r\n\tpadding: 0 10px 5px;\r\n}\r\n\r\n/* 回复表单 */\r\n.css-1mtj6bn {\r\n\tpadding: 10px 10px 0;\r\n}\r\n}\r\n\r\n@-moz-document url-prefix(\"https://www.lkong.com/new/\"), url-prefix(\"https://www.lkong.com/edit\") {\r\n/** 发布主题页 */\r\n\r\n.css-1fcdc3s .ant-affix {\r\n\ttop: 40px !important;\r\n}\r\n.editor-header,\r\n.editor-main{\r\n\twidth: unset !important;\r\n\tpadding: 0 80px !important;\r\n\tmargin: unset !important;\r\n}\r\n.css-1d0y4b9 {\r\n\tpadding: unset;\r\n}\r\n\r\n.css-1d0y4b9 button:first-child {\r\n\tmargin: 0 2px 0 0;\r\n\tpadding: 0 6px 0 0;\r\n}\r\n\r\n.editor-main {\r\n\tmargin-top: 10px !important;\r\n}\r\n\r\n.css-9xr9bw {\r\n  padding: 0;\r\n}\r\n.editor-main>div:nth-child(2) {\r\n\tpadding: 10px !important;\r\n}\r\n}",
+  "discussions": [],
+  "discussionsCount": 0,
+  "commentsCount": 0,
+  "userjs_url": "/styles/userjs/207945/ui-1-1-1.user.js",
+  "style_settings": []
+}
