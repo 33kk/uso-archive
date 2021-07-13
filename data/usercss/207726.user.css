@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         boranb
 @description    `A new dracula theme for eksisozluk.com that more readable and eye friendly. Please let me know if you have any feedback. Dracula Theme renkleri kullanılarak yeniden tasarlandı. Hata, istek ve öneriler için iletişime geçin. github.com/boranb`
-@version        20210711.21.5
+@version        20210712.12.44
 @license        CC-BY-NC-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -88,6 +88,13 @@
     html.no-touch .pager>a:hover,
     html.no-touch #partial-index::-webkit-scrollbar-thumb {
         background-color: #282a36;
+    }     
+    .more-data {
+    background-color: #282a36 !important;
+    }    
+    .more-data:hover {
+    background-color: #44475a !important;
+    color: #ff79c6 !important;        
     }
     html.no-touch a.more-data:hover {
         background-color: #282a36;
@@ -212,7 +219,7 @@
     .voted.dislike .eksico {
         fill: #ff5555!important;
     }
-      #entry-item-list footer, #matter-index-item-list footer, #matter-content footer, #pinned-entry footer, #matter-answer-index-item-list footer, #matter-answer-list footer {
+    #entry-item-list footer, #matter-index-item-list footer, #matter-content footer, #pinned-entry footer, #matter-answer-index-item-list footer, #matter-answer-list footer {
         color: #bd93f9;
         font-size: 14px;
     }
@@ -521,10 +528,18 @@
     .validation-conditions-container {
         font-size: 12px;
         padding: 5px;
-        color: #ff79c6;
+        color: #ff5555;
     }
     .field-validation-error {
         color: #ff5555;
+    }
+    .validation-conditions-container.has-error {
+    color: #ff5555;
+    }
+    .form-container .validation-failed {
+    display: block;
+    color: #ff5555;
+    clear: both;
     }
     .topic-list li .detail {
         color: #8be9fd;

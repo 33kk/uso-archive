@@ -3,12 +3,12 @@
 @namespace      USO Archive
 @author         Lexan
 @description    `This theme is designed to make the desktop version of Instagram look and feel like Instagram's Dark Theme on mobile, while also providing a widescreen fix for Direct Messages and other parts of Instagram's UIIf you would like to check out my channel, it can be found here: https://www.youtube.com/daniel55555d`
-@version        20210507.9.50
+@version        20210712.15.13
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("instagram.com") {
-/* Instagram Dark Theme v6.0_*/
+/* Instagram Dark Theme v7.0*/
 /* Created by Lexan*/
 
 /*DM THEME COLOUR - If you would like a different colour for your DM Chat bubbles, change this value*/
@@ -400,7 +400,19 @@ a, a:visited{
     a.r8ZrO{
         color: var(--text-color)
     }
-
+    
+/*Post Insights*/
+    .lDRO1,.vwCYk{
+        border: none;
+        border-top: none;
+        border-bottom: none;
+        color: var(--text-color);
+    }
+    
+    .fmD5w{
+        border-top: none
+    }
+    
 /*Saved Posts*/
 .coreSpriteSaveNull{
     filter: invert(1) !important;
@@ -415,6 +427,16 @@ a, a:visited{
     .zs-nU{
         border: none;
         height: 300px !important;
+    }
+    
+    .iOUje{
+        border-top: none;
+        border-bottom: 10px solid #000 !important;
+    }
+    
+    .BVj74:hover{
+        background-color: var(--item-color);
+        transition: .09s;
     }
 
 /*Profile*/

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Patkee
 @description    `This theme changes the appearance of the page to be more eye-interested.I hope you will be enjoying`
-@version        20210527.15.4
+@version        20210712.18.27
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -123,7 +123,7 @@
 
 .friendbar-onlineNotification-headerText
  {
-    background-color: #473e52;
+    background-color: #60546f;
  }
 
 .shoppingbag-background-container
@@ -2241,5 +2241,12 @@ one2one-buttons-giftBtn
  {
     background: url(https://i.ibb.co/zV9hr7m/v66-wall-icons-3.png) -349px -26px no-repeat;
     background-size: 380px auto;
+ }
+
+.friendbar-onlineNotification.online
+ {
+    background-image: url(https://i.ibb.co/MGJ5MnJ/friendlist-popup-message.png);
+    background-size: 166px 287px;
+    height: 287px;
  }
 }

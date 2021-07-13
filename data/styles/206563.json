@@ -7,7 +7,7 @@
     "format": "uso",
     "category": "youtube",
     "createdAt": "2021-06-23T11:04:48.000Z",
-    "updatedAt": "2021-06-23T11:04:48.000Z",
+    "updatedAt": "2021-07-12T19:03:58.000Z",
     "license": "NO-REDISTRIBUTION",
     "author": {
       "id": 1197559,
@@ -17,8 +17,8 @@
   },
   "stats": {
     "installs": {
-      "total": 0,
-      "weekly": 0
+      "total": 39,
+      "weekly": 13
     }
   },
   "screenshots": {
@@ -35,6 +35,6 @@
     "data": []
   },
   "style": {
-    "css": "@-moz-document url-prefix(\"https://www.youtube.com/watch\") {\r\n.ytp-caption-segment {\r\n\t/*font-size: 36px !important;*/\r\n\tbackground: none !important;\r\n\tpadding-bottom: 5 !important;\r\n\tfont-family: \"Netflix Sans\", sans-serif !important;\r\n  \tfont-weight: 700 !important;\r\n \ttext-shadow: rgba(0, 0, 0, 1) 0em 0em .2em !important;\r\n}\r\n}"
+    "css": "@-moz-document url-prefix(\"https://www.youtube.com/watch\") {\r\n.ytp-caption-segment {\r\n\tbackground: none !important;\r\n\tfont-family: \"Netflix Sans\", sans-serif !important;\r\n  \tfont-weight: 700 !important;\r\n \ttext-shadow: rgba(0, 0, 0, 1) 0em 0em .2em !important;\r\n}\r\n}"
   }
 }

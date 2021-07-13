@@ -2,8 +2,8 @@
 @name           shiftyy's MyAnimeList Dark+
 @namespace      USO Archive
 @author         shiftyy
-@description    `(Works only on MAL *PROFILE* page).A simple dark recolor of mal profile page + some other design changes.Main Features:-Customizable Background Color-Customizable Background Image-Customizable Font Color-Customizable Progress Graphs Color-Hide "About Me" Section (Optional)-Hide "Favorites" Section (Optional)-Smaller "MAL" logo-Remove RSS Feeds-Remove AdsFeel free to give me feedback or report any bug/inconsistency!`
-@version        20210711.14.23
+@description    `(Works only on MAL <b>PROFILE</b> and <b>ANIME/MANGA</b> pages).A simple dark recolor of mal profile page + some other design changes.Main Features:-Customizable Background Color-Customizable Background Image-Customizable Font Color-Customizable Progress Graphs Color-Hide "About Me" Section (Optional)-Hide "Favorites" Section (Optional)-Smaller "MAL" logo-Remove RSS Feeds-Remove AdsFeel free to give me feedback or report any bug/inconsistency!`
+@version        20210712.18.31
 @license        CC-BY-NC-SA-4.0
 @preprocessor   uso
 @advanced text fontS "Font Size" "12"
@@ -19,9 +19,10 @@ bgI "Image" <<<EOT background:
 }
 @advanced color colorBG "Background Color" #000000
 @advanced dropdown bgImage "Background Image" {
-bgA "Animated Example*" <<<EOT https://iae.news/wp-content/uploads/2021/04/04b69fc9c44f23b430c8171ea422d44b.gif EOT;
+bgA1 "Animated Example 1*" <<<EOT https://iae.news/wp-content/uploads/2021/04/04b69fc9c44f23b430c8171ea422d44b.gif EOT;
+bgA2 "Animated Example 2" <<<EOT https://i.pinimg.com/originals/d0/9b/6d/d09b6d439a644c38c9f5354e3627a6a6.gif EOT;
 bg2 "Road" <<<EOT https://cdnb.artstation.com/p/assets/images/images/007/286/185/large/van-setia-putra-switz.jpg?1505067446 EOT;
-bg1 "Mountain" <<<EOT https://i.pinimg.com/originals/dc/20/2f/dc202fff4a6bdf40f68cf853a41e54a1.jpg EOT;
+bg1 "Mountain" <<<EOT https://i.redd.it/g25xdhe5bm861.jpg EOT;
 
 	bgImage-custom-dropdown "Custom" <<<EOT /*[[bgImage-custom]]*\/ EOT;
 }
@@ -56,7 +57,7 @@ favoritesYes "Yes" <<<EOT display: none; EOT;
 @advanced color cColor "Completed Color" #3D50A8
 
 ==/UserStyle== */
-@-moz-document url-prefix("https://myanimelist.net/profile/") {
+@-moz-document url-prefix("https://myanimelist.net/profile"), url-prefix("https://myanimelist.net/anime"), url-prefix("https://myanimelist.net/manga") {
 body:not(.ownlist) {
     /*[[background]]*/;
     font-family: Segoe UI, Arial;
@@ -651,5 +652,325 @@ option {
     position: relative;
     width: 0px;
     height: 0px;
+}
+}
+
+
+
+
+@-moz-document url-prefix("https://myanimelist.net/anime"), url-prefix("https://myanimelist.net/manga") {
+/* anime/manga page */
+
+.page-common #content {
+    top: 30px;
+    right: 12px;
+}
+.js-scrollfix-bottom-rel{
+    margin-left: 10px;
+}
+
+.page-common h2 {
+    font-size: 15px !important;
+    border-color: #bebebe00;
+    color: /*[[hFont]]*/ !important;
+}
+.page-common .h1.edit-info div.h1-title h1 {
+    color: /*[[pFont]]*/;
+    font-size: 22px;
+}
+.page-common .h1 .title-english {
+    color: gray;
+    font-size: 16px;
+}
+
+.page-common #horiznav_nav ul li {
+    background-color: #84848400;
+}
+.page-common #horiznav_nav ul li .horiznav_active {
+    background-color: #97979796;
+    color: #fff;
+}
+.page-common #horiznav_nav {
+    border-color: #91919196;
+}
+.page-common #horiznav_nav ul li a:hover {
+    background-color: #d2d2d296;
+    color: #fff;
+}
+
+.page-common #menu_right{
+    z-index: 3;
+}
+.page-common .h1.edit-info span.h1-title, .page-common .h1.edit-info div.h1-title {
+    display: table-cell;
+}
+.page-common .h1.edit-info div.header-right {
+    padding-top: 40px
+}
+
+/* TOP BUTTONS */
+.page-common #horiznav_nav ul li a {
+    background-color: #0000;
+    color: /*[[hFont]]*/;
+    font-size: 12px;
+    padding: 4px 4px;
+}
+
+/* SCORE */
+.anime-detail-header-stats .stats-block .score {
+    color: /*[[pFont]]*/;
+    font-size: 31px;
+    font-weight: 600;
+}
+.anime-detail-header-stats .stats-block .score:after {
+    bottom: 0px;
+    left: 31px;
+    color: /*[[hFont]]*/;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+
+
+.anime-detail-header-stats .stats-block:before {
+    background-color: #d8d8d800;
+    box-shadow: #fff0 1px 0 1px 0;
+}
+.anime-detail-header-stats .stats-block .numbers {
+    color: /*[[pFont]]*/;
+    font-size: 16.5px;
+}
+.page-common a, .page-common a:visited {
+    color: /*[[hFont]]*/; 
+    font-size: 12px;
+}
+.page-common a, .page-common a:visited {
+    color: /*[[hFont]]*/;
+}
+
+
+.anime-detail-header-stats .stats-block {
+    background-color: #0000006b;
+    border: #ebebeb00 1px solid;
+    height: 76.5px;
+}
+.anime-detail-header-stats .user-status-block {
+    background-color: #0000006b;
+    border: #ebebeb00 1px solid;
+    margin: 0px !important;
+}
+
+
+/* STATUS BUTTON */
+.user-status-block .form-user-status[data-class=completed] {
+    border: /*[[cColor]]*/ 2px solid;
+    color:  /*[[cColor]]*/;
+    border-radius: 50px;
+}
+.user-status-block .form-user-status[data-class=reading], .user-status-block .form-user-status[data-class=watching] {
+    border:  /*[[wColor]]*/ 2px solid;
+    color:  /*[[wColor]]*/; 
+    border-radius: 50px;
+}
+.user-status-block .form-user-status[data-class=on-hold] {
+    border: #e7b715 2px solid;
+    color: #e7b715;
+    border-radius: 50px;
+}
+.user-status-block .form-user-status[data-class=dropped] {
+    border: #a12f31 2px solid;
+    color: #a12f31;
+    border-radius: 50px;
+}
+.user-status-block .form-user-status[data-class=plantoread], .user-status-block .form-user-status[data-class=plantowatch] {
+    border: #595959 2px solid;
+    color: #8f8f8f;
+    border-radius: 50px;
+}
+
+.user-status-block .form-user-status {
+    background-color: #00000045;
+    border: #595959 2px solid;
+    font-size: /*[[fontS]]*/;
+}
+
+/*  YOUR LIST IS PUBLIC BY DEFAULT */
+.page-common .notice_open_public {
+    color: #dfdfdf;
+    font-size: 11px;
+}
+
+
+/*  SCORE BUTTON  */
+.user-status-block .form-user-score {
+    background-color: #00000045;
+    border: #595959 2px solid;
+    border-radius: 50px;
+    color: #d2d2d2;
+    font-size: /*[[fontS]]*/;
+}
+
+/*  EPISODES SEEN BUTTON  */
+.user-status-block .form-user-episode.completed input[type=text] {
+    color: #fff;
+    background: #00000045;
+}
+.user-status-block .form-user-episode input[type=text] {
+    border: #bfbfbf00 2px solid;
+    color: #c8c8c8;
+    font-size: /*[[fontS]]*/;
+}
+.user-status-block .form-user-episode {
+    background-color: #bfbfbf00;
+    border: #595959 2px solid;
+    border-radius: 50px;
+    color: #dbdbdb;
+    display: inline-block;
+    font-family: Avenir,lucida grande,tahoma,verdana,arial,sans-serif;
+    font-size: 11px;
+    padding: 3px 8px;
+    text-align: left;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.user-status-block .btn-user-status-add-list {
+    background-color: #4f74c8;
+    border: #4f74c8 1px solid;
+    border-radius: 50px;
+    color: #fff!important;
+    font-size: 12px;
+}
+
+/*  EDIT STATUS  */
+.page-common .inputtext {
+    border-color: #595959;
+    color: #bfbfbf;
+    border-width: 1px;
+    font-size: 12px;
+    padding-left: 5px;
+    border-radius: 50px;
+    background: #00000045;
+}
+.page-common #myinfo_watchedeps {
+    color: #cacaca;
+    background: #00000045;
+}
+.page-common #profileRows a:first-of-type {
+    border-top: #9f9f9f00 1px solid;
+}
+.page-common #profileRows a, .page-common .profileRows a {
+    border-color: #4a4a4a00;
+    background: #1313133b;
+    color: #ccc;
+}
+
+.page-common p, .page-common .textReadability, .page-common span {
+    border: #ebebeb00;
+}
+
+
+.detail-characters-list .left-column table:nth-of-type(even), .detail-characters-list .left-right table:nth-of-type(even) {
+    background-color: #0000;
+}
+.page-common div.picSurround img {
+    background-color: #fff0;
+    border: 1px solid #bebebe00;
+}
+.detail-characters-list .left-column.divider:after {
+    border-right: #ebebeb00 1px solid;
+}
+
+.btn-detail-recommendations-view-all {
+    background-color: #0000004f;
+    width: 90px;
+}
+
+.page-forum .forum_boardrow1 {
+    background-color: #0000006b;
+    border-color: #ebebeb00;
+}
+.page-forum .forum_boardrow2 {
+    background-color: #0000006b;
+    border-color: #ebebeb00;
+}
+
+.news-list .comment-list, .news-list .news-unit {
+    border-bottom: #ededed00 1px solid;
+    font-family: Avenir,lucida grande,tahoma,verdana,arial,sans-serif;
+    margin-bottom: 16px;
+    padding: 0 0 16px;
+    width: 720px;
+}
+
+.detail-page-featured-article .news-list .news-unit .news-unit-right .text {
+    color: #c8c8c8;
+}
+
+.video-block.episode-video .outside-region .outside-region-block {
+    background-image: url(https://i.postimg.cc/rwR2vMGT/icon-pulldown2.png);
+}
+
+/*  RECOMMENDATIONS  */
+.page-common .bgColor1 {
+    background-color: #00000057;
+}
+
+/*  EPISODE  */
+.episode_list .episode-list-header {
+    background-color: #0000006e!important;
+}
+.episode_list .episode-list-data td {
+    background-color: #0000006e;
+    color: #828282;
+}
+.episode_list .episode-list-data:nth-of-type(odd) td {
+    background-color: #0000006e;
+}
+.episode_list td {
+    border: #56565600 1px solid!important;
+    padding: 6px 0;
+}
+.episode_list .episode-list-header td {
+    border-right: #fff0 1px solid!important;
+    color: #b9b9b9;
+}
+.page-common .border_solid {
+    border-color: #bebebe00;
+}
+
+
+.news-list .comment-list .image-link, .news-list .news-unit .image-link {
+    border: #d8d8d800 1px solid;
+}
+.page-forum .forum-table-header {
+    background-color: #0009;
+}
+.page-common .bgColor2 {
+    background-color: #00000026;
+}
+.page-common .normal_header {
+    border-color: #bebebe00;
+    color: #b3b3b3;
+}
+
+div#amzn-native-ad-0 div.amzn-native-products-list div.amzn-native-product {
+    border: 1px solid #ccc0;
+    background-color: #00000036;
+}
+.page-common .border_top {
+    border-top: #ebebeb00 1px solid;
+}
+.page-common .fl-r{
+    width: 80px;
+}
+.page-common .borderClass {
+    border-color: #00000000 !important;
+}
+.page-common #searchBar.searchBar #topSearchText {
+    font-size: 11px;
+}
+.page-common td {
+    font-size: /*[[fontS]]*/;
 }
 }
