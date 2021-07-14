@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         juan garcia
 @description    `this will make gaia dark, main color will be black however grey, dark blue and some green to make text stand out better providing this one because the one dark theme is no longer supported and others are not happy with the dark blue theme. this addresses both of those issues and gives you another option for dark theme WILL WORK for gaia upgrade WILL WORK by itself with no programs added onWILL WORK with other scripts turned on WILL NOT WORK for better gaiaUPDATE: NO LONGER A GLOBAL SCRIPT PLEASE UPDATE OR REINSTALL!!!`
-@version        20200601.1.43
+@version        20210714.5.37
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -645,4 +645,8 @@ html {
 	border-right: 1px solid #000;
 	margin: 0;
 	background: black repeat-x 0 0;
+}.postbody {
+	font-family: sans-serif;
+	font-size: 14px;
+	color: black;
 }}

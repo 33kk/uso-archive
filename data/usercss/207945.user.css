@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         ybbpgfjtey
 @description    `龙空第五纪元UI空间浪费过多，如页首大段空白、内容区间隔过多，本样式表用于对此进行优化。主要修改了首页、论坛页、帖子页面及新贴页面。`
-@version        20210713.12.21
+@version        20210714.11.50
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -77,9 +77,14 @@ h4~div  li::before {
 
 /* 论坛名放到页尾 */
 
-.css-xdvosn {
+.css-1jjckkm {
   display: flex;
 	flex-direction: column-reverse;
+}
+
+.forum-top {
+	width: unset !important;
+	margin: 0 80px !important;
 }
 
 /* 发表帖子按钮置于页面顶端 */
@@ -128,7 +133,7 @@ h4~div  li::before {
 }
 
 /* 热门置于ID前 */
-.css-1oa56wn{
+.css-1g2kfon{
 	display: flex;
 	flex-direction: column-reverse;
 	justify-content: flex-end;
@@ -140,14 +145,16 @@ h4~div  li::before {
 
 /* 标题栏*/
 
-.css-wd6gb6 {
+.css-1g06pxo {
 	padding: 8px 0;
+	width: unset;
+	margin: 0 80px;
+}
+.thread-header-main {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: flex-end;
 	align-items: center;
-	width: unset;
-	margin: 0 80px;
 }
 .thread-title {
 	margin-bottom: 0;

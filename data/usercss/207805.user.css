@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         柴之阳
 @description    `pink`
-@version        20210710.18.1
+@version        20210714.2.4
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -39,6 +39,19 @@ a {
 
 .kp-blk.c2xzTb .g, .kp-blk.ruTcId .g, .kp-blk.HanQmf .g, .kp-blk.c2xzTb+.kno-ftr {
     width: auto;
+}
+.FPdoLc.lJ9FBc:last-child > center{
+    display:none;
+}
+
+
+/**首页footer屏蔽*/
+.KxwPGc{
+    display:none!important;
+}
+
+.c93Gbe{
+    background: #f2f2f20d!important;
 }
 
 /**背景*/

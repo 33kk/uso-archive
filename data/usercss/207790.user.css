@@ -2,8 +2,8 @@
 @name           shiftyy's MyAnimeList Dark+
 @namespace      USO Archive
 @author         shiftyy
-@description    `(Works only on MAL <b>PROFILE</b> and <b>ANIME/MANGA</b> pages).A simple dark recolor of mal profile page + some other design changes.Main Features:-Customizable Background Color-Customizable Background Image-Customizable Font Color-Customizable Progress Graphs Color-Hide "About Me" Section (Optional)-Hide "Favorites" Section (Optional)-Smaller "MAL" logo-Remove RSS Feeds-Remove AdsFeel free to give me feedback or report any bug/inconsistency!`
-@version        20210712.18.31
+@description    `(Works only on MyAnimeList <b>Profile</b> and <b>Anime/Manga</b> pages).A simple dark recolor of mal profile page + some other design changes.Main Features:-Customizable Background Color/Image-Customizable Font Color/Size-Customizable Progress Graphs Color-Hide "About Me" Section (Optional)-Hide "Favorites" Section (Optional)-Smaller "MAL" logo-Remove RSS Feeds-Remove AdsFeel free to give me feedback or report any bug/inconsistency!`
+@version        20210714.11.6
 @license        CC-BY-NC-SA-4.0
 @preprocessor   uso
 @advanced text fontS "Font Size" "12"
@@ -57,7 +57,7 @@ favoritesYes "Yes" <<<EOT display: none; EOT;
 @advanced color cColor "Completed Color" #3D50A8
 
 ==/UserStyle== */
-@-moz-document url-prefix("https://myanimelist.net/profile"), url-prefix("https://myanimelist.net/anime"), url-prefix("https://myanimelist.net/manga") {
+@-moz-document url-prefix("https://myanimelist.net/profile"), url-prefix("https://myanimelist.net/anime/"), url-prefix("https://myanimelist.net/manga/") {
 body:not(.ownlist) {
     /*[[background]]*/;
     font-family: Segoe UI, Arial;
@@ -141,6 +141,11 @@ option {
 .page-common .header-list .header-list-dropdown {
     background-color: #fff0;
     border: #2e51a200 2px solid;
+}
+.page-common .header-notification-button.has-unread:after {
+    background-color: /*[[cColor]]*/;
+    border: #fff0 1px solid;
+    color: #fff;
 }
 
 .page-common .header-profile-link {
@@ -658,7 +663,7 @@ option {
 
 
 
-@-moz-document url-prefix("https://myanimelist.net/anime"), url-prefix("https://myanimelist.net/manga") {
+@-moz-document url-prefix("https://myanimelist.net/anime/"), url-prefix("https://myanimelist.net/manga/") {
 /* anime/manga page */
 
 .page-common #content {
@@ -972,5 +977,26 @@ div#amzn-native-ad-0 div.amzn-native-products-list div.amzn-native-product {
 }
 .page-common td {
     font-size: /*[[fontS]]*/;
+}
+.anime-detail-header-stats .stats-block .score:before {
+    background-color: #52525275;
+    border-radius: 50px;
+    color: #fff;
+    width: 50px;
+}
+div#amzn-native-ad-0 div.amzn-native-products-list div.amzn-native-product {
+    border: 1px solid #8a8a8a00  !important;
+    background-color: #00000036 !important;
+    color: /*[[hFont]]*/;
+}
+.page-common .borderDark {
+    border-color: #00000000;
+}
+.amazon-ads.anime-manga-detail.bottom div#amzn-native-ad-0 .amzn-native-header .amzn-native-header-text {
+    border-bottom: #8e8e8e59 1px solid;
+    color: #ccc;
+}
+.spaceit.textReadability.word-break.pt8.mt8 {
+    border-color: #93939330 !important;
 }
 }

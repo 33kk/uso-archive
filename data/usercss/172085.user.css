@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Octopus
 @description    `Simply - dark and cleaned style for Gmail.Have fun!`
-@version        20210623.6.46
+@version        20210714.7.1
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -12,7 +12,7 @@
 @namespace      GmailDark
 @author         Octopus
 @description    `Simply - dark and cleaned style for Gmail.Have fun!`
-@version        20210623.08.46
+@version        20210714.8.59
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -41,7 +41,7 @@ body,.aAU,.aic,.aeN .ajl{background:#2f2f2f}
 .l2{background:#2f2f2f}
 .brC-aT5-aOt-Jw{background:#2f2f2f;border-left:1px solid #2f2f2f}
 .brC-aT5-aOt-ato-Kp-Jw::before{border-top:1px solid #717171}
-.aHS-bnw .qj,.TO>.aHS-bu1 .qj,.aHS-bnu .qj,.aHS-bnq .qj,.aHS-bns .qj,.aHS-bnv .qj,.aHS-aHO .qj,.aHS-aHP .qj,.aHS-bnx .qj,.CL::before,div.TH,.aJZ .qj,div.TH,.aqN{filter:invert(.8)}
+.aHS-bnw .qj,.TO>.aHS-bu1 .qj,.aHS-bnu .qj,.aHS-bnq .qj,.aHS-bns .qj,.aHS-bnv .qj,.aHS-aHO .qj,.aHS-aHP .qj,.aHS-bnx .qj,.CL::before,div.TH,.aJZ .qj,div.TH,.aqN,.aEc.aHS-bnr .qj{filter:invert(.8)}
 #tc{background-color:inherit;border:3px solid #2F2F2F}
 .prefs{background-color:#1E1E1E}
 #mainForm input{color:#9C9C9C}
