@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         custie
 @description    `Purple theme for lolz.guruby custie (https://lolz.guru/custie/)`
-@version        20210628.18.40
+@version        20210713.20.50
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -151,18 +151,13 @@ a.crumb:before {
     filter: hue-rotate(var(--accent-hue));
 }
 
-.messageSimple a.like:hover .like2Icon {
-    filter: hue-rotate(var(--like-hue));
+.message .item.unlike .likeCounterIcon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='m0 0h24v24h-24z' fill='none'/%3E%3Cpath d='m17 2.9a6.43 6.43 0 0 1 6.4 6.43c0 3.57-1.43 5.36-7.45 10l-2.78 2.16a1.9 1.9 0 0 1 -2.33 0l-2.79-2.12c-6.05-4.68-7.45-6.47-7.45-10.04a6.43 6.43 0 0 1 6.4-6.43 5.7 5.7 0 0 1 5 3.1 5.7 5.7 0 0 1 5-3.1z' fill='%23ff3347' style='&%2310; fill: rgb(130, 129, 20);&%2310;'/%3E%3C/svg%3E");
 }
 
-.messageSimple .item.unlike .like2Icon {
-    filter: hue-rotate(var(--like-hue));
-}
-
-.message .item > .likeCounterIcon,
-.message .item:hover > .likeCounterIcon {
-    filter: hue-rotate(var(--like-hue));
-}
+.message .item:hover .likeCounterIcon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' height='100%25' width='100%25'%3E%3Ctitle%3Elike_outline_24%3C/title%3E%3Cpath d='M0,0H24V24H0Z' fill='none'/%3E%3Cpath d='M17,2.9A6.43,6.43,0,0,1,23.4,9.33c0,3.57-1.43,5.36-7.45,10l-2.78,2.16a1.9,1.9,0,0,1-2.33,0L8.05,19.37C2,14.69.6,12.9.6,9.33A6.43,6.43,0,0,1,7,2.9a6.46,6.46,0,0,1,5,2.54A6.46,6.46,0,0,1,17,2.9ZM7,4.7A4.63,4.63,0,0,0,2.4,9.33c0,2.82,1.15,4.26,6.76,8.63l2.78,2.16a.1.1,0,0,0,.12,0L14.84,18c5.61-4.36,6.76-5.8,6.76-8.63A4.63,4.63,0,0,0,17,4.7c-1.56,0-3,.88-4.23,2.73L12,8.5l-.74-1.07C10,5.58,8.58,4.7,7,4.7Z' fill='%23828a99' style='&%2310; fill: rgb(130, 128, 20);&%2310;'/%3E%3C/svg%3E") }
+                                            
 
 .message .item > .userTagIcon,
 .message .item:hover > .userTagIcon,
@@ -229,6 +224,24 @@ a.crumb:before {
     background: var(--accent-dark3);
 }
 
+.conversationItem.active .avatar.isOnline::before {
+    border: 3px solid #272727;
+}
+
+.conversationItem .avatar.isOnline::before {
+    content: '';
+    position: absolute;
+    background-color: rgb(130 88 248);
+    border-radius: 50%;
+    top: 33px;
+    left: 34px;
+    border: 3px solid rgb(39, 39, 39);
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+    z-index: 1;
+}
+
 .contestThreadBlock .memberCounter>.backgroundCounter {
     position: absolute;
     width: 69%;
@@ -237,10 +250,48 @@ a.crumb:before {
     height: 30px;
 }
 
+.conversationItem.active, .conversationSearch--Recipient.active {
+    background: rgb(130 88 248);
+}
+
+.message .selectedIcon {
+    background: rgb(130 88 248);
+    color: #f5f5f5;
+    position: absolute;
+    opacity: 0;
+    font-size: 9px;
+    border-radius: 50%;
+    width: 16px;
+    height: 17px;
+    line-height: 17px;
+    text-align: center;
+    left: 7px;
+    top: 19.5px;
+    padding-left: 1px;
+}
+
+.universalSearchForm:before {
+    font-family: "Font Awesome 5 Pro";
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 600;
+    color: rgb(130 88 248);
+    content: "\f002";
+    float: left;
+    font-size: 15px;
+    line-height: 50px;
+    left: 20px;
+    pointer-events: none;
+    position: absolute;
+}
+
 .message .onlineMarker {
     border-radius: 50%;
     display: inline-block;
-    background: rgb(130,88,248);
+    background: rgb(130 88 248);
     width: 10px;
     height: 10px;
 }
@@ -285,6 +336,10 @@ input.labelauty + label {
     background-color: var(--accent-dark2);
 }
 
+.messageSimple .item.unlike .like2Icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' style='&%2310; fill: rgb(130, 88, 119);&%2310;'%3E%3Cpath d='M4 21h1V8H4c-1.104 0-2 .896-2 2v9C2 20.104 2.896 21 4 21zM20 8h-7l1.122-3.368C14.554 3.337 13.59 2 12.225 2H12L7 7.438V21h11l3.912-8.596C21.937 12.291 21.976 12.114 22 12v-2C22 8.896 21.104 8 20 8z'/%3E%3C/svg%3E");
+}
+
 #Captcha img {
     filter: contrast(150%) invert(20%);
 }
@@ -299,16 +354,20 @@ input.labelauty + label {
     background: var(--accent-dark);
 }
 
+/* Logo */
+#lzt-logo {
+    width: 87px;
+    height: 44px;
+    float: left;
+    margin-left: -10px;
+    background-image: url(https://i.imgur.com/Vg4RK2y.png);
+    background-size: 100%;
+}
+
 /* Controls */
 div.primaryControls:before {
     color: var(--accent-dark0) !important;
 }
-
-/* Logo */
-  #lzt-logo
-  {
-    background: url("https://i.imgur.com/4J2XWZ8.png");
-  }
 
 .marketMyPayments .item .amountChange .in {
     color: rgb(130 88 248);
@@ -348,6 +407,19 @@ div.primaryControls:before {
 .navTabs .navTab.PopupClosed .navLink:hover .counter-container img,
 .navTabs .navTab.PopupOpen .navLink .counter-container img {
     filter: hue-rotate(var(--accent-hue));
+}
+
+.xenOverlay.memberCard .avatar.online .img::before {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    bottom: 1px;
+    right: 1px;
+    background: rgb(130 88 248);
+    display: inline-block;
+    content: '';
+    border-radius: 50%;
+    border: 5px solid rgb(39, 39, 39);
 }
 
 .forumSearchThreads--Link--Icon {
@@ -696,11 +768,6 @@ html .redactor_toolbar li a:hover {
     background: var(--accent);
 }
 
-#lzt-market-logo {
-    background: url(https://i.imgur.com/hAfLKgW.png) no-repeat center;
-    background-size: 100%;
-}
-
 .marketUpgradeBadge::before {
     content: '';
     background: url(https://i.imgur.com/hAfLKgW.png) no-repeat center;
@@ -710,10 +777,16 @@ html .redactor_toolbar li a:hover {
     float: left;
 }
 
-/******************** Market ********************/
 #lzt-market-logo {
-    filter: hue-rotate(var(--accent-hue));
+    background: url(https://i.imgur.com/hAfLKgW.png) no-repeat center;
+    background-size: 100%;
+    width: 135px;
+    height: 44px;
+    float: left;
+    margin: 0 10px 0 0;
 }
+
+/******************** Market ********************/
 
 .backToHomeButton {
     background: var(--accent-dark);

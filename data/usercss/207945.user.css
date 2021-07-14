@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           新龙空精简UI_1.1.1
+@name           新龙空精简UI_1.2.0
 @namespace      USO Archive
 @author         ybbpgfjtey
 @description    `龙空第五纪元UI空间浪费过多，如页首大段空白、内容区间隔过多，本样式表用于对此进行优化。主要修改了首页、论坛页、帖子页面及新贴页面。`
-@version        20210713.11.11
+@version        20210713.12.21
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -54,13 +54,14 @@ h4~div  li::before {
 
 /* 论坛名两列显示 */
 .css-1cw8ku2~div {
-	width: 700px;
-  display: flex;
-  flex-flow: wrap;
+	width: 100%;
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-between;
 }
 
 .css-1fii08f {
-	width: 350px;
+	width: 320px;
 }
 
 /* 热门置于ID前 */
@@ -82,14 +83,40 @@ h4~div  li::before {
 }
 
 /* 发表帖子按钮置于页面顶端 */
-.right .ant-btn-primary {
-	position: fixed;
-	top: 5px;
-	left: 350px;
-	z-index: 10;
-	width: 120px;
-	height: 30px !important;
-	padding: 0;
+@media (min-width:992px){
+	.right .ant-btn-primary {
+		position: fixed;
+		top: 5px;
+		left: 350px;
+		z-index: 10;
+		width: 120px;
+		height: 30px !important;
+		padding: 0;
+	}
+}
+
+@media (max-width:991px){
+	.right .ant-btn-primary span {
+		text-indent: 5px;
+	}
+	.right .ant-btn-primary span:before {
+		
+		content: url('data:image/svg+xml;%20charset=utf8,%3C?xml%20version=%221.0%22%20standalone=%22no%22?%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-//W3C//DTD%20SVG%201.1//EN%22%20%22http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd%22%3E%0A%3Csvg%20version=%221.1%22%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%2264%2064%20896%20896%22%20focusable=%22false%22%20data-icon=%22plus%22%20width=%221em%22%20height=%221em%22%20fill=%22currentColor%22%20aria-hidden=%22true%22%3E%3Cdefs%3E%3Cstyle%3E%3C/style%3E%3C/defs%3E%3Cpath%20d=%22M482%20152h60q8%200%208%208v704q0%208-8%208h-60q-8%200-8-8V160q0-8%208-8z%22%3E%3C/path%3E%3Cpath%20d=%22M176%20474h672q8%200%208%208v60q0%208-8%208H176q-8%200-8-8v-60q0-8%208-8z%22%3E%3C/path%3E%3C/svg%3E')
+	}
+	.right .ant-btn-primary {
+		position: fixed;
+		top: 5px;
+		left: 172px;
+		z-index: 10;
+		height: 30px !important;
+		padding: 0;
+		background: none;
+		border: none;
+		box-shadow: none;
+		text-shadow: none;
+		width: 30px;
+		overflow: hidden;
+	}
 }
 
 .css-1xrb416{

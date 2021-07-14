@@ -2,12 +2,12 @@
   "id": 184730,
   "info": {
     "name": "EN Vtubers Google Animation",
-    "description": "<p>If the update/install button is not working:</p>\r\n<a href=\"https://rebrand.ly/r7x9qj5\">⚠️TROUBLESHOOTING⚠️</a>\r\n\r\n<p>This animation required a lot of effort to create, \r\nmade possible by my supportive Patrons on Patreon💗\r\n</p>\r\n<b>You can find my works on links below ヽ(♡‿♡)ノ</b>\r\n<a href=\"https://rebrand.ly/s8i1c\" class=\"w3-button w3-red w3-round-xxlarge\">Exclusive Versions</a>\r\n<a href=\"https://rebrand.ly/778d5\" class=\"w3-button w3-blue w3-round-xxlarge\">Follow PausePlay</a>\r\n<a href=\"https://rebrand.ly/uwax0\" class=\"w3-button w3-round-xxlarge w3-pink\">More Waifus</a>\r\n\r\n<p>\r\nHUGE THANKS to @MaestormXR for Reviewing the code...\r\nNOTE: \r\n⬛This is applied in Google.com and other Google domains,\r\n     can be Installed in Chrome and FireFox\r\n⬛May not work properly if you have installed more than one style at the same time.\r\n⬛Google updates banners that may remove \r\n     or misalign animations, expect that this code will not work all the time. I'm no God.\r\n     Thanks\r\n</p>\r\n</div>",
+    "description": "<a href=\"bit.ly/GGLWAIFU\" class=\"w3-button w3-red w3-round-xxlarge\">GOOGLE START PAGE Now available</a>\r\n<p>If the update/install button is not working:</p>\r\n<a href=\"https://rebrand.ly/r7x9qj5\">⚠️TROUBLESHOOTING⚠️</a>\r\n\r\n<p>This animation required a lot of effort to create,\r\nmade possible by my supportive Patrons on Patreon💗\r\n</p>\r\n<b>You can find my works on links below ヽ(♡‿♡)ノ</b>\r\n<a href=\"https://rebrand.ly/s8i1c\" class=\"w3-button w3-red w3-round-xxlarge\">PATREON</a>\r\n<a href=\"https://rebrand.ly/778d5\" class=\"w3-button w3-blue w3-round-xxlarge\">TWITTER</a>\r\n\r\n<p>\r\nHUGE THANKS to @MaestormXR for Reviewing the code...\r\nNOTE:\r\n⬛This is applied in Google.com and other Google domains,\r\n     can be Installed in Chrome and FireFox\r\n⬛Google updates banners that may remove\r\n     or misalign animations, expect that this code will not work all the time. I'm no God.\r\n     Thanks\r\n</p>\r\n</div>",
     "additionalInfo": "May 4, 2021 Fixes:\r\n✔️Added a \"Custom Setting\" to select specific animation\r\n     (See ⚠️Troubleshooting⚠️ above)\r\n✔️GIF Alignments\r\n\r\nMarch 31, 2021 Fixes:\r\n✔️Toned down Watermarks \r\n     (please don't hate watermarks, they're my only way of advertisement)\r\n✔️GIF Alignments\r\n✔️Transparency\r\n\r\nFeb 14, 2021 Fixes:\r\n✔️Missing Homepage Animation\r\n✔️Bottom Right Animation Not Showing",
     "format": "uso",
     "category": "google",
     "createdAt": "2020-06-05T21:33:14.000Z",
-    "updatedAt": "2021-05-03T00:41:42.000Z",
+    "updatedAt": "2021-07-13T21:14:22.000Z",
     "license": "NO-REDISTRIBUTION",
     "author": {
       "id": 900358,
@@ -17,10 +17,10 @@
   },
   "stats": {
     "installs": {
-      "total": 100948,
-      "weekly": 399
+      "total": 106444,
+      "weekly": 582
     },
-    "rating": 2.3
+    "rating": 3
   },
   "screenshots": {
     "main": {
@@ -172,6 +172,12 @@
             "key": "Img 5",
             "label": "5 Bunny IRL  >",
             "value": "https://rebrand.ly/idkkk8c",
+            "default": false
+          },
+          {
+            "key": "Img 6",
+            "label": "6 Veibae  >",
+            "value": "https://rebrand.ly/e97dcdz",
             "default": false
           }
         ]

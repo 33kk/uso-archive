@@ -1,7 +1,7 @@
 {
   "id": 184730,
   "name": "EN Vtubers Google Animation",
-  "description": "<p>If the update/install button is not working:</p>\r\n<a href=\"https://rebrand.ly/r7x9qj5\">⚠️TROUBLESHOOTING⚠️</a>\r\n\r\n<p>This animation required a lot of effort to create, \r\nmade possible by my supportive Patrons on Patreon💗\r\n</p>\r\n<b>You can find my works on links below ヽ(♡‿♡)ノ</b>\r\n<a href=\"https://rebrand.ly/s8i1c\" class=\"w3-button w3-red w3-round-xxlarge\">Exclusive Versions</a>\r\n<a href=\"https://rebrand.ly/778d5\" class=\"w3-button w3-blue w3-round-xxlarge\">Follow PausePlay</a>\r\n<a href=\"https://rebrand.ly/uwax0\" class=\"w3-button w3-round-xxlarge w3-pink\">More Waifus</a>\r\n\r\n<p>\r\nHUGE THANKS to @MaestormXR for Reviewing the code...\r\nNOTE: \r\n⬛This is applied in Google.com and other Google domains,\r\n     can be Installed in Chrome and FireFox\r\n⬛May not work properly if you have installed more than one style at the same time.\r\n⬛Google updates banners that may remove \r\n     or misalign animations, expect that this code will not work all the time. I'm no God.\r\n     Thanks\r\n</p>\r\n</div>",
+  "description": "<a href=\"bit.ly/GGLWAIFU\" class=\"w3-button w3-red w3-round-xxlarge\">GOOGLE START PAGE Now available</a>\r\n<p>If the update/install button is not working:</p>\r\n<a href=\"https://rebrand.ly/r7x9qj5\">⚠️TROUBLESHOOTING⚠️</a>\r\n\r\n<p>This animation required a lot of effort to create,\r\nmade possible by my supportive Patrons on Patreon💗\r\n</p>\r\n<b>You can find my works on links below ヽ(♡‿♡)ノ</b>\r\n<a href=\"https://rebrand.ly/s8i1c\" class=\"w3-button w3-red w3-round-xxlarge\">PATREON</a>\r\n<a href=\"https://rebrand.ly/778d5\" class=\"w3-button w3-blue w3-round-xxlarge\">TWITTER</a>\r\n\r\n<p>\r\nHUGE THANKS to @MaestormXR for Reviewing the code...\r\nNOTE:\r\n⬛This is applied in Google.com and other Google domains,\r\n     can be Installed in Chrome and FireFox\r\n⬛Google updates banners that may remove\r\n     or misalign animations, expect that this code will not work all the time. I'm no God.\r\n     Thanks\r\n</p>\r\n</div>",
   "user": {
     "id": 900358,
     "name": "PausePlay",
@@ -11,19 +11,19 @@
     "about": null,
     "license": "publicdomain"
   },
-  "updated": "2021-05-03T00:41:42.000Z",
-  "weekly_install_count": 399,
-  "total_install_count": 100948,
-  "rating": 2.3,
-  "after_screenshot_name": "https://userstyles.org/style_screenshots/184730_after.jpeg?r=1620029216",
+  "updated": "2021-07-13T21:14:22.000Z",
+  "weekly_install_count": 582,
+  "total_install_count": 106444,
+  "rating": 3,
+  "after_screenshot_name": "https://userstyles.org/style_screenshots/184730_after.jpeg?r=1626210862",
   "obsoleting_style_id": null,
   "obsoleting_style_name": null,
   "obsolete": 0,
   "admin_delete_reason_id": null,
   "obsoletion_message": null,
   "screenshots": [
-    "https://userstyles.org/style_screenshots/184730_additional_38012.jpeg?r=1620029216",
-    "https://userstyles.org/style_screenshots/184730_additional_38013.jpeg?r=1620029216"
+    "https://userstyles.org/style_screenshots/184730_additional_38012.jpeg?r=1626210862",
+    "https://userstyles.org/style_screenshots/184730_additional_38013.jpeg?r=1626210862"
   ],
   "license": null,
   "created": "2020-06-05T21:33:14.000Z",
@@ -171,6 +171,15 @@
           "default": false,
           "ordinal": 4,
           "install_key": "Img 5"
+        },
+        {
+          "id": 1666586,
+          "style_setting_id": 469727,
+          "label": "6 Veibae  >",
+          "value": "https://rebrand.ly/e97dcdz",
+          "default": false,
+          "ordinal": 5,
+          "install_key": "Img 6"
         }
       ]
     }

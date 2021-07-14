@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         MadNutria
 @description    `This has an image of Rikka Takanashi, an anime character from Love, Chunybio & Other Delusions. It is also very red, because I like the color red. If you don't like that, you can edit and change it.`
-@version        20210609.0.5
+@version        20210713.18.55
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -64,7 +64,7 @@
 .rbx-tabs-horizontal .rbx-tab-heading:focus,
 .rbx-tabs-horizontal .rbx-tab-heading:active
   {
-    box-shadow: 0 -4px 0 .6 #000000 inset;
+    box-shadow: 0 -4px 0 .6 #FF0000 inset;
     ;
   }
 
@@ -85,7 +85,7 @@ body .forum-table-footer,
 .btn-secondary-xs
   {
     background-color: #FF0000 !important;
-    border-color: #0000ff;
+    border-color: #FF0000;
     ;
   }
 
@@ -174,7 +174,7 @@ div.friend_dock_chatbox_titlebar.chat-header-blink-off
 
   #navigation
   {
-    background-color: rgba( 255, 000, 000, 0.8);
+    background-color: rgba(255, 000, 000, 0.8);
   }
 
   .rbx-btn-primary-lg
@@ -253,7 +253,7 @@ div.friend_dock_chatbox_titlebar.chat-header-blink-off
 
   .col-sm-6.section-content.profile-avatar-left
   {
-    background-image: url("https://c4.wallpaperflare.com/wallpaper/947/20/871/abstracto-bosque-dark-oscuro-wallpaper-preview.jpg");
+    background-image: url("https://i.imgur.com/h6lYanO.jpg");
   }
 
   #friends-container
@@ -305,12 +305,12 @@ div.friend_dock_chatbox_titlebar.chat-header-blink-off
   #notification-stream-popover
 .notification-stream-header.ng-scope
   {
-    background: #001C50;
+    background: #FF0000;
   }
 
   #settings-popover-menu, #buy-robux-popover-menu
   {
-    background: #001C50;
+    background: #FF0000;
   }
 
   #right-navigation-header
@@ -690,13 +690,12 @@ div.friend_dock_chatbox_titlebar.chat-header-blink-off
 .popover-inner,
 .dropdown-menu.interaction-container
   {
-    background: rgba(255,0,0,0.5);
+    background: rgb(255,0,0,0.5);
   }
 
   #game-details-play-button-container
 .btn-full-width.btn-common-play-game-lg.btn-primary-md.btn-min-width
   {
-    background: rgba(255,0,0,0.5);
-    border: 2px solid rgba(255,0,0,0.5);
-  }
-}
+    background: rgb(255,0,0,0.5);
+    border: 2px solid;
+  }}

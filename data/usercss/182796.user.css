@@ -3,6 +3,15 @@
 @namespace      USO Archive
 @author         felipesantos989
 @description    `mercadopago dark mode`
+@version        20210713.18.32
+@license        NO-REDISTRIBUTION
+@preprocessor   uso
+==/UserStyle== */
+/* ==UserStyle==
+@name           MercadoPago - Dark Mode
+@namespace      USO Archive
+@author         felipesantos989
+@description    `mercadopago dark mode`
 @version        20200718.0.3
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
@@ -22,7 +31,7 @@ div.mp-app-wrapper {
 }
 
 /* barra da esquerda */
-.mp-nav {
+.mp-nav, .mp-sidebar {
     background: #333333 !important;
 }
 
@@ -622,4 +631,13 @@ input {
 .Title {
     color: #dedede;
 }
+
+.mp-s-link__icon {
+    filter:invert(100%);
+}
+
+.mp-s-link__text {
+    color: #fff;
+}
+
 }

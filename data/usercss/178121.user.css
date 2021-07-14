@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Rob 'n Roll
 @description    `Dark theme for the Dutch NOS website. Makes it easier to read at night.Donker thema voor de NOS website. Maakt het makkelijker om 's avonds te lezen.`
-@version        20210703.22.31
+@version        20210713.15.20
 @license        CC-BY-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -12,7 +12,7 @@
 @namespace      USO Archive
 @author         Rob 'n Roll
 @description    `Dark theme for the Dutch NOS website. Makes it easier to read at night.Donker thema voor de NOS website. Maakt het makkelijker om 's avonds te lezen.`
-@version        20210603.17.59
+@version        20210623.19.48
 @license        CC-BY-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -24,14 +24,16 @@
 /* GENERAL */
     --color: #aaa;
     --color-dark: #666;
-    --color-red: #E61E14;
-
     --link-color-hover: #E61E14;
     --background-color: #2a2a2a;
     --devider-line: #333;
 
     --body-background: #2a2a2a;
     --link-hover: #E61E14;
+
+    --more-articles-h2: #aaa;
+    --more-articles-p: #6F6F6F;
+
 /* HEADER */
     --header-background: #222;
     --header-border-bottom: solid 1px #000;
@@ -81,7 +83,7 @@
 /* FRONTPAGE */
     --fp-color: #aaa;
     --fp-color-hover: var(--link-hover);
-    --fp-white: #fff;
+    --fp-white: #ddd;
     --fp-gradient: rgba(51,51,51,0);
     --fp-color-dark: #6F6F6F;
 
@@ -89,6 +91,11 @@
     --fp-aside-color: #aaa;
     --fp-aside-devider-line: #3a3a3a;
     --box-shadow: #444;
+
+    --korte-videos-button-background: #222;
+    --korte-videos-button-border: #555;
+
+    --fp-collecties-color: #000;
 
 /* ARTIKEL / NIEUWSUUR */
     --breadcrumbs-nos-nieuws: #aaa;
@@ -121,6 +128,12 @@ html {
   scrollbar-color: #555 #333;
 }
 
+/* More articles, underneath articles */
+.moreArticlesContainer_DUvR0hlq h2
+ { color: var(--more-artices-h2); }
+.moreArticlesContainer_DUvR0hlq p
+ { color: var(--more-articles-p); }
+
 .homepage,
 /* Voor pagina's als de collecties kunnen we geen body.class gebruiken. */
     main#content,.page-search,.page-article,.is-embedded,.page-liveblog,.category-index,.sport-index,.sport.voetbal-uitslagen,.page-weather,.page-broadcasts,.page-traffic,.page-livestream
@@ -136,10 +149,10 @@ html {
     header ol#menu li a:hover { color: var(--header-link-color-hover); }
 
     /*frontpage spacer thingy*/
-    div#__next              { background-color: var(--body-background) !important; }
-    div#__next header       { background-color: var(--header-background) !important; border-bottom: var(--header-border-bottom); }
-    div#__next header li.VPDen::before { border-color: var(--header-menu-devider-bar) !important; }
-    div#__next header a     { color: var(--header-link-color); }
+    #__next              { background-color: var(--body-background) !important; }
+    #__next header       { background-color: var(--header-background) !important; border-bottom: var(--header-border-bottom); }
+    #__next header li.VPDen::before { border-color: var(--header-menu-devider-bar) !important; }
+    #__next header a     { color: var(--header-link-color); }
     /*article spacer thingy*/
 /*    header.nav-wrapper      { background-color: hidden !important; }*/
     header.nav-wrapper div[data-ssr-name="components/nos/_global/Navigation/Navigation"] header { background-color: var(--header-background) !important; 
@@ -150,13 +163,13 @@ html {
 
 /* Drop down menu */
     /*frontpage*/
-    div#__next header nav.RqeED ol.bMkaCt ol.eXKAcG
+    #__next header nav.RqeED ol.bMkaCt ol.eXKAcG
      { border: solid 1px var(--header-dropdown-border); }
-    div#__next header nav.RqeED ol#menu li.diRIme::after
+    #__next header nav.RqeED ol#menu li.diRIme::after
      { border:  solid 1px var(--header-menu-devider-line) !important; }
-    div#__next header nav.RqeED ol#menu li.diRIme a.kKWaZY
+    #__next header nav.RqeED ol#menu li.diRIme a.kKWaZY
      { color: var(--header-dropdown-color); }
-    div#__next header nav.RqeED ol#menu li.diRIme a.kKWaZY:Hover
+    #__next header nav.RqeED ol#menu li.diRIme a.kKWaZY:Hover
      { color: var(--header-dropdown-color-hover); }
     /*article, liveblog, etc*/
     header.nav-wrapper a
@@ -169,26 +182,26 @@ html {
 /* Pop-out menu */
 /*popout menu button*/
     /*frontpage*/
-    header.kqGXut li.VPDen button
+    header li.VPDen button
     /*article, liveblog, etc*/
 ,   header.nav-wrapper li.listItem_2fZxURrd.lastListItem_2AnGWxpe button
     { background: var(--header-popout-background) !important; }
 
     /*devider line*/
-    header.kqGXut li.VPDen ol.engvEc li.diRIme::after
+    header.buInrW li.VPDen ol.engvEc li.diRIme::after
 ,   header.nav-wrapper li.listItem_2fZxURrd.lastListItem_2AnGWxpe li.menuItem_2N2vGE1J::after /*a.anchor_30X6uvpW*/
      { border: solid 1px var(--header-menu-devider-line) !important; }
 
 /*popout menu*/
     /*frontpage*/
-    header.kqGXut ol.engvEc
+    header.buInrW ol.engvEc
      { border: var(--header-popout-border); background: var(--header-popout-background); }
 /*    header.kqGXut ol.engvEc li.diRIme*/
-    header.kqGXut ol.engvEc li.diRIme a div.cVUgds span
+    header.buInrW ol.engvEc li.diRIme a div.cVUgds span
      { color: var(--header-popout-color); }
-    header.kqGXut ol.engvEc li.diRIme a:Hover div.cVUgds span.fjrxdu
+    header.buInrW ol.engvEc li.diRIme a:Hover div.cVUgds span.fjrxdu
      { color: var(--header-popout-color-hover); }
-    header.kqGXut ol.engvEc li.diRIme a svg.iYoqBv path
+    header.buInrW ol.engvEc li.diRIme a svg.iYoqBv path
      { fill: var(--header-popout-color); }
 
     /*article,liveblog,etc*/
@@ -236,7 +249,7 @@ header.nav-wrapper ol.dropDownMenu_u7yFgFKw.dropDownMenuLarge_CTCzib2a a:Hover d
      { background-color: var(--tips-en-vragen-background); border: solid 1px var(--tips-en-vragen-border) !important; }
 
     /*social media buttons*/
-    #__next footer.WUZHM a.doJlBV path
+    #__next footer.WUZHM a.JivGY path
      { color: var(--socialmedia-background-color) !important; }
 
 /* Artikel / Liveblog */
@@ -257,87 +270,101 @@ header.nav-wrapper ol.dropDownMenu_u7yFgFKw.dropDownMenuLarge_CTCzib2a a:Hover d
 /* FRONTPAGE */
 /*************/
     /* two-feature / tweeluik */
-    div#__next #content ul.epCcc h2
+    #__next #content ul.epCcc h2
      { color: var(--fp-white); }
-    div#__next #content ul.epCcc p
+    #__next #content ul.epCcc p
      { color: var(--fp-white) !important; }
     /* top stories */
-    div#__next #content div.erQeTn li.fkKvoW h2
+    #__next #content div.erQeTn li.eDgPlH div.kOUcTJ
+     { background-color: var(--fp-background); }
+    #__next #content div.erQeTn li.eDgPlH h2
      { color: var(--fp-color) !important; }
-   div#__next #content div.erQeTn li.fkKvoW p.ilyQkB
+    #__next #content div.erQeTn li.eDgPlH p.ilyQkB
      { color: var(--fp-color-dark) !important; }
-    div#__next #content div.erQeTn li.fkKvoW:Hover h2
+    #__next #content div.erQeTn li.eDgPlH:Hover h2
     { color: var(--fp-color-hover) !important; }
+    /* Collecties */
+    #__next #content div.hMUbaQ
+     { background-color: var(--fp-background); }
+    /*Icoontje rechts bovenin, icon top right*/
+    #__next #content div.erQeTn li.eDgPlH .fEAQBI svg path
+     { color: var(--fp-collecties-color); }
 /*6F6F6F*/
     /* kijken */
-    div#__next #content li.bwuzDw section h2.cZRxgc
+    #__next #content li.bwuzDw section h2.iMhInF
      { color: var(--fp-color) !important; }
     /*the big one*/
-    div#__next #content li.eRTPGV h2.jgcOpr
-,   div#__next #content li.eRTPGV p.hgjMTx
+    #__next #content li.eRTPGV h2.jgcOpr
+,   #__next #content li.eRTPGV p.hgjMTx
+,   #__next #content li.jmaLIb h2.fmRlhy
      { color: var(--fp-white) !important; }
-    /* Uitgelegd, Sport, Gemist, Collecties */
-    div#__next #content section.lcDRbm h2.cZRxgc
+    /* Uitgelegd, Sport, Gemist */
+    #__next #content section.bFBhpV h2.iMhInF
      { color: var(--fp-color) !important; }
-    div#__next #content section.lcDRbm a.iZCmy:Hover h2.cZRxgc
+    #__next #content section.bFBhpV a.bewcRi:Hover h2.iMhInF
      { color: var(--fp-color-hover) !important; }
-    div#__next #content section.lcDRbm div.jcyOMN
+    /* Collecties */
+    /*Icoontje rechts boven, Icon top right*/
+    #__next #content section.bFBhpV div.fEAQBI svg path
+     { color: var(--fp-collecties-color); }
+    /*Collectie wolk*/
+    #__next #content section.bFBhpV div.hMUbaQ
      { background-color: var(--background-color) !important; }
-    div#__next #content section.lcDRbm a.jkaIWH:Hover h2.cZRxgc
+    #__next #content section.bFBhpV a.jgRGzY:Hover h2.iMhInF
      { color: var(--link-hover) !important; }
     /* Collecties icon/icoontje */
-    div#__next #content .jcyOMN
+    #__next #content .jcyOMN
      { background-color: var(--background-color); }
+    /* Navigatie buttons */
+    #__next button.gcCEQx
+,   #__next button.iZBqaU
+     { background-color: var(--korte-videos-button-background); border: solid 2px var(--korte-videos-button-border) !important; }
 
     /* Zijbalk / Aside */
     /*Straks bij de NOS*/
-    div#__next #content aside.kkiBgT time.kjCltP
-    { color: var(--color-dark); }
-    div#__next #content aside.kkiBgT h3.hRFsgx
+    #__next #content aside.kkiBgT h3.hRFsgx
      { color: var(--color); }
-    div#__next #content aside.kkiBgT p.iNFbbp
-    { color: var(--color-red); }
     /*Laatste nieuws*/
-    div#__next #content aside.kkiBgT a.QQntR div.jkSQRr time
-,   div#__next #content aside.kkiBgT a.QQntR div.jkSQRr span.kdWbDk
-,   div#__next #content aside.kkiBgT a.QQntR div.jkSQRr span.kdWbDk span.eJaZlX
+    #__next #content aside.kkiBgT a.grIghG div.jkSQRr time
+,   #__next #content aside.kkiBgT a.grIghG div.jkSQRr span.kdWbDk
+,   #__next #content aside.kkiBgT a.grIghG div.jkSQRr span.kdWbDk span.eJaZlX
      { color: var(--color-dark); }
-    div#__next #content aside.kkiBgT a.QQntR
+    #__next #content aside.kkiBgT a.grIghG
      { color: var(--color); }
-    div#__next #content aside.kkiBgT a.QQntR:Hover
+    #__next #content aside.kkiBgT a.grIghG:Hover
      { color: var(--link-hover) !important; }
-    div#__next #content aside.kkiBgT a.QQntR:Hover div.jkSQRr time
-,   div#__next #content aside.kkiBgT a.QQntR:Hover div.jkSQRr span.kdWbDk
-,   div#__next #content aside.kkiBgT a.QQntR:Hover div.jkSQRr span.kdWbDk span.eJaZlX
+    #__next #content aside.kkiBgT a.grIghG:Hover div.jkSQRr time
+,   #__next #content aside.kkiBgT a.grIghG:Hover div.jkSQRr span.kdWbDk
+,   #__next #content aside.kkiBgT a.grIghG:Hover div.jkSQRr span.kdWbDk span.eJaZlX
      { color: var(--color-dark); }
     /*shadow*/
-    div#__next #content aside.kkiBgT div.gCeCPj
+    #__next #content aside.kkiBgT div.gCeCPj
      { box-shadow: 0px 2px 8px 0px var(--box-shadow); }
     /*devider line*/
-    div#__next #content aside.kkiBgT div.gCeCPj li.BZOEu::after
-,   div#__next #content aside.kkiBgT div.gCeCPj li.dOTPvN::after
+    #__next #content aside.kkiBgT div.gCeCPj li.BZOEu::after
+,   #__next #content aside.kkiBgT div.gCeCPj li.dOTPvN::after
      { border: solid 1px var(--fp-aside-devider-line); }
     /*other*/
-    div#__next #content aside.kkiBgT a
+    #__next #content aside.kkiBgT a
      { color: var(--fp-aside-color); }
-    div#__next #content aside.kkiBgT li.BZOEu:hover a
+    #__next #content aside.kkiBgT li.BZOEu:hover a
      { color: var(--fp-color-hover); }
-    div#__next #content aside.kkiBgT a div.jkSQRr time
-,   div#__next #content aside.kkiBgT a div.jkSQRr span.kdWbDk
-,   div#__next #content aside.kkiBgT a div.jkSQRr span.kdWbDk span.eJaZlX
+    #__next #content aside.kkiBgT a div.jkSQRr time
+,   #__next #content aside.kkiBgT a div.jkSQRr span.kdWbDk
+,   #__next #content aside.kkiBgT a div.jkSQRr span.kdWbDk span.eJaZlX
      { color: var(--fp-color-dark);  }
 
-    /* nos menu */
-    div#__next #content aside.kkiBgT section.gCeCPj
+    /* nos menu (nos op 3, nos stories, nos jeugdjournaal, nieuwsuur) */
+    #__next #content aside.kkiBgT section.gCeCPj
      { box-shadow: 0px 2px 8px 0px var(--box-shadow); }
-    div#__next #content aside.kkiBgT section.gCeCPj li.jCRRtN::after
+    #__next #content aside.kkiBgT section.gCeCPj li.fngVpy::after
      { border: solid 1px var(--fp-aside-devider-line); }
 
-    div#__next #content aside.kkiBgT section.gCeCPj div.cVUgds span.fjrxdu
+    #__next #content aside.kkiBgT section.gCeCPj div.cVUgds span.fjrxdu
      { color: var(--color); }
-    div#__next #content aside.kkiBgT section.gCeCPj a:Hover div.cVUgds span.fjrxdu
+    #__next #content aside.kkiBgT section.gCeCPj a:Hover div.cVUgds span.fjrxdu
      { color: var(--color-hover); }
-    div#__next #content aside.kkiBgT section.gCeCPj div.cVUgds span.fmBjQo
+    #__next #content aside.kkiBgT section.gCeCPj div.cVUgds span.fmBjQo
      { color: var(--color-dark); }
 
 /*************/
@@ -791,28 +818,56 @@ header.nav-wrapper ol.dropDownMenu_u7yFgFKw.dropDownMenuLarge_CTCzib2a a:Hover d
      { filter: brightness(100%); }
 
 /* Caption */
-    div#__next #content h1.ksBNlE
+    #__next #content h1.ksBNlE
      { color: var(--color); }
 
 /* Laatste Nieuws */
-    div#__next #content div.bEtTwW a.hWUOEV div.gSzpTo time
+    #__next #content div.bEtTwW a.hWUOEV div.dlrYPj time
      { color: var(--color-dark); }
-    div#__next #content div.bEtTwW a.hWUOEV div.gSzpTo h2
+    #__next #content div.bEtTwW a.hWUOEV div.dlrYPj h2
      { color: var(--color); }
-    div#__next #content div.bEtTwW a.hWUOEV:Hover div.gSzpTo h2
+    #__next #content div.bEtTwW a.hWUOEV:Hover div.dlrYPj h2
      { color: var(--link-hover); }
-    div#__next #content div.bEtTwW a.hWUOEV div.gSzpTo p
+    #__next #content div.bEtTwW a.hWUOEV div.dlrYPj p
      { color: var(--color-dark); }
-    /*Lees meer*/
-    div#__next #content div.bEtTwW button.hKjjaQ
-     { background-color: var(--button-background); color: #aaa; border: solid 1px #222; }
+    /* Lees meer */
+    /*Button*/
+    #__next #content div.hqgxBy button.hcPxRH
+     { background-color: var(--button-background); color: #aaa; border: solid 1px #555; }
+    /*Arrow*/
+    #__next #content div.hqgxBy button.hcPxRH svg path
+     { color: #000; }
+    #__next #content div.hqgxBy button.fYFGfM:Hover
+     { transition: box-shadow 250ms ease-in-out 0s, border 250ms ease-in-out 0s; box-shadow: #555 0px 2px 6px 0px; }
+
+/*.fYFGfM:hover {
+    box-shadow: rgb(0 0 0 / 15%) 0px 2px 6px 0px;
+    border: 1px solid rgb(255, 255, 255);
+}*/
 
 /* Zijbalk */
-    div#__next #content aside.kkiBgT div.coENjz time time
+    /*Time for a little bit of risk, with blanket settings*/
+    #__next #content aside.kkiBgT time
+    { color: var(--color-dark); }
+    #__next #content aside.kkiBgT h3
+    { color: var(--color); }
+    #__next #content aside.kkiBgT p
+     { color: var(--link-hover); }
+
+    /* Specific detailing */
+    #__next #content aside.kkiBgT div.coENjz time time
      { color: var(--color-dark); }
-    div#__next #content aside.kkiBgT div.coENjz h3
+    #__next #content aside.kkiBgT div.coENjz h3
      { color: var(--color); }
-    div#__next #content aside.kkiBgT div.coENjz p.jDTXZj
+    #__next #content aside.kkiBgT div.coENjz p.jDTXZj
+     { color: var(--link-hover); }
+
+    /* Specific detailing for Live by NOS Sport */
+    #__next #content aside.kkiBgT li.hKzLkL time
+    { color: var(--color-dark); }
+    #__next #content aside.kkiBgT li.hKzLkL h3.hRFsgx
+    { color: var(--color); }
+    #__next #content aside.kkiBgT li.hKzLkL p.jDTXZj
      { color: var(--link-hover); }
 
 /**************/
