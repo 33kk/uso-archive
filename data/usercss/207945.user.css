@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           新龙空精简UI_1.3.0
+@name           新龙空精简UI_1.3.4
 @namespace      USO Archive
 @author         ybbpgfjtey
 @description    `龙空第五纪元UI空间浪费过多，如页首大段空白、内容区间隔过多，本样式表用于对此进行优化。主要修改了首页、论坛页、帖子页面及新贴页面。`
-@version        20210714.17.45
+@version        20210715.11.33
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -43,10 +43,10 @@ body {
 
 /* 优化列表项 */
 h4~div ul {
-	list-style: disc !important;
+	margin-left: 1em;
 }
 h4~div  li::before {
-	display: none !important;
+	margin: 0 0.5em 0 -1em;
 }
 
 /* 页码去掉圆圈 */
@@ -58,7 +58,7 @@ h4~div  li::before {
 @-moz-document url("https://www.lkong.com/"), url("https://www.lkong.com/feeds") {
 /** 首页 */
 
-/* 论坛名两列显示 */
+/* 论坛名多列显示 */
 .css-1cw8ku2~div {
 	width: 100%;
 	display: flex;
@@ -73,8 +73,11 @@ h4~div  li::before {
 /* 热门置于ID前 */
 .css-x4oy6m{
 	display: flex;
-	flex-direction: column-reverse;
-	justify-content: flex-end;
+	flex-direction: column;
+}
+
+.css-x4oy6m div:nth-child(2) {
+	order: -1;
 }
 }
 
@@ -151,7 +154,7 @@ h4~div  li::before {
 
 /* 标题栏*/
 
-.css-1g06pxo {
+.css-1yfjitf {
 	padding: 8px 0;
 	width: unset;
 	margin: 0 var(--margin);
@@ -251,10 +254,14 @@ h4~div  li::before {
 .css-1mtj6bn {
 	padding: 10px 10px 0;
 }
+
+.editor-bottom{
+	align-items: center;
+}
 }
 
-@-moz-document url-prefix("https://www.lkong.com/new/"), url-prefix("https://www.lkong.com/edit") {
-/** 发布主题页 */
+@-moz-document url-prefix("https://www.lkong.com/new/"), url-prefix("https://www.lkong.com/edit/"), url-prefix("https://www.lkong.com/reply/") {
+/** 发帖回帖页 */
 
 .css-1fcdc3s .ant-affix {
 	top: 40px !important;

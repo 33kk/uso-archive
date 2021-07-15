@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Vartan Bagdasaryan
 @description    `Transparent chat, theater / theater mode.Пишите отзывы пожелания.Feel Free to leave comment about improvements (code examples appreciated).FACEBOOK.com/Vartan.bg`
-@version        20200619.18.45
+@version        20210715.10.45
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced color chatColorPick "Chat Color (pick)" #FFFFFF
@@ -52,6 +52,9 @@ medium "Medium" <<<EOT .tw-root--theme-dark .simplebar-content .chat-list__list-
     background: transparent!important;
 }
 .tw-root--theme-dark .channel-root__right-column {
+    background: transparent!important;
+}
+.tw-root--theme-dark .channel-root__right-column > div {
     background: transparent!important;
 }
 .whispers--theatre-mode.whispers--right-column-expanded {

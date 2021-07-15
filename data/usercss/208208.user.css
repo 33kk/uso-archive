@@ -1,0 +1,56 @@
+/* ==UserStyle==
+@name           Brainly Mod Theme
+@namespace      USO Archive
+@author         Saransh Sharma
+@description    `Feel like a crippled Brainly ModeratorWorks on all Brainly markets`
+@version        20210715.10.8
+@license        CC0-1.0
+@preprocessor   uso
+==/UserStyle== */
+/* ==UserStyle==
+@name           Brainly Extension Theme
+@namespace      Booperdooper255
+@version        1.0.0
+@author         Anonymous
+@license        MIT
+@updateURL      https://raw.githubusercontent.com/Booperdooper255/Brainly-Extension-Theme/main/theme
+=======
+==/UserStyle== */
+
+div [class^="HeaderController__innerwrap--1D0qY"] {
+background:#4fc3f6!important;
+}
+div [class^="HeaderController__subnav--1hTF0"] {
+background:#4fc3f6!important;
+}
+div [class^="mint-header"] {
+background:#4fc3f6!important;
+}
+div [class^="HeaderController__header--yjUbB"] {
+background:#4fc3f6!important;
+}
+div [class^="brn-moderation-panel__content"] {
+background:#4fc3f6!important;
+}
+div [class^="sg-menu-list__link"] {
+color:Black!important;
+}
+div [class^="brn-header-placeholder__subnav"] {
+background:#4fc3f6!important;
+}
+div [class^="brn-header-placeholder__inner-wrapper"] {
+background:#4fc3f6!important;
+}
+div [class^="brn-placeholder__animation"] {
+animation-iteration-count:0;
+}
+div [class^="sg-label--gray-secondary-light"] {
+background-color: #4fc3f6!important;
+}
+.sg-label--gray-secondary-light{
+background-color: #4fc3f6!important
+}
+#html .mint .mint-header {
+background: #4fc3f6!important;
+}
+/* i really want this to be global */

@@ -7,7 +7,7 @@
     "format": "uso",
     "category": "twitch",
     "createdAt": "2017-11-17T03:34:07.000Z",
-    "updatedAt": "2020-06-19T15:45:23.000Z",
+    "updatedAt": "2021-07-15T10:45:56.000Z",
     "license": "NO-REDISTRIBUTION",
     "author": {
       "id": 551655,
@@ -16,10 +16,10 @@
   },
   "stats": {
     "installs": {
-      "total": 4987,
-      "weekly": 44
+      "total": 6387,
+      "weekly": 30
     },
-    "rating": 2.5
+    "rating": 1
   },
   "screenshots": {
     "main": {
@@ -29,19 +29,10 @@
   },
   "discussions": {
     "stats": {
-      "discussionsCount": 16,
-      "commentsCount": 2
+      "discussionsCount": 17,
+      "commentsCount": 3
     },
     "data": [
-      {
-        "id": 86862,
-        "title": "Great but annoying for a Twitch Prime member with transparent menus.",
-        "createdAt": "2020-06-03T22:09:36.000Z",
-        "author": {
-          "id": 955157,
-          "name": "LOTHARIE"
-        }
-      },
       {
         "id": 86863,
         "title": "Great but annoying for a Twitch Prime member with transparent menus.",
@@ -122,11 +113,20 @@
           "id": 1022742,
           "name": "Maximilianus"
         }
+      },
+      {
+        "id": 90853,
+        "title": "Chat background not transparent anymore",
+        "createdAt": "2021-05-22T20:38:17.000Z",
+        "author": {
+          "id": 1180565,
+          "name": "Roberto García"
+        }
       }
     ]
   },
   "style": {
-    "css": "@-moz-document domain(www.twitch.tv) {\r\n.tw-root--theme-dark .chat-room {\r\n    background: transparent!important;\r\n}\r\n.tw-root--theme-dark .channel-root__right-column {\r\n    background: transparent!important;\r\n}\r\n.whispers--theatre-mode.whispers--right-column-expanded {\r\n    right: 46rem!important;\r\n}\r\n.tw-root--theme-dark .pl-controls-top {\r\n    background: transparent;\r\n}\r\n.tw-root--theme-dark .channel-page__right-column{\r\n\tbackground-color: transparent!important;\r\n}\r\n.tw-theme--dark .channel-page__right-column{\r\n\tbackground-color: transparent!important;\r\n}\r\n.tw-theme--dark .tw-c-background-alt-2{\r\n\tbackground-color: transparent!important;\r\n}\r\n.tw-theme--dark .c-background-alt-2{\r\n\tbackground-color: transparent!important;\r\n}\r\n.tw-theme--dark .chat__pane{\r\n\tbackground-color: transparent!important;\r\n}\r\n.tw-theme--dark .chat-room__pane{\r\n\tbackground-color: transparent!important;\r\n\tborder: none!important;\r\n}\r\n.tw-theme--dark .chat__header{\r\n\tbackground-color: transparent!important;\r\n\tborder: none!important;\r\n}\r\n.tw-theme--dark .chat-room__header{\r\n\tbackground-color: transparent!important;\r\n\tborder: none!important;\r\n}\r\n.tw-theme--dark .chat__pane{\r\n\tborder: none!important;\r\n}\r\n.tw-theme--dark .tw-textarea {\r\n    background-color: transparent;\r\n}\r\n.tw-theme--dark .pinned-cheer__bounding-box{\r\n    background-color: transparent;\r\n\tborder: none!important;\r\n}\r\n\r\n\r\n\r\n.theme--dark .channel-page__right-column{\r\n\tbackground-color: transparent!important;\r\n}\r\n.theme--dark .tw-c-background-alt-2{\r\n\tbackground-color: transparent!important;\r\n}\r\n.theme--dark .c-background-alt-2{\r\n\tbackground-color: transparent!important;\r\n}\r\n.theme--dark .chat__pane{\r\n\tbackground-color: transparent!important;\r\n}\r\n.theme--dark .chat-room__pane{\r\n\tbackground-color: transparent!important;\r\n\tborder: none!important;\r\n}\r\n.channel-page__video-player--theatre-mode{\r\n\twidth: 100%!important;\r\n}\r\n.theme--dark .chat__header{\r\n\tbackground-color: transparent!important;\r\n\tborder: none!important;\r\n}\r\n.theme--dark .chat-room__header{\r\n\tbackground-color: transparent!important;\r\n\tborder: none!important;\r\n}\r\n.theme--dark .chat__pane{\r\n\tborder: none!important;\r\n}\r\n.theme--dark .tw-textarea {\r\n    background-color: transparent;\r\n}\r\n.right-column--theatre .simplebar-content{\r\n        text-align: right;\r\n}\r\n.video-player--theatre .player-buttons-right{\r\n\tright: 33rem!important;\r\n}\r\n.video-player--theatre.video-player--logged-in .video-player__container{\r\n    bottom: 0!important;\r\n}\r\n.persistent-player.persistent-player--theatre{\r\n\twidth: 100%!important;\r\n}\r\n.theme--dark .pinned-cheer__bounding-box{\r\n    background-color: transparent;\r\n\tborder: none!important;\r\n}\r\n.tw-root--theme-dark .tw-c-background-base {\r\n    background-color: rgba(0, 0, 0, 0.6)!important;\r\n}\r\n.tw-root--theme-dark .tw-border-l{\r\n    background: none!important;\r\n}\r\n.tw-theme--dark .tw-border-l{\r\n\tborder-left: none !important;\r\n}\r\n.tw-theme--dark .pl-controls-top{\r\n    background: none!important;\r\n}\r\n\r\n.tw-theme--dark .tw-c-text {\r\n\ttext-shadow: black 1px 1px 0, black -1px -1px 0, black -1px 1px 0, black 1px -1px 0;\r\n}\r\n\r\n.tw-theme--dark .tw-c-background {\r\n    background: none!important;\r\n}\r\n\r\n.tw-theme--dark .vod-message.vod-message--focused, .tw-theme--dark .vod-message:hover{\r\n\tbackground: transparent!important;\r\n}\r\n.tw-root--theme-dark .tw-c-background-alt-2 {\r\n    background-color: transparent!important;\r\n}\r\n\r\n.tw-root--theme-dark .tw-border-l {\r\n    border-left: 1px solid transparent!important;\r\n}\r\n.tw-root--theme-dark .tw-textarea {\r\n    background: transparent;\r\n}\r\n.tw-root--theme-dark .tw-c-background-alt{\r\n    background-color: transparent!important;\r\n}\r\n.tw-root--theme-dark .tw-c-background-base.whispers-thread, .whispers-thread--focused {\r\n    background-color: #19171c!important;\r\n}\r\n.tw-root--theme-dark .tw-c-background-base.whispers-threads-box__container, .whispers-threads-box__container--open {\r\n    background-color: #19171c!important;\r\n}\r\n#default-player > div > div.hover-display div.pl-controls-bottom{\r\n    padding-right: 34rem!important;\r\n}\r\n.tw-theme--dark .vod-message.vod-message--focused, .tw-theme--dark .vod-message, .tw-root--theme-dark .tw-c-text-base{\r\n    color: #FFFFFF!important;\r\n    text-align: right;\r\n}\r\n.tw-root--theme-dark .chat-settings {\r\n    background-color: #19171c!important; \r\n}\r\n\r\n.tw-root--theme-dark .highwind-video-player__container--theatre-whispers {\r\n    bottom: 0!important;\r\n}\r\n.tw-root--theme-dark .player-controls__right-control-group{\r\n    margin-right: 30%;\r\n}\r\n#root div.tw-flex div.right-column.right-column--theatre{\r\nbackground: linear-gradient(to right, rgba(0,0,0,0) 5%,rgba(0,0,0,0.20) 30%,rgba(0,0,0,0.75) 75%)!important;\r\n}\r\n.tw-root--theme-dark .simplebar-content .chat-list__list-container{\r\n    font-size: 12px;\r\n}\r\n\r\n.tw-root--theme-dark div.persistent-player.persistent-player--theatre .video-player > div {\r\n    bottom: 0rem;\r\n}\r\n\r\n.tw-root--theme-dark  div.persistent-player.persistent-player--theatre div.video-player__default-player > .tw-absolute {\r\n    bottom: 0em!important;\r\n}\r\n/*[[chatTrans]]*/\r\n/*[[chatSize]]*/\r\n}",
+    "css": "@-moz-document domain(www.twitch.tv) {\r\n.tw-root--theme-dark .chat-room {\r\n    background: transparent!important;\r\n}\r\n.tw-root--theme-dark .channel-root__right-column {\r\n    background: transparent!important;\r\n}\r\n.tw-root--theme-dark .channel-root__right-column > div {\r\n    background: transparent!important;\r\n}\r\n.whispers--theatre-mode.whispers--right-column-expanded {\r\n    right: 46rem!important;\r\n}\r\n.tw-root--theme-dark .pl-controls-top {\r\n    background: transparent;\r\n}\r\n.tw-root--theme-dark .channel-page__right-column{\r\n\tbackground-color: transparent!important;\r\n}\r\n.tw-theme--dark .channel-page__right-column{\r\n\tbackground-color: transparent!important;\r\n}\r\n.tw-theme--dark .tw-c-background-alt-2{\r\n\tbackground-color: transparent!important;\r\n}\r\n.tw-theme--dark .c-background-alt-2{\r\n\tbackground-color: transparent!important;\r\n}\r\n.tw-theme--dark .chat__pane{\r\n\tbackground-color: transparent!important;\r\n}\r\n.tw-theme--dark .chat-room__pane{\r\n\tbackground-color: transparent!important;\r\n\tborder: none!important;\r\n}\r\n.tw-theme--dark .chat__header{\r\n\tbackground-color: transparent!important;\r\n\tborder: none!important;\r\n}\r\n.tw-theme--dark .chat-room__header{\r\n\tbackground-color: transparent!important;\r\n\tborder: none!important;\r\n}\r\n.tw-theme--dark .chat__pane{\r\n\tborder: none!important;\r\n}\r\n.tw-theme--dark .tw-textarea {\r\n    background-color: transparent;\r\n}\r\n.tw-theme--dark .pinned-cheer__bounding-box{\r\n    background-color: transparent;\r\n\tborder: none!important;\r\n}\r\n\r\n\r\n\r\n.theme--dark .channel-page__right-column{\r\n\tbackground-color: transparent!important;\r\n}\r\n.theme--dark .tw-c-background-alt-2{\r\n\tbackground-color: transparent!important;\r\n}\r\n.theme--dark .c-background-alt-2{\r\n\tbackground-color: transparent!important;\r\n}\r\n.theme--dark .chat__pane{\r\n\tbackground-color: transparent!important;\r\n}\r\n.theme--dark .chat-room__pane{\r\n\tbackground-color: transparent!important;\r\n\tborder: none!important;\r\n}\r\n.channel-page__video-player--theatre-mode{\r\n\twidth: 100%!important;\r\n}\r\n.theme--dark .chat__header{\r\n\tbackground-color: transparent!important;\r\n\tborder: none!important;\r\n}\r\n.theme--dark .chat-room__header{\r\n\tbackground-color: transparent!important;\r\n\tborder: none!important;\r\n}\r\n.theme--dark .chat__pane{\r\n\tborder: none!important;\r\n}\r\n.theme--dark .tw-textarea {\r\n    background-color: transparent;\r\n}\r\n.right-column--theatre .simplebar-content{\r\n        text-align: right;\r\n}\r\n.video-player--theatre .player-buttons-right{\r\n\tright: 33rem!important;\r\n}\r\n.video-player--theatre.video-player--logged-in .video-player__container{\r\n    bottom: 0!important;\r\n}\r\n.persistent-player.persistent-player--theatre{\r\n\twidth: 100%!important;\r\n}\r\n.theme--dark .pinned-cheer__bounding-box{\r\n    background-color: transparent;\r\n\tborder: none!important;\r\n}\r\n.tw-root--theme-dark .tw-c-background-base {\r\n    background-color: rgba(0, 0, 0, 0.6)!important;\r\n}\r\n.tw-root--theme-dark .tw-border-l{\r\n    background: none!important;\r\n}\r\n.tw-theme--dark .tw-border-l{\r\n\tborder-left: none !important;\r\n}\r\n.tw-theme--dark .pl-controls-top{\r\n    background: none!important;\r\n}\r\n\r\n.tw-theme--dark .tw-c-text {\r\n\ttext-shadow: black 1px 1px 0, black -1px -1px 0, black -1px 1px 0, black 1px -1px 0;\r\n}\r\n\r\n.tw-theme--dark .tw-c-background {\r\n    background: none!important;\r\n}\r\n\r\n.tw-theme--dark .vod-message.vod-message--focused, .tw-theme--dark .vod-message:hover{\r\n\tbackground: transparent!important;\r\n}\r\n.tw-root--theme-dark .tw-c-background-alt-2 {\r\n    background-color: transparent!important;\r\n}\r\n\r\n.tw-root--theme-dark .tw-border-l {\r\n    border-left: 1px solid transparent!important;\r\n}\r\n.tw-root--theme-dark .tw-textarea {\r\n    background: transparent;\r\n}\r\n.tw-root--theme-dark .tw-c-background-alt{\r\n    background-color: transparent!important;\r\n}\r\n.tw-root--theme-dark .tw-c-background-base.whispers-thread, .whispers-thread--focused {\r\n    background-color: #19171c!important;\r\n}\r\n.tw-root--theme-dark .tw-c-background-base.whispers-threads-box__container, .whispers-threads-box__container--open {\r\n    background-color: #19171c!important;\r\n}\r\n#default-player > div > div.hover-display div.pl-controls-bottom{\r\n    padding-right: 34rem!important;\r\n}\r\n.tw-theme--dark .vod-message.vod-message--focused, .tw-theme--dark .vod-message, .tw-root--theme-dark .tw-c-text-base{\r\n    color: #FFFFFF!important;\r\n    text-align: right;\r\n}\r\n.tw-root--theme-dark .chat-settings {\r\n    background-color: #19171c!important; \r\n}\r\n\r\n.tw-root--theme-dark .highwind-video-player__container--theatre-whispers {\r\n    bottom: 0!important;\r\n}\r\n.tw-root--theme-dark .player-controls__right-control-group{\r\n    margin-right: 30%;\r\n}\r\n#root div.tw-flex div.right-column.right-column--theatre{\r\nbackground: linear-gradient(to right, rgba(0,0,0,0) 5%,rgba(0,0,0,0.20) 30%,rgba(0,0,0,0.75) 75%)!important;\r\n}\r\n.tw-root--theme-dark .simplebar-content .chat-list__list-container{\r\n    font-size: 12px;\r\n}\r\n\r\n.tw-root--theme-dark div.persistent-player.persistent-player--theatre .video-player > div {\r\n    bottom: 0rem;\r\n}\r\n\r\n.tw-root--theme-dark  div.persistent-player.persistent-player--theatre div.video-player__default-player > .tw-absolute {\r\n    bottom: 0em!important;\r\n}\r\n/*[[chatTrans]]*/\r\n/*[[chatSize]]*/\r\n}",
     "settings": [
       {
         "key": "chatColorPick",
