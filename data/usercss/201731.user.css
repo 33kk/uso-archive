@@ -2,8 +2,8 @@
 @name           TikTok Darkmode+
 @namespace      USO Archive
 @author         YAD
-@description    `Actually this style will bring your TikTok not just to darkmode, but to any color mode you want, plus the feature to add a custom background image!<b>HOW TO INSTALL AND CUSTOMIZE THIS STYLE?? </b> <a href="https://drive.google.com/file/d/1wxWYovNKfu8GsMkudNcReyaxUWDMX0bU/view?usp=sharing" target="_blank">👉<b>Using Stylus Beta</b></a><a href="https://www.paypal.com/donate?hosted_button_id=LT8MPNTJU66HL" target="_blank"><b>DONATE VIA PAYPAL</b></a>`
-@version        20210706.4.4
+@description    `Actually this style will bring your TikTok not just to darkmode, but to any color mode you want, plus the feature to add a custom background image!<b>HOW TO INSTALL AND CUSTOMIZE THIS STYLE?? </b> <a href="https://drive.google.com/file/d/1wxWYovNKfu8GsMkudNcReyaxUWDMX0bU/view?usp=sharing" target="_blank">👉<b>Using Stylus</b></a><a href="https://www.paypal.com/donate?hosted_button_id=LT8MPNTJU66HL" target="_blank"><b>DONATE VIA PAYPAL</b></a>`
+@version        20210714.23.57
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown yadbg "Background Image" {
@@ -20,6 +20,11 @@
 @advanced text yadbg-custom "Background Image (Custom)" "https://example.com/image.png"
 @advanced color yadbgc "Background Color" #000000
 @advanced color yadtheme "Layout Color" #3D3D46
+@advanced dropdown textshadow "Text Shadow" {
+	1 "ON*" <<<EOT #000 EOT;
+2 "OFF" <<<EOT #0000 EOT;
+
+}
 
 ==/UserStyle== */
 @-moz-document domain("tiktok.com")
@@ -35,7 +40,7 @@
     background: url(/*[[yadbg]]*/) center center/cover no-repeat fixed /*[[yadbgc]]*/;
     color: #fff!important;
     background-blend-mode: screen;
-    text-shadow: 0px 0px 9px #0e001d;
+    text-shadow: 0px 0px 9px /*[[textshadow]]*/;
   }
 
   a
@@ -64,7 +69,7 @@
     fill: #fff!important;
   }
 
-  p, [type="search"], .comment-input-inner-wrapper .editor .word-num-container, .tiktok-cbcj54-Button, .tiktok-1om7rms-Button, .tiktok-2rsdt7-CancelButton, .tiktok-8bqevs-Title,.tiktok-1f5kj6x-SubTitle, .user-info, .sign-up, .user-info, .logout-container, .tiktok-web-login-2P7wd, .social-container-NE2xk .channel-item-wrapper-2gBWB .channel-name-2qzLW, .footer-wrapper-xil5O .to-login-1hkoq, .nav-item .nav-name, .user-item-inner .fake-info .user-title, .user-item-inner .user-infos .user-title, .user-item-inner .fake-info .user-desc, .user-item-inner .user-infos .user-desc, .video-feed-container .recommend-feed-title, .share-pc-card .share-item-wrapper .plat-text, .inbox-empty h4, .promotion-download .promotion-title, .promotion-download .qr-title, .download-sms .download-tips.modal-download-style a, .area-list-container .area-list-title, .area-list-container .list-item, .button, .container .user-info .name, .modal-title, .stage-2-text, .info-wrapper .sub-title strong, .info-wrapper .sub-title > span, .info-wrapper .desc, ._card_header_content, .count-infos, .tiktok-1cmwmn8-TextCount, .number strong, .row-layout-nav .row-layout-nav-item span, .setting-option, .modal.confirm .btns .modal-btn-confirm, .login-desc-32c-y, .side-bar, .side-bar .bottom-wrapper .copyright, .login-wrapper span, .side-bar .bottom-wrapper .more-word, .side-bar .bottom-wrapper a, .side-bar .bottom-wrapper, .side-bar.jsx-3444054962 .bottom-wrapper.jsx-3444054962, .sub-title-ENYux, .comment-text .bottom-container .reply, .like-container .count, ::placeholder, .side-bar .user-empty, .inbox .time-title, .download-sms .download-tips.modal-download-style, .area-list-container .list-item .item-area-code, .require-font, .container .user-info .user-id, .size-text, .modal-sub-title, .more, p, .select-container.jsx-255332196 .select-options-container .select-option .sub-label, ._rousel_sub-title, ._user_carousel_followers-text, .setting-subtitle, .setting-description, .modal.confirm .btns .modal-btn-cancel, .user-item-inner .fake-info .user-title, .user-item-inner .user-infos .user-title, user-item-inner .fake-info .user-desc, .user-item-inner .user-infos .user-desc, .nav-item .nav-name, .tt-video-music.black a, .tt-video-music.black a:hover, .tt-video-music.black a:active, .tt-video-music.black a:link, .em-follow.side-bar-container .user-item-inner .user-desc, .tiktok-1nydqud-ButtonForm, .tiktok-1ix7c61-DivPushPermissionSubtitle,
+  p, [type="search"], .comment-input-inner-wrapper .editor .word-num-container, .tiktok-cbcj54-Button, .tiktok-1om7rms-Button, .tiktok-2rsdt7-CancelButton, .tiktok-8bqevs-Title,.tiktok-1f5kj6x-SubTitle, .user-info, .sign-up, .user-info, .logout-container, .tiktok-web-login-2P7wd, .social-container-NE2xk .channel-item-wrapper-2gBWB .channel-name-2qzLW, .footer-wrapper-xil5O .to-login-1hkoq, .nav-item .nav-name, .user-item-inner .fake-info .user-title, .user-item-inner .user-infos .user-title, .user-item-inner .fake-info .user-desc, .user-item-inner .user-infos .user-desc, .video-feed-container .recommend-feed-title, .share-pc-card .share-item-wrapper .plat-text, .inbox-empty h4, .promotion-download .promotion-title, .promotion-download .qr-title, .download-sms .download-tips.modal-download-style a, .area-list-container .area-list-title, .area-list-container .list-item, .button, .container .user-info .name, .modal-title, .stage-2-text, .info-wrapper .sub-title strong, .info-wrapper .sub-title > span, .info-wrapper .desc, ._card_header_content, .count-infos, .tiktok-1cmwmn8-TextCount, .number strong, .row-layout-nav .row-layout-nav-item span, .setting-option, .modal.confirm .btns .modal-btn-confirm, .login-desc-32c-y, .side-bar, .side-bar .bottom-wrapper .copyright, .login-wrapper span, .side-bar .bottom-wrapper .more-word, .side-bar .bottom-wrapper a, .side-bar .bottom-wrapper, .side-bar.jsx-3444054962 .bottom-wrapper.jsx-3444054962, .sub-title-ENYux, .comment-text .bottom-container .reply, .like-container .count, ::placeholder, .side-bar .user-empty, .inbox .time-title, .download-sms .download-tips.modal-download-style, .area-list-container .list-item .item-area-code, .require-font, .container .user-info .user-id, .size-text, .modal-sub-title, .more, p, .select-container .select-options-container .select-option .sub-label, ._rousel_sub-title, ._user_carousel_followers-text, .setting-subtitle, .setting-description, .modal.confirm .btns .modal-btn-cancel, .user-item-inner .fake-info .user-title, .user-item-inner .user-infos .user-title, user-item-inner .fake-info .user-desc, .user-item-inner .user-infos .user-desc, .nav-item .nav-name, .tt-video-music.black a, .tt-video-music.black a:hover, .tt-video-music.black a:active, .tt-video-music.black a:link, .em-follow.side-bar-container .user-item-inner .user-desc, .tiktok-1nydqud-ButtonForm, .tiktok-1ix7c61-DivPushPermissionSubtitle,
 .info-wrapper .title, 
   .info-wrapper .sub-title strong, .info-wrapper .sub-title > span,
   .info-wrapper .sub-title h2,
@@ -132,12 +137,11 @@
   .buy-button,
   .download-sms button,
   .open-button,
-  .live-profile-banner .tool i
-  {
+  .live-profile-banner .tool i {
     background-color: /*[[yadtheme]]*/!important;
 	color: #fff!important;
     border: 0px solid #fff0!important;
-    box-shadow: inset 0px 0px 0px 1px #ffffff78!important;
+    box-shadow: inset 0px 0px 0px 1px #ffffff73!important;
   }
 	
   [class*="Button-FollowButtonContainer"]:hover,
@@ -165,9 +169,10 @@
   .open-button:hover,
   .live-profile-banner .tool i:hover
   {
-    background-color: /*[[yadbgc]]*/8f!important;
+    background-color: /*[[yadtheme]]*/8f!important;
 	color: #fff!important;
-	
+	box-shadow: inset 0px 0px 0px 1px /*[[yadtheme]]*/!important;
+	filter: brightness(2)
   }
 
   .tiktok-btn-pc:hover
@@ -181,12 +186,14 @@
 	[class*="header-container white middle"],
 	[class*="header-container white"],
 	[class*="-DivHeaderContainer "],
-	.tiktok-header
+	.tiktok-header, .header-container
   {
     background:url(/*[[yadbg]]*/) center top/cover no-repeat fixed /*[[yadtheme]]*/2f!important;
 	background-blend-mode: screen;
     box-shadow: 0px 5px 0px #0000001c!important;
   }
+	
+	
 
   .tt-video-meta-caption, a.jsx-531976133, a.jsx-2866971387
   {
@@ -206,8 +213,8 @@
   .nav-item.active .nav-name
   {
     color: /*[[yadtheme]]*/!important;
-    filter: invert(1) saturate(0.7) sepia(0.1) hue-rotate(50deg);
-	text-shadow: 0 0
+    filter: brightness(2);
+	
   }
 
   .side-bar .user-list-skeleton .see-all p, .side-bar .user-list .see-all p
@@ -260,7 +267,7 @@
   {
     background: /*[[yadtheme]]*/af!important;
     color: #fff!important;
-    text-shadow: 0 0!important;
+    
   }
 
   .search-input input
@@ -292,7 +299,7 @@
   div.public-DraftEditorPlaceholder-inner
   {
     color: #fff;
-    text-shadow: 0 0;
+    
   }
 
   .result-item:hover
@@ -368,6 +375,20 @@
   {
     filter: invert(1);
   }
+	
+	
+	.message-icon:hover, .icon-follow:hover, .action-container.send-messages .action-item .icon-messages:hover, svg:hover {
+	transform: scale(1.1)	
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
 /*prof tooltip icons*/
   .option i
   {
@@ -379,6 +400,7 @@
   }
 	
 	/*profile tooltip*/
+    .webcast-chatroom .user-card,
   .profile-card-container,
   .tiktok-1ih2hzn-ProfileContainer,
   .profile-tip-content,
@@ -428,7 +450,8 @@
     color: #fff;
   }
 
-  .count-infos
+  .count-infos, .webcast-chatroom .user-card-body-des-des2,
+    .webcast-chatroom .user-card-header-close
   {
     color: #ffffffb5!important;
   }
@@ -609,13 +632,13 @@
   .input-field-3x_mo input
   {
     color: #fff;
-    text-shadow: 0 0;
+    
   }
 
   .input-field-pc-FOzso input
   {
     background: /*[[yadtheme]]*/7d;
-    text-shadow: 0 0;
+    
   }
 
   .form-container-OYzkR .suggest-wrapper-Cf0Us
@@ -681,16 +704,14 @@
 	/*live icon*/
   [d*="M6.5 17.5714C6.5 14.7292 8.86029 12.5 11.6782 12.5H27.8621C30.6799 12.5 33.0402 14.7292 33.0402"],
 	[height="40"][viewBox="0 0 48 48"][fill="#fe2c55"],
-	[viewBox="0 0 48 48"][fill="rgba(254, 44, 85, 1.0)"]
-	{
+	[viewBox="0 0 48 48"][fill="rgba(254, 44, 85, 1.0)"] {
 	 fill: /*[[yadtheme]]*/!important;
-	 stroke: #fff;
-    filter: drop-shadow( 0px 0px 6px #ffffffb5);
-	}
+    filter: drop-shadow( 0px 0px 6px /*[[yadtheme]]*/) brightness(2);
+}
 	[class*="-SpanLiveBadge "] {
 	background: #0e001dd1;
     box-shadow: 0px 0px 0px 1px /*[[yadtheme]]*/;	
-	}
+}
   div.live-online .live-online-img,
  .hot-lives .hot-live .room-profile .room-extra .online-status
   {
@@ -773,14 +794,14 @@
   {
     color: /*[[yadtheme]]*/!important;
     filter: brightness(50);
-    text-shadow: 0 0;
+    
   }
 
   div.sub-title-ENYux
   {
     color: /*[[yadtheme]]*/!important;
     filter: brightness(50);
-    text-shadow: 0 0;
+    
   }
 
   .delete-container-38cUp.delete-container-pc-2-F3H
@@ -834,14 +855,14 @@
   .comment-post-inner-wrapper .post-container.active,.tiktok-z92hjg-PostButton
   {
     color: #fff!important;
-    text-shadow: 0 0;
+    
     margin: 0px 16px 12px 16px;
   }
 
   .comment-post-inner-wrapper .post-container
   {
     color: #00000045!important;
-    text-shadow: 0 0;
+    
     margin: 0px 16px 12px 16px!important;
   }
 /*skeletons*/
@@ -883,7 +904,6 @@ div.live-player-bg {
 /*TikTok Darkmode+ by YAD*/
 /************************/
 
-	
 	
 	/*message*/
   .message-icon, .icon-follow, .action-container.send-messages .action-item .icon-messages
@@ -1025,19 +1045,19 @@ div.live-player-bg {
   .notification-item .content h4, .tiktok-52r23c-DescText
   {
     color: #fff;
-    text-shadow: 0 0;
+    
   }
 
   .notification-item .content .desc
   {
     color: #ffffffd4;
-    text-shadow: 0 0;
+    
   }
 
   .notification-item .content p, .tiktok-1h70wiv-PrimarySpan
   {
     color: #ffffff80!important;
-    text-shadow: 0 0;
+    
   }
   .header-inbox sup,
   [class^="tiktok-"][class*="-Badge"] 
@@ -1050,7 +1070,7 @@ div.live-player-bg {
   .inbox .time-title, .tiktok-s78ai9-DescText-ExtraText
   {
     color: #ffffff30!important;
-    text-shadow: 0 0!important;
+    
   }
 
   .inbox-content-header span, .tiktok-19fnsmp-GroupItem
@@ -1078,19 +1098,19 @@ div.live-player-bg {
   .notification-item .content .title
   {
     color: #fff;
-    text-shadow: 0 0;
+    
   }
 
   .notification-item .content .time
   {
     color: #ffffff2b;
-    text-shadow: 0 0;
+    
   }
 
-  .inbox-empty.jsx-3840869285 p.jsx-3840869285
+  .inbox-empty p
   {
-    color: #ffffff2b;
-    text-shadow: 0 0;
+    color: #ffffff2b!important;
+    
   }
 
   .notification-item .avatar img
@@ -1103,9 +1123,9 @@ div.live-player-bg {
     color: #f6f8ffa6!important;
   }
 
-  .inbox.jsx-3057556734 .inbox-second-back.jsx-3057556734 span.jsx-3057556734
+  .inbox .inbox-second-back span
   {
-    color: #a3b1ff;
+    color: #a3b1ff!important
   }
 
   .inbox .follow-request-number span, .inbox .inbox-second-back span, .tiktok-q4iujk-HintText
@@ -1125,7 +1145,7 @@ div.live-player-bg {
 /*copy link*/
     color: /*[[yadtheme]]*/!important;
     filter: brightness(33);
-    text-shadow: 0 0;
+    
   }
 
   .copy-link-container .copy-container .icon-link
@@ -1203,12 +1223,13 @@ div.live-player-bg {
   .promotion-download .promotion-title 
   {
     color: /*[[yadtheme]]*/!important;
-    text-shadow: 0 0 transparent!important;
+    
+    filter: brightness(2)
   }
   .promotion-download .qr-title 
   {
     color: #fff!important;
-    text-shadow: 0 0 transparent!important;
+    
   }
 
   [d="M12.601 17h2.52a.84.84 0 110 1.68h-9.24a.84.84 0 110-1.68h2.1v-2.1h-6.3A1.682 1.682 0 010 13.22V1.88C0 .952.754.199 1.68.199h17.642c.927 0 1.68.753 1.68 1.68V13.22c0 .927-.753 1.68-1.68 1.68h-6.72V17zm-.84 0v-2.1h-2.94V17h2.94zM1.681 1.88v11.34h17.641V1.88H1.68z"]
@@ -1227,12 +1248,12 @@ div.live-player-bg {
   .download-container.from-fixed-config .download-text
   {
     color: #fff;
-    text-shadow: 0 0 transparent!important;
+    
   }
 
   .download-sms .download-tips.modal-download-style {
     color: rgba(255, 255, 255, .57);
-    text-shadow: 0 0 transparent!important;
+    
   }
 
   [class*="DivContentContainer"],
@@ -1372,7 +1393,7 @@ div.live-player-bg {
     background: #000!important;
     border: 1px solid /*[[yadtheme]]*/!important;
     color: #fff!important;
-    text-shadow: 0 0;
+    
   }
 
   .live-end__vedio-box .bottom .live
@@ -1380,7 +1401,7 @@ div.live-player-bg {
     background: #000!important;
     border: 1px solid /*[[yadtheme]]*/!important;
     color: #fff!important;
-    text-shadow: 0 0;
+    
   }
 
   .item-channel-header-image-circle
@@ -1548,19 +1569,19 @@ div.live-player-bg {
   {
     color: /*[[yadtheme]]*/!important;
     filter: invert(0.9);
-    text-shadow: 0 0!important;
+    
   }
 
   .hash-view-count
   {
     color: #fff!important;
-    text-shadow: 0 0!important;
+    
   }
 
   .hash-text
   {
     color: #fff;
-    text-shadow: 0 0!important;
+    
   }
 
   .container.focused
@@ -1601,7 +1622,7 @@ div.live-player-bg {
   .comment-input-inner-wrapper .editor .public-DraftEditor-content
   {
     caret-color: #fff!important;
-    text-shadow: 0 0;
+    
   }
 	/*load more*/
   .more.jsx-3392055781
@@ -1940,7 +1961,7 @@ div.live-player-bg {
   .nav-item .red-dot
   {
     background: /*[[yadtheme]]*/!important;
-    filter: brightness(10)!important;
+    filter: brightness(2)!important;
   }
 	/*legal*/
   .base-layout-container
@@ -2087,20 +2108,20 @@ div.live-player-bg {
 
   .newsroom-item-link .newsroom-item-card section header a
   {
-    text-shadow: 0 0;
+    
     color: #ffffff;
   }
 
   .newsroom-item-link .newsroom-item-card section .desc
   {
-    text-shadow: 0 0;
+    
     color: #ffffff;
   }
 
   h3 .date
   {
     color: #c6c8cf!important;
-    text-shadow: 0 0!important;
+    
   }
 
   .newsroom-item-link .newsroom-item-card
@@ -2154,17 +2175,17 @@ div.live-player-bg {
 
   .campaign-card .main-article .desc
   {
-    text-shadow: 0 0;
+    
   }
 
   .campaign-card .main-article
   {
-    text-shadow: 0 0;
+    
   }
 
   header .help-container .help-item p
   {
-    text-shadow: 0 0;
+    
   }
 
   .detail-board .content-container .content
@@ -2191,7 +2212,7 @@ div.live-player-bg {
 
   .input-group .search-container .input-container .input-placeholder
   {
-    text-shadow: 0 0;
+    
   }
 	
 	/*for developers*/
@@ -2285,7 +2306,7 @@ div.live-player-bg {
 
   .md code
   {
-    text-shadow: 0 0;
+    
   }
 
   .md p+code, .md p>code, .md li>code
@@ -2340,17 +2361,17 @@ div.live-player-bg {
   .featuredWrapper_gYK__ .title_1dy0Y
   {
     color: #999;
-    text-shadow: 0 0;
+    
   }
 
   .featuredWrapper_gYK__ .cardTitle_2_eMh
   {
-    text-shadow: 0 0;
+    
   }
 
   .featuredWrapper_gYK__ .cardDescription_1w0GJ
   {
-    text-shadow: 0 0;
+    
   }
 
   .titleWrap_1ppFq,
@@ -2397,7 +2418,7 @@ div.live-player-bg {
   .vi-select-dropdown__item
   {
     color: #333;
-    text-shadow: 0 0;
+    
   }
 
   .tiktokads-inspiration-card-content-tags
@@ -2509,12 +2530,12 @@ div.live-player-bg {
 
   .blog-list-container__31mEl .blog-item__1YuEf .blog-item-label__29IFC .label-main__AnbUn, .blog-list-container__31mEl .blog-item__1YuEf .blog-item-label__29IFC .label-sub__psY5L,.blog-list-container__31mEl .blog-item__1YuEf .blog-item-label__29IFC .label-date__3FDDw
   {
-    text-shadow: 0 0;
+    
   }
 
   .search-dropdown .atsx-select-dropdown-menu-item
   {
-    text-shadow: 0 0;
+    
   }
 
   .search-error .error-desc
@@ -2685,7 +2706,7 @@ div.live-player-bg {
 }
 	
 	
-/*070621p
+/*071521a
 
 ██╗░░░██╗░█████╗░██████╗░  ██████╗░░█████╗░██████╗░░░███╗░░
 ╚██╗░██╔╝██╔══██╗██╔══██╗  ╚════██╗██╔══██╗╚════██╗░████║░░

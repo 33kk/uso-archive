@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Rob 'n Roll
 @description    `Dark theme for the Dutch NOS website. Makes it easier to read at night.Donker thema voor de NOS website. Maakt het makkelijker om 's avonds te lezen.`
-@version        20210713.15.20
+@version        20210714.20.21
 @license        CC-BY-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -33,6 +33,24 @@
 
     --more-articles-h2: #aaa;
     --more-articles-p: #6F6F6F;
+
+    --cookie-notice-background: #222;
+    --cookie-notice-border: #555;
+    --cookie-notice-boxshadow: #333;
+
+    --regio-background: #222;
+    --regio-border: #555;
+    --regio-boxshadow: #333;
+
+    --regio-p1: var(--more-articles-h2);
+    --regio-p2: var(--more-articles-p);
+    --regio-color: var(--color-dark);
+    --regio-color-selected: var(--color);
+    --regio-button-background: #333;
+    --regio-button-color: #aaa;
+    --regio-button-border: #555;
+    --regio-border-bottom: #3a3a3a;
+
 
 /* HEADER */
     --header-background: #222;
@@ -133,6 +151,68 @@ html {
  { color: var(--more-artices-h2); }
 .moreArticlesContainer_DUvR0hlq p
  { color: var(--more-articles-p); }
+
+/* Cookie notice */
+div#ccm_notification_wrapper
+ { background-color: var(--cookie-notice-background) !important;
+     border: solid 1px var(--cookie-notice-border);
+    box-shadow: 0 2px 6px 0 var(--cookie-notice-boxshadow) !important;
+    }
+div#ccm_notification_wrapper div#ccm_col_content_regular p:nth-child(2)
+ { color: var(--color) !important; }
+
+/* Regio */
+div#regio-onboarding
+ { background-color: var(--regio-background); border: solid 1px var(--regio-border); }
+/* closing icon cross */
+div#regio-onboarding button.ewFMmH
+ { color: #aaa; }
+/* Volg het nieuws uit jouw regio */
+div#regio-onboarding h3.dpGnlX
+ { color: var(--regio-p1); }
+/* Omschrijving */
+div#regio-onboarding p.jsycVT
+ { color: var(--regio-p2); }
+/* Kies je omroep / Button */
+div#regio-onboarding button.hcPxRH
+ { background-color: var(--regio-button-background); color: var(--regio-color); border: solid 1px var(--regio-border); }
+/*Arrow*/
+div#regio-onboarding div.ghDCFY svg path
+ { color: #000; }
+div#regio-onboarding button.hcPxRH:Hover
+ { transition: box-shadow 250ms ease-in-out 0s, border 250ms ease-in-out 0s; box-shadow: #111 0px 2px 6px 0px; }
+
+/* Regio - Pop out */
+div.rHuWk
+ { background-color: var(--regio-background); border: solid 1px var(--regio-border); }
+div.rHuWk li.iTHnni
+ { border-bottom: solid 1px var(--regio-border-bottom); }
+/* closing icon cross */
+div.FLPxJ button
+ { color: #aaa !important; }
+/*Selected*/
+div.rHuWk li.iTHnni .idwpre
+ { color: var(--regio-color); }
+div.rHuWk li.iTHnni .hHPkrj:checked + label
+ { font-weight: 500; color: var(--regio-color-selected); }
+/*Button*/
+div.rHuWk button.hcPxRH
+ { background-color: var(--regio-button-background); color: var(--regio-color); border: solid 1px var(--regio-border); }
+div.rHuWk button.hcPxRH span
+ { color: var(--regio-color); }
+/*Arrow*/
+div.rHuWk button.hcPxRH svg path
+ { color: #000; }
+div.rHuWk button.hcPxRH:Hover
+ { transition: box-shadow 250ms ease-in-out 0s, border 250ms ease-in-out 0s; box-shadow: #111 0px 2px 6px 0px; }
+
+/* Volg het nieuws uit jouw regio */
+div#regio-onboarding
+ { background-color: var(--regio-background); border: solid 1px var(--regio-border); }
+div#regio-onboarding h3
+ { color: var(--color-dark); }
+div#regio-onboarding svg
+ { color: #aaa !important; }
 
 .homepage,
 /* Voor pagina's als de collecties kunnen we geen body.class gebruiken. */
@@ -838,7 +918,7 @@ header.nav-wrapper ol.dropDownMenu_u7yFgFKw.dropDownMenuLarge_CTCzib2a a:Hover d
     #__next #content div.hqgxBy button.hcPxRH svg path
      { color: #000; }
     #__next #content div.hqgxBy button.fYFGfM:Hover
-     { transition: box-shadow 250ms ease-in-out 0s, border 250ms ease-in-out 0s; box-shadow: #555 0px 2px 6px 0px; }
+     { transition: box-shadow 250ms ease-in-out 0s, border 250ms ease-in-out 0s; box-shadow: #111 0px 2px 6px 0px; }
 
 /*.fYFGfM:hover {
     box-shadow: rgb(0 0 0 / 15%) 0px 2px 6px 0px;

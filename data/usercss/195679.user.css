@@ -1,14 +1,14 @@
 /* ==UserStyle==
-@name           OLD new VK v1.2.6+
+@name           OLD new VK v1.2.7
 @namespace      USO Archive
 @author         jakill02
 @description    `частично Имитирует Старый (Белый) дизайн Вконтакте, частично более новый, существовавший до Декабря 2020-го года, плюс некоторые изменения от автора, вроде отключённой вредной опции (пожаловаться) которая только мешается и которую можно нажать невзначай :Dтут: https://greasyfork.org/ru/scripts/419915 вы можете установить дополнительный Скрипт, который расширит функционал данного Стиля.`
-@version        20210624.15.59
+@version        20210714.20.6
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("vk.com") {
-/* OLD new VK v1.2.6+ */
+/* OLD new VK v1.2.7 */
 
         /*  страница Стиля: https://userstyles.org/styles/195679  */
 
@@ -62,6 +62,10 @@ div.app_widget_donation.clear_fix * {font-family: 'Arial',sans-serif !important;
 
 /* Шрифт для Кнопок */
 button {font-family: 'Tahoma',sans-serif !important;}
+
+/* Написание Коммента */
+.submit_post_field.reply_field {font-family: 'Tahoma',sans-serif !important; letter-spacing: 0px ! important;}
+
 /*###########################################################################*/
 
 
@@ -124,6 +128,13 @@ button {font-family: 'Tahoma',sans-serif !important;}
 
 /* Позицианирование Заголовка (Возможно, вы знакомы) */
 .module.profile_friends_recomm .module_header .header_top {padding: 0px 20px 5px 20px !important;}
+
+/*======= Группы/Сообщества =======*/
+
+/* отступ сверху для Бесед в Сообществах tes: club168709221 */
+[dir] .wide_column .groups_chats .module_body .line_cell:first-of-type {
+    padding-top: 14px !important;}
+
 /*################################################*/
 
 
@@ -604,6 +615,12 @@ body.new_header_design #side_bar .left_label {
 
 /* цвет стрелки вниз "v" имени Учётки */
 .TopNavBtn__profileArrow {color: #9BB3CF; /*def. color: var(--icon_tertiary) / #aeb7c2*/;}
+
+/*цвет счётчика фотографий в альбоме с фото*/
+.photos_album_info {color: #818C99 !important;}
+
+/*цвет описания в альбоме с фото*/
+.photos_album_intro_desc {color: #818C99 !important;}
 
 
 /* ~~~~~~~~ Просмотренные и Непросмотренные посты ~~~~~~~~ */

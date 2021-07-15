@@ -3,13 +3,13 @@
 @namespace      USO Archive
 @author         vanderfondi
 @description    `Tema oscuro para Popmundo, basado en The Great Heist Dark`
-@version        20210713.23.42
-@license        CC0-1.0
+@version        20210714.22.8
+@license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("75.popmundo.com"), domain("74.popmundo.com"), domain("73.popmundo.com"), domain("72.popmundo.com"), domain("71.popmundo.com"), domain("70.popmundo.com"), domain("79.popmundo.com"), domain("78.popmundo.com"), domain("77.popmundo.com"), domain("76.popmundo.com") {
 a {
-    color: #d4d5d5 !important;
+    color: #BCBCBD !important;
 }
 
 input[type=submit], input[type=button] {
@@ -66,7 +66,13 @@ div#top-menu-notifications-list{
     background: #333;
 }
 
-div#top-menu-notifications-list h2, h3{
+div#top-menu-notifications-list h2 {
+    background: #fff !important;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+div#top-menu-notifications-list h3{
     color: #fff;
 }
 
@@ -92,13 +98,13 @@ div.content p {
     color: #ffffff !important;
 }
 
-div.box, table.data tr.even td, div.editor a.button:hover {
+div.box, table.data tr.even td, tr.hoverable, div.editor a.button:hover {
     background: #222 !important;
     color: #fff !important;
 }
 
 tr.odd{
-    background: #333;
+    background: #333 !important;
 }
 
 div.box p.actionbuttons, div.actionbuttons {
@@ -217,9 +223,34 @@ div.box div.tabs a.active {
     /* color: #000; */
 }
 
+div.box ul.header li ul li, div#pddesignertools div.pdsong div.pdname {
+    font-weight: 400;
+    color: #000 !important;
+}
+
+div#pddesignertools div.pditem div.pdname {
+    margin-top: 0px;
+    padding-top: 0;
+    color: black;
+}
+
+div#top-menu-notifications-list p {
+    margin: 0px;
+    padding: 0 0 10px 0;
+    color: aliceblue;
+}
+
+table.hoverable tr:hover td,
+table.hoverable tr.selected td,
+table.data tr.hoverable:hover td,
+table.data tr.selected td,
+div#statusbar div.statusbarwrapper a.selected {
+  background: #060C68 !important;
+}
+
 label {
     cursor: default;
-    color: #000;
+    color: #fff;
 }
 
 }

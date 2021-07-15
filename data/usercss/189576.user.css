@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         duogals
 @description    `Gives Twitch.tv a future funk theme.Recommended with Dark Mode turned on.Also works with BetterTTV!Author: duogals/ShadderYou can download this UserCSS here:https://github.com/duogals/Twitch-Future-Funk`
-@version        20210708.22.11
+@version        20210714.16.25
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -11,7 +11,7 @@
     /* ==UserStyle==
      @name			Twitch Future Funk
      @namespace		duogals
-     @version		     1.1.0
+     @version		     1.1.1
      @description	     A future funk themed style for Twitch.tv.
      @author			duogals/Shadder
      @license		     CC0 - Public Domain
@@ -19,7 +19,7 @@
      @supportURL		https://github.com/duogals/Twitch-Future-Funk/issues
      @updateURL		https://raw.githubusercontent.com/duogals/Twitch-Future-Funk/main/TwitchFutureFunk.user.css
      @Creation-Date      2020-09-18
-     @Last-Updated       2021-07-09
+     @Last-Updated       2021-07-14
     ==/UserStyle== */
     
     /* BODY COLOR */
@@ -743,7 +743,7 @@
     } .VUIXE {
           color: #00daff !important;
     } .dVmHJR {
-          color: #00daff !important;
+          color: #ffffff !important;
     } .epwTZM {
           color: #00daff !important;
     } .chZay {
@@ -780,6 +780,36 @@
     } .kZAhUe {
          color: #00daff !important;
          background-color: #110035 !important;
+    }
+
+    /*Animated emotes message*/
+    .jpEGpg {
+         color: #00daff !important;
+    } .hBxyLz {
+         background-color: #460cf7 !important;
+    } .FYQnE {
+         background-color: #0c0026 !important;
+    } .heaSCI {
+          background-color: #2a00ac !important;
+    }
+
+    /*News pop-ups  on channels*/
+    .jpZWRE {
+          background-color: #17043e !important;
+    } .cmkXFa {
+          background-color: #6000ee !important;
+    }
+
+    /*Previous messagtes mod version*/
+    .bQueVj {
+         background-color: #06000b;
+    }
+
+    /*New messages line*/
+    .live-message-separator-line__hr {
+     border-top:var(--border-width-default) solid #0bc7ff!important;
+    } .euvEeP {
+          color: #0bc7ff !important;
     }
 
     }

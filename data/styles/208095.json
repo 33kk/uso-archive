@@ -1,0 +1,45 @@
+{
+  "id": 208095,
+  "info": {
+    "name": "Better line spacing",
+    "description": "<p style=\"line-height: 2\">Simple line-spacing style. It shouldn't mess with other things; let me know if it works when it shouldn't or doesn't work when it should.</p>",
+    "additionalInfo": null,
+    "format": "uso",
+    "category": "global",
+    "createdAt": "2021-07-14T20:05:40.000Z",
+    "updatedAt": "2021-07-14T20:05:40.000Z",
+    "license": "CC0-1.0",
+    "author": {
+      "id": 1208629,
+      "name": "1.7.4"
+    }
+  },
+  "stats": {
+    "installs": {
+      "total": 0,
+      "weekly": 0
+    }
+  },
+  "screenshots": {
+    "main": {
+      "name": "208095_additional_38315.png",
+      "archived": true
+    },
+    "additional": [
+      {
+        "name": "208095_additional_38315.png",
+        "archived": true
+      }
+    ]
+  },
+  "discussions": {
+    "stats": {
+      "discussionsCount": 0,
+      "commentsCount": 0
+    },
+    "data": []
+  },
+  "style": {
+    "css": "/* - 1.7.4 says hi. if you have no idea how to use css and just want to change the line spacing, change the number after line-height. that is all.*/\r\np {\r\n    line-height: 2;\r\n}"
+  }
+}

@@ -1,14 +1,20 @@
 /* ==UserStyle==
-@name           新龙空精简UI_1.2.0
+@name           新龙空精简UI_1.3.0
 @namespace      USO Archive
 @author         ybbpgfjtey
 @description    `龙空第五纪元UI空间浪费过多，如页首大段空白、内容区间隔过多，本样式表用于对此进行优化。主要修改了首页、论坛页、帖子页面及新贴页面。`
-@version        20210714.11.50
+@version        20210714.17.45
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("lkong.com") {
 /** 全局 */
+
+/* 定义变量 */
+body {
+	/* 计算边距，以适应大屏，使得主区域宽度至多1500px。*/
+	--margin: max(80px, calc(50% - 750px));
+}
 
 /* 广告 */
 .lkong-ads {
@@ -31,7 +37,7 @@
 .css-7o8ir,
 .css-83qgcm{
 	width: unset;
-	padding: 0 80px;
+	padding: 0 var(--margin);
 	margin: unset;
 }
 
@@ -84,7 +90,7 @@ h4~div  li::before {
 
 .forum-top {
 	width: unset !important;
-	margin: 0 80px !important;
+	margin: 0 var(--margin) !important;
 }
 
 /* 发表帖子按钮置于页面顶端 */
@@ -92,7 +98,7 @@ h4~div  li::before {
 	.right .ant-btn-primary {
 		position: fixed;
 		top: 5px;
-		left: 350px;
+		left: calc(270px + var(--margin));
 		z-index: 10;
 		width: 120px;
 		height: 30px !important;
@@ -148,7 +154,7 @@ h4~div  li::before {
 .css-1g06pxo {
 	padding: 8px 0;
 	width: unset;
-	margin: 0 80px;
+	margin: 0 var(--margin);
 }
 .thread-header-main {
 	display: flex;
