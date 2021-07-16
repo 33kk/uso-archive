@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         KMVerum
 @description    `Reddit Custom Theme - International Version.Compatibility:RES - (https://redditenhancementsuite.com/)all *.reddit.com domains found to date(many main-) custom Subreddit themessnew.notabug.iowww.removeddit.comwww.reveddit.com4chan.org8kun.topphuks.co (rough edit - tweaking to come)poal.cosaidit.netvoat.co - (RIP 20201225)communities.win + subdomainsconspiracies.wingreatawakening.winpatriots.winthedonald.winarchive.fo/is/md/vnGoogle reCAPTCHAGoogle WebcacheWaybackMachine (web.archive.org)Includes custom black cursor + pointers based on;https://userstyles.org/styles/175086/Recommended add-on: Custom Browser Scrollbars:https://userstyles.org/styles/182441/Tested on Brave, Chrome, Chromium, Firefox, Firefox Nightly, Tor & Waterfox.PS; Waterfox is a little wonky on custom wallpapers.If problems occur, choose "none".Stylus recommended:https://add0n.com/stylus.htmlContact:https://old.reddit.com/r/KMV/`
-@version        20210709.8.43
+@version        20210715.12.54
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown RCWallpaper "Wallpaper" {
@@ -1339,7 +1339,6 @@ html[class*="res-v"],
 html[class*="res-accountSwitcher"][class*="res-v"],
 html[class*="accountSwitcher"][class*="res-nightmode"][class*="res-v"],
 rss,
-._1npCwF50X2J7Wt82SZi6J0,
 ._1npCwF50X2J7Wt82SZi6J0._3OGqXkiUb_0ZMlksb26boO
 {
     background:
@@ -2839,13 +2838,6 @@ table.flashListing tr,
 
 /*Overlays*/
 
-#overlayScrollContainer
-{
-    background:#00000044!important;
-    transition:.4s;
-}
-
-
 /*New Reddit Post Format Buttons. Sidebars*/
 
 #bladeContainer,
@@ -2865,6 +2857,7 @@ table.flashListing tr,
 
 
 #gild-frame.gild-modal,
+#overlayScrollContainer,
 ._1UtFUrE2ijAe5ba5uPgcfQ,
 .modal.fade.login-modal.in,
 .modal-open .modal,
@@ -2881,7 +2874,6 @@ table.flashListing tr,
     background:#000d!important;
     background-color:#000d!important;
 }
-
 
 
 /* ------ Gradient - Solid top - Transparent Bottom ------ */
@@ -3275,6 +3267,7 @@ div.cookie-consent,body.theme-light div.container.padded main.module,body.theme-
 .submit .morelink::after,
 .Toaster,
 .ui-widget-content,
+/*New Reddit Open Posts*/._1npCwF50X2J7Wt82SZi6J0,
 ._197SqY-gDtObhzjz9SlSEp,
 ._1HSQGYlfPWzs40LP4_oFi5,
 ._1i-ndNsTQtNr82sMJ0renj,

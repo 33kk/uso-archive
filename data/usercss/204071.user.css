@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Patkee
 @description    `This theme changes the appearance of the page to be more eye-interested.I hope you will be enjoying`
-@version        20210712.18.27
+@version        20210715.20.40
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -327,10 +327,10 @@
     /* background: #262626 no-repeat left center; */
  } 
 
-  .landingpage
-  {
-    background: url(https://i.ibb.co/V31mFTg/loading-bg.jpg) center top no-repeat #e5f1fd;
-  }
+.landingpage
+ {
+    background: url(https://i.ibb.co/V31mFTg/loading-bg.jpg) center top no-repeat #000000;
+ }
 
   .landingpage-host-select-btn
   {
@@ -342,10 +342,10 @@
     background-color: #262626;
   }
 
-  html, body
-  {
-    background: url(https://i.ibb.co/G3bXtQQ/login-bg.jpg) top center no-repeat #badef6;
-  }
+html, body
+ {
+    background: url(https://i.ibb.co/G3bXtQQ/login-bg.jpg) top center no-repeat #000000;
+ }
 
   .gender-checkbox
   {

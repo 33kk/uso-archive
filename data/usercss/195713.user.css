@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         A_Anthony_y
 @description    `Fixed the ROBLOX 2016 stylus icons Fixed icons: ROBLOX home icon, Robux icon, and some other icons. Check the GitHub Repo for fixes and more recent updates!https://github.com/anthony1x6000/ROBLOX2016stylusAlso just incase userstyles goes under.Create an issue on the github page if there are any problems (e.g broken icons).Most and pretty much all code from Ologist`
-@version        20210707.0.30
+@version        20210715.22.17
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -14,8 +14,6 @@ It'll be under "stylustheme.css" or another .css file! But will 100% be under re
 Wayback ROBLOX games page: https://web.archive.org/web/20160916190637/https://www.roblox.com/games/?SortFilter=default&TimeFilter=0&GenreFilter=1
 Credit to Ologist for originally making this incredible userstyle theme!
 */
-
-
 body
   
 {
@@ -48,8 +46,6 @@ body
 Look here:
 https://web.archive.org/web/20160724012820cs_/https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,500,600,700
 */ 
-
-
 .gotham-font.light-theme .refresh-link, .gotham-font.light-theme .refresh-link-icon, .gotham-font.light-theme .refresh-link-icon:active, .gotham-font.light-theme .refresh-link-icon:hover, .gotham-font.light-theme .refresh-link-icon:link, .gotham-font.light-theme .refresh-link-icon:visited, .gotham-font.light-theme .refresh-link:active, .gotham-font.light-theme .refresh-link:hover, .gotham-font.light-theme .refresh-link:link, .gotham-font.light-theme .refresh-link:visited, .gotham-font.light-theme .see-all-link, .gotham-font.light-theme .see-all-link-icon, .gotham-font.light-theme .see-all-link-icon:active, .gotham-font.light-theme .see-all-link-icon:hover, .gotham-font.light-theme .see-all-link-icon:link, .gotham-font.light-theme .see-all-link-icon:visited, .gotham-font.light-theme .see-all-link:active, .gotham-font.light-theme .see-all-link:hover, .gotham-font.light-theme .see-all-link:link, .gotham-font.light-theme .see-all-link:visited, .gotham-font.light-theme .touch .refresh-link, .gotham-font.light-theme .touch .refresh-link-icon, .gotham-font.light-theme .touch .refresh-link-icon:active, .gotham-font.light-theme .touch .refresh-link-icon:hover, .gotham-font.light-theme .touch .refresh-link-icon:link, .gotham-font.light-theme .touch .refresh-link-icon:visited, .gotham-font.light-theme .touch .refresh-link:active, .gotham-font.light-theme .touch .refresh-link:hover, .gotham-font.light-theme .touch .refresh-link:link, .gotham-font.light-theme .touch .refresh-link:visited, .gotham-font.light-theme .touch .see-all-link, .gotham-font.light-theme .touch .see-all-link-icon, .gotham-font.light-theme .touch .see-all-link-icon:active, .gotham-font.light-theme .touch .see-all-link-icon:hover, .gotham-font.light-theme .touch .see-all-link-icon:link, .gotham-font.light-theme .touch .see-all-link-icon:visited, .gotham-font.light-theme .touch .see-all-link:active, .gotham-font.light-theme .touch .see-all-link:hover, .gotham-font.light-theme .touch .see-all-link:link, .gotham-font.light-theme .touch .see-all-link:visited {
     color: #00a2ff;
     background-color: rgba(255, 0, 0, 0);
@@ -61,9 +57,6 @@ https://web.archive.org/web/20160724012820cs_/https://fonts.googleapis.com/css?f
 .light-theme .icon-default-navigation, .light-theme .icon-nav-blog, .light-theme .icon-nav-charactercustomizer, .light-theme .icon-nav-friends, .light-theme .icon-nav-group, .light-theme .icon-nav-home, .light-theme .icon-nav-inventory, .light-theme .icon-nav-menu, .light-theme .icon-nav-message, .light-theme .icon-nav-my-feed, .light-theme .icon-nav-notification-stream, .light-theme .icon-nav-profile, .light-theme .icon-nav-robux, .light-theme .icon-nav-search, .light-theme .icon-nav-search-white, .light-theme .icon-nav-settings, .light-theme .icon-nav-shop, .light-theme .icon-nav-trade {
     background-image: url(https://images.rbxcdn.com/f4000b6d03a0df7153556d2514045629-navigation_10022018.svg);
 }
-
-
-
 
 .avatar-card-fullbody .avatar-card-image, .avatar .avatar-card-image {
     width: 100%;
@@ -489,8 +482,6 @@ background-color: #3FC679;
 /*img.avatar-card-image:scr {
     img.scr: url(https://www.dictionary.com/e/wp-content/uploads/2019/05/1000x700-LOL-1.jpg);
 }*/
-
-
 
 .light-theme .item-card-container .item-card-price {
     margin-top: 0 !important;
@@ -1023,20 +1014,6 @@ I think this works
 .icon-additem, .icon-arrow-right-blue, .icon-audio, .icon-back, .icon-bigplay, .icon-bigplay-fill, .icon-bigstop, .icon-bigstop-fill, .icon-brokenpage, .icon-carousel-left, .icon-carousel-right, .icon-chat-gray, .icon-check-selection, .icon-checkmark, .icon-checkmark-blue, .icon-checkmark-on, .icon-checkmark-white, .icon-checkmark-white-bold, .icon-clock, .icon-close, .icon-close-white, .icon-copy, .icon-default-generic, .icon-down, .icon-edit, .icon-female, .icon-female-white, .icon-first-gray, .icon-first-page, .icon-games-carousel-left, .icon-games-carousel-left.hover, .icon-games-carousel-right, .icon-games-carousel-right.hover, .icon-globe, .icon-grid, .icon-home, .icon-inactive, .icon-last-gray, .icon-last-page, .icon-left, .icon-left-gray, .icon-locked, .icon-logo-apple, .icon-logo-win, .icon-male, .icon-male-white, .icon-menu, .icon-menu-black, .icon-minus, .icon-more, .icon-more-gray-vertical, .icon-moreinfo, .icon-next, .icon-notifications, .icon-page, .icon-password-hide, .icon-password-hide-white, .icon-password-show, .icon-password-show-white, .icon-pastname, .icon-pause, .icon-pause-fill, .icon-play, .icon-playgame, .icon-plus, .icon-regenerate, .icon-right, .icon-right-gray, .icon-sandglass, .icon-search, .icon-settings, .icon-slideshow, .icon-sorting, .icon-trash-bin, .icon-unlocked, .icon-up, .icon-viewdetails {
     background-size: auto;
 }
-
-
-
-/* .icon-carousel-right {    
-    background-position-x: 0px;
-    background-position-y: -831px;
-    
-}
-.icon-carousel-left {    
-    background-position-x: 0px;
-    background-position-y: -857px;
-    
-} */
-
 .icon-carousel-right {
     background-position: 0 -896px;
 }
@@ -1046,34 +1023,18 @@ I think this works
 
 .carousel-controls.carousel-controls-right.btn-primary-md.btn-min-width {
     background-color: rgba(25,25,25,0.3);
-    border-color: #fff;
-    
+    border-color: #fff;   
 }
-
-
-
-
 /* Servers header tab selection thingy changes 
 Unrelated note but remember when games had comments? That was pretty cool.
 */ 
-
 .rbx-tab-heading {
     height: 45px;
 }
-
-.text-lead.ng-binding{
-    position: relative;
-    top: 4px;
-    
-}
-
 .text-lead {
     position: relative;
     top: 3px;
 }
-
-
-
 /* refresh ~~blue~~ WHITE (I was looking at 2015 not 2016 but personally I like 2015 better) - reference for all of this is at https://web.archive.org/web/20150627045216/https://www.roblox.com/games/9689581/Roblox-High-School#!/about*/ 
 .btn-min-width.btn-control-xs.btn-more.rbx-refresh.refresh-link-icon {
 background-color: #ffffff;
@@ -1089,19 +1050,7 @@ text-decoration: none !important;
 padding: 4px 4px !important;
 }
 
-
-    
-
-
-/* 
-.refresh-link-icon, .touch .refresh-link-icon {
-    background-color: #32b5ff;
-    color: #32b5ff;
-    border: 1px solid #fff0;
-    transition: none;
-} */ 
-
-
+/*meme */ 
 /* random thing I did to the ad */
 .ad {
     background-image: url("https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/images/eseg.jpg?raw=true");
@@ -1109,20 +1058,20 @@ padding: 4px 4px !important;
     background-size: 300px;
     background-position: -25px;
 }
-
-
-
+div.games-list-container.is-windows:nth-of-type(9) > a:nth-of-type(1) > .container-header.games-filter-changer > h3::before {
+    content: "Popular Among Us???? ROBLOX ACTING SUS😳😳😳😳";
+    font-size: 24px;
+}
+div.games-list-container.is-windows:nth-of-type(9) > a:nth-of-type(1) > .container-header.games-filter-changer > h3 {
+    font-size: 0px;
+    margin-top: 9px;
+}
+/*end of meme*/ 
 /* maybe this will fix see more being short I probably did something to mess it up */
 .btn-control-sm {
     width: 100%;
-    
 }
-
-
-
-
 /* changing top bar stuff I FOUND OUT HOW! Not really I just looked at Ologist's code and saw that he figured it out so I'm shamelessly stealing it */ 
-/* comment this or delete this if you dont care about it */ 
 ul.nav:nth-child(2) > li:nth-child(1) > a:nth-child(1)
   {
     font-size: 0 !important;
@@ -1167,10 +1116,11 @@ ul.nav:nth-child(2) > li:nth-child(4) > a:nth-child(1)
     font-size: 15px;
   }
 
+
 /* making the gray highlight thing smaller */
 
 .light-theme .rbx-header .text-header, .light-theme .rbx-header .text-header:active, .light-theme .rbx-header .text-header:focus, .light-theme .rbx-header .text-header:hover, .light-theme .rbx-header .text-header:link, .light-theme .rbx-header .text-header:visited {
-    height: 90%;
+    height: 31px;
     color: #ffffff;
 }
 
@@ -1449,7 +1399,7 @@ background-color: #44b4f8;
     border-radius: 3px; 
 }
 
-/* fixing the game tiles to be the old ones | GAME PAGE CARD FIX */
+/* fixing the game tiles to be the old ones | GAMES PAGE CARD FIX */
 .thumb-container img {
     width: 150px;
     height: 150px;
@@ -1463,7 +1413,6 @@ background-color: #44b4f8;
     width: 150px;
     margin-right: 14px;
     transition: all .0s cubic-bezier(0,0,0,1);
-
 }
 
 /* game tile shadows */ 
@@ -1485,8 +1434,11 @@ background-color: #44b4f8;
 }
 .hover-game-tile .featured-game-container{transition: all 0s cubic-bezier(0,0,0,1) !important;}
 .game-card-container {
-    margin-left: 11px;
+    margin-left: 1px;
 }
+/* used to be margin-left: 11px; ^^*/ 
+
+
 .light-theme .game-card-container .game-card-name {
     padding: 0 6px;
     margin: 6px 0;
@@ -1524,7 +1476,6 @@ background-color: #44b4f8;
     position: relative; 
     overflow: hidden;
     top: 30px;
-    width: 150px;
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
 }
@@ -1577,10 +1528,7 @@ Got any ideas? (I tried margin-... w/ !important and it didnt work)
 /* changing the game slidey thing arrow things */ 
 .arrow, .scroller.prev.disabled, .scroller.next, .scroller.next.disabled, .scroller.prev {
     height: 242px;   
-
 }
-
-
 /* game cover thing fixing gaps */ 
 .horizontal-scroller .scroller.next .spacer {
     left: 29px;
@@ -1608,8 +1556,9 @@ Got any ideas? (I tried margin-... w/ !important and it didnt work)
 }
 .scroller.next .arrow {
     z-index: 2 !important;
-    left: 1px;
+    left: 0px;
     box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.30);
+    width: 101%;
 }
 .scroller.prev .arrow {
     z-index: 2 !important;
@@ -1828,6 +1777,10 @@ box-shadow: 0 1px 4px 0 rgba(25,25,25,0.2);
 
 .light-theme .game-card-info .info-label.icon-votes-gray {
     background-position: 0 -480px;
+    background-image: url(https://images.rbxcdn.com/153fd3209692232cd8087cad74a669b0-games.svg)
+}
+.light-theme .game-card-container:hover .game-card-info .info-label.icon-votes-gray {
+    background-position: -16px -351px;
     background-image: url(https://images.rbxcdn.com/153fd3209692232cd8087cad74a669b0-games.svg)
 }
 
@@ -2569,16 +2522,6 @@ div[style="col-sm-6 slide-item-container-left"]
     box-shadow: inset 4px 0 0 0 #00a2ff;
     cursor: pointer;
 }
-
-/*
-.gotham-font.light-theme .see-all-link-icon
-{
-    padding: 0px;
-
-    
-}
-*/
-
 .rbx-header.light-theme .rbx-navbar li .nav-menu-title:focus, .rbx-header.light-theme .rbx-navbar li .nav-menu-title:hover
 {
     background-color: rgba(25,25,25,.1);
@@ -2613,19 +2556,7 @@ div[style="col-sm-6 slide-item-container-left"]
     background-image: url(https://raw.githubusercontent.com/anthony1x6000/ROBLOX2016stylus/80a1e55d792875c92f6a4c5e7b4ef949fa17c157/images/robux/icons.svg);
     background-position: -28px -28px;
   }
-
-
 /* Messing with the games tab */
-
-/* 
-.scroller.next, .scroller.prev {
-    height: 80.6%;
-    
-    
-} */
-
-
-
 .light-theme .game-card-info .info-label.icon-votes-gray {
 
     background-position: 0 -351px;
@@ -2637,44 +2568,21 @@ div[style="col-sm-6 slide-item-container-left"]
     position: relative;
     top: 2.5px;
 }
-
-
-
-
 .game-card-container {
     height: 240px;
 }
 
-/* this doesnt really work (outside of the games page and the home page)
-.game-card-native-ad {
-    position: relative;
-    top: 28px;
-} */
 
 .game-tile:hover .game-card-container {
     height: 240px;
     box-shadow: 0 1px 6px 0 rgb(25 25 25 / 0.9);
 }
-
-/* 
-.game-card-info {
-    position: relative;
-    top: 212px;
-}
-
-*/ 
-
 .game-card-info .playing-counts-label {
     position: relative; 
     display: block !important;
     bottom: 25px;
     right: 2px;
 } 
-
-
-
-
-
 .game-card-info .icon-playing-counts-gray {
     visibility: hidden;
 }
@@ -2696,18 +2604,7 @@ div[style="col-sm-6 slide-item-container-left"]
     overflow-x: visible;
     overflow-y: visible;
 }
-
-
-/* 
-  position: absolute;
-  left: 100px;
-  top: 150px;
-*/
-
-
 /* --------------- */ 
-
-
 /* side bar tab thing */
 
 .btn-growth-md.btn-secondary-md {
@@ -2843,20 +2740,7 @@ div[style="col-sm-6 slide-item-container-left"]
     border-radius: 3px !important;
     padding: 4px 4px !important;
 }
-
-/* 
-.gotham-font.light-theme .see-all-link-icon {
-    padding: 1px 4px !important;
-    font-size: 14px !important;
-    font-weight: thin !important;
-    width: 100px;
-} */
-
-
-
-
-
-/* avatar frieds playing game tile */
+/* avatar friends playing game tile */
 /* this could be slightly broken idk I just tested it with two alts and it seems fine
 https://i.ibb.co/VtZQ0KP/image.png    */ 
 .game-card-name.game-name-title.game-name-oneline {
@@ -2874,13 +2758,8 @@ https://i.ibb.co/VtZQ0KP/image.png    */
 /* continue move down */ 
 .container-header.games-filter-changer {
     position: relative;
-    top: 5px;
-    
+    top: 5px;   
 }
-
-
-
-
 /* notification top */ 
 
 .light-theme .alert-info {
@@ -2969,4 +2848,36 @@ button.btn-control-md.view-all{
 }
 recommendations > div > div > div > div > ul > li > div > a > div.item-card-name.recommended-name > span.ng-binding, div > div > div > recommendations.ng-isolate-scope > div > div > div > div > ul > li > div > div {
     margin-left: 6px;
+}
+/* avatar page changes */ 
+.redraw-avatar > .text-link.ng-binding::before {
+    content: "Click here to re-draw it!";
+    font-size: 16px;
+    color: #085bcd;
+}
+.redraw-avatar > .text-link.ng-binding {
+    position: relative; 
+    bottom: 11px;
+    right: 112px;
+    font-size: 0px;
+}
+.redraw-avatar > span.ng-binding:nth-of-type(1)::before {
+    content: "Something wrong with your avatar?";
+    font-size: 16px; 
+}
+.redraw-avatar > span.ng-binding:nth-of-type(1) {
+    font-size: 0px; 
+    position: relative;
+    left: 1px;
+}
+/*optional gender?? cringe!!!*/.gender-container > .ng-binding.font-caption-header {font-size: 0px;}.gender-container > .ng-binding.font-caption-header::before{content:"Gender";font-size: 15px;}
+/*accept friend button */ 
+#accept-fr-btn {
+    background-color: #00a2ff;
+    border-color: #00a2ff;
+    color: white !important;
+    border-radius: 3px;
+}
+.notification-item.ng-scope.ng-isolate-scope > .notification-item-front > .notification-item-content > .notification-action-container {
+    margin-bottom: 1px;
 }

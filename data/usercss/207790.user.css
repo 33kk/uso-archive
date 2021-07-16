@@ -2,8 +2,8 @@
 @name           shiftyy's MyAnimeList Dark+
 @namespace      USO Archive
 @author         shiftyy
-@description    `(Works only on MyAnimeList <b>Profile</b> and <b>Anime/Manga</b> pages).A simple dark recolor of mal profile page + some other design changes.Main Features:-Customizable Background Color/Image-Customizable Font Color/Size-Customizable Progress Graphs Color-Hide "About Me" Section (Optional)-Hide "Favorites" Section (Optional)-Smaller "MAL" logo-Remove RSS Feeds-Remove AdsFeel free to give me feedback or report any bug/inconsistency!`
-@version        20210714.11.6
+@description    `(Works only on MyAnimeList <b>Profile</b> and <b>Anime/Manga</b> pages).A simple dark recolor of mal profile page + some other design changes.Main Features:-Customizable Background Color/Image-Customizable Font Color/Size-Customizable Progress Graphs Color-Customizable Smaller "MAL" Logo-Hide "About Me" Section (Optional)-Hide "Favorites" Section (Optional)-Remove RSS Feeds-Remove AdsFeel free to give me feedback or report any bug/inconsistency!`
+@version        20210715.23.59
 @license        CC-BY-NC-SA-4.0
 @preprocessor   uso
 @advanced text fontS "Font Size" "12"
@@ -55,6 +55,14 @@ favoritesYes "Yes" <<<EOT display: none; EOT;
 @advanced color hFont "Secondary Font Color" #636363
 @advanced color wColor "Watching/Reading Color" #4DC243
 @advanced color cColor "Completed Color" #3D50A8
+@advanced dropdown logo "Logo (53x26)" {
+logo1 "MAL Grey*" <<<EOT https://i.postimg.cc/KvDWg44D/mal-logo-xsmall1.png EOT;
+logo2 "MAL Blue" <<<EOT https://i.postimg.cc/dVWS4X27/mal-logo-xsmall2.png EOT;
+logo3 "MAL Black" <<<EOT https://i.postimg.cc/HkWh0HyD/mal-logo-xsmall3.png EOT;
+
+	logo-custom-dropdown "Custom" <<<EOT /*[[logo-custom]]*\/ EOT;
+}
+@advanced text logo-custom "Logo (53x26) (Custom)" "https://example.com/image.png"
 
 ==/UserStyle== */
 @-moz-document url-prefix("https://myanimelist.net/profile"), url-prefix("https://myanimelist.net/anime/"), url-prefix("https://myanimelist.net/manga/") {
@@ -614,9 +622,15 @@ option {
 /* COLOR CONVERT */
 .page-common #headerSmall {
     background-color: #0000;
-    background-image: url(https://i.postimg.cc/5y9j4ZPg/mal-logo-xsmall.png);
+    background-image: url(/*[[logo]]*/);
+    background-size: auto 75%;
+    background-position: left;
+    top: 3px;
     height: 30px;
     z-index: 5;
+}
+.page-common #headerSmall>a.link-mal-logo {
+    width: 55px;
 }
 
 .user-profile .user-status li {

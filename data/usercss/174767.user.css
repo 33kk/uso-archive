@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         KMVerum
 @description    `Black YouTube Theme by KMV.Text & Links customizable.Note: Custom CSS requires uninstall of old version before updating.Consider this theme "Clean".Most colours are B/W until hovered.Designed to be easy on the eyes - most distractions have been reduced to a minimum.Works straight out of the box - no "Enable YouTube Dark Theme" again.Note:I do not have an YT account, so there are likely elements within user account-pages not covered.Features custom cursors, -scrollbars, subtle opacities and gradients, hover transitions on Menus, Buttons, Logos and Popups.Dark Theme on reCAPTCHA & YouTube Login page included.All options in separate codes. Delete any of these to disable.Main Player is untouched to accommodate for the many custom interfaces available.Stylus recommended:https://add0n.com/stylus.htmlThe rest of my themes:https://userstyles.org/users/370722/Contact;https://old.reddit.com/r/KMV/`
-@version        20210703.9.35
+@version        20210715.14.3
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 @advanced color Links "Links" #93A1A1
@@ -3648,6 +3648,13 @@ html body.invisible_mode form.form-group.form-captcha
     box-shadow: 0px 0px 3px 0px #444;
 }
 
+/*Language Selector hover*/
+.FwR7Pc
+{
+    background: #111 !important;
+}
+
+
 /*Regular Buttons*/
 .gRzmXe.Rj2Mlf,.gRzmXe.Rj2Mlf:hover,
 .Rj2Mlf
@@ -3662,7 +3669,8 @@ html body.invisible_mode form.form-group.form-captcha
     filter: grayscale(1)!important;
 }
 
-.gRzmXe.Rj2Mlf
+.gRzmXe.Rj2Mlf,
+.JPdR6b
 {
 	background: #000;
     border:none;

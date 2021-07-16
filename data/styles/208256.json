@@ -1,0 +1,45 @@
+{
+  "id": 208256,
+  "info": {
+    "name": "enhypenn",
+    "description": "enhypen wallpaper",
+    "additionalInfo": null,
+    "format": "uso",
+    "category": "global",
+    "createdAt": "2021-07-15T22:17:47.000Z",
+    "updatedAt": "2021-07-15T22:17:47.000Z",
+    "license": "NO-REDISTRIBUTION",
+    "author": {
+      "id": 686316,
+      "name": "monxe 7w7 UwUr"
+    }
+  },
+  "stats": {
+    "installs": {
+      "total": 0,
+      "weekly": 0
+    }
+  },
+  "screenshots": {
+    "main": {
+      "name": "208256_after.jpeg",
+      "archived": true
+    },
+    "additional": [
+      {
+        "name": "208256_additional_38316.jpeg",
+        "archived": true
+      }
+    ]
+  },
+  "discussions": {
+    "stats": {
+      "discussionsCount": 0,
+      "commentsCount": 0
+    },
+    "data": []
+  },
+  "style": {
+    "css": "p {\r\n  color: black;\r\n  width: 500px;\r\n  border: 1px solid black;\r\n}"
+  }
+}
